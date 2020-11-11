@@ -189,15 +189,16 @@ a.rvts28, span.rvts28
 a.rvts28:hover { color: #007bbf; }
 span.rvts29
 {
- font-size: 14pt;
+ font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
- color: #000000;
+ color: #333333;
+ background-color: #ffffff;
 }
 span.rvts30
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: #333333;
  background-color: #ffffff;
 }
@@ -206,111 +207,110 @@ span.rvts31
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
- color: #333333;
- background-color: #ffffff;
 }
 span.rvts32
 {
  font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
 }
 span.rvts33
 {
  font-size: 12pt;
  font-family: 'Inter';
-}
-span.rvts34
-{
- font-size: 12pt;
- font-family: 'Inter';
  font-style: italic;
 }
-a.rvts35, span.rvts35
+a.rvts34, span.rvts34
 {
  font-size: 12pt;
  font-family: 'Inter';
  text-decoration: none;
 }
-span.rvts36
+span.rvts35
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
+ color: #f0b400;
+}
+span.rvts36
+{
+ font-size: 12pt;
+ font-family: 'Inter';
  color: #f0b400;
 }
 span.rvts37
 {
  font-size: 12pt;
  font-family: 'Inter';
- color: #f0b400;
-}
-span.rvts38
-{
- font-size: 12pt;
- font-family: 'Inter';
  font-style: italic;
  font-weight: bold;
 }
-a.rvts39, span.rvts39
+a.rvts38, span.rvts38
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: ;
  text-decoration: underline;
 }
-span.rvts40
+span.rvts39
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: ;
 }
-span.rvts41
+span.rvts40
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #ffffee;
 }
-a.rvts42, span.rvts42
+a.rvts41, span.rvts41
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
  text-decoration: none;
 }
-span.rvts43
+span.rvts42
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
  color: ;
 }
-span.rvts44
+span.rvts43
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #000000;
 }
-span.rvts45
+span.rvts44
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
 }
-span.rvts46
+span.rvts45
 {
  font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #ffffff;
 }
-span.rvts47
+span.rvts46
 {
  font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
  color: ;
+}
+span.rvts47
+{
+ font-size: 14pt;
+ font-family: 'Inter';
+ font-weight: bold;
+ color: #000000;
 }
 span.rvts48
 {
