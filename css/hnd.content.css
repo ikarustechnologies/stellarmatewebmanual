@@ -70,143 +70,141 @@ a.rvts10, span.rvts10
 }
 span.rvts11
 {
- font-size: 12pt;
- font-family: 'Segoe UI';
- color: #ff0000;
-}
-span.rvts12
-{
- font-size: 12pt;
+ font-size: 42pt;
  font-family: 'Inter';
- font-weight: bold;
- color: #ff0000;
+ color: #000000;
 }
-span.rvts13 /* Font Style */
+span.rvts12 /* Font Style */
 {
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-style: italic;
  color: #c0c0c0;
 }
-a.rvts14, span.rvts14 /* Font Style */
+a.rvts13, span.rvts13 /* Font Style */
 {
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-style: italic;
  color: #6666ff;
  text-decoration: underline;
 }
+span.rvts14
+{
+ font-size: 12pt;
+ font-family: 'Segoe UI';
+ color: #ff0000;
+}
 span.rvts15
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ font-weight: bold;
+ color: #ff0000;
+}
+span.rvts16
 {
  font-size: 16pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #000000;
 }
-a.rvts16, span.rvts16
+a.rvts17, span.rvts17
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts17
-{
- font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #000000;
-}
 span.rvts18
 {
  font-size: 12pt;
- font-family: 'Courier New', 'Courier', monospace;
+ font-family: 'Inter';
  font-weight: bold;
  color: #000000;
 }
 span.rvts19
 {
  font-size: 12pt;
- font-family: 'Inter';
- color: #007bbf;
+ font-family: 'Courier New', 'Courier', monospace;
+ font-weight: bold;
+ color: #000000;
 }
 span.rvts20
 {
  font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
+ color: #007bbf;
 }
 span.rvts21
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
- color: #007bbf;
 }
 span.rvts22
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: #007bbf;
 }
 span.rvts23
 {
  font-size: 12pt;
  font-family: 'Inter';
- color: ;
+ color: #007bbf;
 }
 span.rvts24
 {
  font-size: 12pt;
  font-family: 'Inter';
- font-style: italic;
  color: ;
 }
 span.rvts25
 {
  font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
+ font-style: italic;
  color: ;
 }
 span.rvts26
 {
  font-size: 12pt;
  font-family: 'Inter';
- color: #ff0000;
+ font-weight: bold;
+ color: ;
 }
 span.rvts27
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ color: #ff0000;
+}
+span.rvts28
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #007bbf;
 }
-a.rvts28, span.rvts28
+a.rvts29, span.rvts29
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-a.rvts28:hover { color: #007bbf; }
-span.rvts29
+a.rvts29:hover { color: #007bbf; }
+span.rvts30
 {
  font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #000000;
 }
-span.rvts30
-{
- font-size: 12pt;
- font-family: 'Inter';
- color: #333333;
- background-color: #ffffff;
-}
 span.rvts31
 {
  font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
  color: #333333;
  background-color: #ffffff;
 }
@@ -215,107 +213,108 @@ span.rvts32
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
+ color: #333333;
+ background-color: #ffffff;
 }
 span.rvts33
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
 }
 span.rvts34
 {
  font-size: 12pt;
  font-family: 'Inter';
+}
+span.rvts35
+{
+ font-size: 12pt;
+ font-family: 'Inter';
  font-style: italic;
 }
-a.rvts35, span.rvts35
+a.rvts36, span.rvts36
 {
  font-size: 12pt;
  font-family: 'Inter';
  text-decoration: none;
 }
-span.rvts36
-{
- font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #f0b400;
-}
 span.rvts37
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: #f0b400;
 }
 span.rvts38
 {
  font-size: 12pt;
  font-family: 'Inter';
+ color: #f0b400;
+}
+span.rvts39
+{
+ font-size: 12pt;
+ font-family: 'Inter';
  font-style: italic;
  font-weight: bold;
 }
-a.rvts39, span.rvts39
+a.rvts40, span.rvts40
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: ;
  text-decoration: underline;
 }
-span.rvts40
+span.rvts41
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: ;
 }
-span.rvts41
+span.rvts42
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #ffffee;
 }
-a.rvts42, span.rvts42
+a.rvts43, span.rvts43
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
  text-decoration: none;
 }
-span.rvts43
+span.rvts44
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
  color: ;
 }
-span.rvts44
+span.rvts45
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #000000;
 }
-span.rvts45
+span.rvts46
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
-}
-span.rvts46
-{
- font-size: 14pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #ffffff;
 }
 span.rvts47
 {
  font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
- color: ;
+ color: #ffffff;
 }
 span.rvts48
 {
- font-size: 9pt;
+ font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
  color: ;
@@ -324,71 +323,70 @@ span.rvts49
 {
  font-size: 9pt;
  font-family: 'Inter';
- color: #000000;
+ font-weight: bold;
+ color: ;
 }
 span.rvts50
 {
  font-size: 9pt;
  font-family: 'Inter';
- color: ;
+ color: #000000;
 }
 span.rvts51
 {
- font-size: 7pt;
+ font-size: 9pt;
  font-family: 'Inter';
- color: #000000;
+ color: ;
 }
 span.rvts52
 {
  font-size: 7pt;
  font-family: 'Inter';
+ color: #000000;
+}
+span.rvts53
+{
+ font-size: 7pt;
+ font-family: 'Inter';
  color: ;
 }
-a.rvts53, span.rvts53
+a.rvts54, span.rvts54
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts54
+span.rvts55
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #000000;
 }
-span.rvts55
+span.rvts56
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #ff0000;
 }
-span.rvts56
+span.rvts57
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: ;
 }
-span.rvts57
+span.rvts58
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #ff0000;
 }
-span.rvts58
+span.rvts59
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: #007bbf;
-}
-a.rvts59, span.rvts59
-{
- font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #007bbf;
- text-decoration: underline;
 }
 a.rvts60, span.rvts60
 {
@@ -398,34 +396,42 @@ a.rvts60, span.rvts60
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts61
+a.rvts61, span.rvts61
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ font-weight: bold;
+ color: #007bbf;
+ text-decoration: underline;
+}
+span.rvts62
 {
  font-size: 18pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #000000;
 }
-span.rvts62
+span.rvts63
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-a.rvts63, span.rvts63
+a.rvts64, span.rvts64
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: ;
  text-decoration: none;
 }
-span.rvts64
+span.rvts65
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: #007bbf;
 }
-span.rvts65
+span.rvts66
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -433,19 +439,19 @@ span.rvts65
  font-weight: bold;
  color: ;
 }
-span.rvts66
+span.rvts67
 {
  font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
 }
-span.rvts67
+span.rvts68
 {
  font-size: 13pt;
  font-family: 'Inter';
  font-weight: bold;
 }
-span.rvts68
+span.rvts69
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -453,7 +459,7 @@ span.rvts68
  color: #ffff00;
  background-color: #000000;
 }
-span.rvts69
+span.rvts70
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -461,27 +467,27 @@ span.rvts69
  color: #ff0000;
  background-color: #000000;
 }
-span.rvts70
+span.rvts71
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: #000000;
 }
-span.rvts71
+span.rvts72
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  font-style: italic;
  color: #000000;
 }
-span.rvts72
+span.rvts73
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
  background-color: #f7f7f7;
 }
-span.rvts73
+span.rvts74
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -509,15 +515,7 @@ p,ul,ol /* Paragraph Style */
 {
  text-align: center;
 }
-.rvps4
-{
- margin: 0px 12px 0px 12px;
-}
-.rvps5
-{
- text-align: center;
-}
-.rvps6 /* Paragraph Style */
+.rvps4 /* Paragraph Style */
 {
  text-align: center;
  border-color: #c0c0c0;
@@ -527,6 +525,14 @@ p,ul,ol /* Paragraph Style */
  border-left: none;
  padding: 2px 0px 2px 0px;
  margin: 7px 0px 7px 0px;
+}
+.rvps5
+{
+ margin: 0px 12px 0px 12px;
+}
+.rvps6
+{
+ text-align: center;
 }
 .rvps7
 {
