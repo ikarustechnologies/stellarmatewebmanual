@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>FITS Viewer Tool</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FITS Viewer Tool">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="FITS Viewer Tool" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="The StellarMate Plus Manual" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>The StellarMate Plus Manual</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="FITSViewerTool"
+		  data-hnd-context="122"
+		  data-hnd-title="FITS Viewer Tool"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="KStarsTools.html" title="KStars Tools" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="ObservationPlanner.html" title="Observation Planner" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Command-LinemodeforImageGenerati.html" title="Command-Line mode for Image Generation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>FITS Viewer Tool</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps11"><span class="rvts23">The Flexible Image Transport System (FITS) is the standard format for representing images and data in Astronomy.</span></p>
+<p class="rvps11"><span class="rvts23">The&nbsp;KStars&nbsp;FITS Viewer tool is automatically invoked when new images are recieved from the camera. It is primarily used to view and examine FITS data. It is not designed for editing of FITS Images. To open a FITS file, select&nbsp;Open FITS...&nbsp;from the&nbsp;File&nbsp;menu, or press&nbsp;</span><span class="rvts25">Ctrl</span><span class="rvts23">+</span><span class="rvts25">O</span><span class="rvts23">.</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/fitsviewer.png"></p>
+<p class="rvps11"><span class="rvts23">The above diagram illustrates the FITS Viewer work area and window. The tool provides basic functions for image display. FITS data depth is preserved throughout all processing, open, and save functions. While the tool adhere to the FITS standard, it does not support all possible FITS features:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps11"><span class="rvts23">Support for only&nbsp;</span><span class="rvts24">one</span><span class="rvts23">&nbsp;image per file.</span></li>
+<li class="rvps11"><span class="rvts23">Support for only 2D and 3D data. 1D data are discarded.</span></li>
+</ul>
+<p class="rvps11"><span class="rvts23">The FITS Viewer window is divided into the following regions:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps11"><span class="rvts23">Main Menu</span></li>
+</ol>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li class="rvps11"><span class="rvts23">File</span></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+<li class="rvps11"><span class="rvts23">Standard Open, Save, and Save As actions.</span></li>
+<li class="rvps11"><span class="rvts23">FITS Header: Display FITS header table data.</span></li>
+<li class="rvps11"><span class="rvts23">Debayer: Covert RAW image to RGB.</span></li>
+</ul>
+<li class="rvps11"><span class="rvts23">Edit</span></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+<li class="rvps11"><span class="rvts23">Undo: Undo last action.</span></li>
+<li class="rvps11"><span class="rvts23">Redo: Redo last action.</span></li>
+<li class="rvps11"><span class="rvts23">Copy: Copy image to clipboard.</span></li>
+</ul>
+<li class="rvps11"><span class="rvts23">View</span></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+<li class="rvps11"><span class="rvts23">Zoom Controls: Zoom in, Zoom out, standard Zoom.</span></li>
+<li class="rvps11"><span class="rvts23">Filters: Auto Stretch, Contrast, High Pass, Rotate, Flip.</span></li>
+<li class="rvps11"><span class="rvts23">Mark Stars: Detect and mark stars in the image.</span></li>
+</ul></ul></ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="2" class="rvps11"><span class="rvts23">Main Toolbar</span></li>
+</ol>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li class="rvps11"><span class="rvts23">Open File.</span></li>
+<li class="rvps11"><span class="rvts23">Save File: Save FITS data. Any filters applied to the image will be saved.</span></li>
+<li class="rvps11"><span class="rvts23">Save File As.</span></li>
+<li class="rvps11"><span class="rvts23">Undo last action.</span></li>
+<li class="rvps11"><span class="rvts23">Redo last aciton.</span></li>
+<li class="rvps11"><span class="rvts23">Zoom In: Zoom in up to a maximum of 400%. For large images thie operation can be very memory intensive. Turn on Limited Resource Mode to save memory.</span></li>
+<li class="rvps11"><span class="rvts23">Zoom Out.</span></li>
+<li class="rvps11"><span class="rvts23">View in Actual Size.</span></li>
+<li class="rvps11"><span class="rvts23">Zoom to fit.</span></li>
+<li class="rvps11"><span class="rvts23">Rotate Right.</span></li>
+<li class="rvps11"><span class="rvts23">Rotate Left.</span></li>
+<li class="rvps11"><span class="rvts23">Flip Horizontal.</span></li>
+<li class="rvps11"><span class="rvts23">Flip Vertical.</span></li>
+<li class="rvps11"><span class="rvts23">Show Crosshairs: Toggles crosshairs in the center of the image.</span></li>
+<li class="rvps11"><span class="rvts23">Show Pixel Gridlines: Toggles pixel grid.</span></li>
+<li class="rvps11"><span class="rvts23">Show Equatorial Guidelines: Toggles Equatorial Grid if FITS contains a valid WCS header.</span></li>
+<li class="rvps11"><span class="rvts23">Show Objects in Image: Identifies objects such as stars, galaxies, and nebulae within the image.</span></li>
+<li class="rvps11"><span class="rvts23">Center Telescope: Toggle Center Telescope mode. When active and if the image contains a valid WCS header, clicking any where in the image</span></li>
+<li class="rvps11"><span class="rvts23">Histogram: Toggle histogram view in the side panel.</span></li>
+<li class="rvps11"><span class="rvts23">Statistics: Toggle FITS Statistic view in the side panel.</span></li>
+<li class="rvps11"><span class="rvts23">Auto Stretch: Apply Auto Stretch filter to the image.</span></li>
+</ul></ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="3" class="rvps11"><span class="rvts23">Side Panel: The side panel can be opened by dragging the separator to the right. When dragged to the left, the side panel can also be closed.</span></li>
+</ol>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li class="rvps11"><span class="rvts23">Statistcs: Displays image statistics including Minimum, Maximum, Average, and Median values.</span></li>
+<li class="rvps11"><span class="rvts23">Histogram: Displays image histogram with controls to adjust the minimum and maximum values for each channel. Both linear and logarithmic scalings are available to apply to the image.</span></li>
+<li class="rvps11"><span class="rvts23">FITS Header: Displays a table for FITS header keywords, values, and comments.</span></li>
+<li class="rvps11"><span class="rvts23">Recent Images: Displays recently opened images. Clicking on any image will load it.</span></li>
+</ul></ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="4" class="rvps11"><span class="rvts23">Image Display Area. Hovering over the image will update the status bar values accordingly.</span></li>
+<li value="5" class="rvps11"><span class="rvts23">Status Bar: From right to left, the following status indicators are available:</span></li>
+</ol>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li class="rvps11"><span class="rvts23">Loading Indicator: The LED becomes yellow when an image is getting loaded and turns green after loading is successfully done. If there are problems with loading the image, it turns red.</span></li>
+<li class="rvps11"><span class="rvts23">Resolution: Image resolution in pixels.</span></li>
+<li class="rvps11"><span class="rvts23">Cartesian Coordinates: Displays and updates the current mouse position as you hover over the image. It include the X and Y position in addition to the current value.</span></li>
+<li class="rvps11"><span class="rvts23">Equatorial Coordinates: If the image contains a valid WCS header, the J2000 Right Ascension (RA) and declination (DE) values are displayed.</span></li>
+</ul></ul>
+<p class="rvps11"><span class="rvts23">In addition to image display, the viewer can process World-Coordinate-System (WCS) header if present within the FITS file and provides useful information regarding the objects found within the image, equatorial grid overlay, popup menu, and the ability to slew the mount (if connected) to any point within the image.</span></p>
+<p class="rvps11"><span class="rvts23">Several filters can be applied to enhance the image include auto stretch and high contrast. Depending on the image size, these operations can take a few seconds to complete. The bottom status bar displays the current pixel value and current X &amp; Y coordinates of the mouse pointer within the image. Furthermore, it includes the current zoom level and the image resolution.</span></p>
+<p class="rvps11"><span class="rvts23">When loading a bayered image, the viewer can automatically debayer the image if&nbsp;</span><span class="rvts24">Auto Debayer</span><span class="rvts23">&nbsp;is checked in the FITS Settings. The debayering operation fetches the bayer pattern (e.g.&nbsp;RGGB) from the FITS header. If none exists, you can alter the debayering algorithm and pattern from the&nbsp;File&nbsp;menu or by using the&nbsp;</span><span class="rvts25">Ctrl</span><span class="rvts23">+</span><span class="rvts25">D</span><span class="rvts23">&nbsp;shortcut.</span></p>
+<p class="rvps11"><span class="rvts23">Since operations such as auto debayering and auto WCS are computationally expensive and stress the processor on low-powered embedded devices, you can toggle their behavior in&nbsp;</span><a class="rvts16" href="FITS.html">KStars&nbsp;Settings FITS page</a><span class="rvts23">.</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/fits_settings.png"></p>
+<p class="rvps11"><span class="rvts23">Hovering over any option shall display a detailed tooltip that explains its function.</span></p>
+<h4 class="rvps29"><a name="FITS-VIEWER-FEATURES"></a><span class="rvts0"><span class="rvts25">Features</span></span></h4>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps11"><span class="rvts23">Support for 8, 16, 32, IEEE-32, and IEEE-64 bits formats.</span></li>
+<li class="rvps11"><span class="rvts23">Support Color FITS images (3D Cubes) and Bayered FITS images.</span></li>
+<li class="rvps11"><span class="rvts23">Histogram with linear, logarithmic, and square-root scales.</span></li>
+<li class="rvps11"><span class="rvts23">Brightness/Contrast controls.</span></li>
+<li class="rvps11"><span class="rvts23">Pan and Zoom.</span></li>
+<li class="rvps11"><span class="rvts23">Auto levels.</span></li>
+<li class="rvps11"><span class="rvts23">Statistics.</span></li>
+<li class="rvps11"><span class="rvts23">Rectangular and Equatorial Grids (if WCS info is present).</span></li>
+<li class="rvps11"><span class="rvts23">Detection and highlight of stars.</span></li>
+<li class="rvps11"><span class="rvts23">FITS header query.</span></li>
+<li class="rvps11"><span class="rvts23">Undo/Redo.</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
+<li class="rvps2"><span class="rvts23">Histogram</span></li>
+<li class="rvps3"><img alt="" style="padding : 1px;" src="lib/fitsviewer_histogram.png"></li>
+</ul>
+<p class="rvps11"><span class="rvts23">Displays multi-channel FITS histogram. The user can rescale the image by optionally defining an upper and lower limit for the cutoff region. The rescaling operation (linear, logarithmic, or square-root) may then be applied to the region enclosed by the upper and lower limits.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
+<li class="rvps2"><span class="rvts23">FITS Header</span></li>
+<li class="rvps11"><span class="rvts23">Displays a read-only table listing FITS header keywords and values.</span></li>
+<li class="rvps2"><span class="rvts23">Statistics</span></li>
+<li class="rvps11"><span class="rvts23">Provides simple statistics for minimum and maximum pixel values and their respective locations. FITS depth, dimension, mean, and standard deviation.</span></li>
+</ul>
+<h4 class="rvps29"><a name="FITS-VIEWER-EMBEDDED"></a><span class="rvts0"><span class="rvts25">Embedded FITS Viewer</span></span></h4>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/fitsviewer_embedded.png"></p>
+<p class="rvps11"><span class="rvts23">In Ekos&nbsp;</span><a class="rvts16" href="Focus.html">Focus</a><span class="rvts23">,&nbsp;</span><a class="rvts16" href="Guide1.html">Guide</a><span class="rvts23">, and&nbsp;</span><a class="rvts16" href="Align.html">Align</a><span class="rvts23">&nbsp;modules, captured images are displayed in the embedded FITS Viewer. The embedded viewer includes a&nbsp;</span><span class="rvts24">floating bar</span><span class="rvts23">&nbsp;that can be used to perform several functions:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps11"><span class="rvts23">Zoom Out</span></li>
+<li class="rvps11"><span class="rvts23">Zoom In</span></li>
+<li class="rvps11"><span class="rvts23">Default Zoom</span></li>
+<li class="rvps11"><span class="rvts23">Zoom To Fit</span></li>
+<li class="rvps11"><span class="rvts23">Toggle Cross Hairs</span></li>
+<li class="rvps11"><span class="rvts23">Toggle Pixel Gridlines</span></li>
+<li class="rvps11"><span class="rvts23">Toggle Detected Stars: Highlight detected stars with red circles.</span></li>
+<li class="rvps11"><span class="rvts23">Star Profile: View detailed 3D star profile.</span></li>
+</ul>
+<p class="rvps11"><span class="rvts23">The floating bar is automatically hidden once the mouse leaves the embedded viewer area. You can use the mouse to pan and zoom just like the standalone FITS Viewer tool. The green tracking box can be used to select a specific star or region within the image, for example, to select a guide star.</span></p>
+<h4 class="rvps29"><a name="FITS-VIEWER-3D-STAR-PROFILE"></a><span class="rvts0"><span class="rvts25">3D Star Profile &amp; Data Visualization Tool</span></span></h4>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/star_profile_main.png"></p>
+<p class="rvps11"><span class="rvts23">The 3D data visualization tool can plot 3D graphs of the selected region of the image. This is particularly useful for astrophotographers who want to visualize the profile of a star they are considering focusing or guiding on. For scientists, it enables them to examine a cross-section of the data to understand the relative brightness of different objects in the image. Additionally, it empowers imagers who want to visually see what is going on in their data collection in a new way.</span></p>
+<p class="rvps11"><span class="rvts23">To use the new feature, the user needs to select the&nbsp;View Star Profile&nbsp;icon in one of the Ekos Module Views, or in the FITS Viewer. Then, the region selected in the green tracking box will show up in the 3D graph as shown above. The user will then have one of the following toolbars at the bottom.</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/star_profile_toolbar1.png"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/star_profile_toolbar2.png"></p>
+<p class="rvps11"><span class="rvts23">At the far left, the sample size combo box will let the user select the size of the image crop shown in the graph. This option is only available in the&nbsp;Summary Screen, the&nbsp;</span><a class="rvts16" href="Align.html">Align Module</a><span class="rvts23">, and the FITS Viewer. The second combo box lets the user control whether they are selecting an individual item, or a row, or a column of pixels. The slice button will be enabled if the user selects&nbsp;Row&nbsp;or&nbsp;Column. It will put the graph in slice mode so that the user can see a cross-section view of the image. Third, is a checkbox that will open up two sliders that will let the user drag the slider to change the selection. This is extremely useful in the slide mode to change the selected point and to move the cross section around the graph. It is also useful in the normal view when in&nbsp;Explore Mode&nbsp;so that the user can zoom around the image examining the pixels.</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/star_profile_examine_pixels.png"></p>
+<p class="rvps11"><span class="rvts23">Then the user has the&nbsp;Zoom To&nbsp;combo box, which the user can use to zoom the graph to different preset locations. Next is the combo box that lets the user select the color scheme of the graph. Then are the HFR and the Peak checkboxes, which will both turn on the HFR and Peak labels on each found star in the image, but will also display one of them at the bottom of the screen. And finally comes the Scaling checkbox, which enables the&nbsp;Scaling&nbsp;Side Panel. There are three sliders in that panel, one to control the minimum value displayed on the graph or&nbsp;“black point”, one to control the maximum value displayed in the graph or the&nbsp;“white point”, and a third that is disabled by default that lets the user control the cutoff value for data displayed on the graph.</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/star_profile_vertical.png"></p>
+<p class="rvps11"><span class="rvts23">This third slider is very useful to get really big peaks out of the way so you can study the finer details in the image. There is a checkbox at the top to enable/disable the cutoff slider. And finally at the bottom of the sliders is the&nbsp;Auto scale&nbsp;button. This will auto scale the sliders as you sample different areas in the image. It will not only optimize the display of the data but will also affect the minimum and maximum points of the slider. If you disable auto scale, then as you sample different parts of the image, they will be displayed at the same scale. A particularly useful way to use this is to select an area of your image using auto scale, tweak the min, max, and cutoff sliders to your liking, and then turn off the auto scale feature to explore other areas of the graph.</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/star_profile_final.png"></p>
+<p></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020 by Ikarus Technologies. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.1/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

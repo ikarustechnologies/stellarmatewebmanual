@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Scheduler</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Scheduler">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Scheduler" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="The StellarMate Plus Manual" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>The StellarMate Plus Manual</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Scheduler"
+		  data-hnd-context="131"
+		  data-hnd-title="Scheduler"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li><li><a href="Ekos2.html">Ekos</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Setup.html" title="Setup" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Capture.html" title="Capture" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Scheduler</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_scheduler.png"></p>
+<h5 class="rvps36"><a name="EKOS-SCHEDULER-WEATHER-MONITORING"></a><span class="rvts0"><span class="rvts25">Introduction</span></span></h5>
+<p class="rvps11"><span class="rvts23">Ekos Scheduler is an indispensable arsenal in building your robotic observatory. A Robotic observatory is an observatory composed of several subsystems that are orchestrated together to achieve a set of scientific objectives without human intervention. It is the only Ekos module that does not require Ekos to be started as it is utilized to&nbsp;</span><span class="rvts24">start</span><span class="rvts23">&nbsp;and&nbsp;</span><span class="rvts24">stop</span><span class="rvts23">&nbsp;Ekos. It is designed to be straightforward and intuitive. However, the scheduler should only be used after you mastered Ekos and knows all the quirks of your equipment. Since the complete process is automated, including focus, guiding, and meridian flip, all equipment should be thoroughly used with Ekos and all their parameters and settings adjusted to achieve the best result.</span></p>
+<p class="rvps11"><span class="rvts23">With Ekos, the user can utilize the powerful sequence queue to image batches of images for a particular target. In simple setups, the user is expected to focus the CCD, align the mount, frame the target, and start guiding before initiating the capture process. For more complex observatory environments, there are usually predefined custom procedures to be executed to prepare the observatory for imaging, and another set of procedures on shutdown. The user may plan to image one or more targets during the night and expects data to be ready by morning. In&nbsp;KStars, tools such as the&nbsp;</span><a class="rvts16" href="ObservationPlanner.html">Observation Planner</a><span class="rvts23">&nbsp;and&nbsp;</span><a class="rvts16" href="WhatsUpTonightTool.html">What's up Tonight</a><span class="rvts23">&nbsp;help the user in selecting candidates for imaging. After selecting the desired candidates, the user can add them to the Ekos Scheduler list for evaluation. The user may also add the targets directly in Ekos scheduler or select a FITS file of a previous image.</span></p>
+<h5 class="rvps36"><a name="EKOS-SCHEDULER-ABORTED-JOB-MANAGEMENT"></a><span class="rvts0"><span class="rvts25">Settings</span></span></h5>
+<p class="rvps11"><span class="rvts23">Ekos Scheduler provides a simple interface to aid the user in setting the conditions and constraints required for an observation job. Each observation job is composed of the following:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps11"><span class="rvts23">Target name and coordinates: Select target from the&nbsp;</span><a class="rvts16" href="ObjectsintheSky.html#FINDOBJECTS">Find Dialog</a><span class="rvts23">&nbsp;or&nbsp;Add&nbsp;it from&nbsp;</span><a class="rvts16" href="ObservationPlanner.html">Observation Planner</a><span class="rvts23">. You can also enter a custom name.</span></li>
+<li class="rvps11"><span class="rvts23">Optional&nbsp;FITS File: If a FITS file is specified, the astrometry solver shall solve the file and use the central RA/DEC as the target coordinates.</span></li>
+<li class="rvps11"><span class="rvts23">Sequence&nbsp;file: The sequence file is constructed in the Ekos&nbsp;</span><a class="rvts16" href="Capture.html">Capture Module</a><span class="rvts23">. It contains the number of images to capture, filters, temperature settings, prefixes, download directory,&nbsp;etc.</span></li>
+<li class="rvps11"><span class="rvts23">Priority: Set job priority in the range of 1 to 20 where 1 designates the highest priority and 20 the lowest priority. Priority is applied in calculating the weight used to select the next target to image.</span></li>
+<li class="rvps11"><span class="rvts23">Profile: Select which equipment profile to utilize when starting Ekos. If Ekos &amp; INDI are already started and online, this selection is ignored.</span></li>
+<li class="rvps11"><span class="rvts23">Steps: The user selects which Ekos modules should be utilized in the observation job execution workflow.</span></li>
+<li class="rvps11"><span class="rvts23">Startup Conditions: Conditions that must be met&nbsp;</span><span class="rvts25">before</span><span class="rvts23">&nbsp;the observation job is started. Currently, the user may select to start as soon as possible,&nbsp;ASAP, or when the target is near or past culmination, or at a specific time.</span></li>
+<li class="rvps11"><span class="rvts23">Constraints: Constraints are conditions that must be met&nbsp;</span><span class="rvts25">at all times</span><span class="rvts23">&nbsp;during the observation job execution process. These include minimum target altitude, minimum moon separation, twilight observation, and weather monitoring.</span></li>
+<li class="rvps11"><span class="rvts23">Completion Conditions: Conditions that trigger completion of the observation job. The default selection is to simply mark the observation job as complete once the sequence process is complete. Additional conditions enable the user to repeat the sequence process indefinitely or up until a specific time.</span></li>
+</ul>
+<p class="rvps11"><span class="rvts23">You must select the&nbsp;Target&nbsp;and&nbsp;Sequence&nbsp;before you can add a job to the Scheduler. When the scheduler starts, it evaluates all jobs in accord to the conditions and constraints specified and attempts to select the best job to execute. Selection of the job depends on a simple heuristic algorithm that scores each job given the conditions and constraints, each of which is weighted accordingly. If two targets have identical conditions and constraints, usually the higher priority target followed by higher altitude target is selected for execution. If no candidates are available at the current time, the scheduler goes into sleep mode and wakes up when the next job is ready for execution.</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/scheduler_planner.png"></p>
+<p class="rvps11"><span class="rvts23">The description above only tackles the&nbsp;</span><span class="rvts25">Data Acquisition</span><span class="rvts23">&nbsp;stage of the observatory workflow. The overall procedure typically utilized in an observatory can be summarized in three primary stages:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps11"><span class="rvts23">Startup</span></li>
+<li value="2" class="rvps11"><span class="rvts23">Data Acquisition (including preprocessing and storage)</span></li>
+<li value="3" class="rvps11"><span class="rvts23">Shutdown</span></li>
+</ol>
+<h5 class="rvps36"><a name="EKOS-SCHEDULER-STARTUP-AND-SHUTDOWN-SCRIPTS"></a><span class="rvts0"><span class="rvts25">Startup Procedure</span></span></h5>
+<p class="rvps11"><span class="rvts23">Startup procedure is unique to each observatory but may include:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps11"><span class="rvts23">Turning on power to equipment</span></li>
+<li class="rvps11"><span class="rvts23">Running safety/sanity checks</span></li>
+<li class="rvps11"><span class="rvts23">Checking weather conditions</span></li>
+<li class="rvps11"><span class="rvts23">Turning off light</span></li>
+<li class="rvps11"><span class="rvts23">Fan/Light control</span></li>
+<li class="rvps11"><span class="rvts23">Unparking dome</span></li>
+<li class="rvps11"><span class="rvts23">Unparking mount</span></li>
+<li class="rvps11"><span class="rvts23">etc.</span></li>
+</ul>
+<p class="rvps11"><span class="rvts23">Ekos Scheduler only initiates the startup procedure once the startup time for the first observation job is close (default&nbsp;</span><span class="rvts24">lead</span><span class="rvts23">&nbsp;time is 5 minutes before&nbsp;</span><span class="rvts24">startup</span><span class="rvts23">&nbsp;time). Once the startup procedure is completed successfully, the scheduler picks the observation job target and starts the sequence process. If a startup script is specified, it shall be executed first.</span></p>
+<h5 class="rvps36"><a name="EKOS-SCHEDULER-MOSAIC-WIZARD"></a><span class="rvts0"><span class="rvts25">Data Acquisition</span></span></h5>
+<p class="rvps11"><span class="rvts23">Depending the on the user selection, the typical workflow proceeds as follows:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps11"><span class="rvts23">Slew mount to target. If a FITS file was specified, it first solves the files and slew to the file coordinates.</span></li>
+<li class="rvps11"><span class="rvts23">Auto-focus target. The autofocus process automatically selects the best star in the frame and runs the autofocus algorithm against it.</span></li>
+<li class="rvps11"><span class="rvts23">Perform plate solving, sync mount, and slew to target coordinates.</span></li>
+<li class="rvps11"><span class="rvts23">Perform post-alignment focusing since the frame might have moved during the plate solving process.</span></li>
+<li class="rvps11"><span class="rvts23">Perform calibration and start auto-guiding: The calibration process automatically selects the best guide star, performs calibration, and starts the autoguide process.</span></li>
+<li class="rvps11"><span class="rvts23">Load the sequence file in the&nbsp;</span><a class="rvts16" href="Capture.html">Capture Module</a><span class="rvts23">&nbsp;and start the imaging process.</span></li>
+</ul>
+<h5 class="rvps36"><a name="EKOS-TUTORIALS"></a><span class="rvts0"><span class="rvts25">Shutdown</span></span></h5>
+<p class="rvps11"><span class="rvts23">Once the observation job is completed successfully, the scheduler selects the next target. If the next target scheduled time is not due yet, the mount is parked until the target is ready. Furthermore, if the next scheduled target is not due for a user-configurable time limit, the scheduler performs a&nbsp;</span><span class="rvts24">preemptive</span><span class="rvts23">&nbsp;shutdown to preserve resources and performs the startup procedure again when the target is due.</span></p>
+<p class="rvps11"><span class="rvts23">If an unrecoverable error occurs, the observatory initiates shutdown procedure. If there is a shutdown script, it will be executed last.</span></p>
+<p class="rvps11"><span class="rvts23">The following video demonstrates an earlier version of the scheduler, but the basic principles still apply today:</span></p>
+<p class="rvps18"><a class="rvts16" href="https://www.youtube.com/watch?v=v8vIXD1kois">https://www.youtube.com/watch?v=v8vIXD1kois</a></p>
+<h5 class="rvps36"><a name="IDM7319"></a><span class="rvts0"><span class="rvts25">Weather Monitoring</span></span></h5>
+<p class="rvps11"><span class="rvts23">Another critical feature of any remotely operated robotic observatory is weather monitoring. For weather updates, Ekos relies on the selected INDI weather driver to continuously monitor the weather conditions. For simplicity sake, the weather conditions can be summed in three states:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps11"><span class="rvts25">Ok</span><span class="rvts23">: Weather conditions are clear and optimal for imaging.</span></li>
+<li value="2" class="rvps11"><span class="rvts25">Warning</span><span class="rvts23">: Weather conditions are not clear, seeing is subpar, or partially obstructed and not suitable for imaging. Any further imaging process is suspended until the weather improves. Warning weather status does not pose any danger to the observatory equipment so the observatory is kept operational. The exact behavior to take under Warning status can be configured.</span></li>
+<li value="3" class="rvps11"><span class="rvts25">Alert</span><span class="rvts23">: Weather conditions are detrimental to the observatory safety and shutdown must be initiated as soon as possible.</span></li>
+</ol>
+<h5 class="rvps36"><a name="EKOS-TUTORIALS-VIEWER"></a><span class="rvts0"><span class="rvts25">Aborted Job Management</span></span></h5>
+<p class="rvps11"><span class="rvts23">Define what should happen when a job steps into an error or aborts:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps11"><span class="rvts23">Don't re-schedule (None): Don't restart the job in case of an error or an abort.</span></li>
+<li class="rvps11"><span class="rvts23">Re-schedule after all terminated (Queue): If a job gets aborted, the scheduler will only re-schedule it if when all jobs are finished or aborted. If this is the case, the scheduler re-schedules all aborted jobs and sleeps for the given delay.</span></li>
+<li class="rvps11"><span class="rvts23">Re-schedule immediately (Immediate): As soon as a job gets aborted, the scheduler will re-schedule it and waits the given delay.</span></li>
+</ul>
+<p class="rvps11"><span class="rvts23">If the option for re-scheduling errors is selected, errors are handled like aborts. Otherwise, jobs that step into an error are never re-scheduled.</span></p>
+<h5 class="rvps36"><span class="rvts0"><span class="rvts25">Startup &amp; Shutdown Scripts</span></span></h5>
+<p class="rvps11"><span class="rvts23">Due to the uniqueness of each observatory, Ekos enables the user to select startup and shutdown scripts. The scripts take care of any necessary procedures that must take place on startup and shutdown stages. On startup, Ekos executes the startup scripts and only proceeds to the remainder of the startup procedure (unpark dome/unpark mount) if the script completes successfully. Conversely, the shutdown procedure begins with parking the mount &amp; dome before executing the shutdown script as the final procedure.</span></p>
+<p class="rvps11"><span class="rvts23">Startup and shutdown scripts can be written any language that can be executed on the local machine. It must return 0 to report success, any other exist value is considered an error indicator. The script's standard output is also directed to Ekos logger window. The following is an sample demo startup script in Python:</span></p>
+<p class="rvps2"><span class="rvts56">#!/usr/bin/env python</span><br/><span class="rvts56"># -*- coding: utf-8 -*-</span><br/><span class="rvts56">import os</span><br/><span class="rvts56">import time</span><br/><span class="rvts56">import sys</span><br/><span class="rvts56">print "Turning on observatory equipment..."</span><br/><span class="rvts56">sys.stdout.flush()</span><br/><span class="rvts56">time.sleep(5)</span><br/><span class="rvts56">print "Checking safety switches..."</span><br/><span class="rvts56">sys.stdout.flush()</span><br/><span class="rvts56">time.sleep(5)</span><br/><span class="rvts56">print "All systems are GO"</span><br/><span class="rvts56">sys.stdout.flush()</span><br/><span class="rvts56">exit(0)</span><br/><span class="rvts23">&nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="rvps11"><span class="rvts23">The startup and shutdown scripts must be&nbsp;</span><span class="rvts24">executable</span><span class="rvts23">&nbsp;in order for Ekos to invoke them (e.g.&nbsp;use&nbsp;</span><span class="rvts43">chmod +x startup_script.py</span><span class="rvts23">&nbsp;to mark the script as executable). Ekos Scheduler enables truly simple robotic operation without the need of any human intervention in any step of the process. Without human presence, it becomes increasingly critical to gracefully recover from failures in any stage of the observation run. Using&nbsp;Plasma&nbsp;notifications, the user can configure audible alarms and email notifications for the various events in the scheduler.</span></p>
+<h5 class="rvps36"><span class="rvts0"><span class="rvts25">Mosaic Wizard</span></span></h5>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/mosaic_wizard.png"></p>
+<p class="rvps11"><span class="rvts23">Hubble-like super wide field images of&nbsp;</span><a class="rvts16" href="http://billsnyderastrophotography.com/?page_id=3275">galaxies</a><span class="rvts23">&nbsp;and nebulae are truly awe-inspiring, and while it takes great skills to obtain such images and process them; many notable names in the field of astrophotography employ gear that is not&nbsp;</span><span class="rvts24">vastly</span><span class="rvts23">&nbsp;different from yours or mine. I emphasize&nbsp;</span><span class="rvts24">vastly</span><span class="rvts23">&nbsp;because some do indeed have impressive equipment and dedicated observatories worth tens of the thousands of dollars. Nevertheless, many amateurs can obtain stellar wide-field images by combining smaller images into a single grand mosaic.</span></p>
+<p class="rvps11"><span class="rvts23">We are often limited by our camera+telescope Field of View (FOV). By increasing FOV by means of a focal reducer or a shorter tube, we gain a larger sky coverage at the expense of spatial resolution. At the same time, many attractive wide-field targets span multiple FOVs across the sky. Without any changes to your astrophotography gear, it is possible to create a super mosaic image&nbsp;</span><span class="rvts24">stitched</span><span class="rvts23">&nbsp;together from several smaller images. There are two major steps to accomplish a super mosaic image:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps11"><span class="rvts23">Capture multiple images spanning the target with some overlap between images. The overlap is necessary to enable the processing software from aligning and joining the sub-images.</span></li>
+<li value="2" class="rvps11"><span class="rvts23">Process the images and&nbsp;</span><span class="rvts24">stitch</span><span class="rvts23">&nbsp;them into a super mosaic image.</span></li>
+</ol>
+<p class="rvps11"><span class="rvts23">The 2nd step is handled by image processing applications such as&nbsp;</span><a class="rvts16" href="https://pixinsight.com">PixInsight</a><span class="rvts23">, among others, and will not be the topic of discussion here. The first step can be accomplished in Ekos Scheduler where it creates a mosaic suitable for your equipment and in accordance with the desired field of view. Not only Ekos creates the mosaic panels for your target, but it also constructs the corresponding observatory jobs required to capture all the images. This greatly facilitates the logistics of capturing many images with different filters and calibration frames across a wide area of the sky.</span></p>
+<p class="rvps11"><span class="rvts23">Before starting the&nbsp;Mosaic Job Creator&nbsp;in Ekos Scheduler, you need to select a target and a sequence file. The Sequence File contains all the information necessary to capture an image including exposure time, filters, temperature setting,&nbsp;etc.&nbsp;Start the Mosaic Job Creator by clicking on the icon next to the&nbsp;Find&nbsp;button in Ekos Module.</span></p>
+<p class="rvps11"><span class="rvts23">On first use, you need to enter your equipment settings including your telescope focal length in addition to camera's width, height, and pixel dimensions. Finally, you need to enter the rotation of the camera with respect to north or the position angle. If you don't know this value, start Ekos and slew to your desired target then use the&nbsp;</span><a class="rvts16" href="Align.html">Align module</a><span class="rvts23">&nbsp;to solve the image and obtain the position angle.</span></p>
+<p class="rvps11"><span class="rvts23">Next, enter the desired number of horizontal and vertical panels (e.g.&nbsp;2x2, 3x3,&nbsp;etc.) and then click&nbsp;Update. The target FOV shall be calculated given the number of panels and your camera's FOV and the mosaic overlap shall be displayed. By default, the percentage of the overlap among images is 5%, but you can change this value to your desired value. You can also move the complete mosaic structure around to fine tune the position of the mosaic panels. When satisfied, click&nbsp;Create Jobs&nbsp;and Ekos shall create an observation job and a corresponding customized sequence file for each panel. All the jobs shall be saved to an Ekos Scheduler List (.esl) file that you can load on any suitable observing night and it will pick off where you left. Before starting the&nbsp;Mosaic Job Creator, check that all the observation job conditions, constraints, and startup/shutdown procedures are as per your requirements since these settings shall be copied to all the jobs generated by the Mosaic tool.</span></p>
+<p class="rvps11"><span class="rvts23">With Ekos Scheduler, multi-night imaging is greatly facilitated and creating super mosaics has never been so easy.</span></p>
+<h4 class="rvps29"><span class="rvts0"><span class="rvts47">Ekos Tutorials</span></span></h4>
+<h4 class="rvps29"><span class="rvts0"><span class="rvts25">Viewer</span></span></h4>
+<p class="rvps11"><span class="rvts23">StellarMate is shipped with a VNC Server. This enables you to access the whole StellarMate desktop remotely. To connect to VNC, you can either use a Desktop/Mobile VNC Client, or simply via any browser.</span></p>
+<p class="rvps11"><span class="rvts23">The VNC address is:&nbsp;</span><span class="rvts18">http://stellarmate_hostname:6080/vnc.html</span></p>
+<p class="rvps11"><span class="rvts23">Where&nbsp;</span><span class="rvts24">stellarmate_hostname</span><span class="rvts23">&nbsp;is the actual hostname (or IP address) of your unit and 6080 is the port. If you do not know the unit hostname, you can find the hostname in your StellarMate App.</span></p>
+<p class="rvps11"><span class="rvts23">You can use&nbsp;</span><a class="rvts16" href="https://www.realvnc.com/download/viewer/">Real VNC</a><span class="rvts23">&nbsp;which is available on all platforms to access stellarmate.</span></p>
+<p class="rvps11"><span class="rvts23">Once you access StellarMate, you can use it like any full-fledged computer. The default username is&nbsp;</span><span class="rvts25">stellarmate</span><span class="rvts23">&nbsp;and the default password is&nbsp;</span><span class="rvts25">smate</span><span class="rvts23">.</span></p>
+<p></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020 by Ikarus Technologies. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.1/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
