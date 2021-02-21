@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -174,23 +189,23 @@
 <p class="rvps2"><span class="rvts24"><br/></span></p>
 <p class="rvps3"><img width="571" height="562" alt="" style="padding : 1px;" src="lib/ekos_analyze.png"></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">The Analyze Module records and displays what happened in an imaging session. That is, it does not control any if your imaging, but rather reviews what occurred. Sessions are stored in an </span><span class="rvts24">analyze</span><span class="rvts6">&nbsp;folder, a sister folder to the main logging folder. The </span><span class="rvts24">.analyze</span><span class="rvts6">&nbsp;files written there can be loaded into the </span><span class="rvts24">Analyze</span><span class="rvts6">&nbsp;tab to be viewed. </span><span class="rvts24">Analyze</span><span class="rvts6">&nbsp;also can display data from the current imaging session.</span></p>
+<p class="rvps2"><span class="rvts6">The Analyze Module records and displays what happened in an imaging session. That is, it does not control any if your imaging, but rather reviews what occurred. Sessions are stored in an </span><span class="rvts24">analyze</span><span class="rvts6"> folder, a sister folder to the main logging folder. The </span><span class="rvts24">.analyze</span><span class="rvts6"> files written there can be loaded into the </span><span class="rvts24">Analyze</span><span class="rvts6"> tab to be viewed. </span><span class="rvts24">Analyze</span><span class="rvts6"> also can display data from the current imaging session.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">There are two main graphs, </span><span class="rvts24">Timeline</span><span class="rvts6">&nbsp;and Stats. They are coordinated&amp;mdash;they always display the same time interval from the Ekos session, though the x-axis of the </span><span class="rvts24">Timeline</span><span class="rvts6">&nbsp;shows seconds elapsed from the start of the log, and </span><span class="rvts24">Stats</span><span class="rvts6">&nbsp;shows clock time. The x-axis can be zoomed in and out with the </span><span class="rvts24">+/-</span><span class="rvts6">&nbsp;button, mouse wheel, as well as with standard keyboard shortcuts (eg. zoom-in == </span><span class="rvts24">Ctrl +</span><span class="rvts6">) The x-axis can be panned with the scroll bar as well as with the left and right arrow keys. You can view your current imaging session, or review old sessions by loading </span><span class="rvts24">.analyze</span><span class="rvts6">&nbsp;files using the </span><span class="rvts24">Input</span><span class="rvts6">&nbsp;dropdown. Checking </span><span class="rvts24">Full</span><span class="rvts6">&nbsp;</span><span class="rvts24">Width</span><span class="rvts6">&nbsp;displays all the data, and </span><span class="rvts24">Latest</span><span class="rvts6">&nbsp;displays the most recent data (you can control the width by zooming).</span></p>
+<p class="rvps2"><span class="rvts6">There are two main graphs, </span><span class="rvts24">Timeline</span><span class="rvts6"> and Stats. They are coordinated&amp;mdash;they always display the same time interval from the Ekos session, though the x-axis of the </span><span class="rvts24">Timeline</span><span class="rvts6"> shows seconds elapsed from the start of the log, and </span><span class="rvts24">Stats</span><span class="rvts6"> shows clock time. The x-axis can be zoomed in and out with the </span><span class="rvts24">+/-</span><span class="rvts6"> button, mouse wheel, as well as with standard keyboard shortcuts (eg. zoom-in == </span><span class="rvts24">Ctrl +</span><span class="rvts6">) The x-axis can be panned with the scroll bar as well as with the left and right arrow keys. You can view your current imaging session, or review old sessions by loading </span><span class="rvts24">.analyze</span><span class="rvts6"> files using the </span><span class="rvts24">Input</span><span class="rvts6"> dropdown. Checking </span><span class="rvts24">Full</span><span class="rvts6"> </span><span class="rvts24">Width</span><span class="rvts6"> displays all the data, and </span><span class="rvts24">Latest</span><span class="rvts6"> displays the most recent data (you can control the width by zooming).</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Timeline</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Timeline shows the major Ekos processes, and when they were active. For instance, the </span><span class="rvts24">Capture</span><span class="rvts6">&nbsp;line shows when images were taken (green sections) and when imaging was aborted (red sections). Clicking on a green section gives information about that image, and double clicking on one brings up the image taken then in a fitsviewer, if it is available.</span></p>
+<p class="rvps2"><span class="rvts6">Timeline shows the major Ekos processes, and when they were active. For instance, the </span><span class="rvts24">Capture</span><span class="rvts6"> line shows when images were taken (green sections) and when imaging was aborted (red sections). Clicking on a green section gives information about that image, and double clicking on one brings up the image taken then in a fitsviewer, if it is available.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">If you have moved your captured images, you can set </span><span class="rvts24">alternate</span><span class="rvts6">&nbsp;</span><span class="rvts24">directory</span><span class="rvts6">&nbsp;in the input menu to a directory which is the base of part of the original file path.</span></p>
+<p class="rvps2"><span class="rvts6">If you have moved your captured images, you can set </span><span class="rvts24">alternate</span><span class="rvts6"> </span><span class="rvts24">directory</span><span class="rvts6"> in the input menu to a directory which is the base of part of the original file path.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Clicking on a </span><span class="rvts24">Focus</span><span class="rvts6">&nbsp;segment shows focus session information and displays up the position vs HFR measurements from that session. Clicking on a </span><span class="rvts24">Guider</span><span class="rvts6">&nbsp;segment shows a drift plot from that session, (if it's guiding) and the session's RMS statistics. Other timelines show status information when clicked.</span></p>
+<p class="rvps2"><span class="rvts6">Clicking on a </span><span class="rvts24">Focus</span><span class="rvts6"> segment shows focus session information and displays up the position vs HFR measurements from that session. Clicking on a </span><span class="rvts24">Guider</span><span class="rvts6"> segment shows a drift plot from that session, (if it's guiding) and the session's RMS statistics. Other timelines show status information when clicked.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Statistics</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">A variety of statistics can be displayed on the </span><span class="rvts24">Stats</span><span class="rvts6">&nbsp;graph. There are too many for all to be shown in a readable way, so select among them with the checkboxes. A reasonable way to start might be to use </span><span class="rvts24">rms</span><span class="rvts6">, </span><span class="rvts24">snr</span><span class="rvts6">&nbsp;(using the internal guider with SEP Multistar), and </span><span class="rvts24">hfr</span><span class="rvts6">&nbsp;(if you have auto-compute HFR in the FITS options). Experiment with others. The axis shown (0-5) is appropriate only for ra/dec error, drift, rms, pulses, and hfr. These may be y-axis scaled (awkwardly) using the mouse wheel, but the other graphs cannot be scaled. To reset y-axis zooming, right-click on the Stats plot. Clicking on the graph fills in the values of the displayed statistics. This graph is zoomed and panned horizontally in coordination with the timeline.</span></p>
+<p class="rvps2"><span class="rvts6">A variety of statistics can be displayed on the </span><span class="rvts24">Stats</span><span class="rvts6"> graph. There are too many for all to be shown in a readable way, so select among them with the checkboxes. A reasonable way to start might be to use </span><span class="rvts24">rms</span><span class="rvts6">, </span><span class="rvts24">snr</span><span class="rvts6"> (using the internal guider with SEP Multistar), and </span><span class="rvts24">hfr</span><span class="rvts6"> (if you have auto-compute HFR in the FITS options). Experiment with others. The axis shown (0-5) is appropriate only for ra/dec error, drift, rms, pulses, and hfr. These may be y-axis scaled (awkwardly) using the mouse wheel, but the other graphs cannot be scaled. To reset y-axis zooming, right-click on the Stats plot. Clicking on the graph fills in the values of the displayed statistics. This graph is zoomed and panned horizontally in coordination with the timeline.</span></p>
 <p></p>
 
             </div>
@@ -222,29 +237,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

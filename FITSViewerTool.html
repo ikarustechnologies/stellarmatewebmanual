@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -175,77 +190,86 @@
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/fitsviewer.png"></p>
 <p class="rvps10"><span class="rvts20">The above diagram illustrates the FITS Viewer work area and window. The tool provides basic functions for image display. FITS data depth is preserved throughout all processing, open, and save functions. While the tool adhere to the FITS standard, it does not support all possible FITS features:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Support for only&nbsp;</span><span class="rvts21">one</span><span class="rvts20">&nbsp;image per file.</span></li>
-<li class="rvps10"><span class="rvts20">Support for only 2D and 3D data. 1D data are discarded.</span></li>
+ <li class="rvps10"><span class="rvts20">Support for only&nbsp;</span><span class="rvts21">one</span><span class="rvts20">&nbsp;image per file.</span></li>
+ <li class="rvps10"><span class="rvts20">Support for only 2D and 3D data. 1D data are discarded.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">The FITS Viewer window is divided into the following regions:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">Main Menu</span></li>
+ <li value="1" class="rvps10"><span class="rvts20">Main Menu</span></li>
 </ol>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">File</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li class="rvps10"><span class="rvts20">Standard Open, Save, and Save As actions.</span></li>
-<li class="rvps10"><span class="rvts20">FITS Header: Display FITS header table data.</span></li>
-<li class="rvps10"><span class="rvts20">Debayer: Covert RAW image to RGB.</span></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">File</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps10"><span class="rvts20">Standard Open, Save, and Save As actions.</span></li>
+   <li class="rvps10"><span class="rvts20">FITS Header: Display FITS header table data.</span></li>
+   <li class="rvps10"><span class="rvts20">Debayer: Covert RAW image to RGB.</span></li>
+  </ul>
+  <li class="rvps10"><span class="rvts20">Edit</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps10"><span class="rvts20">Undo: Undo last action.</span></li>
+   <li class="rvps10"><span class="rvts20">Redo: Redo last action.</span></li>
+   <li class="rvps10"><span class="rvts20">Copy: Copy image to clipboard.</span></li>
+  </ul>
+  <li class="rvps10"><span class="rvts20">View</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps10"><span class="rvts20">Zoom Controls: Zoom in, Zoom out, standard Zoom.</span></li>
+   <li class="rvps10"><span class="rvts20">Filters: Auto Stretch, Contrast, High Pass, Rotate, Flip.</span></li>
+   <li class="rvps10"><span class="rvts20">Mark Stars: Detect and mark stars in the image.</span></li>
+  </ul>
+ </ul>
 </ul>
-<li class="rvps10"><span class="rvts20">Edit</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li class="rvps10"><span class="rvts20">Undo: Undo last action.</span></li>
-<li class="rvps10"><span class="rvts20">Redo: Redo last action.</span></li>
-<li class="rvps10"><span class="rvts20">Copy: Copy image to clipboard.</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+ <li value="2" class="rvps10"><span class="rvts20">Main Toolbar</span></li>
+</ol>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">Open File.</span></li>
+  <li class="rvps10"><span class="rvts20">Save File: Save FITS data. Any filters applied to the image will be saved.</span></li>
+  <li class="rvps10"><span class="rvts20">Save File As.</span></li>
+  <li class="rvps10"><span class="rvts20">Undo last action.</span></li>
+  <li class="rvps10"><span class="rvts20">Redo last aciton.</span></li>
+  <li class="rvps10"><span class="rvts20">Zoom In: Zoom in up to a maximum of 400%. For large images thie operation can be very memory intensive. Turn on Limited Resource Mode to save memory.</span></li>
+  <li class="rvps10"><span class="rvts20">Zoom Out.</span></li>
+  <li class="rvps10"><span class="rvts20">View in Actual Size.</span></li>
+  <li class="rvps10"><span class="rvts20">Zoom to fit.</span></li>
+  <li class="rvps10"><span class="rvts20">Rotate Right.</span></li>
+  <li class="rvps10"><span class="rvts20">Rotate Left.</span></li>
+  <li class="rvps10"><span class="rvts20">Flip Horizontal.</span></li>
+  <li class="rvps10"><span class="rvts20">Flip Vertical.</span></li>
+  <li class="rvps10"><span class="rvts20">Show Crosshairs: Toggles crosshairs in the center of the image.</span></li>
+  <li class="rvps10"><span class="rvts20">Show Pixel Gridlines: Toggles pixel grid.</span></li>
+  <li class="rvps10"><span class="rvts20">Show Equatorial Guidelines: Toggles Equatorial Grid if FITS contains a valid WCS header.</span></li>
+  <li class="rvps10"><span class="rvts20">Show Objects in Image: Identifies objects such as stars, galaxies, and nebulae within the image.</span></li>
+  <li class="rvps10"><span class="rvts20">Center Telescope: Toggle Center Telescope mode. When active and if the image contains a valid WCS header, clicking any where in the image</span></li>
+  <li class="rvps10"><span class="rvts20">Histogram: Toggle histogram view in the side panel.</span></li>
+  <li class="rvps10"><span class="rvts20">Statistics: Toggle FITS Statistic view in the side panel.</span></li>
+  <li class="rvps10"><span class="rvts20">Auto Stretch: Apply Auto Stretch filter to the image.</span></li>
+ </ul>
 </ul>
-<li class="rvps10"><span class="rvts20">View</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li class="rvps10"><span class="rvts20">Zoom Controls: Zoom in, Zoom out, standard Zoom.</span></li>
-<li class="rvps10"><span class="rvts20">Filters: Auto Stretch, Contrast, High Pass, Rotate, Flip.</span></li>
-<li class="rvps10"><span class="rvts20">Mark Stars: Detect and mark stars in the image.</span></li>
-</ul></ul></ul>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="2" class="rvps10"><span class="rvts20">Main Toolbar</span></li>
+ <li value="3" class="rvps10"><span class="rvts20">Side Panel: The side panel can be opened by dragging the separator to the right. When dragged to the left, the side panel can also be closed.</span></li>
 </ol>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">Open File.</span></li>
-<li class="rvps10"><span class="rvts20">Save File: Save FITS data. Any filters applied to the image will be saved.</span></li>
-<li class="rvps10"><span class="rvts20">Save File As.</span></li>
-<li class="rvps10"><span class="rvts20">Undo last action.</span></li>
-<li class="rvps10"><span class="rvts20">Redo last aciton.</span></li>
-<li class="rvps10"><span class="rvts20">Zoom In: Zoom in up to a maximum of 400%. For large images thie operation can be very memory intensive. Turn on Limited Resource Mode to save memory.</span></li>
-<li class="rvps10"><span class="rvts20">Zoom Out.</span></li>
-<li class="rvps10"><span class="rvts20">View in Actual Size.</span></li>
-<li class="rvps10"><span class="rvts20">Zoom to fit.</span></li>
-<li class="rvps10"><span class="rvts20">Rotate Right.</span></li>
-<li class="rvps10"><span class="rvts20">Rotate Left.</span></li>
-<li class="rvps10"><span class="rvts20">Flip Horizontal.</span></li>
-<li class="rvps10"><span class="rvts20">Flip Vertical.</span></li>
-<li class="rvps10"><span class="rvts20">Show Crosshairs: Toggles crosshairs in the center of the image.</span></li>
-<li class="rvps10"><span class="rvts20">Show Pixel Gridlines: Toggles pixel grid.</span></li>
-<li class="rvps10"><span class="rvts20">Show Equatorial Guidelines: Toggles Equatorial Grid if FITS contains a valid WCS header.</span></li>
-<li class="rvps10"><span class="rvts20">Show Objects in Image: Identifies objects such as stars, galaxies, and nebulae within the image.</span></li>
-<li class="rvps10"><span class="rvts20">Center Telescope: Toggle Center Telescope mode. When active and if the image contains a valid WCS header, clicking any where in the image</span></li>
-<li class="rvps10"><span class="rvts20">Histogram: Toggle histogram view in the side panel.</span></li>
-<li class="rvps10"><span class="rvts20">Statistics: Toggle FITS Statistic view in the side panel.</span></li>
-<li class="rvps10"><span class="rvts20">Auto Stretch: Apply Auto Stretch filter to the image.</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">Statistcs: Displays image statistics including Minimum, Maximum, Average, and Median values.</span></li>
+  <li class="rvps10"><span class="rvts20">Histogram: Displays image histogram with controls to adjust the minimum and maximum values for each channel. Both linear and logarithmic scalings are available to apply to the image.</span></li>
+  <li class="rvps10"><span class="rvts20">FITS Header: Displays a table for FITS header keywords, values, and comments.</span></li>
+  <li class="rvps10"><span class="rvts20">Recent Images: Displays recently opened images. Clicking on any image will load it.</span></li>
+ </ul>
+</ul>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="3" class="rvps10"><span class="rvts20">Side Panel: The side panel can be opened by dragging the separator to the right. When dragged to the left, the side panel can also be closed.</span></li>
+ <li value="4" class="rvps10"><span class="rvts20">Image Display Area. Hovering over the image will update the status bar values accordingly.</span></li>
+ <li value="5" class="rvps10"><span class="rvts20">Status Bar: From right to left, the following status indicators are available:</span></li>
 </ol>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">Statistcs: Displays image statistics including Minimum, Maximum, Average, and Median values.</span></li>
-<li class="rvps10"><span class="rvts20">Histogram: Displays image histogram with controls to adjust the minimum and maximum values for each channel. Both linear and logarithmic scalings are available to apply to the image.</span></li>
-<li class="rvps10"><span class="rvts20">FITS Header: Displays a table for FITS header keywords, values, and comments.</span></li>
-<li class="rvps10"><span class="rvts20">Recent Images: Displays recently opened images. Clicking on any image will load it.</span></li>
-</ul></ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="4" class="rvps10"><span class="rvts20">Image Display Area. Hovering over the image will update the status bar values accordingly.</span></li>
-<li value="5" class="rvps10"><span class="rvts20">Status Bar: From right to left, the following status indicators are available:</span></li>
-</ol>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">Loading Indicator: The LED becomes yellow when an image is getting loaded and turns green after loading is successfully done. If there are problems with loading the image, it turns red.</span></li>
-<li class="rvps10"><span class="rvts20">Resolution: Image resolution in pixels.</span></li>
-<li class="rvps10"><span class="rvts20">Cartesian Coordinates: Displays and updates the current mouse position as you hover over the image. It include the X and Y position in addition to the current value.</span></li>
-<li class="rvps10"><span class="rvts20">Equatorial Coordinates: If the image contains a valid WCS header, the J2000 Right Ascension (RA) and declination (DE) values are displayed.</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">Loading Indicator: The LED becomes yellow when an image is getting loaded and turns green after loading is successfully done. If there are problems with loading the image, it turns red.</span></li>
+  <li class="rvps10"><span class="rvts20">Resolution: Image resolution in pixels.</span></li>
+  <li class="rvps10"><span class="rvts20">Cartesian Coordinates: Displays and updates the current mouse position as you hover over the image. It include the X and Y position in addition to the current value.</span></li>
+  <li class="rvps10"><span class="rvts20">Equatorial Coordinates: If the image contains a valid WCS header, the J2000 Right Ascension (RA) and declination (DE) values are displayed.</span></li>
+ </ul>
+</ul>
 <p class="rvps10"><span class="rvts20">In addition to image display, the viewer can process World-Coordinate-System (WCS) header if present within the FITS file and provides useful information regarding the objects found within the image, equatorial grid overlay, popup menu, and the ability to slew the mount (if connected) to any point within the image.</span></p>
 <p class="rvps10"><span class="rvts20">Several filters can be applied to enhance the image include auto stretch and high contrast. Depending on the image size, these operations can take a few seconds to complete. The bottom status bar displays the current pixel value and current X &amp; Y coordinates of the mouse pointer within the image. Furthermore, it includes the current zoom level and the image resolution.</span></p>
 <p class="rvps10"><span class="rvts20">When loading a bayered image, the viewer can automatically debayer the image if&nbsp;</span><span class="rvts21">Auto Debayer</span><span class="rvts20">&nbsp;is checked in the FITS Settings. The debayering operation fetches the bayer pattern (e.g.&nbsp;RGGB) from the FITS header. If none exists, you can alter the debayering algorithm and pattern from the&nbsp;File&nbsp;menu or by using the&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">D</span><span class="rvts20">&nbsp;shortcut.</span></p>
@@ -254,41 +278,41 @@
 <p class="rvps10"><span class="rvts20">Hovering over any option shall display a detailed tooltip that explains its function.</span></p>
 <h4 class="rvps28"><a name="FITS-VIEWER-FEATURES"></a><span class="rvts0"><span class="rvts22">Features</span></span></h4>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Support for 8, 16, 32, IEEE-32, and IEEE-64 bits formats.</span></li>
-<li class="rvps10"><span class="rvts20">Support Color FITS images (3D Cubes) and Bayered FITS images.</span></li>
-<li class="rvps10"><span class="rvts20">Histogram with linear, logarithmic, and square-root scales.</span></li>
-<li class="rvps10"><span class="rvts20">Brightness/Contrast controls.</span></li>
-<li class="rvps10"><span class="rvts20">Pan and Zoom.</span></li>
-<li class="rvps10"><span class="rvts20">Auto levels.</span></li>
-<li class="rvps10"><span class="rvts20">Statistics.</span></li>
-<li class="rvps10"><span class="rvts20">Rectangular and Equatorial Grids (if WCS info is present).</span></li>
-<li class="rvps10"><span class="rvts20">Detection and highlight of stars.</span></li>
-<li class="rvps10"><span class="rvts20">FITS header query.</span></li>
-<li class="rvps10"><span class="rvts20">Undo/Redo.</span></li>
+ <li class="rvps10"><span class="rvts20">Support for 8, 16, 32, IEEE-32, and IEEE-64 bits formats.</span></li>
+ <li class="rvps10"><span class="rvts20">Support Color FITS images (3D Cubes) and Bayered FITS images.</span></li>
+ <li class="rvps10"><span class="rvts20">Histogram with linear, logarithmic, and square-root scales.</span></li>
+ <li class="rvps10"><span class="rvts20">Brightness/Contrast controls.</span></li>
+ <li class="rvps10"><span class="rvts20">Pan and Zoom.</span></li>
+ <li class="rvps10"><span class="rvts20">Auto levels.</span></li>
+ <li class="rvps10"><span class="rvts20">Statistics.</span></li>
+ <li class="rvps10"><span class="rvts20">Rectangular and Equatorial Grids (if WCS info is present).</span></li>
+ <li class="rvps10"><span class="rvts20">Detection and highlight of stars.</span></li>
+ <li class="rvps10"><span class="rvts20">FITS header query.</span></li>
+ <li class="rvps10"><span class="rvts20">Undo/Redo.</span></li>
 </ul>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts20">Histogram</span></li>
-<li class="rvps3"><img alt="" style="padding : 1px;" src="lib/fitsviewer_histogram.png"></li>
+ <li class="rvps2"><span class="rvts20">Histogram</span></li>
+ <li class="rvps3"><img alt="" style="padding : 1px;" src="lib/fitsviewer_histogram.png"></li>
 </ul>
 <p class="rvps10"><span class="rvts20">Displays multi-channel FITS histogram. The user can rescale the image by optionally defining an upper and lower limit for the cutoff region. The rescaling operation (linear, logarithmic, or square-root) may then be applied to the region enclosed by the upper and lower limits.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts20">FITS Header</span></li>
-<li class="rvps10"><span class="rvts20">Displays a read-only table listing FITS header keywords and values.</span></li>
-<li class="rvps2"><span class="rvts20">Statistics</span></li>
-<li class="rvps10"><span class="rvts20">Provides simple statistics for minimum and maximum pixel values and their respective locations. FITS depth, dimension, mean, and standard deviation.</span></li>
+ <li class="rvps2"><span class="rvts20">FITS Header</span></li>
+ <li class="rvps10"><span class="rvts20">Displays a read-only table listing FITS header keywords and values.</span></li>
+ <li class="rvps2"><span class="rvts20">Statistics</span></li>
+ <li class="rvps10"><span class="rvts20">Provides simple statistics for minimum and maximum pixel values and their respective locations. FITS depth, dimension, mean, and standard deviation.</span></li>
 </ul>
 <h4 class="rvps28"><a name="FITS-VIEWER-EMBEDDED"></a><span class="rvts0"><span class="rvts22">Embedded FITS Viewer</span></span></h4>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/fitsviewer_embedded.png"></p>
 <p class="rvps10"><span class="rvts20">In Ekos&nbsp;</span><a class="rvts23" href="Focus.html">Focus</a><span class="rvts20">,&nbsp;</span><a class="rvts23" href="Guide1.html">Guide</a><span class="rvts20">, and&nbsp;</span><a class="rvts23" href="Align.html">Align</a><span class="rvts20">&nbsp;modules, captured images are displayed in the embedded FITS Viewer. The embedded viewer includes a&nbsp;</span><span class="rvts21">floating bar</span><span class="rvts20">&nbsp;that can be used to perform several functions:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Zoom Out</span></li>
-<li class="rvps10"><span class="rvts20">Zoom In</span></li>
-<li class="rvps10"><span class="rvts20">Default Zoom</span></li>
-<li class="rvps10"><span class="rvts20">Zoom To Fit</span></li>
-<li class="rvps10"><span class="rvts20">Toggle Cross Hairs</span></li>
-<li class="rvps10"><span class="rvts20">Toggle Pixel Gridlines</span></li>
-<li class="rvps10"><span class="rvts20">Toggle Detected Stars: Highlight detected stars with red circles.</span></li>
-<li class="rvps10"><span class="rvts20">Star Profile: View detailed 3D star profile.</span></li>
+ <li class="rvps10"><span class="rvts20">Zoom Out</span></li>
+ <li class="rvps10"><span class="rvts20">Zoom In</span></li>
+ <li class="rvps10"><span class="rvts20">Default Zoom</span></li>
+ <li class="rvps10"><span class="rvts20">Zoom To Fit</span></li>
+ <li class="rvps10"><span class="rvts20">Toggle Cross Hairs</span></li>
+ <li class="rvps10"><span class="rvts20">Toggle Pixel Gridlines</span></li>
+ <li class="rvps10"><span class="rvts20">Toggle Detected Stars: Highlight detected stars with red circles.</span></li>
+ <li class="rvps10"><span class="rvts20">Star Profile: View detailed 3D star profile.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">The floating bar is automatically hidden once the mouse leaves the embedded viewer area. You can use the mouse to pan and zoom just like the standalone FITS Viewer tool. The green tracking box can be used to select a specific star or region within the image, for example, to select a guide star.</span></p>
 <h4 class="rvps28"><a name="FITS-VIEWER-3D-STAR-PROFILE"></a><span class="rvts0"><span class="rvts22">3D Star Profile &amp; Data Visualization Tool</span></span></h4>
@@ -334,29 +358,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

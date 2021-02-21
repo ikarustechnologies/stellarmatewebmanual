@@ -186,7 +186,10 @@ a.rvts28, span.rvts28
  color: #007bbf;
  text-decoration: underline;
 }
-a.rvts28:hover { color: #007bbf; }
+a.rvts28:hover
+{
+ color: #007bbf;
+}
 span.rvts29
 {
  font-size: 12pt;

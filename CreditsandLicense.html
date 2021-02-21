@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -174,34 +189,34 @@
 <p class="rvps10"><span class="rvts20">Program copyright 2001-2015 The&nbsp;KStars&nbsp;Team&nbsp;(mutlaqja AT ikarustech.com)</span></p>
 <p class="rvps10"><span class="rvts20">The&nbsp;KStars&nbsp;Team:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Jason Harris&nbsp;</span><span class="rvts56">(kstars AT 30doradus.org)</span></li>
-<li class="rvps10"><span class="rvts20">Jasem Mutlaq </span><span class="rvts56">(mutlaqja AT ikarustech.com)</span></li>
-<li class="rvps10"><span class="rvts20">Pablo de Vicente </span><span class="rvts56">(pvicentea AT wanadoo.es)</span></li>
-<li class="rvps10"><span class="rvts20">Heiko Evermann </span><span class="rvts56">(heiko AT evermann.de)</span></li>
-<li class="rvps10"><span class="rvts20">Thomas Kabelmann</span><span class="rvts56">&nbsp;(tk78 AT gmx.de)</span></li>
-<li class="rvps10"><span class="rvts20">Mark Hollomon</span><span class="rvts56">&nbsp;(mhh AT mindspring.com)</span></li>
-<li class="rvps10"><span class="rvts20">Carsten Niehaus</span><span class="rvts56">&nbsp;(cniehaus AT gmx.de)</span></li>
-<li class="rvps10"><span class="rvts20">James Bowlin </span><span class="rvts56">(bowlin AT mindspring.com)</span></li>
-<li class="rvps10"><span class="rvts20">Alexey Khudyakov </span><span class="rvts56">(alexey.skladnoy AT gmail.com)</span></li>
-<li class="rvps10"><span class="rvts20">Mederic Boquien </span><span class="rvts56">(mboquien AT free.fr)</span></li>
-<li class="rvps10"><span class="rvts20">Akarsh Simha </span><span class="rvts56">(akarsh.simha AT kdemail.net)</span></li>
-<li class="rvps10"><span class="rvts20">Jerome Sonrier</span><span class="rvts56">&nbsp;(jsid AT emor3j.fr.eu.org)</span></li>
-<li class="rvps10"><span class="rvts20">Prakash Mohan</span><span class="rvts56">&nbsp;(prakash.mohan AT kdemail.net)</span></li>
-<li class="rvps10"><span class="rvts20">Victor Carbune</span><span class="rvts56">&nbsp;(victor.carbune AT kdemail.net)</span></li>
-<li class="rvps10"><span class="rvts20">Henry de Valence</span><span class="rvts56">&nbsp;(hdevalence AT gmail.com)</span></li>
-<li class="rvps10"><span class="rvts20">Samikshan Bairagya </span><span class="rvts56">(samikshan.bairagya AT kdemail.net)</span></li>
-<li class="rvps10"><span class="rvts20">Rafal Kulaga </span><span class="rvts56">(rl.kulaga AT gmail.com)</span></li>
-<li class="rvps10"><span class="rvts20">Rishab Arora </span><span class="rvts56">(ra.rishab AT gmail.com)</span></li>
+ <li class="rvps10"><span class="rvts20">Jason Harris&nbsp;</span><span class="rvts56">(kstars AT 30doradus.org)</span></li>
+ <li class="rvps10"><span class="rvts20">Jasem Mutlaq </span><span class="rvts56">(mutlaqja AT ikarustech.com)</span></li>
+ <li class="rvps10"><span class="rvts20">Pablo de Vicente </span><span class="rvts56">(pvicentea AT wanadoo.es)</span></li>
+ <li class="rvps10"><span class="rvts20">Heiko Evermann </span><span class="rvts56">(heiko AT evermann.de)</span></li>
+ <li class="rvps10"><span class="rvts20">Thomas Kabelmann</span><span class="rvts56"> (tk78 AT gmx.de)</span></li>
+ <li class="rvps10"><span class="rvts20">Mark Hollomon</span><span class="rvts56"> (mhh AT mindspring.com)</span></li>
+ <li class="rvps10"><span class="rvts20">Carsten Niehaus</span><span class="rvts56"> (cniehaus AT gmx.de)</span></li>
+ <li class="rvps10"><span class="rvts20">James Bowlin </span><span class="rvts56">(bowlin AT mindspring.com)</span></li>
+ <li class="rvps10"><span class="rvts20">Alexey Khudyakov </span><span class="rvts56">(alexey.skladnoy AT gmail.com)</span></li>
+ <li class="rvps10"><span class="rvts20">Mederic Boquien </span><span class="rvts56">(mboquien AT free.fr)</span></li>
+ <li class="rvps10"><span class="rvts20">Akarsh Simha </span><span class="rvts56">(akarsh.simha AT kdemail.net)</span></li>
+ <li class="rvps10"><span class="rvts20">Jerome Sonrier</span><span class="rvts56"> (jsid AT emor3j.fr.eu.org)</span></li>
+ <li class="rvps10"><span class="rvts20">Prakash Mohan</span><span class="rvts56"> (prakash.mohan AT kdemail.net)</span></li>
+ <li class="rvps10"><span class="rvts20">Victor Carbune</span><span class="rvts56"> (victor.carbune AT kdemail.net)</span></li>
+ <li class="rvps10"><span class="rvts20">Henry de Valence</span><span class="rvts56"> (hdevalence AT gmail.com)</span></li>
+ <li class="rvps10"><span class="rvts20">Samikshan Bairagya </span><span class="rvts56">(samikshan.bairagya AT kdemail.net)</span></li>
+ <li class="rvps10"><span class="rvts20">Rafal Kulaga </span><span class="rvts56">(rl.kulaga AT gmail.com)</span></li>
+ <li class="rvps10"><span class="rvts20">Rishab Arora </span><span class="rvts56">(ra.rishab AT gmail.com)</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">Data Sources:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Object catalogs and planet position tables:&nbsp;</span><a class="rvts23" href="http://adc.gsfc.nasa.gov">NASA Astronomical Data Center</a></li>
-<li class="rvps10"><span class="rvts20">Detailed credit information for all of the images used in the program is presented in the file README.images</span></li>
+ <li class="rvps10"><span class="rvts20">Object catalogs and planet position tables:&nbsp;</span><a class="rvts23" href="http://adc.gsfc.nasa.gov">NASA Astronomical Data Center</a></li>
+ <li class="rvps10"><span class="rvts20">Detailed credit information for all of the images used in the program is presented in the file README.images</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">References:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">“Practical Astronomy With Your Calculator”&nbsp;by Peter Duffet-Smith</span></li>
-<li class="rvps10"><span class="rvts20">“Astronomical Algorithms”&nbsp;by Jean Meeus</span></li>
+ <li class="rvps10"><span class="rvts20">“Practical Astronomy With Your Calculator”&nbsp;by Peter Duffet-Smith</span></li>
+ <li class="rvps10"><span class="rvts20">“Astronomical Algorithms”&nbsp;by Jean Meeus</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">Special thanks: To the&nbsp;KDE&nbsp;and&nbsp;Qt™ developers for providing the world with a peerless set of free&nbsp;API&nbsp;libraries. To the&nbsp;KDevelop&nbsp;team, for their excellent&nbsp;IDE, which made developing&nbsp;KStars&nbsp;so much easier and more fun. To everyone on the&nbsp;KDevelop&nbsp;message board, the&nbsp;KDE&nbsp;mailing lists, and on irc.kde.org, for answering our frequent questions. Thank you to Anne-Marie Mahfouf, for inviting&nbsp;KStars&nbsp;to join the&nbsp;KDE-Edu module. Finally, thanks to everyone who has submitted bug reports and other feedback. Thank you, everyone.</span></p>
 <p class="rvps10"><span class="rvts20">Documentation copyright 2001-2015 Jason Harris and the KStars Team&nbsp;(</span><span class="rvts56">kstars AT 30doradus.org</span><span class="rvts20">)</span></p>
@@ -238,29 +253,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

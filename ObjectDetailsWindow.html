@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -178,12 +193,12 @@
 <p class="rvps10"><span class="rvts20">You can also modify or remove any link using the&nbsp;Edit Link...&nbsp;and&nbsp;Remove Link...&nbsp;buttons.</span></p>
 <p class="rvps10"><span class="rvts20">The&nbsp;Advanced&nbsp;Tab (not available for all objects) allows you to query professional astronomical databases on the internet for information regarding the current object. To use these databases, double click on the desired database in the list to see the results of your query in a web browser window. The query is made using the primary name of the object you clicked on to open the Details Dialog. The following databases are available for querying:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">High Energy Astrophysical Archive (HEASARC). Here you can retrieve data about the current object from a number of&nbsp;“High-energy”&nbsp;observatories, which covers the Ultraviolet, X-ray and Gamma Ray portions of the electromagnetic spectrum.</span></li>
-<li class="rvps10"><span class="rvts20">Multimission Archive at Space Telescope (MAST). The Space Telescope Science Institute provides access to the entire collection of images and spectra taken with the Hubble Space Telescope, as well as several other space-based observatories.</span></li>
-<li class="rvps10"><span class="rvts20">NASA Astrophysical Data System (ADS). This incredible bibliographic database encompass the entire body of literature published in international peer-review Journals about astronomy and astrophysics. The database is divided into four general subject areas (Astronomy and Astrophysics, Astrophysics Preprints, Instrumentation, and Physics and Geophysics). Each of these has three sub-nodes that query the database in different ways.&nbsp;“Keyword search”&nbsp;will return articles which listed the object's name as a keyword.&nbsp;“Title word search”&nbsp;will return articles which included the object name in their Title, and the&nbsp;“Title &amp; Keyword search”&nbsp;uses both options together.</span></li>
-<li class="rvps10"><span class="rvts20">NASA/IPAC Extragalactic Database (NED). NED provides encapsulated data and bibliographic links about extragalactic objects. You should only use NED if your target is extragalactic;&nbsp;i.e.&nbsp;if it is itself a galaxy.</span></li>
-<li class="rvps10"><span class="rvts20">Set of Identifications, Measurements, and Bibliography for Astronomical Data (SIMBAD). SIMBAD is similar to NED, except it provides data about all kinds of objects, not just galaxies.</span></li>
-<li class="rvps10"><span class="rvts20">SkyView provides images from All-Sky surveys that have been performed in dozens of different parts of the spectrum, from Gamma Rays to the Radio. The&nbsp;KStars&nbsp;interface will retrieve an image from any of these surveys, centered on the selected object.</span></li>
+ <li class="rvps10"><span class="rvts20">High Energy Astrophysical Archive (HEASARC). Here you can retrieve data about the current object from a number of&nbsp;“High-energy”&nbsp;observatories, which covers the Ultraviolet, X-ray and Gamma Ray portions of the electromagnetic spectrum.</span></li>
+ <li class="rvps10"><span class="rvts20">Multimission Archive at Space Telescope (MAST). The Space Telescope Science Institute provides access to the entire collection of images and spectra taken with the Hubble Space Telescope, as well as several other space-based observatories.</span></li>
+ <li class="rvps10"><span class="rvts20">NASA Astrophysical Data System (ADS). This incredible bibliographic database encompass the entire body of literature published in international peer-review Journals about astronomy and astrophysics. The database is divided into four general subject areas (Astronomy and Astrophysics, Astrophysics Preprints, Instrumentation, and Physics and Geophysics). Each of these has three sub-nodes that query the database in different ways.&nbsp;“Keyword search”&nbsp;will return articles which listed the object's name as a keyword.&nbsp;“Title word search”&nbsp;will return articles which included the object name in their Title, and the&nbsp;“Title &amp; Keyword search”&nbsp;uses both options together.</span></li>
+ <li class="rvps10"><span class="rvts20">NASA/IPAC Extragalactic Database (NED). NED provides encapsulated data and bibliographic links about extragalactic objects. You should only use NED if your target is extragalactic;&nbsp;i.e.&nbsp;if it is itself a galaxy.</span></li>
+ <li class="rvps10"><span class="rvts20">Set of Identifications, Measurements, and Bibliography for Astronomical Data (SIMBAD). SIMBAD is similar to NED, except it provides data about all kinds of objects, not just galaxies.</span></li>
+ <li class="rvps10"><span class="rvts20">SkyView provides images from All-Sky surveys that have been performed in dozens of different parts of the spectrum, from Gamma Rays to the Radio. The&nbsp;KStars&nbsp;interface will retrieve an image from any of these surveys, centered on the selected object.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">Finally, in the&nbsp;Log&nbsp;Tab, you can type in some text that will remain associated with this object's Details window. You could use this to attach personal observing notes, for example. Your notes will be saved, such that you can easily read or use them next time when you will use&nbsp;KStars.</span></p>
 <p></p>
@@ -217,29 +232,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

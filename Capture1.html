@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -172,12 +187,12 @@
 <p></p>
 <p class="rvps2"><span class="rvts6">The Capture module allows you to do sequence capturing using your camera, it has the following features:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Presets: you can save an unlimited amount of presets, which have all the camera settings needed for guiding. You can also choose the scope.</span></li>
-<li class="rvps2"><span class="rvts20">Start guiding</span></li>
-<li class="rvps2"><span class="rvts20">Preview</span></li>
-<li class="rvps2"><span class="rvts20">Advanced Settings</span></li>
-<li class="rvps2"><span class="rvts20">Pixmap Image viewer</span></li>
-<li class="rvps2"><span class="rvts20">Guide Plot</span></li>
+ <li class="rvps2"><span class="rvts6">Presets: you can save an unlimited amount of presets, which have all the camera settings needed for guiding. You can also choose the scope.</span></li>
+ <li class="rvps2"><span class="rvts20">Start guiding</span></li>
+ <li class="rvps2"><span class="rvts20">Preview</span></li>
+ <li class="rvps2"><span class="rvts20">Advanced Settings</span></li>
+ <li class="rvps2"><span class="rvts20">Pixmap Image viewer</span></li>
+ <li class="rvps2"><span class="rvts20">Guide Plot</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_idle.jpg"></p>
@@ -188,17 +203,17 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Capture Presets has the following structure:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps2"><span class="rvts6">Preset name</span></li>
-<li value="2" class="rvps2"><span class="rvts6">Camera</span></li>
-<li value="3" class="rvps2"><span class="rvts6">Frame Type</span></li>
-<li value="4" class="rvps2"><span class="rvts6">Exposure</span></li>
-<li value="5" class="rvps2"><span class="rvts6">Binning</span></li>
-<li value="6" class="rvps2"><span class="rvts6">Format</span></li>
-<li value="7" class="rvps2"><span class="rvts6">Filter Wheel</span></li>
-<li value="8" class="rvps2"><span class="rvts6">Filter</span></li>
-<li value="9" class="rvps2"><span class="rvts6">Temperature</span></li>
-<li value="10" class="rvps2"><span class="rvts6">Gain/ISO</span></li>
-<li value="11" class="rvps2"><span class="rvts6">Offset</span></li>
+ <li value="1" class="rvps2"><span class="rvts6">Preset name</span></li>
+ <li value="2" class="rvps2"><span class="rvts6">Camera</span></li>
+ <li value="3" class="rvps2"><span class="rvts6">Frame Type</span></li>
+ <li value="4" class="rvps2"><span class="rvts6">Exposure</span></li>
+ <li value="5" class="rvps2"><span class="rvts6">Binning</span></li>
+ <li value="6" class="rvps2"><span class="rvts6">Format</span></li>
+ <li value="7" class="rvps2"><span class="rvts6">Filter Wheel</span></li>
+ <li value="8" class="rvps2"><span class="rvts6">Filter</span></li>
+ <li value="9" class="rvps2"><span class="rvts6">Temperature</span></li>
+ <li value="10" class="rvps2"><span class="rvts6">Gain/ISO</span></li>
+ <li value="11" class="rvps2"><span class="rvts6">Offset</span></li>
 </ol>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_preset.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
@@ -207,30 +222,34 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Sequences have the following structure, displayed through icons for simplicity:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Top row</span></li>
+ <li class="rvps2"><span class="rvts6">Top row</span></li>
 </ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;"><ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" style="margin-left: 0px" class="rvps12"><span class="rvts6">Job Number</span></li>
-<li value="2" style="margin-left: 0px" class="rvps16"><span class="rvts6">Job Progress Bar</span></li>
-<li value="3" style="margin-left: 0px" class="rvps16"><span class="rvts6">Count Progress</span></li>
-<li value="4" style="margin-left: 0px" class="rvps16"><span class="rvts6">Delete Job</span></li>
-</ol></ol>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
+  <li value="1" style="margin-left: 0px" class="rvps12"><span class="rvts6">Job Number</span></li>
+  <li value="2" style="margin-left: 0px" class="rvps16"><span class="rvts6">Job Progress Bar</span></li>
+  <li value="3" style="margin-left: 0px" class="rvps16"><span class="rvts6">Count Progress</span></li>
+  <li value="4" style="margin-left: 0px" class="rvps16"><span class="rvts6">Delete Job</span></li>
+ </ol>
+</ol>
 <p class="rvps16"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps12"><span class="rvts6">Bottom row</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts6">Bottom row</span></li>
 </ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;"><ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" style="margin-left: 0px" class="rvps16"><span class="rvts6">Filter</span></li>
-<li value="2" style="margin-left: 0px" class="rvps16"><span class="rvts6">Frame Type</span></li>
-<li value="3" style="margin-left: 0px" class="rvps16"><span class="rvts6">Binning</span></li>
-<li value="4" style="margin-left: 0px" class="rvps16"><span class="rvts6">Exposure</span></li>
-<li value="5" style="margin-left: 0px" class="rvps16"><span class="rvts6">Gain/ISO</span></li>
-<li value="6" style="margin-left: 0px" class="rvps16"><span class="rvts6">Offset</span></li>
-</ol></ol>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
+  <li value="1" style="margin-left: 0px" class="rvps16"><span class="rvts6">Filter</span></li>
+  <li value="2" style="margin-left: 0px" class="rvps16"><span class="rvts6">Frame Type</span></li>
+  <li value="3" style="margin-left: 0px" class="rvps16"><span class="rvts6">Binning</span></li>
+  <li value="4" style="margin-left: 0px" class="rvps16"><span class="rvts6">Exposure</span></li>
+  <li value="5" style="margin-left: 0px" class="rvps16"><span class="rvts6">Gain/ISO</span></li>
+  <li value="6" style="margin-left: 0px" class="rvps16"><span class="rvts6">Offset</span></li>
+ </ol>
+</ol>
 <p class="rvps13"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_idle.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">After adding the sequences, tap on the </span><span class="rvts24">Play</span><span class="rvts6">&nbsp;button under the Progress header to start the sequence.</span></p>
+<p class="rvps2"><span class="rvts6">After adding the sequences, tap on the </span><span class="rvts24">Play</span><span class="rvts6"> button under the Progress header to start the sequence.</span></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_capturing.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
@@ -240,26 +259,26 @@
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps13"><span class="rvts24">Filter Settings</span></p>
 <p class="rvps13"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can edit filters by tapping on the </span><span class="rvts24">Filter </span><img alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/view-filter.png"><span class="rvts24">&nbsp;</span><span class="rvts6">button. The filter settings page will open and allow you to edit filter settings for each filter of the filter wheel selected in the dropdown menu.</span></p>
+<p class="rvps2"><span class="rvts6">You can edit filters by tapping on the </span><span class="rvts24">Filter </span><img alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/view-filter.png"><span class="rvts24"> </span><span class="rvts6">button. The filter settings page will open and allow you to edit filter settings for each filter of the filter wheel selected in the dropdown menu.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts32">Configure settings for each filter individually:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts31">Name</span><span class="rvts32">: Filter Name</span></li>
-<li class="rvps2"><span class="rvts31">Exposure</span><span class="rvts32">: Set exposure time used when performing focus under this filter. By default, it is set to 1 seconds.</span></li>
-<li class="rvps2"><span class="rvts31">Offset</span><span class="rvts32">: Set relative offsets. Ekos will command a focus offset change if there is a difference between the&nbsp;current&nbsp;and&nbsp;target&nbsp;filter offsets. For example, given the values in the example image to the right, if the curernt filter is set to&nbsp;</span><span class="rvts33">Red</span><span class="rvts32">&nbsp;and next filter is&nbsp;</span><span class="rvts33">Green</span><span class="rvts32">, then Ekos shall command the focuser to&nbsp;Focus In&nbsp;by +300 ticks. Relative positive focus offsets denote&nbsp;Focus Out&nbsp;while negative values denote&nbsp;Focus In.</span></li>
-<li class="rvps2"><span class="rvts31">Auto Focus</span><span class="rvts32">: Check this option to initial AutoFocus process whenever the filter is changed to this filter.</span></li>
-<li class="rvps2"><span class="rvts31">Lock Filter</span><span class="rvts32">: Set which filter should be set and&nbsp;</span><span class="rvts33">locked</span><span class="rvts32">&nbsp;when performing autofocus for this filter.</span></li>
+ <li class="rvps2"><span class="rvts31">Name</span><span class="rvts32">: Filter Name</span></li>
+ <li class="rvps2"><span class="rvts31">Exposure</span><span class="rvts32">: Set exposure time used when performing focus under this filter. By default, it is set to 1 seconds.</span></li>
+ <li class="rvps2"><span class="rvts31">Offset</span><span class="rvts32">: Set relative offsets. Ekos will command a focus offset change if there is a difference between the&nbsp;current&nbsp;and&nbsp;target&nbsp;filter offsets. For example, given the values in the example image to the right, if the curernt filter is set to&nbsp;</span><span class="rvts33">Red</span><span class="rvts32">&nbsp;and next filter is&nbsp;</span><span class="rvts33">Green</span><span class="rvts32">, then Ekos shall command the focuser to&nbsp;Focus In&nbsp;by +300 ticks. Relative positive focus offsets denote&nbsp;Focus Out&nbsp;while negative values denote&nbsp;Focus In.</span></li>
+ <li class="rvps2"><span class="rvts31">Auto Focus</span><span class="rvts32">: Check this option to initial AutoFocus process whenever the filter is changed to this filter.</span></li>
+ <li class="rvps2"><span class="rvts31">Lock Filter</span><span class="rvts32">: Set which filter should be set and&nbsp;</span><span class="rvts33">locked</span><span class="rvts32">&nbsp;when performing autofocus for this filter.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts32"><br/></span></p>
 <p class="rvps2"><span class="rvts32">Let's take an example. Suppose the capture sequence is running and the current filter is&nbsp;</span><span class="rvts33">Green</span><span class="rvts32">, so the relative already offset is set to +300. The next image in the sequence uses Hydrogen Alpha (H_Alpha) so before Ekos captures the next frame, the following actions take place:</span></p>
 <p class="rvps2"><span class="rvts32"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts32">Since Lumonisity is specified as the locked filter and auto-focus is checked, the filter is changed to Lumonosity</span></li>
-<li class="rvps2"><span class="rvts32">A focus offset is -300 is applied since the prior filter&nbsp;</span><span class="rvts33">Green</span><span class="rvts32">&nbsp;was moved +300 previously.</span></li>
-<li class="rvps2"><span class="rvts32">Auto Focus process is initiated.</span></li>
-<li class="rvps2"><span class="rvts32">Once Auto Focus is complete, the filter is changed to H_Alpha.</span></li>
-<li class="rvps2"><span class="rvts32">A focus offset of -1200 is applied.</span></li>
-<li class="rvps2"><span class="rvts32">Capture sequence is resumed.</span></li>
+ <li class="rvps2"><span class="rvts32">Since Lumonisity is specified as the locked filter and auto-focus is checked, the filter is changed to Lumonosity</span></li>
+ <li class="rvps2"><span class="rvts32">A focus offset is -300 is applied since the prior filter&nbsp;</span><span class="rvts33">Green</span><span class="rvts32">&nbsp;was moved +300 previously.</span></li>
+ <li class="rvps2"><span class="rvts32">Auto Focus process is initiated.</span></li>
+ <li class="rvps2"><span class="rvts32">Once Auto Focus is complete, the filter is changed to H_Alpha.</span></li>
+ <li class="rvps2"><span class="rvts32">A focus offset of -1200 is applied.</span></li>
+ <li class="rvps2"><span class="rvts32">Capture sequence is resumed.</span></li>
 </ul>
 <p class="rvps13"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="987" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_filter_settings.jpg"></p>
@@ -268,35 +287,37 @@
 <p class="rvps13"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="987" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_filter_settings_edit_fill.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">After you edit the filter, tap on the </span><span class="rvts24">Save</span><span class="rvts6">&nbsp;button to save the filter settings. The panel on the right-side will shown the new settings for the filter you just edited.</span></p>
-<p class="rvps13"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="987" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_filter_settings_edit.jpg"></p>
+<p class="rvps2"><span class="rvts6">After you edit the filter, tap on the </span><span class="rvts24">Save</span><span class="rvts6"> button to save the filter settings. The panel on the right-side will shown the new settings for the filter you just edited.</span></p>
 <p class="rvps13"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="987" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_filter_settings_edited.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps13"><span class="rvts24">Calibration Settings </span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/smapp_calibration_settings_icon.png"></p>
 <p class="rvps13"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can edit calibration settings for capture jobs that have the frame type as Bias, Dark, or Flat.</span></p>
+<p class="rvps2"><span class="rvts24">Note</span><span class="rvts6">: You can only edit calibration settings for capture jobs that have the frame type as Bias (B), Dark (D), or Flat (F).</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts32">For Flat Field frames, you can set calibration options in order to automate the process. The calibration options are designed to facilitate automatic unattended flat field frame capture. It can also be used for dark and bias frames if desired. If your camera is equipped with a mechanical shutter, then it is not necessary to set calibration settings unless you want to close the dust cover to ensure no light at all passes through the optical tube. For flat fields, you must specify the flat field light source, and then specify the duration of the flat field frame. The duration can be either manual, or based on ADU calculations.</span></p>
 <p class="rvps2"><span class="rvts32"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps2"><span class="rvts32">Flat Field Source</span></li>
+ <li value="1" class="rvps2"><span class="rvts32">Flat Field Source</span></li>
 </ol>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps2"><span class="rvts31">Manual</span><span class="rvts32">: The flat light source is manual.</span></li>
-<li class="rvps2"><span class="rvts31">Dust Cover with Built-In Flat Light</span><span class="rvts32">: If using a dust cover with built-in light source (e.g. FlipFlat). For dark and bias frames, close the dust cap before proceeding. For flat frames, close the dust cap and turn on the light source.</span></li>
-<li class="rvps2"><span class="rvts31">Dust Cover with External Flat Light</span><span class="rvts32">: If using a dust cover with external flat light source. For dark and bias frames, close the dust cap before proceeding. For flat frames, open the dust cap and turn on the light source. The external flat light source location is presumed to be the parking location.</span></li>
-<li class="rvps2"><span class="rvts31">Wall</span><span class="rvts32">: Light source is a panel on the observatory wall. Specify the Azimuth and Altitude coordinates of the panel and the mount shall slew there before capturing the flat field frames. If the light panel is controllable from INDI, Ekos shall turn it on/off as required.</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2"><span class="rvts31">Manual</span><span class="rvts32">: The flat light source is manual.</span></li>
+  <li class="rvps2"><span class="rvts31">Dust Cover with Built-In Flat Light</span><span class="rvts32">: If using a dust cover with built-in light source (e.g. FlipFlat). For dark and bias frames, close the dust cap before proceeding. For flat frames, close the dust cap and turn on the light source.</span></li>
+  <li class="rvps2"><span class="rvts31">Dust Cover with External Flat Light</span><span class="rvts32">: If using a dust cover with external flat light source. For dark and bias frames, close the dust cap before proceeding. For flat frames, open the dust cap and turn on the light source. The external flat light source location is presumed to be the parking location.</span></li>
+  <li class="rvps2"><span class="rvts31">Wall</span><span class="rvts32">: Light source is a panel on the observatory wall. Specify the Azimuth and Altitude coordinates of the panel and the mount shall slew there before capturing the flat field frames. If the light panel is controllable from INDI, Ekos shall turn it on/off as required.</span></li>
+ </ul>
+</ul>
 <p class="rvps2"><span class="rvts32"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="2" class="rvps2"><span class="rvts32">Flat Field Duration</span></li>
+ <li value="2" class="rvps2"><span class="rvts32">Flat Field Duration</span></li>
 </ol>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps2"><span class="rvts31">Manual</span><span class="rvts32">: Duration is as specified in the Sequence Queue.</span></li>
-<li class="rvps2"><span class="rvts31">ADU</span><span class="rvts32">: Duration is variable until specified ADU is met.</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2"><span class="rvts31">Manual</span><span class="rvts32">: Duration is as specified in the Sequence Queue.</span></li>
+  <li class="rvps2"><span class="rvts31">ADU</span><span class="rvts32">: Duration is variable until specified ADU is met.</span></li>
+ </ul>
+</ul>
 <p class="rvps2"><span class="rvts32"><br/></span></p>
 <p class="rvps2"><span class="rvts32">Before the calibration capture process is started, you can request Ekos to park the mount and/or dome. Depending on your flat source selection above, Ekos will use the appropiate flat light source before starting flat frames capture. If ADU is specified, Ekos begins by capturing a couple of preview images to establish the curve required to achieve the desired ADU count. Once an appropiate value is calculated, another capture is taken and ADU is recounted until a satisfactory value is achived.</span></p>
 <p class="rvps13"><span class="rvts24"><br/></span></p>
@@ -307,10 +328,10 @@
 <p class="rvps2"><span class="rvts32">Limit settings are applicable to all the images in the sequence queue. When a limit is exceeded, Ekos shall command the appropiate action to remedy the situation as explained below.</span></p>
 <p class="rvps2"><span class="rvts32"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts31">Guiding Deviation</span><span class="rvts32">: If checked, it enforces a limit of maximum allowable guiding deviation for the exposure, if autoguiding is used. If the guiding deviation exceeds this limit in arcseconds, it aborts the exposure sequence. It will automatically resume the exposure sequence again once the guiding deviation goes below this limit.</span></li>
-<li class="rvps2"><span class="rvts31">Autofocus if HFR exceeds a value</span><span class="rvts32">: If autofocus is enabled in the focus module and at least one autofocus operation was completed successfully, you can set the maximum acceptable HFR value. If this option is enabled then between consecutive exposures, the HFR value is recalculated, and if found to exceed the maximum acceptable HFR value, then an autofocus operation is automatically triggered. If the autofocus operation is completed successfully, the sequence queue resumes, otherwise the job is aborted.</span></li>
-<li class="rvps2"><span class="rvts31">Autofocus if change in temperature exceeds a value</span><span class="rvts32">:&nbsp;If autofocus is enabled in the focus module and at least one autofocus operation was completed successfully, you can set the maximum acceptable change in temperature value.&nbsp;If this option is enabled then between consecutive exposures, the change in temperature value is recalculated, and if found to exceed the maximum acceptable change in temperature value, then an autofocus operation is automatically triggered. If the autofocus operation is completed successfully, the sequence queue resumes, otherwise the job is aborted.</span></li>
-<li class="rvps2"><span class="rvts31">Refocus every x minutes</span><span class="rvts32">: you can set your focuser to refocus every </span><span class="rvts31">x</span><span class="rvts32">&nbsp;minutes. (where </span><span class="rvts31">x </span><span class="rvts32">is the amount minutes input by the user)</span></li>
+ <li class="rvps2"><span class="rvts31">Guiding Deviation</span><span class="rvts32">: If checked, it enforces a limit of maximum allowable guiding deviation for the exposure, if autoguiding is used. If the guiding deviation exceeds this limit in arcseconds, it aborts the exposure sequence. It will automatically resume the exposure sequence again once the guiding deviation goes below this limit.</span></li>
+ <li class="rvps2"><span class="rvts31">Autofocus if HFR exceeds a value</span><span class="rvts32">: If autofocus is enabled in the focus module and at least one autofocus operation was completed successfully, you can set the maximum acceptable HFR value. If this option is enabled then between consecutive exposures, the HFR value is recalculated, and if found to exceed the maximum acceptable HFR value, then an autofocus operation is automatically triggered. If the autofocus operation is completed successfully, the sequence queue resumes, otherwise the job is aborted.</span></li>
+ <li class="rvps2"><span class="rvts31">Autofocus if change in temperature exceeds a value</span><span class="rvts32">:&nbsp;If autofocus is enabled in the focus module and at least one autofocus operation was completed successfully, you can set the maximum acceptable change in temperature value.&nbsp;If this option is enabled then between consecutive exposures, the change in temperature value is recalculated, and if found to exceed the maximum acceptable change in temperature value, then an autofocus operation is automatically triggered. If the autofocus operation is completed successfully, the sequence queue resumes, otherwise the job is aborted.</span></li>
+ <li class="rvps2"><span class="rvts31">Refocus every x minutes</span><span class="rvts32">: you can set your focuser to refocus every </span><span class="rvts31">x</span><span class="rvts32"> minutes. (where </span><span class="rvts31">x </span><span class="rvts32">is the amount minutes input by the user)</span></li>
 </ul>
 <p class="rvps13"><span class="rvts31"><br/></span></p>
 <p class="rvps3"><img width="986" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_limit_settings.jpg"></p>
@@ -320,18 +341,18 @@
 <p class="rvps2"><span class="rvts32">Settings for specifying where captured images are saved to, and how to generate unique file names.</span></p>
 <p class="rvps2"><span class="rvts32"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts31">Prefix</span><span class="rvts32">: Specify prefix to append to the generated filename. You may also append the frame type, filter, expose duration, and ISO 8601 timestamp. For example, if you specify Prefix as&nbsp;</span><span class="rvts31">M45</span><span class="rvts32">&nbsp;and checked the Type and Filter checkboxes, and assuming your filter was set to&nbsp;</span><span class="rvts31">Red</span><span class="rvts32">&nbsp;and your frame type is&nbsp;</span><span class="rvts31">Light</span><span class="rvts32">, the generated file names will be as following:</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps2"><span class="rvts32">M45_Light_Red_001.fits</span></li>
-<li class="rvps2"><span class="rvts32">M45_Light_Red_002.fits</span></li>
-</ul>
-<li class="rvps2"><span class="rvts32">If&nbsp;</span><span class="rvts37">TS</span><span class="rvts32">&nbsp;was checked, a timestamp will be appended to the filename, e.g.</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps2"><span class="rvts32">M45_Light_Red_001_2016-11-09T23-47-46.fits</span></li>
-<li class="rvps2"><span class="rvts32">M45_Light_Red_002_2016-11-09T23-48-34.fits</span></li>
-</ul>
-<li class="rvps2"><span class="rvts31">Script</span><span class="rvts32">: Specify an&nbsp;</span><span class="rvts33">optional</span><span class="rvts32">&nbsp;script to be executed after each capture is complete. The full path of the script must be specified and it must executable. To denote success, the script must return zero as this would allow the sequence to continue. If a non-zero value is returned by the script, the sequence is aborted.</span></li>
-<li class="rvps2"><span class="rvts31">Directory</span><span class="rvts32">: Local directory to save the sequence images to.</span></li>
+ <li class="rvps2"><span class="rvts31">Prefix</span><span class="rvts32">: Specify prefix to append to the generated filename. You may also append the frame type, filter, expose duration, and ISO 8601 timestamp. For example, if you specify Prefix as&nbsp;</span><span class="rvts31">M45</span><span class="rvts32">&nbsp;and checked the Type and Filter checkboxes, and assuming your filter was set to&nbsp;</span><span class="rvts31">Red</span><span class="rvts32">&nbsp;and your frame type is&nbsp;</span><span class="rvts31">Light</span><span class="rvts32">, the generated file names will be as following:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2"><span class="rvts32">M45_Light_Red_001.fits</span></li>
+  <li class="rvps2"><span class="rvts32">M45_Light_Red_002.fits</span></li>
+ </ul>
+ <li class="rvps2"><span class="rvts32">If&nbsp;</span><span class="rvts37">TS</span><span class="rvts32">&nbsp;was checked, a timestamp will be appended to the filename, e.g.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2"><span class="rvts32">M45_Light_Red_001_2016-11-09T23-47-46.fits</span></li>
+  <li class="rvps2"><span class="rvts32">M45_Light_Red_002_2016-11-09T23-48-34.fits</span></li>
+ </ul>
+ <li class="rvps2"><span class="rvts31">Script</span><span class="rvts32">: Specify an&nbsp;</span><span class="rvts33">optional</span><span class="rvts32">&nbsp;script to be executed after each capture is complete. The full path of the script must be specified and it must executable. To denote success, the script must return zero as this would allow the sequence to continue. If a non-zero value is returned by the script, the sequence is aborted.</span></li>
+ <li class="rvps2"><span class="rvts31">Directory</span><span class="rvts32">: Local directory to save the sequence images to.</span></li>
 </ul>
 <p class="rvps13"><span class="rvts31"><br/></span></p>
 <p class="rvps3"><img width="987" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_capture_file_settings.jpg"></p>
@@ -366,29 +387,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

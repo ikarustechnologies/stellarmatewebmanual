@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -174,12 +189,13 @@
 <p class="rvps2"><span class="rvts29"><br/></span></p>
 <p class="rvps2"><span class="rvts29">I</span><span class="rvts6">t has the following features:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Presets: you can save an unlimited amount of presets, which have all the camera settings needed for alignment. You can also choose the scope and change the StellarSolver profile.</span></li>
-<li class="rvps2"><span class="rvts20">Three Actions: sync, slew to target or do nothing.</span></li>
-<li class="rvps2"><span class="rvts20">Capture &amp; Solve</span></li>
-<li class="rvps2"><span class="rvts20">Load and Slew</span></li>
-<li class="rvps2"><span class="rvts20">Image Viewer</span></li>
-<li class="rvps2"><span class="rvts20">Alignment Plot</span></li>
+ <li class="rvps2"><span class="rvts6">Presets: you can save an unlimited amount of presets, which have all the camera settings needed for alignment. You can also choose the scope and change the StellarSolver profile.</span></li>
+ <li class="rvps2"><span class="rvts20">Three Actions: sync, slew to target or do nothing.</span></li>
+ <li class="rvps2"><span class="rvts20">Polar Alignment Assistance</span></li>
+ <li class="rvps2"><span class="rvts20">Capture &amp; Solve</span></li>
+ <li class="rvps2"><span class="rvts20">Load and Slew</span></li>
+ <li class="rvps2"><span class="rvts20">Image Viewer</span></li>
+ <li class="rvps2"><span class="rvts20">Alignment Plot</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img width="986" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_align_idle.jpg"></p>
@@ -190,35 +206,59 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Focus Presets has the following structure:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps2"><span class="rvts6">Preset name</span></li>
-<li value="2" class="rvps2"><span class="rvts6">Camera</span></li>
-<li value="3" class="rvps2"><span class="rvts6">Scope</span></li>
-<li value="4" class="rvps2"><span class="rvts6">Exposure</span></li>
-<li value="5" class="rvps2"><span class="rvts6">Binning</span></li>
-<li value="6" class="rvps2"><span class="rvts6">SEP Profile: the profile used for solving</span></li>
+ <li value="1" class="rvps2"><span class="rvts6">Preset name</span></li>
+ <li value="2" class="rvps2"><span class="rvts6">Camera</span></li>
+ <li value="3" class="rvps2"><span class="rvts6">Scope</span></li>
+ <li value="4" class="rvps2"><span class="rvts6">Exposure</span></li>
+ <li value="5" class="rvps2"><span class="rvts6">Binning</span></li>
+ <li value="6" class="rvps2"><span class="rvts6">SEP Profile: the profile used for solving</span></li>
 </ol>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps12"><span class="rvts6">1-FastSolving:&nbsp;solve images fast, but it does&nbsp;</span><span class="rvts24">NOT</span><span class="rvts6">&nbsp;do parallel solves.</span></li>
-<li style="margin-left: 0px" class="rvps12"><span class="rvts6">2-ParallelSolving: It can be faster than FastSolving, but does not work nearly as well as the next 2.</span></li>
-<li style="margin-left: 0px" class="rvps12"><span class="rvts6">3-ParallelLargeScale: This profile is meant to solve DSLR scale images very fast. It assumes larger image scales to solve faster than the above.</span></li>
-<li style="margin-left: 0px" class="rvps12"><span class="rvts6">4-ParallelSmallScale: The&nbsp;</span><span class="rvts24">DEFAULT</span><span class="rvts6">&nbsp;for solving. This profile is meant to solve telescopic images quickly. Most users should probably use this one.</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li style="margin-left: 0px" class="rvps12"><span class="rvts6">1-FastSolving:&nbsp;solve images fast, but it does&nbsp;</span><span class="rvts24">NOT</span><span class="rvts6">&nbsp;do parallel solves.</span></li>
+  <li style="margin-left: 0px" class="rvps12"><span class="rvts6">2-ParallelSolving: It can be faster than FastSolving, but does not work nearly as well as the next 2.</span></li>
+  <li style="margin-left: 0px" class="rvps12"><span class="rvts6">3-ParallelLargeScale: This profile is meant to solve DSLR scale images very fast. It assumes larger image scales to solve faster than the above.</span></li>
+  <li style="margin-left: 0px" class="rvps12"><span class="rvts6">4-ParallelSmallScale: The&nbsp;</span><span class="rvts24">DEFAULT</span><span class="rvts6">&nbsp;for solving. This profile is meant to solve telescopic images quickly. Most users should probably use this one.</span></li>
+ </ul>
+</ul>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="7" class="rvps2"><span class="rvts6">Filter Wheel</span></li>
-<li value="8" class="rvps2"><span class="rvts6">Filter</span></li>
-<li value="9" class="rvps2"><span class="rvts6">Gain/ISO</span></li>
-<li value="10" class="rvps2"><span class="rvts6">Accuracy: Acceptable difference between reported telescope coordinate and actual solved coordinates</span></li>
-<li value="11" class="rvps2"><span class="rvts6">Settle: amount of time to allow mount to settle (in milliseconds)</span></li>
-<li value="12" class="rvps2"><span class="rvts6">Dark Frame</span></li>
+ <li value="7" class="rvps2"><span class="rvts6">Filter Wheel</span></li>
+ <li value="8" class="rvps2"><span class="rvts6">Filter</span></li>
+ <li value="9" class="rvps2"><span class="rvts6">Gain/ISO</span></li>
+ <li value="10" class="rvps2"><span class="rvts6">Accuracy: Acceptable difference between reported telescope coordinate and actual solved coordinates</span></li>
+ <li value="11" class="rvps2"><span class="rvts6">Settle: amount of time to allow mount to settle (in milliseconds)</span></li>
+ <li value="12" class="rvps2"><span class="rvts6">Dark Frame</span></li>
 </ol>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_align_preset.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Polar Alignment Assistance</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To start the polar alignment process, open the polar alignment assistance by clicking on PAA button. Set the preferred settings and follow the intstructions at each step to complete the proces.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img width="985" height="600" alt="" style="padding : 1px;" src="lib/smapp_20101_polar_idle.jpg"></p>
+<p class="rvps3"><span class="rvts29"><br/></span></p>
+<p class="rvps3"></p>
+<p class="rvps3"><span class="rvts24"><br/></span></p>
+<p class="rvps3"></p>
+<p class="rvps3"><span class="rvts24"><br/></span></p>
+<p class="rvps3"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Once all 3 images have been captures, you are shown the correction vectors.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Capture &amp; Solve</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
 <p class="rvps2"><span class="rvts6">To start capturing and solving, just tap on the Capture &amp; Solve button and the StellarMate will take care of the rest. When it's done, you will be able to see the current Alignment capture preview, alignment info on the solution bar on the bottom, and the points on the Alignment plot. The points on the alignment plot have 3 different colors: Red, Yellow and Green. If a point is red, that means that the error is 1.5 times or more above the accuracy value, if it's yellow, that means that the error is between 1 times to 1.5 times above the accuracy value, and finally, if it's green, that means that the error is within the accuracy value. The accuracy value can be changed in the preset settings.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_align_capture_and_solve_complete.jpg"></p>
+<p class="rvps3"><img width="985" height="563" alt="" style="padding : 1px;" src="lib/smapp_20101_align_capture_and_solve_complete.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps13"><span class="rvts24">Load and Slew</span></p>
 <p class="rvps13"><span class="rvts24"><br/></span></p>
@@ -256,29 +296,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

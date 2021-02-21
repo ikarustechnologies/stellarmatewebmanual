@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -176,37 +191,37 @@
 <h3 class="rvps20"><span class="rvts0"><span class="rvts24"><br/></span></span></h3>
 <p class="rvps2"><span class="rvts6">1. Open&nbsp;</span><a class="rvts23" href="http://stellarmate.local:8624/">StellarMate Web Manager</a></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">2. Click on&nbsp;</span><span class="rvts24">Serial Port Assistant&nbsp;&nbsp;</span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/random-solid.png"></p>
+<p class="rvps2"><span class="rvts6">2. Click on&nbsp;</span><span class="rvts24">Serial Port Assistant&nbsp;&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="1000" height="544" alt="" style="padding : 1px;" src="lib/sm_pa_click.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">3. Click on&nbsp;</span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/check-solid.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Next</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">3. Click on&nbsp;</span><span class="rvts6">&nbsp;</span><span class="rvts24">Next</span><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/sm_pa_next.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">4. Check the&nbsp;</span><img width="16" height="25" alt="" style="padding : 1px;" src="lib/bluetooth-b-brands.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Bluetooth device</span><span class="rvts6">&nbsp;checkbox, and then click&nbsp;</span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/check-solid.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Next</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">4. Check the&nbsp;</span><span class="rvts6">&nbsp;</span><span class="rvts24">Bluetooth device</span><span class="rvts6">&nbsp;checkbox, and then click&nbsp;</span><span class="rvts6">&nbsp;</span><span class="rvts24">Next</span><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/sm_pa_bluetooth_check.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">5. If you have</span><span class="rvts24">&nbsp;already paired</span><span class="rvts6">&nbsp;your device to StellarMate before, you can set it to&nbsp;</span><span class="rvts24">Auto-bind</span><span class="rvts6">&nbsp;on startup by clicking on the&nbsp;</span><span class="rvts24">Bind&nbsp;</span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/arrow-circle-right-solid.png"><span class="rvts6">&nbsp;button next to the device's details. You will be met with a dialog that confirms that your device has been&nbsp;</span><span class="rvts24">binded</span><span class="rvts6">&nbsp;to StellarMate.</span></p>
+<p class="rvps2"><span class="rvts6">5. If you have</span><span class="rvts24">&nbsp;already paired</span><span class="rvts6">&nbsp;your device to StellarMate before, you can set it to&nbsp;</span><span class="rvts24">Auto-bind</span><span class="rvts6">&nbsp;on startup by clicking on the&nbsp;</span><span class="rvts24">Bind&nbsp;</span><span class="rvts6">&nbsp;button next to the device's details. You will be met with a dialog that confirms that your device has been&nbsp;</span><span class="rvts24">binded</span><span class="rvts6">&nbsp;to StellarMate.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="1000" height="372" alt="" style="padding : 1px;" src="lib/sm_pa_bind_paired.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">6. If you have not paired your device and would like to add a new device, click on the&nbsp;</span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/plus-circle-solid.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Add New Device</span><span class="rvts6">&nbsp;button.</span></p>
+<p class="rvps2"><span class="rvts6">6. If you have not paired your device and would like to add a new device, click on the&nbsp;</span><span class="rvts6">&nbsp;</span><span class="rvts24">Add New Device</span><span class="rvts6">&nbsp;button.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="1000" height="302" alt="" style="padding : 1px;" src="lib/sm_pa_add_new_device.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">7. The Bluetooth Wizard will now scan for available bluetooth devices.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/sm_pa_scanning.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">8. If the scanner does not find any devices, click on&nbsp;</span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/redo-alt-solid.png"><span class="rvts6">&nbsp;</span><span class="rvts24">RESCAN</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">8. If the scanner does not find any devices, click on&nbsp;</span><span class="rvts6">&nbsp;</span><span class="rvts24">RESCAN</span><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="1000" height="360" alt="" style="padding : 1px;" src="lib/sm_pa_empty.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">9. If you find your device,&nbsp;</span><span class="rvts24">enter the pin</span><span class="rvts6">&nbsp;</span><span class="rvts24">code</span><span class="rvts6">&nbsp;and then click on the&nbsp;</span><span class="rvts24">Connect</span><span class="rvts6">&nbsp;</span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/arrow-circle-right-solid.png"><span class="rvts6">&nbsp;button.&nbsp;(eg. Shoestring Astronomy HC-06's pin code is 1234, you can find the pin code number by finding the bluetooth device's documentation made by the manufacturer)</span><span class="rvts24">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">9. If you find your device,&nbsp;</span><span class="rvts24">enter the pin</span><span class="rvts6">&nbsp;</span><span class="rvts24">code</span><span class="rvts6">&nbsp;and then click on the&nbsp;</span><span class="rvts24">Connect</span><span class="rvts6">&nbsp;</span><span class="rvts6">&nbsp;button.&nbsp;(eg. Shoestring Astronomy HC-06's pin code is 1234, you can find the pin code number by finding the bluetooth device's documentation made by the manufacturer)</span><span class="rvts24">&nbsp;</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps3"><img width="1000" height="407" alt="" style="padding : 1px;" src="lib/sm_pa_connect.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts24"><br/></span></p>
 <p class="rvps2"><span class="rvts6">10. Wait a few seconds until a pop-up dialog shows up to confirm if the pairing and binding process was successful or not.</span></p>
 <p class="rvps2"><span class="rvts6">&nbsp;</span></p>
@@ -214,7 +229,7 @@
 <h3 class="rvps20"><span class="rvts0"><span class="rvts24"><br/></span></span></h3>
 <p class="rvps2"><span class="rvts6">To stop a device from being auto-binded on startup, go to the Bluetooth Wizard by following steps 1-4 and then click on&nbsp;</span><img width="24" height="27" alt="" style="padding : 1px;" src="lib/trash-alt-solid.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Unbind Previous Device.</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps3"><img width="1000" height="400" alt="" style="padding : 1px;" src="lib/sm_pa_unbind.png"></p>
+<p class="rvps3"></p>
 <p class="rvps3"><span class="rvts24"><br/></span></p>
 <p class="rvps2"><span class="rvts6">A confirmation dialog will be shown to you.</span></p>
 <p></p>
@@ -248,29 +263,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
