@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -177,98 +192,102 @@
 <h4 class="rvps28"><a name="IDM5091"></a><span class="rvts0"><span class="rvts22">User Interface</span></span></h4>
 <p class="rvps10"><a name="IDM5093"></a><span class="rvts20">Ekos Astrophotography Tool is organized into several&nbsp;</span><span class="rvts21">Modules</span><span class="rvts20">. A module is a set of functions and tasks for a particular step in astrophotography and/or data acquisition. Currently, the following modules are included with Ekos:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Setup &amp; Summary Module</span></li>
-<li class="rvps10"><span class="rvts20">Scheduler Module</span></li>
-<li class="rvps10"><span class="rvts20">Capture Module</span></li>
-<li class="rvps10"><span class="rvts20">Focus Module</span></li>
-<li class="rvps10"><span class="rvts20">Mount Module</span></li>
-<li class="rvps10"><span class="rvts20">Observatory Module</span></li>
-<li class="rvps10"><span class="rvts20">Alignment Module</span></li>
-<li class="rvps10"><span class="rvts20">Guide Module</span></li>
+ <li class="rvps10"><span class="rvts20">Setup &amp; Summary Module</span></li>
+ <li class="rvps10"><span class="rvts20">Scheduler Module</span></li>
+ <li class="rvps10"><span class="rvts20">Capture Module</span></li>
+ <li class="rvps10"><span class="rvts20">Focus Module</span></li>
+ <li class="rvps10"><span class="rvts20">Mount Module</span></li>
+ <li class="rvps10"><span class="rvts20">Observatory Module</span></li>
+ <li class="rvps10"><span class="rvts20">Alignment Module</span></li>
+ <li class="rvps10"><span class="rvts20">Guide Module</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">Each module has its own tab and icon in the graphical user interface as illustrated in the screenshot below:</span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_summary_cheatsheet.png"></p>
 <p class="rvps3"><span class="rvts22"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">Summary &amp; Setup Module</span></li>
-<li class="rvps10"><span class="rvts20">As its name suggests, this is where you will create and manage your equipment profile, and connect to your devices. It also provides a summary view where the capture progress along with the focus &amp; guide operations is displayed in a compact format to convey the most important information relevant to the user.</span></li>
-<li class="rvps2"><span class="rvts20">Scheduler Module</span></li>
-<li class="rvps10"><span class="rvts20">After mastering Ekos, users are encouraged to learn how to use the Scheduler module since it facilitates the complete observation process greatly. It enables you to select multiple targets, specify which conditions and requirements to be met, and what frames are required for capture. Afterwards the scheduler intelligently calculates the best observation time for each object and then proceed to control the complete observatory from startup to shutdown.</span></li>
-<li class="rvps2"><span class="rvts20">Capture Module</span></li>
-<li class="rvps10"><span class="rvts20">This is the primary module for camera &amp; filter wheel control. Create imaging sequences, capture previews, and watch video streams. It supports rotator control and can automatically capture flat frames in a number of scenarios.</span></li>
-<li class="rvps2"><span class="rvts20">Focus Module</span></li>
-<li class="rvps10"><span class="rvts20">Measure the sharpness of your images in the focus module by calculating Half-Flux-Radius. The lower the HFR, the sharper the image becomes. You can run the focus module with or without a focuser. With an electronic focuser, you can run an autofocus operation where Ekos iterates and calculates the optical focus position.</span></li>
-<li class="rvps2"><span class="rvts20">Guide Module</span></li>
-<li class="rvps10"><span class="rvts20">To achieve long exposure astrophotography, guiding is necessary to ensure the image is locked and stabilized for the complete duration of the exposure duration. Deviations from the frame with time can lead to blurry images and star trails. In the guide module, it can automatically select a suitable guide star and then lock the mount to always keep that star in its position. If the guide module detects any deviation from this locked position, it sends correction pulses to the mount to bring it back to the original position.</span></li>
-<li class="rvps2"><span class="rvts20">Mount Module</span></li>
-<li class="rvps10"><span class="rvts20">Mount control can be either done via the Sky Map interactively or via the Mount Control Panel in the mount module. Configure telescope properties (focal length &amp; aperture) for both your primary imaging telescope and guide scope. However, it is recommended to select the telescopes in the equipment profile and not change the values directly in the mount module.</span></li>
-<li class="rvps2"><span class="rvts20">Observatory Module</span></li>
-<li class="rvps10"><span class="rvts20">Dome parking state and position can be controlled in this module. Shutter can be closed or opened. A weather panel is also available for users to check the weather if they have a weather station.</span></li>
+ <li class="rvps2"><span class="rvts22">Summary &amp; Setup Module</span></li>
+ <li class="rvps10"><span class="rvts20">As its name suggests, this is where you will create and manage your equipment profile, and connect to your devices. It also provides a summary view where the capture progress along with the focus &amp; guide operations is displayed in a compact format to convey the most important information relevant to the user.</span></li>
+ <li class="rvps2"><span class="rvts20">Scheduler Module</span></li>
+ <li class="rvps10"><span class="rvts20">After mastering Ekos, users are encouraged to learn how to use the Scheduler module since it facilitates the complete observation process greatly. It enables you to select multiple targets, specify which conditions and requirements to be met, and what frames are required for capture. Afterwards the scheduler intelligently calculates the best observation time for each object and then proceed to control the complete observatory from startup to shutdown.</span></li>
+ <li class="rvps2"><span class="rvts20">Capture Module</span></li>
+ <li class="rvps10"><span class="rvts20">This is the primary module for camera &amp; filter wheel control. Create imaging sequences, capture previews, and watch video streams. It supports rotator control and can automatically capture flat frames in a number of scenarios.</span></li>
+ <li class="rvps2"><span class="rvts20">Focus Module</span></li>
+ <li class="rvps10"><span class="rvts20">Measure the sharpness of your images in the focus module by calculating Half-Flux-Radius. The lower the HFR, the sharper the image becomes. You can run the focus module with or without a focuser. With an electronic focuser, you can run an autofocus operation where Ekos iterates and calculates the optical focus position.</span></li>
+ <li class="rvps2"><span class="rvts20">Guide Module</span></li>
+ <li class="rvps10"><span class="rvts20">To achieve long exposure astrophotography, guiding is necessary to ensure the image is locked and stabilized for the complete duration of the exposure duration. Deviations from the frame with time can lead to blurry images and star trails. In the guide module, it can automatically select a suitable guide star and then lock the mount to always keep that star in its position. If the guide module detects any deviation from this locked position, it sends correction pulses to the mount to bring it back to the original position.</span></li>
+ <li class="rvps2"><span class="rvts20">Mount Module</span></li>
+ <li class="rvps10"><span class="rvts20">Mount control can be either done via the Sky Map interactively or via the Mount Control Panel in the mount module. Configure telescope properties (focal length &amp; aperture) for both your primary imaging telescope and guide scope. However, it is recommended to select the telescopes in the equipment profile and not change the values directly in the mount module.</span></li>
+ <li class="rvps2"><span class="rvts20">Observatory Module</span></li>
+ <li class="rvps10"><span class="rvts20">Dome parking state and position can be controlled in this module. Shutter can be closed or opened. A weather panel is also available for users to check the weather if they have a weather station.</span></li>
 </ul>
 <h4 class="rvps28"><a name="EKOS-PROFILE-WIZARD"></a><span class="rvts0"><span class="rvts22">Profile Wizard</span></span></h4>
 <p class="rvps10"><a name="IDM5155"></a><span class="rvts20">The Profile Wizard is a handy tool to setup your equipment for the first time. It should popup automatically the first time you run&nbsp;KStars. Follow the guided instructions to setup your first equipment profile.</span></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">Greeting Page</span></li>
-<li class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_wizard_welcome.png"></li>
+ <li class="rvps2"><span class="rvts22">Greeting Page</span></li>
+ <li class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_wizard_welcome.png"></li>
 </ul>
 <p class="rvps10"><span class="rvts20">The first greeting screen contains some links to learn more about Ekos &amp; INDI. Click&nbsp;Next&nbsp;to continue.</span></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">Equipment Location Page</span></li>
-<li class="rvps2"><span class="rvts22"></span></li>
-<li class="rvps10"><span class="rvts20">Next, you will be presented with the equipment location page. Your selection depends on where your equipment is connected to:</span></li>
+ <li class="rvps2"><span class="rvts22">Equipment Location Page</span></li>
+ <li class="rvps2"><span class="rvts22"><br/></span></li>
+ <li class="rvps10"><span class="rvts20">Next, you will be presented with the equipment location page. Your selection depends on where your equipment is connected to:</span></li>
 </ul>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">Equipment is attached to this device: Select this option if Ekos is running on your StellarMate (via HDMI or VNC), PC (Windows®/Linux®) or&nbsp;Mac®&nbsp;OS.</span></li>
-<li class="rvps10"><span class="rvts20">Equipment is attached to a remote device: Select this option if Ekos is running on your PC (Windows®/Linux®) or&nbsp;Mac®&nbsp;OS, and your equipment is connected to a remote computer.</span></li>
-<li class="rvps10"><span class="rvts20">Equipment is attached to StellarMate: Select this option if Ekos is running on your PC (Windows®/Linux®) or&nbsp;Mac®&nbsp;OS, and your equipment is connected to StellarMate or another remote device.</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">Equipment is attached to this device: Select this option if Ekos is running on your StellarMate (via HDMI or VNC), PC (Windows®/Linux®) or&nbsp;Mac®&nbsp;OS.</span></li>
+  <li class="rvps10"><span class="rvts20">Equipment is attached to a remote device: Select this option if Ekos is running on your PC (Windows®/Linux®) or&nbsp;Mac®&nbsp;OS, and your equipment is connected to a remote computer.</span></li>
+  <li class="rvps10"><span class="rvts20">Equipment is attached to StellarMate: Select this option if Ekos is running on your PC (Windows®/Linux®) or&nbsp;Mac®&nbsp;OS, and your equipment is connected to StellarMate or another remote device.</span></li>
+ </ul>
+</ul>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_wizard_select.png"></p>
 <p class="rvps10"><span class="rvts20">Click&nbsp;Next&nbsp;to continue.</span></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">Remote Device Type Page</span></li>
-<li class="rvps2"><span class="rvts22"></span></li>
-<li class="rvps10"><span class="rvts20">In case selected the 2nd option in the last step, you shall be presented with the Remote Device Type page, here you will choose what type of device you are using. It could be StellarMate, AtikBase or any other remote devices such as another Computer for example.</span></li>
+ <li class="rvps2"><span class="rvts22">Remote Device Type Page</span></li>
+ <li class="rvps2"><span class="rvts22"><br/></span></li>
+ <li class="rvps10"><span class="rvts20">In case selected the 2nd option in the last step, you shall be presented with the Remote Device Type page, here you will choose what type of device you are using. It could be StellarMate, AtikBase or any other remote devices such as another Computer for example.</span></li>
 </ul>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_wizard_device.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22"></span></li>
-<li class="rvps2"><span class="rvts22">Remote Connection Page</span></li>
-<li class="rvps10"><span class="rvts20">In case selected StellarMate in the last step, you shall be presented with the Remote Connect Page for StellarMate, here you will enter the hostname or IP address of the StellarMate unit. You can get the hostname from the StellarMate mobile App. Alternatively, you can construct the hostname from StellarMate HotSpot SSID. You should see the SSID when you search for WiFi networks nearby. For example, suppose the SSID is stellarmate. The hostname should be stellarmate.local. That is, if you remove the underscore, and append .local, then you will get the unit hostname. You can always use the StellarMate App to change the unit default hostname to a name of your choice.</span></li>
+ <li class="rvps2"><span class="rvts22"><br/></span></li>
+ <li class="rvps2"><span class="rvts22">Remote Connection Page</span></li>
+ <li class="rvps10"><span class="rvts20">In case selected StellarMate in the last step, you shall be presented with the Remote Connect Page for StellarMate, here you will enter the hostname or IP address of the StellarMate unit. You can get the hostname from the StellarMate mobile App. Alternatively, you can construct the hostname from StellarMate HotSpot SSID. You should see the SSID when you search for WiFi networks nearby. For example, suppose the SSID is stellarmate. The hostname should be stellarmate.local. That is, if you remove the underscore, and append .local, then you will get the unit hostname. You can always use the StellarMate App to change the unit default hostname to a name of your choice.</span></li>
 </ul>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_wizard_remote.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">Profile Creation Page</span></li>
-<li class="rvps10"><span class="rvts20">Now you get to name your equipment profile. Afterwards select which guider application to use. The&nbsp;Internal Guider&nbsp;is the only officially supported selection in StellarMate. You may opt to select&nbsp;PHD2/LinGuider&nbsp;but the details are out of the scope of this documentation. If additional services are desired, check the ones you want to run.</span></li>
+ <li class="rvps2"><span class="rvts22">Profile Creation Page</span></li>
+ <li class="rvps10"><span class="rvts20">Now you get to name your equipment profile. Afterwards select which guider application to use. The&nbsp;Internal Guider&nbsp;is the only officially supported selection in StellarMate. You may opt to select&nbsp;PHD2/LinGuider&nbsp;but the details are out of the scope of this documentation. If additional services are desired, check the ones you want to run.</span></li>
 </ul>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_wizard_done.png"></p>
 <p class="rvps10"><span class="rvts20">In the example above, we select Remote Astrometry, WatchDog, and SkySafari drivers. The detailed explanations for each is provided in the tooltip when you over them. Once done, click&nbsp;Create Profile&nbsp;button. You should now be presented with the Profile Editor.</span></p>
 <h4 class="rvps28"><a name="EKOS-PROFILE-EDITOR"></a><span class="rvts0"><span class="rvts22">Profile Editor</span></span></h4>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_editor.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22"></span></li>
-<li class="rvps2"><span class="rvts22">Profiles</span></li>
-<li class="rvps10"><span class="rvts20">You can define profiles for your equipment and their connection mode using the&nbsp;Profile Editor. Ekos comes pre-installed with the&nbsp;Simulators&nbsp;profile which can be used to start simulator devices for demonstration purposes:</span></li>
+ <li class="rvps2"><span class="rvts22"><br/></span></li>
+ <li class="rvps2"><span class="rvts22">Profiles</span></li>
+ <li class="rvps10"><span class="rvts20">You can define profiles for your equipment and their connection mode using the&nbsp;Profile Editor. Ekos comes pre-installed with the&nbsp;Simulators&nbsp;profile which can be used to start simulator devices for demonstration purposes:</span></li>
 </ul>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">Connection Mode: Ekos can be started either locally or remotely. Local mode is when Ekos is running in the same machine as INDI server,&nbsp;i.e.&nbsp;all the devices are connected directly to the machine. If you run INDI server on a remote machine (for example, on a Raspberry PI), you need to set the INDI server host and port.</span></li>
-<li class="rvps10"><span class="rvts20">Auto Connect: Check this option to enable automatic connection to all your devices after INDI server is started. If unchecked, INDI devices are created but not automatically connected. This is useful when you want to make changes to the driver (e.g.&nbsp;change baud rate or IP address or any other settings)&nbsp;</span><span class="rvts21">before</span><span class="rvts20">&nbsp;you connect to it.</span></li>
-<li class="rvps10"><span class="rvts20">Site Info: Optionally, you can check the&nbsp;Site Info&nbsp;checkbox and Ekos will load the&nbsp;</span><span class="rvts22">current</span><span class="rvts20">&nbsp;city and timezone whenever is Ekos is started with this profile. This can be useful when connecting to the remote geographic site so that Ekos is in sync location and time wise.</span></li>
-<li class="rvps10"><span class="rvts20">Guiding: Select which Guide application you want to use for guiding. By default, the Ekos internal Guide Module is utilized. External guiders include PHD2 and LinGuider.</span></li>
-<li class="rvps10"><span class="rvts20">INDI Web Manager: StellarMate Web Manager is a web-based tool to start and stop INDI drivers. You should always check this option when connecting remotely to a StellarMate unit.</span></li>
-<li class="rvps10"><span class="rvts20">INDI Hub: Share your observatory on indihub.space in one of these modes: Solo, Share, or Robotic (Experimental).</span></li>
-<li class="rvps10"><span class="rvts20">Device Selection: Select your devices from each category. Please note that if you have a CCD with a guide head, you can leave the guider drop-down menu&nbsp;</span><span class="rvts21">blank</span><span class="rvts20">&nbsp;as Ekos will auto-detect the guide head from the CCD camera. Similarly, if your CCD includes embedded filter wheel support, then you do&nbsp;</span><span class="rvts21">not</span><span class="rvts20">&nbsp;need to specify the filter wheel device in the filter drop-down menu.</span></li>
-<li class="rvps10"><span class="rvts20">Telescope Selection: Select your primary and secondary telescopes. You can enter your telescope's information as well as your eyepiece, lens and filter. This is important to ensure that the image being captured is not blurry.</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">Connection Mode: Ekos can be started either locally or remotely. Local mode is when Ekos is running in the same machine as INDI server,&nbsp;i.e.&nbsp;all the devices are connected directly to the machine. If you run INDI server on a remote machine (for example, on a Raspberry PI), you need to set the INDI server host and port.</span></li>
+  <li class="rvps10"><span class="rvts20">Auto Connect: Check this option to enable automatic connection to all your devices after INDI server is started. If unchecked, INDI devices are created but not automatically connected. This is useful when you want to make changes to the driver (e.g.&nbsp;change baud rate or IP address or any other settings)&nbsp;</span><span class="rvts21">before</span><span class="rvts20">&nbsp;you connect to it.</span></li>
+  <li class="rvps10"><span class="rvts20">Site Info: Optionally, you can check the&nbsp;Site Info&nbsp;checkbox and Ekos will load the&nbsp;</span><span class="rvts22">current</span><span class="rvts20">&nbsp;city and timezone whenever is Ekos is started with this profile. This can be useful when connecting to the remote geographic site so that Ekos is in sync location and time wise.</span></li>
+  <li class="rvps10"><span class="rvts20">Guiding: Select which Guide application you want to use for guiding. By default, the Ekos internal Guide Module is utilized. External guiders include PHD2 and LinGuider.</span></li>
+  <li class="rvps10"><span class="rvts20">INDI Web Manager: StellarMate Web Manager is a web-based tool to start and stop INDI drivers. You should always check this option when connecting remotely to a StellarMate unit.</span></li>
+  <li class="rvps10"><span class="rvts20">INDI Hub: Share your observatory on indihub.space in one of these modes: Solo, Share, or Robotic (Experimental).</span></li>
+  <li class="rvps10"><span class="rvts20">Device Selection: Select your devices from each category. Please note that if you have a CCD with a guide head, you can leave the guider drop-down menu&nbsp;</span><span class="rvts21">blank</span><span class="rvts20">&nbsp;as Ekos will auto-detect the guide head from the CCD camera. Similarly, if your CCD includes embedded filter wheel support, then you do&nbsp;</span><span class="rvts21">not</span><span class="rvts20">&nbsp;need to specify the filter wheel device in the filter drop-down menu.</span></li>
+  <li class="rvps10"><span class="rvts20">Telescope Selection: Select your primary and secondary telescopes. You can enter your telescope's information as well as your eyepiece, lens and filter. This is important to ensure that the image being captured is not blurry.</span></li>
+ </ul>
+</ul>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">Start &amp; Stop INDI</span></li>
-<li class="rvps10"><span class="rvts20">Start and Stop INDI services. Once INDI server is established, INDI Control Panel will be displayed. Here you can change some driver options such as which port the device is connected to&nbsp;etc.</span></li>
-<li class="rvps10"><span class="rvts20"></span></li>
-<li class="rvps2"><span class="rvts22">Connect &amp; Disconnect Devices</span></li>
-<li class="rvps10"><span class="rvts20">Connect to INDI server. Based on the devices connected, Ekos modules (CCD, Focus, Guide,&nbsp;etc.) will be established and available to use.</span></li>
+ <li class="rvps2"><span class="rvts22">Start &amp; Stop INDI</span></li>
+ <li class="rvps10"><span class="rvts20">Start and Stop INDI services. Once INDI server is established, INDI Control Panel will be displayed. Here you can change some driver options such as which port the device is connected to&nbsp;etc.</span></li>
+ <li class="rvps10"><span class="rvts20"><br/></span></li>
+ <li class="rvps2"><span class="rvts22">Connect &amp; Disconnect Devices</span></li>
+ <li class="rvps10"><span class="rvts20">Connect to INDI server. Based on the devices connected, Ekos modules (CCD, Focus, Guide,&nbsp;etc.) will be established and available to use.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">Once you are ready, click&nbsp;Start INDI&nbsp;to establish INDI server and connection to your equipment. Ekos shall create the various module icons (Mount, Capture, Focus,&nbsp;etc.) as the connection is established with the device.</span></p>
 <h4 class="rvps28"><a name="EKOS-LOGS"></a><span class="rvts0"><span class="rvts22">Logs</span></span></h4>
@@ -306,29 +325,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

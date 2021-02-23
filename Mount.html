@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -176,29 +191,34 @@
 <h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
 <h3 class="rvps41"><img alt="" style="padding : 1px;" src="lib/mount_config.png"></h3>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22"></span></li>
+ <li class="rvps2"><span class="rvts22"><br/></span></li>
 </ul>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Aperture (mm)</span><span class="rvts20">: Specify the value of aperture for your telescope. Defaults to the values set for your telescope in your current running profile.</span></li>
-<li class="rvps2"><span class="rvts22">Focal Length (mm)</span><span class="rvts20">:&nbsp;Specify the value of focal length for your telescope.&nbsp;Defaults to the values set for your telescope in your current running profile.</span></li>
+ <li class="rvps2"><span class="rvts22">Aperture (mm)</span><span class="rvts20">: Specify the value of aperture for your telescope. Defaults to the values set for your telescope in your current running profile.</span></li>
+ <li class="rvps2"><span class="rvts22">Focal Length (mm)</span><span class="rvts20">:&nbsp;Specify the value of focal length for your telescope.&nbsp;Defaults to the values set for your telescope in your current running profile.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps2"><span class="rvts22">Configurations</span><span class="rvts20">: You can set up to 6 configurations for your mount module. To save the information, select an unused</span><span class="rvts22">&nbsp;Config</span><span class="rvts20">&nbsp;</span><span class="rvts22">#</span><span class="rvts20">&nbsp;from the drop-down menu and then enter a name in the field next to it, then click on&nbsp;</span><span class="rvts22">Save</span><span class="rvts20">&nbsp;</span><span class="rvts22">Telescope</span><span class="rvts20">&nbsp;</span><span class="rvts22">Info</span><span class="rvts20">.</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts18">Note</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps14"><span class="rvts16">&nbsp;It is recommended to specify the primary &amp; guide telescopes in the Ekos Profile as this ensures the correct information is always used for this profile regardless of the INDI driver state.</span></p>
-</td>
-</tr>
+<div class="rvps5">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts18">Note</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><span class="rvts17"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps14"><span class="rvts16">&nbsp;It is recommended to specify the primary &amp; guide telescopes in the Ekos Profile as this ensures the correct information is always used for this profile regardless of the INDI driver state.</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
@@ -209,13 +229,13 @@
 <h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
 <p class="rvps2"><span class="rvts20">This group shows the following values of your mount:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">RA</span><span class="rvts20">: Right Ascension</span></li>
-<li class="rvps2"><span class="rvts22">DEC</span><span class="rvts20">: Declination</span></li>
-<li class="rvps2"><span class="rvts22">AZ</span><span class="rvts20">: Azimuth</span></li>
-<li class="rvps2"><span class="rvts22">ALT:</span><span class="rvts20">&nbsp;Altitude</span></li>
-<li class="rvps2"><span class="rvts22">HA</span><span class="rvts20">: Hour Angle</span></li>
-<li class="rvps2"><span class="rvts22">LST</span><span class="rvts20">: Local Sidereal time</span></li>
-<li class="rvps2"><span class="rvts20"></span></li>
+ <li class="rvps2"><span class="rvts22">RA</span><span class="rvts20">: Right Ascension</span></li>
+ <li class="rvps2"><span class="rvts22">DEC</span><span class="rvts20">: Declination</span></li>
+ <li class="rvps2"><span class="rvts22">AZ</span><span class="rvts20">: Azimuth</span></li>
+ <li class="rvps2"><span class="rvts22">ALT:</span><span class="rvts20">&nbsp;Altitude</span></li>
+ <li class="rvps2"><span class="rvts22">HA</span><span class="rvts20">: Hour Angle</span></li>
+ <li class="rvps2"><span class="rvts22">LST</span><span class="rvts20">: Local Sidereal time</span></li>
+ <li class="rvps2"><span class="rvts20"><br/></span></li>
 </ul>
 <h3 class="rvps20"><a name="mytoc3"></a><span class="rvts0"><span class="rvts22">Meridian&nbsp;Flip</span></span></h3>
 <h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
@@ -228,22 +248,22 @@
 <p class="rvps2"><span class="rvts20">&nbsp;</span></p>
 <p class="rvps2"><span class="rvts22">Controls brief description</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Flip if HA &gt;</span><span class="rvts20">: Request a meridian flip if the hour angle exceeds the specified value. Capture and Guiding will be suspended and resumed after the flip is complete.</span></li>
-<li class="rvps2"><span class="rvts22">Hours</span><span class="rvts20">: Set Hour Angle unit to Hours</span></li>
-<li class="rvps2"><span class="rvts22">Degrees</span><span class="rvts20">:&nbsp;Set Hour Angle unit to Degrees. If the mount is configured to flip at 5 degrees, set the value in Ekos to 3 degrees less (2 degrees).</span></li>
-<li class="rvps2"><span class="rvts22">Pier</span><span class="rvts20">&nbsp;</span><span class="rvts22">Side:&nbsp;</span><span class="rvts20">Shows the pier side direction.</span></li>
+ <li class="rvps2"><span class="rvts22">Flip if HA &gt;</span><span class="rvts20">: Request a meridian flip if the hour angle exceeds the specified value. Capture and Guiding will be suspended and resumed after the flip is complete.</span></li>
+ <li class="rvps2"><span class="rvts22">Hours</span><span class="rvts20">: Set Hour Angle unit to Hours</span></li>
+ <li class="rvps2"><span class="rvts22">Degrees</span><span class="rvts20">:&nbsp;Set Hour Angle unit to Degrees. If the mount is configured to flip at 5 degrees, set the value in Ekos to 3 degrees less (2 degrees).</span></li>
+ <li class="rvps2"><span class="rvts22">Pier</span><span class="rvts20">&nbsp;</span><span class="rvts22">Side:&nbsp;</span><span class="rvts20">Shows the pier side direction.</span></li>
 </ul>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts20"></span></li>
+ <li class="rvps2"><span class="rvts20"><br/></span></li>
 </ul>
 <p class="rvps2"><span class="rvts20">&nbsp;</span><span class="rvts22">Reset</span></p>
 <p class="rvps2"><span class="rvts22"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/mount_reset.png"></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Clear</span><span class="rvts20">&nbsp;</span><span class="rvts22">Model</span><span class="rvts20">:&nbsp;Deletes all mount alignment points.</span></li>
-<li class="rvps2"><span class="rvts22">Clear Parking</span><span class="rvts20">: Clears parking information.</span></li>
-<li class="rvps2"><span class="rvts22">Purge all configuration</span><span class="rvts20">: Deletes all the configuration files (config #1, config #2, etc)</span></li>
+ <li class="rvps2"><span class="rvts22">Clear</span><span class="rvts20">&nbsp;</span><span class="rvts22">Model</span><span class="rvts20">:&nbsp;Deletes all mount alignment points.</span></li>
+ <li class="rvps2"><span class="rvts22">Clear Parking</span><span class="rvts20">: Clears parking information.</span></li>
+ <li class="rvps2"><span class="rvts22">Purge all configuration</span><span class="rvts20">: Deletes all the configuration files (config #1, config #2, etc)</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <h3 class="rvps20"><a name="mytoc4"></a><span class="rvts0"><span class="rvts22">Auto Park</span></span></h3>
@@ -253,27 +273,32 @@
 <p class="rvps2"><span class="rvts20">This feature Auto Parks your mount at a specific time and you can choose if you want to park it everyday or not. To start the&nbsp;</span><span class="rvts22">Auto</span><span class="rvts20">&nbsp;</span><span class="rvts22">Parking</span><span class="rvts20">&nbsp;process, click on the&nbsp;</span><span class="rvts22">Start</span><span class="rvts20">&nbsp;</span><img alt="" style="padding : 1px;" src="lib/media-playback-start.png"><span class="rvts20">button.</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Park At</span><span class="rvts20">: Specify the time when you would to park your mount.</span></li>
-<li class="rvps2"><span class="rvts22">Everyday</span><span class="rvts20">: If you want to park your mount everyday at a specific time, then check this checkbox.</span></li>
-<li class="rvps2"><span class="rvts22">Timer</span><span class="rvts20">: Displays the countdown until the mount is parked. To activate the countdown, click on the&nbsp;</span><span class="rvts22">Start</span><span class="rvts20">&nbsp;button.</span></li>
-<li class="rvps2"><span class="rvts22">Start</span><span class="rvts20">: Starts the Auto Parking process.</span></li>
-<li class="rvps2"><span class="rvts22">Stop</span><span class="rvts20">:&nbsp;Stops the Auto Parking process.</span></li>
+ <li class="rvps2"><span class="rvts22">Park At</span><span class="rvts20">: Specify the time when you would to park your mount.</span></li>
+ <li class="rvps2"><span class="rvts22">Everyday</span><span class="rvts20">: If you want to park your mount everyday at a specific time, then check this checkbox.</span></li>
+ <li class="rvps2"><span class="rvts22">Timer</span><span class="rvts20">: Displays the countdown until the mount is parked. To activate the countdown, click on the&nbsp;</span><span class="rvts22">Start</span><span class="rvts20">&nbsp;button.</span></li>
+ <li class="rvps2"><span class="rvts22">Start</span><span class="rvts20">: Starts the Auto Parking process.</span></li>
+ <li class="rvps2"><span class="rvts22">Stop</span><span class="rvts20">:&nbsp;Stops the Auto Parking process.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="14" alt="" style="padding : 1px;" src="lib/exclamation-triangle.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts15">WARNING</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps29"><span class="rvts55">Auto Parking should not be used when scheduler is active as it can interfere with the scheduler operation.</span></p>
-</td>
-</tr>
+<div class="rvps5">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><img width="16" height="14" alt="" style="padding : 1px;" src="lib/exclamation-triangle.png"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts15">WARNING</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><span class="rvts17"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps29"><span class="rvts55">Auto Parking should not be used when scheduler is active as it can interfere with the scheduler operation.</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
@@ -295,10 +320,10 @@
 <p class="rvps2"><span class="rvts20">Clicking on this button will open the&nbsp;</span><span class="rvts22">Mount</span><span class="rvts20">&nbsp;</span><span class="rvts22">Control</span><span class="rvts20">&nbsp;dialog where you will be able to control your Mount manually using&nbsp;</span><span class="rvts22">arrow buttons</span><span class="rvts20">&nbsp;and abort movement using a&nbsp;</span><span class="rvts22">STOP</span><span class="rvts20">&nbsp;button. It is possible to reverse the controls if you feel it is easier that way to control your mount. The speed of the mount can be controlled using a slider which has four speeds: Guide, Centering, Find, and Max. The details of the mount's position are shown, which are: RA, DEC, AZ, ALT, HA, and ZA. You can specify the target you want to move to using the&nbsp;</span><span class="rvts22">Target&nbsp;</span><span class="rvts20">field. To specify a&nbsp;</span><span class="rvts22">Target</span><span class="rvts20">, click on the magnifier icon&nbsp;and selecting an object. You can specify manually where to go to by filling the RA/AZ or DE/AL field and then choosing the type by clicking on the appropriate setting. There is a status bar that shows if the mount is idle or doing some action. The small button on the bottom-right corner is used to sync the GPS location. There are four main options for automatic mount control:</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">GOTO</span><span class="rvts20">: Slews your mount to the selected target and tracks it.</span></li>
-<li class="rvps2"><span class="rvts22">SYNC</span><span class="rvts20">: Sets the mount coordinates as the current coordinates. No motion takes place.</span></li>
-<li class="rvps2"><span class="rvts22">PARK</span><span class="rvts20">: Park the mount to its parking position. The parking position varies from mount to mount. Some driver support custom parking positions while others support only one static parking position. For GEM mount, parking position is usually with the mount looking toward the celestial pole with the counter weights down.</span></li>
-<li class="rvps2"><span class="rvts22">UNPARK</span><span class="rvts20">: Unparks the mount so it can be moved.</span></li>
+ <li class="rvps2"><span class="rvts22">GOTO</span><span class="rvts20">: Slews your mount to the selected target and tracks it.</span></li>
+ <li class="rvps2"><span class="rvts22">SYNC</span><span class="rvts20">: Sets the mount coordinates as the current coordinates. No motion takes place.</span></li>
+ <li class="rvps2"><span class="rvts22">PARK</span><span class="rvts20">: Park the mount to its parking position. The parking position varies from mount to mount. Some driver support custom parking positions while others support only one static parking position. For GEM mount, parking position is usually with the mount looking toward the celestial pole with the counter weights down.</span></li>
+ <li class="rvps2"><span class="rvts22">UNPARK</span><span class="rvts20">: Unparks the mount so it can be moved.</span></li>
 </ul>
 <p></p>
 
@@ -331,29 +356,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

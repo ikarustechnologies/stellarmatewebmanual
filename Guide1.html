@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -177,61 +192,62 @@
 <p class="rvps10"><span class="rvts20">Guiding introduction</span></p>
 <p class="rvps10"><span class="rvts20">During the two processes, you must set the following:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Guider: Select the Guider CCD.</span></li>
-<li class="rvps10"><span class="rvts20">Via: Selects which device receives the autoguiding correction pulses from Ekos. Usually, guider CCDs have an ST4 port. If you are using the guider's ST4 to autoguide your telescope, set the guider driver in the&nbsp;Via&nbsp;combo box. The guider CCD will receive the correction pulses from Ekos and will relay them to the mount via the ST4 port. Alternatively, some telescopes support pulse commands and you can select the telescope to be a receiver of the Ekos correction pulses.</span></li>
-<li class="rvps10"><span class="rvts20">Exposure: CCD Exposure in seconds.</span></li>
-<li class="rvps10"><span class="rvts20">Binning: CCD Binning.</span></li>
-<li class="rvps10"><span class="rvts20">Box: Size of the box enclosing the guide star. Select a suitable size that is neither too large or too small for the selected star.</span></li>
-<li class="rvps10"><span class="rvts20">Effects: Specify filter to be applied to the image to enhance it.</span></li>
+ <li class="rvps10"><span class="rvts20">Guider: Select the Guider CCD.</span></li>
+ <li class="rvps10"><span class="rvts20">Via: Selects which device receives the autoguiding correction pulses from Ekos. Usually, guider CCDs have an ST4 port. If you are using the guider's ST4 to autoguide your telescope, set the guider driver in the&nbsp;Via&nbsp;combo box. The guider CCD will receive the correction pulses from Ekos and will relay them to the mount via the ST4 port. Alternatively, some telescopes support pulse commands and you can select the telescope to be a receiver of the Ekos correction pulses.</span></li>
+ <li class="rvps10"><span class="rvts20">Exposure: CCD Exposure in seconds.</span></li>
+ <li class="rvps10"><span class="rvts20">Binning: CCD Binning.</span></li>
+ <li class="rvps10"><span class="rvts20">Box: Size of the box enclosing the guide star. Select a suitable size that is neither too large or too small for the selected star.</span></li>
+ <li class="rvps10"><span class="rvts20">Effects: Specify filter to be applied to the image to enhance it.</span></li>
 </ul>
 <h5 class="rvps35"><a name="GUIDE-DIRECTION-CONTROL"></a><span class="rvts0"><span class="rvts22">Main Module Controls</span></span></h5>
 <p class="rvps10"><span class="rvts20">Most of the main module controls are briefly explained in this section.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Capture: Takes one capture</span></li>
-<li class="rvps10"><span class="rvts20">Guide: Starts the guiding process</span></li>
-<li class="rvps10"><span class="rvts20">Stop: Stops the guiding process</span></li>
-<li class="rvps10"><span class="rvts20">Loop: Starts taking frames every n seconds (n = exposure value)</span></li>
-<li class="rvps10"><span class="rvts20">Subframe: Subframe the image around the guide star. Or for PHD2, receive the Guide Star Image instead of the full image frame. For the Internal Guider, before checking this option, you must first capture an image and select a guide star. Uncheck it to take a full frame again.</span></li>
-<li class="rvps10"><span class="rvts20">Auto Star: If checked, Ekos will attempt to select the best guide star in the frame and begins the calibration process automatically.</span></li>
-<li class="rvps10"><span class="rvts20">Dark: Subtract dark frame. If no dark frame is available, a new dark frame shall be captured and saved for future use.</span></li>
-<li class="rvps10"><span class="rvts20">Show in FITS Viewer: Shows frame in FITS Viewer</span></li>
-<li class="rvps10"><span class="rvts20">Clear calibration data: Clears all the calibration data for the guiding process.</span></li>
-<li class="rvps10"><span class="rvts20">Manual Dither: Allows manual dithering.</span></li>
-<li class="rvps10"><span class="rvts20">Guider: Select active guide camera.</span></li>
-<li class="rvps10"><span class="rvts20">Via: Select which device receives the guiding correction commands.</span></li>
-<li class="rvps10"><span class="rvts20">Exp: Exposure time in seconds.</span></li>
-<li class="rvps10"><span class="rvts20">Bin: Guide camera binning. It is recommended to set binning to 2x2 or higher.</span></li>
-<li class="rvps10"><span class="rvts20">Box: Guide star tracking box size. Box size must be set in accordance to the selected star size.</span></li>
-<li class="rvps10"><span class="rvts20">Effects: Apply filter to image after capture to enhance it.</span></li>
-<li class="rvps10"><span class="rvts20">Directions: Shows the values of RA and DEC.</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">RA: Guide Right Ascention Axis</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li class="rvps10"><span class="rvts20">+: East Direction Guiding</span></li>
-<li class="rvps10"><span class="rvts20">-: West Direction Guiding</span></li>
-</ul>
-<li class="rvps10"><span class="rvts20">DEC: Guide Declination Axis</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li class="rvps10"><span class="rvts20">+: North Direction Guiding</span></li>
-<li class="rvps10"><span class="rvts20">-: South Direction Guiding</span></li>
-</ul></ul>
-<li class="rvps10"><span class="rvts20">Swap: Swap DEC direction pulses. This value is determined automatically from the calibration procedure, only override if necessary.</span></li>
-<li class="rvps10"><span class="rvts20">Connect: Connect to external guiding application.</span></li>
-<li class="rvps10"><span class="rvts20">Disconnect: Disconnect from external guiding application.</span></li>
-<li class="rvps10"><span class="rvts20">Status Bar: Displays the status of the guiding process</span></li>
-<li class="rvps10"><span class="rvts20">Scope: Select which telescope to use when performing Field of View calculations.</span></li>
-<li class="rvps10"><span class="rvts20">Guiding rate: Mount guiding rate (x15"/sec). Find out the guiding rate used by your mount and update the value here to get the recommended value of proportional gain suitable for your mount. Setting this value does not change your mount guiding rate.</span></li>
-<li class="rvps10"><span class="rvts20">P: Recommended proportional rate given the selected guiding rate.</span></li>
-<li class="rvps10"><span class="rvts20">Focal Length: Guide camera focal length. Unit is in millimeters (mm)</span></li>
-<li class="rvps10"><span class="rvts20">Aperture: Guide camera aperture. Unit is in millimeters (mm)</span></li>
-<li class="rvps10"><span class="rvts20">F/D: Focal ratio</span></li>
-<li class="rvps10"><span class="rvts20">FOV: Field of view (arcmin)</span></li>
-<li class="rvps10"><span class="rvts20">Guiding Delta ": Immediate Guiding RA deviation in arcseconds and Immediate Guiding DEC deviation in arcseconds respectively.</span></li>
-<li class="rvps10"><span class="rvts20">Pulse Length (ms): Generated RA pulse and Generated DEC pulse respectively.</span></li>
-<li class="rvps10"><span class="rvts20">RA RMS": RA Guiding RMS error.</span></li>
-<li class="rvps10"><span class="rvts20">DE RMS": DEC Guiding RMS error.</span></li>
-<li class="rvps10"><span class="rvts20">Total RMS": Total Guiding RMS error.</span></li>
-<li class="rvps10"><span class="rvts20">Guide SNR: Guide Signal-to-noise ratio.</span></li>
+ <li class="rvps10"><span class="rvts20">Capture: Takes one capture</span></li>
+ <li class="rvps10"><span class="rvts20">Guide: Starts the guiding process</span></li>
+ <li class="rvps10"><span class="rvts20">Stop: Stops the guiding process</span></li>
+ <li class="rvps10"><span class="rvts20">Loop: Starts taking frames every n seconds (n = exposure value)</span></li>
+ <li class="rvps10"><span class="rvts20">Subframe: Subframe the image around the guide star. Or for PHD2, receive the Guide Star Image instead of the full image frame. For the Internal Guider, before checking this option, you must first capture an image and select a guide star. Uncheck it to take a full frame again.</span></li>
+ <li class="rvps10"><span class="rvts20">Auto Star: If checked, Ekos will attempt to select the best guide star in the frame and begins the calibration process automatically.</span></li>
+ <li class="rvps10"><span class="rvts20">Dark: Subtract dark frame. If no dark frame is available, a new dark frame shall be captured and saved for future use.</span></li>
+ <li class="rvps10"><span class="rvts20">Show in FITS Viewer: Shows frame in FITS Viewer</span></li>
+ <li class="rvps10"><span class="rvts20">Clear calibration data: Clears all the calibration data for the guiding process.</span></li>
+ <li class="rvps10"><span class="rvts20">Manual Dither: Allows manual dithering.</span></li>
+ <li class="rvps10"><span class="rvts20">Guider: Select active guide camera.</span></li>
+ <li class="rvps10"><span class="rvts20">Via: Select which device receives the guiding correction commands.</span></li>
+ <li class="rvps10"><span class="rvts20">Exp: Exposure time in seconds.</span></li>
+ <li class="rvps10"><span class="rvts20">Bin: Guide camera binning. It is recommended to set binning to 2x2 or higher.</span></li>
+ <li class="rvps10"><span class="rvts20">Box: Guide star tracking box size. Box size must be set in accordance to the selected star size.</span></li>
+ <li class="rvps10"><span class="rvts20">Effects: Apply filter to image after capture to enhance it.</span></li>
+ <li class="rvps10"><span class="rvts20">Directions: Shows the values of RA and DEC.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">RA: Guide Right Ascention Axis</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps10"><span class="rvts20">+: East Direction Guiding</span></li>
+   <li class="rvps10"><span class="rvts20">-: West Direction Guiding</span></li>
+  </ul>
+  <li class="rvps10"><span class="rvts20">DEC: Guide Declination Axis</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps10"><span class="rvts20">+: North Direction Guiding</span></li>
+   <li class="rvps10"><span class="rvts20">-: South Direction Guiding</span></li>
+  </ul>
+ </ul>
+ <li class="rvps10"><span class="rvts20">Swap: Swap DEC direction pulses. This value is determined automatically from the calibration procedure, only override if necessary.</span></li>
+ <li class="rvps10"><span class="rvts20">Connect: Connect to external guiding application.</span></li>
+ <li class="rvps10"><span class="rvts20">Disconnect: Disconnect from external guiding application.</span></li>
+ <li class="rvps10"><span class="rvts20">Status Bar: Displays the status of the guiding process</span></li>
+ <li class="rvps10"><span class="rvts20">Scope: Select which telescope to use when performing Field of View calculations.</span></li>
+ <li class="rvps10"><span class="rvts20">Guiding rate: Mount guiding rate (x15"/sec). Find out the guiding rate used by your mount and update the value here to get the recommended value of proportional gain suitable for your mount. Setting this value does not change your mount guiding rate.</span></li>
+ <li class="rvps10"><span class="rvts20">P: Recommended proportional rate given the selected guiding rate.</span></li>
+ <li class="rvps10"><span class="rvts20">Focal Length: Guide camera focal length. Unit is in millimeters (mm)</span></li>
+ <li class="rvps10"><span class="rvts20">Aperture: Guide camera aperture. Unit is in millimeters (mm)</span></li>
+ <li class="rvps10"><span class="rvts20">F/D: Focal ratio</span></li>
+ <li class="rvps10"><span class="rvts20">FOV: Field of view (arcmin)</span></li>
+ <li class="rvps10"><span class="rvts20">Guiding Delta ": Immediate Guiding RA deviation in arcseconds and Immediate Guiding DEC deviation in arcseconds respectively.</span></li>
+ <li class="rvps10"><span class="rvts20">Pulse Length (ms): Generated RA pulse and Generated DEC pulse respectively.</span></li>
+ <li class="rvps10"><span class="rvts20">RA RMS": RA Guiding RMS error.</span></li>
+ <li class="rvps10"><span class="rvts20">DE RMS": DEC Guiding RMS error.</span></li>
+ <li class="rvps10"><span class="rvts20">Total RMS": Total Guiding RMS error.</span></li>
+ <li class="rvps10"><span class="rvts20">Guide SNR: Guide Signal-to-noise ratio.</span></li>
 </ul>
 <h5 class="rvps35"><a name="GUIDE-GUIDING-RATE"></a><span class="rvts0"><span class="rvts22">Dark Frames</span></span></h5>
 <p class="rvps10"><span class="rvts20">Dark frames are&nbsp;</span><span class="rvts21">immensely</span><span class="rvts20">&nbsp;helpful in reducing noises in your guide frames. It is highly recommended to take dark frames before you begin and calibration or guiding procedure. To take a dark frame, check the&nbsp;Dark&nbsp;checkbox and then click&nbsp;Capture. For the first time this is performed, Ekos will ask you about your camera shutter. If your camera does not have a shutter, then Ekos will warn you anytime you take a dark frame to cover your camera/telescope before proceeding with the capture. On the other hand, if the camera already includes a shutter, then Ekos will directly proceed with taking the dark frame. All dark frames are automatically saved to Ekos Dark Frame Library. By default, the Dark Library keeps reusing dark frames for 30 days after which it will capture new dark frames. This value is configurable and can be adjusted in&nbsp;</span><a class="rvts23" href="config.html#ekos">Ekos settings</a><span class="rvts20">&nbsp;in the&nbsp;KStars&nbsp;settings dialog.</span></p>
@@ -241,39 +257,44 @@
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/guide_calibration_settings.png"></p>
 <p class="rvps10"><span class="rvts20">In the calibration phase, you need to capture an image, select a guide star, and click&nbsp;Guide&nbsp;to begin the calibration process. If calibration was already completed successfully before, then the autoguiding process shall begin immediately, otherwise, it would start the calibration process. If&nbsp;Auto Star&nbsp;is checked, then you are only required to click&nbsp;Capture&nbsp;and Ekos will automatically select the best-fit guide star in the image and continues the calibration process automatically. If&nbsp;Auto Star&nbsp;is disabled, Ekos will try to automatically highlight the best guide star in the field. You need to confirm or change the selection before you can start the calibration process. The calibration options are:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Pulse: The duration of pulses in milliseconds to be sent to the mount. This value should be large enough to cause a noticeable movement in the guide star. If you increase the value and you do not notice any movement of the guide star, then this suggests possible mount issues such as jamming or connection issues via the ST4 cable.</span></li>
-<li class="rvps10"><span class="rvts20">Two axis: Check if you want the calibration process makes calibration in both RA &amp; DEC. If unchecked, the calibration is only performed in RA.</span></li>
-<li class="rvps10"><span class="rvts20">Auto Star: If checked, Ekos will attempt to select the best guide star in the frame and begins the calibration process automatically.</span></li>
+ <li class="rvps10"><span class="rvts20">Pulse: The duration of pulses in milliseconds to be sent to the mount. This value should be large enough to cause a noticeable movement in the guide star. If you increase the value and you do not notice any movement of the guide star, then this suggests possible mount issues such as jamming or connection issues via the ST4 cable.</span></li>
+ <li class="rvps10"><span class="rvts20">Two axis: Check if you want the calibration process makes calibration in both RA &amp; DEC. If unchecked, the calibration is only performed in RA.</span></li>
+ <li class="rvps10"><span class="rvts20">Auto Star: If checked, Ekos will attempt to select the best guide star in the frame and begins the calibration process automatically.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">The reticle position is the guide star position selected by you (or by the auto selection) in the captured guider image. You should select a star that is not close to the edge. If the image is not clear, you may select different&nbsp;Effects&nbsp;to enhance it.</span></p>
 <p class="rvps10"><span class="rvts20">Ekos begins the calibration process by sending pulses to move the mount in RA and DEC. If the calibration process fails due to short drift, try increasing the pulse duration. To clear calibration, click the trash bin icon next to the&nbsp;Guide&nbsp;button.</span></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="14" alt="" style="padding : 1px;" src="lib/exclamation-triangle.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts15">WARNING</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps29"><span class="rvts55">Calibration can fail for a variety of reasons. To improve the chances of success, try the tips below.</span></p>
-</td>
-</tr>
+<div class="rvps5">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><img width="16" height="14" alt="" style="padding : 1px;" src="lib/exclamation-triangle.png"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts15">WARNING</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><span class="rvts17"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps29"><span class="rvts55">Calibration can fail for a variety of reasons. To improve the chances of success, try the tips below.</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Better Polar Alignment: This is critical to the success of any astrophotography session. Perform a quick polar alignment with a polar scope (if available) or by using Ekos&nbsp;</span><a class="rvts23" href="Align.html#EKOS-ALIGN-POLARALIGNMENT">Polar Alignment procedure</a><span class="rvts20">&nbsp;in the&nbsp;Align&nbsp;module.</span></li>
-<li class="rvps10"><span class="rvts20">Set binning to 2x2: Binning improves SNR and is often very important to the success of the calibration and guiding procedures.</span></li>
-<li class="rvps10"><span class="rvts20">Prefer to use ST4 cable between guide-camera and mount over using mount pulse commands.</span></li>
-<li class="rvps10"><span class="rvts20">Select different filter (e.g.&nbsp;High contrast) and see if that makes a difference to bring down the noise.</span></li>
-<li class="rvps10"><span class="rvts20">Smaller Square Size.</span></li>
-<li class="rvps10"><span class="rvts20">Take dark frames to reduce noise.</span></li>
-<li class="rvps10"><span class="rvts20">Play with DEC Proportional Gain or disable DEC control completely and see the difference.</span></li>
-<li class="rvps10"><span class="rvts20">Leave algorithm to the default value (Smart)</span></li>
+ <li class="rvps10"><span class="rvts20">Better Polar Alignment: This is critical to the success of any astrophotography session. Perform a quick polar alignment with a polar scope (if available) or by using Ekos&nbsp;</span><a class="rvts23" href="Align.html#EKOS-ALIGN-POLARALIGNMENT">Polar Alignment procedure</a><span class="rvts20">&nbsp;in the&nbsp;Align&nbsp;module.</span></li>
+ <li class="rvps10"><span class="rvts20">Set binning to 2x2: Binning improves SNR and is often very important to the success of the calibration and guiding procedures.</span></li>
+ <li class="rvps10"><span class="rvts20">Prefer to use ST4 cable between guide-camera and mount over using mount pulse commands.</span></li>
+ <li class="rvps10"><span class="rvts20">Select different filter (e.g.&nbsp;High contrast) and see if that makes a difference to bring down the noise.</span></li>
+ <li class="rvps10"><span class="rvts20">Smaller Square Size.</span></li>
+ <li class="rvps10"><span class="rvts20">Take dark frames to reduce noise.</span></li>
+ <li class="rvps10"><span class="rvts20">Play with DEC Proportional Gain or disable DEC control completely and see the difference.</span></li>
+ <li class="rvps10"><span class="rvts20">Leave algorithm to the default value (Smart)</span></li>
 </ul>
 <h5 class="rvps35"><a name="GUIDE-PHD2-SUPPORT"></a><span class="rvts0"><span class="rvts22">Guiding</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/guide_guide_settings.png"></p>
@@ -284,9 +305,9 @@
 <p class="rvps10"><span class="rvts20">Non-guide dithering is also supported. This is useful when no guide camera is available or when performing short exposures. In this case, the mount can be commanded to dither in a random direction for up to the pulse specified in the&nbsp;Non-Guide Dither Pulse&nbsp;option.</span></p>
 <p class="rvps10"><span class="rvts20">Ekos supports multiple guiding methods: Internal, PHD2, and LinGuider. You need to select the desired guider in your Ekos equipment profile:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Internal Guider: Use Ekos internal guider. This is the default and recommended option.</span></li>
-<li class="rvps10"><span class="rvts20">PHD2: Use PHD2 as the external guider. If selected, specify the host and port of the PHD2. Leave to default values if Ekos and PHD2 are running on the same machine.</span></li>
-<li class="rvps10"><span class="rvts20">LinGuider: Use LinGuider as the external guider. If selected, specify the host and port of the LinGuider. Leave to default values if Ekos and LinGuider are running on the same machine.</span></li>
+ <li class="rvps10"><span class="rvts20">Internal Guider: Use Ekos internal guider. This is the default and recommended option.</span></li>
+ <li class="rvps10"><span class="rvts20">PHD2: Use PHD2 as the external guider. If selected, specify the host and port of the PHD2. Leave to default values if Ekos and PHD2 are running on the same machine.</span></li>
+ <li class="rvps10"><span class="rvts20">LinGuider: Use LinGuider as the external guider. If selected, specify the host and port of the LinGuider. Leave to default values if Ekos and LinGuider are running on the same machine.</span></li>
 </ul>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_profile_guider_select.png"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
@@ -300,70 +321,80 @@
 <p class="rvps2"><span class="rvts6">PID guider. Stands for Proportional, Integral, Derivative control.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Proportional means make corrections based on the error (e.g. you're off by 1 pixel in one direction, put the mount a certain amount in the other direction, and that amount is "control" times the error).</span></li>
-<li class="rvps2"><span class="rvts6">Integral means look at the recent history of error (e.g. the average error in the past N samples) and make adjustments based on that. KStars defaults to&nbsp;</span><span class="rvts24">not</span><span class="rvts6">&nbsp;using that (e.g. the integral gain is 0).</span></li>
-<li class="rvps2"><span class="rvts6">Derivative isn't implemented in KStars. (It looks at the rate that the system is approaching the target, preventing an overshoot)</span></li>
+ <li class="rvps2"><span class="rvts6">Proportional means make corrections based on the error (e.g. you're off by 1 pixel in one direction, put the mount a certain amount in the other direction, and that amount is "control" times the error).</span></li>
+ <li class="rvps2"><span class="rvts6">Integral means look at the recent history of error (e.g. the average error in the past N samples) and make adjustments based on that. KStars defaults to&nbsp;</span><span class="rvts24">not</span><span class="rvts6">&nbsp;using that (e.g. the integral gain is 0).</span></li>
+ <li class="rvps2"><span class="rvts6">Derivative isn't implemented in KStars. (It looks at the rate that the system is approaching the target, preventing an overshoot)</span></li>
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">If you're using GPG, the above 2 (Proportional &amp; Integral) aren't used for RA, but rather the GPG settings.</span><br/><span class="rvts6">Whether or not you're using GPG, DEC is controlled by Proportional and Integral.</span></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <p class="rvps10"><span class="rvts22">Settings</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Enable GPG: Toggles GPG RA Guiding.</span></li>
-<li class="rvps10"><span class="rvts20">Major Period: The length in seconds of the mount's major period that's being corrected. (look it up for your mount, and then uncheck estimate period, or alternatively if you're adventurous, run it with estimate period checked for an hour or two, and assuming you like the RA guiding during the last half of the interval, keep the period value it found and uncheck estimate period)</span></li>
-<li class="rvps10"><span class="rvts20">Estimate Period: If checked, the GPG estimates the mount's major period. Otherwise, it uses the entry above.</span></li>
-<li class="rvps10"><span class="rvts20">Prediction Gain: The fraction of its prediction the GPG uses to move the mount. </span><span class="rvts6">Similar to&nbsp;</span><span class="rvts24">Control Gain</span><span class="rvts6">, but instead of error, now it has started making predictions of how to fix the error (based on the error and based on its periodic error estimate).</span></li>
-<li class="rvps10"><span class="rvts20">Control Gain: The fraction of the guide-star drift that the GPG uses to move the mount. </span><span class="rvts6">The GPG guider at the start uses a simple control mechanism (the pulse tries to correct the error). Control gain of 0.5 means "try to fix half of the error". Setting it 1.0 would likely result in an overcorrected system with poor guiding, so 0.5 is pretty normal.</span></li>
-<li class="rvps10"><span class="rvts20">Minimum Move: The min-move parameter the GPG uses to move the mount when it uses its backoff proportional guider.</span><span class="rvts6">&nbsp;(don't react to errors less that XXX--but really min move is in units of pulse ms, so don't put out a shorter correction pulse than XXX) and Max (don't put out a pulse greater than XXX.)</span></li>
+ <li class="rvps10"><span class="rvts20">Enable GPG: Toggles GPG RA Guiding.</span></li>
+ <li class="rvps10"><span class="rvts20">Major Period: The length in seconds of the mount's major period that's being corrected. (look it up for your mount, and then uncheck estimate period, or alternatively if you're adventurous, run it with estimate period checked for an hour or two, and assuming you like the RA guiding during the last half of the interval, keep the period value it found and uncheck estimate period)</span></li>
+ <li class="rvps10"><span class="rvts20">Estimate Period: If checked, the GPG estimates the mount's major period. Otherwise, it uses the entry above.</span></li>
+ <li class="rvps10"><span class="rvts20">Prediction Gain: The fraction of its prediction the GPG uses to move the mount. </span><span class="rvts6">Similar to&nbsp;</span><span class="rvts24">Control Gain</span><span class="rvts6">, but instead of error, now it has started making predictions of how to fix the error (based on the error and based on its periodic error estimate).</span></li>
+ <li class="rvps10"><span class="rvts20">Control Gain: The fraction of the guide-star drift that the GPG uses to move the mount. </span><span class="rvts6">The GPG guider at the start uses a simple control mechanism (the pulse tries to correct the error). Control gain of 0.5 means "try to fix half of the error". Setting it 1.0 would likely result in an overcorrected system with poor guiding, so 0.5 is pretty normal.</span></li>
+ <li class="rvps10"><span class="rvts20">Minimum Move: The min-move parameter the GPG uses to move the mount when it uses its backoff proportional guider.</span><span class="rvts6">&nbsp;(don't react to errors less that XXX--but really min move is in units of pulse ms, so don't put out a shorter correction pulse than XXX) and Max (don't put out a pulse greater than XXX.)</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts18">Note</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts16">You can make the GPG guiding less aggressive by reducing control gain. If you want the guiding process to be less aggressive, make the guide exposure pretty long (e.g. 3 or 4 or 5s), reduce the control gain,&nbsp;reduce the prediction gain, and increase the min move. If you suspect that you don't have much periodic error you should consider NOT using GPG.</span></p>
-</td>
-</tr>
+<div class="rvps5">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts18">Note</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><span class="rvts17"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts16">You can make the GPG guiding less aggressive by reducing control gain. If you want the guiding process to be less aggressive, make the guide exposure pretty long (e.g. 3 or 4 or 5s), reduce the control gain,&nbsp;reduce the prediction gain, and increase the min move. If you suspect that you don't have much periodic error you should consider NOT using GPG.</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts18">Note</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps38"><span class="rvts16">If you have no idea what to set Control and Prediction gains, keep them around their defaults (in the&nbsp; 0.5 area).</span></p>
-</td>
-</tr>
+<div class="rvps5">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts18">Note</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><span class="rvts17"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps38"><span class="rvts16">If you have no idea what to set Control and Prediction gains, keep them around their defaults (in the&nbsp; 0.5 area).</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps10"><span class="rvts6"><br/></span></p>
 <p class="rvps10"><span class="rvts22">Expert Settings</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Long-range Length Scale: Length scale of the long range kernel.</span></li>
-<li class="rvps10"><span class="rvts20">Long-range Variance: Long-range kernel signal variance</span></li>
-<li class="rvps10"><span class="rvts20">Periodic Length Scale: Periodic Kernel length scale</span></li>
-<li class="rvps10"><span class="rvts20">Periodic Variance: Periodic kernel signal variance</span></li>
-<li class="rvps10"><span class="rvts20">Short-range Length Scale: Length scale of the short-range kernel</span></li>
-<li class="rvps10"><span class="rvts20">Short-range Variance: Short-range kernel signal variance</span></li>
-<li class="rvps10"><span class="rvts20">Approximation Points: Number of points used in the Gaussian Process approximation</span></li>
-<li class="rvps10"><span class="rvts20">Num Periods for Inference: The min number of periods that must be sampled before prediction is fully used. Before that, it is mixed with the control/proportional guider.</span></li>
-<li class="rvps10"><span class="rvts20">Num Periods for Period Estimate: The min number of periods that must be sampled before GPG fully estimates the period.</span></li>
+ <li class="rvps10"><span class="rvts20">Long-range Length Scale: Length scale of the long range kernel.</span></li>
+ <li class="rvps10"><span class="rvts20">Long-range Variance: Long-range kernel signal variance</span></li>
+ <li class="rvps10"><span class="rvts20">Periodic Length Scale: Periodic Kernel length scale</span></li>
+ <li class="rvps10"><span class="rvts20">Periodic Variance: Periodic kernel signal variance</span></li>
+ <li class="rvps10"><span class="rvts20">Short-range Length Scale: Length scale of the short-range kernel</span></li>
+ <li class="rvps10"><span class="rvts20">Short-range Variance: Short-range kernel signal variance</span></li>
+ <li class="rvps10"><span class="rvts20">Approximation Points: Number of points used in the Gaussian Process approximation</span></li>
+ <li class="rvps10"><span class="rvts20">Num Periods for Inference: The min number of periods that must be sampled before prediction is fully used. Before that, it is mixed with the control/proportional guider.</span></li>
+ <li class="rvps10"><span class="rvts20">Num Periods for Period Estimate: The min number of periods that must be sampled before GPG fully estimates the period.</span></li>
 </ul>
 <h5 class="rvps35"><a name="EKOS-ALIGN"></a><span class="rvts0"><span class="rvts22">Guiding Direction Control</span></span></h5>
 <p class="rvps10"><span class="rvts20">You can fine-tune the guiding performance in the Control Section. The autoguide process works like a&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/PID_controller">PID controller</a><span class="rvts20">&nbsp;when sending correction commands to the mount. You can alter the Proportional and Integral gains to improve the guiding performance if necessary. By default, guiding corrective pulses are sent to both mount axis in all directions: positive and negative. You can fine-tune control by selecting which axis shall receive corrective guiding pulses and within each axis, you can indicate which direction&nbsp;(Positive) +&nbsp;or&nbsp;Negative (-)&nbsp;receives the guiding pulses. For example, for the Declination axis, the&nbsp;+&nbsp;direction is North and&nbsp;-&nbsp;is South.</span></p>
@@ -384,19 +415,24 @@
 <p class="rvps10"><span class="rvts20">After launching PHD2, select your INDI equipment and set their options. From Ekos, connect to PHD2 by clicking the&nbsp;Connect&nbsp;button. On startup, Ekos will attempt to automatically connect to PHD2. Once the connection is established, you may begin the guiding immediately by click on the&nbsp;Guide&nbsp;button. PHD2 shall perform calibration if necessary. If dithering is selected, PHD2 shall be commanded to dither given the offset pixels indicated and once guiding is settled and stable, the capture process in Ekos shall resume.</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts18">Note</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps29"><span class="rvts16">Ekos saves a CSV guide log data that can be useful for analysis of the mount's performance under</span><span class="rvts64">&nbsp;~/.local/share/kstars/guide_log.txt</span><span class="rvts16">. This log is only available when using the built-in guider.</span></p>
-</td>
-</tr>
+<div class="rvps5">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts18">Note</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><span class="rvts17"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps29"><span class="rvts16">Ekos saves a CSV guide log data that can be useful for analysis of the mount's performance under</span><span class="rvts64">&nbsp;~/.local/share/kstars/guide_log.txt</span><span class="rvts16">. This log is only available when using the built-in guider.</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
@@ -432,29 +468,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

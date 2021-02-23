@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -172,13 +187,13 @@
 <p></p>
 <p class="rvps10"><a name="IDM1790"></a><span class="rvts20">Now that we have the time and location set, let us have a look around. You can pan the display using the arrow keys. If you hold down the&nbsp;</span><span class="rvts22">Shift</span><span class="rvts20">&nbsp;key before panning, the scrolling speed is increased. The display can also be panned by clicking and dragging with the mouse. Note that while the display is scrolling, not all objects are displayed. This is done to cut down on the&nbsp;CPU&nbsp;load of recomputing object positions, which makes the scrolling smoother (you can configure what gets hidden while scrolling in the&nbsp;</span><a class="rvts23" href="ConfiguringKStars.html">Configure&nbsp;KStars</a><span class="rvts20">&nbsp;window). There are several ways to change the magnification (or&nbsp;</span><span class="rvts21">Zoom level</span><span class="rvts20">) of the display:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">Use the&nbsp;</span><span class="rvts22">+</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">-</span><span class="rvts20">&nbsp;keys</span></li>
-<li value="2" class="rvps10"><span class="rvts20">Press the Zoom In/Zoom Out buttons in the toolbar</span></li>
-<li value="3" class="rvps10"><span class="rvts20">Select&nbsp;Zoom In/Zoom Out&nbsp;from the&nbsp;View&nbsp;menu</span></li>
-<li value="4" class="rvps10"><span class="rvts20">Select&nbsp;Zoom to Angular Size...&nbsp;from the&nbsp;View&nbsp;menu. This allows you to specify the field-of-view angle for the display, in degrees.</span></li>
-<li value="5" class="rvps10"><span class="rvts20">Use the scroll wheel on your mouse</span></li>
-<li value="6" class="rvps10"><span class="rvts20">Drag the mouse up and down with the&nbsp;middle&nbsp;mouse button pressed.</span></li>
-<li value="7" class="rvps10"><span class="rvts20">Hold down&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">&nbsp;while dragging the mouse. This will allow you to define a rectangle in the map. When you release the mouse button, the display will zoom to match the rectangle.</span></li>
+ <li value="1" class="rvps10"><span class="rvts20">Use the&nbsp;</span><span class="rvts22">+</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">-</span><span class="rvts20">&nbsp;keys</span></li>
+ <li value="2" class="rvps10"><span class="rvts20">Press the Zoom In/Zoom Out buttons in the toolbar</span></li>
+ <li value="3" class="rvps10"><span class="rvts20">Select&nbsp;Zoom In/Zoom Out&nbsp;from the&nbsp;View&nbsp;menu</span></li>
+ <li value="4" class="rvps10"><span class="rvts20">Select&nbsp;Zoom to Angular Size...&nbsp;from the&nbsp;View&nbsp;menu. This allows you to specify the field-of-view angle for the display, in degrees.</span></li>
+ <li value="5" class="rvps10"><span class="rvts20">Use the scroll wheel on your mouse</span></li>
+ <li value="6" class="rvps10"><span class="rvts20">Drag the mouse up and down with the&nbsp;middle&nbsp;mouse button pressed.</span></li>
+ <li value="7" class="rvps10"><span class="rvts20">Hold down&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">&nbsp;while dragging the mouse. This will allow you to define a rectangle in the map. When you release the mouse button, the display will zoom to match the rectangle.</span></li>
 </ol>
 <p class="rvps10"><span class="rvts20">Notice that as you zoom in, you can see fainter stars than at lower zoom settings.</span></p>
 <p class="rvps10"><span class="rvts20">Zoom out until you can see a green curve; this represents your local&nbsp;</span><span class="rvts6">horizon</span><span class="rvts20">. If you have not adjusted the default&nbsp;KStars&nbsp;configuration, the display will be solid green below the horizon, representing the solid ground of the Earth. There is also a white curve, which represents the&nbsp;</span><span class="rvts6">celestial equator</span><span class="rvts20">, and a brown curve, which represents the&nbsp;</span><span class="rvts6">Ecliptic</span><span class="rvts20">, the path that the Sun appears to follow across the sky over the course of a year. The Sun is always found somewhere along the Ecliptic, and the planets are never far from it.</span></p>
@@ -215,29 +230,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

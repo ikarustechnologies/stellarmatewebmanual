@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -170,7 +185,7 @@
             <div class="main-content">
                 
 <p></p>
-<p class="rvps3"><img width="1000" height="541" alt="" style="padding : 1px;" src="lib/sm_dash_diagnostics.PNG"></p>
+<p class="rvps3"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The Diagnostics page contains Backup and Reset functions as well as many important information to help StellarMate developers fix any issues that StellarMate users face.</span></p>
@@ -180,19 +195,19 @@
 <p class="rvps2"><span class="rvts6">This section provides the user with the ability to:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts24">Reset Network:</span><span class="rvts6">&nbsp;I</span><span class="rvts20">n case you face any persistent problems with the network settings, you can reset all network settings to default by clicking on the&nbsp;Network Reset&nbsp;button. Any WiFi networks or manual network settings will now be discarded. StellarMate must be restart for this change to take effect.</span></li>
+ <li class="rvps2"><span class="rvts24">Reset Network:</span><span class="rvts6"> I</span><span class="rvts20">n case you face any persistent problems with the network settings, you can reset all network settings to default by clicking on the&nbsp;Network Reset&nbsp;button. Any WiFi networks or manual network settings will now be discarded. StellarMate must be restart for this change to take effect.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts24">Reset Factory: </span><span class="rvts20">In case StellarMate is experiencing unresolved instablities, it is possible to restore it to Factory Settings by click on the the&nbsp;Factory Reset&nbsp;button. After the confirmation dialog, you need to enter StellarMate password (default: smate). The controller name is reset to&nbsp;stellarmate. It must be restarted afterwards.</span></li>
+ <li class="rvps2"><span class="rvts24">Reset Factory: </span><span class="rvts20">In case StellarMate is experiencing unresolved instablities, it is possible to restore it to Factory Settings by click on the the&nbsp;Factory Reset&nbsp;button. After the confirmation dialog, you need to enter StellarMate password (default: smate). The controller name is reset to&nbsp;stellarmate. It must be restarted afterwards.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts24">Backup: </span><span class="rvts6">StellarMate settings can be backed up to a file to help in restoring any settings when either flashing a new StellarMate OS or in case in restoration of damaged SD card. The settings include all KStars and INDI settings which includes the profiles and driver-specific options. This creates a backup compressed file that can be used later to restore your StellarMate configuration.</span></li>
+ <li class="rvps2"><span class="rvts24">Backup: </span><span class="rvts6">StellarMate settings can be backed up to a file to help in restoring any settings when either flashing a new StellarMate OS or in case in restoration of damaged SD card. The settings include all KStars and INDI settings which includes the profiles and driver-specific options. This creates a backup compressed file that can be used later to restore your StellarMate configuration.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts24">Restore:</span><span class="rvts6">&nbsp;StellarMate settings can be restored through a backup file generated by the backup function.</span></li>
+ <li class="rvps2"><span class="rvts24">Restore:</span><span class="rvts6"> StellarMate settings can be restored through a backup file generated by the backup function.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Test</span></p>
@@ -202,7 +217,7 @@
 <p class="rvps2"><span class="rvts24">Logs</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Extract logs for diagnosing an error or an issue that has happened during usage of StellarMate.</span></p>
-<p class="rvps2"><span class="rvts6">This can be used by StellarMate developers to help fix the issue. </span><a class="rvts23" href="https://stellarmate.com/support.html">StellarMate support</a><span class="rvts6">&nbsp;may ask you to attach logs in your support ticket if they need to investigate the issue.</span></p>
+<p class="rvps2"><span class="rvts6">This can be used by StellarMate developers to help fix the issue. </span><a class="rvts23" href="https://stellarmate.com/support.html">StellarMate support</a><span class="rvts6"> may ask you to attach logs in your support ticket if they need to investigate the issue.</span></p>
 <p></p>
 
             </div>
@@ -234,29 +249,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
