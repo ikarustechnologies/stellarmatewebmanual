@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -170,83 +185,86 @@
             <div class="main-content">
                 
 <p></p>
-<h3 class="rvps20"><a name="mytoc0"></a><span class="rvts0"><span class="rvts22">Introduction</span></span></h3>
+<h3 class="rvps21"><a name="mytoc0"></a><span class="rvts0"><span class="rvts22">Introduction</span></span></h3>
 <p class="rvps2"><span class="rvts20">The observatory module is used to manage the dome and weather-triggered shutdown procedure. It has weather data directly displayed in the module.&nbsp;Along with the configurable thresholds for&nbsp;</span><span class="rvts69">Warning</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts70">Alert</span><span class="rvts20">&nbsp;states, you can rest easily knowing that KStars can take the appropriate actions to protect your observatory from adverse weather conditions. The observatory module also includes a dedicated weather widget with love plotting for each parameter.</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/observatory.png"></p>
-<h3 class="rvps20"><a name="mytoc1"></a><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22">Dome</span></span></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
-<h3 class="rvps41"><img alt="" style="padding : 1px;" src="lib/observatory_dome.png"></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps21"><a name="mytoc1"></a><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22">Dome</span></span></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps42"><img alt="" style="padding : 1px;" src="lib/observatory_dome.png"></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Position</span><span class="rvts20">: Controls the position of the Dome.</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps2"><span class="rvts22">Motion</span><span class="rvts20">: You can move the Dome in four ways.</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li class="rvps2"><span class="rvts22">Absolute</span><span class="rvts20">: Select the absolute position you want the Dome to move and then click on&nbsp;</span><span class="rvts22">Move (abs)</span><span class="rvts20">. This will move the Dome to the absolute position you set.</span></li>
-<li class="rvps2"><span class="rvts22">Relative</span><span class="rvts20">:&nbsp;Select the amount of degrees (either positive or negative) you want the Dome to move from the current position and then click on&nbsp;</span><span class="rvts22">Move (rel)</span><span class="rvts20">. This will move the Dome to the relative position you set.</span></li>
-<li class="rvps2"><span class="rvts22">Clockwise (CW)</span><span class="rvts20">: Rotates the Dome Clockwise forever until you click on&nbsp;</span><span class="rvts22">Abort.</span></li>
-<li class="rvps2"><span class="rvts22">Counter Clockwise&nbsp;(CCW)</span><span class="rvts20">:&nbsp;Rotates the Dome Clockwise forever until you click on&nbsp;</span><span class="rvts22">Abort.</span></li>
-</ul></ul>
-<li class="rvps2"><span class="rvts22">Slaving</span><span class="rvts20">: If enabled, Dome motion will follow telescope motion.</span></li>
-<li class="rvps2"><span class="rvts22">Park/Unpark</span><span class="rvts20">: Park or Unpark the Dome. For advanced control, please use the INDI Control Panel.</span></li>
-<li class="rvps2"><span class="rvts22">Abort</span><span class="rvts20">: Aborts the Dome motion.</span></li>
+ <li class="rvps2"><span class="rvts22">Position</span><span class="rvts20">: Controls the position of the Dome.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2"><span class="rvts22">Motion</span><span class="rvts20">: You can move the Dome in four ways.</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps2"><span class="rvts22">Absolute</span><span class="rvts20">: Select the absolute position you want the Dome to move and then click on&nbsp;</span><span class="rvts22">Move (abs)</span><span class="rvts20">. This will move the Dome to the absolute position you set.</span></li>
+   <li class="rvps2"><span class="rvts22">Relative</span><span class="rvts20">:&nbsp;Select the amount of degrees (either positive or negative) you want the Dome to move from the current position and then click on&nbsp;</span><span class="rvts22">Move (rel)</span><span class="rvts20">. This will move the Dome to the relative position you set.</span></li>
+   <li class="rvps2"><span class="rvts22">Clockwise (CW)</span><span class="rvts20">: Rotates the Dome Clockwise forever until you click on&nbsp;</span><span class="rvts22">Abort.</span></li>
+   <li class="rvps2"><span class="rvts22">Counter Clockwise&nbsp;(CCW)</span><span class="rvts20">:&nbsp;Rotates the Dome Clockwise forever until you click on&nbsp;</span><span class="rvts22">Abort.</span></li>
+  </ul>
+ </ul>
+ <li class="rvps2"><span class="rvts22">Slaving</span><span class="rvts20">: If enabled, Dome motion will follow telescope motion.</span></li>
+ <li class="rvps2"><span class="rvts22">Park/Unpark</span><span class="rvts20">: Park or Unpark the Dome. For advanced control, please use the INDI Control Panel.</span></li>
+ <li class="rvps2"><span class="rvts22">Abort</span><span class="rvts20">: Aborts the Dome motion.</span></li>
 </ul>
-<h3 class="rvps20"><a name="mytoc2"></a><span class="rvts0"><span class="rvts22">Shutter</span></span></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
-<h3 class="rvps41"><img alt="" style="padding : 1px;" src="lib/observatory_shutter.png"></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps21"><a name="mytoc2"></a><span class="rvts0"><span class="rvts22">Shutter</span></span></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps42"><img alt="" style="padding : 1px;" src="lib/observatory_shutter.png"></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Open/Close</span><span class="rvts20">: You can open or close your shutter through the observatory module.</span></li>
-<li class="rvps2"><span class="rvts20"></span></li>
+ <li class="rvps2"><span class="rvts22">Open/Close</span><span class="rvts20">: You can open or close your shutter through the observatory module.</span></li>
+ <li class="rvps2"><span class="rvts20"><br/></span></li>
 </ul>
-<h3 class="rvps20"><a name="mytoc3"></a><span class="rvts0"><span class="rvts22">Observatory&nbsp;Status</span></span></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
-<h3 class="rvps41"><img alt="" style="padding : 1px;" src="lib/observatory_status.png"></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps21"><a name="mytoc3"></a><span class="rvts0"><span class="rvts22">Observatory&nbsp;Status</span></span></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps42"><img alt="" style="padding : 1px;" src="lib/observatory_status.png"></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Dome</span><span class="rvts20">:&nbsp;If selected, the dome needs to be unparked for the observatory status being "READY".</span></li>
-<li class="rvps2"><span class="rvts22">Shutter</span><span class="rvts20">:&nbsp;If selected, the shutter needs to be open for the observatory status being "READY".</span></li>
-<li class="rvps2"><span class="rvts22">Weather</span><span class="rvts20">:&nbsp;If selected, the weather needs to be OK for the observatory status being "READY".</span></li>
-<li class="rvps2"><span class="rvts22">Ready</span><span class="rvts20">:&nbsp;Observatory status. Select the observatory elements that are relevant for the status:</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps2"><span class="rvts22">Dome</span><span class="rvts20">: unparked → ready</span></li>
-<li class="rvps2"><span class="rvts22">Shutter</span><span class="rvts20">: open → ready</span></li>
-<li class="rvps2"><span class="rvts22">Weather</span><span class="rvts20">: OK → ready</span></li>
-</ul></ul>
+ <li class="rvps2"><span class="rvts22">Dome</span><span class="rvts20">:&nbsp;If selected, the dome needs to be unparked for the observatory status being "READY".</span></li>
+ <li class="rvps2"><span class="rvts22">Shutter</span><span class="rvts20">:&nbsp;If selected, the shutter needs to be open for the observatory status being "READY".</span></li>
+ <li class="rvps2"><span class="rvts22">Weather</span><span class="rvts20">:&nbsp;If selected, the weather needs to be OK for the observatory status being "READY".</span></li>
+ <li class="rvps2"><span class="rvts22">Ready</span><span class="rvts20">:&nbsp;Observatory status. Select the observatory elements that are relevant for the status:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2"><span class="rvts22">Dome</span><span class="rvts20">: unparked → ready</span></li>
+  <li class="rvps2"><span class="rvts22">Shutter</span><span class="rvts20">: open → ready</span></li>
+  <li class="rvps2"><span class="rvts22">Weather</span><span class="rvts20">: OK → ready</span></li>
+ </ul>
+</ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<h3 class="rvps20"><a name="mytoc4"></a><span class="rvts0"><span class="rvts22">Weather</span></span></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
-<h3 class="rvps41"><img alt="" style="padding : 1px;" src="lib/observatory_weather_widget.jpg"></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps21"><a name="mytoc4"></a><span class="rvts0"><span class="rvts22">Weather</span></span></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps42"><img alt="" style="padding : 1px;" src="lib/observatory_weather_widget.jpg"></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
 <p class="rvps2"><span class="rvts20">Current data of the weather sensors. Click on the sensor name to display its data over time.</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">auto</span><span class="rvts20">&nbsp;</span><span class="rvts22">scale</span><span class="rvts20">&nbsp;</span><span class="rvts22">values</span><span class="rvts20">:&nbsp;Scale the value axis to the current value range.</span></li>
-<li class="rvps2"><span class="rvts22">trashcan</span><span class="rvts20">:&nbsp;Clear sensor data history.</span></li>
-<li class="rvps2"><span class="rvts22">Graph</span><span class="rvts20">: You can see the values of both axes if you hover over the graph. You can zoom in or out using the scroll wheel.</span></li>
+ <li class="rvps2"><span class="rvts22">auto</span><span class="rvts20">&nbsp;</span><span class="rvts22">scale</span><span class="rvts20">&nbsp;</span><span class="rvts22">values</span><span class="rvts20">:&nbsp;Scale the value axis to the current value range.</span></li>
+ <li class="rvps2"><span class="rvts22">trashcan</span><span class="rvts20">:&nbsp;Clear sensor data history.</span></li>
+ <li class="rvps2"><span class="rvts22">Graph</span><span class="rvts20">: You can see the values of both axes if you hover over the graph. You can zoom in or out using the scroll wheel.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<h3 class="rvps20"><a name="mytoc5"></a><span class="rvts0"><span class="rvts22">Actions</span></span></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
-<h3 class="rvps41"><img alt="" style="padding : 1px;" src="lib/observatory_actions.png"></h3>
-<h3 class="rvps20"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps21"><a name="mytoc5"></a><span class="rvts0"><span class="rvts22">Actions</span></span></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
+<h3 class="rvps42"><img alt="" style="padding : 1px;" src="lib/observatory_actions.png"></h3>
+<h3 class="rvps21"><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Alert</span><span class="rvts20">: Check this checkbox in order to get an&nbsp;</span><span class="rvts22">Alert</span><span class="rvts20">&nbsp;whenever</span><span class="rvts22">&nbsp;</span><span class="rvts20">any weather value goes under or above the range set in your weather driver INDI Control Panel.</span></li>
-<li class="rvps2"><span class="rvts22">Park Dome</span><span class="rvts20">:&nbsp;Parks the dome whenever you get an alert.</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps2"><span class="rvts22">Close</span><span class="rvts20">&nbsp;</span><span class="rvts22">Shutter</span><span class="rvts20">: Closes the shutter whenever you get an alert.</span></li>
-<li class="rvps2"><span class="rvts22">Status</span><span class="rvts20">: Shows the status of the alert.</span></li>
-<li class="rvps2"><span class="rvts22">Delay (sec)</span><span class="rvts20">: Delays the alert after n amount of seconds.</span></li>
+ <li class="rvps2"><span class="rvts22">Alert</span><span class="rvts20">: Check this checkbox in order to get an&nbsp;</span><span class="rvts22">Alert</span><span class="rvts20">&nbsp;whenever</span><span class="rvts22">&nbsp;</span><span class="rvts20">any weather value goes under or above the range set in your weather driver INDI Control Panel.</span></li>
+ <li class="rvps2"><span class="rvts22">Park Dome</span><span class="rvts20">:&nbsp;Parks the dome whenever you get an alert.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2"><span class="rvts22">Close</span><span class="rvts20">&nbsp;</span><span class="rvts22">Shutter</span><span class="rvts20">: Closes the shutter whenever you get an alert.</span></li>
+  <li class="rvps2"><span class="rvts22">Status</span><span class="rvts20">: Shows the status of the alert.</span></li>
+  <li class="rvps2"><span class="rvts22">Delay (sec)</span><span class="rvts20">: Delays the alert after n amount of seconds.</span></li>
+ </ul>
+ <li class="rvps2"><span class="rvts22">Warning</span><span class="rvts20">: Check this checkbox in order to get an&nbsp;</span><span class="rvts22">Warning</span><span class="rvts20">&nbsp;whenever</span><span class="rvts22">&nbsp;</span><span class="rvts20">any weather value is close to going under or above the range set in your weather driver INDI Control Panel.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2"><span class="rvts22">Park Dome</span><span class="rvts20">:&nbsp;Parks the dome whenever you get a warning.</span></li>
+  <li class="rvps2"><span class="rvts22">Close</span><span class="rvts20">&nbsp;</span><span class="rvts22">Shutter</span><span class="rvts20">: Closes the shutter whenever you get a warning.</span></li>
+  <li class="rvps2"><span class="rvts22">Status</span><span class="rvts20">: Shows the status of the warning.</span></li>
+  <li class="rvps2"><span class="rvts22">Delay (sec)</span><span class="rvts20">: Delays the warning after n amount of seconds.</span></li>
+ </ul>
 </ul>
-<li class="rvps2"><span class="rvts22">Warning</span><span class="rvts20">: Check this checkbox in order to get an&nbsp;</span><span class="rvts22">Warning</span><span class="rvts20">&nbsp;whenever</span><span class="rvts22">&nbsp;</span><span class="rvts20">any weather value is close to going under or above the range set in your weather driver INDI Control Panel.</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps2"><span class="rvts22">Park Dome</span><span class="rvts20">:&nbsp;Parks the dome whenever you get a warning.</span></li>
-<li class="rvps2"><span class="rvts22">Close</span><span class="rvts20">&nbsp;</span><span class="rvts22">Shutter</span><span class="rvts20">: Closes the shutter whenever you get a warning.</span></li>
-<li class="rvps2"><span class="rvts22">Status</span><span class="rvts20">: Shows the status of the warning.</span></li>
-<li class="rvps2"><span class="rvts22">Delay (sec)</span><span class="rvts20">: Delays the warning after n amount of seconds.</span></li>
-</ul></ul>
 <p></p>
 
             </div>
@@ -278,29 +296,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

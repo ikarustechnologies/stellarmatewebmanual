@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -173,33 +188,49 @@
 <p class="rvps2"><span class="rvts20">When an equipment profile is started, the Ekos tab becomes active. In the Ekos screen, you can capture images, stream video, and create image sequences. Furthermore, it provides the following facilities:</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Modules</span></li>
+ <li class="rvps2"><span class="rvts22">Modules</span></li>
 </ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;"><ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" style="margin-left: 0px" class="rvps12"><span class="rvts22">Focus</span><span class="rvts20">: </span><span class="rvts29">Focus your camera either automatically via an electronic focuser, or manually by adjusting the focus while framing, or by using Bahtinov Mask Assistant. Create presets for different configurations and set advanced settings to control the star detection and focusing algorithms.</span></li>
-<li value="2" style="margin-left: 0px" class="rvps12"><span class="rvts22">Align</span><span class="rvts20">: </span><span class="rvts29">Align your mount to get highly accurate GOTOs and to ensure you target is always in the center. You can also load an existing image to plate solve and then command the mount to go to the exact center in the sky.</span></li>
-<li value="3" style="margin-left: 0px" class="rvps12"><span class="rvts22">Guide</span><span class="rvts20">: </span><span class="rvts29">Guiding enables long-exposure astrophotography by ensuring your mount tracks accurately with time. It can automatically select and lock a guide star and send correction pulses to the mount to keep it always centered.</span></li>
-<li value="4" style="margin-left: 0px" class="rvps12"><span class="rvts22">Capture</span><span class="rvts20">: create, edit, and delete presets, job sequencing, </span><span class="rvts22">Filter Settings</span><span class="rvts20">, </span><span class="rvts22">Limit Settings</span><span class="rvts20">, </span><span class="rvts22">Calibration Settings</span><span class="rvts20">, </span><span class="rvts22">File Settings</span><span class="rvts20">.</span></li>
-<li value="5" style="margin-left: 0px" class="rvps12"><span class="rvts22">Mount</span><span class="rvts20">: tracking on/off, park/unpark, </span><span class="rvts22">Meridian Flip, Limit Settings </span><span class="rvts20">(Alt and HA Limits), and Pier Side.</span></li>
-<li value="6" style="margin-left: 0px" class="rvps12"><span class="rvts22">Observatory</span><span class="rvts20">: park/unpark cap, park/unpark dome, dome goto absolute position and current angle representation.</span></li>
-</ol></ol>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
+  <li value="1" style="margin-left: 0px" class="rvps12"><span class="rvts22">Focus</span><span class="rvts20">: </span><span class="rvts29">Focus your camera either automatically via an electronic focuser, or manually by adjusting the focus while framing, or by using Bahtinov Mask Assistant. Create presets for different configurations and set advanced settings to control the star detection and focusing algorithms.</span></li>
+  <li value="2" style="margin-left: 0px" class="rvps12"><span class="rvts22">Align</span><span class="rvts20">: </span><span class="rvts29">Align your mount to get highly accurate GOTOs and to ensure you target is always in the center. You can also load an existing image to plate solve and then command the mount to go to the exact center in the sky.</span></li>
+  <li value="3" style="margin-left: 0px" class="rvps12"><span class="rvts22">Guide</span><span class="rvts20">: </span><span class="rvts29">Guiding enables long-exposure astrophotography by ensuring your mount tracks accurately with time. It can automatically select and lock a guide star and send correction pulses to the mount to keep it always centered.</span></li>
+  <li value="4" style="margin-left: 0px" class="rvps12"><span class="rvts22">Capture</span><span class="rvts20">: create, edit, and delete presets, job sequencing, </span><span class="rvts22">Filter Settings</span><span class="rvts20">, </span><span class="rvts22">Limit Settings</span><span class="rvts20">, </span><span class="rvts22">Calibration Settings</span><span class="rvts20">, </span><span class="rvts22">File Settings</span><span class="rvts20">.</span></li>
+  <li value="5" style="margin-left: 0px" class="rvps12"><span class="rvts22">Mount</span><span class="rvts20">: tracking on/off, park/unpark, </span><span class="rvts22">Meridian Flip, Limit Settings </span><span class="rvts20">(Alt and HA Limits), and Pier Side.</span></li>
+  <li value="6" style="margin-left: 0px" class="rvps12"><span class="rvts22">Observatory</span><span class="rvts20">: park/unpark cap, park/unpark dome, dome goto absolute position and current angle representation.</span></li>
+ </ol>
+</ol>
 <p class="rvps11"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps11"><span class="rvts22">Quick</span><span class="rvts20">&nbsp;</span><span class="rvts22">Controls: </span><span class="rvts29">Quick Controls are simplified quick-access settings for the camera, mount, and rotator located on the top-right panel. They can be toggled at any time. Once toggled, the corresponding control is overlayed on the top of your existing view where you can quickly and efficiently control your devices.</span></li>
+ <li style="margin-left: 0px" class="rvps11"><span class="rvts22">Quick</span><span class="rvts20"> </span><span class="rvts22">Controls: </span><span class="rvts29">Quick Controls are simplified quick-access settings for the camera, mount, and rotator located on the top-right panel. They can be toggled at any time. Once toggled, the corresponding control is overlayed on the top of your existing view where you can quickly and efficiently control your devices.</span></li>
 </ul>
 <p class="rvps11"><span class="rvts29"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;"><ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" style="margin-left: 0px" class="rvps12"><span class="rvts22">Mount</span><span class="rvts20">: park/unpark, tracking on/off, mount speed, GOTO/Sync, and directional pad control.</span></li>
-<li value="2" style="margin-left: 0px" class="rvps12"><span class="rvts22">Camera</span><span class="rvts20">: preview, loop, video stream, </span><span class="rvts22">live stacking, </span><span class="rvts20">and quick settings.</span></li>
-<li value="3" style="margin-left: 0px" class="rvps12"><span class="rvts22">Rotator</span><span class="rvts20">: goto absolute position and CCW/CW step rotation.</span></li>
-</ol></ol>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
+  <li value="1" style="margin-left: 0px" class="rvps12"><span class="rvts22">Mount</span><span class="rvts20">: park/unpark, tracking on/off, mount speed, GOTO/Sync, and directional pad control.</span></li>
+  <li value="2" style="margin-left: 0px" class="rvps12"><span class="rvts22">Camera</span><span class="rvts20">: preview, loop, video stream, </span><span class="rvts22">live stacking, </span><span class="rvts20">and quick settings.</span></li>
+  <li value="3" style="margin-left: 0px" class="rvps12"><span class="rvts22">Rotator</span><span class="rvts20">: goto absolute position and CCW/CW step rotation.</span></li>
+ </ol>
+</ol>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts22">Mount Status Bar</span></li>
+ <li class="rvps2"><span class="rvts22">Mount Status Bar</span></li>
 </ul>
 <p class="rvps12"><span class="rvts20">Shows the status of the mount if it is parking/unparking, slewing, tracking, etc. as well as the target. Moreover, the Right Ascension, Declination, Azimuth, Alt-Azimuth, and Pier Side are also shown in the status bar.</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img width="919" height="526" alt="" style="padding : 1px;" src="lib/smapp_20101_ekos.jpg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps13"><span class="rvts22">Histogram</span></li>
+</ul>
+<p class="rvps13"><span class="rvts22"><br/></span></p>
+<p class="rvps13"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">When available, clicking the histogram button in the main image view toggles the non-linear histogram. The histogram is generated for both mono and rgb images.</span></p>
+<p class="rvps13"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="919" height="574" alt="" style="padding : 1px;" src="lib/smapp_20101_ekos_histogram_button.jpg"></p>
+<p class="rvps14"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="919" height="574" alt="" style="padding : 1px;" src="lib/smapp_20101_ekos_histogram.jpg"></p>
 <p></p>
 
             </div>
@@ -231,29 +262,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

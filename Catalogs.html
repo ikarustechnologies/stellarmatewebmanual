@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -178,189 +193,263 @@
 <p class="rvps10"><span class="rvts20">Messier Catalogue is a catalogue of 110 deep-sky objects, including diffuse nebulae, planetary nebulae, open clusters, globular clusters and galaxies. Messier objects have names like M1, M2, up to M110. The maximum apparent visual magnitude of Messier Catalogue is represented by M91's value of 10.2.</span></p>
 <p class="rvps10"><span class="rvts20">You can install new catalogues using&nbsp;KStars&nbsp;“Add-On Installer”. You can open it by opening the&nbsp;Data&nbsp;→&nbsp;Download New Data...&nbsp;submenu. You can choose from a list of catalogues, including:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Steinicke NGC/IC Catalog: is a more complete NGC/IC catalog.</span></li>
-<li class="rvps10"><span class="rvts20">Abell Planetary Nebulae Catalog: is a catalog of 86 planetary nebulae. The maximum magnitude is represented by Abell 47's value of 19.5.</span></li>
-<li class="rvps10"><span class="rvts20">Sharpless HII region Catalog: is the Sharpless (Sh2) catalog of HII regions (diffuse nebulae).</span></li>
-<li class="rvps10"><span class="rvts20">Hickson Compact Groups: is a catalog consisting of 99 compact groups of galaxies.</span></li>
-<li class="rvps10"><span class="rvts20">Tycho-2 Star Catalog: is a catalog of more than 2.5 million of the brightest stars. It contains stars with a magnitude value from 8.0 to 12.5.</span></li>
-<li class="rvps10"><span class="rvts20">USNO NOMAD Catalog: is a catalog of about 100 million stars with magnitude from 12.5 to 16.5. Note that is requires Tycho-2 to be installed.</span></li>
+ <li class="rvps10"><span class="rvts20">Steinicke NGC/IC Catalog: is a more complete NGC/IC catalog.</span></li>
+ <li class="rvps10"><span class="rvts20">Abell Planetary Nebulae Catalog: is a catalog of 86 planetary nebulae. The maximum magnitude is represented by Abell 47's value of 19.5.</span></li>
+ <li class="rvps10"><span class="rvts20">Sharpless HII region Catalog: is the Sharpless (Sh2) catalog of HII regions (diffuse nebulae).</span></li>
+ <li class="rvps10"><span class="rvts20">Hickson Compact Groups: is a catalog consisting of 99 compact groups of galaxies.</span></li>
+ <li class="rvps10"><span class="rvts20">Tycho-2 Star Catalog: is a catalog of more than 2.5 million of the brightest stars. It contains stars with a magnitude value from 8.0 to 12.5.</span></li>
+ <li class="rvps10"><span class="rvts20">USNO NOMAD Catalog: is a catalog of about 100 million stars with magnitude from 12.5 to 16.5. Note that is requires Tycho-2 to be installed.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">The following is a summary of catalogs in KStars:</span></p>
 <p class="rvps10"><a name="IDM2227"></a><span class="rvts22">Table&nbsp;16.1.&nbsp;Stars Catalogues</span></p>
-<div class="rvps2"><table border="1" cellpadding="1" cellspacing="2" style="border-spacing: 2px;">
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Name</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Abbreviation</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Number of objects</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Magnitude</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Add-On</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Default</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Default Catalog</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Default</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">~300,000</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Up to 8 magnitude</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Tycho-2</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Tycho2</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">more than 2.5 million</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">8.0-12.5</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Naval Observatory Merged Astronomic Dataset</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">USNO NOMAD</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">100 million</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">12.5-16.5</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-</tr>
+<div class="rvps2">
+<table border="1" cellpadding="1" cellspacing="2" style="border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Name</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Abbreviation</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Number of objects</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Magnitude</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Add-On</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Default</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Default Catalog</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Default</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">~300,000</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Up to 8 magnitude</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Tycho-2</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Tycho2</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">more than 2.5 million</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">8.0-12.5</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Naval Observatory Merged Astronomic Dataset</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">USNO NOMAD</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">100 million</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">12.5-16.5</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <p class="rvps10"><a name="IDM2260"></a><span class="rvts22">Table&nbsp;16.2.&nbsp;Deep-sky objects Catalogues</span></p>
-<div class="rvps2"><table border="1" cellpadding="1" cellspacing="2" style="border-spacing: 2px;">
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Name</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Abbreviation</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Number of objects</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Magnitude</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Add-On</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps3"><span class="rvts22">Default</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Index Catalogue of Nebulae and Clusters of Stars</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">IC</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">5,386</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Up to 18.3 magnitude</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">New General Catalogue of Nebulae and Clusters of Stars</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">NGC</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">7,840</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Messier Catalogue</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">110</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Up to 10.2 magnitude</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Steinicke NGC/IC</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Abell Planetary Nebulae Catalog</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">86</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Up to 19.5 magnitude</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Sharpless HII region Catalog</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Sh2</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Hickson Compact Groups</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">99</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">-</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">Yes</span></p>
-</td>
-<td valign="middle" style="border-style: inset; padding: 1px;"><p class="rvps2"><span class="rvts20">No</span></p>
-</td>
-</tr>
+<div class="rvps2">
+<table border="1" cellpadding="1" cellspacing="2" style="border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Name</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Abbreviation</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Number of objects</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Magnitude</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Add-On</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps3"><span class="rvts22">Default</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Index Catalogue of Nebulae and Clusters of Stars</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">IC</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">5,386</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Up to 18.3 magnitude</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">New General Catalogue of Nebulae and Clusters of Stars</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">NGC</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">7,840</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Messier Catalogue</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">110</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Up to 10.2 magnitude</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Steinicke NGC/IC</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Abell Planetary Nebulae Catalog</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">86</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Up to 19.5 magnitude</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Sharpless HII region Catalog</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Sh2</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Hickson Compact Groups</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">99</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">-</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">Yes</span></p>
+  </td>
+  <td valign="middle" style="border-style: inset; padding: 1px;">
+   <p class="rvps2"><span class="rvts20">No</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
@@ -370,16 +459,16 @@
 <p class="rvps10"><span class="rvts20">For other types: type(3-8), RA, Dec, mag (optional), flux(optional), name(optional)</span></p>
 <p class="rvps10"><span class="rvts20">The types are:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">0: star</span></li>
-<li class="rvps10"><span class="rvts20">1: star (in object catalog...probably don't want to use this)</span></li>
-<li class="rvps10"><span class="rvts20">2: planet (don't use this in custom catalog)</span></li>
-<li class="rvps10"><span class="rvts20">3: open cluster</span></li>
-<li class="rvps10"><span class="rvts20">4: globular cluster</span></li>
-<li class="rvps10"><span class="rvts20">5: gaseous nebula</span></li>
-<li class="rvps10"><span class="rvts20">6: planetary nebula</span></li>
-<li class="rvps10"><span class="rvts20">7: supernova remnant</span></li>
-<li class="rvps10"><span class="rvts20">8: galaxy</span></li>
-<li class="rvps10"><span class="rvts20">18: radio source</span></li>
+ <li class="rvps10"><span class="rvts20">0: star</span></li>
+ <li class="rvps10"><span class="rvts20">1: star (in object catalog...probably don't want to use this)</span></li>
+ <li class="rvps10"><span class="rvts20">2: planet (don't use this in custom catalog)</span></li>
+ <li class="rvps10"><span class="rvts20">3: open cluster</span></li>
+ <li class="rvps10"><span class="rvts20">4: globular cluster</span></li>
+ <li class="rvps10"><span class="rvts20">5: gaseous nebula</span></li>
+ <li class="rvps10"><span class="rvts20">6: planetary nebula</span></li>
+ <li class="rvps10"><span class="rvts20">7: supernova remnant</span></li>
+ <li class="rvps10"><span class="rvts20">8: galaxy</span></li>
+ <li class="rvps10"><span class="rvts20">18: radio source</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">The SpType is a short string for the spectral type. For example,&nbsp;“B5”&nbsp;or&nbsp;“G2”. The coordinates should be given as floating-point values, in the J2000.0 epoch. The name can be anything you wish. If the name is more than one word, it must be enclosed in quotation marks.</span></p>
 <p class="rvps10"><span class="rvts20">Once you have constructed a custom data file, open the&nbsp;KStars&nbsp;configuration window to the&nbsp;Catalogs&nbsp;tab, and press the&nbsp;Import Catalog...&nbsp;button. A popup window appears in which you can specify a name for the catalog, and the name of the file (including the path):</span></p>
@@ -400,37 +489,44 @@
 <p class="rvps10"><span class="rvts20">Using the&nbsp;Catalogs&nbsp;window, you can define faint limits for sky objects for zoomed in and zoomed out states of the rendering. When the&nbsp;Show objects of unknown magnitude&nbsp;item is enabled, objects whose magnitudes are unknown, or not available to&nbsp;KStars, are drawn irrespective of the faint limits set.</span></p>
 <p class="rvps10"><span class="rvts20">The following is a brief tutorial on adding new catalogues to&nbsp;KStars. To import a new catalog, download a raw catalog data file where the data columns are space delimited. Any lines starting with # shall be ignored. For this example, we shall use the&nbsp;“Lynds Catalog of Dark Nebulae”.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Download / write the raw catalog data file (the raw file is the file containing catalog's objects described by a set of parameters, like: ID Number, Right Ascension, Declination and so on).</span></li>
+ <li class="rvps10"><span class="rvts20">Download / write the raw catalog data file (the raw file is the file containing catalog's objects described by a set of parameters, like: ID Number, Right Ascension, Declination and so on).</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/exclamation-circle-svg.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts18">IMPORTANT</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps29"><span class="rvts20">In order to successfully load a custom catalog into&nbsp;KStars, you need to use the following syntax: (otherwise your catalog will be entirely ignored or maybe some objects from your catalog will be wrongly drawn)</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps29"><span class="rvts20">Every object should be written on a separate row.</span></li>
-<li class="rvps29"><span class="rvts20">The fields of each line should be separated by white space.</span></li>
-<li class="rvps29"><span class="rvts20">The catalog header may contain comment lines beginning with the # symbol.</span></li>
-<li class="rvps29"><span class="rvts20">ID number: integer value.</span></li>
-<li class="rvps29"><span class="rvts20">Right Ascension: colon-delimited hh:mm:ss.s or floating-point value.</span></li>
-<li class="rvps29"><span class="rvts20">Declination: colon-delimited dd:mm:ss.s or floating-point value.</span></li>
-<li class="rvps29"><span class="rvts20">Object type: integer value, one of [ 0,1,2,3,4,5,6,7,8 ].</span></li>
-<li class="rvps29"><span class="rvts20">Common name: string value (if it contains a space, it *must* be enclosed in quotes!).</span></li>
-<li class="rvps29"><span class="rvts20">Magnitude: floating-point value.</span></li>
-<li class="rvps29"><span class="rvts20">Major axis: floating-point value (length of major axis in arcmin).</span></li>
-<li class="rvps29"><span class="rvts20">Minor axis: floating-point value (length of minor axis in arcmin).</span></li>
-<li class="rvps29"><span class="rvts20">Position angle: floating-point value (position angle, in degrees).</span></li>
-</ul></ul>
-</td>
-</tr>
+<div class="rvps5">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/exclamation-circle-svg.png"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts18">IMPORTANT</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps6"><span class="rvts17"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps30"><span class="rvts20">In order to successfully load a custom catalog into&nbsp;KStars, you need to use the following syntax: (otherwise your catalog will be entirely ignored or maybe some objects from your catalog will be wrongly drawn)</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+     <li class="rvps30"><span class="rvts20">Every object should be written on a separate row.</span></li>
+     <li class="rvps30"><span class="rvts20">The fields of each line should be separated by white space.</span></li>
+     <li class="rvps30"><span class="rvts20">The catalog header may contain comment lines beginning with the # symbol.</span></li>
+     <li class="rvps30"><span class="rvts20">ID number: integer value.</span></li>
+     <li class="rvps30"><span class="rvts20">Right Ascension: colon-delimited hh:mm:ss.s or floating-point value.</span></li>
+     <li class="rvps30"><span class="rvts20">Declination: colon-delimited dd:mm:ss.s or floating-point value.</span></li>
+     <li class="rvps30"><span class="rvts20">Object type: integer value, one of [ 0,1,2,3,4,5,6,7,8 ].</span></li>
+     <li class="rvps30"><span class="rvts20">Common name: string value (if it contains a space, it *must* be enclosed in quotes!).</span></li>
+     <li class="rvps30"><span class="rvts20">Magnitude: floating-point value.</span></li>
+     <li class="rvps30"><span class="rvts20">Major axis: floating-point value (length of major axis in arcmin).</span></li>
+     <li class="rvps30"><span class="rvts20">Minor axis: floating-point value (length of minor axis in arcmin).</span></li>
+     <li class="rvps30"><span class="rvts20">Position angle: floating-point value (position angle, in degrees).</span></li>
+    </ul>
+   </ul>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
@@ -438,50 +534,52 @@
 <p class="rvps10"><span class="rvts20">The following is a subset of the original raw data file:</span></p>
 <p class="rvps2"><span class="rvts20">&nbsp; &nbsp;1 16 26.0 &nbsp; -16 &nbsp;0 &nbsp; &nbsp;.18 +21.82 &nbsp; &nbsp;.054 3 &nbsp;49 &nbsp; &nbsp;8 &nbsp;452</span><br/><span class="rvts20">&nbsp; &nbsp;2 18 &nbsp;4.0 &nbsp; -31 30 &nbsp; &nbsp;.13 -05.32 &nbsp; 1.240 2 &nbsp; 0 &nbsp; &nbsp;4 &nbsp;837</span><br/><span class="rvts20">&nbsp; &nbsp;3 18 &nbsp;0.0 &nbsp; -31 &nbsp;0 &nbsp; &nbsp;.15 -04.33 &nbsp; 5.600 2 &nbsp; 0 &nbsp; &nbsp;6 &nbsp;817</span><br/><span class="rvts20">&nbsp; &nbsp;4 16 59.5 &nbsp; -22 &nbsp;8 &nbsp; &nbsp;.18 +11.82 &nbsp; &nbsp;.004 5 &nbsp;27 &nbsp; &nbsp;7 &nbsp;533</span><br/><span class="rvts20">&nbsp; &nbsp;5 17 13.2 &nbsp; -24 22 &nbsp; &nbsp;.20 +07.96 &nbsp; &nbsp;.012 4 &nbsp; 0 &nbsp; &nbsp;9 &nbsp;595</span></p>
 <p class="rvps10"><span class="rvts20">The raw file contains some extra information, unusable for&nbsp;KStars. It also contains extra white spaces and values are not meeting&nbsp;KStars&nbsp;expectations (i.e.&nbsp;for Right Ascension: colon-delimited hh:mm:ss.s or floating-point value). Thus, it need to be modified in order to match&nbsp;KStars&nbsp;format. For a better understanding on what each column means, you can take a look at&nbsp;</span><a class="rvts23" href="ftp://cdsarc.u-strasbg.fr/cats/VII/7A/">the original source</a><span class="rvts20">&nbsp;of the catalog. It contains the raw data file and, in addition, it contains an useful readme, which will help you understand what you should keep and furthermore, what you need to remove from the raw data file. Minimally, the raw data file should contain the following fields:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">ID Number</span></li>
-<li style="margin-left: 0px" class="rvps31"><span class="rvts20">Object Type</span></li>
-<li style="margin-left: 0px" class="rvps31"><span class="rvts20">Right Ascension</span></li>
-<li style="margin-left: 0px" class="rvps31"><span class="rvts20">Declination</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">ID Number</span></li>
+  <li style="margin-left: 0px" class="rvps32"><span class="rvts20">Object Type</span></li>
+  <li style="margin-left: 0px" class="rvps32"><span class="rvts20">Right Ascension</span></li>
+  <li style="margin-left: 0px" class="rvps32"><span class="rvts20">Declination</span></li>
+ </ul>
+</ul>
 <p class="rvps10"><span class="rvts20">The raw&nbsp;“Dark Nebulae by Lynds”&nbsp;contains only three usable fields for&nbsp;KStars: Right Ascension, Declination and Area (square degrees). Therefore, in order to properly import the catalog into&nbsp;KStars, the ID and Object Type fields need to be added. You can insert these values manually using your favorite text editor. However, it is recommended to use any spreadsheet application to import the raw data file and add the necessary columns. This is especially convenient for large data sets. Since the original raw data contains an area field which is not supported by&nbsp;KStars, we need to approximate it to a usable value which is the Major Axis. Therefore, we use the following formula in the spreadsheet to convert area to major axis in arcminutes:&nbsp;</span><span class="rvts56">Major Axis = sqrt(Area) * 60</span></p>
 <p class="rvps10"><span class="rvts20">After importing the raw data file into&nbsp;KStars&nbsp;and selecting the appropriate columns,&nbsp;KStars&nbsp;shall generate the final catalog file suitable for loading directly into&nbsp;KStars. For example, this is a small subset of the content (header + first five objects) of the&nbsp;“Dark Nebulae by Lynds”&nbsp;catalog which was created by&nbsp;KStars&nbsp;after importing the raw data file which only contains the data columns:</span></p>
 <p class="rvps2"><span class="rvts56"># Delimiter: &nbsp;</span><br/><span class="rvts56"># Name: LyndsCatalog</span><br/><span class="rvts56"># Prefix: Lynds</span><br/><span class="rvts56"># Color: #ff7600</span><br/><span class="rvts56"># Epoch: 2000</span><br/><span class="rvts56"># ID &nbsp;RA &nbsp;Dc &nbsp;Mj &nbsp;Tp &nbsp;</span><br/><span class="rvts56">1 16:26:0 -16:0:0.1 13.943 5</span><br/><span class="rvts56">2 18:4:0 -31:30:0.1 66.813 5</span><br/><span class="rvts56">3 18:0:0 -31:0:0.1 141.986 5</span><br/><span class="rvts56">4 16:59:5 -22:8:0.1 3.795 5</span><br/><span class="rvts56">5 17:13:2 -24:22:0.2 6.573 5</span></p>
 <p class="rvps10"><span class="rvts20">As seen above, each column was assigned a&nbsp;KStars&nbsp;designated header such as the ID, Right Ascension, Declination, Major axis and Object Type fields. Note that the Catalog Prefix (“Lynds”) and the ID field are used together for identifying objects in the Sky Map (i.e.&nbsp;objects from this catalog will have names like: Lynds 1, Lynds 2, Lynds 617 up to the last object, Lynds 1791).</span></p>
-<p class="rvps30"><span class="rvts20">&nbsp;</span></p>
+<p class="rvps31"><span class="rvts20">&nbsp;</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Open the&nbsp;Settings&nbsp;→&nbsp;Configure&nbsp;KStars...&nbsp;menu and choose&nbsp;Catalogs&nbsp;tab.</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;Settings&nbsp;→&nbsp;Configure&nbsp;KStars...&nbsp;menu and choose&nbsp;Catalogs&nbsp;tab.</span></li>
 </ul>
-<p class="rvps30"><span class="rvts20"><br/></span></p>
+<p class="rvps31"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">In the Deep-Sky objects section, press the&nbsp;Import Catalog...&nbsp;button. If the button is not available, check the&nbsp;Deep-Sky Catalogs&nbsp;checkbox. This will enable you to configure&nbsp;KStars&nbsp;deep-sky objects catalogs.</span></li>
+ <li class="rvps10"><span class="rvts20">In the Deep-Sky objects section, press the&nbsp;Import Catalog...&nbsp;button. If the button is not available, check the&nbsp;Deep-Sky Catalogs&nbsp;checkbox. This will enable you to configure&nbsp;KStars&nbsp;deep-sky objects catalogs.</span></li>
 </ul>
-<p class="rvps30"><span class="rvts20"><br/></span></p>
+<p class="rvps31"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">After you press the&nbsp;Import Catalog...&nbsp;button,&nbsp;Import Catalog&nbsp;window will pop up. At first, click on&nbsp;Open file dialog&nbsp;button in order to select the raw data file.</span></li>
+ <li class="rvps10"><span class="rvts20">After you press the&nbsp;Import Catalog...&nbsp;button,&nbsp;Import Catalog&nbsp;window will pop up. At first, click on&nbsp;Open file dialog&nbsp;button in order to select the raw data file.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<p class="rvps32"><span class="rvts20">&nbsp;</span><img alt="" style="padding : 1px;" src="lib/open_dialog_ldn.png"></p>
+<p class="rvps33"><span class="rvts20">&nbsp;</span><img alt="" style="padding : 1px;" src="lib/open_dialog_ldn.png"></p>
 <p class="rvps10"><span class="rvts20">In the dialog window, find your raw file, select it and then press&nbsp;Open&nbsp;button.</span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/open_ldn.png"></p>
-<p class="rvps30"><span class="rvts20">&nbsp;</span></p>
+<p class="rvps31"><span class="rvts20">&nbsp;</span></p>
 <p class="rvps10"><span class="rvts20">Now, you need to specify the correct order of the catalog fields within the raw data file. The fields must be added inside&nbsp;Catalog fields&nbsp;list. Note that you can drag fields in order to build the right order or you can use additional fields from&nbsp;Available fields&nbsp;fields. For example, if your raw data file contains a magnitude column, then you need to add Magnitude field to the&nbsp;Catalog fields&nbsp;list.</span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/complete_info_ldn.png"></p>
-<p class="rvps30"><span class="rvts20">&nbsp;</span></p>
+<p class="rvps31"><span class="rvts20">&nbsp;</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">After you set the fields so that they match to your catalog raw file, you can move to the next step: completing the remaining input fields:&nbsp;Coordinate epoch,&nbsp;Catalog name prefix,&nbsp;Catalog name&nbsp;and&nbsp;Save catalog as. You can also choose the&nbsp;Symbol color&nbsp;used for your catalog. There you can specify how the fields are split within the raw data file: CSV (Comma-separated values) or Space Delimited.</span></li>
+ <li class="rvps10"><span class="rvts20">After you set the fields so that they match to your catalog raw file, you can move to the next step: completing the remaining input fields:&nbsp;Coordinate epoch,&nbsp;Catalog name prefix,&nbsp;Catalog name&nbsp;and&nbsp;Save catalog as. You can also choose the&nbsp;Symbol color&nbsp;used for your catalog. There you can specify how the fields are split within the raw data file: CSV (Comma-separated values) or Space Delimited.</span></li>
 </ul>
-<p class="rvps30"><span class="rvts20"><br/></span></p>
+<p class="rvps31"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">You can preview the output by pressing the&nbsp;Preview Output&nbsp;button. Pay attention to the header fields to have the same order as your catalog fields (i.e.&nbsp;ID RA Dec Major Axis and Object Type).</span></li>
+ <li class="rvps10"><span class="rvts20">You can preview the output by pressing the&nbsp;Preview Output&nbsp;button. Pay attention to the header fields to have the same order as your catalog fields (i.e.&nbsp;ID RA Dec Major Axis and Object Type).</span></li>
 </ul>
-<p class="rvps30"><span class="rvts20"><br/></span></p>
+<p class="rvps31"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Press&nbsp;OK&nbsp;button to close the&nbsp;Catalog Preview&nbsp;window. Then press&nbsp;OK&nbsp;button again to create and save your catalog.</span></li>
+ <li class="rvps10"><span class="rvts20">Press&nbsp;OK&nbsp;button to close the&nbsp;Catalog Preview&nbsp;window. Then press&nbsp;OK&nbsp;button again to create and save your catalog.</span></li>
 </ul>
-<p class="rvps30"><span class="rvts20"><br/></span></p>
+<p class="rvps31"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">After you successfully imported your catalog, it will be displayed in the catalogs list. You can choose to be displayed or not, by pressing on its checkbox.</span></li>
+ <li class="rvps10"><span class="rvts20">After you successfully imported your catalog, it will be displayed in the catalogs list. You can choose to be displayed or not, by pressing on its checkbox.</span></li>
 </ul>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/added_ldn.png"></p>
 <p></p>
@@ -515,29 +613,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

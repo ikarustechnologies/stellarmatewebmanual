@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -170,132 +185,134 @@
             <div class="main-content">
                 
 <p></p>
-<h4 class="rvps28"><span class="rvts0"><span class="rvts22">Navigation Keys</span></span></h4>
+<h4 class="rvps29"><span class="rvts0"><span class="rvts22">Navigation Keys</span></span></h4>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><a name="IDM3919"></a><span class="rvts20">Arrow Keys</span></li>
-<li class="rvps10"><span class="rvts20">Use the arrow keys to pan the display. Holding down the&nbsp;</span><span class="rvts22">Shift</span><span class="rvts20">&nbsp;key doubles the scrolling speed.</span></li>
-<li class="rvps2"><span class="rvts22">+</span><span class="rvts20">&nbsp;/&nbsp;</span><span class="rvts22">-</span></li>
-<li class="rvps10"><span class="rvts20">Zoom In/Out</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Z</span></li>
-<li class="rvps10"><span class="rvts20">Restore the default Zoom setting</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Shift</span><span class="rvts20">+</span><span class="rvts22">Z</span></li>
-<li class="rvps10"><span class="rvts20">Zoom to specified field-of-view angle</span></li>
-<li class="rvps2"><span class="rvts20">0–9</span></li>
-<li class="rvps10"><span class="rvts20">Center Display on a major Solar System body:</span></li>
+ <li class="rvps2"><a name="IDM3919"></a><span class="rvts20">Arrow Keys</span></li>
+ <li class="rvps10"><span class="rvts20">Use the arrow keys to pan the display. Holding down the&nbsp;</span><span class="rvts22">Shift</span><span class="rvts20">&nbsp;key doubles the scrolling speed.</span></li>
+ <li class="rvps2"><span class="rvts22">+</span><span class="rvts20">&nbsp;/&nbsp;</span><span class="rvts22">-</span></li>
+ <li class="rvps10"><span class="rvts20">Zoom In/Out</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Z</span></li>
+ <li class="rvps10"><span class="rvts20">Restore the default Zoom setting</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Shift</span><span class="rvts20">+</span><span class="rvts22">Z</span></li>
+ <li class="rvps10"><span class="rvts20">Zoom to specified field-of-view angle</span></li>
+ <li class="rvps2"><span class="rvts20">0–9</span></li>
+ <li class="rvps10"><span class="rvts20">Center Display on a major Solar System body:</span></li>
 </ul>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li class="rvps10"><span class="rvts20">0: Sun</span></li>
-<li class="rvps10"><span class="rvts20">1: Mercury</span></li>
-<li class="rvps10"><span class="rvts20">2: Venus</span></li>
-<li class="rvps10"><span class="rvts20">3: Moon</span></li>
-<li class="rvps10"><span class="rvts20">4: Mars</span></li>
-<li class="rvps10"><span class="rvts20">5: Jupiter</span></li>
-<li class="rvps10"><span class="rvts20">6: Saturn</span></li>
-<li class="rvps10"><span class="rvts20">7: Uranus</span></li>
-<li class="rvps10"><span class="rvts20">8: Neptune</span></li>
-<li class="rvps10"><span class="rvts20">9: Pluto</span></li>
-</ul></ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10"><span class="rvts20">0: Sun</span></li>
+  <li class="rvps10"><span class="rvts20">1: Mercury</span></li>
+  <li class="rvps10"><span class="rvts20">2: Venus</span></li>
+  <li class="rvps10"><span class="rvts20">3: Moon</span></li>
+  <li class="rvps10"><span class="rvts20">4: Mars</span></li>
+  <li class="rvps10"><span class="rvts20">5: Jupiter</span></li>
+  <li class="rvps10"><span class="rvts20">6: Saturn</span></li>
+  <li class="rvps10"><span class="rvts20">7: Uranus</span></li>
+  <li class="rvps10"><span class="rvts20">8: Neptune</span></li>
+  <li class="rvps10"><span class="rvts20">9: Pluto</span></li>
+ </ul>
+</ul>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">Z</span></li>
-<li class="rvps10"><span class="rvts20">Center the display at the&nbsp;</span><span class="rvts6">Zenith</span><span class="rvts20">&nbsp;Point (straight up)</span></li>
-<li class="rvps2"><span class="rvts22">N</span></li>
-<li class="rvps10"><span class="rvts20">Center the display above the North point on the horizon</span></li>
-<li class="rvps2"><span class="rvts22">E</span></li>
-<li class="rvps10"><span class="rvts20">Center the display above the East point on the horizon</span></li>
-<li class="rvps2"><span class="rvts22">S</span></li>
-<li class="rvps10"><span class="rvts20">Center the display above the South point on the horizon</span></li>
-<li class="rvps2"><span class="rvts22">W</span></li>
-<li class="rvps10"><span class="rvts20">Center the display above the West point on the horizon</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">T</span></li>
-<li class="rvps10"><span class="rvts20">Toggle tracking mode</span></li>
-<li class="rvps2"><span class="rvts22">&lt;</span></li>
-<li class="rvps10"><span class="rvts20">Advance the simulation clock backwards by one time step</span></li>
-<li class="rvps2"><span class="rvts22">&gt;</span></li>
-<li class="rvps10"><span class="rvts20">Advance the simulation clock forwards by one time step</span></li>
+ <li class="rvps2"><span class="rvts22">Z</span></li>
+ <li class="rvps10"><span class="rvts20">Center the display at the&nbsp;</span><span class="rvts6">Zenith</span><span class="rvts20">&nbsp;Point (straight up)</span></li>
+ <li class="rvps2"><span class="rvts22">N</span></li>
+ <li class="rvps10"><span class="rvts20">Center the display above the North point on the horizon</span></li>
+ <li class="rvps2"><span class="rvts22">E</span></li>
+ <li class="rvps10"><span class="rvts20">Center the display above the East point on the horizon</span></li>
+ <li class="rvps2"><span class="rvts22">S</span></li>
+ <li class="rvps10"><span class="rvts20">Center the display above the South point on the horizon</span></li>
+ <li class="rvps2"><span class="rvts22">W</span></li>
+ <li class="rvps10"><span class="rvts20">Center the display above the West point on the horizon</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">T</span></li>
+ <li class="rvps10"><span class="rvts20">Toggle tracking mode</span></li>
+ <li class="rvps2"><span class="rvts22">&lt;</span></li>
+ <li class="rvps10"><span class="rvts20">Advance the simulation clock backwards by one time step</span></li>
+ <li class="rvps2"><span class="rvts22">&gt;</span></li>
+ <li class="rvps10"><span class="rvts20">Advance the simulation clock forwards by one time step</span></li>
 </ul>
-<h4 class="rvps28"><a name="MENU-KEYS"></a><span class="rvts0"><span class="rvts22">Menu Shortcuts</span></span></h4>
+<h4 class="rvps29"><a name="MENU-KEYS"></a><span class="rvts0"><span class="rvts22">Menu Shortcuts</span></span></h4>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><a name="IDM4019"></a><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">N</span></li>
-<li class="rvps10"><span class="rvts20">Download extra data</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">O</span></li>
-<li class="rvps10"><span class="rvts20">Open a FITS image in the FITS Editor</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">I</span></li>
-<li class="rvps10"><span class="rvts20">Export sky image to a file</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">L</span></li>
-<li class="rvps10"><span class="rvts20">Run a&nbsp;KStars&nbsp;</span><a class="rvts23" href="ObservationPlanner.html">Observation Planner</a><span class="rvts20">.</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">R</span></li>
-<li class="rvps10"><span class="rvts20">Run a&nbsp;KStars&nbsp;D-Bus&nbsp;script</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">P</span></li>
-<li class="rvps10"><span class="rvts20">Print the current sky map</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Q</span></li>
-<li class="rvps10"><span class="rvts20">Quit&nbsp;KStars</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">E</span></li>
-<li class="rvps10"><span class="rvts20">Sync the simulation clock with the current system time</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">S</span></li>
-<li class="rvps10"><span class="rvts20">Set the simulation clock to a specified Time and Date</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Shift</span><span class="rvts20">+</span><span class="rvts22">F</span></li>
-<li class="rvps10"><span class="rvts20">Toggle full-screen mode</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">0</span></li>
-<li class="rvps10"><span class="rvts20">Define equipment (telescope, eyepiece, lens and filter) characteristics for observation logs.</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">1</span></li>
-<li class="rvps10"><span class="rvts20">Add a new observer item for your observation logs</span></li>
-<li class="rvps2"><span class="rvts22">Space</span></li>
-<li class="rvps10"><span class="rvts20">Toggle between the&nbsp;</span><span class="rvts6">Horizontal</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts6">Equatorial</span><span class="rvts20">&nbsp;</span><span class="rvts6">Coordinate Systems</span></li>
-<li class="rvps2"><span class="rvts22">F1</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;KStars&nbsp;Handbook</span></li>
-<li class="rvps2"><span class="rvts22">F5</span></li>
-<li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Lambert_azimuthal_equal-area_projection">Lambert azimuthal equal-area</a><span class="rvts20">&nbsp;projection.</span></li>
-<li class="rvps2"><span class="rvts22">F6</span></li>
-<li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection">azimuthal equidistant</a><span class="rvts20">&nbsp;projection.</span></li>
-<li class="rvps2"><span class="rvts22">F7</span></li>
-<li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Orthographic_projection_(cartography)">orthographic</a><span class="rvts20">&nbsp;projection.</span></li>
-<li class="rvps2"><span class="rvts22">F8</span></li>
-<li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Equirectangular_projection">equirectangular</a><span class="rvts20">&nbsp;projection.</span></li>
-<li class="rvps2"><span class="rvts22">F9</span></li>
-<li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Stereographic_projection">stereographic</a><span class="rvts20">&nbsp;projection.</span></li>
-<li class="rvps2"><span class="rvts22">F10</span></li>
-<li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Gnomonic_projection">gnomonic</a><span class="rvts20">&nbsp;projection.</span></li>
+ <li class="rvps2"><a name="IDM4019"></a><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">N</span></li>
+ <li class="rvps10"><span class="rvts20">Download extra data</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">O</span></li>
+ <li class="rvps10"><span class="rvts20">Open a FITS image in the FITS Editor</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">I</span></li>
+ <li class="rvps10"><span class="rvts20">Export sky image to a file</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">L</span></li>
+ <li class="rvps10"><span class="rvts20">Run a&nbsp;KStars&nbsp;</span><a class="rvts23" href="ObservationPlanner.html">Observation Planner</a><span class="rvts20">.</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">R</span></li>
+ <li class="rvps10"><span class="rvts20">Run a&nbsp;KStars&nbsp;D-Bus&nbsp;script</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">P</span></li>
+ <li class="rvps10"><span class="rvts20">Print the current sky map</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Q</span></li>
+ <li class="rvps10"><span class="rvts20">Quit&nbsp;KStars</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">E</span></li>
+ <li class="rvps10"><span class="rvts20">Sync the simulation clock with the current system time</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">S</span></li>
+ <li class="rvps10"><span class="rvts20">Set the simulation clock to a specified Time and Date</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Shift</span><span class="rvts20">+</span><span class="rvts22">F</span></li>
+ <li class="rvps10"><span class="rvts20">Toggle full-screen mode</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">0</span></li>
+ <li class="rvps10"><span class="rvts20">Define equipment (telescope, eyepiece, lens and filter) characteristics for observation logs.</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">1</span></li>
+ <li class="rvps10"><span class="rvts20">Add a new observer item for your observation logs</span></li>
+ <li class="rvps2"><span class="rvts22">Space</span></li>
+ <li class="rvps10"><span class="rvts20">Toggle between the&nbsp;</span><span class="rvts6">Horizontal</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts6">Equatorial</span><span class="rvts20">&nbsp;</span><span class="rvts6">Coordinate Systems</span></li>
+ <li class="rvps2"><span class="rvts22">F1</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;KStars&nbsp;Handbook</span></li>
+ <li class="rvps2"><span class="rvts22">F5</span></li>
+ <li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Lambert_azimuthal_equal-area_projection">Lambert azimuthal equal-area</a><span class="rvts20">&nbsp;projection.</span></li>
+ <li class="rvps2"><span class="rvts22">F6</span></li>
+ <li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection">azimuthal equidistant</a><span class="rvts20">&nbsp;projection.</span></li>
+ <li class="rvps2"><span class="rvts22">F7</span></li>
+ <li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Orthographic_projection_(cartography)">orthographic</a><span class="rvts20">&nbsp;projection.</span></li>
+ <li class="rvps2"><span class="rvts22">F8</span></li>
+ <li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Equirectangular_projection">equirectangular</a><span class="rvts20">&nbsp;projection.</span></li>
+ <li class="rvps2"><span class="rvts22">F9</span></li>
+ <li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Stereographic_projection">stereographic</a><span class="rvts20">&nbsp;projection.</span></li>
+ <li class="rvps2"><span class="rvts22">F10</span></li>
+ <li class="rvps10"><span class="rvts20">Switch sky chart view to the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Gnomonic_projection">gnomonic</a><span class="rvts20">&nbsp;projection.</span></li>
 </ul>
-<h4 class="rvps28"><a name="OBJECT-ACTIONS"></a><span class="rvts0"><span class="rvts22">Actions for the Selected Object</span></span></h4>
+<h4 class="rvps29"><a name="OBJECT-ACTIONS"></a><span class="rvts0"><span class="rvts22">Actions for the Selected Object</span></span></h4>
 <p class="rvps10"><a name="IDM4166"></a><span class="rvts20">Each of the following keystrokes performs an action on the&nbsp;</span><span class="rvts21">selected object</span><span class="rvts20">. The selected object is the last object which was clicked on (identified in the status bar). Alternatively, if you hold down the&nbsp;</span><span class="rvts22">Shift</span><span class="rvts20">&nbsp;key, then the action is performed on the centered object instead.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">C</span></li>
-<li class="rvps10"><span class="rvts20">Center and Track on the selected object</span></li>
-<li class="rvps2"><span class="rvts22">D</span></li>
-<li class="rvps10"><span class="rvts20">Open the Details window for the selected object</span></li>
-<li class="rvps2"><span class="rvts22">L</span></li>
-<li class="rvps10"><span class="rvts20">Toggle a name label for the selected object</span></li>
-<li class="rvps2"><span class="rvts22">O</span></li>
-<li class="rvps10"><span class="rvts20">Add the selected object to the observing list</span></li>
-<li class="rvps2"><span class="rvts22">P</span></li>
-<li class="rvps10"><span class="rvts20">Open the selected object's popup menu</span></li>
-<li class="rvps2"><span class="rvts22">T</span></li>
-<li class="rvps10"><span class="rvts20">Toggle a trail on the selected object (solar system bodies only)</span></li>
+ <li class="rvps2"><span class="rvts22">C</span></li>
+ <li class="rvps10"><span class="rvts20">Center and Track on the selected object</span></li>
+ <li class="rvps2"><span class="rvts22">D</span></li>
+ <li class="rvps10"><span class="rvts20">Open the Details window for the selected object</span></li>
+ <li class="rvps2"><span class="rvts22">L</span></li>
+ <li class="rvps10"><span class="rvts20">Toggle a name label for the selected object</span></li>
+ <li class="rvps2"><span class="rvts22">O</span></li>
+ <li class="rvps10"><span class="rvts20">Add the selected object to the observing list</span></li>
+ <li class="rvps2"><span class="rvts22">P</span></li>
+ <li class="rvps10"><span class="rvts20">Open the selected object's popup menu</span></li>
+ <li class="rvps2"><span class="rvts22">T</span></li>
+ <li class="rvps10"><span class="rvts20">Toggle a trail on the selected object (solar system bodies only)</span></li>
 </ul>
-<h4 class="rvps28"><a name="TOOLS-KEYS"></a><span class="rvts0"><span class="rvts22">Tools Shortcuts</span></span></h4>
+<h4 class="rvps29"><a name="TOOLS-KEYS"></a><span class="rvts0"><span class="rvts22">Tools Shortcuts</span></span></h4>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">F</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="ObjectsintheSky.html#FINDOBJECTS">Find Object window</a><span class="rvts20">, for specifying a sky object on which to center</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">M</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;Set Coordinates Manually&nbsp;tool, for specifying RA/Dec or Az/Alt coordinates on which to center</span></li>
-<li class="rvps2"><span class="rvts22">[</span></li>
-<li class="rvps10"><span class="rvts20">Start an Angular Distance measurement at the current mouse cursor position. The angular distance between start and end points is displayed at the endpoint.</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">G</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="SettingtheGeographicLocation.html">Set Geographic Location</a><span class="rvts20">&nbsp;window</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">C</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="TheAstrocalculator.html">AstroCalculator</a></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">A</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="AltitudevsTimeTool.html">Altitude vs. Time</a><span class="rvts20">&nbsp;tool</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">U</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="WhatsUpTonightTool.html">What's Up Tonight?</a><span class="rvts20">&nbsp;tool</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">W</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;“What's Interesting”&nbsp;tool</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">B</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="TheScriptBuilderTool.html">Script Builder</a><span class="rvts20">&nbsp;tool</span></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Y</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="SolarSystemViewer.html">Solar System Viewer</a></li>
-<li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">J</span></li>
-<li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="JupiterMoonsTool.html">Jupiter Moons</a><span class="rvts20">&nbsp;tool</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">F</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="ObjectsintheSky.html#FINDOBJECTS">Find Object window</a><span class="rvts20">, for specifying a sky object on which to center</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">M</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;Set Coordinates Manually&nbsp;tool, for specifying RA/Dec or Az/Alt coordinates on which to center</span></li>
+ <li class="rvps2"><span class="rvts22">[</span></li>
+ <li class="rvps10"><span class="rvts20">Start an Angular Distance measurement at the current mouse cursor position. The angular distance between start and end points is displayed at the endpoint.</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">G</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="SettingtheGeographicLocation.html">Set Geographic Location</a><span class="rvts20">&nbsp;window</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">C</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="TheAstrocalculator.html">AstroCalculator</a></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">A</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="AltitudevsTimeTool.html">Altitude vs. Time</a><span class="rvts20">&nbsp;tool</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">U</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="WhatsUpTonightTool.html">What's Up Tonight?</a><span class="rvts20">&nbsp;tool</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">W</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;“What's Interesting”&nbsp;tool</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">B</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="TheScriptBuilderTool.html">Script Builder</a><span class="rvts20">&nbsp;tool</span></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">Y</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="SolarSystemViewer.html">Solar System Viewer</a></li>
+ <li class="rvps2"><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">J</span></li>
+ <li class="rvps10"><span class="rvts20">Open the&nbsp;</span><a class="rvts23" href="JupiterMoonsTool.html">Jupiter Moons</a><span class="rvts20">&nbsp;tool</span></li>
 </ul>
 <p></p>
 
@@ -328,29 +345,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

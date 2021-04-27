@@ -186,7 +186,10 @@ a.rvts28, span.rvts28
  color: #007bbf;
  text-decoration: underline;
 }
-a.rvts28:hover { color: #007bbf; }
+a.rvts28:hover
+{
+ color: #007bbf;
+}
 span.rvts29
 {
  font-size: 12pt;
@@ -576,37 +579,33 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps14
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
- margin: 7px 4px 7px 4px;
+ text-indent: 48px;
 }
 .rvps15
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 1px 1px 1px 1px;
+ margin: 7px 4px 7px 4px;
 }
 .rvps16
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 0px 0px 0px 72px;
+ margin: 1px 1px 1px 1px;
 }
 .rvps17
 {
- text-align: center;
- margin: 7px 0px 7px 0px;
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 72px;
 }
 .rvps18
 {
- text-align: justify;
- text-align-last: auto;
- text-indent: 0px;
- padding: 0px 0px 0px 0px;
- margin: 15px 0px 15px 0px;
+ text-align: center;
+ margin: 7px 0px 7px 0px;
 }
 .rvps19
 {
@@ -614,7 +613,7 @@ p,ul,ol /* Paragraph Style */
  text-align-last: auto;
  text-indent: 0px;
  padding: 0px 0px 0px 0px;
- margin: 33px 0px 33px 0px;
+ margin: 15px 0px 15px 0px;
 }
 .rvps20
 {
@@ -622,36 +621,44 @@ p,ul,ol /* Paragraph Style */
  text-align-last: auto;
  text-indent: 0px;
  padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 0px;
+ margin: 33px 0px 33px 0px;
 }
 .rvps21
 {
  text-align: justify;
- text-justify: inter-word;
  text-align-last: auto;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
 }
 .rvps22
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 0px 0px 13px 0px;
 }
 .rvps23
 {
- margin: 0px 0px 0px 24px;
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 13px 0px;
 }
 .rvps24
 {
- text-align: center;
  margin: 0px 0px 0px 24px;
 }
 .rvps25
 {
  text-align: center;
- margin: 0px 0px 0px 48px;
+ margin: 0px 0px 0px 24px;
 }
 .rvps26
+{
+ text-align: center;
+ margin: 0px 0px 0px 48px;
+}
+.rvps27
 {
  text-align: justify;
  text-justify: inter-word;
@@ -659,49 +666,49 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.15;
  margin: 0px 0px 13px 0px;
 }
-.rvps27
-{
- text-align: justify;
- text-align-last: auto;
- text-indent: 0px;
- padding: 0px 0px 0px 0px;
- margin: 19px 0px 19px 0px;
-}
 .rvps28
 {
  text-align: justify;
  text-align-last: auto;
  text-indent: 0px;
  padding: 0px 0px 0px 0px;
- margin: 27px 0px 27px 0px;
+ margin: 19px 0px 19px 0px;
 }
 .rvps29
 {
  text-align: justify;
- text-justify: inter-word;
  text-align-last: auto;
- margin: 7px 0px 7px 0px;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 27px 0px 27px 0px;
 }
 .rvps30
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 0px 0px 0px 16px;
+ margin: 7px 0px 7px 0px;
 }
 .rvps31
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 7px 0px 7px 24px;
+ margin: 0px 0px 0px 16px;
 }
 .rvps32
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 7px 0px 7px 24px;
+}
+.rvps33
 {
  text-align: center;
  margin: 0px 0px 0px 16px;
 }
-.rvps33
+.rvps34
 {
  text-align: justify;
  text-align-last: auto;
@@ -709,20 +716,12 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 19px 0px 19px 0px;
 }
-.rvps34
+.rvps35
 {
  text-align: center;
  text-indent: 0px;
  padding: 0px 0px 0px 0px;
  margin: 27px 0px 27px 0px;
-}
-.rvps35
-{
- text-align: justify;
- text-align-last: auto;
- text-indent: 0px;
- padding: 0px 0px 0px 0px;
- margin: 24px 0px 24px 0px;
 }
 .rvps36
 {
@@ -730,22 +729,30 @@ p,ul,ol /* Paragraph Style */
  text-align-last: auto;
  text-indent: 0px;
  padding: 0px 0px 0px 0px;
- margin: 18px 0px 18px 0px;
+ margin: 24px 0px 24px 0px;
 }
 .rvps37
 {
  text-align: justify;
- text-justify: inter-word;
  text-align-last: auto;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 18px 0px 18px 0px;
 }
 .rvps38
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 1px 1px 1px 1px;
 }
 .rvps39
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 1px 1px 1px 1px;
+}
+.rvps40
 {
  text-align: justify;
  text-align-last: auto;
@@ -753,21 +760,21 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 19px 0px 19px 0px;
 }
-.rvps40
+.rvps41
 {
  text-align: center;
  text-indent: 0px;
  padding: 0px 0px 0px 0px;
  margin: 24px 0px 24px 0px;
 }
-.rvps41
+.rvps42
 {
  text-align: center;
  text-indent: 0px;
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
-.rvps42
+.rvps43
 {
  margin: 7px 0px 7px 0px;
 }

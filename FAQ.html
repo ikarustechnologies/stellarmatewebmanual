@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -171,659 +186,789 @@
                 
 <p></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
-<li class="rvps2"><span class="rvts62">17.1.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9875">What is StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.2.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9880">How does it work?</a></li>
-<li class="rvps2"><span class="rvts62">17.3.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9897">What do I need to run StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.4.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9906">How do I connect to StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.5.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9924">Should I upgrade to Ubuntu 18.04 on StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.6.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9930">What programs can be used to control StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.7.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9939">What is the default username and password for StellarMate OS?</a></li>
-<li class="rvps2"><span class="rvts62">17.8.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9947">How can I reset WiFi? How can I reset to Factory Defaults?</a></li>
-<li class="rvps2"><span class="rvts62">17.9.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9979">StellarMate HotSpot disappeared, where did it go?</a></li>
-<li class="rvps2"><span class="rvts62">17.10.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10024">What is the default password for StellarMate WiFi HotSpot? How to change?</a></li>
-<li class="rvps2"><span class="rvts62">17.11.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10034">How do I figure out StellarMate hostname?</a></li>
-<li class="rvps2"><span class="rvts62">17.12.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10049">How can I use SkySafari to control my mount with StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.13.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10064">How can I use a Joystick to control my mount?</a></li>
-<li class="rvps2"><span class="rvts62">17.14.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10070">How do I update StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.15.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10095">Can I use SSH to log in remotely? How about SFTP?</a></li>
-<li class="rvps2"><span class="rvts62">17.16.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10102">How can I save my images on StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.17.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10128">Problems with ZWO ASI cameras?</a></li>
-<li class="rvps2"><span class="rvts62">17.18.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10141">Can I use my ASCOM drivers and software with StellarMate?</a></li>
-<li class="rvps2"><span class="rvts62">17.19.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10151">What is EkosLive?</a></li>
-<li class="rvps2"><span class="rvts62">17.20.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10161">How can I connect to StellarMate directly via Ethernet cable?</a></li>
-<li class="rvps2"><span class="rvts62">17.21.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10181">How to access images on StellarMate from PC/Mac?</a></li>
-<li class="rvps2"><span class="rvts62">17.22.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10214">Can I add a Real-Time Clock?</a></li>
-<li class="rvps2"><span class="rvts62">17.23.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10221">Cannot connect to DSLR camera?</a></li>
-<li class="rvps2"><span class="rvts62">17.24.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10246">Can I hook up an external USB drive for storing images and videos?</a></li>
-<li class="rvps2"><span class="rvts62">17.25.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10299">How many Ethernet ports does the unit have?</a></li>
-<li class="rvps2"><span class="rvts62">17.26.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10304">I hear a loose part inside StellarMate. RTC Clock?</a></li>
-<li class="rvps2"><span class="rvts62">17.27.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10314">EQMod position is incorrect on startup?</a></li>
-<li class="rvps2"><span class="rvts62">17.28.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10352">Why mount slews to the wrong position in the sky?</a></li>
-<li class="rvps2"><span class="rvts62">17.29.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10440">Can I use the App &amp; Ekos on PC/Mac to control my equipment at the same time?</a></li>
-<li class="rvps2"><span class="rvts62">17.30.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10476">I cannot connect to my mount, what's wrong?</a></li>
-<li class="rvps2"><span class="rvts62">17.31. </span><a class="rvts23" href="https://stellarmate.com/support/faq.html?view=faq&faqid=45">How to install StellarMate OS on a another MicroSD?</a></li>
+ <li class="rvps2"><span class="rvts62">17.1.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9875">What is StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.2.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9880">How does it work?</a></li>
+ <li class="rvps2"><span class="rvts62">17.3.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9897">What do I need to run StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.4.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9906">How do I connect to StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.5.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9924">Should I upgrade to Ubuntu 18.04 on StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.6.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9930">What programs can be used to control StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.7.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9939">What is the default username and password for StellarMate OS?</a></li>
+ <li class="rvps2"><span class="rvts62">17.8.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9947">How can I reset WiFi? How can I reset to Factory Defaults?</a></li>
+ <li class="rvps2"><span class="rvts62">17.9.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm9979">StellarMate HotSpot disappeared, where did it go?</a></li>
+ <li class="rvps2"><span class="rvts62">17.10.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10024">What is the default password for StellarMate WiFi HotSpot? How to change?</a></li>
+ <li class="rvps2"><span class="rvts62">17.11.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10034">How do I figure out StellarMate hostname?</a></li>
+ <li class="rvps2"><span class="rvts62">17.12.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10049">How can I use SkySafari to control my mount with StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.13.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10064">How can I use a Joystick to control my mount?</a></li>
+ <li class="rvps2"><span class="rvts62">17.14.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10070">How do I update StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.15.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10095">Can I use SSH to log in remotely? How about SFTP?</a></li>
+ <li class="rvps2"><span class="rvts62">17.16.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10102">How can I save my images on StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.17.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10128">Problems with ZWO ASI cameras?</a></li>
+ <li class="rvps2"><span class="rvts62">17.18.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10141">Can I use my ASCOM drivers and software with StellarMate?</a></li>
+ <li class="rvps2"><span class="rvts62">17.19.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10151">What is EkosLive?</a></li>
+ <li class="rvps2"><span class="rvts62">17.20.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10161">How can I connect to StellarMate directly via Ethernet cable?</a></li>
+ <li class="rvps2"><span class="rvts62">17.21.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10181">How to access images on StellarMate from PC/Mac?</a></li>
+ <li class="rvps2"><span class="rvts62">17.22.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10214">Can I add a Real-Time Clock?</a></li>
+ <li class="rvps2"><span class="rvts62">17.23.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10221">Cannot connect to DSLR camera?</a></li>
+ <li class="rvps2"><span class="rvts62">17.24.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10246">Can I hook up an external USB drive for storing images and videos?</a></li>
+ <li class="rvps2"><span class="rvts62">17.25.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10299">How many Ethernet ports does the unit have?</a></li>
+ <li class="rvps2"><span class="rvts62">17.26.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10304">I hear a loose part inside StellarMate. RTC Clock?</a></li>
+ <li class="rvps2"><span class="rvts62">17.27.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10314">EQMod position is incorrect on startup?</a></li>
+ <li class="rvps2"><span class="rvts62">17.28.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10352">Why mount slews to the wrong position in the sky?</a></li>
+ <li class="rvps2"><span class="rvts62">17.29.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10440">Can I use the App &amp; Ekos on PC/Mac to control my equipment at the same time?</a></li>
+ <li class="rvps2"><span class="rvts62">17.30.&nbsp;</span><a class="rvts23" href="sm-faq.html#idm10476">I cannot connect to my mount, what's wrong?</a></li>
+ <li class="rvps2"><span class="rvts62">17.31. </span><a class="rvts23" href="https://stellarmate.com/support/faq.html?view=faq&faqid=45">How to install StellarMate OS on a another MicroSD?</a></li>
 </ul>
-<div class="rvps2"><table border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px;">
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9875"></a><span class="rvts22">17.1.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">What is StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">StellarMate is a small mobile astronomy gadget that you can connect your astronomy devices. It enables you to control your mount, camera, focuser, filter wheel, dome, and many more devices. Designed for astrophotography, it includes free powerful astrophotography tool that supports mount control, batch capture, autofocus, autoguide, and astrometry.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9876"></a><span class="rvts22">17.2.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How does it work?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">The gadget includes several methods that enable you to connect your equipment. StellarMate communication channels include 4x USB 2.0 ports, 10/100 MBPS Ethernet, 802.11n Wireless LAN, and Bluetooth 4.0. You connect your equipment to StellarMate using any of the supported communication channels. Once connected, you can use a mobile (Phone &amp; Tablet) or desktop (Windows, MacOS, Linux) application to control your equipment.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_block_diagram.png"></p>
-<p class="rvps10"><span class="rvts20">The gadget includes several methods that enable you to connect your equipment. StellarMate communication channels include 4x USB 2.0 ports, 10/100 MBPS Ethernet, 802.11n Wireless LAN, and Bluetooth 4.0. You connect your equipment to StellarMate using any of the supported communication channels. Once connected, you can use a mobile (Phone &amp; Tablet) or desktop (Windows®,&nbsp;Mac®&nbsp;OS,&nbsp;Linux®) application to control your equipment.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9880"></a><span class="rvts22">17.3.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">What do I need to run StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">You need equipment (Mounts, Cameras, Focuser,&nbsp;etc.) that can be connected to a computer via either USB, Bluetooth, or Ethernet. All modern gadget include connectors to computers. For mount with Serial connectors, you will need to purchase a Serial-2-USB adapter. Since StellarMate uses INDI for device control, you need to&nbsp;</span><a class="rvts23" href="http://indilib.org/devices.html">make sure your device is supported</a><span class="rvts20">. While not strictly required, it is highly recommended to use an external powered USB hub to connect your devices to.</span></p>
-<p class="rvps10"><span class="rvts20">To use the&nbsp;</span><a class="rvts23" href="ConnectingtoStellarMate.html">StellarMate App</a><span class="rvts20">, you need either an Android or iOS-based smartphone.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9881"></a><span class="rvts22">17.4.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How do I connect to StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">You can connect to StellarMate via the following methods:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts22">Direct Connection</span><span class="rvts20">: Plug the supplied HDMI cable to a monitor to gain direct access to StellarMate OS. You also need to plug your Mouse &amp; Keyboard.</span></li>
-<li class="rvps10"><span class="rvts22">Wired</span><span class="rvts20">: Connect StellarMate to your LAN via Ethernet. You can access it like any other device on your network. You can use Network Discovery tools on your operating system (e.g.&nbsp;</span><a class="rvts23" href="https://wiki.archlinux.org/index.php/avahi">Avahi</a><span class="rvts62">/</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Bonjour_(software)">Bonjour</a><span class="rvts20">) to detect it as it advertises its services over the network.</span></li>
-<li class="rvps10"><span class="rvts22">Wireless</span><span class="rvts20">: Use StellarMate App for Android and iOS to connect to your gadget.</span></li>
-</ul>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9897"></a><span class="rvts22">17.5.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Should I upgrade to Ubuntu 18.04 on StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">No</span><span class="rvts20">. Upgrading to 18.04 will likely break your system. Please wait until there is an official StellarMate OS image with 18.04 support.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9898"></a><span class="rvts22">17.6.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">What programs can be used to control StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">There are many mobile and desktop applications that you can use to control StellarMate. For a complete list, please check&nbsp;</span><a class="rvts23" href="http://indilib.org/about/clients.html">INDI Clients</a><span class="rvts20">&nbsp;page.</span></p>
-<p class="rvps10"><span class="rvts20">However, only&nbsp;</span><a class="rvts23" href="Ekos2.html">Ekos</a><span class="rvts20">&nbsp;and&nbsp;</span><a class="rvts23" href="ConnectingtoStellarMate.html">StellarMate App</a><span class="rvts20">&nbsp;are officially supported.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9906"></a><span class="rvts22">17.7.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">What is the default username and password for StellarMate OS?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">username:&nbsp;</span><span class="rvts22">stellarmate</span></p>
-<p class="rvps10"><span class="rvts20">password:&nbsp;</span><span class="rvts22">smate</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9907"></a><span class="rvts22">17.8.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How can I reset WiFi? How can I reset to Factory Defaults?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">To reset StellarMate, use VNC or connect via HDMI and click on the&nbsp;StellarMate Tools&nbsp;icon on the desktop as illustrated below:</span></p>
-<p class="rvps10"><span class="rvts20">After clicking the icon, a small window shall pop up with two buttons:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Network Reset: Click this button to reset WiFi settings in case you have issues accessing the unit via WiFi or HotSpot. It will restore StellarMate to HotSpot mode.</span></li>
-<li class="rvps10"><span class="rvts20">Factory Reset: Click this button to reset all settings, including WiFi. This action is irreversible! Please make sure to back up any important data on the SD card!</span></li>
-</ul>
-<p class="rvps10"><span class="rvts20">StellarMate must be restarted for the above to take effect.</span></p>
-<p class="rvps10"><span class="rvts20">To reset StellarMate, use VNC or connect via HDMI and click on the&nbsp;StellarMate Tools&nbsp;icon on the desktop as illustrated below:</span></p>
-<p class="rvps10"><span class="rvts20">After clicking the icon, a small window shall pop up with two buttons:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Network Reset: Click this button to reset WiFi settings in case you have issues accessing the unit via WiFi or HotSpot. It will restore StellarMate to HotSpot mode.</span></li>
-<li class="rvps10"><span class="rvts20">Factory Reset: Click this button to reset all settings, including WiFi. This action is irreversible! Please make sure to back up any important data on the SD card!</span></li>
-</ul>
-<p class="rvps10"><span class="rvts20">StellarMate must be restarted for the above to take effect.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9924"></a><span class="rvts22">17.9.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">StellarMate HotSpot disappeared, where did it go?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Usual Cause</span></p>
-<p class="rvps10"><span class="rvts20">StellarMate HotSpot is&nbsp;</span><span class="rvts22">only active</span><span class="rvts20">&nbsp;when StellarMate is not connected to any network.</span></p>
-<p class="rvps10"><span class="rvts20">If you connect StellarMate to your WiFi network, or if you connect StellarMate to LAN via Ethernet, then the HotSpot is deactivated. It is only reactivated again when there is no network to reach.</span></p>
-<p class="rvps10"><span class="rvts22">Other Causes</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts22">Failure to boot up</span><span class="rvts20">: If the unit cannot be reached in any method (WiFi, Ethernet,&nbsp;etc.) then connect HDMI cable + keyboard and see the output on the screen. StellarMate is quite a tolerant to power off but sometimes part of the SD card gets corrupted and requires manual intervention.</span></li>
-</ol>
-<p class="rvps10"><span class="rvts20">After the initial bootup message, press&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">D</span><span class="rvts20">&nbsp;and you will drop to the terminal.</span></p>
-<p class="rvps10"><span class="rvts20">Then type in the following. Please beware that there is one space between&nbsp;</span><span class="rvts22">sudoedit</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">/etc/default/rcS</span><span class="rvts20">.</span></p>
-<p class="rvps10"><span class="rvts20">When it asks for a password, enter&nbsp;</span><span class="rvts22">smate</span><span class="rvts20">&nbsp;and then press&nbsp;Enter.</span></p>
-<p class="rvps10"><span class="rvts20">An editor will open, press the arrow key down to go to the bottom of the editor. You will see a parameter called&nbsp;</span><span class="rvts21">FSCKFIX=no</span><span class="rvts20">. Change the&nbsp;</span><span class="rvts21">no</span><span class="rvts20">&nbsp;to a&nbsp;</span><span class="rvts21">yes</span><span class="rvts20">.</span></p>
-<p class="rvps10"><span class="rvts20">After that, press&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">O</span><span class="rvts20">&nbsp;to save the file and then press&nbsp;Enter.</span></p>
-<p class="rvps10"><span class="rvts20">Then press&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">X</span><span class="rvts20">&nbsp;to exit the editor. Finally, type in&nbsp;</span><span class="rvts22">sudo reboot</span><span class="rvts20">&nbsp;to reboot StellarMate and press&nbsp;Enter.</span></p>
-<p class="rvps10"><span class="rvts20">StellarMate should hopefully bootup normally next time.</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="2" class="rvps10"><span class="rvts22">Wrong Home WiFi password</span><span class="rvts20">: If you entered a wrong home WiFi password, this can lead to HotSpot dropping while not being able to establish a connection to the Home WiFi Network. The recommended solution is to use HDMI+Keyboard to login to StellarMate OS, and then reset the WiFi network from the StellarMate Tools App on the desktop. After restarting the unit, the HotSpot should automatically come up.</span></li>
-</ol>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9925"></a><span class="rvts22">17.10.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">What is the default password for StellarMate WiFi HotSpot? How to change?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">StellarMate WiFi HotSpot password:&nbsp;</span><span class="rvts22">stellar@mate</span></p>
-<p class="rvps10"><span class="rvts20">To change the default password, follow the steps in this video:</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9930"></a><span class="rvts22">17.11.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How do I figure out StellarMate hostname?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">By default, the unit hostname is&nbsp;</span><span class="rvts22">stellarmate.local</span></p>
-<p class="rvps10"><span class="rvts20">From StellarMate App, go to&nbsp;My Mates&nbsp;then select your unit. The hostname is the unit name. If you changed the unit name, then just use the name followed by&nbsp;</span><span class="rvts21">.local</span></p>
-<p class="rvps10"><span class="rvts20">For example, if you changed the unit name to&nbsp;</span><span class="rvts21">observatory</span><span class="rvts20">&nbsp;then your new hostname is&nbsp;</span><span class="rvts21">observatory.local</span></p>
-<p class="rvps10"><span class="rvts20">Another way to find the hostname is to open the&nbsp;</span><a class="rvts23" href="WebManager.html">Web Manager</a><span class="rvts20">&nbsp;from the&nbsp;</span><a class="rvts23" href="ConnectingtoStellarMate.html">StellarMate App</a><span class="rvts20">&nbsp;and you will see the unit hostname in the browser address bar.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9931"></a><span class="rvts22">17.12.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How can I use SkySafari to control my mount with StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">If you using StellarMate Web Manager, please add SkySafari driver to your Auxiliary drivers. From within&nbsp;</span><a class="rvts23" href="Ekos2.html">Ekos</a><span class="rvts20">, select SkySafari from&nbsp;Auxiliary.</span></p>
-<p class="rvps10"><span class="rvts20">Video instructions</span></p>
-<p class="rvps10"><span class="rvts20">For complete instructions, please visit&nbsp;</span><a class="rvts23" href="http://indilib.org/devices/telescopes/skysafari.html">SkySafari INDI support page</a><span class="rvts20">.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9939"></a><span class="rvts22">17.13.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How can I use a Joystick to control my mount?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">Please follow instructions in&nbsp;</span><a class="rvts23" href="http://indilib.org/support/tutorials/135-controlling-your-telescope-with-a-joystick.html">Controlling your Mount with Joystick tutorial</a><span class="rvts20">.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9940"></a><span class="rvts22">17.14.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How do I update StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">Use&nbsp;</span><a class="rvts23" href="Scheduler.html#EKOS-TUTORIALS-VIEWER">Web-Based VNC Viewer</a><span class="rvts20">&nbsp;or any VNC Viewer to access StellarMate. Simply double click the&nbsp;Software Updater&nbsp;icon to fetch updates. If there are any available updates, a window shall appear with the required upgrades. Click Install to download and install them. It is recommended to restart the unit after installing updates.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_update.png"></p>
-<p class="rvps10"><span class="rvts20">If for any reason you are having problems with the GUI Software Updater, you can directly write command to start the update process. Double click the Mate Terminal icon and a terminal window shall be opened. Type in the following command and press&nbsp;Enter:</span></p>
-<p class="rvps10"><span class="rvts22">sudo apt-get update &amp;&amp; sudo apt-get -y upgrade</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_console.png"></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9947"></a><span class="rvts22">17.15.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Can I use SSH to log in remotely? How about SFTP?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">Yes. Use port 5624 to login to StellarMate using your username and password. The same port should be used for SFTP (e.g. in FileZilla). You can perform the remote update using the following command:</span></p>
-<p class="rvps10"><span class="rvts22">sudo apt-get update &amp;&amp; sudo apt-get -y dist-upgrade</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9948"></a><span class="rvts22">17.16.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How can I save my images on StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">StellarMate ships with 16GB MicroSD card and over 9.5GB of free space to store images on.</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">If you are using Ekos on PC/Mac, then you need to set&nbsp;Upload&nbsp;mode to&nbsp;</span><span class="rvts21">Local</span><span class="rvts20">&nbsp;and then set the&nbsp;Remote Directory&nbsp;to&nbsp;</span><span class="rvts22">/home/stellarmate/Pictures</span><span class="rvts20">&nbsp;as illustrated below:</span></li>
-</ol>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/windows_stellarmate_local.png"></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="2" class="rvps10"><span class="rvts20">If you are using Ekos&nbsp;</span><span class="rvts21">directly</span><span class="rvts20">&nbsp;on StellarMate, simply set the&nbsp;Directory&nbsp;field in the&nbsp;</span><a class="rvts23" href="Capture.html">capture module</a><span class="rvts20">&nbsp;to&nbsp;</span><span class="rvts22">/home/stellarmate/Pictures</span><span class="rvts20">. The Upload mode should remain as&nbsp;Client.</span></li>
-</ol>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9979"></a><span class="rvts22">17.17.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Problems with ZWO ASI cameras?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">If you are using&nbsp;</span><span class="rvts21">USB2</span><span class="rvts20">&nbsp;cameras from ZWO, they&nbsp;</span><span class="rvts22">must</span><span class="rvts20">&nbsp;be flashed with the -compatible firmware in order to be used with StellarMate.</span></p>
-<p class="rvps10"><span class="rvts20">Download the&nbsp;</span><a class="rvts23" href="https://astronomy-imaging-camera.com/software/">ASI Cameras Firmware Upgrade Tool</a><span class="rvts20">&nbsp;for your OS and flash the camera with the&nbsp;</span><span class="rvts21">-compatible</span><span class="rvts20">&nbsp;firmware. For example, if your camera is ASI120MM, then flash the camera with this file:&nbsp;ASI120MM-compatible.iic</span></p>
-<p class="rvps10"><span class="rvts20">This is&nbsp;</span><span class="rvts22">not</span><span class="rvts20">&nbsp;required for USB3 cameras.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM9980"></a><span class="rvts22">17.18.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Can I use my ASCOM drivers and software with StellarMate?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">No.</span></p>
-<p class="rvps10"><span class="rvts20">StellarMate is based on Open Astronomy Instrumentation Protocol (</span><a class="rvts23" href="AstronomicalDeviceControlwithIND.html">INDI</a><span class="rvts20">) and does not use ASCOM. INDI enables native remote control of your equipment and&nbsp;</span><a class="rvts23" href="http://www.indilib.org/devices.html">numerous devices</a><span class="rvts20">&nbsp;are supported by manufacturers today.&nbsp;</span><a class="rvts23" href="Ekos2.html">Ekos</a><span class="rvts20">&nbsp;is the officially supported client, but you can also use over&nbsp;</span><a class="rvts23" href="http://www.indilib.org/about/clients.html">15+ clients</a><span class="rvts20">&nbsp;on across many operating systems.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10024"></a><span class="rvts22">17.19.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">What is EkosLive?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><a class="rvts23" href="https://live.stellarmate.com">EkosLive</a><span class="rvts20">&nbsp;is a real-time web application that can be run from any browser. It allows you to control many aspects of Ekos right from the browser. It is built around material-ui from Google, so it is very friendly for mobiles &amp; tablets on any platform.</span></p>
-<p class="rvps10"><span class="rvts20">It supports capture, focus, guiding, alignment, and polar assistant tools. Furthermore, it can save your images directly to the cloud where they are stored along with a rich metadata system that enables easy search for images in the future. You can define your own tags to uniquely identifies images of interest.</span></p>
-<p class="rvps10"><span class="rvts20">Turn on sound notifications on to get audible alerts on tasks such as when an image is captured and so on. It supports multiple themes (Normal, Dark, and Night) to suit your seeing preferences.</span></p>
-<p class="rvps10"><a class="rvts23" href="EkosLive.html">More on this</a></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10025"></a><span class="rvts22">17.20.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How can I connect to StellarMate directly via Ethernet cable?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">It is possible to connect to StellarMate directly&nbsp;</span><span class="rvts21">without</span><span class="rvts20">&nbsp;going via a router. Simply connect an Ethernet cable from your PC/Mac to StellarMate. There is no need to use a crossover cable, any regular Ethernet cable would do. You can access StellarMate as you would normally do via the address&nbsp;</span><a class="rvts23" href="http://stellarmate.local:8624">http://stellarmate.local:8624</a></p>
-<p class="rvps10"><span class="rvts20">Under some circumstances, the PC/Mac cannot recognize the direct connection immediately. To force it to connect with StellarMate, find out what auto-IP address was created by StellarMate. This information can be found in StellarMate Web Manager. Use WiFi to connect to the StellarMate hotspot, and click on the information icon to display StellarMate info.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_direct_ethernet.png"></p>
-<p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps10"><span class="rvts20">From the example screenshot above, we know the auto-IP address is&nbsp;</span><span class="rvts22">169.254.10.197</span><span class="rvts20">. Now open the terminal application in your operating system and simply type:</span></p>
-<p class="rvps10"><span class="rvts22">ping 169.254.10.197</span></p>
-<p class="rvps10"><span class="rvts20">After which the PC/Mac should register the IP address and you can start using&nbsp;</span><span class="rvts22">stellarmate.local</span><span class="rvts20">&nbsp;address as usual.</span></p>
-<p class="rvps10"><span class="rvts20">A more permanent solution involves&nbsp;</span><a class="rvts23" href="https://www.youtube.com/watch?v=6qsyPTDU2aY">creating a static IP address</a><span class="rvts20">&nbsp;on StellarMate using Network Manager.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10034"></a><span class="rvts22">17.21.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How to access images on StellarMate from PC/Mac?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">If you captured images and saved them to StellarMate, then they should be available by default under&nbsp;/home/stellarmate/Pictures. To access the images over the network, there are two options:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">On&nbsp;Windows®, click on the Network icon in the left pane of&nbsp;File Explorer&nbsp;as illustrated below.</span></li>
-</ul>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/windows_access_stellarmate.png"></p>
-<p class="rvps3"><span class="rvts20"><br/></span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">On&nbsp;Linux® &amp;&nbsp;Mac®&nbsp;OS: Use&nbsp;</span><a class="rvts23" href="https://filezilla-project.org/download.php">FileZilla</a><a class="rvts38" href="https://filezilla-project.org/download.php">&nbsp;</a><span class="rvts20">to connect to StellarMate via Secure FTP (sftp) using your username (</span><span class="rvts22">stellarmate</span><span class="rvts20">) and password (</span><span class="rvts22">smate</span><span class="rvts20">). Remember to set port to 5624.</span></li>
-</ul>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_sftp_settings.png"></p>
-<p class="rvps3"><span class="rvts20"><br/></span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10035"></a><span class="rvts22">17.22.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Can I add a Real-Time Clock?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">StellarMate Gadget&nbsp;</span><span class="rvts21">already</span><span class="rvts20">&nbsp;ships with RTC clock configured and ready to go. For users of StellarMate OS running on their RPI3/RPI3B+, you can purchase a&nbsp;</span><a class="rvts23" href="https://www.amazon.com/battery-Raspberry-Arduino-Atomic-Market/dp/B01M105UFC">DS3231</a><span class="rvts20">&nbsp;module and install it. There is no need to perform any additional software configuration as StellarMate OS supports DS3231 natively.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10049"></a><span class="rvts22">17.23.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Cannot connect to DSLR camera?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">The following is a list of checks you need to verify before contacting support regarding DSLR connectivity issues:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Make sure the camera battery is&nbsp;</span><span class="rvts22">full</span><span class="rvts20">.</span></li>
-<li class="rvps10"><span class="rvts20">Make sure there is enough space on your SD card.</span></li>
-<li class="rvps10"><span class="rvts20">Make sure the camera is set to&nbsp;</span><span class="rvts21">Bulb/Manual</span><span class="rvts20">&nbsp;mode. In some models, you need to rotate the dial first to&nbsp;</span><span class="rvts21">Manual</span><span class="rvts20">&nbsp;then change the settings to make it&nbsp;</span><span class="rvts21">Bulb</span><span class="rvts20">.</span></li>
-<li class="rvps10"><span class="rvts20">Turn off any power-saving features in the camera that might be making the camera go to&nbsp;</span><span class="rvts21">sleep</span><span class="rvts20">&nbsp;mode without your knowledge. Some cameras support&nbsp;</span><span class="rvts21">inactivity timer</span><span class="rvts20">, try to set it to 10 or 15 minutes to be on the safe side.</span></li>
-<li class="rvps10"><span class="rvts20">Try a different USB cable.</span></li>
-<li class="rvps10"><span class="rvts20">Try plugging the camera to a different USB port on StellarMate.</span></li>
-</ul>
-<p class="rvps10"><span class="rvts20">If none of the above works out, please submit a support ticket with details on your setup.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10050"></a><span class="rvts22">17.24.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Can I hook up an external USB drive for storing images and videos?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">Absolutely. After you connect the external USB drive. You need to login to StellarMate OS desktop either via VNC or HDMI. You should see the external driver icon on your desktop. Double click it to learn of the location of the driver.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/external_drive_stellarmate.png"></p>
-<p class="rvps10"><span class="rvts20">In the&nbsp;</span><span class="rvts21">example</span><span class="rvts20">&nbsp;above, the drive location is&nbsp;/home/stellarmate/Elements. This is the location URL you need to save your images to. If you need to save in a directory inside the drive, then simply double-click it and copy the URL from the location bar. Next, where to put this URL?</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts22">Using KStars on StellarMate</span></li>
-</ol>
-<p class="rvps10"><span class="rvts20">If you are running KStars inside StellarMate directly, then simply browse the location in the&nbsp;Directory&nbsp;field of the&nbsp;</span><a class="rvts38" href="tools.html#ekos-capture">Capture Module</a><span class="rvts20">. You can also paste the URL there directly.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/kstars_in_stellarmate.png"></p>
-<p class="rvps3"><span class="rvts20"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="2" class="rvps10"><span class="rvts22">Using KStars on&nbsp;Windows®/Mac®&nbsp;OS/Linux®</span></li>
-</ol>
-<p class="rvps10"><span class="rvts20">If you are running KStars remotely on a&nbsp;Windows®/Mac®&nbsp;OS&nbsp;or&nbsp;Linux® machine, then in this case you need to change the&nbsp;Upload&nbsp;mode to either&nbsp;Local&nbsp;(save images only in StellarMate) or&nbsp;Both&nbsp;(save images in StellarMate and send a copy to us).</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/kstars_on_pc.png"></p>
-<p class="rvps10"><span class="rvts20">You will see the&nbsp;Remote&nbsp;field getting enabled for editing. Simple paste the location URL here and start the capture process to have your images saved to the external USB disk.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10064"></a><span class="rvts22">17.25.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">How many Ethernet ports does the unit have?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">StellarMate comes with one 10/100 mbps Ethernet port.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10065"></a><span class="rvts22">17.26.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">I hear a loose part inside StellarMate. RTC Clock?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">StellarMate Controller comes preinstalled with a Real-Time Clock module. On very rare occasions, it can come loose. But do not worry, you can easily put it back in.</span></p>
-<p class="rvps10"><span class="rvts20">Simply remove the top cover of StellarMate, then put it in the pins that are enclosed by the red rectangle in the image below. You can apply light glue to the base to ensure it remains secure.</span></p>
-<p class="rvps3"><img width="1000" height="1333" alt="" style="padding : 1px;" src="lib/sm_rtc_position.png"></p>
-<p class="rvps3"><span class="rvts20"><br/></span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10070"></a><span class="rvts22">17.27.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">EQMod position is incorrect on startup?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">The&nbsp;</span><span class="rvts21">Default Position</span><span class="rvts20">&nbsp;for EQMod after power up is the home position. The home position is defined as the position where the mount is facing the celestial pole with the weights down. For northern hemisphere users, the mount needs to point roughly at polaris.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/home_position.png"></p>
-<p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps10"><span class="rvts20">In rare circumstances, users might see the initial position for EQMod in Ekos to be wrong. Unless you set it to a custom parking position, it should always start near the celestial pole. An off position might look like this:</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/eqmod_bad_position.jpg"></p>
-<p class="rvps10"><span class="rvts20">To fix this issue, please perform the following steps:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">If the mount is not already unparked, unpark it (click the green flag in the toolbar).</span></li>
-<li value="2" class="rvps10"><span class="rvts20">Go to INDI Control Panel --&gt; EQMod --&gt; Site Management and click on Purge Data under Park Options.</span></li>
-</ol>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/eqmod_purge_data.jpg"></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="3" class="rvps10"><span class="rvts20">Power off the mount.</span></li>
-<li value="4" class="rvps10"><span class="rvts20">If the mount is not pointed at the celestial pole with the weights down, adjust it manually until you reach this position.</span></li>
-<li value="5" class="rvps10"><span class="rvts20">Power on the mount.</span></li>
-<li value="6" class="rvps10"><span class="rvts20">Start the Ekos equipment profile again.</span></li>
-</ol>
-<p class="rvps10"><span class="rvts20">Now EQMod should point toward the celestial pole and a new default parking position is recorded. If you still have issues after performing these steps, please open a ticket in the&nbsp;</span><a class="rvts23" href="https://www.stellarmate.com/support.html?view=main">support</a><span class="rvts20">&nbsp;area.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10071"></a><span class="rvts22">17.28.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Why mount slews to the wrong position in the sky?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">Power</span></p>
-<p class="rvps10"><span class="rvts20">Make sure your mount have sufficient power to make the slews. Power is one the primary problems faced by users but it is one of the least issues users suspect or investigate, so make sure to rule out power as the cause for the mount erratic behavior.</span></p>
-<p class="rvps10"><span class="rvts20">Alignment</span></p>
-<p class="rvps10"><span class="rvts20">GOTO mounts learn how to go to specific objects in the night sky after they are properly calibrated and aligned at power up.</span></p>
-<p class="rvps10"><span class="rvts20">All mounts&nbsp;must be first aligned&nbsp;using the handset using 2 or 3 star alignments&nbsp;</span><span class="rvts21">before</span><span class="rvts20">&nbsp;you can use them with StellarMate. The only exception to this rule is as following:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">EQMOD: When using Skywatcher mounts with EQMod driver, no alignment is necessary at startup. It should start pointing at the celestial pole (unless custom parking position is used). Make sure the mount is powered up while it is in the&nbsp;Home Position. Afterwards, slew to a nearby star and use Ekos Alignment module to sync the telescope. EQMod would then be ready to make accurate GOTOs.</span></li>
-</ul>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/home_position.png"></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">Hibernation: For mounts that support hibernation (e.g. AVX), it is possible to hibernate and later on wake up the mount without losing alignment data.</span></li>
-</ul>
-<p class="rvps10"><span class="rvts20">Time &amp; Location</span></p>
-<p class="rvps10"><span class="rvts20">This is the most common cause for inaccurate and erratics GOTOs. StellarMate requires an accurate Time and Location data in order to drive the mount correctly. If you are using Ekos on a PC/Mac, KStars would automatically set the mounts time and location. You can double check the mount time and location settings by going to INDI Control Panel --&gt; Mount Driver Tab (e.g. EQMod Mount) --&gt; Site Management Tab.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/site_management.jpg"></p>
-<p class="rvps10"><span class="rvts20">However, this only sets the mount time (in the handset) and not the StellarMate&nbsp;System Time. The system time is still important for other calculations, so it is&nbsp;</span><span class="rvts21">prudent</span><span class="rvts20">&nbsp;that StellarMate system time is accurate. StellarMate gadget is shipped with a&nbsp;Real Time Clock (RTC)&nbsp;module that keeps the system time even when the unit is turned off. If you are using StellarMate OS on a plain Rasbperry Pi board, then there is no way to keep the time ticking and accurate. StellarMate would sync the system time once it has an active connection to the internet.</span></p>
-<p class="rvps10"><span class="rvts20">In case you are using StellarMate in HotSpot mode, the unit has no access to the internet and the time must be either it&nbsp;</span><span class="rvts21">Manually</span><span class="rvts20">&nbsp;via&nbsp;</span><span class="rvts21">VNC</span><span class="rvts20">&nbsp;or via the&nbsp;</span><span class="rvts21">StellarMate App</span><span class="rvts20">. When using the StellarMate App, it would automatically syncs StellarMate system time and location when it establishes communication with the unit. The time and location information are extracted from your phone/tablet. To explicity sync the GPS information, click on the&nbsp;</span><span class="rvts21">Sync GPS</span><span class="rvts20">&nbsp;button in the app.</span></p>
-<p class="rvps3"><img width="1000" height="749" alt="" style="padding : 1px;" src="lib/stellarmate_sync_gps.jpg"></p>
-<p class="rvps10"><span class="rvts20">If you are using a GPS dongle in StellarMate, then it would be sufficient to sync the StellarMate system time and location once powered up. Without the GPS dongle, using the StellarMate App is the next best option as it always keeps StellarMate system time and location synchronized with your phone/tablet.</span></p>
-<p class="rvps10"><span class="rvts20">Mount Model</span></p>
-<p class="rvps10"><span class="rvts20">When using EQMod mount or any mount that uses INDI Alignment Subsystem, it improves its GOTO accuracy by building a model of the night sky in the driver itself. This is in contrast to traditional mounts when the model is built in the handset (e.g. Meade). Sometimes the model inadvernetly lead to wrong GOTOs and you keep adding more sync points to correct this issue, it might end up getting worse. The best thing to do in this situation is to follow these steps:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">If the mount is not already unparked, unpark it (click the green flag in the toolbar).</span></li>
-<li value="2" class="rvps10"><span class="rvts20">Go to Ekos Mount tab, and click on Purge all configuration. This will clear all settings related to the mount.</span></li>
-</ol>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_purge_mount_config.jpg"></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="3" class="rvps10"><span class="rvts20">Disconnect and Stop Ekos.</span></li>
-<li value="4" class="rvps10"><span class="rvts20">Power off the mount.</span></li>
-<li value="5" class="rvps10"><span class="rvts20">For equatorial mounts, if the mount is not pointed at the celestial pole with the weights down, adjust it manually until you reach this position. For Alt-Azimuth mounts, make sure the mount is in its home position.</span></li>
-<li value="6" class="rvps10"><span class="rvts20">Power on the mount.</span></li>
-<li value="7" class="rvps10"><span class="rvts20">Start the Ekos equipment profile again.</span></li>
-</ol>
-<p class="rvps10"><span class="rvts20">Now, depending on the mount type, it should have the correct startup position:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">EQMOD</span></li>
-</ol>
-<p class="rvps2"><span class="rvts20">: Mount should point toward the celestial pole and a new default parking position is recorded</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="2" class="rvps10"><span class="rvts20">Other: Mount should point toward the last alignment star that you used in the handset when performing the initial 2 or 3 star alignment process.</span></li>
-</ol>
-<p class="rvps10"><span class="rvts20">When performing GOTOs, the mount should slew normally and track.</span></p>
-<p class="rvps10"><span class="rvts20">Support</span></p>
-<p class="rvps10"><span class="rvts20">If you still have issues after performing these steps, please open a ticket in the&nbsp;</span><a class="rvts23" href="https://www.stellarmate.com/support.html?view=main">support</a><span class="rvts20">&nbsp;area.</span></p>
-<p class="rvps10"><span class="rvts20">Please make sure to&nbsp;</span><a class="rvts23" href="https://indilib.org/support/logs-submission.html">submit the logs</a><span class="rvts20">&nbsp;required to investigate your issue. Turn on INDI + Mount logging and send the logs to support.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10095"></a><span class="rvts22">17.29.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">Can I use the App &amp; Ekos on PC/Mac to control my equipment at the same time?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">Yes. It is possible to do this by following these steps:</span></p>
-<p class="rvps10"><span class="rvts20">In StellarMate App</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">Start your equipment profile.</span></li>
-<li value="2" class="rvps10"><span class="rvts20">That's all.</span></li>
-</ol>
-<p class="rvps10"><span class="rvts20">In Ekos on PC/Mac</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">Make sure you are connected to the same network as StellarMate.</span></li>
-<li value="2" class="rvps10"><span class="rvts20">Create a new equipment profile with the&nbsp;same drivers&nbsp;started in the App equipment profile.</span></li>
-<li value="3" class="rvps10"><span class="rvts20">Set the profile to&nbsp;remote&nbsp;and the&nbsp;host&nbsp;to stellarmate.local</span></li>
-<li value="4" class="rvps10"><span class="rvts20">Make sure&nbsp;INDI Web Manager&nbsp;is&nbsp;UNCHECKED. This is very important.</span></li>
-<li value="5" class="rvps10"><span class="rvts20">Save and then click start.</span></li>
-<li value="6" class="rvps10"><span class="rvts20">Done!</span></li>
-</ol>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Screenshot_20190819_090327.png"></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps10"><a name="IDM10096"></a><span class="rvts22">17.30.</span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts22">I cannot connect to my mount, what's wrong?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><p class="rvps10"><span class="rvts20">Depending on your mount type, you can connect to your telescope mount using different connection types:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><span class="rvts20">USB: This is the most common type of connection type between StellarMate and the mount. The connection usually requires RS232 Serial to USB connector where the USB end is connected to StellarMate while the serial plug connects to the handset (or sometimes directly to mount).</span></li>
-<li class="rvps10"><span class="rvts20">Bluetooth: Limited supported for Bluetooth dongles for some mounts. Please chech StellarMate Manual for more details.</span></li>
-<li class="rvps10"><span class="rvts20">Ethernet/WiFi: Connects to the mount over Ethernet or WiFi network. In the Mount driver connection tab, switch the mount to Ethernet mode and set the host name and port where your mount is running.</span></li>
-</ul>
-<p class="rvps10"><span class="rvts20">In case Ekos reports it failed to communicate with the mount still, please make sure of the following:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps10"><span class="rvts20">Read your specific mount driver&nbsp;</span><a class="rvts23" href="https://www.indilib.org/devices/mounts.html">documentation</a><span class="rvts20">.</span></li>
-<li value="2" class="rvps10"><span class="rvts20">Telescope is&nbsp;properly&nbsp;powered and connected via RS232 to your PC (in case of USB connection).</span></li>
-<li value="3" class="rvps10"><span class="rvts20">RS232 or RS232-to-USB cable is firmly connected at the mount and PC USB port.</span></li>
-<li value="4" class="rvps10"><span class="rvts20">Telescope is aligned (2 or 3 star alignment).</span></li>
-<li value="5" class="rvps10"><span class="rvts20">Use StellarMate Serial Port Assistant to assign permenant designation in situations where you have multiple USB-to-Serial devices.</span></li>
-<li value="6" class="rvps10"><span class="rvts20">Ensure the port specified is the correct port. Usually your port is&nbsp;</span><span class="rvts21">/dev/ttyUSB0</span><span class="rvts20">&nbsp;but sometimes if you unplug and plug the USB cable again, you might get port&nbsp;</span><span class="rvts21">/dev/ttyUSB1</span><span class="rvts20">. Use&nbsp;dmesg&nbsp;to find out which port your mount is connected to if all of the above fails.</span></li>
-</ol>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Screenshot_20190819_090327.png"></p>
-<p class="rvps10"><span class="rvts20">Before contacting support, please make sure to</span><span class="rvts6">&nbsp;</span><a class="rvts23" href="https://www.indilib.org/support/logs-submission.html">enable the logs</a><span class="rvts20">&nbsp;and submit them in the ticket.</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="middle" style="padding: 1px;"><p class="rvps3"><span class="rvts22">17</span><a name="Q1731"></a><span class="rvts22">.31</span></p>
-</td>
-<td valign="middle" style="padding: 1px;"><p class="rvps42"><span class="rvts22">How to install StellarMate OS on another MicroSD?</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="51" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts20"><br/></span></p>
-</td>
-<td valign="top" style="padding: 1px;"><hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/exclamation-circle-svg.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts18">IMPORTANT</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts74">If you have purchased StellarMate from a retailer, please&nbsp;</span><a class="rvts59" href="https://stellarmate.com/support.html?view=ticket&layout=open">submit a new ticket</a><span class="rvts74">&nbsp;and attach your order receipt and tell us if you don't see an order in the&nbsp;</span><a class="rvts59" href="https://stellarmate.com/products/orders.html">Orders</a><span class="rvts74">&nbsp;page.</span></p>
-</td>
-</tr>
-</table>
-</div>
-<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">To be able to use a different MicroSD than the already built-in one, you need to flash StellarMate OS onto your MicroSD.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">1. Login to the stellarmate.com website and then go to the&nbsp;</span><a class="rvts41" href="https://stellarmate.com/products/orders.html">Orders</a><span class="rvts6">&nbsp;page.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">2. You should see a list of&nbsp; your orders. Click on your order link, then scroll down to see the downloads. Make sure to download the SM OS version appropiate for your hardware platform.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/orders_page.PNG"></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">3. Download&nbsp;</span><a class="rvts41" href="https://www.balena.io/etcher/">balenaEtcher</a><span class="rvts6">, and install it, then open it.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/balenaEtcher_download.png"></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">4. Connect an SD card reader to your computer with the MicroSD card inside.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">5. Open Etcher and select from your hard drive the StellarMate OS&nbsp;&nbsp;</span><span class="rvts73">.xz</span><span class="rvts6">&nbsp;file you just downloaded to write it to the MicroSD card.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/balenaEtcher_flash_from_file.PNG"></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/balenaEtcher_flash_from_file_dialog.PNG"></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">6. Select the MicroSD card you wish to write your image to.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/balenaEtcher_select_target.PNG"></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/balenaEtcher_select_target_dialog.PNG"></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">7. Review your selections and click 'Flash!' to begin writing data to the SD card.</span></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/balenaEtcher_flash.PNG"></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">8. When it's done, connect the MicroSD to StellarMate and power it up!</span></p>
-</td>
-</tr>
+<div class="rvps2">
+<table border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px;">
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9875"></a><span class="rvts22">17.1.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">What is StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">StellarMate is a small mobile astronomy gadget that you can connect your astronomy devices. It enables you to control your mount, camera, focuser, filter wheel, dome, and many more devices. Designed for astrophotography, it includes free powerful astrophotography tool that supports mount control, batch capture, autofocus, autoguide, and astrometry.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9876"></a><span class="rvts22">17.2.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How does it work?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">The gadget includes several methods that enable you to connect your equipment. StellarMate communication channels include 4x USB 2.0 ports, 10/100 MBPS Ethernet, 802.11n Wireless LAN, and Bluetooth 4.0. You connect your equipment to StellarMate using any of the supported communication channels. Once connected, you can use a mobile (Phone &amp; Tablet) or desktop (Windows, MacOS, Linux) application to control your equipment.</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_block_diagram.png"></p>
+   <p class="rvps10"><span class="rvts20">The gadget includes several methods that enable you to connect your equipment. StellarMate communication channels include 4x USB 2.0 ports, 10/100 MBPS Ethernet, 802.11n Wireless LAN, and Bluetooth 4.0. You connect your equipment to StellarMate using any of the supported communication channels. Once connected, you can use a mobile (Phone &amp; Tablet) or desktop (Windows®,&nbsp;Mac®&nbsp;OS,&nbsp;Linux®) application to control your equipment.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9880"></a><span class="rvts22">17.3.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">What do I need to run StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">You need equipment (Mounts, Cameras, Focuser,&nbsp;etc.) that can be connected to a computer via either USB, Bluetooth, or Ethernet. All modern gadget include connectors to computers. For mount with Serial connectors, you will need to purchase a Serial-2-USB adapter. Since StellarMate uses INDI for device control, you need to&nbsp;</span><a class="rvts23" href="http://indilib.org/devices.html">make sure your device is supported</a><span class="rvts20">. While not strictly required, it is highly recommended to use an external powered USB hub to connect your devices to.</span></p>
+   <p class="rvps10"><span class="rvts20">To use the&nbsp;</span><a class="rvts23" href="ConnectingtoStellarMate.html">StellarMate App</a><span class="rvts20">, you need either an Android or iOS-based smartphone.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9881"></a><span class="rvts22">17.4.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How do I connect to StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">You can connect to StellarMate via the following methods:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts22">Direct Connection</span><span class="rvts20">: Plug the supplied HDMI cable to a monitor to gain direct access to StellarMate OS. You also need to plug your Mouse &amp; Keyboard.</span></li>
+    <li class="rvps10"><span class="rvts22">Wired</span><span class="rvts20">: Connect StellarMate to your LAN via Ethernet. You can access it like any other device on your network. You can use Network Discovery tools on your operating system (e.g.&nbsp;</span><a class="rvts23" href="https://wiki.archlinux.org/index.php/avahi">Avahi</a><span class="rvts62">/</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Bonjour_(software)">Bonjour</a><span class="rvts20">) to detect it as it advertises its services over the network.</span></li>
+    <li class="rvps10"><span class="rvts22">Wireless</span><span class="rvts20">: Use StellarMate App for Android and iOS to connect to your gadget.</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9897"></a><span class="rvts22">17.5.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Should I upgrade to Ubuntu 18.04 on StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">No</span><span class="rvts20">. Upgrading to 18.04 will likely break your system. Please wait until there is an official StellarMate OS image with 18.04 support.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9898"></a><span class="rvts22">17.6.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">What programs can be used to control StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">There are many mobile and desktop applications that you can use to control StellarMate. For a complete list, please check&nbsp;</span><a class="rvts23" href="http://indilib.org/about/clients.html">INDI Clients</a><span class="rvts20">&nbsp;page.</span></p>
+   <p class="rvps10"><span class="rvts20">However, only&nbsp;</span><a class="rvts23" href="Ekos2.html">Ekos</a><span class="rvts20">&nbsp;and&nbsp;</span><a class="rvts23" href="ConnectingtoStellarMate.html">StellarMate App</a><span class="rvts20">&nbsp;are officially supported.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9906"></a><span class="rvts22">17.7.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">What is the default username and password for StellarMate OS?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">username:&nbsp;</span><span class="rvts22">stellarmate</span></p>
+   <p class="rvps10"><span class="rvts20">password:&nbsp;</span><span class="rvts22">smate</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9907"></a><span class="rvts22">17.8.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How can I reset WiFi? How can I reset to Factory Defaults?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">To reset StellarMate, use VNC or connect via HDMI and click on the&nbsp;StellarMate Tools&nbsp;icon on the desktop as illustrated below:</span></p>
+   <p class="rvps10"><span class="rvts20">After clicking the icon, a small window shall pop up with two buttons:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts20">Network Reset: Click this button to reset WiFi settings in case you have issues accessing the unit via WiFi or HotSpot. It will restore StellarMate to HotSpot mode.</span></li>
+    <li class="rvps10"><span class="rvts20">Factory Reset: Click this button to reset all settings, including WiFi. This action is irreversible! Please make sure to back up any important data on the SD card!</span></li>
+   </ul>
+   <p class="rvps10"><span class="rvts20">StellarMate must be restarted for the above to take effect.</span></p>
+   <p class="rvps10"><span class="rvts20">To reset StellarMate, use VNC or connect via HDMI and click on the&nbsp;StellarMate Tools&nbsp;icon on the desktop as illustrated below:</span></p>
+   <p class="rvps10"><span class="rvts20">After clicking the icon, a small window shall pop up with two buttons:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts20">Network Reset: Click this button to reset WiFi settings in case you have issues accessing the unit via WiFi or HotSpot. It will restore StellarMate to HotSpot mode.</span></li>
+    <li class="rvps10"><span class="rvts20">Factory Reset: Click this button to reset all settings, including WiFi. This action is irreversible! Please make sure to back up any important data on the SD card!</span></li>
+   </ul>
+   <p class="rvps10"><span class="rvts20">StellarMate must be restarted for the above to take effect.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9924"></a><span class="rvts22">17.9.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">StellarMate HotSpot disappeared, where did it go?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Usual Cause</span></p>
+   <p class="rvps10"><span class="rvts20">StellarMate HotSpot is&nbsp;</span><span class="rvts22">only active</span><span class="rvts20">&nbsp;when StellarMate is not connected to any network.</span></p>
+   <p class="rvps10"><span class="rvts20">If you connect StellarMate to your WiFi network, or if you connect StellarMate to LAN via Ethernet, then the HotSpot is deactivated. It is only reactivated again when there is no network to reach.</span></p>
+   <p class="rvps10"><span class="rvts22">Other Causes</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts22">Failure to boot up</span><span class="rvts20">: If the unit cannot be reached in any method (WiFi, Ethernet,&nbsp;etc.) then connect HDMI cable + keyboard and see the output on the screen. StellarMate is quite a tolerant to power off but sometimes part of the SD card gets corrupted and requires manual intervention.</span></li>
+   </ol>
+   <p class="rvps10"><span class="rvts20">After the initial bootup message, press&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">D</span><span class="rvts20">&nbsp;and you will drop to the terminal.</span></p>
+   <p class="rvps10"><span class="rvts20">Then type in the following. Please beware that there is one space between&nbsp;</span><span class="rvts22">sudoedit</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">/etc/default/rcS</span><span class="rvts20">.</span></p>
+   <p class="rvps10"><span class="rvts20">When it asks for a password, enter&nbsp;</span><span class="rvts22">smate</span><span class="rvts20">&nbsp;and then press&nbsp;Enter.</span></p>
+   <p class="rvps10"><span class="rvts20">An editor will open, press the arrow key down to go to the bottom of the editor. You will see a parameter called&nbsp;</span><span class="rvts21">FSCKFIX=no</span><span class="rvts20">. Change the&nbsp;</span><span class="rvts21">no</span><span class="rvts20">&nbsp;to a&nbsp;</span><span class="rvts21">yes</span><span class="rvts20">.</span></p>
+   <p class="rvps10"><span class="rvts20">After that, press&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">O</span><span class="rvts20">&nbsp;to save the file and then press&nbsp;Enter.</span></p>
+   <p class="rvps10"><span class="rvts20">Then press&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">X</span><span class="rvts20">&nbsp;to exit the editor. Finally, type in&nbsp;</span><span class="rvts22">sudo reboot</span><span class="rvts20">&nbsp;to reboot StellarMate and press&nbsp;Enter.</span></p>
+   <p class="rvps10"><span class="rvts20">StellarMate should hopefully bootup normally next time.</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="2" class="rvps10"><span class="rvts22">Wrong Home WiFi password</span><span class="rvts20">: If you entered a wrong home WiFi password, this can lead to HotSpot dropping while not being able to establish a connection to the Home WiFi Network. The recommended solution is to use HDMI+Keyboard to login to StellarMate OS, and then reset the WiFi network from the StellarMate Tools App on the desktop. After restarting the unit, the HotSpot should automatically come up.</span></li>
+   </ol>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9925"></a><span class="rvts22">17.10.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">What is the default password for StellarMate WiFi HotSpot? How to change?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">StellarMate WiFi HotSpot password:&nbsp;</span><span class="rvts22">stellar@mate</span></p>
+   <p class="rvps10"><span class="rvts20">To change the default password, follow the steps in this video:</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9930"></a><span class="rvts22">17.11.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How do I figure out StellarMate hostname?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">By default, the unit hostname is&nbsp;</span><span class="rvts22">stellarmate.local</span></p>
+   <p class="rvps10"><span class="rvts20">From StellarMate App, go to&nbsp;My Mates&nbsp;then select your unit. The hostname is the unit name. If you changed the unit name, then just use the name followed by&nbsp;</span><span class="rvts21">.local</span></p>
+   <p class="rvps10"><span class="rvts20">For example, if you changed the unit name to&nbsp;</span><span class="rvts21">observatory</span><span class="rvts20">&nbsp;then your new hostname is&nbsp;</span><span class="rvts21">observatory.local</span></p>
+   <p class="rvps10"><span class="rvts20">Another way to find the hostname is to open the&nbsp;</span><a class="rvts23" href="WebManager.html">Web Manager</a><span class="rvts20">&nbsp;from the&nbsp;</span><a class="rvts23" href="ConnectingtoStellarMate.html">StellarMate App</a><span class="rvts20">&nbsp;and you will see the unit hostname in the browser address bar.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9931"></a><span class="rvts22">17.12.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How can I use SkySafari to control my mount with StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">If you using StellarMate Web Manager, please add SkySafari driver to your Auxiliary drivers. From within&nbsp;</span><a class="rvts23" href="Ekos2.html">Ekos</a><span class="rvts20">, select SkySafari from&nbsp;Auxiliary.</span></p>
+   <p class="rvps10"><span class="rvts20">Video instructions</span></p>
+   <p class="rvps10"><span class="rvts20">For complete instructions, please visit&nbsp;</span><a class="rvts23" href="http://indilib.org/devices/telescopes/skysafari.html">SkySafari INDI support page</a><span class="rvts20">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9939"></a><span class="rvts22">17.13.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How can I use a Joystick to control my mount?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">Please follow instructions in&nbsp;</span><a class="rvts23" href="http://indilib.org/support/tutorials/135-controlling-your-telescope-with-a-joystick.html">Controlling your Mount with Joystick tutorial</a><span class="rvts20">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9940"></a><span class="rvts22">17.14.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How do I update StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">Use&nbsp;</span><a class="rvts23" href="Scheduler.html#EKOS-TUTORIALS-VIEWER">Web-Based VNC Viewer</a><span class="rvts20">&nbsp;or any VNC Viewer to access StellarMate. Simply double click the&nbsp;Software Updater&nbsp;icon to fetch updates. If there are any available updates, a window shall appear with the required upgrades. Click Install to download and install them. It is recommended to restart the unit after installing updates.</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_update.png"></p>
+   <p class="rvps10"><span class="rvts20">If for any reason you are having problems with the GUI Software Updater, you can directly write command to start the update process. Double click the Mate Terminal icon and a terminal window shall be opened. Type in the following command and press&nbsp;Enter:</span></p>
+   <p class="rvps10"><span class="rvts22">sudo apt-get update &amp;&amp; sudo apt-get -y upgrade</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_console.png"></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9947"></a><span class="rvts22">17.15.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Can I use SSH to log in remotely? How about SFTP?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">Yes. Use port 5624 to login to StellarMate using your username and password. The same port should be used for SFTP (e.g. in FileZilla). You can perform the remote update using the following command:</span></p>
+   <p class="rvps10"><span class="rvts22">sudo apt-get update &amp;&amp; sudo apt-get -y dist-upgrade</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9948"></a><span class="rvts22">17.16.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How can I save my images on StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">StellarMate ships with 16GB MicroSD card and over 9.5GB of free space to store images on.</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts20">If you are using Ekos on PC/Mac, then you need to set&nbsp;Upload&nbsp;mode to&nbsp;</span><span class="rvts21">Local</span><span class="rvts20">&nbsp;and then set the&nbsp;Remote Directory&nbsp;to&nbsp;</span><span class="rvts22">/home/stellarmate/Pictures</span><span class="rvts20">&nbsp;as illustrated below:</span></li>
+   </ol>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/windows_stellarmate_local.png"></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="2" class="rvps10"><span class="rvts20">If you are using Ekos&nbsp;</span><span class="rvts21">directly</span><span class="rvts20">&nbsp;on StellarMate, simply set the&nbsp;Directory&nbsp;field in the&nbsp;</span><a class="rvts23" href="Capture.html">capture module</a><span class="rvts20">&nbsp;to&nbsp;</span><span class="rvts22">/home/stellarmate/Pictures</span><span class="rvts20">. The Upload mode should remain as&nbsp;Client.</span></li>
+   </ol>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9979"></a><span class="rvts22">17.17.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Problems with ZWO ASI cameras?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">If you are using&nbsp;</span><span class="rvts21">USB2</span><span class="rvts20">&nbsp;cameras from ZWO, they&nbsp;</span><span class="rvts22">must</span><span class="rvts20">&nbsp;be flashed with the -compatible firmware in order to be used with StellarMate.</span></p>
+   <p class="rvps10"><span class="rvts20">Download the&nbsp;</span><a class="rvts23" href="https://astronomy-imaging-camera.com/software/">ASI Cameras Firmware Upgrade Tool</a><span class="rvts20">&nbsp;for your OS and flash the camera with the&nbsp;</span><span class="rvts21">-compatible</span><span class="rvts20">&nbsp;firmware. For example, if your camera is ASI120MM, then flash the camera with this file:&nbsp;ASI120MM-compatible.iic</span></p>
+   <p class="rvps10"><span class="rvts20">This is&nbsp;</span><span class="rvts22">not</span><span class="rvts20">&nbsp;required for USB3 cameras.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM9980"></a><span class="rvts22">17.18.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Can I use my ASCOM drivers and software with StellarMate?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">No.</span></p>
+   <p class="rvps10"><span class="rvts20">StellarMate is based on Open Astronomy Instrumentation Protocol (</span><a class="rvts23" href="AstronomicalDeviceControlwithIND.html">INDI</a><span class="rvts20">) and does not use ASCOM. INDI enables native remote control of your equipment and&nbsp;</span><a class="rvts23" href="http://www.indilib.org/devices.html">numerous devices</a><span class="rvts20">&nbsp;are supported by manufacturers today.&nbsp;</span><a class="rvts23" href="Ekos2.html">Ekos</a><span class="rvts20">&nbsp;is the officially supported client, but you can also use over&nbsp;</span><a class="rvts23" href="http://www.indilib.org/about/clients.html">15+ clients</a><span class="rvts20">&nbsp;on across many operating systems.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10024"></a><span class="rvts22">17.19.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">What is EkosLive?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><a class="rvts23" href="https://live.stellarmate.com">EkosLive</a><span class="rvts20">&nbsp;is a real-time web application that can be run from any browser. It allows you to control many aspects of Ekos right from the browser. It is built around material-ui from Google, so it is very friendly for mobiles &amp; tablets on any platform.</span></p>
+   <p class="rvps10"><span class="rvts20">It supports capture, focus, guiding, alignment, and polar assistant tools. Furthermore, it can save your images directly to the cloud where they are stored along with a rich metadata system that enables easy search for images in the future. You can define your own tags to uniquely identifies images of interest.</span></p>
+   <p class="rvps10"><span class="rvts20">Turn on sound notifications on to get audible alerts on tasks such as when an image is captured and so on. It supports multiple themes (Normal, Dark, and Night) to suit your seeing preferences.</span></p>
+   <p class="rvps10"><a class="rvts23" href="EkosLive.html">More on this</a></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10025"></a><span class="rvts22">17.20.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How can I connect to StellarMate directly via Ethernet cable?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">It is possible to connect to StellarMate directly&nbsp;</span><span class="rvts21">without</span><span class="rvts20">&nbsp;going via a router. Simply connect an Ethernet cable from your PC/Mac to StellarMate. There is no need to use a crossover cable, any regular Ethernet cable would do. You can access StellarMate as you would normally do via the address&nbsp;</span><a class="rvts23" href="http://stellarmate.local:8624">http://stellarmate.local:8624</a></p>
+   <p class="rvps10"><span class="rvts20">Under some circumstances, the PC/Mac cannot recognize the direct connection immediately. To force it to connect with StellarMate, find out what auto-IP address was created by StellarMate. This information can be found in StellarMate Web Manager. Use WiFi to connect to the StellarMate hotspot, and click on the information icon to display StellarMate info.</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_direct_ethernet.png"></p>
+   <p class="rvps3"><span class="rvts20"><br/></span></p>
+   <p class="rvps10"><span class="rvts20">From the example screenshot above, we know the auto-IP address is&nbsp;</span><span class="rvts22">169.254.10.197</span><span class="rvts20">. Now open the terminal application in your operating system and simply type:</span></p>
+   <p class="rvps10"><span class="rvts22">ping 169.254.10.197</span></p>
+   <p class="rvps10"><span class="rvts20">After which the PC/Mac should register the IP address and you can start using&nbsp;</span><span class="rvts22">stellarmate.local</span><span class="rvts20">&nbsp;address as usual.</span></p>
+   <p class="rvps10"><span class="rvts20">A more permanent solution involves&nbsp;</span><a class="rvts23" href="https://www.youtube.com/watch?v=6qsyPTDU2aY">creating a static IP address</a><span class="rvts20">&nbsp;on StellarMate using Network Manager.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10034"></a><span class="rvts22">17.21.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How to access images on StellarMate from PC/Mac?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">If you captured images and saved them to StellarMate, then they should be available by default under&nbsp;/home/stellarmate/Pictures. To access the images over the network, there are two options:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts20">On&nbsp;Windows®, click on the Network icon in the left pane of&nbsp;File Explorer&nbsp;as illustrated below.</span></li>
+   </ul>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/windows_access_stellarmate.png"></p>
+   <p class="rvps3"><span class="rvts20"><br/></span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts20">On&nbsp;Linux® &amp;&nbsp;Mac®&nbsp;OS: Use&nbsp;</span><a class="rvts23" href="https://filezilla-project.org/download.php">FileZilla</a><a class="rvts38" href="https://filezilla-project.org/download.php">&nbsp;</a><span class="rvts20">to connect to StellarMate via Secure FTP (sftp) using your username (</span><span class="rvts22">stellarmate</span><span class="rvts20">) and password (</span><span class="rvts22">smate</span><span class="rvts20">). Remember to set port to 5624.</span></li>
+   </ul>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_sftp_settings.png"></p>
+   <p class="rvps3"><span class="rvts20"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10035"></a><span class="rvts22">17.22.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Can I add a Real-Time Clock?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">StellarMate Gadget&nbsp;</span><span class="rvts21">already</span><span class="rvts20">&nbsp;ships with RTC clock configured and ready to go. For users of StellarMate OS running on their RPI3/RPI3B+, you can purchase a&nbsp;</span><a class="rvts23" href="https://www.amazon.com/battery-Raspberry-Arduino-Atomic-Market/dp/B01M105UFC">DS3231</a><span class="rvts20">&nbsp;module and install it. There is no need to perform any additional software configuration as StellarMate OS supports DS3231 natively.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10049"></a><span class="rvts22">17.23.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Cannot connect to DSLR camera?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">The following is a list of checks you need to verify before contacting support regarding DSLR connectivity issues:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts20">Make sure the camera battery is&nbsp;</span><span class="rvts22">full</span><span class="rvts20">.</span></li>
+    <li class="rvps10"><span class="rvts20">Make sure there is enough space on your SD card.</span></li>
+    <li class="rvps10"><span class="rvts20">Make sure the camera is set to&nbsp;</span><span class="rvts21">Bulb/Manual</span><span class="rvts20">&nbsp;mode. In some models, you need to rotate the dial first to&nbsp;</span><span class="rvts21">Manual</span><span class="rvts20">&nbsp;then change the settings to make it&nbsp;</span><span class="rvts21">Bulb</span><span class="rvts20">.</span></li>
+    <li class="rvps10"><span class="rvts20">Turn off any power-saving features in the camera that might be making the camera go to&nbsp;</span><span class="rvts21">sleep</span><span class="rvts20">&nbsp;mode without your knowledge. Some cameras support&nbsp;</span><span class="rvts21">inactivity timer</span><span class="rvts20">, try to set it to 10 or 15 minutes to be on the safe side.</span></li>
+    <li class="rvps10"><span class="rvts20">Try a different USB cable.</span></li>
+    <li class="rvps10"><span class="rvts20">Try plugging the camera to a different USB port on StellarMate.</span></li>
+   </ul>
+   <p class="rvps10"><span class="rvts20">If none of the above works out, please submit a support ticket with details on your setup.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10050"></a><span class="rvts22">17.24.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Can I hook up an external USB drive for storing images and videos?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">Absolutely. After you connect the external USB drive. You need to login to StellarMate OS desktop either via VNC or HDMI. You should see the external driver icon on your desktop. Double click it to learn of the location of the driver.</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/external_drive_stellarmate.png"></p>
+   <p class="rvps10"><span class="rvts20">In the&nbsp;</span><span class="rvts21">example</span><span class="rvts20">&nbsp;above, the drive location is&nbsp;/home/stellarmate/Elements. This is the location URL you need to save your images to. If you need to save in a directory inside the drive, then simply double-click it and copy the URL from the location bar. Next, where to put this URL?</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts22">Using KStars on StellarMate</span></li>
+   </ol>
+   <p class="rvps10"><span class="rvts20">If you are running KStars inside StellarMate directly, then simply browse the location in the&nbsp;Directory&nbsp;field of the&nbsp;</span><a class="rvts38" href="tools.html#ekos-capture">Capture Module</a><span class="rvts20">. You can also paste the URL there directly.</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/kstars_in_stellarmate.png"></p>
+   <p class="rvps3"><span class="rvts20"><br/></span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="2" class="rvps10"><span class="rvts22">Using KStars on&nbsp;Windows®/Mac®&nbsp;OS/Linux®</span></li>
+   </ol>
+   <p class="rvps10"><span class="rvts20">If you are running KStars remotely on a&nbsp;Windows®/Mac®&nbsp;OS&nbsp;or&nbsp;Linux® machine, then in this case you need to change the&nbsp;Upload&nbsp;mode to either&nbsp;Local&nbsp;(save images only in StellarMate) or&nbsp;Both&nbsp;(save images in StellarMate and send a copy to us).</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/kstars_on_pc.png"></p>
+   <p class="rvps10"><span class="rvts20">You will see the&nbsp;Remote&nbsp;field getting enabled for editing. Simple paste the location URL here and start the capture process to have your images saved to the external USB disk.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10064"></a><span class="rvts22">17.25.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">How many Ethernet ports does the unit have?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">StellarMate comes with one 10/100 mbps Ethernet port.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10065"></a><span class="rvts22">17.26.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">I hear a loose part inside StellarMate. RTC Clock?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">StellarMate Controller comes preinstalled with a Real-Time Clock module. On very rare occasions, it can come loose. But do not worry, you can easily put it back in.</span></p>
+   <p class="rvps10"><span class="rvts20">Simply remove the top cover of StellarMate, then put it in the pins that are enclosed by the red rectangle in the image below. You can apply light glue to the base to ensure it remains secure.</span></p>
+   <p class="rvps3"><img width="1000" height="1333" alt="" style="padding : 1px;" src="lib/sm_rtc_position.png"></p>
+   <p class="rvps3"><span class="rvts20"><br/></span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10070"></a><span class="rvts22">17.27.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">EQMod position is incorrect on startup?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">The&nbsp;</span><span class="rvts21">Default Position</span><span class="rvts20">&nbsp;for EQMod after power up is the home position. The home position is defined as the position where the mount is facing the celestial pole with the weights down. For northern hemisphere users, the mount needs to point roughly at polaris.</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/home_position.png"></p>
+   <p class="rvps3"><span class="rvts20"><br/></span></p>
+   <p class="rvps10"><span class="rvts20">In rare circumstances, users might see the initial position for EQMod in Ekos to be wrong. Unless you set it to a custom parking position, it should always start near the celestial pole. An off position might look like this:</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/eqmod_bad_position.jpg"></p>
+   <p class="rvps10"><span class="rvts20">To fix this issue, please perform the following steps:</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts20">If the mount is not already unparked, unpark it (click the green flag in the toolbar).</span></li>
+    <li value="2" class="rvps10"><span class="rvts20">Go to INDI Control Panel --&gt; EQMod --&gt; Site Management and click on Purge Data under Park Options.</span></li>
+   </ol>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/eqmod_purge_data.jpg"></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="3" class="rvps10"><span class="rvts20">Power off the mount.</span></li>
+    <li value="4" class="rvps10"><span class="rvts20">If the mount is not pointed at the celestial pole with the weights down, adjust it manually until you reach this position.</span></li>
+    <li value="5" class="rvps10"><span class="rvts20">Power on the mount.</span></li>
+    <li value="6" class="rvps10"><span class="rvts20">Start the Ekos equipment profile again.</span></li>
+   </ol>
+   <p class="rvps10"><span class="rvts20">Now EQMod should point toward the celestial pole and a new default parking position is recorded. If you still have issues after performing these steps, please open a ticket in the&nbsp;</span><a class="rvts23" href="https://www.stellarmate.com/support.html?view=main">support</a><span class="rvts20">&nbsp;area.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10071"></a><span class="rvts22">17.28.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Why mount slews to the wrong position in the sky?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">Power</span></p>
+   <p class="rvps10"><span class="rvts20">Make sure your mount have sufficient power to make the slews. Power is one the primary problems faced by users but it is one of the least issues users suspect or investigate, so make sure to rule out power as the cause for the mount erratic behavior.</span></p>
+   <p class="rvps10"><span class="rvts20">Alignment</span></p>
+   <p class="rvps10"><span class="rvts20">GOTO mounts learn how to go to specific objects in the night sky after they are properly calibrated and aligned at power up.</span></p>
+   <p class="rvps10"><span class="rvts20">All mounts&nbsp;must be first aligned&nbsp;using the handset using 2 or 3 star alignments&nbsp;</span><span class="rvts21">before</span><span class="rvts20">&nbsp;you can use them with StellarMate. The only exception to this rule is as following:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts20">EQMOD: When using Skywatcher mounts with EQMod driver, no alignment is necessary at startup. It should start pointing at the celestial pole (unless custom parking position is used). Make sure the mount is powered up while it is in the&nbsp;Home Position. Afterwards, slew to a nearby star and use Ekos Alignment module to sync the telescope. EQMod would then be ready to make accurate GOTOs.</span></li>
+   </ul>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/home_position.png"></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts20">Hibernation: For mounts that support hibernation (e.g. AVX), it is possible to hibernate and later on wake up the mount without losing alignment data.</span></li>
+   </ul>
+   <p class="rvps10"><span class="rvts20">Time &amp; Location</span></p>
+   <p class="rvps10"><span class="rvts20">This is the most common cause for inaccurate and erratics GOTOs. StellarMate requires an accurate Time and Location data in order to drive the mount correctly. If you are using Ekos on a PC/Mac, KStars would automatically set the mounts time and location. You can double check the mount time and location settings by going to INDI Control Panel --&gt; Mount Driver Tab (e.g. EQMod Mount) --&gt; Site Management Tab.</span></p>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/site_management.jpg"></p>
+   <p class="rvps10"><span class="rvts20">However, this only sets the mount time (in the handset) and not the StellarMate&nbsp;System Time. The system time is still important for other calculations, so it is&nbsp;</span><span class="rvts21">prudent</span><span class="rvts20">&nbsp;that StellarMate system time is accurate. StellarMate gadget is shipped with a&nbsp;Real Time Clock (RTC)&nbsp;module that keeps the system time even when the unit is turned off. If you are using StellarMate OS on a plain Rasbperry Pi board, then there is no way to keep the time ticking and accurate. StellarMate would sync the system time once it has an active connection to the internet.</span></p>
+   <p class="rvps10"><span class="rvts20">In case you are using StellarMate in HotSpot mode, the unit has no access to the internet and the time must be either it&nbsp;</span><span class="rvts21">Manually</span><span class="rvts20">&nbsp;via&nbsp;</span><span class="rvts21">VNC</span><span class="rvts20">&nbsp;or via the&nbsp;</span><span class="rvts21">StellarMate App</span><span class="rvts20">. When using the StellarMate App, it would automatically syncs StellarMate system time and location when it establishes communication with the unit. The time and location information are extracted from your phone/tablet. To explicity sync the GPS information, click on the&nbsp;</span><span class="rvts21">Sync GPS</span><span class="rvts20">&nbsp;button in the app.</span></p>
+   <p class="rvps3"><img width="1000" height="749" alt="" style="padding : 1px;" src="lib/stellarmate_sync_gps.jpg"></p>
+   <p class="rvps10"><span class="rvts20">If you are using a GPS dongle in StellarMate, then it would be sufficient to sync the StellarMate system time and location once powered up. Without the GPS dongle, using the StellarMate App is the next best option as it always keeps StellarMate system time and location synchronized with your phone/tablet.</span></p>
+   <p class="rvps10"><span class="rvts20">Mount Model</span></p>
+   <p class="rvps10"><span class="rvts20">When using EQMod mount or any mount that uses INDI Alignment Subsystem, it improves its GOTO accuracy by building a model of the night sky in the driver itself. This is in contrast to traditional mounts when the model is built in the handset (e.g. Meade). Sometimes the model inadvernetly lead to wrong GOTOs and you keep adding more sync points to correct this issue, it might end up getting worse. The best thing to do in this situation is to follow these steps:</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts20">If the mount is not already unparked, unpark it (click the green flag in the toolbar).</span></li>
+    <li value="2" class="rvps10"><span class="rvts20">Go to Ekos Mount tab, and click on Purge all configuration. This will clear all settings related to the mount.</span></li>
+   </ol>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_purge_mount_config.jpg"></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="3" class="rvps10"><span class="rvts20">Disconnect and Stop Ekos.</span></li>
+    <li value="4" class="rvps10"><span class="rvts20">Power off the mount.</span></li>
+    <li value="5" class="rvps10"><span class="rvts20">For equatorial mounts, if the mount is not pointed at the celestial pole with the weights down, adjust it manually until you reach this position. For Alt-Azimuth mounts, make sure the mount is in its home position.</span></li>
+    <li value="6" class="rvps10"><span class="rvts20">Power on the mount.</span></li>
+    <li value="7" class="rvps10"><span class="rvts20">Start the Ekos equipment profile again.</span></li>
+   </ol>
+   <p class="rvps10"><span class="rvts20">Now, depending on the mount type, it should have the correct startup position:</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts20">EQMOD</span></li>
+   </ol>
+   <p class="rvps2"><span class="rvts20">: Mount should point toward the celestial pole and a new default parking position is recorded</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="2" class="rvps10"><span class="rvts20">Other: Mount should point toward the last alignment star that you used in the handset when performing the initial 2 or 3 star alignment process.</span></li>
+   </ol>
+   <p class="rvps10"><span class="rvts20">When performing GOTOs, the mount should slew normally and track.</span></p>
+   <p class="rvps10"><span class="rvts20">Support</span></p>
+   <p class="rvps10"><span class="rvts20">If you still have issues after performing these steps, please open a ticket in the&nbsp;</span><a class="rvts23" href="https://www.stellarmate.com/support.html?view=main">support</a><span class="rvts20">&nbsp;area.</span></p>
+   <p class="rvps10"><span class="rvts20">Please make sure to&nbsp;</span><a class="rvts23" href="https://indilib.org/support/logs-submission.html">submit the logs</a><span class="rvts20">&nbsp;required to investigate your issue. Turn on INDI + Mount logging and send the logs to support.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10095"></a><span class="rvts22">17.29.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">Can I use the App &amp; Ekos on PC/Mac to control my equipment at the same time?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">Yes. It is possible to do this by following these steps:</span></p>
+   <p class="rvps10"><span class="rvts20">In StellarMate App</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts20">Start your equipment profile.</span></li>
+    <li value="2" class="rvps10"><span class="rvts20">That's all.</span></li>
+   </ol>
+   <p class="rvps10"><span class="rvts20">In Ekos on PC/Mac</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts20">Make sure you are connected to the same network as StellarMate.</span></li>
+    <li value="2" class="rvps10"><span class="rvts20">Create a new equipment profile with the&nbsp;same drivers&nbsp;started in the App equipment profile.</span></li>
+    <li value="3" class="rvps10"><span class="rvts20">Set the profile to&nbsp;remote&nbsp;and the&nbsp;host&nbsp;to stellarmate.local</span></li>
+    <li value="4" class="rvps10"><span class="rvts20">Make sure&nbsp;INDI Web Manager&nbsp;is&nbsp;UNCHECKED. This is very important.</span></li>
+    <li value="5" class="rvps10"><span class="rvts20">Save and then click start.</span></li>
+    <li value="6" class="rvps10"><span class="rvts20">Done!</span></li>
+   </ol>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Screenshot_20190819_090327.png"></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps10"><a name="IDM10096"></a><span class="rvts22">17.30.</span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts22">I cannot connect to my mount, what's wrong?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <p class="rvps10"><span class="rvts20">Depending on your mount type, you can connect to your telescope mount using different connection types:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps10"><span class="rvts20">USB: This is the most common type of connection type between StellarMate and the mount. The connection usually requires RS232 Serial to USB connector where the USB end is connected to StellarMate while the serial plug connects to the handset (or sometimes directly to mount).</span></li>
+    <li class="rvps10"><span class="rvts20">Bluetooth: Limited supported for Bluetooth dongles for some mounts. Please chech StellarMate Manual for more details.</span></li>
+    <li class="rvps10"><span class="rvts20">Ethernet/WiFi: Connects to the mount over Ethernet or WiFi network. In the Mount driver connection tab, switch the mount to Ethernet mode and set the host name and port where your mount is running.</span></li>
+   </ul>
+   <p class="rvps10"><span class="rvts20">In case Ekos reports it failed to communicate with the mount still, please make sure of the following:</span></p>
+   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: decimal;">
+    <li value="1" class="rvps10"><span class="rvts20">Read your specific mount driver&nbsp;</span><a class="rvts23" href="https://www.indilib.org/devices/mounts.html">documentation</a><span class="rvts20">.</span></li>
+    <li value="2" class="rvps10"><span class="rvts20">Telescope is&nbsp;properly&nbsp;powered and connected via RS232 to your PC (in case of USB connection).</span></li>
+    <li value="3" class="rvps10"><span class="rvts20">RS232 or RS232-to-USB cable is firmly connected at the mount and PC USB port.</span></li>
+    <li value="4" class="rvps10"><span class="rvts20">Telescope is aligned (2 or 3 star alignment).</span></li>
+    <li value="5" class="rvps10"><span class="rvts20">Use StellarMate Serial Port Assistant to assign permenant designation in situations where you have multiple USB-to-Serial devices.</span></li>
+    <li value="6" class="rvps10"><span class="rvts20">Ensure the port specified is the correct port. Usually your port is&nbsp;</span><span class="rvts21">/dev/ttyUSB0</span><span class="rvts20">&nbsp;but sometimes if you unplug and plug the USB cable again, you might get port&nbsp;</span><span class="rvts21">/dev/ttyUSB1</span><span class="rvts20">. Use&nbsp;dmesg&nbsp;to find out which port your mount is connected to if all of the above fails.</span></li>
+   </ol>
+   <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Screenshot_20190819_090327.png"></p>
+   <p class="rvps10"><span class="rvts20">Before contacting support, please make sure to</span><span class="rvts6">&nbsp;</span><a class="rvts23" href="https://www.indilib.org/support/logs-submission.html">enable the logs</a><span class="rvts20">&nbsp;and submit them in the ticket.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="middle" style="padding: 1px;">
+   <p class="rvps3"><span class="rvts22">17</span><a name="Q1731"></a><span class="rvts22">.31</span></p>
+  </td>
+  <td valign="middle" style="padding: 1px;">
+   <p class="rvps43"><span class="rvts22">How to install StellarMate OS on another MicroSD?</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="51" valign="top" style="padding: 1px;">
+   <p class="rvps2"><span class="rvts20"><br/></span></p>
+  </td>
+  <td valign="top" style="padding: 1px;">
+   <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+   <div class="rvps5">
+   <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+    <tr valign="top">
+     <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+      <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/exclamation-circle-svg.png"></p>
+     </td>
+     <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+      <p class="rvps2"><span class="rvts18">IMPORTANT</span></p>
+     </td>
+    </tr>
+    <tr valign="top">
+     <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+      <p class="rvps6"><span class="rvts17"><br/></span></p>
+     </td>
+     <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+      <p class="rvps2"><span class="rvts74">If you have purchased StellarMate from a retailer, please&nbsp;</span><a class="rvts59" href="https://stellarmate.com/support.html?view=ticket&layout=open">submit a new ticket</a><span class="rvts74">&nbsp;and attach your order receipt and tell us if you don't see an order in the&nbsp;</span><a class="rvts59" href="https://stellarmate.com/products/orders.html">Orders</a><span class="rvts74">&nbsp;page.</span></p>
+     </td>
+    </tr>
+   </table>
+   </div>
+   <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">To be able to use a different MicroSD than the already built-in one, you need to flash StellarMate OS onto your MicroSD.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">1. Login to the stellarmate.com website and then go to the&nbsp;</span><a class="rvts41" href="https://stellarmate.com/products/orders.html">Orders</a><span class="rvts6">&nbsp;page.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">2. You should see a list of&nbsp; your orders. Click on your order link, then scroll down to see the downloads. Make sure to download the SM OS version appropiate for your hardware platform.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps3"></p>
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">3. Download&nbsp;</span><a class="rvts41" href="https://www.balena.io/etcher/">balenaEtcher</a><span class="rvts6">, and install it, then open it.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps3"></p>
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">4. Connect an SD card reader to your computer with the MicroSD card inside.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">5. Open Etcher and select from your hard drive the StellarMate OS&nbsp;&nbsp;</span><span class="rvts73">.xz</span><span class="rvts6">&nbsp;file you just downloaded to write it to the MicroSD card.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps3"></p>
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+   <p class="rvps3"></p>
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">6. Select the MicroSD card you wish to write your image to.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps3"></p>
+   <p class="rvps3"></p>
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">7. Review your selections and click 'Flash!' to begin writing data to the SD card.</span></p>
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+   <p class="rvps3"></p>
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">8. When it's done, connect the MicroSD to StellarMate and power it up!</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <p></p>
@@ -857,29 +1002,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app

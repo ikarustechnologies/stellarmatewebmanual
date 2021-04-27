@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -79,7 +78,7 @@
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +92,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +122,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -172,10 +187,10 @@
 <p></p>
 <p class="rvps10"><span class="rvts20">There are several ways to modify the display to your liking.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps10"><a name="IDM2810"></a><span class="rvts20">Select a different color scheme in the&nbsp;Settings&nbsp;→&nbsp;Color Schemes&nbsp;menu. There are four predefined color schemes, and you can define your own in the&nbsp;</span><a class="rvts23" href="ConfiguringKStars.html">Configure&nbsp;KStars</a><span class="rvts20">&nbsp;window.</span></li>
-<li class="rvps10"><a name="IDM2821"></a><span class="rvts20">Toggle whether the Toolbars are drawn in the&nbsp;Settings&nbsp;→&nbsp;Toolbars Shown&nbsp;menu. Like most KDE toolbars, they can also be dragged around and anchored on any window edge, or even detached from the window completely if they are unlocked.</span></li>
-<li class="rvps10"><a name="IDM2829"></a><span class="rvts20">Toggle whether the Info Boxes are drawn in the&nbsp;Settings&nbsp;→&nbsp;Info Boxes&nbsp;menu. In addition, you can manipulate the three Info Boxes with the mouse. Each box has additional lines of data that are hidden by default. You can toggle whether these additional lines are visible by double-clicking a box to&nbsp;“shade”&nbsp;it. Also, you can reposition a box by dragging it with the mouse. When a box hits a window edge, it will&nbsp;“stick”&nbsp;to the edge when the window is resized.</span></li>
-<li class="rvps10"><a name="IDM2832"></a><span class="rvts20">Choose an&nbsp;“FOV Symbol”&nbsp;using the&nbsp;Settings&nbsp;→&nbsp;FOV Symbols&nbsp;menu.&nbsp;</span><span class="rvts21">FOV</span><span class="rvts20">&nbsp;is an acronym for&nbsp;“field-of-view”. An FOV symbol is drawn at the center of the window to indicate where the display is pointing. Different symbols have different angular sizes; you can use a symbol to show what the view through a particular telescope would look like. For example, if you choose the&nbsp;“7x35 Binoculars”&nbsp;FOV symbol, then a circle is drawn on the display that is 9.2 degrees in diameter; this is the field-of-view for 7x35 binoculars.</span></li>
+ <li class="rvps10"><a name="IDM2810"></a><span class="rvts20">Select a different color scheme in the&nbsp;Settings&nbsp;→&nbsp;Color Schemes&nbsp;menu. There are four predefined color schemes, and you can define your own in the&nbsp;</span><a class="rvts23" href="ConfiguringKStars.html">Configure&nbsp;KStars</a><span class="rvts20">&nbsp;window.</span></li>
+ <li class="rvps10"><a name="IDM2821"></a><span class="rvts20">Toggle whether the Toolbars are drawn in the&nbsp;Settings&nbsp;→&nbsp;Toolbars Shown&nbsp;menu. Like most KDE toolbars, they can also be dragged around and anchored on any window edge, or even detached from the window completely if they are unlocked.</span></li>
+ <li class="rvps10"><a name="IDM2829"></a><span class="rvts20">Toggle whether the Info Boxes are drawn in the&nbsp;Settings&nbsp;→&nbsp;Info Boxes&nbsp;menu. In addition, you can manipulate the three Info Boxes with the mouse. Each box has additional lines of data that are hidden by default. You can toggle whether these additional lines are visible by double-clicking a box to&nbsp;“shade”&nbsp;it. Also, you can reposition a box by dragging it with the mouse. When a box hits a window edge, it will&nbsp;“stick”&nbsp;to the edge when the window is resized.</span></li>
+ <li class="rvps10"><a name="IDM2832"></a><span class="rvts20">Choose an&nbsp;“FOV Symbol”&nbsp;using the&nbsp;Settings&nbsp;→&nbsp;FOV Symbols&nbsp;menu.&nbsp;</span><span class="rvts21">FOV</span><span class="rvts20">&nbsp;is an acronym for&nbsp;“field-of-view”. An FOV symbol is drawn at the center of the window to indicate where the display is pointing. Different symbols have different angular sizes; you can use a symbol to show what the view through a particular telescope would look like. For example, if you choose the&nbsp;“7x35 Binoculars”&nbsp;FOV symbol, then a circle is drawn on the display that is 9.2 degrees in diameter; this is the field-of-view for 7x35 binoculars.</span></li>
 </ul>
 <p class="rvps10"><a name="IDM2842"></a><span class="rvts20">You can define your own FOV symbols (or modify the existing symbols) using the&nbsp;Edit FOV Symbols...&nbsp;menu item, which launches the FOV Editor:</span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/fovdialog.png"></p>
@@ -213,29 +228,28 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
