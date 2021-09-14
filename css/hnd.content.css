@@ -194,14 +194,13 @@ span.rvts29
 {
  font-size: 12pt;
  font-family: 'Inter';
- color: #333333;
- background-color: #ffffff;
+ font-weight: bold;
+ color: #000000;
 }
 span.rvts30
 {
  font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
  color: #333333;
  background-color: #ffffff;
 }
@@ -210,207 +209,207 @@ span.rvts31
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
+ color: #333333;
+ background-color: #ffffff;
 }
-span.rvts32
+a.rvts32, span.rvts32
 {
  font-size: 12pt;
  font-family: 'Inter';
+ color: #007bbf;
+ text-decoration: none;
 }
 span.rvts33
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
+}
+span.rvts34
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+}
+span.rvts35
+{
+ font-size: 12pt;
+ font-family: 'Inter';
  font-style: italic;
 }
-a.rvts34, span.rvts34
+a.rvts36, span.rvts36
 {
  font-size: 12pt;
  font-family: 'Inter';
  text-decoration: none;
 }
-span.rvts35
+span.rvts37
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #f0b400;
 }
-span.rvts36
+span.rvts38
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #f0b400;
 }
-span.rvts37
+span.rvts39
 {
  font-size: 18pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #000000;
 }
-span.rvts38
+span.rvts40
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-style: italic;
  font-weight: bold;
 }
-a.rvts39, span.rvts39
+a.rvts41, span.rvts41
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: ;
  text-decoration: underline;
 }
-span.rvts40
+span.rvts42
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: ;
 }
-span.rvts41
+span.rvts43
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #ffffee;
 }
-a.rvts42, span.rvts42
+a.rvts44, span.rvts44
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
  text-decoration: none;
 }
-span.rvts43
+span.rvts45
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
  color: ;
 }
-span.rvts44
+span.rvts46
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #000000;
 }
-span.rvts45
+span.rvts47
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
-}
-span.rvts46
-{
- font-size: 14pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #ffffff;
-}
-span.rvts47
-{
- font-size: 14pt;
- font-family: 'Inter';
- font-weight: bold;
- color: ;
 }
 span.rvts48
 {
  font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
- color: #000000;
+ color: #ffffff;
 }
 span.rvts49
 {
- font-size: 9pt;
+ font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
  color: ;
 }
 span.rvts50
 {
- font-size: 9pt;
+ font-size: 14pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: #000000;
 }
 span.rvts51
 {
  font-size: 9pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: ;
 }
 span.rvts52
 {
- font-size: 7pt;
+ font-size: 9pt;
  font-family: 'Inter';
  color: #000000;
 }
 span.rvts53
 {
+ font-size: 9pt;
+ font-family: 'Inter';
+ color: ;
+}
+span.rvts54
+{
+ font-size: 7pt;
+ font-family: 'Inter';
+ color: #000000;
+}
+span.rvts55
+{
  font-size: 7pt;
  font-family: 'Inter';
  color: ;
 }
-a.rvts54, span.rvts54
+a.rvts56, span.rvts56
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts55
+span.rvts57
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #000000;
 }
-span.rvts56
-{
- font-size: 12pt;
- font-family: 'Inter';
- color: #ff0000;
-}
-span.rvts57
-{
- font-size: 12pt;
- font-family: 'Courier New', 'Courier', monospace;
- color: ;
-}
 span.rvts58
 {
  font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
  color: #ff0000;
 }
 span.rvts59
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
- color: #007bbf;
+ color: ;
 }
-a.rvts60, span.rvts60
+span.rvts60
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
- color: #007bbf;
- text-decoration: underline;
+ color: #ff0000;
 }
-a.rvts61, span.rvts61
+span.rvts61
+{
+ font-size: 12pt;
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #007bbf;
+}
+a.rvts62, span.rvts62
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
- color: #007bbf;
- text-decoration: underline;
-}
-span.rvts62
-{
- font-size: 12pt;
- font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
@@ -418,16 +417,31 @@ a.rvts63, span.rvts63
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
+ color: #007bbf;
+ text-decoration: underline;
+}
+span.rvts64
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ color: #007bbf;
+ text-decoration: underline;
+}
+a.rvts65, span.rvts65
+{
+ font-size: 12pt;
+ font-family: 'Inter';
  color: ;
  text-decoration: none;
 }
-span.rvts64
+span.rvts66
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: #007bbf;
 }
-span.rvts65
+span.rvts67
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -435,26 +449,26 @@ span.rvts65
  font-weight: bold;
  color: ;
 }
-span.rvts66
+span.rvts68
 {
  font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
 }
-span.rvts67
+span.rvts69
 {
  font-size: 13pt;
  font-family: 'Inter';
  font-weight: bold;
 }
-span.rvts68
+span.rvts70
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-style: italic;
  color: #000000;
 }
-span.rvts69
+span.rvts71
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -462,7 +476,7 @@ span.rvts69
  color: #ffff00;
  background-color: #000000;
 }
-span.rvts70
+span.rvts72
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -470,27 +484,27 @@ span.rvts70
  color: #ff0000;
  background-color: #000000;
 }
-span.rvts71
+span.rvts73
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: #000000;
 }
-span.rvts72
+span.rvts74
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  font-style: italic;
  color: #000000;
 }
-span.rvts73
+span.rvts75
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
  background-color: #f7f7f7;
 }
-span.rvts74
+span.rvts76
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -562,20 +576,20 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps11
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
- margin: 0px 0px 0px 24px;
 }
 .rvps12
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 0px 0px 0px 48px;
+ margin: 0px 0px 0px 24px;
 }
 .rvps13
 {
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 48px;
 }
 .rvps14
 {
