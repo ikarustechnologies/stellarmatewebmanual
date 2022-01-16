@@ -195,7 +195,7 @@
  <li class="rvps10"><span class="rvts20">Legacy Polar Alignment Tool: If Polaris is not visible, this tool can be used to measure and correct polar alignment errors. It captures a couple of images near the meridian and east/west of the meridian. This will enable the user to adjust the mount until the misalignment is minimized.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">At a minimum, you need a CCD/Webcam and a telescope that supports Slew &amp; Sync commands. Most popular commercial telescope nowadays support such commands.</span></p>
-<p class="rvps2"><span class="rvts6">For the Ekos Alignment Module to work, you have an option of either utilizing the built-in&nbsp;</span><span class="rvts46">StellarSolver</span><span class="rvts6">, or&nbsp;</span><span class="rvts46">remote</span><span class="rvts6">&nbsp;solver</span></p>
+<p class="rvps2"><span class="rvts6">For the Ekos Alignment Module to work, you have an option of either utilizing the built-in&nbsp;</span><span class="rvts54">StellarSolver</span><span class="rvts6">, or&nbsp;</span><span class="rvts54">remote</span><span class="rvts6">&nbsp;solver</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps2"><span class="rvts24">StellarSolver</span><span class="rvts6">: The default solver in Ekos. StellarSolver support native plate-solving based on astrometry.net. Furthermore, it supports online (internet-based) astrometry.net solving,&nbsp;</span><a class="rvts23" href="https://www.hnsky.org/astap.htm">ASTAP</a><span class="rvts6">, and local offline astrometry.net solver (Available for MacOS &amp; Linux). The built-in solver is fast and supported across all platforms.</span></li>
@@ -240,7 +240,7 @@
 <p class="rvps10"><span class="rvts20">Ekos included support for solving via ASTAP in the Align module in addition to the existing astrometry.net solver. ASTAP employs a different method to solve images making it extremely fast while at the same time requiring a smaller star catalog compared to other astrometric solvers.</span></p>
 <p class="rvps10"><span class="rvts20">You need to download and install the G17 Star Catalog for ASTAP to work locally.</span></p>
 <p class="rvps10"><span class="rvts22">ASTAP Solver Settings</span></p>
-<p class="rvps21"><img alt="" style="padding : 1px;" src="lib/ASTAP_settings.png"></p>
+<p class="rvps19"><img alt="" style="padding : 1px;" src="lib/ASTAP_settings.png"></p>
 <p class="rvps10"><span class="rvts20">The ASTAP Solver Settings page can be accessed by clicking on the </span><span class="rvts22">Options</span><span class="rvts20"> button on the bottom-right corner. It has the following options:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">Search Radius: The program will search in a square spiral around the start position up to this radius.</span></li>
@@ -249,21 +249,21 @@
  <li class="rvps10"><span class="rvts20">Force Large Search Window: Improve solving reliability in some cases. Search window will be large with overlap but it can slow down solving.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
-<h3 class="rvps20"><a name="mytoc3"></a><span class="rvts0"><span class="rvts24">ANSVR Solver</span></span></h3>
-<p class="rvps2"><span class="rvts51"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Users on Windows OS can install&nbsp;</span><a class="rvts47" href="http://adgsoftware.com/ansvr/">ANSVR Local Astrometry.net solver</a><span class="rvts6">&nbsp;and use it as an a psudo online solver that happens to be running a server on their machine. It is not recommended given that StellarSolver is built-in and faster. It is left in the documentation for users who want to try it out.</span></p>
+<h3 class="rvps22"><a name="mytoc3"></a><span class="rvts0"><span class="rvts24">ANSVR Solver</span></span></h3>
+<p class="rvps2"><span class="rvts49"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Users on Windows OS can install&nbsp;</span><a class="rvts48" href="http://adgsoftware.com/ansvr/">ANSVR Local Astrometry.net solver</a><span class="rvts6">&nbsp;and use it as an a psudo online solver that happens to be running a server on their machine. It is not recommended given that StellarSolver is built-in and faster. It is left in the documentation for users who want to try it out.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="562" height="309" alt="" style="padding : 1px;" src="lib/ekos_remote_astrometry.png"></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps2"><span class="rvts6">ANSVR&nbsp;</span><span class="rvts46">mimics</span><span class="rvts6">&nbsp;the astrometry.net online server services on your local computer; thus the internet not required for any astrometry queries. From the point of view of Ekos, it is still communicating with an&nbsp;</span><span class="rvts46">online</span><span class="rvts6">&nbsp;astrometry.net server.</span></p>
+<p class="rvps2"><span class="rvts6">ANSVR&nbsp;</span><span class="rvts54">mimics</span><span class="rvts6">&nbsp;the astrometry.net online server services on your local computer; thus the internet not required for any astrometry queries. From the point of view of Ekos, it is still communicating with an&nbsp;</span><span class="rvts54">online</span><span class="rvts6">&nbsp;astrometry.net server.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">After installing the ANSVR server and downloading the appropriate index files for your setup, make sure ANSVR server is up and running and then go to Ekos Alignment options where you can simply change the&nbsp;</span><span class="rvts46">API URL</span><span class="rvts6">&nbsp;to use the ANSVR server as illustrated below:</span></p>
+<p class="rvps2"><span class="rvts6">After installing the ANSVR server and downloading the appropriate index files for your setup, make sure ANSVR server is up and running and then go to Ekos Alignment options where you can simply change the&nbsp;</span><span class="rvts54">API URL</span><span class="rvts6">&nbsp;to use the ANSVR server as illustrated below:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/astrometry_windows_ansvr.png"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Do not forget to include the full URL including the http part. In Ekos Align module, you must set the solver type to&nbsp;</span><span class="rvts24">Online&nbsp;</span><span class="rvts6">so that it uses the local ANSVR server for all astrometry queries. Then you can use the align module as you would normally do.</span></p>
 <p class="rvps2"><span class="rvts6">&nbsp;</span></p>
-<p class="rvps2"><span class="rvts6">Remember as indicated above that StellarMate&nbsp;</span><span class="rvts46">already</span><span class="rvts6">&nbsp;includes astrometry.net. Therefore, if you would like to use StellarMate remotely to solve your images, simply change solver type to&nbsp;</span><span class="rvts24">Remote</span><span class="rvts6">&nbsp;and ensure that your equipment profile includes&nbsp;</span><span class="rvts24">Astrometry</span><span class="rvts6">&nbsp;driver which can be selected under the&nbsp;</span><span class="rvts46">Auxiliary</span><span class="rvts6">&nbsp;dropdown. This is applicable to all operating systems and not just Windows.</span></p>
+<p class="rvps2"><span class="rvts6">Remember as indicated above that StellarMate&nbsp;</span><span class="rvts54">already</span><span class="rvts6">&nbsp;includes astrometry.net. Therefore, if you would like to use StellarMate remotely to solve your images, simply change solver type to&nbsp;</span><span class="rvts24">Remote</span><span class="rvts6">&nbsp;and ensure that your equipment profile includes&nbsp;</span><span class="rvts24">Astrometry</span><span class="rvts6">&nbsp;driver which can be selected under the&nbsp;</span><span class="rvts54">Auxiliary</span><span class="rvts6">&nbsp;dropdown. This is applicable to all operating systems and not just Windows.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps5">
@@ -508,9 +508,9 @@
 </div>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps10"><span class="rvts20">The Debian packages are suitable for any Debian-based distribution (Ubuntu, Mint,&nbsp;etc.). If you downloaded the Debian Packages above for your FOV range, you can install them from your favorite package manager, or via the following command:</span></p>
-<p class="rvps10"><span class="rvts51">sudo dpkg -i astrometry-data-*.deb</span></p>
+<p class="rvps10"><span class="rvts49">sudo dpkg -i astrometry-data-*.deb</span></p>
 <p class="rvps10"><span class="rvts20">On the other hand, if you downloaded the FITS index files directly, copy them to&nbsp;/usr/share/astrometry&nbsp;directory.</span></p>
-<h3 class="rvps42"><span class="rvts0"><span class="rvts55">Note</span></span></h3>
+<h3 class="rvps42"><span class="rvts0"><span class="rvts53">Note</span></span></h3>
 <p class="rvps32"><span class="rvts20">It is recommended to use a download manager as such&nbsp;</span><a class="rvts23" href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/">DownThemAll!</a><span class="rvts20">&nbsp;for Firefox to download the Debian packages as browsers' built-in download manager may have problems with download large packages.</span></p>
 <h5 class="rvps38"><a name="EKOS-ALIGN-TROUBLESHOOTING"></a><span class="rvts0"><span class="rvts22">How to Use?</span></span></h5>
 <p class="rvps10"><span class="rvts20">Ekos Align Module offers multiple functions to aid you in achieving accurate GOTOs. Start with your mount in home position with the telescope tube looking directly at the celestial pole. For users in Northern Hemisphere, point the telescope as close as possible to Polaris. It is not necessary to perform 2 or 3 star alignments, but it can be useful for some mount types. Make sure your camera is focused and stars are resolved.</span></p>
@@ -665,7 +665,7 @@
 <h5 class="rvps38"><a name="EKOS-SCHEDULER-INTRODUCTION"></a><span class="rvts0"><span class="rvts22">Polar Alignment</span></span></h5>
 <h6 class="rvps39"><a name="EKOS-SCHEDULER-SETTINGS"></a><span class="rvts0"><span class="rvts22">Polar Alignment Assistant</span></span></h6>
 <p class="rvps10"><span class="rvts20">When setting up a German Equatorial Mount (GEM) for imaging, a critical aspect of capturing long-exposure images is to ensure proper polar alignment. A GEM mount has two axis: Right Ascension (RA) axis and Declination (DE) axis. Ideally, the RA axis should be aligned with the celestial sphere polar axis. A mount's job is to track the star's motion around the sky, from the moment they rise at the eastern horizon, all the way up across the median, and westward until they set.</span></p>
-<p class="rvps21"><a class="rvts23" href="https://stellarmate.com/images/videos/polar_align.webm">Video Demo</a></p>
+<p class="rvps19"><a class="rvts23" href="https://stellarmate.com/images/videos/polar_align.webm">Video Demo</a></p>
 <p class="rvps10"><span class="rvts20">In long exposure imaging, a camera is attached to the telescope where the image sensor captures incoming photons from a particular area in the sky. The incident photons have to strike the same photo-site over and over again if we are to gather a clear and crisp image. Of course, actual photons do not behave in this way: optics, atmosphere, seeing quality all scatter and refract photons in one way or another. Furthermore, photons do not arrive uniformly but follow a Poisson distribution. For point-like sources like stars, a point spread function describes how photons are spatially distributed across the pixels. Nevertheless, the&nbsp;</span><span class="rvts21">overall</span><span class="rvts20">&nbsp;idea we want to keep the source photons hitting the same pixels. Otherwise, we might end up with an image plagued with various trail artifacts.</span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/alignment_polaris.png"></p>
 <p class="rvps10"><span class="rvts20">Since mounts are not perfect, they cannot perfectly keep track of object as it transits across the sky. This can stem from many factors, one of which is the misalignment of the mount's Right Ascension axis with respect to the celestial pole axis. Polar alignment removes one of the biggest sources of tracking errors in the mount, but other sources of error still play a factor. If properly aligned, some mounts can track an object for a few minutes with the only deviation of 1-2 arcsec RMS.</span></p>
