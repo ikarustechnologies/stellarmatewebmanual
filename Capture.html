@@ -185,9 +185,9 @@
             <div class="main-content">
                 
 <p></p>
-<h4 class="rvps36"><img alt="" style="padding : 1px;" src="lib/ekos_capture.png"></h4>
+<h4 class="rvps37"><img alt="" style="padding : 1px;" src="lib/ekos_capture.png"></h4>
 <p class="rvps10"><span class="rvts20">The CCD Module is your primary image and video acquisition module in Ekos. It enables you to capture single (Preview), multiple images (Sequence Queue), or record&nbsp;</span><a class="rvts23" href="https://sites.google.com/site/astropipp/ser-player">SER</a><span class="rvts20">&nbsp;videos along with a selection of filter wheel and rotator, if available.</span></p>
-<h5 class="rvps37"><a name="CAPTURE-CCD-FILTER-WHEEL"></a><span class="rvts0"><span class="rvts22">CCD &amp; Filter Wheel Group</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-CCD-FILTER-WHEEL"></a><span class="rvts0"><span class="rvts22">CCD &amp; Filter Wheel Group</span></span></h5>
 <p class="rvps10"><span class="rvts20">Select the desired CCD/DSLR and Filter Wheel (if available) for capture. Set CCD temperature and filter settings.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">Camera: Select the active CCD camera. If your camera has a guide head, you can select it from here as well.</span></li>
@@ -216,14 +216,14 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps39"><span class="rvts16">Only use driver restart if the camera driver becomes completely unresponsive. This feature is still experimental and might lead to instability so only use as a last resort.</span></p>
+   <p class="rvps40"><span class="rvts16">Only use driver restart if the camera driver becomes completely unresponsive. This feature is still experimental and might lead to instability so only use as a last resort.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps2"><span class="rvts16"><br/></span></p>
-<h5 class="rvps37"><a name="CAPTURE-SETTINGS"></a><span class="rvts0"><span class="rvts22">Capture Settings</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-SETTINGS"></a><span class="rvts0"><span class="rvts22">Capture Settings</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/capture_settings.png"></p>
 <p class="rvps10"><span class="rvts20">Set all capture parameters as detailed below. Once set, you can capture a preview by click on&nbsp;Preview&nbsp;or add a job to the sequence queue.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -241,25 +241,25 @@
  <li class="rvps10"><span class="rvts20">Frame: Specify the left (X), top (Y), width (W), and height (H) of the desired CCD frame. If you changed the frame dimensions, you can reset it to default values by clicking on the reset button.</span></li>
  <li class="rvps10"><span class="rvts20">Binning: Specify horizontal (X) and vertical (Y) binning.</span></li>
 </ul>
-<h6 class="rvps38"><a name="CAPTURE-CUSTOM-PROPERTIES"></a><span class="rvts0"><span class="rvts22">Custom Properties</span></span></h6>
+<h6 class="rvps39"><a name="CAPTURE-CUSTOM-PROPERTIES"></a><span class="rvts0"><span class="rvts22">Custom Properties</span></span></h6>
 <p class="rvps10"><span class="rvts20">Many cameras offer additional properties that cannot be directly set in the capture settings using the common control. The capture controls described above represent the most common settings shared among different cameras, but each camera is unique and may offer its own extended properties. While you can use INDI Control Panel to set any property in the driver; it is important to be able to set such property for each job in the sequence. When you click&nbsp;Custom Properties, a dialog is shown divided into&nbsp;Available Properties&nbsp;and&nbsp;Job Properties. When you move an&nbsp;Available Properties&nbsp;to the&nbsp;Job Property&nbsp;list, its current value can be recorded once you click&nbsp;Apply. When you add a job to the&nbsp;Sequence Queue, the properties values selected in the&nbsp;Job Properties&nbsp;list shall be recorded and saved.</span></p>
 <p class="rvps10"><span class="rvts20">The following video explains this concept is more detail with a live example:</span></p>
 <p class="rvps3"><a class="rvts23" href="https://www.stellarmate.com/images/fss/videos/custom_properties.mp4">https://www.stellarmate.com/images/fss/videos/custom_properties.mp4</a></p>
-<h5 class="rvps37"><a name="CAPTURE-FILE-SETTINGS"></a><span class="rvts0"><span class="rvts22">File Settings</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-FILE-SETTINGS"></a><span class="rvts0"><span class="rvts22">File Settings</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/file_settings.png"></p>
 <p class="rvps10"><span class="rvts20">Settings for specifying where captured images are saved to, and how to generate unique file names in addition to upload mode settings.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">Prefix: Specify the prefix to append to the generated filename. You may also append the frame type, filter, expose duration, and ISO 8601 timestamp. For example, if you specify Prefix as&nbsp;</span><span class="rvts22">M45</span><span class="rvts20">&nbsp;and checked the Type and Filter checkboxes, and assuming your filter was set to&nbsp;Red&nbsp;and your frame type is&nbsp;Light, the generated file names will be as follows:</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">M45_Light_Red_001.fits</span></li>
-  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">M45_Light_Red_002.fits</span></li>
+  <li style="margin-left: 0px" class="rvps34"><span class="rvts20">M45_Light_Red_001.fits</span></li>
+  <li style="margin-left: 0px" class="rvps34"><span class="rvts20">M45_Light_Red_002.fits</span></li>
  </ul>
 </ul>
-<p class="rvps33"><span class="rvts20">If&nbsp;TS&nbsp;was checked, a timestamp will be appended to the filename, example:</span></p>
+<p class="rvps34"><span class="rvts20">If&nbsp;TS&nbsp;was checked, a timestamp will be appended to the filename, example:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">M45_Light_Red_001_2016-11-09T23-47-46.fits</span></li>
-  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">M45_Light_Red_002_2016-11-09T23-48-34.fits</span></li>
+  <li style="margin-left: 0px" class="rvps34"><span class="rvts20">M45_Light_Red_001_2016-11-09T23-47-46.fits</span></li>
+  <li style="margin-left: 0px" class="rvps34"><span class="rvts20">M45_Light_Red_002_2016-11-09T23-48-34.fits</span></li>
  </ul>
  <li class="rvps10"><span class="rvts20">Script: Specify an&nbsp;</span><span class="rvts21">optional</span><span class="rvts20">&nbsp;script to be executed after each capture is complete. The full path of the script must be specified and it must executable. To denote success, the script must return zero as this would allow the sequence to continue. If a non-zero value is returned by the script, the sequence is aborted.</span></li>
  <li class="rvps10"><span class="rvts20">Directory: Local directory to save the sequence images to.</span></li>
@@ -267,16 +267,16 @@
 </ul>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-  <li value="1" style="margin-left: 0px" class="rvps33"><span class="rvts20">Locally: Captured images are saved locally on disk in the directory specified in the Directory field.</span></li>
-  <li value="2" style="margin-left: 0px" class="rvps33"><span class="rvts20">Remotely: When connecting to a remote device, select this option to save images on the remote device only. No images are uploaded to Ekos.</span></li>
-  <li value="3" style="margin-left: 0px" class="rvps33"><span class="rvts20">Both: Captured images are saved on both the remote computer and on the local disk as well. When selecting Remotely or Both, you must specify the remote directory where the remote images are saved to. By default, all captured images are uploaded to Ekos.</span></li>
+  <li value="1" style="margin-left: 0px" class="rvps34"><span class="rvts20">Locally: Captured images are saved locally on disk in the directory specified in the Directory field.</span></li>
+  <li value="2" style="margin-left: 0px" class="rvps34"><span class="rvts20">Remotely: When connecting to a remote device, select this option to save images on the remote device only. No images are uploaded to Ekos.</span></li>
+  <li value="3" style="margin-left: 0px" class="rvps34"><span class="rvts20">Both: Captured images are saved on both the remote computer and on the local disk as well. When selecting Remotely or Both, you must specify the remote directory where the remote images are saved to. By default, all captured images are uploaded to Ekos.</span></li>
  </ol>
 </ol>
-<p class="rvps33"><span class="rvts20">When selecting&nbsp;Remotely&nbsp;or&nbsp;Both, you must specify the remote directory where the remote images are saved to. By default, all captured images are uploaded to Ekos.</span></p>
+<p class="rvps34"><span class="rvts20">When selecting&nbsp;Remotely&nbsp;or&nbsp;Both, you must specify the remote directory where the remote images are saved to. By default, all captured images are uploaded to Ekos.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">Remote: When selecting either&nbsp;Remotely&nbsp;or&nbsp;Both&nbsp;modes above, you must specify the remote directory where remote images are saved to.</span></li>
 </ul>
-<h5 class="rvps37"><a name="CAPTURE-LIMIT-SETTINGS"></a><span class="rvts0"><span class="rvts22">Limit Settings</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-LIMIT-SETTINGS"></a><span class="rvts0"><span class="rvts22">Limit Settings</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/limit_settings.png"></p>
 <p class="rvps10"><span class="rvts20">Limit settings are applicable to all the images in the sequence queue. When a limit is exceeded, Ekos shall command the appropriate action to remedy the situation as explained below.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -285,7 +285,7 @@
  <li class="rvps10"><span class="rvts20">Autofocus if change in temperature exceeds a value: If autofocus is enabled in the focus module and at least one autofocus operation was completed successfully, you can set the maximum acceptable change in temperature value. If this option is enabled then between consecutive exposures, the change in temperature value is recalculated, and if found to exceed the maximum acceptable change in temperature value, then an autofocus operation is automatically triggered. If the autofocus operation is completed successfully, the sequence queue resumes, otherwise the job is aborted.</span></li>
  <li class="rvps10"><span class="rvts20">Meridian Flip: If supported by the mount, set the hour angle limit (in hours) before a&nbsp;</span><a class="rvts23" href="http://astronomy.mdodd.com/gem_movement.html">meridian flip</a><span class="rvts20">&nbsp;is commanded. For example, if you set the meridian flip duration to 0.1 hours, Ekos shall wait until the mount passes the meridian by 0.1 hours (6 minutes), then it commands the mount to perform a meridian flip. After the meridian flip is complete, Ekos re-aligns using astrometry.net (if&nbsp;</span><a class="rvts23" href="Align.html">the alignment</a><span class="rvts20">&nbsp;was used) and resumes guiding (if it was started before) and then resumes the capture process automatically.</span></li>
 </ul>
-<h5 class="rvps37"><a name="CAPTURE-SEQUENCE-QUEUE"></a><span class="rvts0"><span class="rvts22">Sequence Queue</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-SEQUENCE-QUEUE"></a><span class="rvts0"><span class="rvts22">Sequence Queue</span></span></h5>
 <p class="rvps10"><span class="rvts20">Sequence Queue is the primary hub of the Ekos Capture Module. This is where you can plan and execute jobs using the sequence queue built-in powerful editor. To add a job, simply select all the parameters from the capture and file settings as indicated above. Once you selected your desired parameters, click on the add button&nbsp;</span><img alt="" style="padding : 1px;" src="lib/list-add.png"><span class="rvts20">&nbsp;in the sequence queue to add it to the queue.</span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/sequence_settings.png"></p>
 <p class="rvps10"><span class="rvts20">You can add as many jobs as desired. While it is not strictly necessary, it is preferable to add the dark and flat jobs after the light frames. Once you are done adding jobs, simply click&nbsp;Start Sequence&nbsp;</span><img alt="" style="padding : 1px;" src="lib/media-playback-start.png"><span class="rvts20">&nbsp;to begin executing the jobs. A job state changes from&nbsp;Idle&nbsp;to&nbsp;In Progress&nbsp;and finally to&nbsp;Complete&nbsp;once it is done. The Sequence Queue automatically starts the next job. If a job is aborted, it may be resumed again. To pause a sequence, click the pause button&nbsp;</span><img alt="" style="padding : 1px;" src="lib/media-playback-pause.png"><span class="rvts20">&nbsp;and the sequence will be stopped after the current capture is complete. To reset the status of all the jobs, simply click the reset button&nbsp;</span><img alt="" style="padding : 1px;" src="lib/view-refresh.png"><span class="rvts20">. Please beware that all image progress counts are reset as well. To preview an image in&nbsp;KStars&nbsp;FITS Viewer, click the&nbsp;Preview&nbsp;button.</span></p>
@@ -306,7 +306,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><span class="rvts18">Job Progress</span><span class="rvts16">: Ekos is designed to execute and resume the sequence over multiple nights if required. Therefore, if&nbsp;Remember Job Progress&nbsp;option is enabled in&nbsp;</span><a class="rvts23" href="Ekos.html">Ekos Options</a><span class="rvts16">, Ekos shall scan the file system to count how many images are already completed and will resume the sequence from where it was left off. If this default behavior is not desired, simply turn off&nbsp;Remember Job Progress&nbsp;under options.</span></p>
+   <p class="rvps32"><span class="rvts18">Job Progress</span><span class="rvts16">: Ekos is designed to execute and resume the sequence over multiple nights if required. Therefore, if&nbsp;Remember Job Progress&nbsp;option is enabled in&nbsp;</span><a class="rvts23" href="Ekos.html">Ekos Options</a><span class="rvts16">, Ekos shall scan the file system to count how many images are already completed and will resume the sequence from where it was left off. If this default behavior is not desired, simply turn off&nbsp;Remember Job Progress&nbsp;under options.</span></p>
   </td>
  </tr>
 </table>
@@ -314,8 +314,8 @@
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps10"><span class="rvts20">To edit a job, double click it. You will notice the add button&nbsp;</span><img alt="" style="padding : 1px;" src="lib/list-add.png"><span class="rvts20">&nbsp;now changed to check mark button&nbsp;</span><img alt="" style="padding : 1px;" src="lib/dialog-ok-apply.png"><span class="rvts20">. Make your changes on the left-hand side of the CCD module and once done, click on the check mark button. To cancel a job edit, click anywhere on the empty space within the sequence queue table.</span></p>
 <p class="rvps10"><span class="rvts20">To capture a preview image with the settings you have set in the Camera &amp; Filter Wheel Panel, click the Capture a Preview button. If your camera doesn't support live video feed, click on the Start framing (looping) button. If your camera supports live video feed, then you can click the Live Video camera photo button to start streaming. The video stream window enables recording and subframing of the video stream. For more information, check the video below:</span></p>
-<p class="rvps19"><a class="rvts23" href="https://www.youtube.com/watch?v=qRsAqTL4ZZI">https://www.youtube.com/watch?v=qRsAqTL4ZZI</a></p>
-<h5 class="rvps37"><a name="CAPTURE-LIVE-VIDEO"></a><span class="rvts0"><span class="rvts22">Live Video</span></span></h5>
+<p class="rvps21"><a class="rvts23" href="https://www.youtube.com/watch?v=qRsAqTL4ZZI">https://www.youtube.com/watch?v=qRsAqTL4ZZI</a></p>
+<h5 class="rvps38"><a name="CAPTURE-LIVE-VIDEO"></a><span class="rvts0"><span class="rvts22">Live Video</span></span></h5>
 <p class="rvps10"><span class="rvts20">The Live Video window allows live streaming of your camera in order to check if your camera is working fine. You can also record a video, change FPS and zoom in.</span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps5">
@@ -333,7 +333,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps39"><span class="rvts16">Please note that while recording, the streaming frame rate will drop to increase the efficiency of the video recording process.</span></p>
+   <p class="rvps40"><span class="rvts16">Please note that while recording, the streaming frame rate will drop to increase the efficiency of the video recording process.</span></p>
   </td>
  </tr>
 </table>
@@ -356,7 +356,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps39"><span class="rvts16">If Ekos is connected to remote device (eg. StellarMate), please specify the remote directory (eg. /home/stellarmate/Pictures) instead of a local directory. Specifying a local directory could result in errors (as that directory might not exist in the remote device).</span></p>
+   <p class="rvps40"><span class="rvts16">If Ekos is connected to remote device (eg. StellarMate), please specify the remote directory (eg. /home/stellarmate/Pictures) instead of a local directory. Specifying a local directory could result in errors (as that directory might not exist in the remote device).</span></p>
   </td>
  </tr>
 </table>
@@ -395,18 +395,18 @@
  <li class="rvps10"><span class="rvts20">Apply FPS and restart stream: Applies the FPS set in the Frame (s) field and restarts the stream with the new FPS setting.</span></li>
  <li class="rvps10"><span class="rvts20">FPS: Displays the average FPS of the live video being streamed.</span></li>
 </ul>
-<h5 class="rvps37"><a name="CAPTURE-FILTER-SETTINGS"></a><span class="rvts0"><span class="rvts22">Filter Settings</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-FILTER-SETTINGS"></a><span class="rvts0"><span class="rvts22">Filter Settings</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/filter_settings.png"></p>
 <p class="rvps10"><span class="rvts20">Click the filter icon&nbsp;</span><img alt="" style="padding : 1px;" src="lib/view-filter.png"><span class="rvts20">&nbsp;next to the filter wheel selection box to open the filter settings dialog. If you are using filters that are not parafocal with each other and require a specific amount of focus offsets in order to get them into proper then set all the relative focus offsets in the dialog.</span></p>
 <p class="rvps10"><span class="rvts20">Configure settings for each filter individually:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-  <li value="1" style="margin-left: 0px" class="rvps33"><span class="rvts20">Filter: Filter Name</span></li>
-  <li value="2" style="margin-left: 0px" class="rvps33"><span class="rvts20">Exposure: Set exposure time used when performing focus under this filter. By default, it is set to 1 second.</span></li>
-  <li value="3" style="margin-left: 0px" class="rvps33"><span class="rvts20">Offset: Set relative offsets. Ekos will command a focus offset change if there is a difference between the current and target filter offsets. For example, given the values in the example image, if the current filter is set to&nbsp;</span><span class="rvts21">Red</span><span class="rvts20">&nbsp;and next filter is&nbsp;</span><span class="rvts21">Green</span><span class="rvts20">, then Ekos shall command the focuser to Focus In by +300 ticks. Relative positive focus offsets denote Focus Out while negative values denote Focus In.</span></li>
-  <li value="4" style="margin-left: 0px" class="rvps33"><span class="rvts20">Auto Focus: Check this option to initial AutoFocus process whenever the filter is changed to this filter.</span></li>
-  <li value="5" style="margin-left: 0px" class="rvps33"><span class="rvts20">Lock Filter: Set which filter should be set and&nbsp;</span><span class="rvts21">locked</span><span class="rvts20">&nbsp;when performing autofocus for this filter.</span></li>
-  <li value="6" style="margin-left: 0px" class="rvps33"><span class="rvts20">Flat Focus Position: this value is set automatically once you finish autofocus for some filter. If the sequence queue contains flat images, then Ekos would first move the focuser to the filter absolute focus position before capturing the flat images. This to ensure both your light and flat frames are exactly captured using the same per-filter offset.</span></li>
+  <li value="1" style="margin-left: 0px" class="rvps34"><span class="rvts20">Filter: Filter Name</span></li>
+  <li value="2" style="margin-left: 0px" class="rvps34"><span class="rvts20">Exposure: Set exposure time used when performing focus under this filter. By default, it is set to 1 second.</span></li>
+  <li value="3" style="margin-left: 0px" class="rvps34"><span class="rvts20">Offset: Set relative offsets. Ekos will command a focus offset change if there is a difference between the current and target filter offsets. For example, given the values in the example image, if the current filter is set to&nbsp;</span><span class="rvts21">Red</span><span class="rvts20">&nbsp;and next filter is&nbsp;</span><span class="rvts21">Green</span><span class="rvts20">, then Ekos shall command the focuser to Focus In by +300 ticks. Relative positive focus offsets denote Focus Out while negative values denote Focus In.</span></li>
+  <li value="4" style="margin-left: 0px" class="rvps34"><span class="rvts20">Auto Focus: Check this option to initial AutoFocus process whenever the filter is changed to this filter.</span></li>
+  <li value="5" style="margin-left: 0px" class="rvps34"><span class="rvts20">Lock Filter: Set which filter should be set and&nbsp;</span><span class="rvts21">locked</span><span class="rvts20">&nbsp;when performing autofocus for this filter.</span></li>
+  <li value="6" style="margin-left: 0px" class="rvps34"><span class="rvts20">Flat Focus Position: this value is set automatically once you finish autofocus for some filter. If the sequence queue contains flat images, then Ekos would first move the focuser to the filter absolute focus position before capturing the flat images. This to ensure both your light and flat frames are exactly captured using the same per-filter offset.</span></li>
  </ol>
 </ol>
 <p class="rvps10"><span class="rvts20">Let's take an example. Suppose the capture sequence is running and the current filter is&nbsp;Green, so the relative offset is already set to +300. The next image in the sequence uses Hydrogen Alpha (H_Alpha) so before Ekos captures the next frame, the following actions take place:</span></p>
@@ -418,19 +418,19 @@
  <li class="rvps10"><span class="rvts20">A focus offset of -1200 is applied.</span></li>
  <li class="rvps10"><span class="rvts20">Capture sequence is resumed.</span></li>
 </ul>
-<h5 class="rvps37"><a name="CAPTURE-FITS-VIEWER"></a><span class="rvts0"><span class="rvts22">FITS Viewer</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-FITS-VIEWER"></a><span class="rvts0"><span class="rvts22">FITS Viewer</span></span></h5>
 <p class="rvps10"><span class="rvts20">Captured images are displayed in&nbsp;KStars&nbsp;FITS Viewer tool, and also in the summary screen. Set options related to how the images are displayed in the viewer.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">Auto Dark: You can capture an image and auto dark subtract it by checking this option. Note that this option is only applicable when using&nbsp;Preview, you cannot use it in batch mode sequence queue.</span></li>
  <li class="rvps10"><span class="rvts20">Effects: Image enhancement filter to be applied to the image after capture.</span></li>
 </ul>
-<h5 class="rvps37"><a name="CAPTURE-ROTATION-SETTINGS"></a><span class="rvts0"><span class="rvts22">Rotator Settings</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-ROTATION-SETTINGS"></a><span class="rvts0"><span class="rvts22">Rotator Settings</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_rotator_settings.png"></p>
 <p class="rvps10"><span class="rvts20">Field Rotators are supported in INDI &amp; Ekos. The rotator angle is the raw angle reported by the rotator and is not necessary the&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Position_angle">Position Angle</a><span class="rvts20">. A Position Angle of&nbsp;</span><span class="rvts21">zero</span><span class="rvts20">&nbsp;indicates that the frame top (indicated by small arrow) is pointing&nbsp;</span><span class="rvts21">directly</span><span class="rvts20">&nbsp;at the pole. The position angle is expressed as E of N (East of North), so 90 degrees PA indicates the frame&nbsp;</span><span class="rvts21">top</span><span class="rvts20">&nbsp;points 90 degrees away (counter-clockwise) from the pole. Check&nbsp;</span><a class="rvts23" href="http://www.srl.caltech.edu/NuSTAR_Public/NuSTAROperationSite/file/NuSTAR-PA.pdf">examples</a><span class="rvts20">&nbsp;for various PAs.</span></p>
 <p class="rvps10"><span class="rvts20">To calibrate the Position Angle (PA), capture and solve an image in the&nbsp;</span><a class="rvts23" href="Align.html">Ekos Align module</a><span class="rvts20">. An&nbsp;</span><span class="rvts21">offset</span><span class="rvts20">&nbsp;and a&nbsp;</span><span class="rvts21">multiplier</span><span class="rvts20">&nbsp;are applied to the raw angle to produce the position angle. The Ekos Rotator dialog permits direct control of the raw angle and also the PA. The offset and multiplier can be changed manually to synchronize the rotator's raw angle with the actual PA. Check&nbsp;Sync FOV to PA&nbsp;to rotate the current Field of View (FOV) indicator on the Sky Map with the PA value as you change it in the dialog.</span></p>
-<p class="rvps19"><a class="rvts23" href="https://www.youtube.com/watch?v=V_hRPMlPjmA">https://www.youtube.com/watch?v=V_hRPMlPjmA</a></p>
+<p class="rvps21"><a class="rvts23" href="https://www.youtube.com/watch?v=V_hRPMlPjmA">https://www.youtube.com/watch?v=V_hRPMlPjmA</a></p>
 <p class="rvps10"><span class="rvts20">Each capture job may be assigned different rotator angles, but be aware that this would cause guiding to abort as it would lose track of the guide star when rotating. Therefore, for most sequences, the rotator angle is kept the same for all capture jobs.</span></p>
-<h5 class="rvps37"><a name="CAPTURE-CALIBRATION-FRAMES"></a><span class="rvts0"><span class="rvts22">Calibration Frames</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-CALIBRATION-FRAMES"></a><span class="rvts0"><span class="rvts22">Calibration Frames</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/calibration_settings.png"></p>
 <p class="rvps10"><span class="rvts20">For Flat Field frames, you can set calibration options in order to automate the process. The calibration options are designed to facilitate automatic unattended flat field frame capture. It can also be used for dark and bias frames if desired. If your camera is equipped with a mechanical shutter, then it is not necessary to set calibration settings unless you want to close the dust cover to ensure no light at all passes through the optical tube. For flat fields, you must specify the flat field light source, and then specify the duration of the flat field frame. The duration can be either manual or based on ADU calculations.</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
@@ -455,7 +455,7 @@
  </ul>
 </ul>
 <p class="rvps10"><span class="rvts20">Before the calibration capture process is started, you can request Ekos to park the mount and/or dome. Depending on your flat source selection above, Ekos will use the appropriate flat light source before starting flat frames capture. If ADU is specified, Ekos begins by capturing a couple of preview images to establish the curve required to achieve the desired ADU count. Once an appropriate value is calculated, another capture is taken and ADU is recounted until a satisfactory value is achieved.</span></p>
-<h5 class="rvps37"><a name="CAPTURE-VIDEO-TUTORIALS"></a><span class="rvts0"><span class="rvts22">Video Tutorials</span></span></h5>
+<h5 class="rvps38"><a name="CAPTURE-VIDEO-TUTORIALS"></a><span class="rvts0"><span class="rvts22">Video Tutorials</span></span></h5>
 <p class="rvps10"><a class="rvts23" href="https://www.youtube.com/watch?v=Gz07j7VPnpc">Capture</a></p>
 <p class="rvps10"><a class="rvts23" href="https://www.youtube.com/watch?v=yfz9_UJIvLY">Filter Wheels</a></p>
 <p></p>
