@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Targets.html">Targets</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Targets.html" title="Targets" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Targets.html" title="Targets" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Device.html" title="Device" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Targets.html" title="Targets" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Targets.html" title="Targets" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Device.html" title="Device" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,15 +185,20 @@
 
             <div class="main-content">
                 
-<p></p>
-<p class="rvps2"><span class="rvts6">To open the framing assistant, make sure to have selected an</span><span class="rvts32"> FOV Profile </span><span class="rvts6">and press</span><span class="rvts32"> Go &amp; Solve</span><span class="rvts24">. </span><span class="rvts6">StellarMate will command the mount to slew to the target location. This is indicated by a magenta border around the target. Once Slew is complete, the alignment process begins which is indicated by a yellow border. A red border indicated alignment error or alignment is not within threshold. Please wait until the solver iterates to center the target exactly in the center of the sensor. Once this is done, the border turns to Green. Now that the plate solving is complete, you may proceed to use the Framing Assistant tool that helps you in adjustment the orientation of the camera to match your desired orientation either manually or automatically if a rotator device is detected.</span></p>
+<p class="rvps3"><img width="884" height="620" alt="" style="padding : 1px;" src="lib/targets.jpeg"></p>
+<p class="rvps11"><span class="rvts6"></span><br/><span class="rvts6">To open the framing assistant, make sure to have selected an</span><span class="rvts32"> FOV Profile </span><span class="rvts6">and press</span><span class="rvts32"> Go &amp; Solve</span><span class="rvts24">.</span></p>
+<p class="rvps11"><span class="rvts24"><br/></span></p>
+<p class="rvps3"><img width="885" height="163" alt="" style="padding : 1px;" src="lib/FOV.jpeg"></p>
+<p class="rvps11"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><span class="rvts6">StellarMate will command the mount to slew to the target location. This is indicated by a magenta border around the target. Once Slew is complete, the alignment process begins which is indicated by a yellow border. A red border indicated alignment error or alignment is not within threshold. Please wait until the solver iterates to center the target exactly in the center of the sensor. Once this is done, the border turns to Green. Now that the plate solving is complete, you may proceed to use the Framing Assistant tool that helps you in adjustment the orientation of the camera to match your desired orientation either manually or automatically if a rotator device is detected.</span></p>
 <p class="rvps2"><span class="rvts6">Once the status turns to green (1), press the image (2) to open the</span><span class="rvts32"> Framing Assistant</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="1020" height="638" alt="" style="padding : 1px;" src="lib/targetStatus.jpg"></p>
+<p class="rvps3"><img width="942" height="589" alt="" style="padding : 1px;" src="lib/targetStatus.jpg"></p>
 <p class="rvps3"><span class="rvts24"><br/></span></p>
 <p class="rvps3"><span class="rvts24"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
- <li value="1" class="rvps11"><span class="rvts6">The Framing Assistant has two modes of operation:</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps11"><span class="rvts6">The Framing Assistant has two modes of operation:</span></li>
 </ol>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
@@ -200,13 +206,13 @@
   <li class="rvps11"><span class="rvts24">Manual</span><span class="rvts6">: Using this mode, set the desired target rotation first, then check the required Angular Offset value. Go to your camera and rotate it manually by hand using &nbsp;your best judgement. Click Rotate &amp; Capture to measure the new orientation of the camera. Once plate solving is complete, the new camera orientation and angular offset are updated. Repeat this process as many times as necessary until you are satisfied with the result. Your goal is to bring the Angular Offset down to zero.</span></li>
  </ul>
 </ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <li value="2" class="rvps11"><span class="rvts6">Adjust the rotation of the desired FOV orientation with the slider. The target FOV rectangle color is blue with orange designating the top. The green rectangle with orange on top is your camera's current FOV &amp; orientation in the sky.</span></li>
- <li value="3" class="rvps11"><span class="rvts6">Rotation offset in degrees between the current (Green) FOV and the target (Blue) FOV. When manually adjusting the camera, rotate it clockwise or counterclockwise as per the indicated icon.</span></li>
+ <li class="rvps11"><span class="rvts6">Rotation offset in degrees between the current (Green) FOV and the target (Blue) FOV. When manually adjusting the camera, rotate it clockwise or counterclockwise as per the indicated icon.</span></li>
 </ol>
 <p class="rvps3"><span class="rvts24"><br/></span></p>
-<p class="rvps3"><img width="1022" height="639" alt="" style="padding : 1px;" src="lib/framingAssist.jpg"></p>
-<p></p>
+<p class="rvps3"><img width="1022" height="639" alt="" style="padding : 1px;" src="lib/framingAssist.jpg"><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour">Easily create EBooks</a></p>
 
             </div>
             
@@ -262,7 +268,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

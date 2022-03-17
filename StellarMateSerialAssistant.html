@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="SerialPortAssistant.html">Serial Port Assistant</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="SerialPortAssistant.html" title="Serial Port Assistant" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Network.html" title="Network" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="StellarMateControlPanel.html" title="StellarMate Control Panel" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SerialPortAssistant.html" title="Serial Port Assistant" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Network.html" title="Network" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="StellarMateControlPanel.html" title="StellarMate Control Panel" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,9 +185,8 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_web_manager.png"></p>
-<p class="rvps10"><span class="rvts20">Serial Port Assistant ensures that your serial device designations are saved permanently. When you plug your mount, it is assigned a random port (e.g.&nbsp;</span><span class="rvts65">COM2</span><span class="rvts20">&nbsp;or&nbsp;</span><span class="rvts65">/dev/ttyUSB1</span><span class="rvts20">). This port is required in order for INDI to communicate with your mount. Using the assistant, you can assign a permanent ID to your device (e.g.&nbsp;</span><span class="rvts65">/dev/mount</span><span class="rvts20">). Therefore, every time you plug in your device, it is always assigned a designated port that INDI uses to communicate with the device.</span></p>
+<p class="rvps10"><span class="rvts20">Serial Port Assistant ensures that your serial device designations are saved permanently. When you plug your mount, it is assigned a random port (e.g.&nbsp;</span><span class="rvts69">COM2</span><span class="rvts20">&nbsp;or&nbsp;</span><span class="rvts69">/dev/ttyUSB1</span><span class="rvts20">). This port is required in order for INDI to communicate with your mount. Using the assistant, you can assign a permanent ID to your device (e.g.&nbsp;</span><span class="rvts69">/dev/mount</span><span class="rvts20">). Therefore, every time you plug in your device, it is always assigned a designated port that INDI uses to communicate with the device.</span></p>
 <p class="rvps10"><span class="rvts20">To use the Serial Port Assistant, go to StellarMate Web Manager either from StellarMate App or from any browser and click on the Serial Port Assistant Icon at the bottom right. Simply follow the instructions in the step-by-step guided wizard to assign permanent designations to your Serial-To-USB devices.</span></p>
 <p class="rvps19"><span class="rvts20"><iframe width="560" height="315" src="https://www.youtube.com/embed/VQHUaO5Hmi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></span></p>
 <p class="rvps19"><span class="rvts20">Video Tutorial: </span><a class="rvts23" href="https://www.youtube.com/watch?v=VQHUaO5Hmi0">https://www.youtube.com/watch?v=VQHUaO5Hmi0</a></p>
@@ -214,6 +214,7 @@
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour">Easily create Qt Help files</a></p>
 
             </div>
             
@@ -269,7 +270,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

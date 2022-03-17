@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="TheKStarsHandbook.html" title="The KStars Handbook" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="FITSViewerTool.html" title="FITS Viewer Tool" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="QuestionsandAnswers.html" title="Questions and Answers" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="TheKStarsHandbook.html" title="The KStars Handbook" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="FITSViewerTool.html" title="FITS Viewer Tool" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="QuestionsandAnswers.html" title="Questions and Answers" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,14 +185,13 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps10"><span class="rvts6">You can use&nbsp;KStars&nbsp;to generate an image of the sky without actually launching the&nbsp;GUI&nbsp;portion of the program. To use this feature, start&nbsp;KStars&nbsp;from a command prompt using arguments to specify the filename for the image, as well as the desired image dimensions:</span></p>
-<p class="rvps10"><span class="rvts25">kstars</span><span class="rvts29">&nbsp;--dump [--filename&nbsp;</span><span class="rvts78">kstars.png</span><span class="rvts29">] [--height&nbsp;</span><span class="rvts78">640</span><span class="rvts29">] [--width&nbsp;</span><span class="rvts78">480</span><span class="rvts29">] [--script&nbsp;</span><span class="rvts78">myscript.kstars</span><span class="rvts29">] [--date&nbsp;</span><span class="rvts78">"4 July 1976 12:30:00"</span><span class="rvts29">]</span></p>
+<p class="rvps10"><span class="rvts25">kstars</span><span class="rvts29">&nbsp;--dump [--filename&nbsp;</span><span class="rvts82">kstars.png</span><span class="rvts29">] [--height&nbsp;</span><span class="rvts82">640</span><span class="rvts29">] [--width&nbsp;</span><span class="rvts82">480</span><span class="rvts29">] [--script&nbsp;</span><span class="rvts82">myscript.kstars</span><span class="rvts29">] [--date&nbsp;</span><span class="rvts82">"4 July 1976 12:30:00"</span><span class="rvts29">]</span></p>
 <p class="rvps10"><span class="rvts6">If no filename is specified, it generates a file named&nbsp;</span><span class="rvts29">kstars.png</span><span class="rvts6">. It will attempt to generate an image that matches the extension of your filename. The following extensions are recognized:&nbsp;“png”,&nbsp;“jpg”,&nbsp;“jpeg”,&nbsp;“gif”,&nbsp;“pnm”, and&nbsp;“bmp”. If the filename extension is not recognized, it defaults to the&nbsp;PNG&nbsp;image type.</span></p>
 <p class="rvps10"><span class="rvts6">Likewise, if the image width and height are not specified, they default to 640 and 480, respectively.</span></p>
 <p class="rvps10"><span class="rvts6">By default,&nbsp;KStars&nbsp;will read in the options values stored in your&nbsp;</span><span class="rvts29">$KDEHOME/share/config/kstarsrc</span><span class="rvts6">&nbsp;file to determine where the image will be centered, and how it is rendered. This means you need to run&nbsp;KStars&nbsp;in normal GUI mode, and exit the program when it is set up with the desired options for the generated images. This is not very flexible, so we also provide the ability to execute a&nbsp;KStars&nbsp;D-Bus&nbsp;script to set the scene before generating the image. The filename you specify as the script argument should be a valid&nbsp;KStars&nbsp;D-Bus&nbsp;script, such as one created with the&nbsp;</span><a class="rvts23" href="TheScriptBuilderTool.html">Script Builder Tool</a><span class="rvts6">. The script can be used to set where the image is pointing, set the geographic location, set the time and date, change the Zoom level, and adjust other view options. Some of the&nbsp;D-Bus&nbsp;functions make no sense in non-GUI mode (such as&nbsp;</span><span class="rvts29">waitForKey()</span><span class="rvts6">); if these functions are encountered while parsing the script, they are simply ignored.</span></p>
-<p class="rvps10"><span class="rvts6">By default,&nbsp;KStars&nbsp;will use the system CPU time and date for generating the image. Alternatively, you may specify a time and date with the&nbsp;“--date”&nbsp;argument. You can also use this argument for specifying the startup date in normal GUI mode.</span></p>
-<p></p>
+<p class="rvps10"><span class="rvts6">By default,&nbsp;KStars&nbsp;will use the system CPU time and date for generating the image. Alternatively, you may specify a time and date with the&nbsp;“--date”&nbsp;argument. You can also use this argument for specifying the startup date in normal GUI mode.</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com">Free EPub and documentation generator</a></p>
 
             </div>
             
@@ -247,7 +247,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

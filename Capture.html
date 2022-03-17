@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li><li><a href="Ekos2.html">Ekos</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Scheduler.html" title="Scheduler" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Focus.html" title="Focus" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Scheduler.html" title="Scheduler" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Focus.html" title="Focus" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <h4 class="rvps36"><img alt="" style="padding : 1px;" src="lib/ekos_capture.png"></h4>
 <p class="rvps10"><span class="rvts20">The CCD Module is your primary image and video acquisition module in Ekos. It enables you to capture single (Preview), multiple images (Sequence Queue), or record&nbsp;</span><a class="rvts23" href="https://sites.google.com/site/astropipp/ser-player">SER</a><span class="rvts20">&nbsp;videos along with a selection of filter wheel and rotator, if available.</span></p>
 <h5 class="rvps37"><a name="CAPTURE-CCD-FILTER-WHEEL"></a><span class="rvts0"><span class="rvts22">CCD &amp; Filter Wheel Group</span></span></h5>
@@ -265,11 +265,11 @@
  <li class="rvps10"><span class="rvts20">Directory: Local directory to save the sequence images to.</span></li>
  <li class="rvps10"><span class="rvts20">Save: Select how captured images are uploaded:</span></li>
 </ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
- <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-  <li value="1" style="margin-left: 0px" class="rvps33"><span class="rvts20">Locally: Captured images are saved locally on disk in the directory specified in the Directory field.</span></li>
-  <li value="2" style="margin-left: 0px" class="rvps33"><span class="rvts20">Remotely: When connecting to a remote device, select this option to save images on the remote device only. No images are uploaded to Ekos.</span></li>
-  <li value="3" style="margin-left: 0px" class="rvps33"><span class="rvts20">Both: Captured images are saved on both the remote computer and on the local disk as well. When selecting Remotely or Both, you must specify the remote directory where the remote images are saved to. By default, all captured images are uploaded to Ekos.</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Locally: Captured images are saved locally on disk in the directory specified in the Directory field.</span></li>
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Remotely: When connecting to a remote device, select this option to save images on the remote device only. No images are uploaded to Ekos.</span></li>
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Both: Captured images are saved on both the remote computer and on the local disk as well. When selecting Remotely or Both, you must specify the remote directory where the remote images are saved to. By default, all captured images are uploaded to Ekos.</span></li>
  </ol>
 </ol>
 <p class="rvps33"><span class="rvts20">When selecting&nbsp;Remotely&nbsp;or&nbsp;Both, you must specify the remote directory where the remote images are saved to. By default, all captured images are uploaded to Ekos.</span></p>
@@ -399,14 +399,14 @@
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/filter_settings.png"></p>
 <p class="rvps10"><span class="rvts20">Click the filter icon&nbsp;</span><img alt="" style="padding : 1px;" src="lib/view-filter.png"><span class="rvts20">&nbsp;next to the filter wheel selection box to open the filter settings dialog. If you are using filters that are not parafocal with each other and require a specific amount of focus offsets in order to get them into proper then set all the relative focus offsets in the dialog.</span></p>
 <p class="rvps10"><span class="rvts20">Configure settings for each filter individually:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
- <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
-  <li value="1" style="margin-left: 0px" class="rvps33"><span class="rvts20">Filter: Filter Name</span></li>
-  <li value="2" style="margin-left: 0px" class="rvps33"><span class="rvts20">Exposure: Set exposure time used when performing focus under this filter. By default, it is set to 1 second.</span></li>
-  <li value="3" style="margin-left: 0px" class="rvps33"><span class="rvts20">Offset: Set relative offsets. Ekos will command a focus offset change if there is a difference between the current and target filter offsets. For example, given the values in the example image, if the current filter is set to&nbsp;</span><span class="rvts21">Red</span><span class="rvts20">&nbsp;and next filter is&nbsp;</span><span class="rvts21">Green</span><span class="rvts20">, then Ekos shall command the focuser to Focus In by +300 ticks. Relative positive focus offsets denote Focus Out while negative values denote Focus In.</span></li>
-  <li value="4" style="margin-left: 0px" class="rvps33"><span class="rvts20">Auto Focus: Check this option to initial AutoFocus process whenever the filter is changed to this filter.</span></li>
-  <li value="5" style="margin-left: 0px" class="rvps33"><span class="rvts20">Lock Filter: Set which filter should be set and&nbsp;</span><span class="rvts21">locked</span><span class="rvts20">&nbsp;when performing autofocus for this filter.</span></li>
-  <li value="6" style="margin-left: 0px" class="rvps33"><span class="rvts20">Flat Focus Position: this value is set automatically once you finish autofocus for some filter. If the sequence queue contains flat images, then Ekos would first move the focuser to the filter absolute focus position before capturing the flat images. This to ensure both your light and flat frames are exactly captured using the same per-filter offset.</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Filter: Filter Name</span></li>
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Exposure: Set exposure time used when performing focus under this filter. By default, it is set to 1 second.</span></li>
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Offset: Set relative offsets. Ekos will command a focus offset change if there is a difference between the current and target filter offsets. For example, given the values in the example image, if the current filter is set to&nbsp;</span><span class="rvts21">Red</span><span class="rvts20">&nbsp;and next filter is&nbsp;</span><span class="rvts21">Green</span><span class="rvts20">, then Ekos shall command the focuser to Focus In by +300 ticks. Relative positive focus offsets denote Focus Out while negative values denote Focus In.</span></li>
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Auto Focus: Check this option to initial AutoFocus process whenever the filter is changed to this filter.</span></li>
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Lock Filter: Set which filter should be set and&nbsp;</span><span class="rvts21">locked</span><span class="rvts20">&nbsp;when performing autofocus for this filter.</span></li>
+  <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Flat Focus Position: this value is set automatically once you finish autofocus for some filter. If the sequence queue contains flat images, then Ekos would first move the focuser to the filter absolute focus position before capturing the flat images. This to ensure both your light and flat frames are exactly captured using the same per-filter offset.</span></li>
  </ol>
 </ol>
 <p class="rvps10"><span class="rvts20">Let's take an example. Suppose the capture sequence is running and the current filter is&nbsp;Green, so the relative offset is already set to +300. The next image in the sequence uses Hydrogen Alpha (H_Alpha) so before Ekos captures the next frame, the following actions take place:</span></p>
@@ -433,8 +433,8 @@
 <h5 class="rvps37"><a name="CAPTURE-CALIBRATION-FRAMES"></a><span class="rvts0"><span class="rvts22">Calibration Frames</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/calibration_settings.png"></p>
 <p class="rvps10"><span class="rvts20">For Flat Field frames, you can set calibration options in order to automate the process. The calibration options are designed to facilitate automatic unattended flat field frame capture. It can also be used for dark and bias frames if desired. If your camera is equipped with a mechanical shutter, then it is not necessary to set calibration settings unless you want to close the dust cover to ensure no light at all passes through the optical tube. For flat fields, you must specify the flat field light source, and then specify the duration of the flat field frame. The duration can be either manual or based on ADU calculations.</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
- <li value="1" class="rvps10"><span class="rvts20">Flat Field Source</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps10"><span class="rvts20">Flat Field Source</span></li>
 </ol>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
@@ -445,7 +445,7 @@
   <li class="rvps10"><span class="rvts20">Dawn/Dusk: Currently unsupported.</span></li>
  </ul>
 </ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <li value="2" class="rvps10"><span class="rvts20">Flat Field Duration</span></li>
 </ol>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -457,8 +457,8 @@
 <p class="rvps10"><span class="rvts20">Before the calibration capture process is started, you can request Ekos to park the mount and/or dome. Depending on your flat source selection above, Ekos will use the appropriate flat light source before starting flat frames capture. If ADU is specified, Ekos begins by capturing a couple of preview images to establish the curve required to achieve the desired ADU count. Once an appropriate value is calculated, another capture is taken and ADU is recounted until a satisfactory value is achieved.</span></p>
 <h5 class="rvps37"><a name="CAPTURE-VIDEO-TUTORIALS"></a><span class="rvts0"><span class="rvts22">Video Tutorials</span></span></h5>
 <p class="rvps10"><a class="rvts23" href="https://www.youtube.com/watch?v=Gz07j7VPnpc">Capture</a></p>
-<p class="rvps10"><a class="rvts23" href="https://www.youtube.com/watch?v=yfz9_UJIvLY">Filter Wheels</a></p>
-<p></p>
+<p class="rvps10"><a class="rvts23" href="https://www.youtube.com/watch?v=yfz9_UJIvLY">Filter Wheels</a><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/create-epub-ebooks">Full-featured EBook editor</a></p>
 
             </div>
             
@@ -514,7 +514,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

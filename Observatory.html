@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li><li><a href="Ekos2.html">Ekos</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Mount.html" title="Mount" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Analyze.html" title="Analyze" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Mount.html" title="Mount" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Analyze.html" title="Analyze" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,9 +185,8 @@
 
             <div class="main-content">
                 
-<p></p>
 <h3 class="rvps22"><a name="mytoc0"></a><span class="rvts0"><span class="rvts22">Introduction</span></span></h3>
-<p class="rvps2"><span class="rvts20">The observatory module is used to manage the dome and weather-triggered shutdown procedure. It has weather data directly displayed in the module.&nbsp;Along with the configurable thresholds for&nbsp;</span><span class="rvts76">Warning</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts77">Alert</span><span class="rvts20">&nbsp;states, you can rest easily knowing that KStars can take the appropriate actions to protect your observatory from adverse weather conditions. The observatory module also includes a dedicated weather widget with love plotting for each parameter.</span></p>
+<p class="rvps2"><span class="rvts20">The observatory module is used to manage the dome and weather-triggered shutdown procedure. It has weather data directly displayed in the module.&nbsp;Along with the configurable thresholds for&nbsp;</span><span class="rvts80">Warning</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts81">Alert</span><span class="rvts20">&nbsp;states, you can rest easily knowing that KStars can take the appropriate actions to protect your observatory from adverse weather conditions. The observatory module also includes a dedicated weather widget with love plotting for each parameter.</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/observatory.png"></p>
 <h3 class="rvps22"><a name="mytoc1"></a><span class="rvts0"><span class="rvts22"><br/></span></span></h3>
@@ -262,10 +262,10 @@
   <li class="rvps2"><span class="rvts22">Park Dome</span><span class="rvts20">:&nbsp;Parks the dome whenever you get a warning.</span></li>
   <li class="rvps2"><span class="rvts22">Close</span><span class="rvts20">&nbsp;</span><span class="rvts22">Shutter</span><span class="rvts20">: Closes the shutter whenever you get a warning.</span></li>
   <li class="rvps2"><span class="rvts22">Status</span><span class="rvts20">: Shows the status of the warning.</span></li>
-  <li class="rvps2"><span class="rvts22">Delay (sec)</span><span class="rvts20">: Delays the warning after n amount of seconds.</span></li>
+  <li class="rvps2"><span class="rvts22">Delay (sec)</span><span class="rvts20">: Delays the warning after n amount of seconds.</span><span class="rvts6"></span></li>
  </ul>
 </ul>
-<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour">Full-featured Help generator</a></p>
 
             </div>
             
@@ -321,7 +321,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

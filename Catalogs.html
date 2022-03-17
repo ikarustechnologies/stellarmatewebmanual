@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="ConfiguringKStars.html">Configuring KStars</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="ConfiguringKStars.html" title="Configuring KStars" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TheConfigureKStarsWindow.html" title="The Configure KStars Window" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SolarSystem.html" title="Solar System" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConfiguringKStars.html" title="Configuring KStars" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TheConfigureKStarsWindow.html" title="The Configure KStars Window" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SolarSystem.html" title="Solar System" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/viewops.png"></p>
 <p class="rvps10"><a name="IDM2196"></a><span class="rvts20">In the&nbsp;Catalogs&nbsp;page, you can configure which object catalogs are displayed by&nbsp;KStars, as well as how much information you would like to be included on the Sky Map. By default,&nbsp;KStars&nbsp;includes ~300,000 named and unnamed stars up to magnitude 8. For Deep Sky Objects, the included catalogs are New General Catalog (“NGC”), Index Catalog (“IC”), and Messier Catalog.</span></p>
@@ -483,9 +483,9 @@
 <p class="rvps10"><span class="rvts20">You can remove custom catalogs by highlighting its checkbox in the&nbsp;Catalogs&nbsp;window, and pressing the&nbsp;Remove Catalog...&nbsp;button (this button is active only if a custom catalog is highlighted in the list of checkboxes). Note that it can not be used for removing&nbsp;KStars&nbsp;default catalogs.</span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/delete_catalog.png"></p>
 <p class="rvps10"><span class="rvts20">For radio sources catalogs, you must include the flux frequency and units. For example:</span></p>
-<p class="rvps2"><span class="rvts65"># Flux Frequency: 1420 Mhz</span><br/><span class="rvts65"># Flux Unit: mJy</span></p>
+<p class="rvps2"><span class="rvts69"># Flux Frequency: 1420 Mhz</span><br/><span class="rvts69"># Flux Unit: mJy</span></p>
 <p class="rvps10"><span class="rvts20">The following is a simple catalog file:</span></p>
-<p class="rvps2"><span class="rvts65"># Name: my_catalog</span><br/><span class="rvts65"># Prefix: et_radio</span><br/><span class="rvts65"># Color: #00ff00</span><br/><span class="rvts65"># Epoch: 2000</span><br/><span class="rvts65"># Flux Frequency: 1420 Mhz</span><br/><span class="rvts65"># Flux Unit: mJy</span><br/><span class="rvts65"># ID &nbsp;RA &nbsp;Dc &nbsp;Tp &nbsp;Mj &nbsp;Mn &nbsp;PA &nbsp;Nm &nbsp;Flux</span><br/><span class="rvts65">J0001 12:31:23.1 +11:29:34 18 180.60 360.30 &nbsp; 45 &nbsp;my_radio_source &nbsp; 70</span></p>
+<p class="rvps2"><span class="rvts69"># Name: my_catalog</span><br/><span class="rvts69"># Prefix: et_radio</span><br/><span class="rvts69"># Color: #00ff00</span><br/><span class="rvts69"># Epoch: 2000</span><br/><span class="rvts69"># Flux Frequency: 1420 Mhz</span><br/><span class="rvts69"># Flux Unit: mJy</span><br/><span class="rvts69"># ID &nbsp;RA &nbsp;Dc &nbsp;Tp &nbsp;Mj &nbsp;Mn &nbsp;PA &nbsp;Nm &nbsp;Flux</span><br/><span class="rvts69">J0001 12:31:23.1 +11:29:34 18 180.60 360.30 &nbsp; 45 &nbsp;my_radio_source &nbsp; 70</span></p>
 <p class="rvps10"><span class="rvts20">Using the&nbsp;Catalogs&nbsp;window, you can define faint limits for sky objects for zoomed in and zoomed out states of the rendering. When the&nbsp;Show objects of unknown magnitude&nbsp;item is enabled, objects whose magnitudes are unknown, or not available to&nbsp;KStars, are drawn irrespective of the faint limits set.</span></p>
 <p class="rvps10"><span class="rvts20">The following is a brief tutorial on adding new catalogues to&nbsp;KStars. To import a new catalog, download a raw catalog data file where the data columns are space delimited. Any lines starting with # shall be ignored. For this example, we shall use the&nbsp;“Lynds Catalog of Dark Nebulae”.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -542,9 +542,9 @@
   <li style="margin-left: 0px" class="rvps33"><span class="rvts20">Declination</span></li>
  </ul>
 </ul>
-<p class="rvps10"><span class="rvts20">The raw&nbsp;“Dark Nebulae by Lynds”&nbsp;contains only three usable fields for&nbsp;KStars: Right Ascension, Declination and Area (square degrees). Therefore, in order to properly import the catalog into&nbsp;KStars, the ID and Object Type fields need to be added. You can insert these values manually using your favorite text editor. However, it is recommended to use any spreadsheet application to import the raw data file and add the necessary columns. This is especially convenient for large data sets. Since the original raw data contains an area field which is not supported by&nbsp;KStars, we need to approximate it to a usable value which is the Major Axis. Therefore, we use the following formula in the spreadsheet to convert area to major axis in arcminutes:&nbsp;</span><span class="rvts65">Major Axis = sqrt(Area) * 60</span></p>
+<p class="rvps10"><span class="rvts20">The raw&nbsp;“Dark Nebulae by Lynds”&nbsp;contains only three usable fields for&nbsp;KStars: Right Ascension, Declination and Area (square degrees). Therefore, in order to properly import the catalog into&nbsp;KStars, the ID and Object Type fields need to be added. You can insert these values manually using your favorite text editor. However, it is recommended to use any spreadsheet application to import the raw data file and add the necessary columns. This is especially convenient for large data sets. Since the original raw data contains an area field which is not supported by&nbsp;KStars, we need to approximate it to a usable value which is the Major Axis. Therefore, we use the following formula in the spreadsheet to convert area to major axis in arcminutes:&nbsp;</span><span class="rvts69">Major Axis = sqrt(Area) * 60</span></p>
 <p class="rvps10"><span class="rvts20">After importing the raw data file into&nbsp;KStars&nbsp;and selecting the appropriate columns,&nbsp;KStars&nbsp;shall generate the final catalog file suitable for loading directly into&nbsp;KStars. For example, this is a small subset of the content (header + first five objects) of the&nbsp;“Dark Nebulae by Lynds”&nbsp;catalog which was created by&nbsp;KStars&nbsp;after importing the raw data file which only contains the data columns:</span></p>
-<p class="rvps2"><span class="rvts65"># Delimiter: &nbsp;</span><br/><span class="rvts65"># Name: LyndsCatalog</span><br/><span class="rvts65"># Prefix: Lynds</span><br/><span class="rvts65"># Color: #ff7600</span><br/><span class="rvts65"># Epoch: 2000</span><br/><span class="rvts65"># ID &nbsp;RA &nbsp;Dc &nbsp;Mj &nbsp;Tp &nbsp;</span><br/><span class="rvts65">1 16:26:0 -16:0:0.1 13.943 5</span><br/><span class="rvts65">2 18:4:0 -31:30:0.1 66.813 5</span><br/><span class="rvts65">3 18:0:0 -31:0:0.1 141.986 5</span><br/><span class="rvts65">4 16:59:5 -22:8:0.1 3.795 5</span><br/><span class="rvts65">5 17:13:2 -24:22:0.2 6.573 5</span></p>
+<p class="rvps2"><span class="rvts69"># Delimiter: &nbsp;</span><br/><span class="rvts69"># Name: LyndsCatalog</span><br/><span class="rvts69"># Prefix: Lynds</span><br/><span class="rvts69"># Color: #ff7600</span><br/><span class="rvts69"># Epoch: 2000</span><br/><span class="rvts69"># ID &nbsp;RA &nbsp;Dc &nbsp;Mj &nbsp;Tp &nbsp;</span><br/><span class="rvts69">1 16:26:0 -16:0:0.1 13.943 5</span><br/><span class="rvts69">2 18:4:0 -31:30:0.1 66.813 5</span><br/><span class="rvts69">3 18:0:0 -31:0:0.1 141.986 5</span><br/><span class="rvts69">4 16:59:5 -22:8:0.1 3.795 5</span><br/><span class="rvts69">5 17:13:2 -24:22:0.2 6.573 5</span></p>
 <p class="rvps10"><span class="rvts20">As seen above, each column was assigned a&nbsp;KStars&nbsp;designated header such as the ID, Right Ascension, Declination, Major axis and Object Type fields. Note that the Catalog Prefix (“Lynds”) and the ID field are used together for identifying objects in the Sky Map (i.e.&nbsp;objects from this catalog will have names like: Lynds 1, Lynds 2, Lynds 617 up to the last object, Lynds 1791).</span></p>
 <p class="rvps32"><span class="rvts20">&nbsp;</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -581,8 +581,8 @@
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">After you successfully imported your catalog, it will be displayed in the catalogs list. You can choose to be displayed or not, by pressing on its checkbox.</span></li>
 </ul>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/added_ldn.png"></p>
-<p></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/added_ldn.png"><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/iphone-website-generation">iPhone web sites made easy</a></p>
 
             </div>
             
@@ -638,7 +638,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

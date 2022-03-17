@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="ConnectionMethods.html">Connection Methods</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="ConnectionMethods.html" title="Connection Methods" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="VNC.html" title="VNC" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DirectEthernet.html" title="Direct Ethernet" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConnectionMethods.html" title="Connection Methods" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="VNC.html" title="VNC" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DirectEthernet.html" title="Direct Ethernet" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps10"><span class="rvts20">When you use&nbsp;</span><a class="rvts23" href="https://stellarmate.com/downloads/category/2-ekos.html">Ekos</a><span class="rvts20">&nbsp;on your PC/Mac, set the profile to Remote and set the Address to&nbsp;</span><span class="rvts22">stellarmate.local</span><span class="rvts20">.</span></p>
 <p class="rvps10"><span class="rvts20">Make sure&nbsp;INDI Web Manager&nbsp;checkbox is checked.</span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_profile.png"></p>
@@ -194,9 +194,9 @@
 <p class="rvps3"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_wizard_select.png"></p>
 <p class="rvps10"><span class="rvts20">In here you need to select if your equipment is attached to StellarMate or elsewhere:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
- <li value="1" class="rvps10"><span class="rvts20">If you are running Ekos&nbsp;</span><span class="rvts22">within</span><span class="rvts20">&nbsp;StellarMate OS, then select&nbsp;Equipment is attached to this device.</span></li>
- <li value="2" class="rvps10"><span class="rvts20">If you are running Ekos on a PC/Mac, then select&nbsp;Equipment is attached to a remote device.</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps10"><span class="rvts20">If you are running Ekos&nbsp;</span><span class="rvts22">within</span><span class="rvts20">&nbsp;StellarMate OS, then select&nbsp;Equipment is attached to this device.</span></li>
+ <li class="rvps10"><span class="rvts20">If you are running Ekos on a PC/Mac, then select&nbsp;Equipment is attached to a remote device.</span></li>
 </ol>
 <p class="rvps19"><img alt="" style="padding : 1px;" src="lib/profile_wizard_device.png"></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
@@ -208,8 +208,8 @@
 <p class="rvps10"><span class="rvts20">Next, select your equipment profile name and any additional services you want to run then proceed to create the profile.</span></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_start.png"></p>
-<p class="rvps10"><span class="rvts20">To connect to your equipment and start using Ekos, simply click the&nbsp;Start&nbsp;button as illustrated above.</span></p>
-<p></p>
+<p class="rvps10"><span class="rvts20">To connect to your equipment and start using Ekos, simply click the&nbsp;Start&nbsp;button as illustrated above.</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com">Free EBook and documentation generator</a></p>
 
             </div>
             
@@ -265,7 +265,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li><li><a href="Ekos2.html">Ekos</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Guide1.html" title="Guide" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Mount.html" title="Mount" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Guide1.html" title="Guide" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Mount.html" title="Mount" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <h5 class="rvps37"><a name="EKOS-ALIGN-AUTOMATIC-DOWNLOAD"></a><span class="rvts0"><span class="rvts22">Introduction</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_astrometry.png"></p>
 <p class="rvps10"><span class="rvts20">Ekos Alignment Module enables highly accurate GOTOs to within sub-arcseconds accuracy and can measure and correct polar alignment errors. This is possible thanks to the astrometry.net solver. Ekos begins by capturing an image of a star field, feeding that image to&nbsp;</span><a class="rvts23" href="http://www.astrometry.net">astrometry.net</a><span class="rvts20">&nbsp;solver, and getting the central coordinates (RA, DEC) of the image. The solver essentially performs a pattern recognition against a catalog of millions of stars. Once the coordinates are determined, the true pointing of the telescope is known.</span></p>
@@ -195,44 +195,44 @@
  <li class="rvps10"><span class="rvts20">Legacy Polar Alignment Tool: If Polaris is not visible, this tool can be used to measure and correct polar alignment errors. It captures a couple of images near the meridian and east/west of the meridian. This will enable the user to adjust the mount until the misalignment is minimized.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">At a minimum, you need a CCD/Webcam and a telescope that supports Slew &amp; Sync commands. Most popular commercial telescope nowadays support such commands.</span></p>
-<p class="rvps2"><span class="rvts6">For the Ekos Alignment Module to work, you have an option of either utilizing the built-in&nbsp;</span><span class="rvts54">StellarSolver</span><span class="rvts6">, or&nbsp;</span><span class="rvts54">remote</span><span class="rvts6">&nbsp;solver</span></p>
+<p class="rvps2"><span class="rvts6">For the Ekos Alignment Module to work, you have an option of either utilizing the built-in&nbsp;</span><span class="rvts58">StellarSolver</span><span class="rvts6">, or&nbsp;</span><span class="rvts58">remote</span><span class="rvts6">&nbsp;solver</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps2"><span class="rvts24">StellarSolver</span><span class="rvts6">: The default solver in Ekos. StellarSolver support native plate-solving based on astrometry.net. Furthermore, it supports online (internet-based) astrometry.net solving,&nbsp;</span><a class="rvts23" href="https://www.hnsky.org/astap.htm">ASTAP</a><span class="rvts6">, and local offline astrometry.net solver (Available for MacOS &amp; Linux). The built-in solver is fast and supported across all platforms.</span></li>
  <li class="rvps2"><span class="rvts24">Remote Solver</span><span class="rvts6">: The remote solver is an offline solver the resides on a different machine (for example, you can use Astrometry solver on StellarMate). Captured images are solved on the remote machine.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
-<p class="rvps2"><span class="rvts75">StellarSolver Integration</span></p>
-<p class="rvps2"><span class="rvts75"><br/></span></p>
+<p class="rvps2"><span class="rvts79">StellarSolver Integration</span></p>
+<p class="rvps2"><span class="rvts79"><br/></span></p>
 <p class="rvps3"><img width="571" height="562" alt="" style="padding : 1px;" src="lib/ekos_align.png"></p>
-<p class="rvps2"><span class="rvts74"><br/></span></p>
-<p class="rvps2"><span class="rvts38">StellarSolver is an astrometric plate solving library that has been integrated into Ekos in order to provide accurate and efficient offline plate solving.</span></p>
-<p class="rvps2"><span class="rvts38"><br/></span></p>
-<p class="rvps2"><span class="rvts38">For plate solving there are several parts in StellarSolver that are important:</span></p>
-<p class="rvps2"><span class="rvts38"><br/></span></p>
-<p class="rvps2"><span class="rvts75">Source Extraction</span></p>
-<p class="rvps2"><span class="rvts38">To find the stars in your image in order to solve. In StellarSolver, there are options for 3 different methods:</span></p>
-<p class="rvps2"><span class="rvts38"><br/></span></p>
+<p class="rvps2"><span class="rvts78"><br/></span></p>
+<p class="rvps2"><span class="rvts39">StellarSolver is an astrometric plate solving library that has been integrated into Ekos in order to provide accurate and efficient offline plate solving.</span></p>
+<p class="rvps2"><span class="rvts39"><br/></span></p>
+<p class="rvps2"><span class="rvts39">For plate solving there are several parts in StellarSolver that are important:</span></p>
+<p class="rvps2"><span class="rvts39"><br/></span></p>
+<p class="rvps2"><span class="rvts79">Source Extraction</span></p>
+<p class="rvps2"><span class="rvts39">To find the stars in your image in order to solve. In StellarSolver, there are options for 3 different methods:</span></p>
+<p class="rvps2"><span class="rvts39"><br/></span></p>
 <ul style="text-indent: 5px; padding: 0; margin: 0 0 0 47px; list-style-position: outside; list-style-type: disc;">
- <li style="text-indent: 5px" class="rvps2"><span class="rvts37">Internal SEP</span><span class="rvts38">: this requires no external programs, it is the same SEP star extraction algorithm that has existed in KStars for Focus and Guiding for awhile now. It is essentially a library version of the method below (though there are some differences which is why they give slightly different results). It is entirely internal to the program, so there are no files saved to disk for the extraction which is great for Raspberry Pis etc.&nbsp;</span></li>
- <li style="text-indent: 5px" class="rvps2"><span class="rvts37">External Sextractor</span><span class="rvts38">: this does require an external program, SExtractor, or the Source Extractor. This is their official standalone program. The drawback is you would need to have sextractor installed and it does save a bunch of files to disk in order to do its operations.&nbsp;</span></li>
- <li style="text-indent: 5px" class="rvps2"><span class="rvts37">BuiltIn Sextractor</span><span class="rvts38">: This uses whatever method of source extraction the solver uses by default. StellarSolver uses SEP, just like the Internal SEP setting. Local astrometry.net uses its own source extraction method which uses a bunch of external resources including python, netpbm and other packages. And finally ASTAP has its own internal source extractor which is pretty good.&nbsp;</span></li>
+ <li style="text-indent: 5px" class="rvps2"><span class="rvts38">Internal SEP</span><span class="rvts39">: this requires no external programs, it is the same SEP star extraction algorithm that has existed in KStars for Focus and Guiding for awhile now. It is essentially a library version of the method below (though there are some differences which is why they give slightly different results). It is entirely internal to the program, so there are no files saved to disk for the extraction which is great for Raspberry Pis etc.&nbsp;</span></li>
+ <li style="text-indent: 5px" class="rvps2"><span class="rvts38">External Sextractor</span><span class="rvts39">: this does require an external program, SExtractor, or the Source Extractor. This is their official standalone program. The drawback is you would need to have sextractor installed and it does save a bunch of files to disk in order to do its operations.&nbsp;</span></li>
+ <li style="text-indent: 5px" class="rvps2"><span class="rvts38">BuiltIn Sextractor</span><span class="rvts39">: This uses whatever method of source extraction the solver uses by default. StellarSolver uses SEP, just like the Internal SEP setting. Local astrometry.net uses its own source extraction method which uses a bunch of external resources including python, netpbm and other packages. And finally ASTAP has its own internal source extractor which is pretty good.&nbsp;</span></li>
 </ul>
-<p class="rvps2"><span class="rvts38"><br/></span></p>
+<p class="rvps2"><span class="rvts39"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Note</span><span class="rvts6">: Either Internal SEP or External Sextractor should be superior to the built in version of the programs. SExtractor is very good at extracting stars, and that greatly speeds up solving, but it require tuning up the options to perfect it for your optical train.</span></p>
-<p class="rvps2"><span class="rvts38"><br/></span></p>
-<p class="rvps2"><span class="rvts75">The Solver</span></p>
-<p class="rvps2"><span class="rvts38">The program that will be used to do the solving of the sources that were found. In StellarSolver, there are 4 options for that</span></p>
-<p class="rvps2"><span class="rvts38"><br/></span></p>
+<p class="rvps2"><span class="rvts39"><br/></span></p>
+<p class="rvps2"><span class="rvts79">The Solver</span></p>
+<p class="rvps2"><span class="rvts39">The program that will be used to do the solving of the sources that were found. In StellarSolver, there are 4 options for that</span></p>
+<p class="rvps2"><span class="rvts39"><br/></span></p>
 <ul style="text-indent: 5px; padding: 0; margin: 0 0 0 47px; list-style-position: outside; list-style-type: disc;">
- <li style="text-indent: 5px" class="rvps2"><span class="rvts37">StellarSolver</span><span class="rvts38">: </span><span class="rvts6">This option uses an internal library build of astrometry.net. It uses no external files like configuration files etc, and saves no files to disk (except 0KB solved and cancel files) which is great for Raspberry Pis. Since this library is entirely internal, no programs have to be installed beyond KStars itself, so if you are going to use this option, you don't need the astrometry.net package at all. This is going to make a world of difference for Windows users who cannot install astrometry.net unless they do it in a compatibility layer.</span></li>
- <li style="text-indent: 5px" class="rvps2"><span class="rvts37">Local Astrometry.net</span><span class="rvts38">: </span><span class="rvts6">This option uses the good old fashioned local astrometry.net installation many users have used with KStars for years. The only differences in Stellarsolver are that we no longer need the configuration files, we can do parallelization to make it MUCH faster, and we can use Internal SEP or External Sextractor to give it the sources to solve.</span></li>
- <li style="text-indent: 5px" class="rvps2"><span class="rvts37">Local ASTAP</span><span class="rvts38">: </span><span class="rvts6">ASTAP was available in KStars previously, but more options have been implemented for using it in StellarSolver as well as giving you the option to use Internal SEP or SExtractor with it. The options for ASTAP are now shared with astrometry so you can just set your options in the profile and it will work fine. ASTAP does NOT support parallelization.</span></li>
- <li style="text-indent: 5px" class="rvps2"><span class="rvts37">Online Astrometry.net</span><span class="rvts38">: </span><span class="rvts6">This option was previously available in KStars as well, but a bunch of work has been done on it to make it work better, to use Internal SEP or Sextractor if you like, to use the options in the profiles, and to provide clearer feedback to the user about what is going on. Technically, online Astrometry.net is already using parallelization on their server, so there was no need to implement parallelization for it.</span></li>
+ <li style="text-indent: 5px" class="rvps2"><span class="rvts38">StellarSolver</span><span class="rvts39">: </span><span class="rvts6">This option uses an internal library build of astrometry.net. It uses no external files like configuration files etc, and saves no files to disk (except 0KB solved and cancel files) which is great for Raspberry Pis. Since this library is entirely internal, no programs have to be installed beyond KStars itself, so if you are going to use this option, you don't need the astrometry.net package at all. This is going to make a world of difference for Windows users who cannot install astrometry.net unless they do it in a compatibility layer.</span></li>
+ <li style="text-indent: 5px" class="rvps2"><span class="rvts38">Local Astrometry.net</span><span class="rvts39">: </span><span class="rvts6">This option uses the good old fashioned local astrometry.net installation many users have used with KStars for years. The only differences in Stellarsolver are that we no longer need the configuration files, we can do parallelization to make it MUCH faster, and we can use Internal SEP or External Sextractor to give it the sources to solve.</span></li>
+ <li style="text-indent: 5px" class="rvps2"><span class="rvts38">Local ASTAP</span><span class="rvts39">: </span><span class="rvts6">ASTAP was available in KStars previously, but more options have been implemented for using it in StellarSolver as well as giving you the option to use Internal SEP or SExtractor with it. The options for ASTAP are now shared with astrometry so you can just set your options in the profile and it will work fine. ASTAP does NOT support parallelization.</span></li>
+ <li style="text-indent: 5px" class="rvps2"><span class="rvts38">Online Astrometry.net</span><span class="rvts39">: </span><span class="rvts6">This option was previously available in KStars as well, but a bunch of work has been done on it to make it work better, to use Internal SEP or Sextractor if you like, to use the options in the profiles, and to provide clearer feedback to the user about what is going on. Technically, online Astrometry.net is already using parallelization on their server, so there was no need to implement parallelization for it.</span></li>
 </ul>
-<p class="rvps2"><span class="rvts38"><br/></span></p>
-<p class="rvps2"><span class="rvts75">The Options Profiles</span><br/><span class="rvts38"></span><br/><span class="rvts38">Here are the profiles that have been developed:</span><br/><span class="rvts38"></span><br/><span class="rvts38">Profiles mainly for Solving:</span><br/><span class="rvts37">1-FastSolving: </span><span class="rvts38">solve images fast, but it does </span><span class="rvts37">not</span><span class="rvts38"> do parallel solves.</span><br/><span class="rvts37">2-ParallelSolving</span><span class="rvts38">: It can be faster than FastSolving, but does not work nearly as well as the next 2.</span><br/><span class="rvts37">3-ParalleLargeScale</span><span class="rvts38">: This profile is meant to solve DSLR scale images very fast. It assumes larger image scales to solve faster than the above.</span><br/><span class="rvts37">4-ParallelSmallScale</span><span class="rvts38">: The </span><span class="rvts37">DEFAULT</span><span class="rvts38"> for solving. This profile is meant to solve telescopic images quickly. Most users should probably use this one.</span><br/><span class="rvts38"></span><br/><span class="rvts38">Profiles mainly for Source Extraction in Focus and Guide</span><br/><span class="rvts37">5-AllStars</span><span class="rvts38">: This profile is meant to detect all the stars in an image.</span><br/><span class="rvts37">6-SmallSizedStars</span><span class="rvts38">: detects smaller stars and ignores bigger stars</span><br/><span class="rvts37">7-MidSizedStars</span><span class="rvts38">: detects medium sized stars</span><br/><span class="rvts37">8-BigSizedStars</span><span class="rvts38">: detects bigger stars and ignores smaller stars</span></p>
-<p class="rvps2"><span class="rvts38"><br/></span></p>
+<p class="rvps2"><span class="rvts39"><br/></span></p>
+<p class="rvps2"><span class="rvts79">The Options Profiles</span><br/><span class="rvts39"></span><br/><span class="rvts39">Here are the profiles that have been developed:</span><br/><span class="rvts39"></span><br/><span class="rvts39">Profiles mainly for Solving:</span><br/><span class="rvts38">1-FastSolving: </span><span class="rvts39">solve images fast, but it does </span><span class="rvts38">not</span><span class="rvts39"> do parallel solves.</span><br/><span class="rvts38">2-ParallelSolving</span><span class="rvts39">: It can be faster than FastSolving, but does not work nearly as well as the next 2.</span><br/><span class="rvts38">3-ParalleLargeScale</span><span class="rvts39">: This profile is meant to solve DSLR scale images very fast. It assumes larger image scales to solve faster than the above.</span><br/><span class="rvts38">4-ParallelSmallScale</span><span class="rvts39">: The </span><span class="rvts38">DEFAULT</span><span class="rvts39"> for solving. This profile is meant to solve telescopic images quickly. Most users should probably use this one.</span><br/><span class="rvts39"></span><br/><span class="rvts39">Profiles mainly for Source Extraction in Focus and Guide</span><br/><span class="rvts38">5-AllStars</span><span class="rvts39">: This profile is meant to detect all the stars in an image.</span><br/><span class="rvts38">6-SmallSizedStars</span><span class="rvts39">: detects smaller stars and ignores bigger stars</span><br/><span class="rvts38">7-MidSizedStars</span><span class="rvts39">: detects medium sized stars</span><br/><span class="rvts38">8-BigSizedStars</span><span class="rvts39">: detects bigger stars and ignores smaller stars</span></p>
+<p class="rvps2"><span class="rvts39"><br/></span></p>
 <p class="rvps3"><img width="808" height="562" alt="" style="padding : 1px;" src="lib/ekos_align_options.png"></p>
 <h5 class="rvps37"><a name="EKOS-ALIGN-HOW-TO-USE"></a><span class="rvts0"><span class="rvts22">ASTAP Integration</span></span></h5>
 <h5 class="rvps42"><img alt="" style="padding : 1px;" src="lib/ASTAP_solver.jpg"></h5>
@@ -250,20 +250,20 @@
 </ul>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <h3 class="rvps22"><a name="mytoc3"></a><span class="rvts0"><span class="rvts24">ANSVR Solver</span></span></h3>
-<p class="rvps2"><span class="rvts49"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Users on Windows OS can install&nbsp;</span><a class="rvts48" href="http://adgsoftware.com/ansvr/">ANSVR Local Astrometry.net solver</a><span class="rvts6">&nbsp;and use it as an a psudo online solver that happens to be running a server on their machine. It is not recommended given that StellarSolver is built-in and faster. It is left in the documentation for users who want to try it out.</span></p>
+<p class="rvps2"><span class="rvts54"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Users on Windows OS can install&nbsp;</span><a class="rvts53" href="http://adgsoftware.com/ansvr/">ANSVR Local Astrometry.net solver</a><span class="rvts6">&nbsp;and use it as an a psudo online solver that happens to be running a server on their machine. It is not recommended given that StellarSolver is built-in and faster. It is left in the documentation for users who want to try it out.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="562" height="309" alt="" style="padding : 1px;" src="lib/ekos_remote_astrometry.png"></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps2"><span class="rvts6">ANSVR&nbsp;</span><span class="rvts54">mimics</span><span class="rvts6">&nbsp;the astrometry.net online server services on your local computer; thus the internet not required for any astrometry queries. From the point of view of Ekos, it is still communicating with an&nbsp;</span><span class="rvts54">online</span><span class="rvts6">&nbsp;astrometry.net server.</span></p>
+<p class="rvps2"><span class="rvts6">ANSVR&nbsp;</span><span class="rvts58">mimics</span><span class="rvts6">&nbsp;the astrometry.net online server services on your local computer; thus the internet not required for any astrometry queries. From the point of view of Ekos, it is still communicating with an&nbsp;</span><span class="rvts58">online</span><span class="rvts6">&nbsp;astrometry.net server.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">After installing the ANSVR server and downloading the appropriate index files for your setup, make sure ANSVR server is up and running and then go to Ekos Alignment options where you can simply change the&nbsp;</span><span class="rvts54">API URL</span><span class="rvts6">&nbsp;to use the ANSVR server as illustrated below:</span></p>
+<p class="rvps2"><span class="rvts6">After installing the ANSVR server and downloading the appropriate index files for your setup, make sure ANSVR server is up and running and then go to Ekos Alignment options where you can simply change the&nbsp;</span><span class="rvts58">API URL</span><span class="rvts6">&nbsp;to use the ANSVR server as illustrated below:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/astrometry_windows_ansvr.png"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Do not forget to include the full URL including the http part. In Ekos Align module, you must set the solver type to&nbsp;</span><span class="rvts24">Online&nbsp;</span><span class="rvts6">so that it uses the local ANSVR server for all astrometry queries. Then you can use the align module as you would normally do.</span></p>
 <p class="rvps2"><span class="rvts6">&nbsp;</span></p>
-<p class="rvps2"><span class="rvts6">Remember as indicated above that StellarMate&nbsp;</span><span class="rvts54">already</span><span class="rvts6">&nbsp;includes astrometry.net. Therefore, if you would like to use StellarMate remotely to solve your images, simply change solver type to&nbsp;</span><span class="rvts24">Remote</span><span class="rvts6">&nbsp;and ensure that your equipment profile includes&nbsp;</span><span class="rvts24">Astrometry</span><span class="rvts6">&nbsp;driver which can be selected under the&nbsp;</span><span class="rvts54">Auxiliary</span><span class="rvts6">&nbsp;dropdown. This is applicable to all operating systems and not just Windows.</span></p>
+<p class="rvps2"><span class="rvts6">Remember as indicated above that StellarMate&nbsp;</span><span class="rvts58">already</span><span class="rvts6">&nbsp;includes astrometry.net. Therefore, if you would like to use StellarMate remotely to solve your images, simply change solver type to&nbsp;</span><span class="rvts24">Remote</span><span class="rvts6">&nbsp;and ensure that your equipment profile includes&nbsp;</span><span class="rvts24">Astrometry</span><span class="rvts6">&nbsp;driver which can be selected under the&nbsp;</span><span class="rvts58">Auxiliary</span><span class="rvts6">&nbsp;dropdown. This is applicable to all operating systems and not just Windows.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps5">
@@ -302,7 +302,7 @@
 </ul>
 <p class="rvps2"><span class="rvts20">You must download all the required files, and if you have plenty of hard drive space left, you can also download the recommended indexes. If an index file is installed, the checkmark shall be checked, otherwise check it to download the relevant index file. Please only download one file at a time, especially for larger files. Once you installed all the required files, you can begin using the offline astrometry.net solver immediately.</span></p>
 <h6 class="rvps38"><a name="EKOS-ALIGN-SOLVER-OPTIONS"></a><span class="rvts0"><span class="rvts22">Manual Download</span></span></h6>
-<p class="rvps10"><span class="rvts20">You need to&nbsp;</span><a class="rvts23" href="http://data.astrometry.net">download</a><span class="rvts20">&nbsp;and install the necessary index files suitable for your telescope+CCD field of view (FOV). You need to install index files covering 100% to 10% of your FOV. For example, if your FOV is 60 arcminutes, you need to install index files covering skymarks from 6 arcminutes (10%) to 60 arcminutes (100%). There are many online tools to calculate FOVs, such as&nbsp;</span><a class="rvts23" href="http://starizona.com/acb/ccd/calc_pixel.aspx">Starizona Field of View Calculator</a><a class="rvts45" href="http://starizona.com/acb/ccd/calc_pixel.aspx">.</a></p>
+<p class="rvps10"><span class="rvts20">You need to&nbsp;</span><a class="rvts23" href="http://data.astrometry.net">download</a><span class="rvts20">&nbsp;and install the necessary index files suitable for your telescope+CCD field of view (FOV). You need to install index files covering 100% to 10% of your FOV. For example, if your FOV is 60 arcminutes, you need to install index files covering skymarks from 6 arcminutes (10%) to 60 arcminutes (100%). There are many online tools to calculate FOVs, such as&nbsp;</span><a class="rvts23" href="http://starizona.com/acb/ccd/calc_pixel.aspx">Starizona Field of View Calculator</a><a class="rvts50" href="http://starizona.com/acb/ccd/calc_pixel.aspx">.</a></p>
 <p class="rvps10"><a name="EKOS-ALIGN-CAPTURE-AND-SOLVE"></a><span class="rvts22">Table&nbsp;16.3.&nbsp;Index Files</span></p>
 <div class="rvps2">
 <table border="1" cellpadding="1" cellspacing="2" style="border-spacing: 2px;">
@@ -490,7 +490,7 @@
    <p class="rvps2"><span class="rvts20">2.8 - 4.0</span></p>
   </td>
   <td valign="middle" style="border-style: inset; padding: 1px;">
-   <p class="rvps2"><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4201-1_0.45_all.deb">astrometry-data-4201-1</a><span class="rvts70">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4201-2_0.45_all.deb">astrometry-data-4201-2</a><span class="rvts70">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4201-3_0.45_all.deb">astrometry-data-4201-3</a><span class="rvts70">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4201-4_0.45_all.deb">astrometry-data-4201-4</a></p>
+   <p class="rvps2"><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4201-1_0.45_all.deb">astrometry-data-4201-1</a><span class="rvts74">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4201-2_0.45_all.deb">astrometry-data-4201-2</a><span class="rvts74">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4201-3_0.45_all.deb">astrometry-data-4201-3</a><span class="rvts74">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4201-4_0.45_all.deb">astrometry-data-4201-4</a></p>
   </td>
  </tr>
  <tr valign="top">
@@ -501,16 +501,16 @@
    <p class="rvps2"><span class="rvts20">2.0 - 2.8</span></p>
   </td>
   <td valign="middle" style="border-style: inset; padding: 1px;">
-   <p class="rvps2"><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4200-1_0.45_all.deb">astrometry-data-4200-1</a><span class="rvts70">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4200-2_0.45_all.deb">astrometry-data-4200-2</a><span class="rvts70">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4200-3_0.45_all.deb">astrometry-data-4200-3</a><span class="rvts70">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4200-4_0.45_all.deb">astrometry-data-4200-4</a></p>
+   <p class="rvps2"><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4200-1_0.45_all.deb">astrometry-data-4200-1</a><span class="rvts74">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4200-2_0.45_all.deb">astrometry-data-4200-2</a><span class="rvts74">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4200-3_0.45_all.deb">astrometry-data-4200-3</a><span class="rvts74">&nbsp;</span><a class="rvts23" href="http://data.astrometry.net/debian/astrometry-data-4200-4_0.45_all.deb">astrometry-data-4200-4</a></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps10"><span class="rvts20">The Debian packages are suitable for any Debian-based distribution (Ubuntu, Mint,&nbsp;etc.). If you downloaded the Debian Packages above for your FOV range, you can install them from your favorite package manager, or via the following command:</span></p>
-<p class="rvps10"><span class="rvts49">sudo dpkg -i astrometry-data-*.deb</span></p>
+<p class="rvps10"><span class="rvts54">sudo dpkg -i astrometry-data-*.deb</span></p>
 <p class="rvps10"><span class="rvts20">On the other hand, if you downloaded the FITS index files directly, copy them to&nbsp;/usr/share/astrometry&nbsp;directory.</span></p>
-<h3 class="rvps41"><span class="rvts0"><span class="rvts53">Note</span></span></h3>
+<h3 class="rvps41"><span class="rvts0"><span class="rvts57">Note</span></span></h3>
 <p class="rvps31"><span class="rvts20">It is recommended to use a download manager as such&nbsp;</span><a class="rvts23" href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/">DownThemAll!</a><span class="rvts20">&nbsp;for Firefox to download the Debian packages as browsers' built-in download manager may have problems with download large packages.</span></p>
 <h5 class="rvps37"><a name="EKOS-ALIGN-TROUBLESHOOTING"></a><span class="rvts0"><span class="rvts22">How to Use?</span></span></h5>
 <p class="rvps10"><span class="rvts20">Ekos Align Module offers multiple functions to aid you in achieving accurate GOTOs. Start with your mount in home position with the telescope tube looking directly at the celestial pole. For users in Northern Hemisphere, point the telescope as close as possible to Polaris. It is not necessary to perform 2 or 3 star alignments, but it can be useful for some mount types. Make sure your camera is focused and stars are resolved.</span></p>
@@ -537,7 +537,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><span class="rvts15">Never</span><span class="rvts64">&nbsp;solve an image at or near the celestial pole (unless Ekos Polar Alignment Assistant Tool is used). Slew at least 20 degrees away from the celestial pole before solving the first image. Solving very close to the poles will make your mount pointing worse so avoid it.</span></p>
+   <p class="rvps31"><span class="rvts15">Never</span><span class="rvts68">&nbsp;solve an image at or near the celestial pole (unless Ekos Polar Alignment Assistant Tool is used). Slew at least 20 degrees away from the celestial pole before solving the first image. Solving very close to the poles will make your mount pointing worse so avoid it.</span></p>
   </td>
  </tr>
 </table>
@@ -586,7 +586,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><span class="rvts64">Turning Auto Park off might lead to inaccurate results.</span></p>
+   <p class="rvps31"><span class="rvts68">Turning Auto Park off might lead to inaccurate results.</span></p>
   </td>
  </tr>
 </table>
@@ -637,11 +637,11 @@
 </ul>
 <h5 class="rvps37"><a name="EKOS-SCHEDULER"></a><span class="rvts0"><span class="rvts22">Capture &amp; Solve</span></span></h5>
 <p class="rvps10"><span class="rvts20">Using Ekos Alignment Module, aligning your mount using the controller's 1, 2, or 3 star alignment is&nbsp;</span><span class="rvts21">not</span><span class="rvts20">&nbsp;strictly necessary, though for some mounts it is recommended to perform a rough 1 or 2 star alignment before using Ekos alignment module. If you are using EQMod, you can start using Ekos alignment module right away. A typical workflow for GOTO alignment involves the following steps:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
- <li value="1" class="rvps10"><span class="rvts20">Set your mount to its home position (usually the NCP for equatorial mounts)</span></li>
- <li value="2" class="rvps10"><span class="rvts20">Select&nbsp;</span><span class="rvts73">Slew to Target</span><span class="rvts20">&nbsp;in the&nbsp;Solver Action.</span></li>
- <li value="3" class="rvps10"><span class="rvts20">Slew to a nearby bright star.</span></li>
- <li value="4" class="rvps10"><span class="rvts20">After slew is complete, click</span><span class="rvts73">&nbsp;Capture &amp; Solve.</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps10"><span class="rvts20">Set your mount to its home position (usually the NCP for equatorial mounts)</span></li>
+ <li class="rvps10"><span class="rvts20">Select&nbsp;</span><span class="rvts77">Slew to Target</span><span class="rvts20">&nbsp;in the&nbsp;Solver Action.</span></li>
+ <li class="rvps10"><span class="rvts20">Slew to a nearby bright star.</span></li>
+ <li class="rvps10"><span class="rvts20">After slew is complete, click</span><span class="rvts77">&nbsp;Capture &amp; Solve.</span></li>
 </ol>
 <p class="rvps10"><span class="rvts20">If the solver is successful, Ekos will sync and then slew to the star. The results are displayed in the&nbsp;Solution Results&nbsp;tab along with a bullseye diagram that shows the offset the reported telescope coordinates (i.e.&nbsp;where the telescope&nbsp;</span><span class="rvts21">thinks</span><span class="rvts20">&nbsp;it is looking at) vs. its actual position in the sky as determined by the solver.</span></p>
 <p class="rvps10"><span class="rvts20">Each time the solver is executed and returns successful results, Ekos can run on the following actions:</span></p>
@@ -683,22 +683,22 @@
 <p class="rvps10"><span class="rvts20">Similarly, to measure Altitude error, click on the&nbsp;Measure Alt Error&nbsp;button. You need to point your mount either east or west and set the&nbsp;Altitude Direction&nbsp;combo box accordingly. Ekos will take two images and calculates the error. You can ask Ekos to correct Altitude error by clicking on the&nbsp;Correct Alt Error&nbsp;button. As with Azimuth correction, Ekos will slew to a new location and asks you to adjust the mount's altitude knobs until the star is in the center of the FOV.</span></p>
 <p class="rvps10"><span class="rvts20">After making a correction, it is recommended to measure the Azimuth and Altitude errors again and gauge the difference. You may need to perform the correction more than once to obtain optimal results.</span></p>
 <p class="rvps10"><span class="rvts20">Before starting the Polar Alignment tool, you must complete the GOTO Workflow above for at least one point in the sky. Once your mount is aligned, proceed with the following (assuming you live in the northern hemisphere):</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
- <li value="1" class="rvps10"><span class="rvts20">Slew to a&nbsp;</span><span class="rvts22">bright</span><span class="rvts20">&nbsp;star (4th magnitude or below) near the southern meridian (Azimuth 180). Make sure&nbsp;Slew to Target&nbsp;is selected. Capture and solve. The star should be exactly centered in your CCD field of view.</span></li>
- <li value="2" class="rvps10"><span class="rvts20">Switch mode to&nbsp;Polar Alignment. Click&nbsp;Measure Az Error. It will ask you to slew to a star at the southern meridian which we already done. Click&nbsp;Continue. Ekos will now perform the error calculation.</span></li>
- <li value="3" class="rvps10"><span class="rvts20">If all goes well, the error is displayed in the output boxes. To correct for the error, click&nbsp;Correct Az Error. Ekos will now slew to a different point in the sky, and you will be required to&nbsp;</span><span class="rvts22">ONLY</span><span class="rvts20">&nbsp;adjust the mount's azimuth knobs to center the star in the field of view. The most convenient way of monitoring the star field is by going to the&nbsp;Focus&nbsp;module and clicking&nbsp;Start Framing. If the azimuth error is great, the star might not be visible in the CCD field of view, and therefore you have to make&nbsp;</span><span class="rvts21">blind</span><span class="rvts20">&nbsp;adjustments (or simply look through the finderscope) until the star enters the CCD FOV.</span></li>
- <li value="4" class="rvps10"><span class="rvts20">Begin your azimuth adjustments until the bright star you slewed to initially is as close to center as you can get it.</span></li>
- <li value="5" class="rvps10"><span class="rvts20">Stop Framing&nbsp;in the&nbsp;</span><a class="rvts23" href="Focus.html">Focus module</a><span class="rvts20">.</span></li>
- <li value="6" class="rvps10"><span class="rvts20">Repeat the&nbsp;Measure Az Error&nbsp;to ensure we indeed corrected the error. You might have to run it more than once to ensure the results are valid.</span></li>
- <li value="7" class="rvps10"><span class="rvts20">Switch mode to&nbsp;GOTO.</span></li>
- <li value="8" class="rvps10"><span class="rvts20">Now slew to a&nbsp;</span><span class="rvts22">bright</span><span class="rvts20">&nbsp;star either on the eastern or western horizon, preferably above 20 degrees of altitude. It has to be as close as possible to the eastern (90 azimuth) or western (270) cardinal points.</span></li>
- <li value="9" class="rvps10"><span class="rvts20">After slew is complete, capture and solve. The star should be dead center in the CCD FOV now.</span></li>
- <li value="10" class="rvps10"><span class="rvts20">Switch mode to&nbsp;Polar Alignment.</span></li>
- <li value="11" class="rvps10"><span class="rvts20">Click&nbsp;Measure Alt Error. It will ask you to slew to a star at either the eastern (Azimuth 90) or western (Azimuth 270) horizon which we already done. Click&nbsp;Continue. Ekos will now perform the error calculation.</span></li>
- <li value="12" class="rvps10"><span class="rvts20">To correct for the error, click&nbsp;Correct Alt Error. Ekos will now slew to a different point in the sky, and you will be required to&nbsp;</span><span class="rvts22">ONLY</span><span class="rvts20">&nbsp;adjust the mount's altitude knobs to center the star in the field of view. Start framing as done before in the&nbsp;</span><a class="rvts23" href="Focus.html">Focus module</a><span class="rvts20">&nbsp;to help you with the centering.</span></li>
- <li value="13" class="rvps10"><span class="rvts20">After centering is complete, stop framing.</span></li>
- <li value="14" class="rvps10"><span class="rvts20">Repeat the&nbsp;Measure Alt Error&nbsp;to ensure we indeed corrected the error. You might have to run it more than once to ensure the results are valid.</span></li>
- <li value="15" class="rvps10"><span class="rvts20">Polar alignment is now complete!</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps10"><span class="rvts20">Slew to a&nbsp;</span><span class="rvts22">bright</span><span class="rvts20">&nbsp;star (4th magnitude or below) near the southern meridian (Azimuth 180). Make sure&nbsp;Slew to Target&nbsp;is selected. Capture and solve. The star should be exactly centered in your CCD field of view.</span></li>
+ <li class="rvps10"><span class="rvts20">Switch mode to&nbsp;Polar Alignment. Click&nbsp;Measure Az Error. It will ask you to slew to a star at the southern meridian which we already done. Click&nbsp;Continue. Ekos will now perform the error calculation.</span></li>
+ <li class="rvps10"><span class="rvts20">If all goes well, the error is displayed in the output boxes. To correct for the error, click&nbsp;Correct Az Error. Ekos will now slew to a different point in the sky, and you will be required to&nbsp;</span><span class="rvts22">ONLY</span><span class="rvts20">&nbsp;adjust the mount's azimuth knobs to center the star in the field of view. The most convenient way of monitoring the star field is by going to the&nbsp;Focus&nbsp;module and clicking&nbsp;Start Framing. If the azimuth error is great, the star might not be visible in the CCD field of view, and therefore you have to make&nbsp;</span><span class="rvts21">blind</span><span class="rvts20">&nbsp;adjustments (or simply look through the finderscope) until the star enters the CCD FOV.</span></li>
+ <li class="rvps10"><span class="rvts20">Begin your azimuth adjustments until the bright star you slewed to initially is as close to center as you can get it.</span></li>
+ <li class="rvps10"><span class="rvts20">Stop Framing&nbsp;in the&nbsp;</span><a class="rvts23" href="Focus.html">Focus module</a><span class="rvts20">.</span></li>
+ <li class="rvps10"><span class="rvts20">Repeat the&nbsp;Measure Az Error&nbsp;to ensure we indeed corrected the error. You might have to run it more than once to ensure the results are valid.</span></li>
+ <li class="rvps10"><span class="rvts20">Switch mode to&nbsp;GOTO.</span></li>
+ <li class="rvps10"><span class="rvts20">Now slew to a&nbsp;</span><span class="rvts22">bright</span><span class="rvts20">&nbsp;star either on the eastern or western horizon, preferably above 20 degrees of altitude. It has to be as close as possible to the eastern (90 azimuth) or western (270) cardinal points.</span></li>
+ <li class="rvps10"><span class="rvts20">After slew is complete, capture and solve. The star should be dead center in the CCD FOV now.</span></li>
+ <li class="rvps10"><span class="rvts20">Switch mode to&nbsp;Polar Alignment.</span></li>
+ <li class="rvps10"><span class="rvts20">Click&nbsp;Measure Alt Error. It will ask you to slew to a star at either the eastern (Azimuth 90) or western (Azimuth 270) horizon which we already done. Click&nbsp;Continue. Ekos will now perform the error calculation.</span></li>
+ <li class="rvps10"><span class="rvts20">To correct for the error, click&nbsp;Correct Alt Error. Ekos will now slew to a different point in the sky, and you will be required to&nbsp;</span><span class="rvts22">ONLY</span><span class="rvts20">&nbsp;adjust the mount's altitude knobs to center the star in the field of view. Start framing as done before in the&nbsp;</span><a class="rvts23" href="Focus.html">Focus module</a><span class="rvts20">&nbsp;to help you with the centering.</span></li>
+ <li class="rvps10"><span class="rvts20">After centering is complete, stop framing.</span></li>
+ <li class="rvps10"><span class="rvts20">Repeat the&nbsp;Measure Alt Error&nbsp;to ensure we indeed corrected the error. You might have to run it more than once to ensure the results are valid.</span></li>
+ <li class="rvps10"><span class="rvts20">Polar alignment is now complete!</span></li>
 </ol>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
@@ -717,13 +717,14 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><span class="rvts64">The mount may slew to a dangerous position and you might risk hitting the tripod and/or other equipment. Carefully monitor the mount's motion. Use at your own risk.</span></p>
+   <p class="rvps31"><span class="rvts68">The mount may slew to a dangerous position and you might risk hitting the tripod and/or other equipment. Carefully monitor the mount's motion. Use at your own risk.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpauthoringsoftware.com">What is a Help Authoring tool?</a></p>
 
             </div>
             
@@ -779,7 +780,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

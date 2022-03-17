@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li><li><a href="Ekos2.html">Ekos</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Focus.html" title="Focus" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Align.html" title="Align" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Focus.html" title="Focus" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Align.html" title="Align" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_guide.png"></p>
 <h5 class="rvps37"><a name="GUIDE-DARK-FRAMES"></a><span class="rvts0"><span class="rvts22">Introduction</span></span></h5>
 <p class="rvps10"><span class="rvts20">Ekos Guide Module enables autoguiding capability using either the powerful built-in guider, or at your option, external guiding via&nbsp;</span><a class="rvts23" href="http://openphdguiding.org/">PHD2</a><span class="rvts20">&nbsp;or&nbsp;</span><a class="rvts23" href="https://sourceforge.net/projects/linguider/">lin_guider</a><span class="rvts20">. Using the internal guiding, guider CCD frames are captured and sent to Ekos for analysis. Depending on the deviations of the guide star from its lock position, guiding pulses corrections are sent to your mount&nbsp;Via&nbsp;any device that supports ST4 ports. Alternatively, you may send the corrections to your mount&nbsp;</span><span class="rvts21">directly</span><span class="rvts20">, if supported by the mount driver. Most of the GUI options in the Guide Module are well documented so just hover your mouse over an item and a tooltip will popup with helpful information.</span></p>
@@ -280,7 +280,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><span class="rvts64">Calibration can fail for a variety of reasons. To improve the chances of success, try the tips below.</span></p>
+   <p class="rvps31"><span class="rvts68">Calibration can fail for a variety of reasons. To improve the chances of success, try the tips below.</span></p>
   </td>
  </tr>
 </table>
@@ -301,7 +301,7 @@
 <p class="rvps10"><span class="rvts20">Once the calibration process is completed successfully, the guiding shall begin automatically hereafter. The guiding performance is displayed in the&nbsp;Drift Graphics&nbsp;region where&nbsp;Green&nbsp;reflects deviations in RA and&nbsp;Blue&nbsp;deviations in DEC. The colors of the RA/DE lines can be changed in&nbsp;</span><a class="rvts23" href="Colors.html">KStars&nbsp;color scheme</a><span class="rvts20">&nbsp;in&nbsp;KStars&nbsp;settings dialog. The vertical axis denotes the deviation in arcsecs from the guide star central position and the horizontal axis denotes time. You can hover over the line to get the exact deviation at this particular point in time. Furthermore, you can also zoom and drag/pan the graph to inspect a specific region of the graph.</span></p>
 <p class="rvps10"><span class="rvts20">Ekos can utilize multiple algorithms to determine the center of mass of the guide star. By default, the&nbsp;</span><span class="rvts21">smart</span><span class="rvts20">&nbsp;algorithm is suited best for most situation. The&nbsp;</span><span class="rvts21">fast</span><span class="rvts20">&nbsp;algorithm is based on HFR calculations. You can try switching guiding algorithms if Ekos cannot keep of the guide star within the guiding square properly.</span></p>
 <p class="rvps10"><span class="rvts20">The info region displays information on the telescope &amp; FOV, in addition to the deviations from the guide star along with the correction pulses sent to the mount. The RMS value for each axis is displayed along with the total RMS value in arcsecs. The internal guider employs&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/PID_controller">PID controller</a><span class="rvts20">&nbsp;to correct the mount tracking. Currently, the&nbsp;</span><span class="rvts21">only</span><span class="rvts20">&nbsp;the proportional and integral gains are utilized within the algorithm, so adjusting it should affect the length of the generated pulses sent to the mount in milliseconds.</span></p>
-<p class="rvps10"><span class="rvts20">To enable automatic dithering between frames, make sure to check the&nbsp;Dither&nbsp;checkbox. By default, Ekos should dither (i.e.&nbsp;move) the guiding box by up to 3 pixels after each frame captured in</span><span class="rvts70">&nbsp;</span><a class="rvts23" href="Capture.html">Ekos Capture Module</a><span class="rvts20">. The motion duration and direction are randomized. Since the guiding performance can oscillate immediately after dithering, you can set the appropriate&nbsp;Settle&nbsp;duration to wait after dither is complete before resuming the capture process. In rare cases where the dithering process can get stuck in an endless loop, set the appropriate&nbsp;Timeout&nbsp;to abort the process. But even if dithering fails, you can select whether this failure should terminate the autoguiding process or not. Toggle&nbsp;Abort Autoguide on failure&nbsp;to select the desired behavior.</span></p>
+<p class="rvps10"><span class="rvts20">To enable automatic dithering between frames, make sure to check the&nbsp;Dither&nbsp;checkbox. By default, Ekos should dither (i.e.&nbsp;move) the guiding box by up to 3 pixels after each frame captured in</span><span class="rvts74">&nbsp;</span><a class="rvts23" href="Capture.html">Ekos Capture Module</a><span class="rvts20">. The motion duration and direction are randomized. Since the guiding performance can oscillate immediately after dithering, you can set the appropriate&nbsp;Settle&nbsp;duration to wait after dither is complete before resuming the capture process. In rare cases where the dithering process can get stuck in an endless loop, set the appropriate&nbsp;Timeout&nbsp;to abort the process. But even if dithering fails, you can select whether this failure should terminate the autoguiding process or not. Toggle&nbsp;Abort Autoguide on failure&nbsp;to select the desired behavior.</span></p>
 <p class="rvps10"><span class="rvts20">Non-guide dithering is also supported. This is useful when no guide camera is available or when performing short exposures. In this case, the mount can be commanded to dither in a random direction for up to the pulse specified in the&nbsp;Non-Guide Dither Pulse&nbsp;option.</span></p>
 <p class="rvps10"><span class="rvts20">Ekos supports multiple guiding methods: Internal, PHD2, and LinGuider. You need to select the desired guider in your Ekos equipment profile:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -430,14 +430,14 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><span class="rvts16">Ekos saves a CSV guide log data that can be useful for analysis of the mount's performance under</span><span class="rvts72">&nbsp;~/.local/share/kstars/guide_log.txt</span><span class="rvts16">. This log is only available when using the built-in guider.</span></p>
+   <p class="rvps31"><span class="rvts16">Ekos saves a CSV guide log data that can be useful for analysis of the mount's performance under</span><span class="rvts76">&nbsp;~/.local/share/kstars/guide_log.txt</span><span class="rvts16">. This log is only available when using the built-in guider.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<p class="rvps31"><span class="rvts20"><br/></span></p>
-<p></p>
+<p class="rvps31"><span class="rvts20"></span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Generate Kindle eBooks with ease</a></p>
 
             </div>
             
@@ -493,7 +493,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="TimeLocation.html" title="Time &amp; Location" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="WebManagerURL.html" title="Web Manager URL" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="TimeLocation.html" title="Time &amp; Location" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="WebManagerURL.html" title="Web Manager URL" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps10"><span class="rvts20">StellarMate Web Manager is a simple Web Application to manage&nbsp;</span><a class="rvts23" href="http://www.indilib.org/develop/developer-manual/92-indi-server.html">INDI server</a><span class="rvts20">&nbsp;and control StellarMate. It is accessible as long as there is a network connection (WiFi/Ethernet/Hotspot) between you and StellarMate. For example, if you are in inside the house with a PC/Mac/Tablet, you could use your browser to remotely manage StellarMate drivers.</span></p>
 <p class="rvps10"><span class="rvts20">It supports multiple driver profiles along with optional custom remote drivers. It can be used to start INDI server locally, and also to connect or chain to remote INDI servers. You can use it to Restart or Shutdown the unit, and to connect to VNC frontend from the web. Furthermore, the Web Manager provides a&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/Representational_state_transfer">RESTful API</a><span class="rvts20">&nbsp;where you can issue simple calls to start and stop INDI services over the network.</span></p>
 <p class="rvps10"><span class="rvts20">With the Web Manager, you can access StellarMate&nbsp;</span><a class="rvts23" href="SerialPortAssistant.html">Serial Port Assistant</a><span class="rvts20">&nbsp;and&nbsp;</span><a class="rvts23" href="Scheduler.html#EKOS-TUTORIALS-VIEWER">VNC</a><span class="rvts20">. Furthermore, you can also restart and shutdown INDI from the interface.</span></p>
@@ -195,8 +195,8 @@
  <li class="rvps10"><span class="rvts20">CCD Simulator</span></li>
  <li class="rvps10"><span class="rvts20">Focuser Simulator</span></li>
 </ul>
-<p class="rvps10"><span class="rvts20">You can run the Simulator profile to test the simulators and connect to them from any client.</span></p>
-<p></p>
+<p class="rvps10"><span class="rvts20">You can run the Simulator profile to test the simulators and connect to them from any client.</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/help-authoring-tool">Easy to use tool to create HTML Help files and Help web sites</a></p>
 
             </div>
             
@@ -252,7 +252,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

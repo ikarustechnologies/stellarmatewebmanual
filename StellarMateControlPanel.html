@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="StellarMateSerialAssistant.html" title="StellarMate Serial Assistant" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="StatusBar.html" title="Status Bar" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="StellarMateSerialAssistant.html" title="StellarMate Serial Assistant" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="StatusBar.html" title="Status Bar" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps5">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
@@ -202,8 +202,8 @@
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
    <p class="rvps9"><span class="rvts19">In order to open the StellarMate Control Panel you need to be connected to the same network as your StellarMate.</span></p>
-   <p class="rvps9"><span class="rvts19">If StellarMate is in hotspot mode, you can connect to it by going to your computer/laptop WiFi settings and connecting to the SSID</span><span class="rvts67"> stellarmate </span><span class="rvts19">with the password</span><span class="rvts67"> stellar@mate</span></p>
-   <p class="rvps9"><span class="rvts67"><br/></span></p>
+   <p class="rvps9"><span class="rvts19">If StellarMate is in hotspot mode, you can connect to it by going to your computer/laptop WiFi settings and connecting to the SSID</span><span class="rvts71"> stellarmate </span><span class="rvts19">with the password</span><span class="rvts71"> stellar@mate</span></p>
+   <p class="rvps9"><span class="rvts71"><br/></span></p>
    <p class="rvps9"><span class="rvts19">Do not open StellarMate Control Panel from StellarMate itself, it is meant to be opened from your computer/laptop.</span></p>
   </td>
  </tr>
@@ -211,8 +211,8 @@
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps10"><a class="rvts23" href="http://stellarmate.local">StellarMate Control Panel</a><span class="rvts20"> is a web application for StellarMate OS. It provides any functions such as displaying the connection status of the controller, backup and restore, network and factory reset, etc.</span></p>
-<p></p>
+<p class="rvps10"><a class="rvts23" href="http://stellarmate.local">StellarMate Control Panel</a><span class="rvts20"> is a web application for StellarMate OS. It provides any functions such as displaying the connection status of the controller, backup and restore, network and factory reset, etc.</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com">Full-featured Documentation generator</a></p>
 
             </div>
             
@@ -268,7 +268,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

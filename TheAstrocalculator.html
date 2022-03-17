@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="KStarsTools.html" title="KStars Tools" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="ObjectDetailsWindow.html" title="Object Details Window" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="AltitudevsTimeTool.html" title="Altitude vs. Time Tool" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="KStarsTools.html" title="KStars Tools" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="ObjectDetailsWindow.html" title="Object Details Window" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="AltitudevsTimeTool.html" title="Altitude vs. Time Tool" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps10"><span class="rvts20">The&nbsp;KStars&nbsp;Astrocalculator provides several modules that give you direct access to algorithms used by the program. The modules are organized by subject:</span></p>
 <p class="rvps10"><span class="rvts22">Coordinate Converters</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -243,17 +243,17 @@
 <p class="rvps10"><span class="rvts20">There is a batch mode for this module. To use it, simply generate an input file whose lines each contain a year for which the Equinox and Solstice data will be computed. Then specify the input and output filenames, and press the&nbsp;Compute&nbsp;button to generate the output file. Each line in the output file contains the input year and the date of each event. You can also read the output directly in&nbsp;KStars&nbsp;by pressing the&nbsp;View output&nbsp;button.</span></p>
 <h4 class="rvps30"><a name="CALC-JULIAN"></a><span class="rvts0"><span class="rvts22">Julian Day module</span></span></h4>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/calc-julian.png"></p>
-<p class="rvps10"><span class="rvts20">This module converts between the calendar&nbsp;Date and time, the&nbsp;</span><span class="rvts6">Julian </span><a class="rvts71" href="astroinfo.html#ai-julianday">Day</a><span class="rvts20">, and the&nbsp;</span><span class="rvts21">Modified Julian Day</span><span class="rvts20">. The Modified Julian Day is simply equal to the Julian Day - 2,400,000.5.</span></p>
+<p class="rvps10"><span class="rvts20">This module converts between the calendar&nbsp;Date and time, the&nbsp;</span><span class="rvts6">Julian </span><a class="rvts75" href="astroinfo.html#ai-julianday">Day</a><span class="rvts20">, and the&nbsp;</span><span class="rvts21">Modified Julian Day</span><span class="rvts20">. The Modified Julian Day is simply equal to the Julian Day - 2,400,000.5.</span></p>
 <p class="rvps10"><span class="rvts20">To use the module, enter one of the three dates and the corresponding values for the other two date systems will be displayed. You can also set the Date and time to now, by pressing the&nbsp;Now&nbsp;button.</span></p>
 <p class="rvps10"><span class="rvts20">There is a batch mode for this module. To use it, simply generate an input file whose lines each contain a number of values for the input parameter:&nbsp;“Date and time”,&nbsp;“Julian day”&nbsp;or&nbsp;“Modified Julian day”. Then specify the input and output filenames, and press the&nbsp;Compute&nbsp;button to generate the output file. The output file will contains values for the other two complementary parameters. For example, if your input file contains a set of&nbsp;“Date and time”&nbsp;values, then each line of the output file will contain values for&nbsp;“Julian day”&nbsp;and&nbsp;“Modified Julian day”. You can read the output directly in&nbsp;KStars&nbsp;by pressing the&nbsp;View output&nbsp;button.</span></p>
-<h3 class="rvps35"><span class="rvts0"><span class="rvts53">Tip</span></span></h3>
+<h3 class="rvps35"><span class="rvts0"><span class="rvts57">Tip</span></span></h3>
 <p class="rvps10"><span class="rvts20">Exercise:</span></p>
 <p class="rvps10"><span class="rvts20">What calendar date does MJD = 0.0 correspond to?</span></p>
 <h4 class="rvps30"><a name="CALC-SIDEREAL"></a><span class="rvts0"><span class="rvts22">Sidereal Time module</span></span></h4>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/calc-sidereal.png"></p>
 <p class="rvps10"><span class="rvts20">This module converts between&nbsp;</span><span class="rvts6">Universal Time</span><span class="rvts20">&nbsp;and Local&nbsp;</span><span class="rvts6">Sidereal Time</span><span class="rvts20">. First, select a geographic location and a date for the calculation. Then the corresponding value for the other Time will be displayed.</span></p>
-<p class="rvps10"><span class="rvts20">There is a batch mode for this module. To use it, simply generate an input file whose lines each contain values for the input parameter:&nbsp;“sidereal time”&nbsp;or&nbsp;“standard time”. You can choose to set the&nbsp;Date&nbsp;and&nbsp;Location&nbsp;in the current window, or you can tell&nbsp;KStars&nbsp;to read the&nbsp;Date&nbsp;and&nbsp;Location&nbsp;values from the input file. Then specify the input and output filenames, and press the&nbsp;Compute&nbsp;button to generate the output file. The output file will contains values for the complementary parameter. For example, if your input file contains a set of&nbsp;“standard time”&nbsp;values, then each line of the output file will contain values for&nbsp;“sidereal time”. You can read the output directly in&nbsp;KStars&nbsp;by pressing the&nbsp;View output&nbsp;button.</span></p>
-<p></p>
+<p class="rvps10"><span class="rvts20">There is a batch mode for this module. To use it, simply generate an input file whose lines each contain values for the input parameter:&nbsp;“sidereal time”&nbsp;or&nbsp;“standard time”. You can choose to set the&nbsp;Date&nbsp;and&nbsp;Location&nbsp;in the current window, or you can tell&nbsp;KStars&nbsp;to read the&nbsp;Date&nbsp;and&nbsp;Location&nbsp;values from the input file. Then specify the input and output filenames, and press the&nbsp;Compute&nbsp;button to generate the output file. The output file will contains values for the complementary parameter. For example, if your input file contains a set of&nbsp;“standard time”&nbsp;values, then each line of the output file will contain values for&nbsp;“sidereal time”. You can read the output directly in&nbsp;KStars&nbsp;by pressing the&nbsp;View output&nbsp;button.</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpauthoringsoftware.com">News and information about help authoring tools and software</a></p>
 
             </div>
             
@@ -309,7 +309,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

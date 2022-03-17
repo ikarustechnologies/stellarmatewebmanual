@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="ConnectingMounts.html">Connecting Mounts</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="ConnectingMounts.html" title="Connecting Mounts" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="WiredNetwork.html" title="Wired Network" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ConnectingFocusers.html" title="Connecting Focusers" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConnectingMounts.html" title="Connecting Mounts" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="WiredNetwork.html" title="Wired Network" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ConnectingFocusers.html" title="Connecting Focusers" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,13 +185,12 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps10"><span class="rvts20">Wireless mounts are usually connected either directly (via mount own Hotspot) or they can be configured in&nbsp;</span><span class="rvts21">Infrastructure Mode</span><span class="rvts20">&nbsp;where they can join an existing WiFi network.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts21">Mount HotSpot</span><span class="rvts20">: When connecting a mount hotspot, make sure that all devices including the laptop, tablet, StellarMate..etc are all connected to the mount hotspot. This is to ensure that all the devices are on the same network talking to each other. You cannot have half the devices on a different network. Once the devices join the mount HotSpot network, they should be assigned their own IP addresses. Use the mount hotspot IP address in INDI Control Panel in order to establish communication with the mount. The port number should be listed in your mount manual.</span></li>
- <li class="rvps10"><span class="rvts21">Mount Infrastructure</span><span class="rvts20">: Some Wireless mount can be configured in Infrastructure Mode. This is the mode where the mount does not start its own hotspot but insteads joins an existing WiFi network. Make sure all the relevant devices (StellarMate, Laptop, Tablet..etc) are all joined to the same WiFi network so that they can talk to each other. Find out the mount IP address and enter it in INDI Control Panel in order to establish communication with the mount. The port number should be listed in your mount manual.</span></li>
+ <li class="rvps10"><span class="rvts21">Mount Infrastructure</span><span class="rvts20">: Some Wireless mount can be configured in Infrastructure Mode. This is the mode where the mount does not start its own hotspot but insteads joins an existing WiFi network. Make sure all the relevant devices (StellarMate, Laptop, Tablet..etc) are all joined to the same WiFi network so that they can talk to each other. Find out the mount IP address and enter it in INDI Control Panel in order to establish communication with the mount. The port number should be listed in your mount manual.</span><span class="rvts6"></span></li>
 </ul>
-<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpauthoringsoftware.com">News and information about help authoring tools and software</a></p>
 
             </div>
             
@@ -246,7 +246,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer
