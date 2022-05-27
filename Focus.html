@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -185,8 +185,9 @@
 
             <div class="main-content">
                 
-<h5 class="rvps37"><a name="IDM5796"></a><span class="rvts0"><span class="rvts22">Theory Of Operation</span></span></h5>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_focus.png"></p>
+<h5 class="rvps40"><a name="IDM5796"></a><span class="rvts0"><span class="rvts22">Theory Of Operation</span></span></h5>
+<p class="rvps3"><img width="653" height="613" alt="" style="padding : 1px;" src="lib/ekos_focus.jpg"></p>
+<p class="rvps3"><span class="rvts22"><br/></span></p>
 <p class="rvps10"><span class="rvts20">In order to focus an image, Ekos needs to establish a numerical method for gauging how&nbsp;</span><span class="rvts21">good</span><span class="rvts20">&nbsp;your focus is. It's easy when you look at an image and can see it as&nbsp;</span><span class="rvts21">unfocused</span><span class="rvts20">, as the human is very good at detecting that, but&nbsp;</span><span class="rvts21">how</span><span class="rvts20">&nbsp;can Ekos possibly know that?</span></p>
 <p class="rvps10"><span class="rvts20">There are multiple methods. One is to calculate the Full Width at Half Maximum (FHWM) of a star profile within an image, and then adjust the focus until an optimal (narrower) FWHM is reached. The problem with FWHM is that it assumes the initial focus position to be close to the critical focus. Additionally, FWHM does not perform very well under low-intensity fluxes. An Alternative method is Half-Flux-Radius (HFR), which is a measure of the width in pixels counting from the center of the stars until the accumulated intensity is half of the total flux of the star. HFR proved to be much more stable in conditions where you might have unfavorable sky conditions, when the brightness profile of the stars is low, and when the starting position of the focus is far from the optimal focus.</span></p>
 <p class="rvps10"><span class="rvts20">After Ekos processes an image, it selects the brightest star and starts measuring its HFR. It can automatically select the star, or you can select the star manually. It is usually recommended to select stars that are not too bright as they might get saturated during the focusing process. A magnitude 3 or 4 star is often sufficient.</span></p>
@@ -194,8 +195,8 @@
 <p class="rvps10"><span class="rvts20">Because the HFR varies linearly with focus distance, it is possible to calculate the optimal focus point. In practice, Ekos operates iteratively by moving in discrete steps, decided initially by the user-configurable step size and later by the slope of the V-curve, to get closer to the optimal focus position where it then changes gears and performs smaller, finer moves to reach the optimal focus. In the default&nbsp;Iterative&nbsp;algorithm, the focus process stops when the measured HFR is within the configurable tolerance of the minimum recorded HFR in the process. In other words, whenever the process starts searching for a solution within a narrowly limited range, it checks if the current HFR is within % difference compared to the minimum HFR recorded, and if this condition is met then the autofocus process is considered successful. The default value is set to 1% and is sufficient for most situations. The&nbsp;Step&nbsp;options specify the number of&nbsp;</span><span class="rvts21">initial</span><span class="rvts20">&nbsp;ticks the focuser has to move. If the image is severely out of focus, we set the step size high (i.e.&nbsp;&gt; 250). On the other hand, if the focus is close to optimal focus, we set the step size to a more reasonable range (&lt; 50). It takes trial and error to find the best starting tick, but Ekos only uses that for the first focus motion, as all subsequent motions depend on the V-Curve slope calculations.</span></p>
 <p class="rvps10"><span class="rvts20">When using the&nbsp;Polynomial&nbsp;algorithm, the process starts in the&nbsp;Iterative&nbsp;mode, but once we cross to the other side of the V-curve (i.e.&nbsp;once HFR values start increasing again after decreasing for a while), the Ekos performs polynomial fitting to find a solution that predicts the minimum possible HFR position. If a valid solution is found, the autofocus process is considered successful.</span></p>
 <p class="rvps10"><span class="rvts20">While Ekos Focus Module supports relative focusers, it is&nbsp;</span><span class="rvts22">highly recommended</span><span class="rvts20">&nbsp;to use absolute focusers.</span></p>
-<h5 class="rvps37"><a name="FOCUS-FOCUSER-GROUP"></a><span class="rvts0"><span class="rvts22">Focuser Group</span></span></h5>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focuser_group.png"></p>
+<h5 class="rvps40"><a name="FOCUS-FOCUSER-GROUP"></a><span class="rvts0"><span class="rvts22">Focuser Group</span></span></h5>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focuser_group.jpg"></p>
 <p class="rvps10"><span class="rvts20">Any INDI-compatible focuser is supported. It is recommended to use&nbsp;</span><span class="rvts22">absolute</span><span class="rvts20">&nbsp;focusers since their absolute position is known on power up. In INDI, the focuser&nbsp;</span><span class="rvts21">zero</span><span class="rvts20">&nbsp;position is when the drawtube is&nbsp;</span><span class="rvts22">fully retracted</span><span class="rvts20">. When focusing&nbsp;</span><span class="rvts21">outwards</span><span class="rvts20">, the focuser position increases, while it decreases when focusing&nbsp;</span><span class="rvts21">inwards</span><span class="rvts20">. The following focuser types are supported:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts22">Absolute</span><span class="rvts20">: Absolute Position Focusers such as RoboFocus, MoonLite,&nbsp;etc.</span></li>
@@ -204,8 +205,8 @@
 </ul>
 <p class="rvps10"><span class="rvts20">For absolute focusers, you can set the ticks count. To view a continuous feed of the camera, click the Framing view refresh button. An image shall be captured repeatedly according to the CCD settings in the CCD and Filter Wheel group. You can focus in format align vertical bottom and out align vertical top by pressing the respective buttons, and each shall move by the step size indicated in the focus settings. For absolute and relative focusers, the step size is in units of ticks and for simple DC focusers, the step size is in milliseconds. The step size can be changed by specifying its value in the 2nd Steps field. To set an initial focus position or go to a focus position, click on the Go to absolute focus position button. To stop the focus motion, click on the Stop focuser motion button.</span></p>
 <p class="rvps10"><span class="rvts20">To begin the autofocus process, simply click the&nbsp;Auto Focus&nbsp;button. To stop the Auto Focus process, click on the Stop button.</span></p>
-<h5 class="rvps37"><a name="FOCUS-CCD-FILTER-WHEEL"></a><span class="rvts0"><span class="rvts22">CCD &amp; Filter Wheel Group</span></span></h5>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_ccdfw_group.png"></p>
+<h5 class="rvps40"><a name="FOCUS-CCD-FILTER-WHEEL"></a><span class="rvts0"><span class="rvts22">CCD &amp; Filter Wheel Group</span></span></h5>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_ccdfw_group.jpg"></p>
 <p class="rvps10"><span class="rvts20">You must specify the CCD and Filter Wheel (if any) to be used during the focusing process. You can&nbsp;</span><span class="rvts22">lock</span><span class="rvts20">&nbsp;a specific filter within the filter wheel to be utilized whenever the autofocus process is invoked. Usually, the user should select the Clear/Luminescence filter for this purpose so that Ekos always uses the same filter to perform the autofocus process. This locked filter is also used in the&nbsp;</span><a class="rvts23" href="Align.html">Alignment Module</a><span class="rvts20">&nbsp;whenever it performs any astrometry capture. For DSLRs cameras, you can change the ISO settings. You may reset the focusing subframe to full frame capture if you click the Reset button.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">CCD: Select the active camera. If your camera has a guide head, you can select it from here as well.</span></li>
@@ -219,8 +220,8 @@
  <li class="rvps10"><span class="rvts20">Filter: Specify desired filter.</span></li>
  <li class="rvps10"><span class="rvts20">Filter Settings: Use the Filter Manager to specify various settings for each filter including exposure, offset, autofocus, and locking policy. Settings</span></li>
 </ul>
-<h5 class="rvps37"><a name="FOCUS-RELATIVE-PROFILE"></a><span class="rvts0"><span class="rvts22">Settings</span></span></h5>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_settings.png"></p>
+<h5 class="rvps40"><a name="FOCUS-RELATIVE-PROFILE"></a><span class="rvts0"><span class="rvts22">Settings</span></span></h5>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_settings.jpg"></p>
 <p class="rvps10"><span class="rvts20">You may need to adjust focus settings in order to achieve a successful and reliable autofocus process. The settings are retained between sessions.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts22">Auto Star Select</span><span class="rvts20">: Automatically select the best focus star from the image.</span></li>
@@ -232,7 +233,7 @@
  <li class="rvps10"><span class="rvts22">Annulus</span><span class="rvts20">: During full field focusing, stars which are inside this percentage of the frame are filtered out of HFR calculation (default 0%). Detection algorithms may also have an inherent filter.</span></li>
  <li class="rvps10"><span class="rvts22">Settle</span><span class="rvts20">: Sets the amount of seconds to wait before resuming guiding.</span></li>
 </ul>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_process.png"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_process.jpg"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts22">Detection</span><span class="rvts20">: Select star detection algorithm. Each algorithm has its strengths and weaknesses. It is recommended to keep the default value unless it fails to properly detect stars.</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
@@ -260,7 +261,7 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps6"><img width="16" height="14" alt="" style="padding : 1px;" src="lib/exclamation-triangle.png"></p>
+   <p class="rvps6"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
    <p class="rvps2"><span class="rvts15">WARNING</span></p>
@@ -271,7 +272,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><span class="rvts68">Setting the value too low might result in a repetitive loop and would most likely result in a failed autofocus process.</span></p>
+   <p class="rvps34"><span class="rvts83">Setting the value too low might result in a repetitive loop and would most likely result in a failed autofocus process.</span></p>
   </td>
  </tr>
 </table>
@@ -281,7 +282,7 @@
  <li class="rvps10"><span class="rvts22">Average over</span><span class="rvts20">: Sets the number of frames to capture in order to average the HFR value at the current focuser position.</span></li>
  <li class="rvps10"><span class="rvts22">Num. of rows</span><span class="rvts20">: The number of rows set in this field will be combined in the Bahtinov max average calculation. Changing this value might help to match the Bahtinov lines on the star pattern more accurately.</span></li>
 </ul>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_mechanics.png"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_mechanics.jpg"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts22">Initial Step Size</span><span class="rvts20">:&nbsp;</span><span class="rvts21">Initial</span><span class="rvts20">&nbsp;step size in ticks to cause a noticeable change in HFR value. For timer-based focuser, it is the initial time in milliseconds to move the focuser inward or outward.</span></li>
  <li class="rvps10"><span class="rvts22">Max Step size</span><span class="rvts20">: The maximum single step size the algorithm is allowed to command as it searches for the critical focus zone. The calculated step size would be limited to this maximum value.</span></li>
@@ -290,14 +291,13 @@
  <li class="rvps10"><span class="rvts22">Frames</span><span class="rvts20">: Number of average frames to capture. During each capture, an HFR is recorded. If the instantaneous HFR value is unreliable, you can average a number of frames to increase the signal to noise ratio.</span></li>
  <li class="rvps10"><span class="rvts22">Out Step Multiple</span><span class="rvts20">: This is the number that is multiplied by initial-step-size to get the number of outward steps that the Linear Focus algorithm moves away from the initial position at the start of focusing.</span></li>
 </ul>
-<h5 class="rvps37"><a name="EKOS-GUIDE"></a><span class="rvts0"><span class="rvts22">V-Curve</span></span></h5>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_vcurve.png"></p>
+<h5 class="rvps40"><a name="EKOS-GUIDE"></a><span class="rvts0"><span class="rvts22">V-Curve</span></span></h5>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_vcurve.jpg"></p>
 <p class="rvps10"><span class="rvts20">The V-shaped curve displays absolute position versus Half-Flux-Radius (HFR) values. The center of the V-curve is the optimal focus position. Once Ekos crosses from one side of the V-curve to the other, it backtracks and tries to find the optimal focus position. The final focus position is decided by which algorithm is selected.</span></p>
 <p class="rvps10"><span class="rvts20">When framing, the horizontal axis denotes the frame number. This is to aid you in the framing process as you can see how HFR changes between frames.</span></p>
-<h5 class="rvps37"><a name="IDM6052"></a><span class="rvts0"><span class="rvts22">Relative Profile</span></span></h5>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_relative_profile.png"></p>
+<h5 class="rvps40"><a name="IDM6052"></a><span class="rvts0"><span class="rvts22">Relative Profile</span></span></h5>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/focus_relative_profile.jpg"></p>
 <p class="rvps10"><span class="rvts20">The relative profile is a graph that displays the relative HFR values plotted against each other. Lower HFR values correspond to narrower shapes and vice-versa. The solid red curve is the profile of the current HFR value, while the dotted green curve is for the previous HFR value. Finally, the magenta curve denotes the first measured HFR and is displayed when the autofocus process concludes. This enables you to judge how well the autofocus process improved the relative focus quality.</span><span class="rvts6"></span></p>
-<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpauthoringsoftware.com">News and information about help authoring tools and software</a></p>
 
             </div>
             

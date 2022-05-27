@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 7.9.1.631">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -185,15 +185,26 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts6">The Capture module allows you to do sequence capturing using your camera, it has the following features:</span></p>
+<p class="rvps2"><span class="rvts50">The Capture module is where you create sequences to capture your targets. In the typical astrophotography workflow, Capture module is used last after you finished Focusing, Aligning, and Guiding your target. Let us first define some common terms:</span></p>
+<p class="rvps2"><span class="rvts50"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2"><span class="rvts6">Presets: you can save an unlimited amount of presets, which have all the camera settings needed for guiding. You can also choose the scope.</span></li>
- <li class="rvps2"><span class="rvts20">Start guiding</span></li>
- <li class="rvps2"><span class="rvts20">Preview</span></li>
- <li class="rvps2"><span class="rvts20">Advanced Settings</span></li>
- <li class="rvps2"><span class="rvts20">Pixmap Image viewer</span></li>
- <li class="rvps2"><span class="rvts20">Guide Plot</span></li>
+ <li class="rvps2"><span class="rvts52">Presets:</span><span class="rvts51"> Specific camera and File Settings. This includes:</span></li>
 </ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps2"><span class="rvts51">ROI, binning</span></li>
+ <li class="rvps2"><span class="rvts51">Frame type</span></li>
+ <li class="rvps2"><span class="rvts51">Format filter (if any) etc.&nbsp;</span></li>
+ <li class="rvps2"><span class="rvts51">You need to create a preset with your desired settings and give it a descriptive name (e.g QHY_HA_300 would refer to using QHY camera using HA filter for 300-second) exposure.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts51"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><span class="rvts52">Sequence: </span><span class="rvts51">Capture a number of images with the settings specified in a preset.</span></li>
+</ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps2"><span class="rvts51">The count field in capture module specify the number of images to capture using that preset.</span></li>
+ <li class="rvps2"><span class="rvts51">Delay parameters is used to introduce a delay in seconds between each captured image and default to zero.</span></li>
+ <li class="rvps2"><span class="rvts51">A sequence is also referred to as Job</span></li>
+</ol>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_caputue_idle.jpeg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
@@ -259,7 +270,7 @@
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps11"><span class="rvts24">Filter Settings</span></p>
 <p class="rvps11"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can edit filters by tapping on the </span><span class="rvts24">Filter </span><img alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/view-filter.png"><span class="rvts24"> </span><span class="rvts6">button. The filter settings page will open and allow you to edit filter settings for each filter of the filter wheel selected in the dropdown menu.</span></p>
+<p class="rvps2"><span class="rvts6">You can edit filters by tapping on the </span><span class="rvts24">Filter </span><span class="rvts6">button. The filter settings page will open and allow you to edit filter settings for each filter of the filter wheel selected in the dropdown menu.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts39">Configure settings for each filter individually:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -291,7 +302,7 @@
 <p class="rvps11"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="987" height="562" alt="" style="padding : 1px;" src="lib/smapp_filter_settings_edited.jpeg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps11"><span class="rvts24">Calibration Settings </span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/smapp_calibration_settings_icon.png"></p>
+<p class="rvps11"><span class="rvts24">Calibration Settings </span></p>
 <p class="rvps11"><span class="rvts24"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Note</span><span class="rvts6">: You can only edit calibration settings for capture jobs that have the frame type as Bias (B), Dark (D), or Flat (F).</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -323,7 +334,7 @@
 <p class="rvps11"><span class="rvts24"><br/></span></p>
 <p class="rvps3"><img width="987" height="562" alt="" style="padding : 1px;" src="lib/smapp_22101_capture_calibration_settings.jpg"></p>
 <p class="rvps3"><span class="rvts39"><br/></span></p>
-<p class="rvps11"><span class="rvts38">Limit Settings </span><img width="24" height="24" alt="" style="padding : 1px;" src="lib/smapp_limit_settings_icon.png"></p>
+<p class="rvps11"><span class="rvts38">Limit Settings </span></p>
 <p class="rvps11"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts39">Limit settings are applicable to all the images in the sequence queue. When a limit is exceeded, Ekos shall command the appropiate action to remedy the situation as explained below.</span></p>
 <p class="rvps2"><span class="rvts39"><br/></span></p>
@@ -336,7 +347,7 @@
 <p class="rvps11"><span class="rvts38"><br/></span></p>
 <p class="rvps3"><img width="986" height="562" alt="" style="padding : 1px;" src="lib/smapp_22101_capture_limit_settings.jpg"></p>
 <p class="rvps3"><span class="rvts38"><br/></span></p>
-<p class="rvps11"><span class="rvts38">File Settings </span><img width="24" height="25" alt="" style="padding : 1px;" src="lib/smapp_file_settings_icon.png"></p>
+<p class="rvps11"><span class="rvts38">File Settings </span></p>
 <p class="rvps11"><span class="rvts38"><br/></span></p>
 <p class="rvps2"><span class="rvts39">Settings for specifying where captured images are saved to, and how to generate unique file names.</span></p>
 <p class="rvps2"><span class="rvts39"><br/></span></p>
@@ -430,7 +441,6 @@
 <p class="rvps3"><span class="rvts46"><br/></span></p>
 <p class="rvps3"><span class="rvts46"><br/></span></p>
 <p class="rvps14"><span class="rvts6">Inspect master frames of a specific camera.</span><span class="rvts6"></span></p>
-<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Produce online help for Qt applications</a></p>
 
             </div>
             
