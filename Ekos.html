@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="ConfiguringKStars.html">Configuring KStars</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="ConfiguringKStars.html" title="Configuring KStars" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="INDI.html" title="INDI" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Advanced.html" title="Advanced" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConfiguringKStars.html" title="Configuring KStars" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="INDI.html" title="INDI" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Advanced.html" title="Advanced" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,11 +185,10 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/ekos_tab.png"></p>
-<p class="rvps10"><span class="rvts20">Ekos is an astrophotography suite, a complete astrophotography solution that can control all INDI devices including numerous telescopes, CCDs, DSLRs, focusers, filters, and a lot more. Ekos supports highly accurate tracking using online and offline astrometry solver, autofocus and autoguiding capabilities, and capture of single or multiple images using the powerful built in sequence manager. For detailed explanation of&nbsp;Ekos, see the&nbsp;</span><a class="rvts23" href="Ekos2.html">Ekos section of this manual</a><span class="rvts20">.</span></p>
-<p></p>
+<p class="rvps3"><img width="710" height="587" alt="" style="padding : 1px;" src="lib/ekos_tab.jpg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps10"><span class="rvts20">Ekos is an astrophotography suite, a complete astrophotography solution that can control all INDI devices including numerous telescopes, CCDs, DSLRs, focusers, filters, and a lot more. Ekos supports highly accurate tracking using online and offline astrometry solver, autofocus and autoguiding capabilities, and capture of single or multiple images using the powerful built in sequence manager. For detailed explanation of&nbsp;Ekos, see the&nbsp;</span><a class="rvts23" href="Ekos2.html">Ekos section of this manual</a><span class="rvts20">.</span><span class="rvts6"></span></p>
 
             </div>
             
@@ -244,7 +244,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Ekos1.html">Ekos</a></li><li><a href="QuickControls.html">Quick Controls</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="QuickControls.html" title="Quick Controls" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Camera.html" title="Camera" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Modules.html" title="Modules" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="QuickControls.html" title="Quick Controls" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Camera.html" title="Camera" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Modules.html" title="Modules" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps2"><span class="rvts6">Rotator quick controls allows you to control your rotator quickly and easily, it has the following features:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps2"><span class="rvts6">Display Current Angle (</span><span class="rvts30">please note all angles are in degrees)</span></li>
@@ -196,7 +196,7 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Going to absolute angle</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can go to an absolute angle by tapping on the textbox and typing it the angle you want to go to, then tap on the</span><span class="rvts24"> </span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/filter_tilt_shift_black.png"><span class="rvts24"> Goto</span><span class="rvts6"> button next to the textbox on the right. You will be able to see the angle display view changing along the way to its final angle.</span></p>
+<p class="rvps2"><span class="rvts6">You can go to an absolute angle by tapping on the textbox and typing it the angle you want to go to, then tap on the</span><span class="rvts24"> </span><span class="rvts24"> Goto</span><span class="rvts6"> button next to the textbox on the right. You will be able to see the angle display view changing along the way to its final angle.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/rotator.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
@@ -204,10 +204,9 @@
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps11"><span class="rvts24">Going to an angle position by steps</span></p>
 <p class="rvps11"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can rotate the rotator to a different angle using the </span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/rotate_right_black.png"><span class="rvts6"> </span><span class="rvts24">CW</span><span class="rvts6"> and </span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/rotate_left_black.png"><span class="rvts6"> </span><span class="rvts24">CCW</span><span class="rvts6"> rotation buttons, which will change the rotation by 10 steps depending on the direction chosen.</span></p>
+<p class="rvps2"><span class="rvts6">You can rotate the rotator to a different angle using the </span><span class="rvts6"> </span><span class="rvts24">CW</span><span class="rvts6"> and </span><span class="rvts6"> </span><span class="rvts24">CCW</span><span class="rvts6"> rotation buttons, which will change the rotation by 10 steps depending on the direction chosen.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/step_cw.jpg"></p>
-<p></p>
+<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/step_cw.jpg"><span class="rvts6"></span></p>
 
             </div>
             
@@ -263,7 +262,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

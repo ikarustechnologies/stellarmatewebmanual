@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="ManualPairing.html" title="Manual Pairing" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ConnectingDSLRs.html" title="Connecting DSLRs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ManualPairing.html" title="Manual Pairing" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ConnectingDSLRs.html" title="Connecting DSLRs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps10"><span class="rvts20">StellarMate Plus supports a broad range of camers (CCD/CMOS). Find out if your camera is supported in the INDI&nbsp;</span><a class="rvts23" href="https://indilib.org/devices/ccds.html">Camera Portal</a><span class="rvts20">.</span></p>
 <p class="rvps10"><span class="rvts20">StellarMate Plus includes 2 USB 2.0 ports and 2 USB 3.0 ports, it natively supports USB 3.0 cameras using full bandwidth. While USB 3.0+ cameras are compatible, if you plug them in USB 2.0 ports, they will operate with a reduced speed. For applications other than Electronically-Assisted-Astronomy (EAA) where a high FPS is required, USB 2.0 is sufficient for most scenarios.</span></p>
 <p class="rvps10"><span class="rvts20">Cameras' power can be either external (AC) or internal (battery) or supplied by the USB bus connection. They can be either connected directly to StellarMate or to to an external USB hub.</span></p>
@@ -193,7 +193,7 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/exclamation-circle-svg.png"></p>
+   <p class="rvps6"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
    <p class="rvps2"><span class="rvts18">IMPORTANT</span></p>
@@ -204,7 +204,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps23"><span class="rvts16">Unreliable &amp; Unstable&nbsp;</span><span class="rvts18">Power</span><span class="rvts16">&nbsp;is the primary cause for majority of camera issues. Ensure the camera is properly powered to avoid instabilities. StellarMate controller ships with a 3A 5v power adapter. StellarMate OS users should invest in a similar adapter.</span></p>
+   <p class="rvps26"><span class="rvts16">Unreliable &amp; Unstable&nbsp;</span><span class="rvts18">Power</span><span class="rvts16">&nbsp;is the primary cause for majority of camera issues. Ensure the camera is properly powered to avoid instabilities. StellarMate controller ships with a 3A 5v power adapter. StellarMate OS users should invest in a similar adapter.</span></p>
   </td>
  </tr>
 </table>
@@ -218,8 +218,7 @@
  <li class="rvps10"><span class="rvts20">Web Cameras.</span></li>
  <li class="rvps10"><span class="rvts20">DSLRs</span></li>
 </ul>
-<p class="rvps10"><span class="rvts20">StellarMate supports cameras with built-in Filter Wheels and ST4 port for pulse-guiding.</span></p>
-<p></p>
+<p class="rvps10"><span class="rvts20">StellarMate supports cameras with built-in Filter Wheels and ST4 port for pulse-guiding.</span><span class="rvts6"></span></p>
 
             </div>
             
@@ -275,7 +274,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

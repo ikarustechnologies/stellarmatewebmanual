@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="KStarsTools.html" title="KStars Tools" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="AltitudevsTimeTool.html" title="Altitude vs. Time Tool" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="WhatsUpTonightTool.html" title="What's Up Tonight? Tool" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="KStarsTools.html" title="KStars Tools" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="AltitudevsTimeTool.html" title="Altitude vs. Time Tool" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="WhatsUpTonightTool.html" title="What's Up Tonight? Tool" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,9 +185,9 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/EPView_Screenshot.png"></p>
+<p class="rvps3"><img width="633" height="540" alt="" style="padding : 1px;" src="lib/EPView_Screenshot.jpg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
 <p class="rvps2"><span class="rvts20">On the left hand side is the sky map shot from&nbsp;KStars. On the right hand side is the POSS (DSS) image of the same region. The orientation in the above example has been adjusted to match the view through a Dobsonian telescope at the location and time of the simulation in&nbsp;KStars.</span></p>
 <p class="rvps10"><span class="rvts20">This tool simulates how an object looks through your eyepiece. In addition to rendering the eyepiece field,&nbsp;KStars&nbsp;can also fetch and overlay the DSS imagery. Additionally, if you are using a Dobsonian telescope, you can rotate the field of view to match the eyepiece view.</span></p>
 <p class="rvps10"><span class="rvts20">To use this feature, first define your eyepieces' fields of view using the&nbsp;</span><a class="rvts23" href="CustomizingtheDisplay.html">FOV Symbol editor</a><span class="rvts20">.</span></p>
@@ -196,10 +197,11 @@
  <li class="rvps10"><span class="rvts20">In observation planner, right click an object and click&nbsp;Simulate eyepiece view&nbsp;in the popup menu.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20">When the tool is first invoked, it will prompt a dialog to select the desired FOV to render the view. To compare the rendered view against a real sky image, click the&nbsp;Fetch DSS image&nbsp;button to download a DSS image. You can manually adjust the view to match your eyepiece using the rotation slider, the&nbsp;invert view&nbsp;and&nbsp;flip view&nbsp;check boxes. Alternatively, you can use a pre-calculated amount of rotation by using one of the&nbsp;Presets&nbsp;that is tailored for different optical systems.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Arp84_EyepieceView.png"></p>
+<p class="rvps10"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="579" height="580" alt="" style="padding : 1px;" src="lib/Arp84_EyepieceView.jpg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
 <p class="rvps2"><span class="rvts20">Arp84 eyepiece view with ticks enabled indicating how the chart must be oriented to match the eyepiece view through a Dobsonian at a given time (the generated data is for location McDonald Observatory Texas, and the date is 14th Dec 2016).</span></p>
-<p class="rvps10"><span class="rvts20">To export the view to a file, click&nbsp;Export&nbsp;button. Export enables adding ticks for printed charts as shown above and save the image.</span></p>
-<p></p>
+<p class="rvps10"><span class="rvts20">To export the view to a file, click&nbsp;Export&nbsp;button. Export enables adding ticks for printed charts as shown above and save the image.</span><span class="rvts6"></span></p>
 
             </div>
             
@@ -255,7 +257,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

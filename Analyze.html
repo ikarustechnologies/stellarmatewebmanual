@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li><li><a href="Ekos2.html">Ekos</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Observatory.html" title="Observatory" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="JupiterMoonsTool.html" title="Jupiter Moons Tool" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Ekos2.html" title="Ekos" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Observatory.html" title="Observatory" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="JupiterMoonsTool.html" title="Jupiter Moons Tool" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,10 +185,9 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps2"><span class="rvts24">Introduction</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps3"><img width="571" height="562" alt="" style="padding : 1px;" src="lib/ekos_analyze.png"></p>
+<p class="rvps3"><img width="571" height="562" alt="" style="padding : 1px;" src="lib/ekos_analyze.jpg"></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The Analyze Module records and displays what happened in an imaging session. That is, it does not control any if your imaging, but rather reviews what occurred. Sessions are stored in an </span><span class="rvts24">analyze</span><span class="rvts6"> folder, a sister folder to the main logging folder. The </span><span class="rvts24">.analyze</span><span class="rvts6"> files written there can be loaded into the </span><span class="rvts24">Analyze</span><span class="rvts6"> tab to be viewed. </span><span class="rvts24">Analyze</span><span class="rvts6"> also can display data from the current imaging session.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -205,8 +205,7 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Statistics</span></p>
 <p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">A variety of statistics can be displayed on the </span><span class="rvts24">Stats</span><span class="rvts6"> graph. There are too many for all to be shown in a readable way, so select among them with the checkboxes. A reasonable way to start might be to use </span><span class="rvts24">rms</span><span class="rvts6">, </span><span class="rvts24">snr</span><span class="rvts6"> (using the internal guider with SEP Multistar), and </span><span class="rvts24">hfr</span><span class="rvts6"> (if you have auto-compute HFR in the FITS options). Experiment with others. The axis shown (0-5) is appropriate only for ra/dec error, drift, rms, pulses, and hfr. These may be y-axis scaled (awkwardly) using the mouse wheel, but the other graphs cannot be scaled. To reset y-axis zooming, right-click on the Stats plot. Clicking on the graph fills in the values of the displayed statistics. This graph is zoomed and panned horizontally in coordination with the timeline.</span></p>
-<p></p>
+<p class="rvps2"><span class="rvts6">A variety of statistics can be displayed on the </span><span class="rvts24">Stats</span><span class="rvts6"> graph. There are too many for all to be shown in a readable way, so select among them with the checkboxes. A reasonable way to start might be to use </span><span class="rvts24">rms</span><span class="rvts6">, </span><span class="rvts24">snr</span><span class="rvts6"> (using the internal guider with SEP Multistar), and </span><span class="rvts24">hfr</span><span class="rvts6"> (if you have auto-compute HFR in the FITS options). Experiment with others. The axis shown (0-5) is appropriate only for ra/dec error, drift, rms, pulses, and hfr. These may be y-axis scaled (awkwardly) using the mouse wheel, but the other graphs cannot be scaled. To reset y-axis zooming, right-click on the Stats plot. Clicking on the graph fills in the values of the displayed statistics. This graph is zoomed and panned horizontally in coordination with the timeline.</span><span class="rvts6"></span></p>
 
             </div>
             
@@ -262,7 +261,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

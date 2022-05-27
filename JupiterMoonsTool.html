@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="KStarsTools.html">KStars Tools</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="KStarsTools.html" title="KStars Tools" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Analyze.html" title="Analyze" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ObservationPlanner.html" title="Observation Planner" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="KStarsTools.html" title="KStars Tools" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Analyze.html" title="Analyze" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ObservationPlanner.html" title="Observation Planner" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,12 +185,10 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/jmoons.png"></p>
+<p class="rvps3"><img width="256" height="455" alt="" style="padding : 1px;" src="lib/jmoons.jpg"></p>
 <p class="rvps10"><span class="rvts20">This tool displays the positions of Jupiter's four largest moons (Io, Europa, Ganymede, and Callisto) relative to Jupiter, as a function of time. Time is plotted vertically; the units are days and&nbsp;“time=0.0”&nbsp;corresponds to the current simulation time. The horizontal axis displays the angular offset from Jupiter's position, in arcminutes. The offset is measured along the direction of Jupiter's equator. Each moon's position as a function of time traces a sinusoidal path in the plot, as the moon orbits around Jupiter. Each track is assigned a different color to distinguish it from the others; the name labels at the top of the window indicate the color used by each moon (i.e.&nbsp;red for Io, yellow for Europa, green for Callisto and blue for Ganymede).</span></p>
-<p class="rvps10"><span class="rvts20">The plot can be manipulated with the keyboard. The time axis can be expanded or compressed using the&nbsp;</span><span class="rvts22">+</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">-</span><span class="rvts20">&nbsp;keys. The time displayed at the center of the window can be changed with the&nbsp;</span><span class="rvts22">[</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">]</span><span class="rvts20">&nbsp;keys.</span></p>
-<p></p>
+<p class="rvps10"><span class="rvts20">The plot can be manipulated with the keyboard. The time axis can be expanded or compressed using the&nbsp;</span><span class="rvts22">+</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">-</span><span class="rvts20">&nbsp;keys. The time displayed at the center of the window can be changed with the&nbsp;</span><span class="rvts22">[</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">]</span><span class="rvts20">&nbsp;keys.</span><span class="rvts6"></span></p>
 
             </div>
             
@@ -245,7 +244,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="TheKStarsHandbook.html">The KStars Handbook</a></li><li><a href="AQuickTourofKStars.html">A Quick Tour of KStars</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="AQuickTourofKStars.html" title="A Quick Tour of KStars" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="HaveaLookAround.html" title="Have a Look Around" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="EndoftheTour.html" title="End of the Tour" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AQuickTourofKStars.html" title="A Quick Tour of KStars" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="HaveaLookAround.html" title="Have a Look Around" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="EndoftheTour.html" title="End of the Tour" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,31 +185,32 @@
 
             <div class="main-content">
                 
-<p></p>
-<p class="rvps10"><a name="IDM1850"></a><span class="rvts20">KStars&nbsp;displays thousands of celestial objects: stars, planets, comets, asteroids, clusters, nebulae and galaxies. You can interact with displayed objects to perform actions on them or obtain more information about them. Clicking on an object will identify it in the status bar, and simply hovering the mouse cursor on an object will label it temporarily in the map. Double-clicking will recenter the display on the object and begin tracking it (so that it will remain centered as time passes).&nbsp;Right&nbsp;clicking an object opens the object's popup menu, which provides more options.</span></p>
-<h4 class="rvps30"><a name="POPUPQUICK"></a><span class="rvts0"><span class="rvts22">The Popup Menu</span></span></h4>
-<p class="rvps10"><a name="IDM1857"></a><span class="rvts20">Here is an example of the&nbsp;right&nbsp;click popup menu, for the Uranus:</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/popup.png"></p>
-<p class="rvps10"><span class="rvts20">The appearance of the popup menu depends somewhat on the kind of object you&nbsp;right-click on, but the basic structure is listed below. You can get&nbsp;</span><a class="rvts23" href="MenuCommands.html#POPUP-MENU">more detailed information about the popup menu</a><span class="rvts20">.</span></p>
-<p class="rvps10"><span class="rvts20">The top section contains some lines of information which are not selectable: the object's names ("Uranus"), object type ("Solar system object"), and the constellation which contains the object ("Pisces"). The next three lines show the object's rise, set, and transit times. If the rise and set times say "circumpolar", it means that the object is always above the horizon for the present location.</span></p>
-<p class="rvps10"><span class="rvts20">The middle section contains actions which can be performed on the selected object, such as&nbsp;Center &amp; Track,&nbsp;Details, and&nbsp;Attach Label. See the&nbsp;</span><a class="rvts23" href="MenuCommands.html#POPUP-MENU">popup menu description</a><span class="rvts20">&nbsp;for a full list and description of each action.</span></p>
-<p class="rvps10"><a name="IDM1879"></a><span class="rvts20">The bottom section contains links to images and/or informative webpages about the selected object. If you know of an additional&nbsp;URL&nbsp;with information or an image of the object, you can add a custom link to the object's popup menu. Use the&nbsp;Details&nbsp;item in the popup menu to open the&nbsp;Object Details&nbsp;dialog. On the&nbsp;Link&nbsp;tab use the&nbsp;Add Link...&nbsp;item.</span></p>
-<h4 class="rvps30"><a name="FINDOBJECTS"></a><span class="rvts0"><span class="rvts22">Finding Objects</span></span></h4>
-<p class="rvps10"><a name="IDM1890"></a><span class="rvts20">You can search for named objects using the&nbsp;Find Object&nbsp;tool, which can be opened by clicking on the&nbsp;search&nbsp;icon in the toolbar, by selecting&nbsp;Find Object...&nbsp;from the&nbsp;Pointing&nbsp;menu, or by pressing&nbsp;</span><span class="rvts22">Ctrl</span><span class="rvts20">+</span><span class="rvts22">F</span><span class="rvts20">. The&nbsp;Find Object&nbsp;window is shown below:</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/find2.png"></p>
-<p class="rvps10"><span class="rvts20">The window contains a list of all the named objects that&nbsp;KStars&nbsp;is aware of. Many of the objects only have a numeric catalog name (for example, NGC 3077), but some objects have a common name as well (for example, Whirlpool Galaxy). You can filter the list by name and by object type. To filter by name, enter a string in the edit box at the top of the window; the list will then only contain names which start with that string. To filter by type, select a type from the combo box at the bottom of the window.</span></p>
-<p class="rvps10"><span class="rvts20">KStars&nbsp;provides another method for resolving the objects that are missing from any of its predefined catalogues, by using an internet connection. Thus, if you want to find an object that&nbsp;KStars&nbsp;is not aware of, you can easily do this by querying several professional astronomical databases as: SIMBAD, NED or VizieR. This can be done by entering the object's name and then press the&nbsp;or search the internet for ObjectName&nbsp;button. After your object is found, you can use it exactly as any object that is already loaded into&nbsp;KStars&nbsp;(i.e.&nbsp;adding it to the Observing WishList). If the object was not found in the online databases, then a warning dialogue will pop-up. Once you resolve an object by using this method, it is stored in&nbsp;KStars&nbsp;database, so if you close&nbsp;KStars&nbsp;and open it again, your object will still be there.</span></p>
-<p class="rvps10"><span class="rvts20">You can choose to enable or disable this feature by checking or unchecking the&nbsp;Resolve names not known to&nbsp;KStars&nbsp;using online services&nbsp;check box from&nbsp;Catalogs&nbsp;tab, inside of&nbsp;Settings&nbsp;→&nbsp;Configure KStars&nbsp;window. If this checkbox is checked, when an object name unknown to&nbsp;KStars&nbsp;is entered in the&nbsp;Find Dialog,&nbsp;KStars&nbsp;will contact online services to learn about the desired object and then add it directly to&nbsp;KStars&nbsp;database. The objects acquired in this manner are stored in a fake catalog, called&nbsp;“_Internet_Resolved”. Thus, you can enable or disable the display of these objects by checking or unchecking the&nbsp;“_Internet_Resolved”&nbsp;catalog from the catalogues list. Note that you can not delete this fake catalogue, as you can do with a custom catalogue. If this checkbox is unchecked, then the&nbsp;Find Dialog&nbsp;window will be exactly the same, excepting a minor change: the online searching button will no longer be visible.</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/find.png"></p>
-<p class="rvps10"><span class="rvts20">To center the display on an object, highlight the desired object in the list, and press&nbsp;Ok. Note that if the object is below the horizon, the program will warn you that you may not see anything except the ground (you can make the ground invisible in the&nbsp;Guides&nbsp;settings page, or by pressing the&nbsp;Ground&nbsp;button in the View toolbar).</span></p>
-<h4 class="rvps30"><a name="IDM1892"></a><span class="rvts0"><span class="rvts22">Centering and Tracking</span></span></h4>
-<p class="rvps10"><a name="CENTERTRACK"></a><span class="rvts20">KStars&nbsp;will automatically begin tracking on an object whenever one is centered in the display, either by using the&nbsp;Find Object&nbsp;window, by double-clicking on it, or by selecting&nbsp;Center &amp; Track&nbsp;from its&nbsp;right-click popup menu. You can disengage tracking by panning the display, pressing the&nbsp;Stop Tracking&nbsp;icon in the Main toolbar, or selecting&nbsp;Stop Tracking&nbsp;from the&nbsp;Pointing&nbsp;menu.</span></p>
+<p class="rvps10"><a name="IDM1850"></a><span class="rvts62">KStars&nbsp;displays thousands of celestial objects: stars, planets, comets, asteroids, clusters, nebulae and galaxies. You can interact with displayed objects to perform actions on them or obtain more information about them. Clicking on an object will identify it in the status bar, and simply hovering the mouse cursor on an object will label it temporarily in the map. Double-clicking will recenter the display on the object and begin tracking it (so that it will remain centered as time passes).&nbsp;Right&nbsp;clicking an object opens the object's popup menu, which provides more options.</span></p>
+<h4 class="rvps33"><a name="POPUPQUICK"></a><span class="rvts0"><span class="rvts22">The Popup Menu</span></span></h4>
+<p class="rvps10"><a name="IDM1857"></a><span class="rvts62">Here is an example of the&nbsp;right&nbsp;click popup menu, for the Uranus:</span></p>
+<p class="rvps3"><img width="447" height="494" alt="" style="padding : 1px;" src="lib/popup.jpg"></p>
+<p class="rvps10"><span class="rvts62">The appearance of the popup menu depends somewhat on the kind of object you&nbsp;right-click on, but the basic structure is listed below. You can get&nbsp;</span><a class="rvts60" href="MenuCommands.html#POPUP-MENU">more detailed information about the popup menu</a><span class="rvts62">.</span></p>
+<p class="rvps10"><span class="rvts62">The top section contains some lines of information which are not selectable: the object's names ("Uranus"), object type ("Solar system object"), and the constellation which contains the object ("Pisces"). The next three lines show the object's rise, set, and transit times. If the rise and set times say "circumpolar", it means that the object is always above the horizon for the present location.</span></p>
+<p class="rvps10"><span class="rvts62">The middle section contains actions which can be performed on the selected object, such as&nbsp;Center &amp; Track,&nbsp;Details, and&nbsp;Attach Label. See the&nbsp;</span><a class="rvts60" href="MenuCommands.html#POPUP-MENU">popup menu description</a><span class="rvts62">&nbsp;for a full list and description of each action.</span></p>
+<p class="rvps10"><a name="IDM1879"></a><span class="rvts62">The bottom section contains links to images and/or informative webpages about the selected object. If you know of an additional&nbsp;URL&nbsp;with information or an image of the object, you can add a custom link to the object's popup menu. Use the&nbsp;Details&nbsp;item in the popup menu to open the&nbsp;Object Details&nbsp;dialog. On the&nbsp;Link&nbsp;tab use the&nbsp;Add Link...&nbsp;item.</span></p>
+<h4 class="rvps33"><a name="FINDOBJECTS"></a><span class="rvts0"><span class="rvts22">Finding Objects</span></span></h4>
+<p class="rvps10"><a name="IDM1890"></a><span class="rvts62">You can search for named objects using the&nbsp;Find Object&nbsp;tool, which can be opened by clicking on the&nbsp;search&nbsp;icon in the toolbar, by selecting&nbsp;Find Object...&nbsp;from the&nbsp;Pointing&nbsp;menu, or by pressing&nbsp;</span><span class="rvts90">Ctrl</span><span class="rvts62">+</span><span class="rvts90">F</span><span class="rvts62">. The&nbsp;Find Object&nbsp;window is shown below:</span></p>
+<p class="rvps3"><img width="278" height="506" alt="" style="padding : 1px;" src="lib/find2.jpg"></p>
+<p class="rvps10"><span class="rvts62">The window contains a list of all the named objects that&nbsp;KStars&nbsp;is aware of. Many of the objects only have a numeric catalog name (for example, NGC 3077), but some objects have a common name as well (for example, Whirlpool Galaxy). You can filter the list by name and by object type. To filter by name, enter a string in the edit box at the top of the window; the list will then only contain names which start with that string. To filter by type, select a type from the combo box at the bottom of the window.</span></p>
+<p class="rvps10"><span class="rvts62">KStars&nbsp;provides another method for resolving the objects that are missing from any of its predefined catalogues, by using an internet connection. Thus, if you want to find an object that&nbsp;KStars&nbsp;is not aware of, you can easily do this by querying several professional astronomical databases as: SIMBAD, NED or VizieR. This can be done by entering the object's name and then press the&nbsp;or search the internet for ObjectName&nbsp;button. After your object is found, you can use it exactly as any object that is already loaded into&nbsp;KStars&nbsp;(i.e.&nbsp;adding it to the Observing WishList). If the object was not found in the online databases, then a warning dialogue will pop-up. Once you resolve an object by using this method, it is stored in&nbsp;KStars&nbsp;database, so if you close&nbsp;KStars&nbsp;and open it again, your object will still be there.</span></p>
+<p class="rvps10"><span class="rvts62">You can choose to enable or disable this feature by checking or unchecking the&nbsp;Resolve names not known to&nbsp;KStars&nbsp;using online services&nbsp;check box from&nbsp;Catalogs&nbsp;tab, inside of&nbsp;Settings&nbsp;→&nbsp;Configure KStars&nbsp;window. If this checkbox is checked, when an object name unknown to&nbsp;KStars&nbsp;is entered in the&nbsp;Find Dialog,&nbsp;KStars&nbsp;will contact online services to learn about the desired object and then add it directly to&nbsp;KStars&nbsp;database. The objects acquired in this manner are stored in a fake catalog, called&nbsp;“_Internet_Resolved”. Thus, you can enable or disable the display of these objects by checking or unchecking the&nbsp;“_Internet_Resolved”&nbsp;catalog from the catalogues list. Note that you can not delete this fake catalogue, as you can do with a custom catalogue. If this checkbox is unchecked, then the&nbsp;Find Dialog&nbsp;window will be exactly the same, excepting a minor change: the online searching button will no longer be visible.</span></p>
+<p class="rvps10"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="287" height="484" alt="" style="padding : 1px;" src="lib/find.jpg"></p>
+<p class="rvps3"><span class="rvts62"><br/></span></p>
+<p class="rvps10"><span class="rvts62">To center the display on an object, highlight the desired object in the list, and press&nbsp;Ok. Note that if the object is below the horizon, the program will warn you that you may not see anything except the ground (you can make the ground invisible in the&nbsp;Guides&nbsp;settings page, or by pressing the&nbsp;Ground&nbsp;button in the View toolbar).</span></p>
+<h4 class="rvps33"><a name="IDM1892"></a><span class="rvts0"><span class="rvts22">Centering and Tracking</span></span></h4>
+<p class="rvps10"><a name="CENTERTRACK"></a><span class="rvts62">KStars&nbsp;will automatically begin tracking on an object whenever one is centered in the display, either by using the&nbsp;Find Object&nbsp;window, by double-clicking on it, or by selecting&nbsp;Center &amp; Track&nbsp;from its&nbsp;right-click popup menu. You can disengage tracking by panning the display, pressing the&nbsp;Stop Tracking&nbsp;icon in the Main toolbar, or selecting&nbsp;Stop Tracking&nbsp;from the&nbsp;Pointing&nbsp;menu.</span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps5">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
+   <p class="rvps6"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
    <p class="rvps2"><span class="rvts18">Note</span></p>
@@ -219,13 +221,13 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><a name="IDM1948"></a><span class="rvts16">When tracking on a Solar System body,&nbsp;KStars&nbsp;will automatically attach an&nbsp;“orbit trail”, showing the path of the body across the sky. You will likely need to change the clock's timestep to a large value (such as&nbsp;“1 day”) to see the trail.</span></p>
+   <p class="rvps34"><a name="IDM1948"></a><span class="rvts16">When tracking on a Solar System body,&nbsp;KStars&nbsp;will automatically attach an&nbsp;“orbit trail”, showing the path of the body across the sky. You will likely need to change the clock's timestep to a large value (such as&nbsp;“1 day”) to see the trail.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<h4 class="rvps30"><a name="IDM1961"></a><span class="rvts0"><span class="rvts22">Keyboard Actions</span></span></h4>
+<h4 class="rvps33"><a name="IDM1961"></a><span class="rvts0"><span class="rvts22">Keyboard Actions</span></span></h4>
 <p class="rvps10"><a name="OBJECTACTIONS"></a><span class="rvts20">When you click on an object in the map, it becomes the&nbsp;</span><span class="rvts21">selected object</span><span class="rvts20">, and its name is identified in the statusbar. There are a number of quick key commands available which act on the selected object:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
  <li class="rvps2"><span class="rvts22">C</span></li>
@@ -245,7 +247,7 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
+   <p class="rvps6"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
    <p class="rvps2"><span class="rvts18">Note</span></p>
@@ -256,14 +258,13 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps31"><span class="rvts16">By holding down the&nbsp;</span><span class="rvts18">Shift</span><span class="rvts16">&nbsp;key, you can perform these actions on the centered object, rather than the selected object.</span></p>
+   <p class="rvps34"><span class="rvts16">By holding down the&nbsp;</span><span class="rvts18">Shift</span><span class="rvts16">&nbsp;key, you can perform these actions on the centered object, rather than the selected object.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<p class="rvps2"><span class="rvts16"><br/></span></p>
-<p></p>
+<p class="rvps2"><span class="rvts16"></span><span class="rvts6"></span></p>
 
             </div>
             
@@ -319,7 +320,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

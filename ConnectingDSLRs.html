@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="ConnectingCCDs.html" title="Connecting CCDs" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SupportedDSLRs.html" title="Supported DSLRs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConnectingCCDs.html" title="Connecting CCDs" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SupportedDSLRs.html" title="Supported DSLRs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,15 +185,14 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps10"><span class="rvts20">StellarMate supports DSLR cameras using the INDI GPhoto driver based on libgphto2 library. It includes supports for Canon, Nikon, Sony, Pentax and other DSLR cameras. To know if your specific model is supported, please check the&nbsp;</span><a class="rvts23" href="http://www.gphoto.org/proj/libgphoto2/support.php">DSLR Supported Cameras List</a><span class="rvts20">. In order to use your camera with StellarMate, it must meet the following requirements:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">It must support USB. Connect a USB cable from the camera to StellarMate. WiFI cameras are not supported yet.</span></li>
  <li class="rvps10"><span class="rvts20">It must support&nbsp;</span><span class="rvts22">BULB/MANUAL</span><span class="rvts20">&nbsp;mode where the shutter is controlled by an external program.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
-<p class="rvps19"><img alt="" style="padding : 1px;" src="lib/dslr_manual_bulb.png"></p>
-<p class="rvps19"><span class="rvts6"><br/></span></p>
+<p class="rvps22"><img alt="" style="padding : 1px;" src="lib/dslr_manual_bulb.jpg"></p>
+<p class="rvps22"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Tip: Some modern cameras do not have a Bulb (B) dial. You can set Bulb Mode by selecting Manual (M) dial and then change the exposure duration until you see BULB in the camera.</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
@@ -200,7 +200,7 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
+   <p class="rvps6"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
    <p class="rvps2"><span class="rvts18">Tip</span></p>
@@ -220,13 +220,13 @@
 <p class="rvps2"><span class="rvts16"><br/></span></p>
 <p class="rvps10"><span class="rvts20">The shutter control can be either executed internally if supported by the camera, or externally via an external release cable (e.g. DSUSB). The INDI GPhoto&nbsp;</span><a class="rvts23" href="https://indilib.org/devices/ccds/gphoto.html">driver documentation</a><span class="rvts20">&nbsp;includes all the details on operating DSLR cameras.</span></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
-<p class="rvps24"><span class="rvts6">The INDI driver requires the camera resolution and pixel size upon first connection. When the camera is first detected, StellarMate would look up the camera specifications and fill out the necessary information automatically. Please make sure this information is correct in the INDI Control Panel → Image Info Tab.</span></p>
+<p class="rvps27"><span class="rvts6">The INDI driver requires the camera resolution and pixel size upon first connection. When the camera is first detected, StellarMate would look up the camera specifications and fill out the necessary information automatically. Please make sure this information is correct in the INDI Control Panel → Image Info Tab.</span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps5">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/info-circle.png"></p>
+   <p class="rvps6"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
    <p class="rvps2"><span class="rvts18">Tip</span></p>
@@ -245,8 +245,7 @@
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps2"><span class="rvts16"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Captured images are downloaded to StellarMate, and depending on the sensor size and the quality of the WiFi connection, it can take a few seconds for large frames to transfer. Live view video streaming is available on most models to aid in focusing the camera. Selected Canon cameras support focusing operations and can autofocus using the Ekos Focus module. Manual focus is available via Live View or Bahtinov Mask Assistant Tool.</span></p>
-<p class="rvps2"><span class="rvts50"><br/></span></p>
-<p></p>
+<p class="rvps2"><span class="rvts47"></span><span class="rvts6"></span></p>
 
             </div>
             
@@ -302,7 +301,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

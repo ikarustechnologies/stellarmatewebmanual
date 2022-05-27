@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 7.1.3.270">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -51,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
                         <li><a href="StellarMateApp1.html">StellarMate App</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="StellarMateApp1.html" title="StellarMate App" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Steps.html" title="Steps" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Connectingyourdevices.html" title="Connecting your devices" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="StellarMateApp1.html" title="StellarMate App" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Steps.html" title="Steps" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Connectingyourdevices.html" title="Connecting your devices" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -184,7 +185,6 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps2"><span class="rvts6">Go to your mobile OS WiFi settings and connect to the StellarMate hotspot.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts24">Hotspot</span><span class="rvts6">:&nbsp;</span><span class="rvts25">stellarmate</span></p>
@@ -195,7 +195,7 @@
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/exclamation-circle-svg.png"></p>
+   <p class="rvps6"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
    <p class="rvps2"><span class="rvts18">IMPORTANT</span></p>
@@ -213,7 +213,7 @@
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_wifi_connect.png"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/stellarmate_wifi_connection.JPG"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">After connecting to StellarMate, go back to the App:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -230,8 +230,7 @@
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_22101_logging_in.jpg"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The right side pane should now display the Equipment Profile page. Now you are ready to connect to your astronomical equipment.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             
@@ -287,7 +286,9 @@
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer
