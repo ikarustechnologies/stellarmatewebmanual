@@ -185,11 +185,38 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts20">When an equipment profile is started, the Ekos tab becomes active. In the Ekos screen, you can capture images, stream video, and create image sequences. Furthermore, it provides the following facilities:</span></p>
+<p class="rvps2"><span class="rvts35">When an equipment profile is not started, only the Ekos Scheduler module is available for use. From the scheduler, you may select targets and sequences to create jobs. You may specify job constraints and observatory startup and shutdown procedures. Once the scheduler is running, it will select the best targets to image and would automate the rest of the workflow without any human intervention.</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><img width="713" height="446" alt="" style="padding : 1px;" src="lib/scheduler.jpeg"></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts20">When an equipment profile is started, the Ekos modules becomes active. In the Ekos screen, you can capture images, stream video, and create image sequences. Furthermore, it provides the following facilities:</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Canvas on Main Image:</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts35">You can center the mount to a specific target in the main image if plate-solving was successful. From Ekos Align module, Capture and Solve an image. If successful, an orange align icon is displayed in the Main Image View indicating that solving is successful. For any subsequent images captured and displayed in the Main Image View, you may now select the target by tapping on it. A red bullseye animation designates the target.</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="704" height="440" alt="" style="padding : 1px;" src="lib/align_capture.jpg"></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Tap and hold the target for approximately one second to command the mount to slew. If successful, the indicator icon changes to yellow and once motion is complete, it switches to green. Capture a preview to verify the mount indeed centered the target as desired. Repeat if necessary. Can also be seen in the below images.</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><img width="715" height="446" alt="" style="padding : 1px;" src="lib/canvas_select.jpeg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps11"><span class="rvts20">Hold on your desired target, mount will star moving to that specifc target. Yellow animation will be appeared while it in in process.</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="717" height="448" alt="" style="padding : 1px;" src="lib/canvas_select1.jpeg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps11"><span class="rvts20">On success, the animation will turn to green.</span></p>
+<p class="rvps2"><span class="rvts20">On capture new image, the target lock animation will be reset to default.</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="719" height="450" alt="" style="padding : 1px;" src="lib/canvas_success.jpeg"></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps2"><span class="rvts22">Modules</span></li>
 </ul>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><img width="714" height="457" alt="" style="padding : 1px;" src="lib/ekos_main.jpeg"></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <li style="margin-left: 0px" class="rvps13"><a class="rvts34" href="Focus1.html">Focus</a><span class="rvts20">: </span><span class="rvts30">Focus your camera either automatically via an electronic focuser, or manually by adjusting the focus while framing, or by using Bahtinov Mask Assistant. Create presets for different configurations and set advanced settings to control the star detection and focusing algorithms.</span></li>
@@ -198,6 +225,7 @@
   <li style="margin-left: 0px" class="rvps13"><a class="rvts34" href="Capture1.html">Capture</a><span class="rvts20">: create, edit, and delete presets, job sequencing, </span><span class="rvts22">Filter Settings</span><span class="rvts20">, </span><span class="rvts22">Limit Settings</span><span class="rvts20">, </span><span class="rvts22">Calibration Settings</span><span class="rvts20">, </span><span class="rvts22">File Settings</span><span class="rvts20">.</span></li>
   <li style="margin-left: 0px" class="rvps13"><a class="rvts34" href="Mount1.html">Mount</a><span class="rvts20">: tracking on/off, park/unpark, </span><span class="rvts22">Meridian Flip, Limit Settings </span><span class="rvts20">(Alt and HA Limits), and Pier Side.</span></li>
   <li style="margin-left: 0px" class="rvps13"><a class="rvts34" href="Observatory1.html">Observatory</a><span class="rvts20">: park/unpark cap, park/unpark dome, dome goto absolute position and current angle representation.</span></li>
+  <li style="margin-left: 0px" class="rvps13"><span class="rvts22">Scheduler: </span><span class="rvts20">Schedule your session depending to the targets and on different timings.</span></li>
   <li style="margin-left: 0px" class="rvps13"><a class="rvts34" href="INDIControlPanel.html">INDI Control Panel</a><span class="rvts20">: </span><span class="rvts6">INDI Control Panel provides an interface to interact with the drivers of the devices connected to Stellarmate.</span></li>
  </ol>
 </ol>
@@ -224,7 +252,7 @@
 </ol>
 <p class="rvps13"><span class="rvts20"><br/></span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img width="919" height="526" alt="" style="padding : 1px;" src="lib/save-image.jpg"></p>
+<p class="rvps3"><img width="706" height="404" alt="" style="padding : 1px;" src="lib/save-image.jpg"></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
@@ -234,9 +262,9 @@
 <p class="rvps11"><span class="rvts22"><br/></span></p>
 <p class="rvps11"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">When available, clicking the histogram button in the main image view toggles the non-linear histogram. The histogram is generated for both mono and rgb images.</span></p>
 <p class="rvps11"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img width="919" height="574" alt="" style="padding : 1px;" src="lib/smapp_22101_ekos_histogram_button.jpg"></p>
+<p class="rvps3"><img width="716" height="447" alt="" style="padding : 1px;" src="lib/smapp_22101_ekos_histogram_button.jpg"></p>
 <p class="rvps14"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img width="919" height="574" alt="" style="padding : 1px;" src="lib/smapp_22101_ekos_histogram.jpg"><span class="rvts6"></span></p>
+<p class="rvps3"><img width="704" height="439" alt="" style="padding : 1px;" src="lib/smapp_22101_ekos_histogram.jpg"><span class="rvts6"></span></p>
 
             </div>
             
