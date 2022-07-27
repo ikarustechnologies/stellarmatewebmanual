@@ -186,7 +186,7 @@
             <div class="main-content">
                 
 <p class="rvps3"><img width="675" height="628" alt="" style="padding : 1px;" src="lib/ekos_guide.jpg"></p>
-<h5 class="rvps40"><a name="GUIDE-DARK-FRAMES"></a><span class="rvts0"><span class="rvts22">Introduction</span></span></h5>
+<h5 class="rvps45"><a name="GUIDE-DARK-FRAMES"></a><span class="rvts0"><span class="rvts22">Introduction</span></span></h5>
 <p class="rvps10"><span class="rvts20">Ekos Guide Module enables autoguiding capability using either the powerful built-in guider, or at your option, external guiding via&nbsp;</span><a class="rvts23" href="http://openphdguiding.org/">PHD2</a><span class="rvts20">&nbsp;or&nbsp;</span><a class="rvts23" href="https://sourceforge.net/projects/linguider/">lin_guider</a><span class="rvts20">. Using the internal guiding, guider CCD frames are captured and sent to Ekos for analysis. Depending on the deviations of the guide star from its lock position, guiding pulses corrections are sent to your mount&nbsp;Via&nbsp;any device that supports ST4 ports. Alternatively, you may send the corrections to your mount&nbsp;</span><span class="rvts21">directly</span><span class="rvts20">, if supported by the mount driver. Most of the GUI options in the Guide Module are well documented so just hover your mouse over an item and a tooltip will popup with helpful information.</span></p>
 <p class="rvps10"><span class="rvts20">To perform guiding, you need to select a Guider CCD in&nbsp;</span><a class="rvts23" href="Setup.html#EKOS-PROFILE-WIZARD">Ekos Profile Setup</a><span class="rvts20">. The telescope aperture and focal length must be set in the telescope driver. If the Guider CCD is attached to a separate Guide Scope, you must also set the Guide Scope's&nbsp;Focal Length&nbsp;and&nbsp;Aperture. You can set these values under the&nbsp;Options&nbsp;tab of the&nbsp;</span><a class="rvts23" href="TelescopeSetup.html">telescope driver</a><span class="rvts20">&nbsp;or from the Mount module. Autoguiding is a two-step process: Calibration &amp; Guiding.</span></p>
 <p class="rvps10"><span class="rvts20">Guiding introduction</span></p>
@@ -199,7 +199,7 @@
  <li class="rvps10"><span class="rvts20">Box: Size of the box enclosing the guide star. Select a suitable size that is neither too large or too small for the selected star.</span></li>
  <li class="rvps10"><span class="rvts20">Effects: Specify filter to be applied to the image to enhance it.</span></li>
 </ul>
-<h5 class="rvps40"><a name="GUIDE-DIRECTION-CONTROL"></a><span class="rvts0"><span class="rvts22">Main Module Controls</span></span></h5>
+<h5 class="rvps45"><a name="GUIDE-DIRECTION-CONTROL"></a><span class="rvts0"><span class="rvts22">Main Module Controls</span></span></h5>
 <p class="rvps10"><span class="rvts20">Most of the main module controls are briefly explained in this section.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10"><span class="rvts20">Capture: Takes one capture</span></li>
@@ -249,13 +249,13 @@
  <li class="rvps10"><span class="rvts20">Total RMS": Total Guiding RMS error.</span></li>
  <li class="rvps10"><span class="rvts20">Guide SNR: Guide Signal-to-noise ratio.</span></li>
 </ul>
-<h5 class="rvps40"><a name="GUIDE-GUIDING-RATE"></a><span class="rvts0"><span class="rvts22">Dark Frames</span></span></h5>
+<h5 class="rvps45"><a name="GUIDE-GUIDING-RATE"></a><span class="rvts0"><span class="rvts22">Dark Frames</span></span></h5>
 <p class="rvps10"><span class="rvts20">Dark frames are&nbsp;</span><span class="rvts21">immensely</span><span class="rvts20">&nbsp;helpful in reducing noises in your guide frames. It is highly recommended to take dark frames before you begin and calibration or guiding procedure. To take a dark frame, check the&nbsp;Dark&nbsp;checkbox and then click&nbsp;Capture. For the first time this is performed, Ekos will ask you about your camera shutter. If your camera does not have a shutter, then Ekos will warn you anytime you take a dark frame to cover your camera/telescope before proceeding with the capture. On the other hand, if the camera already includes a shutter, then Ekos will directly proceed with taking the dark frame. All dark frames are automatically saved to Ekos Dark Frame Library. By default, the Dark Library keeps reusing dark frames for 30 days after which it will capture new dark frames. This value is configurable and can be adjusted in&nbsp;</span><a class="rvts23" href="config.html#ekos">Ekos settings</a><span class="rvts20">&nbsp;in the&nbsp;KStars&nbsp;settings dialog.</span></p>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <p class="rvps3"><img width="627" height="462" alt="" style="padding : 1px;" src="lib/dark_library.jpg"></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
 <p class="rvps10"><span class="rvts20">It is recommended to take dark frames covering several binning and exposure values so that they may be reused transparently by Ekos whenever needed.</span></p>
-<h5 class="rvps40"><a name="GUIDE-DRIFT-GRAPHICS"></a><span class="rvts0"><span class="rvts22">Calibration</span></span></h5>
+<h5 class="rvps45"><a name="GUIDE-DRIFT-GRAPHICS"></a><span class="rvts0"><span class="rvts22">Calibration</span></span></h5>
 <p class="rvps3"><img width="674" height="545" alt="" style="padding : 1px;" src="lib/guide_calibration_settings.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps10"><span class="rvts20">In the calibration phase, you need to capture an image, select a guide star, and click&nbsp;Guide&nbsp;to begin the calibration process. If calibration was already completed successfully before, then the autoguiding process shall begin immediately, otherwise, it would start the calibration process. If&nbsp;Auto Star&nbsp;is checked, then you are only required to click&nbsp;Capture&nbsp;and Ekos will automatically select the best-fit guide star in the image and continues the calibration process automatically. If&nbsp;Auto Star&nbsp;is disabled, Ekos will try to automatically highlight the best guide star in the field. You need to confirm or change the selection before you can start the calibration process. The calibration options are:</span></p>
@@ -283,7 +283,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps34"><span class="rvts83">Calibration can fail for a variety of reasons. To improve the chances of success, try the tips below.</span></p>
+   <p class="rvps39"><span class="rvts102">Calibration can fail for a variety of reasons. To improve the chances of success, try the tips below.</span></p>
   </td>
  </tr>
 </table>
@@ -299,13 +299,13 @@
  <li class="rvps10"><span class="rvts20">Play with DEC Proportional Gain or disable DEC control completely and see the difference.</span></li>
  <li class="rvps10"><span class="rvts20">Leave algorithm to the default value (Smart)</span></li>
 </ul>
-<h5 class="rvps40"><a name="GUIDE-PHD2-SUPPORT"></a><span class="rvts0"><span class="rvts22">Guiding</span></span></h5>
+<h5 class="rvps45"><a name="GUIDE-PHD2-SUPPORT"></a><span class="rvts0"><span class="rvts22">Guiding</span></span></h5>
 <p class="rvps3"><img width="633" height="628" alt="" style="padding : 1px;" src="lib/guide_guide_settings.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps10"><span class="rvts20">Once the calibration process is completed successfully, the guiding shall begin automatically hereafter. The guiding performance is displayed in the&nbsp;Drift Graphics&nbsp;region where&nbsp;Green&nbsp;reflects deviations in RA and&nbsp;Blue&nbsp;deviations in DEC. The colors of the RA/DE lines can be changed in&nbsp;</span><a class="rvts23" href="Colors.html">KStars&nbsp;color scheme</a><span class="rvts20">&nbsp;in&nbsp;KStars&nbsp;settings dialog. The vertical axis denotes the deviation in arcsecs from the guide star central position and the horizontal axis denotes time. You can hover over the line to get the exact deviation at this particular point in time. Furthermore, you can also zoom and drag/pan the graph to inspect a specific region of the graph.</span></p>
 <p class="rvps10"><span class="rvts20">Ekos can utilize multiple algorithms to determine the center of mass of the guide star. By default, the&nbsp;</span><span class="rvts21">smart</span><span class="rvts20">&nbsp;algorithm is suited best for most situation. The&nbsp;</span><span class="rvts21">fast</span><span class="rvts20">&nbsp;algorithm is based on HFR calculations. You can try switching guiding algorithms if Ekos cannot keep of the guide star within the guiding square properly.</span></p>
 <p class="rvps10"><span class="rvts20">The info region displays information on the telescope &amp; FOV, in addition to the deviations from the guide star along with the correction pulses sent to the mount. The RMS value for each axis is displayed along with the total RMS value in arcsecs. The internal guider employs&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/PID_controller">PID controller</a><span class="rvts20">&nbsp;to correct the mount tracking. Currently, the&nbsp;</span><span class="rvts21">only</span><span class="rvts20">&nbsp;the proportional and integral gains are utilized within the algorithm, so adjusting it should affect the length of the generated pulses sent to the mount in milliseconds.</span></p>
-<p class="rvps10"><span class="rvts20">To enable automatic dithering between frames, make sure to check the&nbsp;Dither&nbsp;checkbox. By default, Ekos should dither (i.e.&nbsp;move) the guiding box by up to 3 pixels after each frame captured in</span><span class="rvts89">&nbsp;</span><a class="rvts23" href="Capture.html">Ekos Capture Module</a><span class="rvts20">. The motion duration and direction are randomized. Since the guiding performance can oscillate immediately after dithering, you can set the appropriate&nbsp;Settle&nbsp;duration to wait after dither is complete before resuming the capture process. In rare cases where the dithering process can get stuck in an endless loop, set the appropriate&nbsp;Timeout&nbsp;to abort the process. But even if dithering fails, you can select whether this failure should terminate the autoguiding process or not. Toggle&nbsp;Abort Autoguide on failure&nbsp;to select the desired behavior.</span></p>
+<p class="rvps10"><span class="rvts20">To enable automatic dithering between frames, make sure to check the&nbsp;Dither&nbsp;checkbox. By default, Ekos should dither (i.e.&nbsp;move) the guiding box by up to 3 pixels after each frame captured in</span><span class="rvts108">&nbsp;</span><a class="rvts23" href="Capture.html">Ekos Capture Module</a><span class="rvts20">. The motion duration and direction are randomized. Since the guiding performance can oscillate immediately after dithering, you can set the appropriate&nbsp;Settle&nbsp;duration to wait after dither is complete before resuming the capture process. In rare cases where the dithering process can get stuck in an endless loop, set the appropriate&nbsp;Timeout&nbsp;to abort the process. But even if dithering fails, you can select whether this failure should terminate the autoguiding process or not. Toggle&nbsp;Abort Autoguide on failure&nbsp;to select the desired behavior.</span></p>
 <p class="rvps10"><span class="rvts20">Non-guide dithering is also supported. This is useful when no guide camera is available or when performing short exposures. In this case, the mount can be commanded to dither in a random direction for up to the pulse specified in the&nbsp;Non-Guide Dither Pulse&nbsp;option.</span></p>
 <p class="rvps10"><span class="rvts20">Ekos supports multiple guiding methods: Internal, PHD2, and LinGuider. You need to select the desired guider in your Ekos equipment profile:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -384,7 +384,7 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps43"><span class="rvts16">If you have no idea what to set Control and Prediction gains, keep them around their defaults (in the&nbsp; 0.5 area).</span></p>
+   <p class="rvps48"><span class="rvts16">If you have no idea what to set Control and Prediction gains, keep them around their defaults (in the&nbsp; 0.5 area).</span></p>
   </td>
  </tr>
 </table>
@@ -403,20 +403,20 @@
  <li class="rvps10"><span class="rvts20">Num Periods for Inference: The min number of periods that must be sampled before prediction is fully used. Before that, it is mixed with the control/proportional guider.</span></li>
  <li class="rvps10"><span class="rvts20">Num Periods for Period Estimate: The min number of periods that must be sampled before GPG fully estimates the period.</span></li>
 </ul>
-<h5 class="rvps40"><a name="EKOS-ALIGN"></a><span class="rvts0"><span class="rvts22">Guiding Direction Control</span></span></h5>
+<h5 class="rvps45"><a name="EKOS-ALIGN"></a><span class="rvts0"><span class="rvts22">Guiding Direction Control</span></span></h5>
 <p class="rvps10"><span class="rvts20">You can fine-tune the guiding performance in the Control Section. The autoguide process works like a&nbsp;</span><a class="rvts23" href="https://en.wikipedia.org/wiki/PID_controller">PID controller</a><span class="rvts20">&nbsp;when sending correction commands to the mount. You can alter the Proportional and Integral gains to improve the guiding performance if necessary. By default, guiding corrective pulses are sent to both mount axis in all directions: positive and negative. You can fine-tune control by selecting which axis shall receive corrective guiding pulses and within each axis, you can indicate which direction&nbsp;(Positive) +&nbsp;or&nbsp;Negative (-)&nbsp;receives the guiding pulses. For example, for the Declination axis, the&nbsp;+&nbsp;direction is North and&nbsp;-&nbsp;is South.</span></p>
-<h5 class="rvps40"><a name="IDM6478"></a><span class="rvts0"><span class="rvts22">Guiding Rate</span></span></h5>
+<h5 class="rvps45"><a name="IDM6478"></a><span class="rvts0"><span class="rvts22">Guiding Rate</span></span></h5>
 <p class="rvps10"><span class="rvts20">Each mount has a particular guiding rate in (x15"/sec) and usually ranges from 0.1x, to 1.0x with 0.5x being a common value used by many mounts. The default guiding rate is 0.5x sidereal, which is equivalent to a proportional gain of 133.33. Therefore, set the guiding rate value to whatever value used by your mount, and Ekos shall display the&nbsp;</span><span class="rvts21">recommended</span><span class="rvts20">&nbsp;proportional gain value that you may set in the proportional gain field under the&nbsp;Control Parameters. Setting this value&nbsp;</span><span class="rvts21">does not</span><span class="rvts20">&nbsp;change your mount guiding rate! You must change your mount guiding rate either via the&nbsp;</span><a class="rvts23" href="TelescopeSetup.html">INDI driver</a><span class="rvts20">, if supported, or via the hand controller.</span></p>
-<h5 class="rvps40"><a name="EKOS-ALIGN-INTRODUCTION"></a><span class="rvts0"><span class="rvts22">Drift Graphics</span></span></h5>
+<h5 class="rvps45"><a name="EKOS-ALIGN-INTRODUCTION"></a><span class="rvts0"><span class="rvts22">Drift Graphics</span></span></h5>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/guide_drift_graphics.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps10"><span class="rvts20">The drift graphics is a very useful tool to monitor the guiding performance. It is a 2D plot of guiding&nbsp;</span><span class="rvts21">deviations</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts21">corrections</span><span class="rvts20">. By default, only the guiding deviations in RA and DE are displayed. The horizontal axis is the time in seconds since the autoguiding process was started while the vertical axis plots the guiding drift/deviation in arcsecs for each axis. Guiding corrections (pulses) can also be plotted in the same graph and you can enable them by checking the&nbsp;Corr&nbsp;checkbox below each Axis. The corrections are plotted as shaded areas in the background with the same color as that of the axis.</span></p>
 <p class="rvps10"><span class="rvts20">You can pan and zoom the plot, and when hovering the mouse over the graph, a tooltip is displayed containing information about this specific point in time. It contains the guiding drift and any corrections made, in addition to the local time, this event was recorded. A vertical slider to the right of the image can be used to adjust the height of the secondary Y-axis for pulses corrections.</span></p>
 <p class="rvps10"><span class="rvts20">The&nbsp;Trace&nbsp;horizontal slider at the bottom can be used to scroll through the guide history. Alternatively, you can click the&nbsp;Max&nbsp;checkbox to lock the graph onto the latest point so that the drift graphics autoscrolls. The buttons to the right of the slider are used for autoscaling the graphs, exporting the guide data to a CSV file, clearing all the guide data, and for scaling the target in the&nbsp;Drift Plot. Furthermore, the guide graph includes a label to indicate when a dither occurred so the user knows guiding was not bad at those points.</span></p>
 <p class="rvps10"><span class="rvts20">The colors of each axis can be customized in&nbsp;</span><a class="rvts23" href="Colors.html">KStars&nbsp;Settings color scheme</a><span class="rvts20">.</span></p>
-<h5 class="rvps40"><a name="EKOS-ALIGN-ASTAP-INTEGRATION"></a><span class="rvts0"><span class="rvts22">Drift Plot</span></span></h5>
+<h5 class="rvps45"><a name="EKOS-ALIGN-ASTAP-INTEGRATION"></a><span class="rvts0"><span class="rvts22">Drift Plot</span></span></h5>
 <p class="rvps10"><span class="rvts20">A bulls-eye scatter plot can be used to gauge the&nbsp;</span><span class="rvts21">accuracy</span><span class="rvts20">&nbsp;of the overall guiding performance. It is composed of three concentric rings of varying radii with the central green ring having a default radius of 2 arcsecs. The last RMS value is plotted as&nbsp;</span><img alt="" style="padding : 1px;" src="lib/add-circle.jpg"><span class="rvts20">&nbsp;with its color reflecting which concentric ring it falls within. You can change the radius of the innermost green circle by adjusting the drift plot accuracy.</span></p>
-<h5 class="rvps40"><a name="EKOS-ALIGN-GET-ASTROMETRY"></a><span class="rvts0"><span class="rvts22">PHD2 Support</span></span></h5>
+<h5 class="rvps45"><a name="EKOS-ALIGN-GET-ASTROMETRY"></a><span class="rvts0"><span class="rvts22">PHD2 Support</span></span></h5>
 <p class="rvps10"><span class="rvts20">You can opt to select external PHD2 application to perform guiding instead of the built-in guider.</span></p>
 <p class="rvps3"><img width="690" height="625" alt="" style="padding : 1px;" src="lib/ekos_guide_phd2.jpg"></p>
 <p class="rvps10"><span class="rvts20">If PHD2 is selected, the&nbsp;Connect&nbsp;and&nbsp;Disconnect&nbsp;buttons are enabled to allow you to establish a connection with the PHD2 server. You can control PHD2 exposure and DEC guide settings. When clicking&nbsp;Guide, PHD2 should perform all the required actions to start the guiding process. PHD2&nbsp;</span><span class="rvts22">must</span><span class="rvts20">&nbsp;be started and configured&nbsp;</span><span class="rvts21">before</span><span class="rvts20">&nbsp;Ekos.</span></p>
@@ -438,13 +438,13 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps34"><span class="rvts16">Ekos saves a CSV guide log data that can be useful for analysis of the mount's performance under</span><span class="rvts92">&nbsp;~/.local/share/kstars/guide_log.txt</span><span class="rvts16">. This log is only available when using the built-in guider.</span></p>
+   <p class="rvps39"><span class="rvts16">Ekos saves a CSV guide log data that can be useful for analysis of the mount's performance under</span><span class="rvts110">&nbsp;~/.local/share/kstars/guide_log.txt</span><span class="rvts16">. This log is only available when using the built-in guider.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<p class="rvps34"><span class="rvts20"></span><span class="rvts6"></span></p>
+<p class="rvps39"><span class="rvts20"></span><span class="rvts6"></span></p>
 
             </div>
             
