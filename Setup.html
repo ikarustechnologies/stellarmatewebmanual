@@ -262,36 +262,54 @@
 </ul>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/profile_wizard_done.jpg"></p>
 <p class="rvps10"><span class="rvts20">In the example above, we select Remote Astrometry, WatchDog, and SkySafari drivers. The detailed explanations for each is provided in the tooltip when you over them. Once done, click&nbsp;Create Profile&nbsp;button. You should now be presented with the Profile Editor.</span></p>
-<h4 class="rvps38"><a name="EKOS-PROFILE-EDITOR"></a><span class="rvts0"><span class="rvts22">Profile Editor</span></span></h4>
-<p class="rvps3"><img width="788" height="475" alt="" style="padding : 1px;" src="lib/profile_editor.jpg"></p>
+<h4 class="rvps38"><span class="rvts0"><span class="rvts22">Profile Editor</span></span></h4>
+<p class="rvps3"><img width="788" height="475" alt="" style="padding : 1px;" src="lib/profile-editor.JPG"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
  <li class="rvps2"><span class="rvts22"><br/></span></li>
  <li class="rvps2"><span class="rvts22">Profiles</span></li>
- <li class="rvps10"><span class="rvts20">You can define profiles for your equipment and their connection mode using the&nbsp;Profile Editor. Ekos comes pre-installed with the&nbsp;Simulators&nbsp;profile which can be used to start simulator devices for demonstration purposes:</span></li>
+ <li class="rvps45"><span class="rvts80">You can define profiles for your equipment and their connection mode using the&nbsp;Profile Editor. Ekos comes pre-installed with the&nbsp;Simulators&nbsp;profile which can be used to start simulator devices for demonstration purposes:</span></li>
 </ul>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps10"><span class="rvts20">Connection Mode: Ekos can be started either locally or remotely. Local mode is when Ekos is running in the same machine as INDI server,&nbsp;i.e.&nbsp;all the devices are connected directly to the machine. If you run INDI server on a remote machine (for example, on a Raspberry PI), you need to set the INDI server host and port.</span></li>
-  <li class="rvps10"><span class="rvts20">Auto Connect: Check this option to enable automatic connection to all your devices after INDI server is started. If unchecked, INDI devices are created but not automatically connected. This is useful when you want to make changes to the driver (e.g.&nbsp;change baud rate or IP address or any other settings)&nbsp;</span><span class="rvts21">before</span><span class="rvts20">&nbsp;you connect to it.</span></li>
-  <li class="rvps10"><span class="rvts20">Site Info: Optionally, you can check the&nbsp;Site Info&nbsp;checkbox and Ekos will load the&nbsp;</span><span class="rvts22">current</span><span class="rvts20">&nbsp;city and timezone whenever is Ekos is started with this profile. This can be useful when connecting to the remote geographic site so that Ekos is in sync location and time wise.</span></li>
-  <li class="rvps10"><span class="rvts20">Guiding: Select which Guide application you want to use for guiding. By default, the Ekos internal Guide Module is utilized. External guiders include PHD2 and LinGuider.</span></li>
-  <li class="rvps10"><span class="rvts20">INDI Web Manager: StellarMate Web Manager is a web-based tool to start and stop INDI drivers. You should always check this option when connecting remotely to a StellarMate unit.</span></li>
-  <li class="rvps10"><span class="rvts20">INDI Hub: Share your observatory on indihub.space in one of these modes: Solo, Share, or Robotic (Experimental).</span></li>
-  <li class="rvps10"><span class="rvts20">Device Selection: Select your devices from each category. Please note that if you have a CCD with a guide head, you can leave the guider drop-down menu&nbsp;</span><span class="rvts21">blank</span><span class="rvts20">&nbsp;as Ekos will auto-detect the guide head from the CCD camera. Similarly, if your CCD includes embedded filter wheel support, then you do&nbsp;</span><span class="rvts21">not</span><span class="rvts20">&nbsp;need to specify the filter wheel device in the filter drop-down menu.</span></li>
-  <li class="rvps10"><span class="rvts20">Telescope Selection: Select your primary and secondary telescopes. You can enter your telescope's information as well as your eyepiece, lens and filter. This is important to ensure that the image being captured is not blurry.</span></li>
- </ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps47"><span class="rvts111">Connection Mode:</span><span class="rvts80"> Ekos can be started either locally or remotely. Local mode is when Ekos is running in the same machine as INDI server,&nbsp;i.e.&nbsp;all the devices are connected directly to the machine. If you run INDI server on a remote machine (for example, on a Raspberry PI), you need to set the INDI server host and port.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts112"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps47"><span class="rvts111">Auto Connect:</span><span class="rvts80"> Check this option to enable automatic connection to all your devices after INDI server is started. If unchecked, INDI devices are created but not automatically connected. This is useful when you want to make changes to the driver (e.g.&nbsp;change baud rate or IP address or any other settings)&nbsp;</span><span class="rvts110">before</span><span class="rvts80">&nbsp;you connect to it.</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps47"><span class="rvts111">Port Selector: </span><span class="rvts80">Check this option to enable Port Selector. When creating a new profile, it is checked by default. Port Selector is used to select initial serial and network communication parameters for the devices in the equipment profile. After connecting to equipment for the first time, the Port Selector popup is displayed where the communication parameters can be set before establishing connection. Once connected, the Port Selector option is turned off. it can be toggled to checked in the profile editor to enable it back.</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps47"><span class="rvts111">Site Info:</span><span class="rvts80"> Optionally, you can check the&nbsp;Site Info&nbsp;checkbox and Ekos will load the&nbsp;</span><span class="rvts111">current</span><span class="rvts80">&nbsp;city and timezone whenever is Ekos is started with this profile. This can be useful when connecting to the remote geographic site so that Ekos is in sync location and time wise.</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps47"><span class="rvts111">Guiding: </span><span class="rvts80">Select which Guide application you want to use for guiding. By default, the Ekos internal Guide Module is utilized. External guiders include PHD2 and LinGuider.</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps47"><span class="rvts111">INDI Web Manager:</span><span class="rvts80"> StellarMate Web Manager is a web-based tool to start and stop INDI drivers. You should always check this option when connecting remotely to a StellarMate unit.</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps47"><span class="rvts111">Device Selection: </span><span class="rvts80">Select your devices from each category. Please note that if you have a CCD with a guide head, you can leave the guider drop-down menu&nbsp;</span><span class="rvts110">blank</span><span class="rvts80">&nbsp;as Ekos will auto-detect the guide head from the CCD camera. Similarly, if your CCD includes embedded filter wheel support, then you do&nbsp;</span><span class="rvts110">not</span><span class="rvts80">&nbsp;need to specify the filter wheel device in the filter drop-down menu.</span></li>
+ <li class="rvps46"><span class="rvts111">Scripts:</span><span class="rvts80"> Adjust pre-driver and post-driver delays and scripts for each driver. A rule can be defined for each driver in case there is a need to introduce delays before and/or after starting a particular driver. The fields before the driver selection dropdown are to be executed&nbsp;</span><span class="rvts110">before</span><span class="rvts80">&nbsp;the driver is started, whereas the fields after the driver selection dropdown are to be executed&nbsp;</span><span class="rvts110">after</span><span class="rvts80">&nbsp;the driver started. The script field, if specified, should include the full path to an executable script with the appropiate permissions. All drivers configured in the scripts editor would be started first and in order before the rest of the equipment profile drivers.</span></li>
 </ul>
 <p class="rvps10"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
- <li class="rvps2"><span class="rvts22">Start &amp; Stop INDI</span></li>
- <li class="rvps10"><span class="rvts20">Start and Stop INDI services. Once INDI server is established, INDI Control Panel will be displayed. Here you can change some driver options such as which port the device is connected to&nbsp;etc.</span></li>
- <li class="rvps10"><span class="rvts20"><br/></span></li>
- <li class="rvps2"><span class="rvts22">Connect &amp; Disconnect Devices</span></li>
- <li class="rvps10"><span class="rvts20">Connect to INDI server. Based on the devices connected, Ekos modules (CCD, Focus, Guide,&nbsp;etc.) will be established and available to use.</span></li>
+ <li class="rvps2"><span class="rvts113">Start &amp; Stop INDI</span></li>
+ <li class="rvps45"><span class="rvts80">Start and Stop INDI services. Once INDI server is established, INDI Control Panel will be displayed. Here you can change some driver options such as which port the device is connected to&nbsp;etc.</span></li>
 </ul>
-<p class="rvps10"><span class="rvts20">Once you are ready, click&nbsp;Start INDI&nbsp;to establish INDI server and connection to your equipment. Ekos shall create the various module icons (Mount, Capture, Focus,&nbsp;etc.) as the connection is established with the device.</span></p>
-<h4 class="rvps38"><a name="EKOS-LOGS"></a><span class="rvts0"><span class="rvts22">Logs</span></span></h4>
-<p class="rvps10"><a name="IDM5313"></a><span class="rvts20">Logging is a very important tool in order to diagnose any issues with either INDI drivers or Ekos. Before submitting any support request, the log must be attached in order to help diagnose the exact issue. Depending on the exact problem, you may need to enable logging for the feature or drivers that exhibit issues. Enabling logging for everything is not recommended as it will produce too much data that would be useful to diagnose the issue and could result in missing the root cause all other. So only enable the necessary logs.</span></p>
+<p class="rvps10"><span class="rvts81"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
+ <li class="rvps2"><span class="rvts113">Connect &amp; Disconnect Devices</span></li>
+ <li class="rvps45"><span class="rvts80">Connect to INDI server. Based on the devices connected, Ekos modules (CCD, Focus, Guide,&nbsp;etc.) will be established and available to use.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts112"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
+ <li class="rvps45"><span class="rvts80">Once you are ready, click&nbsp;Start INDI&nbsp;to establish INDI server and connection to your equipment. Ekos shall create the various module icons (Mount, Capture, Focus,&nbsp;etc.) as the connection is established with the device.</span></li>
+</ul>
+<p class="rvps19"><span class="rvts80"><br/></span></p>
+<p class="rvps19"><span class="rvts111">Logs</span></p>
+<p class="rvps45"><span class="rvts80">Logging is a very important tool in order to diagnose any issues with either INDI drivers or Ekos. Before submitting any support request, the log must be attached in order to help diagnose the exact issue. Depending on the exact problem, you may need to enable logging for the feature or drivers that exhibit issues. Enabling logging for everything is not recommended as it will produce too much data that would be useful to diagnose the issue and could result in missing the root cause all other. So only enable the necessary logs.</span></p>
+<p class="rvps2"><span class="rvts52"><br/></span></p>
 <p class="rvps10"><span class="rvts20">The following short video explains how to use the Logging feature to submit logs.</span></p>
 <p class="rvps3"><a class="rvts23" href="https://www.stellarmate.com/images/videos/indi_logs_guide.mp4">https://www.stellarmate.com/images/videos/indi_logs_guide.mp4</a><span class="rvts6"></span></p>
 
