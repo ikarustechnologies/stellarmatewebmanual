@@ -185,7 +185,7 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts6">The Focus module allows you to do focusing using your focuser, it has the following features:</span></p>
+<p class="rvps17"><span class="rvts6">The Focus module allows you to do focusing using your focuser, it has the following features:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps2"><span class="rvts6">Presets: you can save an unlimited amount of presets, which have all the camera settings needed for focusing.</span></li>
  <li class="rvps2"><span class="rvts20">Goto absolute motor step</span></li>
@@ -197,7 +197,7 @@
  <li class="rvps2"><span class="rvts20">HFR Plot</span></li>
 </ul>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_22101_focus_idle.jpg"></p>
+<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/focus.JPG"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps11"><span class="rvts24">Preset Settings</span></p>
 <p class="rvps11"><span class="rvts24"><br/></span></p>
@@ -249,25 +249,25 @@
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The Process page has the following options:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2"><span class="rvts40">Detection</span><span class="rvts41">:&nbsp;Select star detection algorithm. Each algorithm have its strengths and weaknesses. It is recommended to keep the default value unless it fails to properly detect stars.</span></li>
+ <li class="rvps2"><span class="rvts43">Detection</span><span class="rvts44">:&nbsp;Select star detection algorithm. Each algorithm have its strengths and weaknesses. It is recommended to keep the default value unless it fails to properly detect stars.</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps2"><span class="rvts40">SEP:</span><span class="rvts41">&nbsp;Source Extractor and Photometry, an efficient source detection method based on Source Extractor (Bertin and Arnouts 1996; Bertin 2016). See&nbsp;</span><a class="rvts43" href="https://joss.theoj.org/papers/10.21105/joss.00058.pdf">SEP: Source Extractor as a library</a><span class="rvts41">&nbsp;in the Journal of Open Source Software.</span></li>
-  <li class="rvps2"><span class="rvts40">Centroid</span><span class="rvts41">: a source detection based on estimating star mass around signal peaks.</span></li>
-  <li class="rvps2"><span class="rvts40">Gradient</span><span class="rvts41">: a single source detection based on the Sobel filter. Initial or full-field analysis will use SEP instead of this method.</span></li>
-  <li class="rvps2"><span class="rvts40">Threshold</span><span class="rvts41">: a single source detection based on pixel values. Initial or full-field analysis will use SEP instead of this method.</span></li>
-  <li class="rvps2"><span class="rvts40">Bahtinov</span><span class="rvts41">: This is useful for users who do not have a motorized focuser and prefer to focus manually with the aid of a&nbsp;</span><a class="rvts43" href="https://en.wikipedia.org/wiki/Bahtinov_mask">Bahtinov Mask</a><span class="rvts41">. After capturing an image in the focus module with the Bahtinov mask algorithm selected,&nbsp;Ekos would analyze the images and stars within it.&nbsp; If Ekos recognizes the Bahtinov star pattern, it will draw lines over the star pattern in circles on the center and on an offset to indicate the focus.</span></li>
+  <li class="rvps2"><span class="rvts43">SEP:</span><span class="rvts44">&nbsp;Source Extractor and Photometry, an efficient source detection method based on Source Extractor (Bertin and Arnouts 1996; Bertin 2016). See&nbsp;</span><a class="rvts46" href="https://joss.theoj.org/papers/10.21105/joss.00058.pdf">SEP: Source Extractor as a library</a><span class="rvts44">&nbsp;in the Journal of Open Source Software.</span></li>
+  <li class="rvps2"><span class="rvts43">Centroid</span><span class="rvts44">: a source detection based on estimating star mass around signal peaks.</span></li>
+  <li class="rvps2"><span class="rvts43">Gradient</span><span class="rvts44">: a single source detection based on the Sobel filter. Initial or full-field analysis will use SEP instead of this method.</span></li>
+  <li class="rvps2"><span class="rvts43">Threshold</span><span class="rvts44">: a single source detection based on pixel values. Initial or full-field analysis will use SEP instead of this method.</span></li>
+  <li class="rvps2"><span class="rvts43">Bahtinov</span><span class="rvts44">: This is useful for users who do not have a motorized focuser and prefer to focus manually with the aid of a&nbsp;</span><a class="rvts46" href="https://en.wikipedia.org/wiki/Bahtinov_mask">Bahtinov Mask</a><span class="rvts44">. After capturing an image in the focus module with the Bahtinov mask algorithm selected,&nbsp;Ekos would analyze the images and stars within it.&nbsp; If Ekos recognizes the Bahtinov star pattern, it will draw lines over the star pattern in circles on the center and on an offset to indicate the focus.</span></li>
  </ul>
- <li class="rvps2"><span class="rvts40">Threshold</span><span class="rvts41">: Threshold percentage value is used for star detection using the&nbsp;</span><span class="rvts42">Threshold&nbsp;detection algorithm. Increase to restrict the centroid to bright cores. Decrease to enclose fuzzy stars.</span></li>
- <li class="rvps2"><span class="rvts40">Effect</span><span class="rvts41">:&nbsp;Apply filter to image after capture to enhance it for&nbsp;preview purposes.&nbsp;It is highly advisable to turn off any effects during the focusing process as it may interfere with HFR calculations.&nbsp;</span></li>
- <li class="rvps2"><span class="rvts40">Kernel size</span><span class="rvts41">:&nbsp;This is the gaussian blur kernel size. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
- <li class="rvps2"><span class="rvts40">Sigma</span><span class="rvts41">:&nbsp;This is the gaussian blur sigma value. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
- <li class="rvps2"><span class="rvts40">Algorithm</span><span class="rvts41">: Select the autofocus process algorithm:</span></li>
+ <li class="rvps2"><span class="rvts43">Threshold</span><span class="rvts44">: Threshold percentage value is used for star detection using the&nbsp;</span><span class="rvts45">Threshold&nbsp;detection algorithm. Increase to restrict the centroid to bright cores. Decrease to enclose fuzzy stars.</span></li>
+ <li class="rvps2"><span class="rvts43">Effect</span><span class="rvts44">:&nbsp;Apply filter to image after capture to enhance it for&nbsp;preview purposes.&nbsp;It is highly advisable to turn off any effects during the focusing process as it may interfere with HFR calculations.&nbsp;</span></li>
+ <li class="rvps2"><span class="rvts43">Kernel size</span><span class="rvts44">:&nbsp;This is the gaussian blur kernel size. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
+ <li class="rvps2"><span class="rvts43">Sigma</span><span class="rvts44">:&nbsp;This is the gaussian blur sigma value. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
+ <li class="rvps2"><span class="rvts43">Algorithm</span><span class="rvts44">: Select the autofocus process algorithm:</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps2"><span class="rvts40">Iterative</span><span class="rvts41">: Moves focuser by discreet steps initially decided by the step size. Once a curve slope is calculated, further step sizes are calculated to reach optimal solution. The algorithm stops when the measured HFR is within percentage tolerance of the minimum HFR recorded in the procedure.</span></li>
-  <li class="rvps2"><span class="rvts40">Polynomial</span><span class="rvts41">: Starts with iterative method. Upon crossing to the other side of the V-Curve, polynomial fitting coefficients along with possible minimum solution are calculated. This algorithm can be faster than purely iterative approach given a good data set.</span></li>
-  <li class="rvps2"><span class="rvts40">Linear</span><span class="rvts41">: Samples focus inward in a regular fashion, using 2 passes. The algorithm can be slow, but it is more resilient to backlash. Start with the focuser positioned near good focus. Set Initial Step Size and Max Travel for the desired sampling interval and range around start focus position. Tolerance should be around 5%.</span></li>
+  <li class="rvps2"><span class="rvts43">Iterative</span><span class="rvts44">: Moves focuser by discreet steps initially decided by the step size. Once a curve slope is calculated, further step sizes are calculated to reach optimal solution. The algorithm stops when the measured HFR is within percentage tolerance of the minimum HFR recorded in the procedure.</span></li>
+  <li class="rvps2"><span class="rvts43">Polynomial</span><span class="rvts44">: Starts with iterative method. Upon crossing to the other side of the V-Curve, polynomial fitting coefficients along with possible minimum solution are calculated. This algorithm can be faster than purely iterative approach given a good data set.</span></li>
+  <li class="rvps2"><span class="rvts43">Linear</span><span class="rvts44">: Samples focus inward in a regular fashion, using 2 passes. The algorithm can be slow, but it is more resilient to backlash. Start with the focuser positioned near good focus. Set Initial Step Size and Max Travel for the desired sampling interval and range around start focus position. Tolerance should be around 5%.</span></li>
  </ul>
- <li class="rvps2"><span class="rvts40">Tolerance</span><span class="rvts41">: The tolerance percentage values decides when the autofocus process stops in the&nbsp;</span><span class="rvts42">Iterative</span><span class="rvts41">&nbsp;algorithm. During the autofocus process, HFR values are recorded, and once the focuser is close to optimal position, it starts measuring HFRs against the minimum recorded HFR in the sessions and stops whenever a measured HFR value is within % difference of the minimum recorded HFR. Decrease value to narrow optimal focus point solution radius. Increase to expand dsolution radius.</span></li>
+ <li class="rvps2"><span class="rvts43">Tolerance</span><span class="rvts44">: The tolerance percentage values decides when the autofocus process stops in the&nbsp;</span><span class="rvts45">Iterative</span><span class="rvts44">&nbsp;algorithm. During the autofocus process, HFR values are recorded, and once the focuser is close to optimal position, it starts measuring HFRs against the minimum recorded HFR in the sessions and stops whenever a measured HFR value is within % difference of the minimum recorded HFR. Decrease value to narrow optimal focus point solution radius. Increase to expand dsolution radius.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
@@ -278,7 +278,7 @@
    <p class="rvps6"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps16"><span class="rvts44">Caution</span></p>
+   <p class="rvps16"><span class="rvts47">Caution</span></p>
   </td>
  </tr>
  <tr valign="top">
@@ -286,30 +286,30 @@
    <p class="rvps6"><span class="rvts17"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps15"><span class="rvts45">Setting the value too low might result in repetitive loop and would most likely result in a failed autofocus process.</span></p>
+   <p class="rvps15"><span class="rvts48">Setting the value too low might result in repetitive loop and would most likely result in a failed autofocus process.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<p class="rvps2"><span class="rvts40"><br/></span></p>
+<p class="rvps2"><span class="rvts43"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2"><span class="rvts40">Average over</span><span class="rvts41">: Sets the number of frames to capture in order to average the HFR value at the current focuser position.</span></li>
- <li class="rvps2"><span class="rvts40">Num. of rows</span><span class="rvts41">:&nbsp;The number of rows set in this field will be combined in the Bahtinov max average calculation. Changing this value might help to match the Bahtinov lines on the star pattern more accurately.</span></li>
+ <li class="rvps2"><span class="rvts43">Average over</span><span class="rvts44">: Sets the number of frames to capture in order to average the HFR value at the current focuser position.</span></li>
+ <li class="rvps2"><span class="rvts43">Num. of rows</span><span class="rvts44">:&nbsp;The number of rows set in this field will be combined in the Bahtinov max average calculation. Changing this value might help to match the Bahtinov lines on the star pattern more accurately.</span></li>
 </ul>
-<p class="rvps3"><span class="rvts41"><br/></span></p>
+<p class="rvps3"><span class="rvts44"><br/></span></p>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_22101_focus_process.jpg"></p>
-<p class="rvps3"><span class="rvts40"><br/></span></p>
-<p class="rvps11"><span class="rvts40">Mechanics</span></p>
-<p class="rvps11"><span class="rvts40"><br/></span></p>
+<p class="rvps3"><span class="rvts43"><br/></span></p>
+<p class="rvps11"><span class="rvts43">Mechanics</span></p>
+<p class="rvps11"><span class="rvts43"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The Mechanics page has the following options:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2"><span class="rvts40">Initial Step size</span><span class="rvts41">:&nbsp;</span><span class="rvts42">Initial</span><span class="rvts41">&nbsp;step size in ticks to cause a noticeable change in HFR value. For timer based focuser, it is the initial time in milliseconds to move the focuser inward or outward.</span></li>
- <li class="rvps2"><span class="rvts40">Max Step size:&nbsp;</span><span class="rvts41">The&nbsp;</span><span class="rvts42">maximum</span><span class="rvts41">&nbsp;single step size the algorithm is allowed to command as it searches for the critical focus zone. The calculated step size would be limited to this maximum value.</span></li>
- <li class="rvps2"><span class="rvts40">Settle</span><span class="rvts41">: Sets the amount of seconds to wait after moving the focuser before capturing the next image during Auto Focus.</span></li>
- <li class="rvps2"><span class="rvts40">Max Travel</span><span class="rvts41">: Maximum travel in ticks before the autofocus process aborts.</span></li>
- <li class="rvps2"><span class="rvts40">Backlash</span><span class="rvts41">: Number of average frames to capture. During each capture, an HFR is recorded. If the instantaneous HFR value is unreliable, you can average a number of frames to increase the signal to noise ratio.</span></li>
- <li class="rvps2"><span class="rvts40">Out Step Multiple</span><span class="rvts41">:&nbsp;This is the number that is multiplied by initial-step-size to get the number of outward steps that the Linear Focus algorithm moves away from the initial position at the start of focusing.</span></li>
+ <li class="rvps2"><span class="rvts43">Initial Step size</span><span class="rvts44">:&nbsp;</span><span class="rvts45">Initial</span><span class="rvts44">&nbsp;step size in ticks to cause a noticeable change in HFR value. For timer based focuser, it is the initial time in milliseconds to move the focuser inward or outward.</span></li>
+ <li class="rvps2"><span class="rvts43">Max Step size:&nbsp;</span><span class="rvts44">The&nbsp;</span><span class="rvts45">maximum</span><span class="rvts44">&nbsp;single step size the algorithm is allowed to command as it searches for the critical focus zone. The calculated step size would be limited to this maximum value.</span></li>
+ <li class="rvps2"><span class="rvts43">Settle</span><span class="rvts44">: Sets the amount of seconds to wait after moving the focuser before capturing the next image during Auto Focus.</span></li>
+ <li class="rvps2"><span class="rvts43">Max Travel</span><span class="rvts44">: Maximum travel in ticks before the autofocus process aborts.</span></li>
+ <li class="rvps2"><span class="rvts43">Backlash</span><span class="rvts44">: Number of average frames to capture. During each capture, an HFR is recorded. If the instantaneous HFR value is unreliable, you can average a number of frames to increase the signal to noise ratio.</span></li>
+ <li class="rvps2"><span class="rvts43">Out Step Multiple</span><span class="rvts44">:&nbsp;This is the number that is multiplied by initial-step-size to get the number of outward steps that the Linear Focus algorithm moves away from the initial position at the start of focusing.</span></li>
 </ul>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_22101_focus_mechanics.jpg"><span class="rvts6"></span></p>
