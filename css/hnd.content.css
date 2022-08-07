@@ -868,9 +868,6 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps18
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
  background: #ffffff;
 }
 .rvps19
@@ -878,29 +875,32 @@ p,ul,ol /* Paragraph Style */
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 7px 4px 7px 4px;
+ background: #ffffff;
 }
 .rvps20
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 1px 1px 1px 1px;
+ margin: 7px 4px 7px 4px;
 }
 .rvps21
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- text-indent: 48px;
+ margin: 1px 1px 1px 1px;
 }
 .rvps22
 {
- text-align: center;
- background: #ffffff;
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: 48px;
 }
 .rvps23
 {
+ text-align: center;
  background: #ffffff;
 }
 .rvps24
