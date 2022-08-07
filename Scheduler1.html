@@ -185,156 +185,156 @@
 
             <div class="main-content">
                 
-<p class="rvps15"><span class="rvts67">Ekos Scheduler</span><span class="rvts62"> is an indispensable arsenal in building your roboic observatory. A Robotic observatory is an observatory composed of several subsystems that are orchestrated together to achieve a set of scientific objectives without human intervention. It is the only Ekos module that does not require Ekos to be started as it is utlized to&nbsp;</span><span class="rvts64">start</span><span class="rvts62">&nbsp;and&nbsp;</span><span class="rvts64">stop</span><span class="rvts62">&nbsp;Ekos. It is designed to be straightforward and intuitive. However, the scheduler should only be used after you mastered Ekos and knows all the quirks of your equipment. Since the complete process is automated, including focus, guiding, and meridian flip. All equipment should be thoroughly used with Ekos and all their parameters and settings adjusted to achieve best result.</span></p>
-<p class="rvps15"><span class="rvts62"><br/></span></p>
-<p class="rvps15"><span class="rvts62">With Ekos, the user can utilize the powerful sequence queue to image batches of images for a particular target. In simple setups, the user is expected to focus the CCD, align the mount, frame the target, and start guiding before initiating the capture process. For more complex observatory environments, there are usually predefined custom procedures to be executed to prepare the observatory for imaging, and another set of procedures on shutdown. The user may plan to image one or more targets during the night, and expects data to be ready by morning. In KStars, tools such as the&nbsp;</span><a class="rvts63" href="https://docs.kde.org/trunk5/en/kstars/kstars/tool-obsplanner.html">Observation Planner</a><span class="rvts62">&nbsp;and What's up Tonight help the user in selecting candidates for imaging. After selecting the desired candidates, the user can add them to the Ekos Scheduler list for evaluation. The user may also add the targets directly in Ekos scheduler or select a FITS file of a previous image.</span></p>
-<p class="rvps15"><span class="rvts62"><br/></span></p>
-<p class="rvps20"><img width="921" height="575" alt="" style="padding : 1px;" src="lib/scheduler1.jpeg"></p>
-<p class="rvps15"><span class="rvts65"><br/></span></p>
+<p class="rvps18"><span class="rvts73">Ekos Scheduler</span><span class="rvts68"> is an indispensable arsenal in building your roboic observatory. A Robotic observatory is an observatory composed of several subsystems that are orchestrated together to achieve a set of scientific objectives without human intervention. It is the only Ekos module that does not require Ekos to be started as it is utlized to&nbsp;</span><span class="rvts70">start</span><span class="rvts68">&nbsp;and&nbsp;</span><span class="rvts70">stop</span><span class="rvts68">&nbsp;Ekos. It is designed to be straightforward and intuitive. However, the scheduler should only be used after you mastered Ekos and knows all the quirks of your equipment. Since the complete process is automated, including focus, guiding, and meridian flip. All equipment should be thoroughly used with Ekos and all their parameters and settings adjusted to achieve best result.</span></p>
+<p class="rvps18"><span class="rvts68"><br/></span></p>
+<p class="rvps18"><span class="rvts68">With Ekos, the user can utilize the powerful sequence queue to image batches of images for a particular target. In simple setups, the user is expected to focus the CCD, align the mount, frame the target, and start guiding before initiating the capture process. For more complex observatory environments, there are usually predefined custom procedures to be executed to prepare the observatory for imaging, and another set of procedures on shutdown. The user may plan to image one or more targets during the night, and expects data to be ready by morning. In KStars, tools such as the&nbsp;</span><a class="rvts69" href="https://docs.kde.org/trunk5/en/kstars/kstars/tool-obsplanner.html">Observation Planner</a><span class="rvts68">&nbsp;and What's up Tonight help the user in selecting candidates for imaging. After selecting the desired candidates, the user can add them to the Ekos Scheduler list for evaluation. The user may also add the targets directly in Ekos scheduler or select a FITS file of a previous image.</span></p>
+<p class="rvps18"><span class="rvts68"><br/></span></p>
+<p class="rvps22"><img width="921" height="575" alt="" style="padding : 1px;" src="lib/scheduler1.jpeg"></p>
+<p class="rvps18"><span class="rvts71"><br/></span></p>
+<p class="rvps18"><span class="rvts74"><br/></span></p>
+<p class="rvps22"><img width="916" height="587" alt="" style="padding : 1px;" src="lib/scheduler_settings.jpeg"></p>
+<p class="rvps22"><span class="rvts20"><br/></span></p>
+<p class="rvps18"><span class="rvts20">Ekos Scheduler provides a simple interface to aid the user in setting the conditions and constraints required for an observation job. Each observation job is composed of the following:</span></p>
+<p class="rvps18"><span class="rvts20"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps18"><span class="rvts22">Target name</span><span class="rvts20">: Target name is displayed here.</span></li>
+ <li class="rvps18"><span class="rvts22">GOTO: </span><span class="rvts20">Select the target from GOTO and it's name, coordinates get selected.</span></li>
+</ol>
+<p class="rvps18"><span class="rvts20"><br/></span></p>
+<p class="rvps22"><img width="914" height="588" alt="" style="padding : 1px;" src="lib/GOTO.jpg"></p>
+<p class="rvps22"><span class="rvts20"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li value="3" class="rvps18"><span class="rvts22">J2000: </span><span class="rvts20">RA and DEC are displayed of a specific target.</span></li>
+ <li class="rvps18"><span class="rvts22">Position angle: </span><span class="rvts20">You can also specify and position angle.</span></li>
+ <li class="rvps18"><span class="rvts22">Priority</span><span class="rvts20">: Set job priority in the range of 1 to 20 where 1 designates the highest priority and 20 the lowest priority. Priority is applied in calculating the weight used to select the next target to image.</span></li>
+ <li class="rvps18"><span class="rvts22">Sequence File</span><span class="rvts20">: The sequence file is constructed in the Ekos&nbsp;</span><a class="rvts72" href="https://stellarmate.com/support/ekos/capture.html">Capture Module</a><span class="rvts20">. It contains the number of images to capture, filters, temperature settings, prefixes, download directory..etc. You can select the file using </span><a class="rvts75" href="DirectoryBrowser.html">Directory browser</a><span class="rvts76">.</span></li>
+ <li class="rvps18"><span class="rvts22">Optional FITS file</span><span class="rvts20">: If a FITS file is specified, the astrometry solver shall solve the file and use the central RA/DEC as the target coordinates. You can select the file using </span><a class="rvts75" href="DirectoryBrowser.html">Directory browser</a><span class="rvts20">.</span></li>
+ <li class="rvps18"><span class="rvts22">Profile</span><span class="rvts20">: Select which equipment profile to utilize when starting Ekos. If Ekos &amp; INDI are already started and online, this selection is ignored.</span></li>
+ <li class="rvps18"><span class="rvts22">Steps</span><span class="rvts20">: The user selects which Ekos modules should be utilized in the observation job execution workflow.</span></li>
+ <li class="rvps18"><span class="rvts22">Startup Conditions</span><span class="rvts20">: Conditions that must be met&nbsp;</span><span class="rvts22">before</span><span class="rvts20">&nbsp;the observation job is started. Currently, the user may select to start as soon as possible&nbsp;</span><span class="rvts21">Now</span><span class="rvts20">, or when the target is near or past culmination, or at a specific time.</span></li>
+ <li class="rvps18"><span class="rvts22">Constraints</span><span class="rvts20">: Constraints are conditions that must be met&nbsp;</span><span class="rvts22">at all times</span><span class="rvts20">&nbsp;during the observation job execution process. These include minimum target altitude, minimum moon separation, twilight observeration, and weather monitoring.</span></li>
+</ol>
+<p class="rvps18"><span class="rvts20"><br/></span></p>
+<p class="rvps18"><span class="rvts22">Scheduler Settings:</span></p>
+<p class="rvps18"><span class="rvts22"><br/></span></p>
+<p class="rvps18"><span class="rvts22">1- Job Startup</span></p>
+<p class="rvps18"><span class="rvts22"><br/></span></p>
+<p class="rvps22"><img width="915" height="587" alt="" style="padding : 1px;" src="lib/job_startup.jpg"></p>
+<p class="rvps22"><span class="rvts22"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps15"><span class="rvts22">Culmination Offset: </span><span class="rvts20">Start the observation job when the object reaches culmination adjusted for the offset value in minutes. By default, the observation job runs 60 minutes prior to culmination.</span><span class="rvts22">&nbsp;</span></li>
+ <li class="rvps15"><span class="rvts22">ON: </span><span class="rvts20">Start the job on the specified date and time.</span></li>
+ <li class="rvps15"><span class="rvts22">ASAP: </span><span class="rvts20">Start the observation job as soon as all the contraints, if any, are met. The best candidate target shall be imaged first.</span></li>
+ <li class="rvps15"><span class="rvts22">Algorithm:&nbsp;</span></li>
+</ol>
+<p class="rvps15"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">Classic: </span><span class="rvts20">Start jobs that meet the constraints by priority and score.</span></p>
+<p class="rvps15"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">Greedy: </span><span class="rvts20">Always attempt to run a job. It picks the highest priority job that can run according to its contraints. It will interrupt running jobs if a higher priority job can run.</span></p>
+<p class="rvps15"><span class="rvts20"><br/></span></p>
+<p class="rvps22"><span class="rvts22">&nbsp;</span><img width="905" height="577" alt="" style="padding : 1px;" src="lib/NewItem1.png"></p>
+<p class="rvps15"><span class="rvts22"><br/></span></p>
+<p class="rvps18"><span class="rvts20">2- </span><span class="rvts22">Job Constraints:&nbsp;</span></p>
+<p class="rvps18"><span class="rvts22"><br/></span></p>
+<p class="rvps22"><img width="907" height="588" alt="" style="padding : 1px;" src="lib/job_contraints.jpg"></p>
+<p class="rvps22"><span class="rvts22"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps15"><span class="rvts22">Alt: </span><span class="rvts20">The object's altitude must remain equal or higher than the given value.</span></li>
+ <li class="rvps15"><span class="rvts22">Moon: </span><span class="rvts20">The moon separation must remain equal to or higher than the given value.</span></li>
+ <li class="rvps15"><span class="rvts22">Weather: </span><span class="rvts20">Weather conditions must remain safe. When weather conditions become dangerous, shutdown procedure is initiated.</span></li>
+ <li class="rvps15"><span class="rvts22">Twilight: </span><span class="rvts20">The twilight restriction constraints jobs to execute in astronomical darkness. Use the dusk and dawn offsets in the Ekos Scheduler options to adjust the interval.</span></li>
+ <li class="rvps15"><span class="rvts22">Artificial Horizon: </span><span class="rvts20">The A.H restriction constrains the attitude of the target to be above the artifical horizon. If any are defined and enabled. See the artificial horizon item in the KStars Settings menu.</span></li>
+</ol>
+<p class="rvps15"><span class="rvts20"><br/></span></p>
+<p class="rvps15"><span class="rvts22">3- Job Completion:</span></p>
+<p class="rvps15"><span class="rvts22"><br/></span></p>
+<p class="rvps22"><img width="906" height="574" alt="" style="padding : 1px;" src="lib/job_completion.jpg"></p>
+<p class="rvps22"><span class="rvts22"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps15"><span class="rvts22">Sequence Completion: </span><span class="rvts20">The observation job is completed when the sequence is complete.</span></li>
+ <li class="rvps15"><span class="rvts22">Repeat for: </span><span class="rvts20">No. of times sequence will repeat.</span></li>
+ <li class="rvps15"><span class="rvts22">Repeat until teminated: </span><span class="rvts20">Restrat the sequence job indefinetly.</span></li>
+ <li class="rvps15"><span class="rvts22">Repeat until: </span><span class="rvts20">Terminate the job on given date and time.</span></li>
+</ol>
+<p class="rvps15"><span class="rvts20"><br/></span></p>
+<p class="rvps18"><span class="rvts22">4- Observatory Startup:</span></p>
+<p class="rvps18"><span class="rvts22"><br/></span></p>
+<p class="rvps22"><img width="904" height="578" alt="" style="padding : 1px;" src="lib/observatory_startup.jpg"></p>
+<p class="rvps22"><span class="rvts73"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps15"><span class="rvts73"><br/></span></li>
+</ol>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">UnPark dome: </span><span class="rvts68">Park dome tohome position</span></li>
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">UnPark Mount: </span><span class="rvts68">Park telescope to home position.</span></li>
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">Uncap: </span><span class="rvts68">Open dust cover.</span></li>
+ </ul>
+</ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li value="2" style="margin-left: 0px" class="rvps23"><span class="rvts73">Script: </span><span class="rvts68">One time startup procedure to be executed before starting Ekos. The script is executed before the startup procedures (i.e Unpark scope), if Selected, are executed.</span></li>
+</ol>
+<p class="rvps23"><span class="rvts68"><br/></span></p>
+<p class="rvps15"><span class="rvts68">5- </span><span class="rvts73">Aborted Job:</span></p>
+<p class="rvps15"><span class="rvts73"><br/></span></p>
+<p class="rvps22"><img width="902" height="589" alt="" style="padding : 1px;" src="lib/aborted_job.jpg"></p>
+<p class="rvps22"><span class="rvts73"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps15"><span class="rvts73"><br/></span></li>
+</ol>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">None: </span><span class="rvts68">Do not reschedule abored jobs.</span></li>
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">Queue: </span><span class="rvts68">Reschedule aborted jobs as soon as all executable jobs are either completed or aborted.</span></li>
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">Immediate: </span><span class="rvts68">Reschedule an aborted job immediately.</span></li>
+ </ul>
+</ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li value="2" class="rvps15"><span class="rvts73">ReSchedule errors: </span><span class="rvts68">Treat errors like aborts. (Delay in seconds).</span></li>
+</ol>
 <p class="rvps15"><span class="rvts68"><br/></span></p>
-<p class="rvps20"><img width="916" height="587" alt="" style="padding : 1px;" src="lib/scheduler_settings.jpeg"></p>
-<p class="rvps20"><span class="rvts20"><br/></span></p>
-<p class="rvps15"><span class="rvts20">Ekos Scheduler provides a simple interface to aid the user in setting the conditions and constraints required for an observation job. Each observation job is composed of the following:</span></p>
-<p class="rvps15"><span class="rvts20"><br/></span></p>
+<p class="rvps15"><span class="rvts73">6- Observatory shutdown Procedure:</span></p>
+<p class="rvps15"><span class="rvts73"><br/></span></p>
+<p class="rvps22"><img width="892" height="569" alt="" style="padding : 1px;" src="lib/NewItem2.png"></p>
+<p class="rvps22"><span class="rvts73"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps15"><span class="rvts22">Target name</span><span class="rvts20">: Target name is displayed here.</span></li>
- <li class="rvps15"><span class="rvts22">GOTO: </span><span class="rvts20">Select the target from GOTO and it's name, coordinates get selected.</span></li>
-</ol>
-<p class="rvps15"><span class="rvts20"><br/></span></p>
-<p class="rvps20"><img width="914" height="588" alt="" style="padding : 1px;" src="lib/GOTO.jpg"></p>
-<p class="rvps20"><span class="rvts20"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li value="3" class="rvps15"><span class="rvts22">J2000: </span><span class="rvts20">RA and DEC are displayed of a specific target.</span></li>
- <li class="rvps15"><span class="rvts22">Position angle: </span><span class="rvts20">You can also specify and position angle.</span></li>
- <li class="rvps15"><span class="rvts22">Priority</span><span class="rvts20">: Set job priority in the range of 1 to 20 where 1 designates the highest priority and 20 the lowest priority. Priority is applied in calculating the weight used to select the next target to image.</span></li>
- <li class="rvps15"><span class="rvts22">Sequence File</span><span class="rvts20">: The sequence file is constructed in the Ekos&nbsp;</span><a class="rvts66" href="https://stellarmate.com/support/ekos/capture.html">Capture Module</a><span class="rvts20">. It contains the number of images to capture, filters, temperature settings, prefixes, download directory..etc. You can select the file using </span><a class="rvts69" href="DirectoryBrowser.html">Directory browser</a><span class="rvts70">.</span></li>
- <li class="rvps15"><span class="rvts22">Optional FITS file</span><span class="rvts20">: If a FITS file is specified, the astrometry solver shall solve the file and use the central RA/DEC as the target coordinates. You can select the file using </span><a class="rvts69" href="DirectoryBrowser.html">Directory browser</a><span class="rvts20">.</span></li>
- <li class="rvps15"><span class="rvts22">Profile</span><span class="rvts20">: Select which equipment profile to utilize when starting Ekos. If Ekos &amp; INDI are already started and online, this selection is ignored.</span></li>
- <li class="rvps15"><span class="rvts22">Steps</span><span class="rvts20">: The user selects which Ekos modules should be utilized in the observation job execution workflow.</span></li>
- <li class="rvps15"><span class="rvts22">Startup Conditions</span><span class="rvts20">: Conditions that must be met&nbsp;</span><span class="rvts22">before</span><span class="rvts20">&nbsp;the observation job is started. Currently, the user may select to start as soon as possible&nbsp;</span><span class="rvts21">Now</span><span class="rvts20">, or when the target is near or past culmination, or at a specific time.</span></li>
- <li class="rvps15"><span class="rvts22">Constraints</span><span class="rvts20">: Constraints are conditions that must be met&nbsp;</span><span class="rvts22">at all times</span><span class="rvts20">&nbsp;during the observation job execution process. These include minimum target altitude, minimum moon separation, twilight observeration, and weather monitoring.</span></li>
-</ol>
-<p class="rvps15"><span class="rvts20"><br/></span></p>
-<p class="rvps15"><span class="rvts22">Scheduler Settings:</span></p>
-<p class="rvps15"><span class="rvts22"><br/></span></p>
-<p class="rvps15"><span class="rvts22">1- Job Startup</span></p>
-<p class="rvps15"><span class="rvts22"><br/></span></p>
-<p class="rvps20"><img width="915" height="587" alt="" style="padding : 1px;" src="lib/job_startup.jpg"></p>
-<p class="rvps20"><span class="rvts22"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps21"><span class="rvts22">Culmination Offset: </span><span class="rvts20">Start the observation job when the object reaches culmination adjusted for the offset value in minutes. By default, the observation job runs 60 minutes prior to culmination.</span><span class="rvts22">&nbsp;</span></li>
- <li class="rvps21"><span class="rvts22">ON: </span><span class="rvts20">Start the job on the specified date and time.</span></li>
- <li class="rvps21"><span class="rvts22">ASAP: </span><span class="rvts20">Start the observation job as soon as all the contraints, if any, are met. The best candidate target shall be imaged first.</span></li>
- <li class="rvps21"><span class="rvts22">Algorithm:&nbsp;</span></li>
-</ol>
-<p class="rvps21"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">Classic: </span><span class="rvts20">Start jobs that meet the constraints by priority and score.</span></p>
-<p class="rvps21"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">Greedy: </span><span class="rvts20">Always attempt to run a job. It picks the highest priority job that can run according to its contraints. It will interrupt running jobs if a higher priority job can run.</span></p>
-<p class="rvps21"><span class="rvts20"><br/></span></p>
-<p class="rvps20"><span class="rvts22">&nbsp;</span><img width="905" height="577" alt="" style="padding : 1px;" src="lib/NewItem1.png"></p>
-<p class="rvps21"><span class="rvts22"><br/></span></p>
-<p class="rvps15"><span class="rvts20">2- </span><span class="rvts22">Job Constraints:&nbsp;</span></p>
-<p class="rvps15"><span class="rvts22"><br/></span></p>
-<p class="rvps20"><img width="907" height="588" alt="" style="padding : 1px;" src="lib/job_contraints.jpg"></p>
-<p class="rvps20"><span class="rvts22"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps21"><span class="rvts22">Alt: </span><span class="rvts20">The object's altitude must remain equal or higher than the given value.</span></li>
- <li class="rvps21"><span class="rvts22">Moon: </span><span class="rvts20">The moon separation must remain equal to or higher than the given value.</span></li>
- <li class="rvps21"><span class="rvts22">Weather: </span><span class="rvts20">Weather conditions must remain safe. When weather conditions become dangerous, shutdown procedure is initiated.</span></li>
- <li class="rvps21"><span class="rvts22">Twilight: </span><span class="rvts20">The twilight restriction constraints jobs to execute in astronomical darkness. Use the dusk and dawn offsets in the Ekos Scheduler options to adjust the interval.</span></li>
- <li class="rvps21"><span class="rvts22">Artificial Horizon: </span><span class="rvts20">The A.H restriction constrains the attitude of the target to be above the artifical horizon. If any are defined and enabled. See the artificial horizon item in the KStars Settings menu.</span></li>
-</ol>
-<p class="rvps21"><span class="rvts20"><br/></span></p>
-<p class="rvps21"><span class="rvts22">3- Job Completion:</span></p>
-<p class="rvps21"><span class="rvts22"><br/></span></p>
-<p class="rvps20"><img width="906" height="574" alt="" style="padding : 1px;" src="lib/job_completion.jpg"></p>
-<p class="rvps20"><span class="rvts22"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps21"><span class="rvts22">Sequence Completion: </span><span class="rvts20">The observation job is completed when the sequence is complete.</span></li>
- <li class="rvps21"><span class="rvts22">Repeat for: </span><span class="rvts20">No. of times sequence will repeat.</span></li>
- <li class="rvps21"><span class="rvts22">Repeat until teminated: </span><span class="rvts20">Restrat the sequence job indefinetly.</span></li>
- <li class="rvps21"><span class="rvts22">Repeat until: </span><span class="rvts20">Terminate the job on given date and time.</span></li>
-</ol>
-<p class="rvps21"><span class="rvts20"><br/></span></p>
-<p class="rvps15"><span class="rvts22">4- Observatory Startup:</span></p>
-<p class="rvps15"><span class="rvts22"><br/></span></p>
-<p class="rvps20"><img width="904" height="578" alt="" style="padding : 1px;" src="lib/observatory_startup.jpg"></p>
-<p class="rvps20"><span class="rvts67"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps21"><span class="rvts67"><br/></span></li>
+ <li class="rvps15"><span class="rvts73"><br/></span></li>
 </ol>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">UnPark dome: </span><span class="rvts62">Park dome tohome position</span></li>
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">UnPark Mount: </span><span class="rvts62">Park telescope to home position.</span></li>
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">Uncap: </span><span class="rvts62">Open dust cover.</span></li>
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">Warm CC: </span><span class="rvts68">Turn off CCD cooler.</span></li>
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">Cap: </span><span class="rvts68">Close dust cover.</span></li>
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">Park Mount: &nbsp;</span><span class="rvts68">Park telescope to home position.</span></li>
+  <li style="margin-left: 0px" class="rvps23"><span class="rvts73">Park Dome: </span><span class="rvts68">Park dome to home position.</span></li>
  </ul>
 </ul>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li value="2" style="margin-left: 0px" class="rvps22"><span class="rvts67">Script: </span><span class="rvts62">One time startup procedure to be executed before starting Ekos. The script is executed before the startup procedures (i.e Unpark scope), if Selected, are executed.</span></li>
+ <li value="2" class="rvps15"><span class="rvts73">Script: </span><span class="rvts68">One-time shutdown procedure to be executed after all Scheduler jobs are completed. The script is executed after the shutdown procedure (i.e Parking), If selected, are completed.</span></li>
 </ol>
-<p class="rvps22"><span class="rvts62"><br/></span></p>
-<p class="rvps21"><span class="rvts62">5- </span><span class="rvts67">Aborted Job:</span></p>
-<p class="rvps21"><span class="rvts67"><br/></span></p>
-<p class="rvps20"><img width="902" height="589" alt="" style="padding : 1px;" src="lib/aborted_job.jpg"></p>
-<p class="rvps20"><span class="rvts67"><br/></span></p>
+<p class="rvps22"><span class="rvts73"><br/></span></p>
+<p class="rvps22"><img width="894" height="563" alt="" style="padding : 1px;" src="lib/scheduler_jobs.jpeg"></p>
+<p class="rvps22"><span class="rvts73"><br/></span></p>
+<p class="rvps18"><span class="rvts20">You must select the&nbsp;</span><span class="rvts22">Target</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">Sequence</span><span class="rvts20">&nbsp;before you can add a job to the Scheduler. When the scheduler starts, it evaluates all jobs in accord to the conditions and constraints specified and attempts to select the best job to execute. Selection of the job depends on a simple heuristic algorithm that scores each job given the conditions and constraints, each of which is weighted accordingly. If two targets have identical conditions and constraints, usually the higher priority target followed by higher altitude target is selected for execution. If no candidates are available at the current time, the scheduler goes into sleep mode and wakes up when the next job is ready for execution.</span></p>
+<p class="rvps18"><span class="rvts20"><br/></span></p>
+<p class="rvps18"><span class="rvts20">The description above only tackles the&nbsp;</span><span class="rvts22">Data Acquisition</span><span class="rvts20">&nbsp;stage of the observatory workflow. The overall procedure typically utilized in an observatory can be summarized in three primary stages:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps21"><span class="rvts67"><br/></span></li>
+ <li class="rvps18"><span class="rvts20">Startup</span></li>
+ <li class="rvps18"><span class="rvts20">Data Acquisition (including preprocessing and storage)</span></li>
+ <li class="rvps18"><span class="rvts20">Shutdown</span></li>
 </ol>
+<p class="rvps18"><span class="rvts20"><br/></span></p>
+<p class="rvps18"><span class="rvts20">Ekos Scheduler only initiates the startup procedure once the startup time for the first observation job is close (default&nbsp;</span><span class="rvts21">lead</span><span class="rvts20">&nbsp;time is 5 minutes before&nbsp;</span><span class="rvts21">startup</span><span class="rvts20">&nbsp;time). Once the startup procedure is completed successfully, the scheduler picks the observation job target and starts the sequence process. If a startup script is specified, it shall be executed first.</span></p>
+<p class="rvps18"><span class="rvts20"><br/></span></p>
+<p class="rvps18"><span class="rvts22">Data aquisition:</span></p>
+<p class="rvps18"><span class="rvts22"><br/></span></p>
+<p class="rvps18"><span class="rvts20">Depending the on the user selection, the typical workflow proceeds as following:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">None: </span><span class="rvts62">Do not reschedule abored jobs.</span></li>
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">Queue: </span><span class="rvts62">Reschedule aborted jobs as soon as all executable jobs are either completed or aborted.</span></li>
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">Immediate: </span><span class="rvts62">Reschedule an aborted job immediately.</span></li>
- </ul>
+ <li class="rvps18"><span class="rvts20">Slew mount to target. If a FITS file was specified, it first solves the files and slew to the file coordinates.</span></li>
+ <li class="rvps18"><span class="rvts20">Auto-focus target. The autofocus process automatically selects the best star in the frame and runs the autofocus algorithm against it.</span></li>
+ <li class="rvps18"><span class="rvts20">Perform plate solving, sync mount, and slew to target coordinates.</span></li>
+ <li class="rvps18"><span class="rvts20">Perform post-alignment focusing since the frame might have moved during the plate solving process.</span></li>
+ <li class="rvps18"><span class="rvts20">Perform calibration and start auto-guiding: The calibration process automatically selects the best guide star, performs calibration, and starts the autoguide process.</span></li>
+ <li class="rvps18"><span class="rvts20">Load the sequence file in the&nbsp;</span><a class="rvts72" href="https://stellarmate.com/support/ekos/capture.html">Capture module</a><span class="rvts20">&nbsp;and start the imaging process.</span></li>
 </ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li value="2" class="rvps21"><span class="rvts67">ReSchedule errors: </span><span class="rvts62">Treat errors like aborts. (Delay in seconds).</span></li>
-</ol>
-<p class="rvps21"><span class="rvts62"><br/></span></p>
-<p class="rvps21"><span class="rvts67">6- Observatory shutdown Procedure:</span></p>
-<p class="rvps21"><span class="rvts67"><br/></span></p>
-<p class="rvps20"><img width="892" height="569" alt="" style="padding : 1px;" src="lib/NewItem2.png"></p>
-<p class="rvps20"><span class="rvts67"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps21"><span class="rvts67"><br/></span></li>
-</ol>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">Warm CC: </span><span class="rvts62">Turn off CCD cooler.</span></li>
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">Cap: </span><span class="rvts62">Close dust cover.</span></li>
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">Park Mount: &nbsp;</span><span class="rvts62">Park telescope to home position.</span></li>
-  <li style="margin-left: 0px" class="rvps22"><span class="rvts67">Park Dome: </span><span class="rvts62">Park dome to home position.</span></li>
- </ul>
-</ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li value="2" class="rvps21"><span class="rvts67">Script: </span><span class="rvts62">One-time shutdown procedure to be executed after all Scheduler jobs are completed. The script is executed after the shutdown procedure (i.e Parking), If selected, are completed.</span></li>
-</ol>
-<p class="rvps20"><span class="rvts67"><br/></span></p>
-<p class="rvps20"><img width="894" height="563" alt="" style="padding : 1px;" src="lib/scheduler_jobs.jpeg"></p>
-<p class="rvps20"><span class="rvts67"><br/></span></p>
-<p class="rvps15"><span class="rvts20">You must select the&nbsp;</span><span class="rvts22">Target</span><span class="rvts20">&nbsp;and&nbsp;</span><span class="rvts22">Sequence</span><span class="rvts20">&nbsp;before you can add a job to the Scheduler. When the scheduler starts, it evaluates all jobs in accord to the conditions and constraints specified and attempts to select the best job to execute. Selection of the job depends on a simple heuristic algorithm that scores each job given the conditions and constraints, each of which is weighted accordingly. If two targets have identical conditions and constraints, usually the higher priority target followed by higher altitude target is selected for execution. If no candidates are available at the current time, the scheduler goes into sleep mode and wakes up when the next job is ready for execution.</span></p>
-<p class="rvps15"><span class="rvts20"><br/></span></p>
-<p class="rvps15"><span class="rvts20">The description above only tackles the&nbsp;</span><span class="rvts22">Data Acquisition</span><span class="rvts20">&nbsp;stage of the observatory workflow. The overall procedure typically utilized in an observatory can be summarized in three primary stages:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps15"><span class="rvts20">Startup</span></li>
- <li class="rvps15"><span class="rvts20">Data Acquisition (including preprocessing and storage)</span></li>
- <li class="rvps15"><span class="rvts20">Shutdown</span></li>
-</ol>
-<p class="rvps15"><span class="rvts20"><br/></span></p>
-<p class="rvps15"><span class="rvts20">Ekos Scheduler only initiates the startup procedure once the startup time for the first observation job is close (default&nbsp;</span><span class="rvts21">lead</span><span class="rvts20">&nbsp;time is 5 minutes before&nbsp;</span><span class="rvts21">startup</span><span class="rvts20">&nbsp;time). Once the startup procedure is completed successfully, the scheduler picks the observation job target and starts the sequence process. If a startup script is specified, it shall be executed first.</span></p>
-<p class="rvps15"><span class="rvts20"><br/></span></p>
-<p class="rvps15"><span class="rvts22">Data aquisition:</span></p>
-<p class="rvps15"><span class="rvts22"><br/></span></p>
-<p class="rvps15"><span class="rvts20">Depending the on the user selection, the typical workflow proceeds as following:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps15"><span class="rvts20">Slew mount to target. If a FITS file was specified, it first solves the files and slew to the file coordinates.</span></li>
- <li class="rvps15"><span class="rvts20">Auto-focus target. The autofocus process automatically selects the best star in the frame and runs the autofocus algorithm against it.</span></li>
- <li class="rvps15"><span class="rvts20">Perform plate solving, sync mount, and slew to target coordinates.</span></li>
- <li class="rvps15"><span class="rvts20">Perform post-alignment focusing since the frame might have moved during the plate solving process.</span></li>
- <li class="rvps15"><span class="rvts20">Perform calibration and start auto-guiding: The calibration process automatically selects the best guide star, performs calibration, and starts the autoguide process.</span></li>
- <li class="rvps15"><span class="rvts20">Load the sequence file in the&nbsp;</span><a class="rvts66" href="https://stellarmate.com/support/ekos/capture.html">Capture module</a><span class="rvts20">&nbsp;and start the imaging process.</span></li>
-</ul>
-<p class="rvps15"><span class="rvts20"></span><span class="rvts6"></span></p>
+<p class="rvps18"><span class="rvts20"></span><span class="rvts6"></span></p>
 
             </div>
             
