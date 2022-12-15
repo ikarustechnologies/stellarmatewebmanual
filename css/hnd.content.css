@@ -453,12 +453,13 @@ span.rvts70
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: ;
 }
-a.rvts71, span.rvts71
+span.rvts71
 {
  font-size: 12pt;
- font-family: 'Inter';
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-weight: bold;
  color: ;
- text-decoration: none;
+ background-color: #ffffff;
 }
 span.rvts72
 {
@@ -466,164 +467,166 @@ span.rvts72
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-weight: bold;
  color: ;
- background-color: #ffffff;
 }
-span.rvts73
-{
- font-size: 12pt;
- font-family: 'Tahoma', 'Geneva', sans-serif;
- font-weight: bold;
- color: ;
-}
-a.rvts74, span.rvts74
+a.rvts73, span.rvts73
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #00a5ff;
  text-decoration: underline;
 }
-span.rvts75
+span.rvts74
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #00a5ff;
 }
-span.rvts76
+span.rvts75
 {
  font-size: 12pt;
  color: ;
  background-color: #ffffff;
 }
-a.rvts77, span.rvts77
+a.rvts76, span.rvts76
 {
  font-size: 12pt;
  color: ;
- background-color: #ffffff;
  text-decoration: none;
+}
+span.rvts77
+{
+ font-size: 12pt;
+ font-weight: bold;
+ color: ;
 }
 span.rvts78
 {
  font-size: 12pt;
- font-weight: bold;
+ font-style: italic;
  color: ;
- background-color: #ffffff;
 }
 span.rvts79
 {
  font-size: 12pt;
- font-style: italic;
- color: ;
- background-color: #ffffff;
-}
-a.rvts80, span.rvts80
-{
- font-size: 12pt;
- color: ;
- text-decoration: none;
-}
-span.rvts81
-{
- font-size: 12pt;
- font-weight: bold;
- color: ;
-}
-span.rvts82
-{
- font-size: 12pt;
- font-style: italic;
- color: ;
-}
-span.rvts83
-{
- font-size: 12pt;
- font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-family: 'Inter';
  font-weight: bold;
  color: #000000;
+ background-color: #ffff00;
+}
+span.rvts80
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ color: #000000;
+ background-color: #ffff00;
+}
+a.rvts81, span.rvts81
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ color: #007bbf;
+ background-color: #ffff00;
+ text-decoration: underline;
+}
+a.rvts82, span.rvts82
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ color: ;
+ text-decoration: underline;
+}
+a.rvts83, span.rvts83
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ font-weight: bold;
+ color: #007bbf;
+ text-decoration: underline;
 }
 span.rvts84
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-weight: bold;
  color: #000000;
 }
 span.rvts85
+{
+ font-size: 12pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ color: #000000;
+}
+span.rvts86
 {
  font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: #000000;
 }
-span.rvts86
+span.rvts87
 {
  font-size: 14pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-weight: bold;
  color: #000000;
 }
-span.rvts87
+span.rvts88
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-weight: bold;
  color: #000000;
 }
-a.rvts88, span.rvts88
+a.rvts89, span.rvts89
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #00a5ff;
  text-decoration: underline;
 }
-span.rvts89
+span.rvts90
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #00a5ff;
 }
-span.rvts90
+span.rvts91
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: ;
 }
-a.rvts91, span.rvts91
+a.rvts92, span.rvts92
 {
  font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts92
+span.rvts93
 {
  font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: #000000;
 }
-span.rvts93
+span.rvts94
 {
  font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: ;
 }
-span.rvts94
+span.rvts95
 {
  font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-style: italic;
  color: #000000;
 }
-span.rvts95
+span.rvts96
 {
  font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-weight: bold;
  color: #000000;
-}
-a.rvts96, span.rvts96
-{
- font-size: 12pt;
- font-family: 'Inter';
- color: ;
- text-decoration: underline;
 }
 span.rvts97
 {
@@ -729,80 +732,80 @@ span.rvts111
 }
 span.rvts112
 {
- font-size: 9pt;
+ font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
- color: ;
+ font-style: italic;
+ color: #000000;
+ text-decoration: underline;
 }
 span.rvts113
 {
  font-size: 9pt;
  font-family: 'Inter';
- color: #000000;
+ font-weight: bold;
+ color: ;
 }
 span.rvts114
 {
  font-size: 9pt;
  font-family: 'Inter';
- color: ;
+ color: #000000;
 }
 span.rvts115
 {
- font-size: 7pt;
+ font-size: 9pt;
  font-family: 'Inter';
- color: #000000;
+ color: ;
 }
 span.rvts116
 {
  font-size: 7pt;
  font-family: 'Inter';
+ color: #000000;
+}
+span.rvts117
+{
+ font-size: 7pt;
+ font-family: 'Inter';
  color: ;
 }
-a.rvts117, span.rvts117
+a.rvts118, span.rvts118
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts118
+span.rvts119
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #000000;
 }
-span.rvts119
+span.rvts120
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #ff0000;
 }
-span.rvts120
+span.rvts121
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: ;
 }
-span.rvts121
+span.rvts122
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #ff0000;
 }
-span.rvts122
+span.rvts123
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: #007bbf;
-}
-a.rvts123, span.rvts123
-{
- font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #007bbf;
- text-decoration: underline;
 }
 a.rvts124, span.rvts124
 {
@@ -977,28 +980,80 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps28
 {
- background: #ffffff;
- margin: 0px 0px 0px 96px;
-}
-.rvps29
-{
- background: #ffffff;
- margin: 0px 0px 0px 144px;
-}
-.rvps30
-{
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  background: #ffffff;
  margin: 0px 0px 0px 24px;
 }
+.rvps29
+{
+ line-height: 1.50;
+ background: #ffffff;
+ margin: 0px 0px 0px 48px;
+}
+.rvps30
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
+ background: #ffffff;
+ margin: 0px 0px 0px 48px;
+}
 .rvps31
 {
- background: #ffffff;
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
  margin: 0px 0px 0px 72px;
 }
 .rvps32
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
+ background: #ffffff;
+}
+.rvps33
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
+}
+.rvps34
+{
+ line-height: 1.50;
+ background: #ffffff;
+ margin: 0px 0px 0px 144px;
+}
+.rvps35
+{
+ line-height: 1.50;
+ background: #ffffff;
+ margin: 0px 0px 0px 96px;
+}
+.rvps36
+{
+ line-height: 1.50;
+ background: #ffffff;
+}
+.rvps37
+{
+ line-height: 1.50;
+ background: #ffffff;
+ margin: 0px 0px 0px 72px;
+}
+.rvps38
+{
+ text-align: center;
+ line-height: 1.50;
+ background: #ffffff;
+}
+.rvps39
 {
  text-align: justify;
  text-align-last: auto;
@@ -1006,7 +1061,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 21px 0px 5px 0px;
 }
-.rvps33
+.rvps40
 {
  text-align: justify;
  text-align-last: auto;
@@ -1014,12 +1069,12 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 19px 0px 5px 0px;
 }
-.rvps34
+.rvps41
 {
  text-align: center;
  margin: 7px 0px 7px 0px;
 }
-.rvps35
+.rvps42
 {
  text-align: justify;
  text-align-last: auto;
@@ -1027,7 +1082,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 15px 0px 15px 0px;
 }
-.rvps36
+.rvps43
 {
  text-align: justify;
  text-align-last: auto;
@@ -1035,7 +1090,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 33px 0px 33px 0px;
 }
-.rvps37
+.rvps44
 {
  text-align: justify;
  text-align-last: auto;
@@ -1043,20 +1098,20 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
-.rvps38
+.rvps45
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
 }
-.rvps39
+.rvps46
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  margin: 0px 0px 13px 0px;
 }
-.rvps40
+.rvps47
 {
  text-align: justify;
  text-align-last: auto;
@@ -1065,7 +1120,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 20px 0px 10px 0px;
 }
-.rvps41
+.rvps48
 {
  text-align: justify;
  text-align-last: auto;
@@ -1074,17 +1129,27 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
-.rvps42
+.rvps49
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ line-height: 1.50;
+ background: #ffffff;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps50
 {
  text-align: center;
  margin: 0px 0px 0px 24px;
 }
-.rvps43
+.rvps51
 {
  text-align: center;
  margin: 0px 0px 0px 48px;
 }
-.rvps44
+.rvps52
 {
  text-align: justify;
  text-justify: inter-word;
