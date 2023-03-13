@@ -185,25 +185,25 @@
 
             <div class="main-content">
                 
-<p class="rvps25"><span class="rvts65">The overall procedure typically utilized in an observatory can be summarized in three primary stages:</span></p>
+<p class="rvps24"><span class="rvts65">The overall procedure typically utilized in an observatory can be summarized in three primary stages:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps25"><span class="rvts65">Startup</span></li>
- <li class="rvps25"><span class="rvts65">Data Acquisition (including preprocessing and storage)</span></li>
- <li class="rvps25"><span class="rvts65">Shutdown</span></li>
+ <li class="rvps24"><span class="rvts65">Startup</span></li>
+ <li class="rvps24"><span class="rvts65">Data Acquisition (including preprocessing and storage)</span></li>
+ <li class="rvps24"><span class="rvts65">Shutdown</span></li>
 </ol>
-<p class="rvps25"><span class="rvts65">Ekos Scheduler only initiates the startup procedure once the startup time for the first observation job is close (default&nbsp;</span><span class="rvts81">lead</span><span class="rvts65">&nbsp;time is 5 minutes before&nbsp;</span><span class="rvts81">startup</span><span class="rvts65">&nbsp;time). Once the startup procedure is completed successfully, the scheduler picks the observation job target and starts the sequence process. If a startup script is specified, it shall be executed first.</span></p>
-<p class="rvps25"><span class="rvts65"><br/></span></p>
-<p class="rvps25"><span class="rvts78">Data aquisition:</span></p>
-<p class="rvps25"><span class="rvts65">Depending the on the user selection, the typical workflow proceeds as following:</span></p>
+<p class="rvps24"><span class="rvts65">Ekos Scheduler only initiates the startup procedure once the startup time for the first observation job is close (default&nbsp;</span><span class="rvts81">lead</span><span class="rvts65">&nbsp;time is 5 minutes before&nbsp;</span><span class="rvts81">startup</span><span class="rvts65">&nbsp;time). Once the startup procedure is completed successfully, the scheduler picks the observation job target and starts the sequence process. If a startup script is specified, it shall be executed first.</span></p>
+<p class="rvps24"><span class="rvts65"><br/></span></p>
+<p class="rvps24"><span class="rvts78">Data aquisition:</span></p>
+<p class="rvps24"><span class="rvts65">Depending the on the user selection, the typical workflow proceeds as following:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps25"><span class="rvts65">Slew mount to target. If a FITS file was specified, it first solves the files and slew to the file coordinates.</span></li>
- <li class="rvps25"><span class="rvts65">Auto-focus target. The autofocus process automatically selects the best star in the frame and runs the autofocus algorithm against it.</span></li>
- <li class="rvps25"><span class="rvts65">Perform plate solving, sync mount, and slew to target coordinates.</span></li>
- <li class="rvps25"><span class="rvts65">Perform post-alignment focusing since the frame might have moved during the plate solving process.</span></li>
- <li class="rvps25"><span class="rvts65">Perform calibration and start auto-guiding: The calibration process automatically selects the best guide star, performs calibration, and starts the autoguide process.</span></li>
- <li class="rvps25"><span class="rvts65">Load the sequence file in the&nbsp;</span><a class="rvts80" href="https://stellarmate.com/support/ekos/capture.html">Capture module</a><span class="rvts65">&nbsp;and start the imaging process.</span></li>
+ <li class="rvps24"><span class="rvts65">Slew mount to target. If a FITS file was specified, it first solves the files and slew to the file coordinates.</span></li>
+ <li class="rvps24"><span class="rvts65">Auto-focus target. The autofocus process automatically selects the best star in the frame and runs the autofocus algorithm against it.</span></li>
+ <li class="rvps24"><span class="rvts65">Perform plate solving, sync mount, and slew to target coordinates.</span></li>
+ <li class="rvps24"><span class="rvts65">Perform post-alignment focusing since the frame might have moved during the plate solving process.</span></li>
+ <li class="rvps24"><span class="rvts65">Perform calibration and start auto-guiding: The calibration process automatically selects the best guide star, performs calibration, and starts the autoguide process.</span></li>
+ <li class="rvps24"><span class="rvts65">Load the sequence file in the&nbsp;</span><a class="rvts80" href="https://stellarmate.com/support/ekos/capture.html">Capture module</a><span class="rvts65">&nbsp;and start the imaging process.</span></li>
 </ul>
-<p class="rvps25"><span class="rvts20"></span><span class="rvts6"></span></p>
+<p class="rvps24"><span class="rvts17"></span><span class="rvts6"></span></p>
 
             </div>
             
