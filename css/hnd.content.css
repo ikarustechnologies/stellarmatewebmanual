@@ -660,33 +660,25 @@ span.rvts102
 }
 span.rvts103
 {
- font-size: 14pt;
- font-family: 'Inter';
+ font-size: 12pt;
  font-weight: bold;
  color: #ffffff;
 }
 span.rvts104
-{
- font-size: 14pt;
- font-family: 'Inter';
- font-weight: bold;
- color: ;
-}
-span.rvts105
 {
  font-size: 23pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #333333;
 }
-span.rvts106
+span.rvts105
 {
  font-size: 11pt;
  font-family: 'Inter';
  color: #333333;
  background-color: #ffffff;
 }
-span.rvts107
+span.rvts106
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -694,27 +686,27 @@ span.rvts107
  color: ;
  text-decoration: underline;
 }
+span.rvts107
+{
+ font-size: 14pt;
+ font-family: 'Gill Sans MT';
+ color: ;
+}
 span.rvts108
 {
  font-size: 14pt;
  font-family: 'Gill Sans MT';
+ font-weight: bold;
  color: ;
 }
 span.rvts109
 {
  font-size: 14pt;
  font-family: 'Gill Sans MT';
- font-weight: bold;
- color: ;
-}
-span.rvts110
-{
- font-size: 14pt;
- font-family: 'Gill Sans MT';
  font-style: italic;
  color: ;
 }
-span.rvts111
+span.rvts110
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -722,70 +714,70 @@ span.rvts111
  color: #000000;
  text-decoration: underline;
 }
-span.rvts112
+span.rvts111
 {
  font-size: 9pt;
  font-family: 'Inter';
  font-weight: bold;
  color: ;
 }
-span.rvts113
+span.rvts112
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #000000;
 }
-span.rvts114
+span.rvts113
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: ;
+}
+span.rvts114
+{
+ font-size: 7pt;
+ font-family: 'Inter';
+ color: #000000;
 }
 span.rvts115
 {
  font-size: 7pt;
  font-family: 'Inter';
- color: #000000;
-}
-span.rvts116
-{
- font-size: 7pt;
- font-family: 'Inter';
  color: ;
 }
-a.rvts117, span.rvts117
+a.rvts116, span.rvts116
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts118
+span.rvts117
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #000000;
 }
-span.rvts119
+span.rvts118
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: ;
 }
-span.rvts120
+span.rvts119
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #ff0000;
 }
-span.rvts121
+span.rvts120
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: #007bbf;
 }
-a.rvts122, span.rvts122
+a.rvts121, span.rvts121
 {
  font-size: 12pt;
  font-family: 'Inter';
