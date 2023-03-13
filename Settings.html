@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -29,7 +28,7 @@
   <meta property="og:title" content="Settings" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="The StellarMate Plus Manual" /> 
+  <meta property="og:site_name" content="The StellarMate X Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -52,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -75,11 +75,11 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>The StellarMate Plus Manual</h1>
+    <h1>The StellarMate X Manual</h1>
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +93,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +123,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -158,7 +174,7 @@
                         <li><a href="StellarMateApp1.html">StellarMate App</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="StellarMateApp1.html" title="StellarMate App" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Cloud.html" title="Cloud" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ConnectionMethods.html" title="Connection Methods" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="StellarMateApp1.html" title="StellarMate App" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="View.html" title="View" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Achievements.html" title="Achievements" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -169,28 +185,63 @@
 
             <div class="main-content">
                 
-<p></p>
-<p class="rvps2"><span class="rvts20">Adjust the SM App options by going to the&nbsp;</span><span class="rvts22">Settings</span><span class="rvts20">&nbsp;tab where you can change the following options:</span></p>
+<p class="rvps2"><span class="rvts20">Adjust the SM App options by going to the&nbsp;</span><span class="rvts29">Settings</span><span class="rvts20">&nbsp;tab where you can change the following options:</span></p>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps8"><span class="rvts20">Language</span></li>
-<li style="margin-left: 0px" class="rvps8"><span class="rvts20">High Bandwidth mode (not recommended on slow WiFi connections)</span></li>
-<li style="margin-left: 0px" class="rvps8"><span class="rvts20">Transfer images</span></li>
-<li style="margin-left: 0px" class="rvps8"><span class="rvts20">Notifications</span></li>
-<li style="margin-left: 0px" class="rvps8"><span class="rvts20">Sounds</span></li>
-<li style="margin-left: 0px" class="rvps8"><span class="rvts20">Cloud Storage (requires&nbsp;</span><span class="rvts22">EkosLive Pro</span><span class="rvts20">&nbsp;subscription, refer to Resources section)</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts20">Push Notifications (Device)</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts29">Clear Driver Config:</span><span class="rvts20"> In case you face issues with your INDI driver configurations, you can restore all configuration to default by clicking on the Clear Driver Config. button.</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts20">Reset App</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts20">Language</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts20">High Bandwidth mode (not recommended on slow WiFi connections)</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts20">Transfer images</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts20">App Notifications</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts20">Sounds</span></li>
+ <li style="margin-left: 0px" class="rvps12"><span class="rvts20">Cloud Storage (requires&nbsp;</span><span class="rvts29">EkosLive Pro</span><span class="rvts20">&nbsp;subscription)</span></li>
 </ul>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts20"></span></li>
+ <li class="rvps2"><span class="rvts20"><br/></span></li>
 </ul>
-<p class="rvps2"><span class="rvts20">In case the SM App becomes unresponsive, you can wipe all the settings by tapping on the&nbsp;</span><span class="rvts22">Reset App</span><span class="rvts20">&nbsp;button on the settings page. Close the App afterwards then re-launch it. You can always log back into you account in order to use StellarMate App.</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps2"><span class="rvts20">In case the SM App becomes unresponsive, you can wipe all the settings by tapping on the&nbsp;</span><span class="rvts29">Reset App</span><span class="rvts20">&nbsp;button on the settings page. Close the App afterwards then re-launch it. You can always log back into you account in order to use StellarMate App.</span></li>
+ <li class="rvps2"><span class="rvts20">You can clear all of the driver configurations saved.</span></li>
+ <li class="rvps2"><span class="rvts20">Deletes your account.</span></li>
+</ol>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img width="1000" height="569" alt="" style="padding : 1px;" src="lib/settings.jpg"></p>
-<p></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="837" height="520" alt="" style="padding : 1px;" src="lib/settings3.jpg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps17"><span class="rvts20"><br/></span></p>
+<p class="rvps17"><span class="rvts29">Push notifications</span></p>
+<p class="rvps17"><span class="rvts29"><br/></span></p>
+<p class="rvps17"><span class="rvts20">Push notifcations are only for the users for have pro subscription.</span><br/><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="838" height="520" alt="" style="padding : 1px;" src="lib/pro-notifications1.jpg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps17"><span class="rvts29">Pro users </span><span class="rvts20">can enable the Push notifications. If they are enabled, users will be able to get the notifications on their Tablet device.</span></li>
+ <li class="rvps17"><span class="rvts29">You </span><span class="rvts20">can also enable nofications for specific categories i.e INDI , Mount, Scheduler etc..</span></li>
+ <li class="rvps17"><span class="rvts29">Notification level: </span><span class="rvts20">Allow you to get notifications by the level i.e Alert, Info, Warn and Debug.</span></li>
+</ul>
+<p class="rvps17"><span class="rvts20"><br/></span></p>
+<p class="rvps17"><span class="rvts20">Users who are not subscribed to EkosLive Pro will see a pop up as shown below:</span></p>
+<p class="rvps17"><span class="rvts20"><br/></span></p>
+<p class="rvps17"><span class="rvts20">In order to subscribe, you can follow the</span><span class="rvts97"> </span><a class="rvts21" href="https://stellarmate.com/products/ekos-live/ekoslive-pro.html" target="_blank">link here.</a></p>
+<p class="rvps17"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="868" height="352" alt="" style="padding : 1px;" src="lib/regular-users1.jpg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps17"><span class="rvts29">VNC</span></p>
+<p class="rvps17"><span class="rvts29"><br/></span></p>
+<p class="rvps17"><span class="rvts20">Update your VNC Password</span></p>
+<p class="rvps17"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><img width="867" height="549" alt="" style="padding : 1px;" src="lib/VNC.jpg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps17"><span class="rvts20"></span><br/><span class="rvts20"></span><span class="rvts6"></span></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020 by Ikarus Technologies. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2018-2023 by Ikarus Technologies. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -217,33 +268,34 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

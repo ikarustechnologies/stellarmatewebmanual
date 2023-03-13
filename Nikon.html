@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -29,7 +28,7 @@
   <meta property="og:title" content="Nikon" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="The StellarMate Plus Manual" /> 
+  <meta property="og:site_name" content="The StellarMate X Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -52,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -75,11 +75,11 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>The StellarMate Plus Manual</h1>
+    <h1>The StellarMate X Manual</h1>
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +93,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +123,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -158,7 +174,7 @@
                         <li><a href="ConnectingDSLRs.html">Connecting DSLRs</a></li><li><a href="SupportedDSLRs.html">Supported DSLRs</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="SupportedDSLRs.html" title="Supported DSLRs" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Canon.html" title="Canon" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Troubleshooting.html" title="Troubleshooting" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SupportedDSLRs.html" title="Supported DSLRs" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Canon.html" title="Canon" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Troubleshooting.html" title="Troubleshooting" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -169,181 +185,235 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<div class="rvps3"><table border="1" cellpadding="2" cellspacing="-1" style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
-<tr valign="top">
-<td colspan="2" width="380" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffff00;"><p class="rvps3"><img width="151" height="42" alt="" style="padding : 1px;" src="lib/nikon_logo.png"></p>
-</td>
-</tr>
-<tr valign="top">
-<td colspan="2" width="380" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffff00;"><p class="rvps3"><span class="rvts46">Supported Models</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">D100 (Sierra Mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D5100 (PTP mode)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">D2H SLR (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D5200</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">D2Hs (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D5300</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">D2X SLR (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D5500</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">D3 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D5600</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">D50 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D60 (PTP mode)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D100 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D600</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D200 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D610</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D2Xs (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D70 (PTP mode)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D300 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D700 (PTP mode)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D3000 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D7000 (PTP mode)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D300s (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D70s (PTP mode)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D3100 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D7100</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D3200</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D7200</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D3300</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D750</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D3400</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D7500</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D3500</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D80 (PTP mode)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D3s (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D800</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D3x (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D800E</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D4</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D810</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D40 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D810A</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D40x (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D850</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D4s</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D90 (PTP mode)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D5</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC Df</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSC D500</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;"><p class="rvps2"><span class="rvts44">DSLR (WLAN)</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><p class="rvps2"><span class="rvts44">DSC D5000 (PTP mode)</span></p>
-</td>
-<td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;"><br/>
-</td>
-</tr>
+<div class="rvps3">
+<table border="1" cellpadding="2" cellspacing="-1" style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr valign="top">
+  <td colspan="2" width="380" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffff00;">
+   <p class="rvps3"></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" width="380" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffff00;">
+   <p class="rvps3"><span class="rvts104">Supported Models</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">D100 (Sierra Mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D5100 (PTP mode)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">D2H SLR (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D5200</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">D2Hs (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D5300</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">D2X SLR (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D5500</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">D3 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D5600</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">D50 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D60 (PTP mode)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D100 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D600</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D200 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D610</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D2Xs (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D70 (PTP mode)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D300 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D700 (PTP mode)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D3000 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D7000 (PTP mode)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D300s (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D70s (PTP mode)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D3100 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D7100</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D3200</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D7200</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D3300</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D750</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D3400</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D7500</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D3500</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D80 (PTP mode)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D3s (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D800</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D3x (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D800E</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D4</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D810</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D40 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D810A</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D40x (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D850</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D4s</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D90 (PTP mode)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D5</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC Df</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSC D500</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px;">
+   <p class="rvps2"><span class="rvts95">DSLR (WLAN)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="183" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <p class="rvps2"><span class="rvts95">DSC D5000 (PTP mode)</span></p>
+  </td>
+  <td width="185" valign="bottom" style="border-width : 1px; border-color: #cccccc; border-style: solid; padding: 2px 3px; background-color: #ffffa6;">
+   <br/>
+  </td>
+ </tr>
 </table>
 </div>
 <p></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020 by Ikarus Technologies. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2018-2023 by Ikarus Technologies. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -370,33 +440,34 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

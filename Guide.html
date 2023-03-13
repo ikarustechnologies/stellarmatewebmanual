@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -29,7 +28,7 @@
   <meta property="og:title" content="Guide" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="The StellarMate Plus Manual" /> 
+  <meta property="og:site_name" content="The StellarMate X Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -52,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -75,11 +75,11 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>The StellarMate Plus Manual</h1>
+    <h1>The StellarMate X Manual</h1>
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +93,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +123,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -158,7 +174,7 @@
                         <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Ekos1.html">Ekos</a></li><li><a href="Modules.html">Modules</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Modules.html" title="Modules" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Align1.html" title="Align" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Capture1.html" title="Capture" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Modules.html" title="Modules" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="PAA.html" title="PAA" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Capture1.html" title="Capture" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -169,55 +185,47 @@
 
             <div class="main-content">
                 
-<p></p>
-<p class="rvps2"><span class="rvts6">The Guide module allows you to do guiding using your mount and camera, it has the following features:</span></p>
+<p class="rvps2"><span class="rvts6">The Guide module manages guiding the mount to ensure targets are locked at the center during imaging. A dedicated guide camera is required in the secondary optical train. It has the following features:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Presets: you can save an unlimited amount of presets, which have all the camera settings needed for guiding. You can also choose the scope.</span></li>
-<li class="rvps2"><span class="rvts20">Start guiding</span></li>
-<li class="rvps2"><span class="rvts20">Preview</span></li>
-<li class="rvps2"><span class="rvts20">Advanced Settings</span></li>
-<li class="rvps2"><span class="rvts20">Image viewer</span></li>
-<li class="rvps2"><span class="rvts20">Guide Plot</span></li>
+ <li style="text-indent: 0px" class="rvps20"><span class="rvts6">Manage / Select </span><a class="rvts21" href="OpticalTrains.html">Optical trains</a><span class="rvts6">.</span></li>
+ <li class="rvps2"><span class="rvts20">Start guiding</span></li>
+ <li class="rvps2"><span class="rvts20">Preview</span></li>
+ <li class="rvps2"><span class="rvts20">Advanced Settings</span></li>
+ <li class="rvps2"><span class="rvts20">Image viewer</span></li>
+ <li class="rvps2"><span class="rvts20">Guide Plot</span></li>
 </ul>
 <p class="rvps2"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_guide_idle.jpg"></p>
+<p class="rvps3"><img width="989" height="619" alt="" style="padding : 1px;" src="lib/guide_idle.jpeg"></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Preset Settings</span></p>
-<p class="rvps2"><span class="rvts22"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can add new preset, edit or delete presets, by tapping on the + button, the pencil button or the trash button.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Guide Presets has the following structure:</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;">
-<li value="1" class="rvps2"><span class="rvts6">Preset name</span></li>
-<li value="2" class="rvps2"><span class="rvts6">Scope</span></li>
-<li value="3" class="rvps2"><span class="rvts6">Guider</span></li>
-<li value="4" class="rvps2"><span class="rvts6">(Guide) Via</span></li>
-<li value="5" class="rvps2"><span class="rvts6">Exposure</span></li>
-<li value="6" class="rvps2"><span class="rvts6">Binning</span></li>
-<li value="7" class="rvps2"><span class="rvts6">Box</span></li>
-<li value="8" class="rvps2"><span class="rvts6">Dark Frame</span></li>
-</ol>
-<p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_guide_preset.jpg"></p>
+<p class="rvps17"><span class="rvts29">Train</span></p>
+<p class="rvps17"><span class="rvts29"><br/></span></p>
+<p class="rvps17"><span class="rvts20">You can Select / Edit a train specifically for Align module. Each module has it's own train. Visit </span><a class="rvts21" href="OpticalTrains.html">Optical trains</a><span class="rvts20"> topic for more.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts24">Guiding</span></p>
-<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Guiding</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <p class="rvps2"><span class="rvts6">You can start guiding by tapping on the Start button. The guide module will start by calibrating, and then will start the guiding process. When guiding is in progress, you will be able to see the Guide plot being populated with lines for the RA drift, DE drift and the Total RMS. You can also check the values for RA RMS, DE RMS and Total RMS under the plot.</span></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_guide_calibrating.jpg"></p>
+<p class="rvps3"><img width="989" height="618" alt="" style="padding : 1px;" src="lib/guide_calibrating.jpeg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_guide_graph.jpg"></p>
+<p class="rvps3"><img width="554" height="424" alt="" style="padding : 1px;" src="lib/smapp_22101_guide_graph.jpg"></p>
 <p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps13"><span class="rvts22">Guide Advanced Settings</span></p>
-<p class="rvps13"><span class="rvts22"><br/></span></p>
+<p class="rvps17"><span class="rvts29">Guide Advanced Settings</span></p>
+<p class="rvps17"><span class="rvts29"><br/></span></p>
 <p class="rvps2"><span class="rvts20">You can edit the directions for guide corrections and the proportional gain in this settings page. You can also clear the calibration model if you want to restart the calibration process.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_guide_advanced.jpg"></p>
-<p></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img width="966" height="678" alt="" style="padding : 1px;" src="lib/guide_presets.jpg"></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img width="962" height="672" alt="" style="padding : 1px;" src="lib/guide_settings.jpg"></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img width="962" height="671" alt="" style="padding : 1px;" src="lib/guide_calibration.jpg"><span class="rvts6"></span></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020 by Ikarus Technologies. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2018-2023 by Ikarus Technologies. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -244,33 +252,34 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

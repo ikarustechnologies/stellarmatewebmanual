@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -29,7 +28,7 @@
   <meta property="og:title" content="Camera" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="The StellarMate Plus Manual" /> 
+  <meta property="og:site_name" content="The StellarMate X Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -52,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -75,11 +75,11 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>The StellarMate Plus Manual</h1>
+    <h1>The StellarMate X Manual</h1>
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +93,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +123,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -158,7 +174,7 @@
                         <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Ekos1.html">Ekos</a></li><li><a href="QuickControls.html">Quick Controls</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="QuickControls.html" title="Quick Controls" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Mount2.html" title="Mount" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Rotator.html" title="Rotator" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="QuickControls.html" title="Quick Controls" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Mount2.html" title="Mount" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="PreviewFraming.html" title="Preview &amp; Framing" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -169,40 +185,17 @@
 
             <div class="main-content">
                 
-<p></p>
-<p class="rvps2"><span class="rvts6">Camera quick controls allows you to control your camera quickly and easily, it has the following features:</span></p>
+<p class="rvps21"><span class="rvts44"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Capture Preview</span></li>
-<li class="rvps2"><span class="rvts6">Looping</span></li>
-<li class="rvps2"><span class="rvts6">Video Streaming</span></li>
-<li class="rvps2"><span class="rvts6">Live Stacking</span></li>
-<li class="rvps2"><span class="rvts6">Quick Settings</span></li>
+ <li class="rvps2"><span class="rvts43">Camera quick controls allows you to control your camera quickly and easily.</span></li>
+ <li class="rvps2"><span class="rvts43">You can quickly change </span><a class="rvts21" href="Settings1.html">Settings</a><span class="rvts43"> and capture a </span><a class="rvts21" href="PreviewFraming.html">Preview</a><span class="rvts43"> image, or start a continuous loop </span><a class="rvts21" href="PreviewFraming.html">Framing</a><span class="rvts43"> until explicitly stopped.&nbsp;</span></li>
+ <li class="rvps2"><span class="rvts43">Stream and </span><a class="rvts21" href="VideoRecording.html">Record</a><span class="rvts43"> videos if supported by your camera.</span></li>
+ <li class="rvps2"><span class="rvts43">Get amazing pictures with </span><a class="rvts21" href="LiveStacking.html">Livestacking</a><span class="rvts6"></span></li>
 </ul>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts24">Editing Camera Settings</span></p>
-<p class="rvps2"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can quickly take custom preview captures or loop frames by tweaking the settings in the </span><span class="rvts24">quick settings </span><span class="rvts6">bar by tapping on the</span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/settings_black.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Quick Settings</span><span class="rvts6">&nbsp;button. The quick settings bar can be expanded by tapping on the up expand arrow on the left side of the bar. Note: choosing a temperature will set the temperature immediately.</span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_cqc_settings.jpg"></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps13"><span class="rvts24">Capturing a preview image, looping or video streaming</span></p>
-<p class="rvps13"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can capture a preview image by tapping on the </span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/camera_alt_black.png"><span class="rvts24">&nbsp;Camera </span><span class="rvts6">button. Looping can be done as well by tapping on the </span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/repeat_black.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Loop</span><span class="rvts6">&nbsp;button (repeat icon). You can also stream live video from your camera by clicking on the </span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/videocam_black.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Video </span><span class="rvts24">Streaming</span><span class="rvts6">&nbsp;button. An animated circular progress icon will show the progress of the current capture and will show you when the image is being downloaded to the app by showing a green </span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/cloud_download_black.png"><span class="rvts6">&nbsp;cloud download icon.</span></p>
-<p class="rvps13"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">You can stop the capturing process by tapping on the </span><img width="24" height="24" alt="" style="vertical-align: text-bottom; padding : 1px;" src="lib/stop_black.png"><span class="rvts6">&nbsp;</span><span class="rvts24">Stop</span><span class="rvts6">&nbsp;button anytime while it's capturing.</span></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_cqc_preview.jpg"></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps13"><span class="rvts24">Live Stacking</span></p>
-<p class="rvps13"><span class="rvts24"><br/></span></p>
-<p class="rvps2"><span class="rvts6">StellarMate also features Live Stacking, which can be turned on by clicking on the </span><span class="rvts24">LIVE</span><span class="rvts6">&nbsp;button. </span><span class="rvts29">This will start live stacking process in which images are stacked to increase the signal to noise ratio. It utilizes a median stacking algorithm and automatic background extraction follow by contrast adjustments to bring out the details. Livestack is currently an experimental feature and we shall improve it in the future to permit more control over its functionality.</span></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_cqc_live.jpg"></p>
-<p></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020 by Ikarus Technologies. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2018-2023 by Ikarus Technologies. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -229,33 +222,34 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

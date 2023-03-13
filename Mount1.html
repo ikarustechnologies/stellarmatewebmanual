@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -29,7 +28,7 @@
   <meta property="og:title" content="Mount" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="The StellarMate Plus Manual" /> 
+  <meta property="og:site_name" content="The StellarMate X Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -52,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -75,11 +75,11 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>The StellarMate Plus Manual</h1>
+    <h1>The StellarMate X Manual</h1>
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +93,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +123,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -158,7 +174,7 @@
                         <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Ekos1.html">Ekos</a></li><li><a href="Modules.html">Modules</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Modules.html" title="Modules" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Capture1.html" title="Capture" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Observatory1.html" title="Observatory" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Modules.html" title="Modules" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="DarkLibrary.html" title="Dark Library" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Observatory1.html" title="Observatory" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -169,35 +185,55 @@
 
             <div class="main-content">
                 
-<p></p>
 <p class="rvps2"><span class="rvts6">The Mount module allows you to do Meridian Flips and set limits for your Mount, it has the following features:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Tracking On/Off</span></li>
-<li class="rvps2"><span class="rvts20">Mount Park/UnPark</span></li>
-<li class="rvps2"><span class="rvts20">Meridian Flip</span></li>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps11"><span class="rvts31">Flip if HA &gt;</span><span class="rvts32">: Request a meridian flip if the hour angle exceeds the specified value. Capture and Guiding will be suspended and resumed after the flip is complete.</span></li>
-<li style="margin-left: 0px" class="rvps11"><span class="rvts31">Pier</span><span class="rvts32">&nbsp;</span><span class="rvts31">Side:&nbsp;</span><span class="rvts32">Shows the pier side direction.</span></li>
-</ul>
-<li class="rvps2"><span class="rvts20">Limit Settings: </span><span class="rvts32">You enable Altitude Limits or Hour Angle Limits if you do not wish your mount to move past a specific limit. The values are expressed in hours. Setting a 1 hour (HA) limit means your mount is restricted to 15 degrees east and west of the meridian. Setting it to 3 HA (3*15) means your mount is free to move 45 degrees east and west of the meridian.</span></li>
+ <li style="text-indent: 0px" class="rvps20"><span class="rvts6">Manage / Select </span><a class="rvts21" href="OpticalTrains.html">Optical trains</a><span class="rvts6">.</span></li>
+ <li class="rvps2"><span class="rvts6">Tracking On/Off</span></li>
+ <li class="rvps2"><span class="rvts20">Mount Park/UnPark</span></li>
+ <li class="rvps2"><span class="rvts20">Meridian Flip</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li style="margin-left: 0px" class="rvps18"><span class="rvts55">Flip if HA &gt;</span><span class="rvts56">: Request a meridian flip if the hour angle exceeds the specified value. Capture and Guiding will be suspended and resumed after the flip is complete.</span></li>
+  <li style="margin-left: 0px" class="rvps18"><span class="rvts55">Pier</span><span class="rvts56">&nbsp;</span><span class="rvts55">Side:&nbsp;</span><span class="rvts56">Shows the pier side direction.</span></li>
+ </ul>
+ <li class="rvps2"><span class="rvts20">Limit Settings: </span><span class="rvts56">You enable Altitude Limits or Hour Angle Limits if you do not wish your mount to move past a specific limit. The values are expressed in hours. Setting a 1 hour (HA) limit means your mount is restricted to 15 degrees east and west of the meridian. Setting it to 3 HA (3*15) means your mount is free to move 45 degrees east and west of the meridian.</span></li>
+ <li class="rvps2"><span class="rvts56">Auto Park</span></li>
 </ul>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts31"></span></li>
+ <li class="rvps2"><span class="rvts55"><br/></span></li>
 </ul>
-<p class="rvps2"><span class="rvts20"><br/></span></p>
-<p class="rvps3"><img width="982" height="562" alt="" style="padding : 1px;" src="lib/smapp_20101_mount.jpg"></p>
-<p class="rvps3"><span class="rvts32"><br/></span></p>
-<p class="rvps13"><span class="rvts31">Meridian Flip</span></p>
-<p class="rvps13"><span class="rvts31"><br/></span></p>
-<p class="rvps2"><span class="rvts32">You can do a Meridian Flip from the Mount Module.</span><br/><span class="rvts32"></span><br/><span class="rvts32">Equatorial mounts flip after crossing the meridian in order to prevent the imaging equipment train from hitting the tripod. With Ekos, you can set an hour angle limit which if exceeded, the mount will be commnded to flip. The mount must begin tracking east of the meridian in order to the meridian flip to be commanded in Ekos.</span><br/><span class="rvts32"></span><br/><span class="rvts32">When commanding a meridian flip, Ekos will suspend the autoguiding process and waits until the mount completes the flip. Once the mount begins tracking again post meridian flip, Ekos will plate-solve and make any necessary slew commands to bring the mount to the exact location it was tracking prior to the flip.</span><br/><span class="rvts32"></span><br/><span class="rvts32">Next, it will automatically capture a frame and select a suitable guide star, performs calibration, and resumes autoguiding. If In-Sequence focuing is enabled, it will also capture and focus a suitable star. It then resumes the capture process form where it left.</span><br/><span class="rvts32"></span><br/><span class="rvts32">All these steps are completely automated and require no user intervention!&nbsp;</span></p>
-<p class="rvps2"><span class="rvts32">So just set when you want the meridian flip to occur at the mount module. Remember that the setting is in&nbsp;</span><span class="rvts31">Hour Angle (HA)</span><span class="rvts32">.&nbsp;1 HA = 15 degrees, therefore 0.1 HA = 1.5 degrees West of the Meridian.&nbsp;</span></p>
-<p class="rvps2"><span class="rvts32">&nbsp;</span></p>
-<p class="rvps2"><span class="rvts32">Always use a positive value to ensure proper meridian flip takes place. Using zero could&nbsp;</span><span class="rvts33">theoretically</span><span class="rvts32">&nbsp;work but it is at the very edge where the decision to flip or not is made by the mount, so it's&nbsp;</span><span class="rvts33">safer</span><span class="rvts32">&nbsp;to use a slightly higher value like 0.1 HA.</span></p>
-<p></p>
+<p class="rvps3"><img width="980" height="612" alt="" style="padding : 1px;" src="lib/mount.jpeg"></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps17"><span class="rvts29">Train</span></p>
+<p class="rvps17"><span class="rvts29"><br/></span></p>
+<p class="rvps17"><span class="rvts20">You can Select / Edit a train specifically for Mount module. Each module has it's own train. Visit </span><a class="rvts21" href="OpticalTrains.html">Optical trains</a><span class="rvts20"> topic for more.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts56"><br/></span></p>
+<p class="rvps17"><span class="rvts55">Meridian Flip</span></p>
+<p class="rvps17"><span class="rvts55"><br/></span></p>
+<p class="rvps2"><span class="rvts56">You can do a Meridian Flip from the Mount Module.</span><br/><span class="rvts56"></span><br/><span class="rvts56">Equatorial mounts flip after crossing the meridian in order to prevent the imaging equipment train from hitting the tripod. With Ekos, you can set an hour angle limit which if exceeded, the mount will be commnded to flip. The mount must begin tracking east of the meridian in order to the meridian flip to be commanded in Ekos.</span><br/><span class="rvts56"></span><br/><span class="rvts56">When commanding a meridian flip, Ekos will suspend the autoguiding process and waits until the mount completes the flip. Once the mount begins tracking again post meridian flip, Ekos will plate-solve and make any necessary slew commands to bring the mount to the exact location it was tracking prior to the flip.</span><br/><span class="rvts56"></span><br/><span class="rvts56">Next, it will automatically capture a frame and select a suitable guide star, performs calibration, and resumes autoguiding. If In-Sequence focuing is enabled, it will also capture and focus a suitable star. It then resumes the capture process form where it left.</span><br/><span class="rvts56"></span><br/><span class="rvts56">All these steps are completely automated and require no user intervention!&nbsp;</span></p>
+<p class="rvps2"><span class="rvts56">So just set when you want the meridian flip to occur at the mount module. Remember that the setting is in&nbsp;</span><span class="rvts55">Hour Angle (HA)</span><span class="rvts56">.&nbsp;1 HA = 15 degrees, therefore 0.1 HA = 1.5 degrees West of the Meridian.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts56">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts56">Always use a positive value to ensure proper meridian flip takes place. Using zero could&nbsp;</span><span class="rvts57">theoretically</span><span class="rvts56">&nbsp;work but it is at the very edge where the decision to flip or not is made by the mount, so it's&nbsp;</span><span class="rvts57">safer</span><span class="rvts56">&nbsp;to use a slightly higher value like 0.1 HA.</span></p>
+<p class="rvps2"><span class="rvts56"><br/></span></p>
+<p class="rvps2"><span class="rvts56"><br/></span></p>
+<p class="rvps2"><span class="rvts55">Auto Park</span></p>
+<p class="rvps2"><span class="rvts55"><br/></span></p>
+<p class="rvps2"><span class="rvts56">To enable auto park every day, check the Every day box. Otherwise if the desire is only to park it once, keep it disabled.</span></p>
+<p class="rvps2"><span class="rvts56"><br/></span></p>
+<p class="rvps3"><img width="958" height="584" alt="" style="padding : 1px;" src="lib/auto-park.jpeg"></p>
+<p class="rvps2"><span class="rvts56"><br/></span></p>
+<p class="rvps2"><span class="rvts56">Select the time you want to park the mount.</span></p>
+<p class="rvps2"><span class="rvts56"><br/></span></p>
+<p class="rvps3"><img width="957" height="583" alt="" style="padding : 1px;" src="lib/mount-date.jpeg"></p>
+<p class="rvps2"><span class="rvts56"><br/></span></p>
+<p class="rvps2"><span class="rvts56">To start the countdown timer, press start.</span></p>
+<p class="rvps2"><span class="rvts56"><br/></span></p>
+<p class="rvps3"><img width="955" height="582" alt="" style="padding : 1px;" src="lib/mount-park-start.jpeg"><span class="rvts6"></span></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020 by Ikarus Technologies. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2018-2023 by Ikarus Technologies. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -224,33 +260,34 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer

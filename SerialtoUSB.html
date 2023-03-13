@@ -1,14 +1,13 @@
 
 
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 <html lang="en">
 
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Professional Edition 6.9.0.577">
+  <meta name="generator" content="HelpNDoc Professional Edition 7.9.1.631">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -29,7 +28,7 @@
   <meta property="og:title" content="Serial to USB" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="The StellarMate Plus Manual" /> 
+  <meta property="og:site_name" content="The StellarMate X Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -44,7 +43,7 @@
     <![endif]-->
 
   <!-- JsTree styles -->
-  <link href="vendors/jstree-3.3.7/themes/default/style.min.css" rel="stylesheet"/>
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
 
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
@@ -52,6 +51,7 @@
   <link href="css/theme-light-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
 
   <!-- Content style -->
   <link href="css/hnd.content.css" rel="stylesheet" />
@@ -75,11 +75,11 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>The StellarMate Plus Manual</h1>
+    <h1>The StellarMate X Manual</h1>
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
-  <nav class="md-nav-expanded">
+  <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close"> 
@@ -93,6 +93,13 @@
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
                 Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
             </a>
         </li>
       
@@ -116,6 +123,15 @@
             
         </div>
       </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
       
       <div role="tabpanel" class="tab-pane" id="search">
         <div class="search-content">
@@ -158,7 +174,7 @@
                         <li><a href="ConnectingMounts.html">Connecting Mounts</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="ConnectingMounts.html" title="Connecting Mounts" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="MountConnectionGuide.html" title="Mount Connection Guide" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="WiredNetwork.html" title="Wired Network" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConnectingMounts.html" title="Connecting Mounts" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="MountConnectionGuide.html" title="Mount Connection Guide" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="WiredNetwork.html" title="Wired Network" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -169,52 +185,60 @@
 
             <div class="main-content">
                 
-<p></p>
-<p class="rvps10"><span class="rvts20"><br/></span></p>
+<p class="rvps14"><span class="rvts20"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="16" alt="" style="padding : 1px;" src="lib/exclamation-circle-svg.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts18">IMPORTANT</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps7"><span class="rvts19">In order to connect your mount via Serial to USB, you need to get a </span><a class="rvts28" href="https://ikarustech.com/accessories.html">mount-specific Serial to USB cable</a><span class="rvts19">, which can be bought from </span><a class="rvts28" href="https://ikarustech.com/accessories.html">Ikarus Technologies</a><span class="rvts19">.</span></p>
-</td>
-</tr>
+<div class="rvps9">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps11"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts18">IMPORTANT</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps11"><span class="rvts14"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps10"><span class="rvts19">In order to connect your mount via Serial to USB, you need to get a </span><a class="rvts27" href="https://ikarustech.com/accessories.html">mount-specific Serial to USB cable</a><span class="rvts19">, which can be bought from </span><a class="rvts27" href="https://ikarustech.com/accessories.html">Ikarus Technologies</a><span class="rvts19">.</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps3"><span class="rvts20"><br/></span></p>
-<p class="rvps10"><span class="rvts20">Most mounts provide an RS232 port (usually located in the handset). An RS232 to USB cable is required in order connect the mount to StellarMate. StellarMate is equipped with 4 USB ports. However, it is highly recommended to use an&nbsp;</span><a class="rvts23" href="https://stellarmate.com/powered-usb-hubs">external powered USB Hub</a><span class="rvts20">&nbsp;as it can reliably support power to your equipment.</span></p>
+<p class="rvps14"><span class="rvts20">Most mounts provide an RS232 port (usually located in the handset). An RS232 to USB cable is required in order connect the mount to StellarMate. StellarMate is equipped with 4 USB ports. However, it is highly recommended to use an&nbsp;</span><a class="rvts21" href="https://stellarmate.com/powered-usb-hubs">external powered USB Hub</a><span class="rvts20">&nbsp;as it can reliably support power to your equipment.</span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps5"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><img width="16" height="14" alt="" style="padding : 1px;" src="lib/exclamation-triangle.png"></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps2"><span class="rvts15">WARNING</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps6"><span class="rvts17"><br/></span></p>
-</td>
-<td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;"><p class="rvps21"><span class="rvts15">Most</span><span class="rvts55">&nbsp;problems in operating your equipment with StellarMate are related first and foremost to power problems. Therefore, please invest in reliable power supply for all your equipment!</span></p>
-</td>
-</tr>
+<div class="rvps9">
+<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps11"></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps2"><span class="rvts24">WARNING</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps11"><span class="rvts14"><br/></span></p>
+  </td>
+  <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+   <p class="rvps53"><span class="rvts24">Most</span><span class="rvts15">&nbsp;problems in operating your equipment with StellarMate are related first and foremost to power problems. Therefore, please invest in reliable power supply for all your equipment!</span></p>
+  </td>
+ </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps10"><span class="rvts20">For many Mounts &amp; Focusers that use RS232 connectors, you need to purchase a Serial-To-USB adapter suitable for your Mount/Focuser model from the manufacturer. When you plug in your Serial-To-USB devices, they are assigned a specific port under StellarMate (e.g.&nbsp;</span><span class="rvts56">/dev/ttyUSB0</span><span class="rvts20">). However, this port is not static. That is, next time you plug in the same device on another session, it might get assigned another port (e.g.&nbsp;</span><span class="rvts56">/dev/ttyUSB1</span><span class="rvts20">). Since INDI drivers require the port name to communicate with the device, this could lead to communication issues. With the help of StellarMate Serial Port Assistant (Web or Ekos versions), you can assign permanent designations for your devices so that they always get the same port whenever they are connected</span></p>
-<h3 class="rvps18"><span class="rvts0"><span class="rvts20"><br/></span></span></h3>
-<p></p>
+<p class="rvps14"><span class="rvts20">For many Mounts &amp; Focusers that use RS232 connectors, you need to purchase a Serial-To-USB adapter suitable for your Mount/Focuser model from the manufacturer. When you plug in your Serial-To-USB devices, they are assigned a specific port under StellarMate (e.g.&nbsp;</span><span class="rvts119">/dev/ttyUSB0</span><span class="rvts20">). However, this port is not static. That is, next time you plug in the same device on another session, it might get assigned another port (e.g.&nbsp;</span><span class="rvts119">/dev/ttyUSB1</span><span class="rvts20">). Since INDI drivers require the port name to communicate with the device, this could lead to communication issues. With the help of StellarMate Serial Port Assistant (Web or Ekos versions), you can assign permanent designations for your devices so that they always get the same port whenever they are connected</span></p>
+<h3 class="rvps50"><span class="rvts0"><span class="rvts20"></span></span><span class="rvts0"><span class="rvts6"></span></span></h3>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020 by Ikarus Technologies. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2018-2023 by Ikarus Technologies. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -241,33 +265,34 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vendors/jquery-3.4.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.1/uri.min.js"></script>
-  <script src="vendors/imageMapResizer-1.0.7/imageMapResizer.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
-  
-  <!-- Headroom -->
-  <script src="vendors/headroom-0.9.4/headroom.min.js"></script>
-  <script src="vendors/headroom-0.9.4/jquery.headroom.min.js"></script>
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
 
-  <!-- JsTree -->
-  <script src="vendors/jstree-3.3.7/jstree.min.js"></script>
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
-  <!-- Scripts -->
+  <!-- Init script -->
   <script>
     $(function() {
       // Create the app
-      var app = new Hnd.App();
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
       // Update translations
       hnd_ut(app);
 	  // Instanciate imageMapResizer
