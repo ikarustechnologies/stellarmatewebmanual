@@ -200,7 +200,7 @@
 </ol>
 <p class="rvps29"><span class="rvts29"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li value="4" class="rvps29"><span class="rvts29">Sequence File</span><span class="rvts17">: </span><span class="rvts19">Sequence</span><span class="rvts6">: A sequence file describes the required settings for each batch of images. Create a sequence file in the </span><a class="rvts18" href="Capture1.html">Capture module</a><span class="rvts6"> and save it for later.</span><span class="rvts17"> You can select the file using </span><a class="rvts76" href="DirectoryBrowser.html">Directory browser</a><span class="rvts77">.</span></li>
+ <li value="4" class="rvps29"><span class="rvts29">Sequence File</span><span class="rvts17">: </span><span class="rvts19">Sequence</span><span class="rvts6">: A sequence file describes the required settings for each batch of images. Create a sequence file in the </span><a class="rvts18" href="Capture1.html">Capture module</a><span class="rvts6"> and save it for later.</span><span class="rvts17"> You can select the file using </span><a class="rvts78" href="DirectoryBrowser.html">Directory browser</a><span class="rvts79">.</span></li>
 </ol>
 <p class="rvps29"><span class="rvts17"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
@@ -218,17 +218,17 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li style="margin-left: 0px" class="rvps37"><span class="rvts29">Optional FITS file: </span><span class="rvts17">If a FITS file is specified, the astrometry solver shall solve the file and use the central RA/DEC as the target coordinates. You can select the file using </span><a class="rvts79" href="DirectoryBrowser.html">Directory browser</a><span class="rvts17">.</span></li>
+   <li style="margin-left: 0px" class="rvps37"><span class="rvts29">Optional FITS file: </span><span class="rvts17">If a FITS file is specified, the astrometry solver shall solve the file and use the central RA/DEC as the target coordinates. You can select the file using </span><a class="rvts80" href="DirectoryBrowser.html">Directory browser</a><span class="rvts17">.</span></li>
    <li style="margin-left: 0px" class="rvps37"><span class="rvts17">Removes selected FITS file.</span></li>
    <li style="margin-left: 0px" class="rvps37"><span class="rvts29">Profile: </span><span class="rvts17">Select which equipment profile to utilize when starting Ekos. If Ekos &amp; INDI are already started and online, this selection is ignored.</span></li>
    <li style="margin-left: 0px" class="rvps38"><span class="rvts19">Steps</span><span class="rvts6">: Each job goes through a sequence of discrete steps. Each step or stage can be toggled on or off as desired:</span></li>
    <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
     <li style="margin-left: 0px" class="rvps38"><span class="rvts19">Track</span><span class="rvts6">: Mount is commanded to slew to target.</span></li>
-    <li style="margin-left: 0px" class="rvps38"><a class="rvts73" href="Focus.html">Focus</a><span class="rvts6">: Camera autofocus (if applicable) is started.</span></li>
-    <li style="margin-left: 0px" class="rvps38"><a class="rvts73" href="Align.html">Align</a><span class="rvts6">: Plate-solving is performed to ensure the correct location, framing and orientation of the target is met. If a FITS file is specified in General Settings, then this file is first plate-solved and then mount is commanded to to slew to target solution coordinates. This is followed by another plate-solving process to ensure we are within tolerance at the target solution coordinates. If the position angle of the FITS image is different from the current camera orientation, the camera orientation can be automatically adjusted if a mechanized rotator is detected. Otherwise, a manual camera rotation is required until the image position angle is satisfied.</span></li>
-    <li style="margin-left: 0px" class="rvps39"><a class="rvts73" href="Guide.html">Guide</a><span class="rvts6">: Using a guide camera, the mount tracking is locked to a guide star to enable long-exposure astrophotography</span><span class="rvts41">&nbsp;</span></li>
+    <li style="margin-left: 0px" class="rvps38"><a class="rvts75" href="Focus.html">Focus</a><span class="rvts6">: Camera autofocus (if applicable) is started.</span></li>
+    <li style="margin-left: 0px" class="rvps38"><a class="rvts75" href="Align.html">Align</a><span class="rvts6">: Plate-solving is performed to ensure the correct location, framing and orientation of the target is met. If a FITS file is specified in General Settings, then this file is first plate-solved and then mount is commanded to to slew to target solution coordinates. This is followed by another plate-solving process to ensure we are within tolerance at the target solution coordinates. If the position angle of the FITS image is different from the current camera orientation, the camera orientation can be automatically adjusted if a mechanized rotator is detected. Otherwise, a manual camera rotation is required until the image position angle is satisfied.</span></li>
+    <li style="margin-left: 0px" class="rvps39"><a class="rvts75" href="Guide.html">Guide</a><span class="rvts6">: Using a guide camera, the mount tracking is locked to a guide star to enable long-exposure astrophotography</span><span class="rvts41">&nbsp;</span></li>
    </ol>
-   <li style="margin-left: 0px" class="rvps37"><span class="rvts19">Position Angle:</span><span class="rvts6"> Select the desired Sky Position Angle in degrees (East of North). Ignore this setting to image using the camera current position angle. Use Target tab </span><a class="rvts73" href="FramingAssistant.html">Framing Assistant</a><span class="rvts6"> tool to visually adjust the field of view until the desired orientation is achieved.</span><span class="rvts29">on angle:</span><span class="rvts17"> You can also specify and position angle.</span></li>
+   <li style="margin-left: 0px" class="rvps37"><span class="rvts19">Position Angle:</span><span class="rvts6"> Select the desired Sky Position Angle in degrees (East of North). Ignore this setting to image using the camera current position angle. Use Target tab </span><a class="rvts75" href="FramingAssistant.html">Framing Assistant</a><span class="rvts6"> tool to visually adjust the field of view until the desired orientation is achieved.</span><span class="rvts29">on angle:</span><span class="rvts17"> You can also specify and position angle.</span></li>
   </ol>
  </ol>
 </ol>
@@ -309,11 +309,11 @@
 </ul>
 <p class="rvps29"><span class="rvts29"><br/></span></p>
 <p class="rvps30"><img width="804" height="567" alt="" style="padding : 1px;" src="lib/observatory_startup1.jpg"></p>
-<p class="rvps30"><span class="rvts75"><br/></span></p>
+<p class="rvps30"><span class="rvts77"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li style="margin-left: 0px" class="rvps34"><span class="rvts75"><br/></span></li>
+   <li style="margin-left: 0px" class="rvps34"><span class="rvts77"><br/></span></li>
   </ol>
  </ol>
 </ol>
@@ -321,9 +321,9 @@
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">UnPark dome: </span><span class="rvts74">Park dome tohome position</span></li>
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">UnPark Mount: </span><span class="rvts74">Park telescope to home position.</span></li>
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">Uncap: </span><span class="rvts74">Open dust cover.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">UnPark dome: </span><span class="rvts76">Park dome tohome position</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">UnPark Mount: </span><span class="rvts76">Park telescope to home position.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">Uncap: </span><span class="rvts76">Open dust cover.</span></li>
    </ul>
   </ul>
  </ul>
@@ -331,23 +331,23 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li value="2" style="margin-left: 0px" class="rvps43"><span class="rvts75">Script: </span><span class="rvts74">One time startup procedure to be executed before starting Ekos. The script is executed before the startup procedures (i.e Unpark scope), if Selected, are executed.</span></li>
+   <li value="2" style="margin-left: 0px" class="rvps43"><span class="rvts77">Script: </span><span class="rvts76">One time startup procedure to be executed before starting Ekos. The script is executed before the startup procedures (i.e Unpark scope), if Selected, are executed.</span></li>
   </ol>
  </ol>
 </ol>
-<p class="rvps32"><span class="rvts74"><br/></span></p>
+<p class="rvps32"><span class="rvts76"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li style="margin-left: 0px" class="rvps32"><span class="rvts75">Aborted Job:</span></li>
+  <li style="margin-left: 0px" class="rvps32"><span class="rvts77">Aborted Job:</span></li>
  </ul>
 </ul>
-<p class="rvps23"><span class="rvts75"><br/></span></p>
+<p class="rvps23"><span class="rvts77"><br/></span></p>
 <p class="rvps30"><img width="796" height="559" alt="" style="padding : 1px;" src="lib/aborted_job1.jpg"></p>
-<p class="rvps30"><span class="rvts75"><br/></span></p>
+<p class="rvps30"><span class="rvts77"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li style="margin-left: 0px" class="rvps34"><span class="rvts75"><br/></span></li>
+   <li style="margin-left: 0px" class="rvps34"><span class="rvts77"><br/></span></li>
   </ol>
  </ol>
 </ol>
@@ -355,9 +355,9 @@
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">None: </span><span class="rvts74">Do not reschedule abored jobs.</span></li>
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">Queue: </span><span class="rvts74">Reschedule aborted jobs as soon as all executable jobs are either completed or aborted.</span></li>
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">Immediate: </span><span class="rvts74">Reschedule an aborted job immediately.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">None: </span><span class="rvts76">Do not reschedule abored jobs.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">Queue: </span><span class="rvts76">Reschedule aborted jobs as soon as all executable jobs are either completed or aborted.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">Immediate: </span><span class="rvts76">Reschedule an aborted job immediately.</span></li>
    </ul>
   </ul>
  </ul>
@@ -365,17 +365,17 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li value="2" style="margin-left: 0px" class="rvps37"><span class="rvts75">ReSchedule errors: </span><span class="rvts74">Treat errors like aborts. (Delay in seconds).</span></li>
+   <li value="2" style="margin-left: 0px" class="rvps37"><span class="rvts77">ReSchedule errors: </span><span class="rvts76">Treat errors like aborts. (Delay in seconds).</span></li>
   </ol>
  </ol>
 </ol>
-<p class="rvps23"><span class="rvts74"><br/></span></p>
+<p class="rvps23"><span class="rvts76"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li style="margin-left: 0px" class="rvps32"><span class="rvts75">Observatory shutdown Procedure:</span></li>
+  <li style="margin-left: 0px" class="rvps32"><span class="rvts77">Observatory shutdown Procedure:</span></li>
  </ul>
 </ul>
-<p class="rvps32"><span class="rvts75"><br/></span></p>
+<p class="rvps32"><span class="rvts77"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
@@ -383,13 +383,13 @@
   </ul>
  </ul>
 </ul>
-<p class="rvps23"><span class="rvts75"><br/></span></p>
+<p class="rvps23"><span class="rvts77"><br/></span></p>
 <p class="rvps30"><img width="781" height="551" alt="" style="padding : 1px;" src="lib/shutdown_procedure2.jpg"></p>
-<p class="rvps31"><span class="rvts75"><br/></span></p>
+<p class="rvps31"><span class="rvts77"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li style="margin-left: 0px" class="rvps37"><span class="rvts75"><br/></span></li>
+   <li style="margin-left: 0px" class="rvps37"><span class="rvts77"><br/></span></li>
   </ol>
  </ol>
 </ol>
@@ -397,10 +397,10 @@
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">Warm CC: </span><span class="rvts74">Turn off CCD cooler.</span></li>
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">Cap: </span><span class="rvts74">Close dust cover.</span></li>
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">Park Mount: &nbsp;</span><span class="rvts74">Park telescope to home position.</span></li>
-    <li style="margin-left: 0px" class="rvps43"><span class="rvts75">Park Dome: </span><span class="rvts74">Park dome to home position.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">Warm CC: </span><span class="rvts76">Turn off CCD cooler.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">Cap: </span><span class="rvts76">Close dust cover.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">Park Mount: &nbsp;</span><span class="rvts76">Park telescope to home position.</span></li>
+    <li style="margin-left: 0px" class="rvps43"><span class="rvts77">Park Dome: </span><span class="rvts76">Park dome to home position.</span></li>
    </ul>
   </ul>
  </ul>
@@ -408,19 +408,19 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li value="2" style="margin-left: 0px" class="rvps37"><span class="rvts75">Script: </span><span class="rvts74">One-time shutdown procedure to be executed after all Scheduler jobs are completed. The script is executed after the shutdown procedure (i.e Parking), If selected, are completed.</span></li>
+   <li value="2" style="margin-left: 0px" class="rvps37"><span class="rvts77">Script: </span><span class="rvts76">One-time shutdown procedure to be executed after all Scheduler jobs are completed. The script is executed after the shutdown procedure (i.e Parking), If selected, are completed.</span></li>
   </ol>
  </ol>
 </ol>
-<p class="rvps37"><span class="rvts74"><br/></span></p>
-<p class="rvps37"><span class="rvts74">You can also swap the jobs priority by moving the Jobs to Up/Down</span></p>
-<p class="rvps37"><span class="rvts74"><br/></span></p>
+<p class="rvps37"><span class="rvts76"><br/></span></p>
+<p class="rvps37"><span class="rvts76">You can also swap the jobs priority by moving the Jobs to Up/Down</span></p>
+<p class="rvps37"><span class="rvts76"><br/></span></p>
 <p class="rvps44"><img width="789" height="494" alt="" style="padding : 1px;" src="lib/jobs_move.jpg"></p>
-<p class="rvps30"><span class="rvts74"><br/></span></p>
-<p class="rvps30"><span class="rvts74"><br/></span></p>
-<p class="rvps30"><span class="rvts75">&nbsp; &nbsp; &nbsp; &nbsp; </span><img width="788" height="489" alt="" style="padding : 1px;" src="lib/job_running1.jpg"></p>
-<p class="rvps30"><span class="rvts75"><br/></span></p>
-<p class="rvps24"><span class="rvts65">You must select the&nbsp;</span><span class="rvts78">Target</span><span class="rvts65">&nbsp;and&nbsp;</span><span class="rvts78">Sequence</span><span class="rvts65">&nbsp;before you can add a job to the Scheduler. When the scheduler starts, it evaluates all jobs in accord to the conditions and constraints specified and attempts to select the best job to execute. Selection of the job depends on a simple heuristic algorithm that scores each job given the conditions and constraints, each of which is weighted accordingly.</span><span class="rvts6"></span></p>
+<p class="rvps30"><span class="rvts76"><br/></span></p>
+<p class="rvps30"><span class="rvts76"><br/></span></p>
+<p class="rvps30"><span class="rvts77">&nbsp; &nbsp; &nbsp; &nbsp; </span><img width="788" height="489" alt="" style="padding : 1px;" src="lib/job_running1.jpg"></p>
+<p class="rvps30"><span class="rvts77"><br/></span></p>
+<p class="rvps24"><span class="rvts63">You must select the&nbsp;</span><span class="rvts62">Target</span><span class="rvts63">&nbsp;and&nbsp;</span><span class="rvts62">Sequence</span><span class="rvts63">&nbsp;before you can add a job to the Scheduler. When the scheduler starts, it evaluates all jobs in accord to the conditions and constraints specified and attempts to select the best job to execute. Selection of the job depends on a simple heuristic algorithm that scores each job given the conditions and constraints, each of which is weighted accordingly.</span><span class="rvts6"></span></p>
 
             </div>
             

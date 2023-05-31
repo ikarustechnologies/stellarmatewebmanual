@@ -188,8 +188,8 @@
 <h3 class="rvps57"><span class="rvts0"><span class="rvts29">Before connecting to your mount</span></span></h3>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 25px; list-style-position: outside;">
  <li class="rvps29"><span class="rvts17">Ensure the mount firmware is the&nbsp;</span><span class="rvts29">latest</span><span class="rvts17">&nbsp;as provided by your manufacturer.</span></li>
- <li class="rvps29"><span class="rvts17">Ensure mount has&nbsp;</span><span class="rvts98">proper and suffcient power</span><span class="rvts17">&nbsp;to operate. This is often a primary source of issues connecting to mounts.</span></li>
- <li class="rvps29"><span class="rvts17">Read the mount manual and learn about the mount startup or&nbsp;</span><span class="rvts29">Home Position</span><span class="rvts17">. This is the mechanical position the mount must be in&nbsp;</span><span class="rvts106">before</span><span class="rvts17">&nbsp;you turn on the power to the mount. This basically falls under three categories:</span></li>
+ <li class="rvps29"><span class="rvts17">Ensure mount has&nbsp;</span><span class="rvts99">proper and suffcient power</span><span class="rvts17">&nbsp;to operate. This is often a primary source of issues connecting to mounts.</span></li>
+ <li class="rvps29"><span class="rvts17">Read the mount manual and learn about the mount startup or&nbsp;</span><span class="rvts29">Home Position</span><span class="rvts17">. This is the mechanical position the mount must be in&nbsp;</span><span class="rvts107">before</span><span class="rvts17">&nbsp;you turn on the power to the mount. This basically falls under three categories:</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: outside; list-style-type: circle;">
   <li class="rvps29"><span class="rvts29">Equatorial Mount</span><span class="rvts17">: Telescope should be looking at the Celestial Pole (Polaris for the Northern Hemisphere) with counter-weights down.</span></li>
   <li class="rvps29"><span class="rvts29">Alt-Az Mount</span><span class="rvts17">: Telescope should parallel to the ground looking exactly North (for Northern Hemisphere) or South (for Southern hemisphere).</span></li>
@@ -198,7 +198,7 @@
  <li class="rvps29"><span class="rvts17">Decide on how you will connect to the mount. Is it using a cable to the handset? or cable directly to the mount? WiFi? Bluetooth?</span></li>
  <li class="rvps29"><span class="rvts17">If connecting over WiFi, then ensure the device where you are running the INDI driver (e.g. Raspberry PI4) is on the same network as your mount so they can communicate with each other. Such mounts can be configured to run in two modes:</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps29"><span class="rvts29">Mount Wireless Hotspot Mode</span><span class="rvts17">: The mount hotspot acts as the&nbsp;</span><span class="rvts98">router</span><span class="rvts17">&nbsp;and you can connect your devices to the mount's own network (e.g. your Raspberry PI and iPad).&nbsp;</span></li>
+  <li class="rvps29"><span class="rvts29">Mount Wireless Hotspot Mode</span><span class="rvts17">: The mount hotspot acts as the&nbsp;</span><span class="rvts99">router</span><span class="rvts17">&nbsp;and you can connect your devices to the mount's own network (e.g. your Raspberry PI and iPad).&nbsp;</span></li>
   <li class="rvps29"><span class="rvts29">Mount Wireless Station Mode</span><span class="rvts17">: The mount joins an existing WiFi network (e.g. your home WiFi network or StellarMate hotspot). The IP address assigned to the mount is determined by your router. It is best to know the IP address assigned to the mount so that you can enter it in the IP address field in the driver Connection tab. However, this is not strictly necessary since the driver can automatically scan the local network for mounts, albeit this operation may take a few minutes to complete whereas if the IP address is known beforehand then the connection is immediate.</span></li>
  </ul>
 </ol>
@@ -238,7 +238,7 @@
   </td>
   <td width="157" valign="middle" style="border-color : #000000 #000000 #000000 #000000; border-style: solid; padding: 10px 15px;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-    <li class="rvps29"><a class="rvts79" href="https://indilib.org/telescopes/celestron/celestron-nexstar.html">Celestron GPS</a></li>
+    <li class="rvps29"><a class="rvts80" href="https://indilib.org/telescopes/celestron/celestron-nexstar.html">Celestron GPS</a></li>
     <li class="rvps29"><span class="rvts17">Celestron CPC</span></li>
     <li class="rvps29"><span class="rvts17">Celestron Nexstar</span></li>
     <li class="rvps29"><span class="rvts17">Celestron AVX</span></li>
@@ -253,8 +253,8 @@
    </ul>
   </td>
   <td width="476" valign="middle" style="border-color : #000000 #000000 #000000 #000000; border-style: solid; padding: 10px 15px;">
-   <p class="rvps29"><span class="rvts107">When connecting to your mount via Nexstar Handset (HC), there is a single driver (Celestron GPS). The rest of the drivers (e.g. Celestron CPC..etc) are&nbsp;</span><span class="rvts109">aliases</span><span class="rvts107">&nbsp;to the base Celestron GPS driver.</span></p>
-   <p class="rvps29"><span class="rvts108">You must power and align your mount using the handset</span><span class="rvts107">&nbsp;using any supported alignment method (e.g. SkyAlign). Without aligning your mount first, the driver will not connect to the handset.</span></p>
+   <p class="rvps29"><span class="rvts108">When connecting to your mount via Nexstar Handset (HC), there is a single driver (Celestron GPS). The rest of the drivers (e.g. Celestron CPC..etc) are&nbsp;</span><span class="rvts110">aliases</span><span class="rvts108">&nbsp;to the base Celestron GPS driver.</span></p>
+   <p class="rvps29"><span class="rvts109">You must power and align your mount using the handset</span><span class="rvts108">&nbsp;using any supported alignment method (e.g. SkyAlign). Without aligning your mount first, the driver will not connect to the handset.</span></p>
   </td>
  </tr>
  <tr valign="top">
@@ -268,7 +268,7 @@
   </td>
   <td width="157" valign="middle" style="border-color : #000000 #000000 #000000 #000000; border-style: solid; padding: 10px 15px;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-    <li class="rvps29"><a class="rvts79" href="https://indilib.org/telescopes/celestron/celestron-aux-driver.html">Celestron AUX</a></li>
+    <li class="rvps29"><a class="rvts80" href="https://indilib.org/telescopes/celestron/celestron-aux-driver.html">Celestron AUX</a></li>
     <li class="rvps29"><span class="rvts17">Celestron WiFi</span></li>
     <li class="rvps29"><span class="rvts17">Evolution WiFi</span></li>
     <li class="rvps23"><span class="rvts17">Evolution WiFi Wedge</span></li>
@@ -297,7 +297,7 @@
   </td>
   <td width="157" valign="middle" style="border-color : #000000 #000000 #000000 #000000; border-style: solid; padding: 10px 15px;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
-    <li class="rvps29"><a class="rvts79" href="https://indilib.org/telescopes/celestron/celestron-aux-driver.html">Celestron AUX</a></li>
+    <li class="rvps29"><a class="rvts80" href="https://indilib.org/telescopes/celestron/celestron-aux-driver.html">Celestron AUX</a></li>
    </ul>
   </td>
   <td width="334" valign="middle" style="border-color : #000000 #000000 #000000 #000000; border-style: solid; padding: 10px 15px;">
