@@ -394,76 +394,76 @@ span.rvts60
 }
 span.rvts61
 {
- font-size: 11pt;
- color: #000000;
-}
-span.rvts62
-{
  font-size: 12pt;
  font-weight: bold;
  color: ;
 }
-span.rvts63
+span.rvts62
 {
  font-size: 12pt;
  color: ;
 }
-a.rvts64, span.rvts64
+a.rvts63, span.rvts63
 {
  font-size: 12pt;
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts65
+span.rvts64
 {
  font-size: 18pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #000000;
 }
+span.rvts65
+{
+ font-size: 11pt;
+ color: #000000;
+}
 span.rvts66
 {
  font-size: 12pt;
  font-weight: bold;
+ color: #000000;
 }
 span.rvts67
 {
  font-size: 12pt;
+ color: #000000;
+ background-color: #ffff00;
 }
 span.rvts68
 {
  font-size: 12pt;
- font-style: italic;
+ font-weight: bold;
+ color: #000000;
+ background-color: #ffff00;
 }
 span.rvts69
 {
  font-size: 12pt;
  font-weight: bold;
- color: #000000;
 }
 span.rvts70
+{
+ font-size: 12pt;
+}
+span.rvts71
 {
  font-size: 14pt;
  font-weight: bold;
 }
-span.rvts71
+span.rvts72
 {
  font-size: 11pt;
  color: #0a3069;
  background-color: #000000;
 }
-span.rvts72
-{
- font-size: 12pt;
- color: #000000;
- background-color: #ffff00;
-}
 span.rvts73
 {
  font-size: 12pt;
- font-weight: bold;
- color: #000000;
- background-color: #ffff00;
+ font-style: italic;
 }
 span.rvts74
 {
@@ -938,14 +938,16 @@ p,ul,ol /* Paragraph Style */
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 7px 4px 7px 4px;
+ line-height: 1.50;
+ margin: 1px 1px 1px 1px;
 }
 .rvps26
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 1px 1px 1px 1px;
+ line-height: 1.50;
+ margin: 7px 4px 7px 4px;
 }
 .rvps27
 {
@@ -954,34 +956,37 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps28
 {
+ line-height: 1.50;
+ margin: 0px 0px 0px 24px;
+}
+.rvps29
+{
+ line-height: 1.50;
+ margin: 0px 0px 0px 48px;
+}
+.rvps30
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
+ margin: 0px 0px 0px 48px;
+}
+.rvps31
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
+ margin: 0px 0px 0px 72px;
+}
+.rvps32
+{
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  text-indent: 48px;
  line-height: 1.50;
-}
-.rvps29
-{
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
- background: #ffffff;
-}
-.rvps30
-{
- text-align: center;
- background: #ffffff;
-}
-.rvps31
-{
- text-align: center;
- line-height: 1.50;
- background: #ffffff;
-}
-.rvps32
-{
- background: #ffffff;
- margin: 0px 0px 0px 24px;
 }
 .rvps33
 {
@@ -989,41 +994,33 @@ p,ul,ol /* Paragraph Style */
  text-justify: inter-word;
  text-align-last: auto;
  background: #ffffff;
- margin: 0px 0px 0px 48px;
 }
 .rvps34
 {
+ text-align: center;
  background: #ffffff;
- margin: 0px 0px 0px 48px;
 }
 .rvps35
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
+ text-align: center;
+ line-height: 1.50;
  background: #ffffff;
- margin: 0px 0px 0px 120px;
 }
 .rvps36
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
  background: #ffffff;
  margin: 0px 0px 0px 24px;
 }
 .rvps37
 {
- line-height: 1.50;
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
  background: #ffffff;
  margin: 0px 0px 0px 48px;
 }
 .rvps38
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
- line-height: 1.50;
  background: #ffffff;
  margin: 0px 0px 0px 48px;
 }
@@ -1032,40 +1029,63 @@ p,ul,ol /* Paragraph Style */
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- line-height: 1.50;
- margin: 0px 0px 0px 72px;
+ background: #ffffff;
+ margin: 0px 0px 0px 120px;
 }
 .rvps40
 {
- line-height: 1.50;
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
  background: #ffffff;
- margin: 0px 0px 0px 144px;
+ margin: 0px 0px 0px 24px;
 }
 .rvps41
 {
  line-height: 1.50;
  background: #ffffff;
- margin: 0px 0px 0px 96px;
+ margin: 0px 0px 0px 48px;
 }
 .rvps42
 {
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
  line-height: 1.50;
  background: #ffffff;
+ margin: 0px 0px 0px 48px;
 }
 .rvps43
 {
  line-height: 1.50;
  background: #ffffff;
- margin: 0px 0px 0px 72px;
+ margin: 0px 0px 0px 144px;
 }
 .rvps44
+{
+ line-height: 1.50;
+ background: #ffffff;
+ margin: 0px 0px 0px 96px;
+}
+.rvps45
+{
+ line-height: 1.50;
+ background: #ffffff;
+}
+.rvps46
+{
+ line-height: 1.50;
+ background: #ffffff;
+ margin: 0px 0px 0px 72px;
+}
+.rvps47
 {
  text-align: center;
  line-height: 1.50;
  background: #ffffff;
  margin: 0px 0px 0px 48px;
 }
-.rvps45
+.rvps48
 {
  text-align: justify;
  text-align-last: auto;
@@ -1073,7 +1093,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 21px 0px 5px 0px;
 }
-.rvps46
+.rvps49
 {
  text-align: justify;
  text-align-last: auto;
@@ -1081,29 +1101,36 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 19px 0px 5px 0px;
 }
-.rvps47
+.rvps50
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  text-indent: 48px;
 }
-.rvps48
+.rvps51
 {
  text-align: center;
  text-indent: 48px;
 }
-.rvps49
+.rvps52
 {
  text-align: center;
  margin: 0px 0px 0px 24px;
 }
-.rvps50
+.rvps53
 {
  text-align: center;
  margin: 7px 0px 7px 0px;
 }
-.rvps51
+.rvps54
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 7px 4px 7px 4px;
+}
+.rvps55
 {
  text-align: justify;
  text-align-last: auto;
@@ -1111,7 +1138,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 15px 0px 15px 0px;
 }
-.rvps52
+.rvps56
 {
  text-align: justify;
  text-align-last: auto;
@@ -1119,7 +1146,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 33px 0px 33px 0px;
 }
-.rvps53
+.rvps57
 {
  text-align: justify;
  text-align-last: auto;
@@ -1127,20 +1154,20 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
-.rvps54
+.rvps58
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
 }
-.rvps55
+.rvps59
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  margin: 0px 0px 13px 0px;
 }
-.rvps56
+.rvps60
 {
  text-align: justify;
  text-align-last: auto;
@@ -1149,7 +1176,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 20px 0px 10px 0px;
 }
-.rvps57
+.rvps61
 {
  text-align: justify;
  text-align-last: auto;
@@ -1158,7 +1185,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
-.rvps58
+.rvps62
 {
  text-align: justify;
  text-align-last: auto;
@@ -1168,15 +1195,15 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
-.rvps59
+.rvps63
 {
 }
-.rvps60
+.rvps64
 {
  text-align: center;
  margin: 0px 0px 0px 48px;
 }
-.rvps61
+.rvps65
 {
  text-align: justify;
  text-justify: inter-word;
