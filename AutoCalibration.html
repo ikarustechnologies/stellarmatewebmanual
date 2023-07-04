@@ -192,28 +192,28 @@
 <p class="rvps16"><span class="rvts50"><br/></span></p>
 <p class="rvps5"><span class="rvts50">Note</span><span class="rvts48">: You can only edit calibration settings for capture jobs that have the frame type as Bias (B), Dark (D), or Flat (F).</span></p>
 <p class="rvps5"><span class="rvts48"><br/></span></p>
-<p class="rvps5"><span class="rvts70">For Flat Field frames, you can set calibration options in order to automate the process. The calibration options are designed to facilitate automatic unattended flat field frame capture. It can also be used for dark and bias frames if desired. If your camera is equipped with a mechanical shutter, then it is not necessary to set calibration settings unless you want to close the dust cover to ensure no light at all passes through the optical tube. For flat fields, you must specify the flat field light source, and then specify the duration of the flat field frame. The duration can be either manual, or based on ADU calculations.</span></p>
+<p class="rvps5"><span class="rvts74">For Flat Field frames, you can set calibration options in order to automate the process. The calibration options are designed to facilitate automatic unattended flat field frame capture. It can also be used for dark and bias frames if desired. If your camera is equipped with a mechanical shutter, then it is not necessary to set calibration settings unless you want to close the dust cover to ensure no light at all passes through the optical tube. For flat fields, you must specify the flat field light source, and then specify the duration of the flat field frame. The duration can be either manual, or based on ADU calculations.</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps5"><span class="rvts70">Flat Field Source</span></li>
+ <li class="rvps5"><span class="rvts74">Flat Field Source</span></li>
 </ol>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps5"><span class="rvts69">Manual</span><span class="rvts70">: The flat light source is manual.</span></li>
-  <li class="rvps5"><span class="rvts69">Dust Cover with Built-In Flat Light</span><span class="rvts70">: If using a dust cover with built-in light source (e.g. FlipFlat). For dark and bias frames, close the dust cap before proceeding. For flat frames, close the dust cap and turn on the light source.</span></li>
-  <li class="rvps5"><span class="rvts69">Dust Cover with External Flat Light</span><span class="rvts70">: If using a dust cover with external flat light source. For dark and bias frames, close the dust cap before proceeding. For flat frames, open the dust cap and turn on the light source. The external flat light source location is presumed to be the parking location.</span></li>
-  <li class="rvps5"><span class="rvts69">Wall</span><span class="rvts70">: Light source is a panel on the observatory wall. Specify the Azimuth and Altitude coordinates of the panel and the mount shall slew there before capturing the flat field frames. If the light panel is controllable from INDI, Ekos shall turn it on/off as required.</span></li>
+  <li class="rvps5"><span class="rvts73">Manual</span><span class="rvts74">: The flat light source is manual.</span></li>
+  <li class="rvps5"><span class="rvts73">Dust Cover with Built-In Flat Light</span><span class="rvts74">: If using a dust cover with built-in light source (e.g. FlipFlat). For dark and bias frames, close the dust cap before proceeding. For flat frames, close the dust cap and turn on the light source.</span></li>
+  <li class="rvps5"><span class="rvts73">Dust Cover with External Flat Light</span><span class="rvts74">: If using a dust cover with external flat light source. For dark and bias frames, close the dust cap before proceeding. For flat frames, open the dust cap and turn on the light source. The external flat light source location is presumed to be the parking location.</span></li>
+  <li class="rvps5"><span class="rvts73">Wall</span><span class="rvts74">: Light source is a panel on the observatory wall. Specify the Azimuth and Altitude coordinates of the panel and the mount shall slew there before capturing the flat field frames. If the light panel is controllable from INDI, Ekos shall turn it on/off as required.</span></li>
  </ul>
 </ul>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li value="2" class="rvps5"><span class="rvts70">Flat Field Duration</span></li>
+ <li value="2" class="rvps5"><span class="rvts74">Flat Field Duration</span></li>
 </ol>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps5"><span class="rvts69">Manual</span><span class="rvts70">: Duration is as specified in the Sequence Queue.</span></li>
-  <li class="rvps5"><span class="rvts69">ADU</span><span class="rvts70">: Duration is variable until specified ADU is met.</span></li>
+  <li class="rvps5"><span class="rvts73">Manual</span><span class="rvts74">: Duration is as specified in the Sequence Queue.</span></li>
+  <li class="rvps5"><span class="rvts73">ADU</span><span class="rvts74">: Duration is variable until specified ADU is met.</span></li>
  </ul>
 </ul>
-<p class="rvps5"><span class="rvts70">Before the calibration capture process is started, you can request Ekos to park the mount and/or dome. Depending on your flat source selection above, Ekos will use the appropiate flat light source before starting flat frames capture. If ADU is specified, Ekos begins by capturing a couple of preview images to establish the curve required to achieve the desired ADU count. Once an appropiate value is calculated, another capture is taken and ADU is recounted until a satisfactory value is achived.</span></p>
+<p class="rvps5"><span class="rvts74">Before the calibration capture process is started, you can request Ekos to park the mount and/or dome. Depending on your flat source selection above, Ekos will use the appropiate flat light source before starting flat frames capture. If ADU is specified, Ekos begins by capturing a couple of preview images to establish the curve required to achieve the desired ADU count. Once an appropiate value is calculated, another capture is taken and ADU is recounted until a satisfactory value is achived.</span></p>
 <p class="rvps16"><span class="rvts50"></span><span class="rvts6"></span></p>
 
             </div>
