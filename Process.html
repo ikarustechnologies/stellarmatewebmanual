@@ -193,25 +193,25 @@
 <p class="rvps5"><span class="rvts6">The Process page has the following options:</span></p>
 <p class="rvps5"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5"><span class="rvts59">Detection</span><span class="rvts60">:&nbsp;Select star detection algorithm. Each algorithm have its strengths and weaknesses. It is recommended to keep the default value unless it fails to properly detect stars.</span></li>
+ <li class="rvps5"><span class="rvts57">Detection</span><span class="rvts58">:&nbsp;Select star detection algorithm. Each algorithm have its strengths and weaknesses. It is recommended to keep the default value unless it fails to properly detect stars.</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps5"><span class="rvts59">SEP:</span><span class="rvts60">&nbsp;Source Extractor and Photometry, an efficient source detection method based on Source Extractor (Bertin and Arnouts 1996; Bertin 2016). See&nbsp;</span><a class="rvts62" href="https://joss.theoj.org/papers/10.21105/joss.00058.pdf">SEP: Source Extractor as a library</a><span class="rvts60">&nbsp;in the Journal of Open Source Software.</span></li>
-  <li class="rvps5"><span class="rvts59">Centroid</span><span class="rvts60">: a source detection based on estimating star mass around signal peaks.</span></li>
-  <li class="rvps5"><span class="rvts59">Gradient</span><span class="rvts60">: a single source detection based on the Sobel filter. Initial or full-field analysis will use SEP instead of this method.</span></li>
-  <li class="rvps5"><span class="rvts59">Threshold</span><span class="rvts60">: a single source detection based on pixel values. Initial or full-field analysis will use SEP instead of this method.</span></li>
-  <li class="rvps5"><span class="rvts59">Bahtinov</span><span class="rvts60">: This is useful for users who do not have a motorized focuser and prefer to focus manually with the aid of a&nbsp;</span><a class="rvts62" href="https://en.wikipedia.org/wiki/Bahtinov_mask">Bahtinov Mask</a><span class="rvts60">. After capturing an image in the focus module with the Bahtinov mask algorithm selected,&nbsp;Ekos would analyze the images and stars within it.&nbsp; If Ekos recognizes the Bahtinov star pattern, it will draw lines over the star pattern in circles on the center and on an offset to indicate the focus.</span></li>
+  <li class="rvps5"><span class="rvts57">SEP:</span><span class="rvts58">&nbsp;Source Extractor and Photometry, an efficient source detection method based on Source Extractor (Bertin and Arnouts 1996; Bertin 2016). See&nbsp;</span><a class="rvts60" href="https://joss.theoj.org/papers/10.21105/joss.00058.pdf">SEP: Source Extractor as a library</a><span class="rvts58">&nbsp;in the Journal of Open Source Software.</span></li>
+  <li class="rvps5"><span class="rvts57">Centroid</span><span class="rvts58">: a source detection based on estimating star mass around signal peaks.</span></li>
+  <li class="rvps5"><span class="rvts57">Gradient</span><span class="rvts58">: a single source detection based on the Sobel filter. Initial or full-field analysis will use SEP instead of this method.</span></li>
+  <li class="rvps5"><span class="rvts57">Threshold</span><span class="rvts58">: a single source detection based on pixel values. Initial or full-field analysis will use SEP instead of this method.</span></li>
+  <li class="rvps5"><span class="rvts57">Bahtinov</span><span class="rvts58">: This is useful for users who do not have a motorized focuser and prefer to focus manually with the aid of a&nbsp;</span><a class="rvts60" href="https://en.wikipedia.org/wiki/Bahtinov_mask">Bahtinov Mask</a><span class="rvts58">. After capturing an image in the focus module with the Bahtinov mask algorithm selected,&nbsp;Ekos would analyze the images and stars within it.&nbsp; If Ekos recognizes the Bahtinov star pattern, it will draw lines over the star pattern in circles on the center and on an offset to indicate the focus.</span></li>
  </ul>
- <li class="rvps5"><span class="rvts59">Threshold</span><span class="rvts60">: Threshold percentage value is used for star detection using the&nbsp;</span><span class="rvts61">Threshold&nbsp;detection algorithm. Increase to restrict the centroid to bright cores. Decrease to enclose fuzzy stars.</span></li>
- <li class="rvps5"><span class="rvts59">Effect</span><span class="rvts60">:&nbsp;Apply filter to image after capture to enhance it for&nbsp;preview purposes.&nbsp;It is highly advisable to turn off any effects during the focusing process as it may interfere with HFR calculations.&nbsp;</span></li>
- <li class="rvps5"><span class="rvts59">Kernel size</span><span class="rvts60">:&nbsp;This is the gaussian blur kernel size. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
- <li class="rvps5"><span class="rvts59">Sigma</span><span class="rvts60">:&nbsp;This is the gaussian blur sigma value. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
- <li class="rvps5"><span class="rvts59">Algorithm</span><span class="rvts60">: Select the autofocus process algorithm:</span></li>
+ <li class="rvps5"><span class="rvts57">Threshold</span><span class="rvts58">: Threshold percentage value is used for star detection using the&nbsp;</span><span class="rvts59">Threshold&nbsp;detection algorithm. Increase to restrict the centroid to bright cores. Decrease to enclose fuzzy stars.</span></li>
+ <li class="rvps5"><span class="rvts57">Effect</span><span class="rvts58">:&nbsp;Apply filter to image after capture to enhance it for&nbsp;preview purposes.&nbsp;It is highly advisable to turn off any effects during the focusing process as it may interfere with HFR calculations.&nbsp;</span></li>
+ <li class="rvps5"><span class="rvts57">Kernel size</span><span class="rvts58">:&nbsp;This is the gaussian blur kernel size. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
+ <li class="rvps5"><span class="rvts57">Sigma</span><span class="rvts58">:&nbsp;This is the gaussian blur sigma value. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
+ <li class="rvps5"><span class="rvts57">Algorithm</span><span class="rvts58">: Select the autofocus process algorithm:</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps5"><span class="rvts59">Iterative</span><span class="rvts60">: Moves focuser by discreet steps initially decided by the step size. Once a curve slope is calculated, further step sizes are calculated to reach optimal solution. The algorithm stops when the measured HFR is within percentage tolerance of the minimum HFR recorded in the procedure.</span></li>
-  <li class="rvps5"><span class="rvts59">Polynomial</span><span class="rvts60">: Starts with iterative method. Upon crossing to the other side of the V-Curve, polynomial fitting coefficients along with possible minimum solution are calculated. This algorithm can be faster than purely iterative approach given a good data set.</span></li>
-  <li class="rvps5"><span class="rvts59">Linear</span><span class="rvts60">: Samples focus inward in a regular fashion, using 2 passes. The algorithm can be slow, but it is more resilient to backlash. Start with the focuser positioned near good focus. Set Initial Step Size and Max Travel for the desired sampling interval and range around start focus position. Tolerance should be around 5%.</span></li>
+  <li class="rvps5"><span class="rvts57">Iterative</span><span class="rvts58">: Moves focuser by discreet steps initially decided by the step size. Once a curve slope is calculated, further step sizes are calculated to reach optimal solution. The algorithm stops when the measured HFR is within percentage tolerance of the minimum HFR recorded in the procedure.</span></li>
+  <li class="rvps5"><span class="rvts57">Polynomial</span><span class="rvts58">: Starts with iterative method. Upon crossing to the other side of the V-Curve, polynomial fitting coefficients along with possible minimum solution are calculated. This algorithm can be faster than purely iterative approach given a good data set.</span></li>
+  <li class="rvps5"><span class="rvts57">Linear</span><span class="rvts58">: Samples focus inward in a regular fashion, using 2 passes. The algorithm can be slow, but it is more resilient to backlash. Start with the focuser positioned near good focus. Set Initial Step Size and Max Travel for the desired sampling interval and range around start focus position. Tolerance should be around 5%.</span></li>
  </ul>
- <li class="rvps5"><span class="rvts59">Tolerance</span><span class="rvts60">: The tolerance percentage values decides when the autofocus process stops in the&nbsp;</span><span class="rvts61">Iterative</span><span class="rvts60">&nbsp;algorithm. During the autofocus process, HFR values are recorded, and once the focuser is close to optimal position, it starts measuring HFRs against the minimum recorded HFR in the sessions and stops whenever a measured HFR value is within % difference of the minimum recorded HFR. Decrease value to narrow optimal focus point solution radius. Increase to expand dsolution radius.</span></li>
+ <li class="rvps5"><span class="rvts57">Tolerance</span><span class="rvts58">: The tolerance percentage values decides when the autofocus process stops in the&nbsp;</span><span class="rvts59">Iterative</span><span class="rvts58">&nbsp;algorithm. During the autofocus process, HFR values are recorded, and once the focuser is close to optimal position, it starts measuring HFRs against the minimum recorded HFR in the sessions and stops whenever a measured HFR value is within % difference of the minimum recorded HFR. Decrease value to narrow optimal focus point solution radius. Increase to expand dsolution radius.</span></li>
 </ul>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps6">
@@ -221,7 +221,7 @@
    <p class="rvps8"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps27"><span class="rvts63">Caution</span></p>
+   <p class="rvps27"><span class="rvts61">Caution</span></p>
   </td>
  </tr>
  <tr valign="top">
@@ -229,17 +229,17 @@
    <p class="rvps8"><span class="rvts21"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps28"><span class="rvts64">Setting the value too low might result in repetitive loop and would most likely result in a failed autofocus process.</span></p>
+   <p class="rvps28"><span class="rvts62">Setting the value too low might result in repetitive loop and would most likely result in a failed autofocus process.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5"><span class="rvts59">Average over</span><span class="rvts60">: Sets the number of frames to capture in order to average the HFR value at the current focuser position.</span></li>
- <li class="rvps5"><span class="rvts59">Num. of rows</span><span class="rvts60">:&nbsp;The number of rows set in this field will be combined in the Bahtinov max average calculation. Changing this value might help to match the Bahtinov lines on the star pattern more accurately.</span></li>
+ <li class="rvps5"><span class="rvts57">Average over</span><span class="rvts58">: Sets the number of frames to capture in order to average the HFR value at the current focuser position.</span></li>
+ <li class="rvps5"><span class="rvts57">Num. of rows</span><span class="rvts58">:&nbsp;The number of rows set in this field will be combined in the Bahtinov max average calculation. Changing this value might help to match the Bahtinov lines on the star pattern more accurately.</span></li>
 </ul>
-<p class="rvps7"><span class="rvts60"></span><span class="rvts6"></span></p>
+<p class="rvps7"><span class="rvts58"></span><span class="rvts6"></span></p>
 
             </div>
             
