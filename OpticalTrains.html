@@ -171,10 +171,10 @@
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Setup2.html">Setup</a></li>
+                        <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Setup.html">Setup</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Setup2.html" title="Setup" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="PortSelector.html" title="Port Selector" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="WeatherInforrmation.html" title="Weather Inforrmation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Setup.html" title="Setup" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="PortSelector.html" title="Port Selector" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="WeatherInforrmation.html" title="Weather Inforrmation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -205,7 +205,7 @@
  <li class="rvps5"><span class="rvts19">Focuser</span><span class="rvts6">: Select a mechanized focuser if any.</span></li>
  <li class="rvps5"><span class="rvts19">Filter Wheel</span><span class="rvts6">: Select a filter wheel. This must be a standalone filter wheel connected to Stellarmate via USB. If you have a filter wheel that is embedded in a camera, leave this field mandatory.</span></li>
  <li class="rvps5"><span class="rvts19">Camera</span><span class="rvts6">: Select imaging camera for this train. Each camera must have its own train.</span></li>
- <li class="rvps5"><span class="rvts19">Guider</span><span class="rvts6">: Select the device that </span><span class="rvts33">receives the guiding correction pulses</span><span class="rvts6">. This can be one of the following devices:</span></li>
+ <li class="rvps5"><span class="rvts19">Guider</span><span class="rvts6">: Select the device that </span><span class="rvts21">receives the guiding correction pulses</span><span class="rvts6">. This can be one of the following devices:</span></li>
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: lower-alpha;">
   <li class="rvps5"><span class="rvts19">Mount</span><span class="rvts6">: If the </span><span class="rvts19">Mount</span><span class="rvts6"> can receive guiding correction pulses, then it is best to select it so that the pulses are directly sent to the mount. This is the recommended option.</span></li>
   <li class="rvps5"><span class="rvts19">ST4</span><span class="rvts6">: If using an ST4 cable between the guide camera and mount, then you should select the Guide Camera as the Guider.</span></li>
@@ -213,8 +213,8 @@
  </ol>
 </ol>
 <p class="rvps5"><span class="rvts6"><br/></span></p>
-<p class="rvps5"><span class="rvts6">If a device provides more than one functionality, then it should be specified in all relative fields. For example, </span><span class="rvts33">MoonLite Nightcrawler</span><span class="rvts6"> is a Rotator and Focuser at the same time, so we select NightCrawler under both </span><span class="rvts33">Rotator</span><span class="rvts6"> and </span><span class="rvts33">Focuser</span><span class="rvts6"> fields.</span></p>
-<p class="rvps5"><span class="rvts6">Once the optical trains are configured, specify which trains to use in each Ekos module. Typically, the Primary optical train is used in </span><span class="rvts33">Capture</span><span class="rvts6">, </span><span class="rvts33">Focus</span><span class="rvts6">, and </span><span class="rvts33">Align</span><span class="rvts6"> modules while the Secondary train is used in </span><span class="rvts33">Guide</span><span class="rvts6">.</span><br/><span class="rvts6">Tap the help Button to view an </span><a class="rvts18" href="https://youtu.be/ltOFxH_fKnQ" target="_blank">external video tutorial</a><span class="rvts6"> on Optical Train.</span><br/><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts6">If a device provides more than one functionality, then it should be specified in all relative fields. For example, </span><span class="rvts21">MoonLite Nightcrawler</span><span class="rvts6"> is a Rotator and Focuser at the same time, so we select NightCrawler under both </span><span class="rvts21">Rotator</span><span class="rvts6"> and </span><span class="rvts21">Focuser</span><span class="rvts6"> fields.</span></p>
+<p class="rvps5"><span class="rvts6">Once the optical trains are configured, specify which trains to use in each Ekos module. Typically, the Primary optical train is used in </span><span class="rvts21">Capture</span><span class="rvts6">, </span><span class="rvts21">Focus</span><span class="rvts6">, and </span><span class="rvts21">Align</span><span class="rvts6"> modules while the Secondary train is used in </span><span class="rvts21">Guide</span><span class="rvts6">.</span><br/><span class="rvts6">Tap the help Button to view an </span><a class="rvts18" href="https://youtu.be/ltOFxH_fKnQ" target="_blank">external video tutorial</a><span class="rvts6"> on Optical Train.</span><br/><span class="rvts6"><br/></span></p>
 <p class="rvps7"><img width="809" height="505" alt="" style="padding : 1px;" src="lib/open-link.jpg"></p>
 <p class="rvps7"><span class="rvts6"><br/></span></p>
 <p class="rvps14"><span class="rvts6">Tap the </span><span class="rvts19">edit button</span><span class="rvts6"> and it will open the Optical train modal with the specific settings of a trian.</span></p>
@@ -238,12 +238,12 @@
 <p class="rvps7"><img width="793" height="506" alt="" style="padding : 1px;" src="lib/telescope-lens.jpg"></p>
 <p class="rvps7"><span class="rvts34"><br/></span></p>
 <p class="rvps14"><span class="rvts6">Displays Telescope / Lens View. So, you can Add / Update telescope and lens and then use those in different trains.&nbsp;</span></p>
-<p class="rvps5"><span class="rvts32"><br/></span></p>
+<p class="rvps5"><span class="rvts33"><br/></span></p>
 <p class="rvps7"><img width="793" height="501" alt="" style="padding : 1px;" src="lib/telescopes2.jpg"></p>
-<p class="rvps14"><span class="rvts17"></span><br/><span class="rvts17">Tap on the Add/Edit button next to the &nbsp;telescope to edit &nbsp;the details of the telescope.&nbsp;</span><span class="rvts29">All units are in millimeters</span><span class="rvts17">.You can specify a Telescope and DSLR lens for your trains.</span></p>
+<p class="rvps14"><span class="rvts17"></span><br/><span class="rvts17">Tap on the Add/Edit button next to the &nbsp;telescope to edit &nbsp;the details of the telescope.&nbsp;</span><span class="rvts30">All units are in millimeters</span><span class="rvts17">.You can specify a Telescope and DSLR lens for your trains.</span></p>
 <p class="rvps7"><img width="789" height="493" alt="" style="padding : 1px;" src="lib/telescope-editor.jpeg"></p>
 <p class="rvps5"><span class="rvts17"><br/></span></p>
-<p class="rvps5"><span class="rvts17">Similarly, you can </span><span class="rvts29">add/edit DSLR </span><span class="rvts17">lens and then use </span><span class="rvts29">Scope/Lens </span><span class="rvts17">in different Optical trains.</span></p>
+<p class="rvps5"><span class="rvts17">Similarly, you can </span><span class="rvts30">add/edit DSLR </span><span class="rvts17">lens and then use </span><span class="rvts30">Scope/Lens </span><span class="rvts17">in different Optical trains.</span></p>
 <p class="rvps5"><span class="rvts17"><br/></span></p>
 <p class="rvps7"><img width="790" height="494" alt="" style="padding : 1px;" src="lib/dslr-editor.jpeg"></p>
 <p class="rvps7"><span class="rvts6"><br/></span></p>
