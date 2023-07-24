@@ -171,10 +171,10 @@
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Setup2.html">Setup</a></li>
+                        <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Setup.html">Setup</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Setup2.html" title="Setup" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Ports.html" title="Ports" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="OpticalTrains.html" title="Optical Trains" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Setup.html" title="Setup" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Connectingyourdevices.html" title="Connecting your devices" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="OpticalTrains.html" title="Optical Trains" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -208,26 +208,33 @@
 <p class="rvps14"><span class="rvts6"><br/></span></p>
 <p class="rvps7"><img width="733" height="516" alt="" style="padding : 1px;" src="lib/port-annotation1.jpg"></p>
 <p class="rvps14"><span class="rvts6"><br/></span></p>
-<p class="rvps14"><span class="rvts6">You can specify the ports for </span><span class="rvts30">serial</span><span class="rvts6"> and </span><span class="rvts30">network</span><span class="rvts6"> devices using the Port Selector.</span></p>
-<p class="rvps14"><span class="rvts6">.</span></p>
+<p class="rvps14"><span class="rvts6">You can specify the ports for </span><span class="rvts31">serial</span><span class="rvts6"> and </span><span class="rvts31">network</span><span class="rvts6"> devices using the Port Selector.</span></p>
+<p class="rvps14"><span class="rvts6"><br/></span></p>
+<p class="rvps14"><span class="rvts14">NOTE: The screenshot below is not good. Create a profile with these devices (EQMod, MoonLite Focuser, QHYCFW3 filter). For EQMod, show the IP address part (192.168.1.20) and for focuser and filter, show the serial part. create fake devices under /dev/serial/by-id like this sudo touch /dev/serial/by-id/FT232_1D54LT3 and another sudo touch /dev/serial/by-id/Prolific_USB_LC41</span></p>
 <p class="rvps7"><img width="740" height="186" alt="" style="padding : 1px;" src="lib/port_selector_intro1.jpg"></p>
 <p class="rvps14"><span class="rvts6"><br/></span></p>
-<p class="rvps14"><span class="rvts30">Connection Status</span></p>
+<p class="rvps14"><span class="rvts32">The serial ports can be selected from the dropdown. The addresses are unique to each connected device (similar to COM1, COM2..etc on Windows OS) but the automatically generated port names usually do not tell you which device they are connected to. When you have multiple serial devices, it can be tricky to find out which is which. StellarMate automatically tries to connect to the serial devices and attempts handshake with each device, but this might lead to multiple drivers trying to talk at the same time to multiple devices which might lead to traffic collision.</span></p>
+<p class="rvps14"><span class="rvts32"><br/></span></p>
+<p class="rvps14"><span class="rvts32">Therefore, it is better to select the correct ports from the beginning. This is only required once in the initial setup. One method to know a device's serial port is simply by connecting one device at a time via USB, and then check the serial port that is displayed in the dropdown. Make note of this port name and then connect the next device and check again, the new serial port in the dropdown should belong to the 2nd device. Now you know for certain the ports for the connected devices.</span></p>
+<p class="rvps14"><span class="rvts32"><br/></span></p>
+<p class="rvps14"><span class="rvts32">Once the ports and network settings are selected, press </span><span class="rvts31">Connect All</span><span class="rvts32"> to establish connection.</span></p>
+<p class="rvps14"><span class="rvts32"><br/></span></p>
+<p class="rvps14"><span class="rvts31">Connection Status</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps14"><span class="rvts30">Green:</span><span class="rvts31"> device is connected.</span></li>
- <li class="rvps14"><span class="rvts30">Yellow: </span><span class="rvts31">connecting to device.</span></li>
- <li class="rvps14"><span class="rvts30">Red: </span><span class="rvts31">connecting to device failed.</span></li>
+ <li class="rvps14"><span class="rvts31">Green:</span><span class="rvts32"> device is connected.</span></li>
+ <li class="rvps14"><span class="rvts31">Yellow: </span><span class="rvts32">connecting to device.</span></li>
+ <li class="rvps14"><span class="rvts31">Red: </span><span class="rvts32">connecting to device failed.</span></li>
 </ul>
-<p class="rvps14"><span class="rvts30"><br/></span></p>
+<p class="rvps14"><span class="rvts31"><br/></span></p>
 <p class="rvps14"><span class="rvts6"><br/></span></p>
-<p class="rvps14"><span class="rvts30">Connection Mode</span></p>
+<p class="rvps14"><span class="rvts31">Connection Mode</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps14"><span class="rvts19">Serial: </span><span class="rvts6">For mounts, filter wheels, and focusers that are connected via a Serial-to-USB adapter. To connect to serial devices, you need to select the port and baud rate. StellarMate provides the detected system ports in a dropdown menu to select from, but you can also enter your own port manually.</span></li>
  <li class="rvps14"><span class="rvts19">Network: </span><span class="rvts6">For any network-enabled device (e.g. Mounts over WiFi like SkyWatcher AZ-Gti).To connect to networked devices, ensure they are connected to the same network where StellarMate is connected to. You need to enter the hostname or preferably the IP address of the device in addition to the connection port and connection type (TCP or UDP).</span></li>
 </ul>
 <p class="rvps14"><span class="rvts6"><br/></span></p>
-<p class="rvps14"><span class="rvts30">Baud Rate</span><span class="rvts6">: Set the devices baud rate</span></p>
-<p class="rvps14"><span class="rvts30">Connect All</span><span class="rvts6">: Connects to all the devices and closes the Port Selector</span></p>
+<p class="rvps14"><span class="rvts31">Baud Rate</span><span class="rvts6">: Set the devices baud rate</span></p>
+<p class="rvps14"><span class="rvts31">Connect All</span><span class="rvts6">: Connects to all the devices and closes the Port Selector</span></p>
 <p class="rvps14"><span class="rvts6"><br/></span></p>
 <p class="rvps14"><span class="rvts6"><br/></span></p>
 <p class="rvps7"><img width="796" height="564" alt="" style="padding : 1px;" src="lib/port-selector1.jpg"></p>
