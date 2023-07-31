@@ -717,104 +717,81 @@ span.rvts111
 }
 span.rvts112
 {
- font-size: 12pt;
- font-family: 'Inter';
- font-style: italic;
+ font-size: 13pt;
  color: ;
- text-decoration: underline;
 }
 span.rvts113
 {
- font-size: 14pt;
- font-family: 'Gill Sans MT';
- color: ;
+ font-size: 12pt;
+ font-family: 'Inter';
+ font-style: italic;
+ color: #000000;
+ text-decoration: underline;
 }
 span.rvts114
 {
- font-size: 14pt;
- font-family: 'Gill Sans MT';
+ font-size: 9pt;
+ font-family: 'Inter';
  font-weight: bold;
  color: ;
 }
 span.rvts115
 {
- font-size: 14pt;
- font-family: 'Gill Sans MT';
- font-style: italic;
- color: ;
+ font-size: 9pt;
+ font-family: 'Inter';
+ color: #000000;
 }
 span.rvts116
 {
- font-size: 12pt;
+ font-size: 9pt;
  font-family: 'Inter';
- font-style: italic;
- color: #000000;
- text-decoration: underline;
+ color: ;
 }
 span.rvts117
 {
- font-size: 9pt;
+ font-size: 7pt;
  font-family: 'Inter';
- font-weight: bold;
- color: ;
+ color: #000000;
 }
 span.rvts118
 {
- font-size: 9pt;
- font-family: 'Inter';
- color: #000000;
-}
-span.rvts119
-{
- font-size: 9pt;
- font-family: 'Inter';
- color: ;
-}
-span.rvts120
-{
- font-size: 7pt;
- font-family: 'Inter';
- color: #000000;
-}
-span.rvts121
-{
  font-size: 7pt;
  font-family: 'Inter';
  color: ;
 }
-a.rvts122, span.rvts122
+a.rvts119, span.rvts119
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts123
+span.rvts120
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #000000;
 }
-span.rvts124
+span.rvts121
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: ;
 }
-span.rvts125
+span.rvts122
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #ff0000;
 }
-span.rvts126
+span.rvts123
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: #007bbf;
 }
-a.rvts127, span.rvts127
+a.rvts124, span.rvts124
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -1270,15 +1247,34 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps70
 {
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ line-height: 1.50;
+ background: #ffffff;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 24px;
 }
 .rvps71
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- text-indent: 48px;
+ line-height: 1.50;
+ background: #ffffff;
+ margin: 0px 0px 0px 24px;
 }
 .rvps72
+{
+}
+.rvps73
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ text-indent: 48px;
+}
+.rvps74
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1304,7 +1300,4 @@ p,ul,ol /* Paragraph Style */
 .list14 {text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside; list-style-type: disc;}
 .list15 {text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside; list-style-type: circle;}
 .list16 {text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside; list-style-type: square;}
-.list17 {text-indent: 0px; padding: 0; margin: 0 0 0 25px; list-style-position: outside;}
-.list18 {text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: outside; list-style-type: circle;}
-.list19 {text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: outside; list-style-type: square;}
-.list20 {text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;}
+.list17 {text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;}
