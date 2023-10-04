@@ -28,7 +28,7 @@
   <meta property="og:title" content="General" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="The StellarMate X Manual" /> 
+  <meta property="og:site_name" content="The StellarMate Manual" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -75,7 +75,7 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>The StellarMate X Manual</h1>
+    <h1>The StellarMate Manual</h1>
     <a href="https://www.stellarmate.com"><img src="StellarMate_Logo_Text_Black.png" alt="logo" class="logo"/></a>
   </header>
 
@@ -171,7 +171,7 @@
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="StellarMateApp1.html">StellarMate App</a></li><li><a href="Ekos.html">Ekos</a></li><li><a href="Modules.html">Modules</a></li><li><a href="Capture.html">Capture</a></li><li><a href="Settings3.html">Settings</a></li>
+                        <li><a href="StellarMateApp.html">StellarMate App</a></li><li><a href="Ekos.html">Ekos</a></li><li><a href="Modules.html">Modules</a></li><li><a href="Capture.html">Capture</a></li><li><a href="Settings3.html">Settings</a></li>
                     </ol>
                     <div class="nav-arrows">
                         <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Settings3.html" title="Settings" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Settings3.html" title="Settings" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="AutoCalibration.html" title="Auto Calibration" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
@@ -185,11 +185,27 @@
 
             <div class="main-content">
                 
-<p class="rvps16"><span class="rvts68">Delay control:</span></p>
-<p class="rvps16"><span class="rvts68"><br/></span></p>
-<p class="rvps16"><span class="rvts44">Delay in seconds between image captures.</span></p>
-<p class="rvps3"><span class="rvts44"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/delay_control1.jpg"><span class="rvts6"></span></p>
+<p class="rvps7"><img width="658" height="406" alt="" style="padding : 1px;" src="lib/general_settings_12.jpg"></p>
+<p class="rvps7"><span class="rvts23"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps22"><span class="rvts23">Delay in seconds between consecutive images.</span></li>
+ <li class="rvps22"><span class="rvts23">Maximum acceptable difference between requested and measured temperature set point. When the temperature threshold is below this value, the temperature set point request is deemed successful.</span></li>
+ <li class="rvps22"><span class="rvts23">Wait this many seconds after guiding is resumed to stabilize the guiding performance before capture.</span></li>
+ <li class="rvps22"><span class="rvts23">Cover or uncover telescope dialog timeout in seconds</span></li>
+ <li class="rvps22"><span class="rvts23">When starting to process a sequence list, reset all capture counts to zero. Scheduler overrides this option when Remember job progress is enabled.</span></li>
+ <li class="rvps22"><span class="rvts23">Reset mount model after meridian flip</span></li>
+ <li class="rvps22"><span class="rvts23">Use flip command if it is supported by the mount.</span></li>
+ <li class="rvps22"><span class="rvts23">Display received FITS in the Summary screen preview window.</span></li>
+</ol>
+<p class="rvps22"><span class="rvts23"><br/></span></p>
+<p class="rvps7"><img width="656" height="404" alt="" style="padding : 1px;" src="lib/general_settings_23.jpg"></p>
+<p class="rvps22"><span class="rvts23"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li value="9" class="rvps22"><span class="rvts23">Set HFR Threshold percentage gain. When an autofocus operation is completed, the autofocus HFR value is increased by this threshold percentage value and stored within the capture module. If In- Sequence-Focus is engaged, the autofocus module only performs auto-focusing procedure if current HFR value exceeds the capture module HFR threshold. Increase value to permit more relaxed changes in HFR values without requiring a full autofocus run.</span></li>
+ <li class="rvps22"><span class="rvts23">Run In-Sequence HFR check after this many frames.</span></li>
+ <li class="rvps22"><span class="rvts23">Calculate median focus value after each autofocus operation is complete. If the autofocus results become progressively worse with time, the median value shall reflect this trend and prevent unnecessary autofocus operations when the seeing conditions deteriorate.</span></li>
+ <li class="rvps22"><span class="rvts23">In-sequence HFR threshold value controls when the autofocus process is started. If the measured HFR value exceeds the HFR threshold, autofocus process is initiated. If the HFR threshold value is zero initially (default), then the autofocus process best HFR value is used to set the new HFR threshold, after applying the HFR threshold modifier percentage. This new HFR threshold is then used for subsequent In-Sequence focus checks. If this option is enabled, the HFR threshold value is constant and gets saved to the sequence file.</span><span class="rvts6"></span></li>
+</ol>
 
             </div>
             
