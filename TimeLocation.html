@@ -188,24 +188,24 @@
 <p class="rvps2"><span class="rvts6">In order to ensure smooth and accurate operation of the astrophotography workflow, both time and location information must be precise across all devices in the system. Therefore, the time and location on StellarMate must be in sync with the time and location on all connected devices, especially mounts.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">StellarMate Plus Controller is equipped with a Real Time Clock (RTC). This ensures that the internal clock keeps ticking even when the power is switched off. When SM Plus is powered on, it reads the time from the onboard RTC. While this value might drift off by a few seconds over time, it is critical to minimize any large errors that otherwise would accumulate over time unchecked.</span></p>
-<p class="rvps2"><span class="rvts21"><br/></span></p>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps24">
+<div class="rvps26">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps25"></p>
+   <p class="rvps27"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps2"><span class="rvts39">Note</span></p>
+   <p class="rvps2"><span class="rvts43">Note</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps25"><span class="rvts36"><br/></span></p>
+   <p class="rvps27"><span class="rvts39"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps75"><span class="rvts20">For users who installed StellarMate OS on their own Raspberry PI4 SBCs, it’s recommended to invest in installing an DS3231 RTC module or use a GPS dongle.</span></p>
+   <p class="rvps79"><span class="rvts23">For users who installed StellarMate OS on their own Raspberry PI4 SBCs, it’s recommended to invest in installing an DS3231 RTC module or use a GPS dongle.</span></p>
   </td>
  </tr>
 </table>
@@ -215,26 +215,26 @@
 <p class="rvps2"><span class="rvts6">While the RTC provides acceptable time tracking, it does not offer location information. Therefore, GPS is the recommended solution in the long term. The following are the supported GPS sources:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li style="margin-left: 0px" class="rvps31"><span class="rvts6">Tablet/Mobile GPS: The StellarMate App relays the tablet/mobile time and location information to StellarMate. Everytime the SM App is connected to SM Plus, it automatically synchronizes both time and location information accordingly.</span></li>
+ <li style="margin-left: 0px" class="rvps35"><span class="rvts6">Tablet/Mobile GPS: The StellarMate App relays the tablet/mobile time and location information to StellarMate. Everytime the SM App is connected to SM Plus, it automatically synchronizes both time and location information accordingly.</span></li>
 </ul>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps66"><img width="777" height="250" alt="" style="padding : 1px;" src="lib/time_location_tablet.jpg"></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps35"><span class="rvts6"><br/></span></p>
+<p class="rvps70"><img width="777" height="250" alt="" style="padding : 1px;" src="lib/time_location_tablet.jpg"></p>
+<p class="rvps35"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li style="margin-left: 0px" class="rvps31"><span class="rvts6">External GPS Dongle: SM Plus supports a number of dedicated external GPS dongles connected via USB. Once connected, select the&nbsp;</span><span class="rvts16">GPSD</span><span class="rvts6">&nbsp;driver in your equipment profile in order to utilize the GPS.</span></li>
+ <li style="margin-left: 0px" class="rvps35"><span class="rvts6">External GPS Dongle: SM Plus supports a number of dedicated external GPS dongles connected via USB. Once connected, select the&nbsp;</span><span class="rvts20">GPSD</span><span class="rvts6">&nbsp;driver in your equipment profile in order to utilize the GPS.</span></li>
 </ul>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps66"><img width="666" height="250" alt="" style="padding : 1px;" src="lib/time_location_gps.jpg"></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps35"><span class="rvts6"><br/></span></p>
+<p class="rvps70"><img width="666" height="250" alt="" style="padding : 1px;" src="lib/time_location_gps.jpg"></p>
+<p class="rvps35"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li style="margin-left: 0px" class="rvps31"><span class="rvts6">Mount with GPS: Some mount have internal or external GPS adapters. These adapters cannot be connected directly to StellarMate, they are used to update the time and location on the mount handset. You can select Mount as the source of data if desired.</span></li>
+ <li style="margin-left: 0px" class="rvps35"><span class="rvts6">Mount with GPS: Some mount have internal or external GPS adapters. These adapters cannot be connected directly to StellarMate, they are used to update the time and location on the mount handset. You can select Mount as the source of data if desired.</span></li>
 </ul>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps66"><img width="486" height="250" alt="" style="padding : 1px;" src="lib/time_location_mount.jpg"></p>
+<p class="rvps35"><span class="rvts6"><br/></span></p>
+<p class="rvps70"><img width="486" height="250" alt="" style="padding : 1px;" src="lib/time_location_mount.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Every time the StellarMate Mobile App is connected to StellarMate, it syncs both time and location information from the tablet/phone GPS. If the SM App is not used (for example, when using Ekos on a PC/Mac), then StellarMate relies primarily on RTC as the time source.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">In KStars, it is possible to specify the&nbsp;</span><span class="rvts16">Time Source</span><span class="rvts6">. Click on Settings → Configure KStars → INDI.</span></p>
+<p class="rvps2"><span class="rvts6">In KStars, it is possible to specify the&nbsp;</span><span class="rvts20">Time Source</span><span class="rvts6">. Click on Settings → Configure KStars → INDI.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/time_location_updates.jpg"></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
@@ -243,22 +243,22 @@
 <p class="rvps2"><span class="rvts6">After connecting the SM App to StellarMate, the KStars’ location is updated to the tablet/mobile GPS location. You can also change the KStars location from Settings → Geographic and then select or add a new location.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps24">
+<div class="rvps26">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps25"></p>
+   <p class="rvps27"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps2"><span class="rvts39">Tip</span></p>
+   <p class="rvps2"><span class="rvts43">Tip</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps25"><span class="rvts36"><br/></span></p>
+   <p class="rvps27"><span class="rvts39"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps75"><span class="rvts20">You can use StellarMate App to quickly synchronize StellarMate Plus time and location. The time and location are automatically set whenever the App communicates with StellarMate. Afterwards, you may continue to use the SM App, or use Ekos to setup your astrophotography workflow.</span></p>
+   <p class="rvps79"><span class="rvts23">You can use StellarMate App to quickly synchronize StellarMate Plus time and location. The time and location are automatically set whenever the App communicates with StellarMate. Afterwards, you may continue to use the SM App, or use Ekos to setup your astrophotography workflow.</span></p>
   </td>
  </tr>
 </table>
@@ -268,38 +268,38 @@
 <p class="rvps2"><span class="rvts6">Therefore, in KStars, the time and location information MASTER source can be selected from the following sources:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li style="margin-left: 0px" class="rvps31"><span class="rvts16">KStars Updates All Devices</span><span class="rvts6">: KStars time and location is the primary source and all connected devices (mounts..etc) are synchronized to KStars time and location. When using SM App, it’s recommended to leave this option as is.</span></li>
+ <li style="margin-left: 0px" class="rvps35"><span class="rvts20">KStars Updates All Devices</span><span class="rvts6">: KStars time and location is the primary source and all connected devices (mounts..etc) are synchronized to KStars time and location. When using SM App, it’s recommended to leave this option as is.</span></li>
 </ul>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps35"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li style="margin-left: 0px" class="rvps31"><span class="rvts16">Mount Updates KStars</span><span class="rvts6">: The mount time and location are used to update KStars time and location. Some mounts are equipped with internal or external GPS, KStars does NOT connect to these mount-specific GPS dongles. Instead, KStars communicates with the mount via the Handset/WiFi to query time and location information and then uses them as the source.</span></li>
+ <li style="margin-left: 0px" class="rvps35"><span class="rvts20">Mount Updates KStars</span><span class="rvts6">: The mount time and location are used to update KStars time and location. Some mounts are equipped with internal or external GPS, KStars does NOT connect to these mount-specific GPS dongles. Instead, KStars communicates with the mount via the Handset/WiFi to query time and location information and then uses them as the source.</span></li>
 </ul>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps35"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li style="margin-left: 0px" class="rvps31"><span class="rvts16">GPS Updates KStars</span><span class="rvts6">: When using a dedicated externa GPS dongle, select this option to ensure the GPS dongle is the master source for both time and location. When Ekos detects a GPS device, it will prompt the user to switch to it as the master time &amp; location source.</span></li>
+ <li style="margin-left: 0px" class="rvps35"><span class="rvts20">GPS Updates KStars</span><span class="rvts6">: When using a dedicated externa GPS dongle, select this option to ensure the GPS dongle is the master source for both time and location. When Ekos detects a GPS device, it will prompt the user to switch to it as the master time &amp; location source.</span></li>
 </ul>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
- <li style="margin-left: 0px" class="rvps31"><span class="rvts6"><br/></span></li>
+ <li style="margin-left: 0px" class="rvps35"><span class="rvts6"><br/></span></li>
 </ul>
 <p class="rvps2"><span class="rvts6">Therefore, you must select which source is the most accurate and reliable for time &amp; location information. By default, KStars is the master source for time and location data.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<div class="rvps24">
+<div class="rvps26">
 <table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps25"></p>
+   <p class="rvps27"></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps2"><span class="rvts28">WARNING</span></p>
+   <p class="rvps2"><span class="rvts40">WARNING</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td width="5" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps25"><span class="rvts36"><br/></span></p>
+   <p class="rvps27"><span class="rvts39"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps26"><span class="rvts131">Turn off DST / Daylight Saving settings in the handset as this could interfere with correct time settings.</span></p>
+   <p class="rvps28"><span class="rvts136">Turn off DST / Daylight Saving settings in the handset as this could interfere with correct time settings.</span></p>
   </td>
  </tr>
 </table>
