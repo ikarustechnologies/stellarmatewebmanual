@@ -185,51 +185,44 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts6">The Mount module allows you to do Meridian Flips and set limits for your Mount, it has the following features:</span></p>
+<p class="rvps5"><span class="rvts26">The Mount module allows you to do Meridian Flips and set limits for your Mount, it has the following features:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li style="text-indent: 0px" class="rvps42"><span class="rvts6">Manage / Select </span><a class="rvts14" href="OpticalTrains.html">Optical trains</a><span class="rvts6">.</span></li>
- <li class="rvps2"><span class="rvts6">Tracking On/Off</span></li>
- <li class="rvps2"><span class="rvts24">Mount Park/UnPark</span></li>
- <li class="rvps2"><span class="rvts24">Meridian Flip</span></li>
+ <li style="text-indent: 0px" class="rvps47"><span class="rvts26">Manage / Select </span><a class="rvts27" href="OpticalTrains.html">Optical trains</a><span class="rvts26">.</span></li>
+ <li class="rvps5"><span class="rvts26">Tracking On/Off</span></li>
+ <li class="rvps5"><span class="rvts80">Mount Park/UnPark</span></li>
+ <li class="rvps5"><span class="rvts80">Meridian Flip</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li style="margin-left: 0px" class="rvps34"><span class="rvts73">Flip if HA &gt;</span><span class="rvts74">: Request a meridian flip if the hour angle exceeds the specified value. Capture and Guiding will be suspended and resumed after the flip is complete.</span></li>
-  <li style="margin-left: 0px" class="rvps34"><span class="rvts73">Pier</span><span class="rvts74">&nbsp;</span><span class="rvts73">Side:&nbsp;</span><span class="rvts74">Shows the pier side direction.</span></li>
+  <li style="margin-left: 0px" class="rvps37"><span class="rvts86">Flip if HA &gt;</span><span class="rvts87">: Request a meridian flip if the hour angle exceeds the specified value. Capture and Guiding will be suspended and resumed after the flip is complete.</span></li>
+  <li style="margin-left: 0px" class="rvps37"><span class="rvts86">Pier</span><span class="rvts87">&nbsp;</span><span class="rvts86">Side:&nbsp;</span><span class="rvts87">Shows the pier side direction.</span></li>
  </ul>
- <li class="rvps2"><span class="rvts24">Limit Settings: </span><span class="rvts74">You enable Altitude Limits or Hour Angle Limits if you do not wish your mount to move past a specific limit. The values are expressed in hours. Setting a 1 hour (HA) limit means your mount is restricted to 15 degrees east and west of the meridian. Setting it to 3 HA (3*15) means your mount is free to move 45 degrees east and west of the meridian.</span></li>
- <li class="rvps2"><span class="rvts74">Auto Park</span></li>
+ <li class="rvps5"><span class="rvts80">Limit Settings: </span><span class="rvts87">You enable Altitude Limits or Hour Angle Limits if you do not wish your mount to move past a specific limit. The values are expressed in hours. Setting a 1 hour (HA) limit means your mount is restricted to 15 degrees east and west of the meridian. Setting it to 3 HA (3*15) means your mount is free to move 45 degrees east and west of the meridian.</span></li>
+ <li class="rvps5"><span class="rvts87">Auto Park</span></li>
 </ul>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
- <li class="rvps2"><span class="rvts73"><br/></span></li>
+ <li class="rvps5"><span class="rvts86"><br/></span></li>
 </ul>
-<p class="rvps3"><img width="815" height="509" alt="" style="padding : 1px;" src="lib/mount.jpeg"></p>
-<p class="rvps3"><span class="rvts24"><br/></span></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps33"><span class="rvts50">Train</span></p>
-<p class="rvps33"><span class="rvts50"><br/></span></p>
-<p class="rvps33"><span class="rvts24">You can Select / Edit a train specifically for Mount module. Each module has it's own train. Visit </span><a class="rvts14" href="OpticalTrains.html">Optical trains</a><span class="rvts24"> topic for more.</span></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts74"><br/></span></p>
-<p class="rvps33"><span class="rvts73">Meridian Flip</span></p>
-<p class="rvps33"><span class="rvts73"><br/></span></p>
-<p class="rvps2"><span class="rvts74">You can do a Meridian Flip from the Mount Module.</span><br/><span class="rvts74"></span><br/><span class="rvts74">Equatorial mounts flip after crossing the meridian in order to prevent the imaging equipment train from hitting the tripod. With Ekos, you can set an hour angle limit which if exceeded, the mount will be commended to flip. The mount must begin tracking east of the meridian in order to the meridian flip to be commanded in Ekos.</span><br/><span class="rvts74"></span><br/><span class="rvts74">When commanding a meridian flip, Ekos will suspend the auto-guiding process and waits until the mount completes the flip. Once the mount begins tracking again post meridian flip, Ekos will plate-solve and make any necessary slew commands to bring the mount to the exact location it was tracking prior to the flip.</span><br/><span class="rvts74"></span><br/><span class="rvts74">Next, it will automatically capture a frame and select a suitable guide star, performs calibration, and resumes auto-guiding. If In-Sequence focusing is enabled, it will also capture and focus a suitable star. It then resumes the capture process form where it left.</span><br/><span class="rvts74"></span><br/><span class="rvts74">All these steps are completely automated and require no user intervention!&nbsp;</span></p>
-<p class="rvps2"><span class="rvts74">So just set when you want the meridian flip to occur at the mount module. Remember that the setting is in&nbsp;</span><span class="rvts73">Hour Angle (HA)</span><span class="rvts74">.&nbsp;1 HA = 15 degrees, therefore 0.1 HA = 1.5 degrees West of the Meridian.&nbsp;</span></p>
-<p class="rvps2"><span class="rvts74">&nbsp;</span></p>
-<p class="rvps2"><span class="rvts74">Always use a positive value to ensure proper meridian flip takes place. Using zero could&nbsp;</span><span class="rvts75">theoretically</span><span class="rvts74">&nbsp;work but it is at the very edge where the decision to flip or not is made by the mount, so it's&nbsp;</span><span class="rvts75">safer</span><span class="rvts74">&nbsp;to use a slightly higher value like 0.1 HA.</span></p>
-<p class="rvps2"><span class="rvts74"><br/></span></p>
-<p class="rvps2"><span class="rvts74"><br/></span></p>
-<p class="rvps2"><span class="rvts73">Auto Park</span></p>
-<p class="rvps2"><span class="rvts73"><br/></span></p>
-<p class="rvps2"><span class="rvts74">To enable auto park every day, check the Every day box. Otherwise if the desire is only to park it once, keep it disabled.</span></p>
-<p class="rvps2"><span class="rvts74"><br/></span></p>
-<p class="rvps3"><img width="958" height="584" alt="" style="padding : 1px;" src="lib/auto-park.jpeg"></p>
-<p class="rvps2"><span class="rvts74"><br/></span></p>
-<p class="rvps2"><span class="rvts74">Select the time you want to park the mount.</span></p>
-<p class="rvps2"><span class="rvts74"><br/></span></p>
-<p class="rvps3"><img width="957" height="583" alt="" style="padding : 1px;" src="lib/mount-date.jpeg"></p>
-<p class="rvps2"><span class="rvts74"><br/></span></p>
-<p class="rvps2"><span class="rvts74">To start the countdown timer, press start.</span></p>
-<p class="rvps2"><span class="rvts74"><br/></span></p>
-<p class="rvps3"><img width="955" height="582" alt="" style="padding : 1px;" src="lib/mount-park-start.jpeg"><span class="rvts6"></span></p>
+<p class="rvps18"><img alt="" style="padding : 1px;" src="lib/mount3.jpg"></p>
+<p class="rvps18"><span class="rvts80"><br/></span></p>
+<p class="rvps18"><span class="rvts26"><br/></span></p>
+<p class="rvps24"><span class="rvts79">Train</span></p>
+<p class="rvps24"><span class="rvts80">You can Select / Edit a train specifically for Mount module. Each module has it's own train. Visit </span><a class="rvts27" href="OpticalTrains.html">Optical trains</a><span class="rvts80"> topic for more.</span></p>
+<p class="rvps24"><span class="rvts80"><br/></span></p>
+<p class="rvps24"><span class="rvts86">Meridian Flip</span></p>
+<p class="rvps5"><span class="rvts87">You can do a Meridian Flip from the Mount Module.</span><br/><span class="rvts87">Equatorial mounts flip after crossing the meridian in order to prevent the imaging equipment train from hitting the tripod. With Ekos, you can set an hour angle limit which if exceeded, the mount will be commended to flip. The mount must begin tracking east of the meridian in order to the meridian flip to be commanded in Ekos.</span><br/><span class="rvts87">When commanding a meridian flip, Ekos will suspend the auto-guiding process and waits until the mount completes the flip. Once the mount begins tracking again post meridian flip, Ekos will plate-solve and make any necessary slew commands to bring the mount to the exact location it was tracking prior to the flip.</span><br/><span class="rvts87">Next, it will automatically capture a frame and select a suitable guide star, performs calibration, and resumes auto-guiding. If In-Sequence focusing is enabled, it will also capture and focus a suitable star. It then resumes the capture process form where it left.</span></p>
+<p class="rvps5"><span class="rvts87"></span><br/><span class="rvts87">All these steps are completely automated and require no user intervention!&nbsp;</span></p>
+<p class="rvps5"><span class="rvts87">So just set when you want the meridian flip to occur at the mount module. Remember that the setting is in&nbsp;</span><span class="rvts86">Hour Angle (HA)</span><span class="rvts87">.&nbsp;1 HA = 15 degrees, therefore 0.1 HA = 1.5 degrees West of the Meridian.&nbsp;</span></p>
+<p class="rvps5"><span class="rvts87">&nbsp;</span></p>
+<p class="rvps5"><span class="rvts87">Always use a positive value to ensure proper meridian flip takes place. Using zero could&nbsp;</span><span class="rvts90">theoretically</span><span class="rvts87">&nbsp;work but it is at the very edge where the decision to flip or not is made by the mount, so it's&nbsp;</span><span class="rvts90">safer</span><span class="rvts87">&nbsp;to use a slightly higher value like 0.1 HA.</span></p>
+<p class="rvps5"><span class="rvts87"><br/></span></p>
+<p class="rvps5"><span class="rvts86">Auto Park</span></p>
+<p class="rvps5"><span class="rvts87">To enable auto park every day, check the Every day box. Otherwise if the desire is only to park it once, keep it disabled.</span></p>
+<p class="rvps5"><span class="rvts87"><br/></span></p>
+<p class="rvps18"><img alt="" style="padding : 1px;" src="lib/auto-park.jpg"></p>
+<p class="rvps5"><span class="rvts87"><br/></span></p>
+<p class="rvps5"><span class="rvts87">Select the time you want to park the mount.</span></p>
+<p class="rvps5"><span class="rvts87"><br/></span></p>
+<p class="rvps18"><img width="665" height="405" alt="" style="padding : 1px;" src="lib/mount-date.jpeg"></p>
+<p class="rvps5"><span class="rvts87"></span><span class="rvts6"></span></p>
 
             </div>
             
