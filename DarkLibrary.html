@@ -206,8 +206,8 @@
 <p class="rvps5"><span class="rvts26"><br/></span></p>
 <p class="rvps5"><span class="rvts26">Generating a dark library for your equipment profile is highly recommended. When capturing frames in focus, guide, and align modules, the system searches the dark library for suitable dark frames. If a suitable match is found, the light frame is calibrated and this can greatly enhance the performance and accuracy of all Ekos modules.</span></p>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts28">Note: </span><span class="rvts85">"</span><span class="rvts84">Dark Library is not used to calibrate your sequence images, it is only used to calibrate the Align, Focus, and Guide module frames."</span></p>
-<p class="rvps5"><span class="rvts84"><br/></span></p>
+<p class="rvps5"><span class="rvts28">Note: </span><span class="rvts83">"</span><span class="rvts82">Dark Library is not used to calibrate your sequence images, it is only used to calibrate the Align, Focus, and Guide module frames."</span></p>
+<p class="rvps5"><span class="rvts82"><br/></span></p>
 <p class="rvps5"><span class="rvts26">Dark frame calibration can be applied using two methods:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
  <li class="rvps5"><span class="rvts28">Dark Subtraction</span><span class="rvts26">: The dark frame is simply subtracted from the light frame. This is the recommended method when using a cooled camera.</span></li>
@@ -221,43 +221,43 @@
  <li class="rvps5"><span class="rvts28">Dark</span><span class="rvts26">: Remove noise by means of dark frame subtraction.</span></li>
  <li class="rvps5"><span class="rvts28">Defect Maps</span><span class="rvts26">: Remove noise by means of defect map substitution.</span></li>
 </ul>
-<p class="rvps47"><span class="rvts28">1. Create Darks:</span></p>
+<p class="rvps45"><span class="rvts28">1. Create Darks:</span></p>
 <p class="rvps23"><span class="rvts28">&nbsp;</span></p>
 <p class="rvps23"><span class="rvts28"><br/></span></p>
 <p class="rvps18"><img alt="" style="padding : 1px;" src="lib/create_darks1.jpg"></p>
 <p class="rvps18"><span class="rvts26"><br/></span></p>
 <p class="rvps18"><span class="rvts26"><br/></span></p>
-<p class="rvps47"><span class="rvts26">Create a </span><span class="rvts28">master</span><span class="rvts26"> dark frame by capturing and averaging a number of individual dark frames.</span></p>
+<p class="rvps45"><span class="rvts26">Create a </span><span class="rvts28">master</span><span class="rvts26"> dark frame by capturing and averaging a number of individual dark frames.</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-  <li style="text-indent: 0px" class="rvps47"><span class="rvts26">Select the range of exposures, binning, temperatures and count (if applicable) required.&nbsp;</span></li>
-  <li style="text-indent: 0px" class="rvps47"><span class="rvts26">Each time you change a selection, the Total Frames count is updated to reflect the required frames.</span></li>
-  <li style="text-indent: 0px" class="rvps47"><span class="rvts26">When ready, tap the Play button to start the process.</span><span class="rvts25">&nbsp;</span></li>
+  <li style="text-indent: 0px" class="rvps45"><span class="rvts26">Select the range of exposures, binning, temperatures and count (if applicable) required.&nbsp;</span></li>
+  <li style="text-indent: 0px" class="rvps45"><span class="rvts26">Each time you change a selection, the Total Frames count is updated to reflect the required frames.</span></li>
+  <li style="text-indent: 0px" class="rvps45"><span class="rvts26">When ready, tap the Play button to start the process.</span><span class="rvts25">&nbsp;</span></li>
  </ol>
 </ol>
 <p class="rvps18"><span class="rvts26"><br/></span></p>
-<p class="rvps47"><span class="rvts28">2. Create Defect Map:&nbsp;</span></p>
-<p class="rvps47"><span class="rvts28"><br/></span></p>
+<p class="rvps45"><span class="rvts28">2. Create Defect Map:&nbsp;</span></p>
+<p class="rvps45"><span class="rvts28"><br/></span></p>
 <p class="rvps18"><img width="855" height="603" alt="" style="padding : 1px;" src="lib/create_defects.jpg"></p>
 <p class="rvps18"><span class="rvts28"><br/></span></p>
 <p class="rvps18"><span class="rvts28"><br/></span></p>
-<p class="rvps52"><span class="rvts26">After creating a master dark, you can create a defect map for your camera. Usually, defect maps are used when dark frame subtraction does</span></p>
-<p class="rvps52"><span class="rvts26">not improve the quality of the calibration result. This is especially evident when using uncool-ed guide cameras that can exhibit hot pixels that are</span></p>
-<p class="rvps52"><span class="rvts26">hard to treat with classical dark frame subtraction methods.</span></p>
+<p class="rvps50"><span class="rvts26">After creating a master dark, you can create a defect map for your camera. Usually, defect maps are used when dark frame subtraction does</span></p>
+<p class="rvps50"><span class="rvts26">not improve the quality of the calibration result. This is especially evident when using uncool-ed guide cameras that can exhibit hot pixels that are</span></p>
+<p class="rvps50"><span class="rvts26">hard to treat with classical dark frame subtraction methods.</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-  <li style="text-indent: 0px" class="rvps52"><span class="rvts26">Selecting the master dark frame, loads the information of the image&nbsp;</span></li>
-  <li style="text-indent: 0px" class="rvps52"><span class="rvts26">Then adjust Hot and Cold pixel sliders to include or exclude pixels.&nbsp;</span></li>
-  <li style="text-indent: 0px" class="rvps52"><span class="rvts26">Click Generate Map to inspect the results and once satisfied tap the save button to store the defect map for future use.</span></li>
+  <li style="text-indent: 0px" class="rvps50"><span class="rvts26">Selecting the master dark frame, loads the information of the image&nbsp;</span></li>
+  <li style="text-indent: 0px" class="rvps50"><span class="rvts26">Then adjust Hot and Cold pixel sliders to include or exclude pixels.&nbsp;</span></li>
+  <li style="text-indent: 0px" class="rvps50"><span class="rvts26">Click Generate Map to inspect the results and once satisfied tap the save button to store the defect map for future use.</span></li>
  </ol>
 </ol>
 <p class="rvps5"><span class="rvts25"><br/></span></p>
-<p class="rvps47"><span class="rvts28">3. View Masters:</span></p>
+<p class="rvps45"><span class="rvts28">3. View Masters:</span></p>
 <p class="rvps23"><span class="rvts28"><br/></span></p>
 <p class="rvps23"><span class="rvts26"><br/></span></p>
 <p class="rvps18"><img width="859" height="605" alt="" style="padding : 1px;" src="lib/view-masters.jpg"></p>
-<p class="rvps18"><span class="rvts82"><br/></span></p>
-<p class="rvps47"><span class="rvts26">Inspect master frames of a specific camera.</span><span class="rvts6"></span></p>
+<p class="rvps18"><span class="rvts79"><br/></span></p>
+<p class="rvps45"><span class="rvts26">Inspect master frames of a specific camera.</span><span class="rvts6"></span></p>
 
             </div>
             
