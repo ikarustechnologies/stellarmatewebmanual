@@ -200,8 +200,8 @@
 <p class="rvps5"><span class="rvts6"><br/></span></p>
 <p class="rvps5"><span class="rvts20">4. Why is the mount not performing meridian flip as expected?</span></p>
 <p class="rvps5"><span class="rvts6">You have to let the mount track some time AFTER CROSSING MERIDIAN, otherwise MF is not going to happen. In iOptron driver, the Meridian Behaviour setting Flip or Stop does not matter here, since Meridian Flip will be triggered by the client (e.g. Ekos); but the Limit you set does matter. Basic rule is:</span></p>
-<p class="rvps18"><span class="rvts6">0 &lt; Client Limit &lt; Mount Limit</span></p>
-<p class="rvps18"><span class="rvts6"><br/></span></p>
+<p class="rvps15"><span class="rvts6">0 &lt; Client Limit &lt; Mount Limit</span></p>
+<p class="rvps15"><span class="rvts6"><br/></span></p>
 <p class="rvps5"><span class="rvts20">Example:</span><span class="rvts6"> set Client (e.g. Ekos) to trigger MF 3° after crossing the meridian, and set mount limit to 6° after crossing meridian. You must set the 6° in the iOptron INDI driver.</span></p>
 <p class="rvps5"><span class="rvts6"><br/></span></p>
 <p class="rvps5"><span class="rvts6">Ekos limit should be greater than 0, because Ekos and mount must exactly agree on which side on the meridian we are: allowing to track some degree after crossing it, relaxes the precision needed and accounts for small difference in models and approximations between Ekos and mount firmware.</span></p>
