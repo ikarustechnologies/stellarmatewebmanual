@@ -1060,9 +1060,14 @@ p,ul,ol /* Paragraph Style */
 {
  text-align: center;
  line-height: 1.50;
- margin: 19px 0px 0px 0px;
 }
 .rvps16
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 19px 0px 0px 0px;
+}
+.rvps17
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1070,15 +1075,10 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.50;
  margin: 19px 0px 0px 0px;
 }
-.rvps17
+.rvps18
 {
  line-height: 1.50;
  margin: 19px 0px 0px 0px;
-}
-.rvps18
-{
- text-align: center;
- line-height: 1.50;
 }
 .rvps19
 {
