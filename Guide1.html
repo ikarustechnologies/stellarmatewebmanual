@@ -189,13 +189,18 @@
             <div class="main-content">
                 
 <p class="rvps33"><span class="rvts84">Guide limits</span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/guide_settings1.jpg"></p>
+<p class="rvps3"><img width="717" height="538" alt="" style="padding : 1px;" src="lib/guide_settings3.jpg"></p>
 <p class="rvps3"><span class="rvts26"><br/></span></p>
 <p class="rvps18"><span class="rvts26"><br/></span></p>
 <p class="rvps5"><span class="rvts85">Guide limit settings are applicable to all the images in the sequence queue. When a limit is exceeded, Ekos shall command the appropriate action to remedy the situation as explained below.</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5"><span class="rvts84">Guiding Deviation</span><span class="rvts85">: If checked, it enforces a limit of maximum allowable guiding deviation for the exposure, if auto-guiding is used. If the guiding deviation exceeds this limit in arcseconds, it aborts the exposure sequence. It will automatically resume the exposure sequence again once the guiding deviation goes below this limit.</span><span class="rvts6"></span></li>
-</ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps5"><span class="rvts84">Only start Guiding Deviation</span><span class="rvts85">: Start capturing only if guide deviation is below the given threshold (ignored for previews)</span></li>
+ <li class="rvps5"><span class="rvts84">Only start Guiding</span><span class="rvts85"> Deviation Value</span></li>
+ <li class="rvps5"><span class="rvts84">Guide Deviation</span><span class="rvts85">: Abort sequence if guiding deviation exceed this value N consecutive times</span></li>
+ <li class="rvps5"><span class="rvts84">Guide Deviation Value</span></li>
+ <li class="rvps5"><span class="rvts84">Consecutive times:</span><span class="rvts85"> Abort sequence if guiding deviation exceed this value N consecutive times</span></li>
+ <li class="rvps5"><span class="rvts84">Dither per Job: </span><span class="rvts85">If global dither is enabled, then dither every N number of frames for this job, Set to 0 to use global dither frequency.</span><span class="rvts6"></span></li>
+</ol>
 
             </div>
             
