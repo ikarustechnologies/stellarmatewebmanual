@@ -190,7 +190,7 @@
                 
 <p class="rvps5"><span class="rvts6">In order to ensure smooth and accurate operation of the astrophotography workflow, both time and location information must be precise across all devices in the system. Therefore, the time and location on StellarMate must be in sync with the time and location on all connected devices, especially mounts.</span></p>
 <p class="rvps5"><span class="rvts6"><br/></span></p>
-<p class="rvps5"><span class="rvts6">StellarMate Plus Controller is equipped with a Real Time Clock (RTC). This ensures that the internal clock keeps ticking even when the power is switched off. When SM Plus is powered on, it reads the time from the onboard RTC. While this value might drift off by a few seconds over time, it is critical to minimize any large errors that otherwise would accumulate over time unchecked.</span></p>
+<p class="rvps5"><a class="rvts14" href="Welcome1.html">StellarMate Controllers</a><span class="rvts6"> are equipped with a Real Time Clock (RTC). This ensures that the internal clock keeps ticking even when the power is switched off. When SM Plus is powered on, it reads the time from the onboard RTC. While this value might drift off by a few seconds over time, it is critical to minimize any large errors that otherwise would accumulate over time unchecked.</span></p>
 <p class="rvps5"><span class="rvts24"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps35">
@@ -239,11 +239,13 @@
 <p class="rvps5"><span class="rvts6"><br/></span></p>
 <p class="rvps5"><span class="rvts6">In KStars, it is possible to specify the&nbsp;</span><span class="rvts20">Time Source</span><span class="rvts6">. Click on Settings → Configure KStars → INDI.</span></p>
 <p class="rvps5"><span class="rvts6"><br/></span></p>
-<p class="rvps15"><img alt="" style="padding : 1px;" src="lib/time_location_updates.jpg"></p>
+<p class="rvps15"><img width="503" height="337" alt="" style="padding : 1px;" src="lib/indi.jpg"></p>
 <p class="rvps15"><span class="rvts6"><br/></span></p>
 <p class="rvps5"><span class="rvts6">By default, KStars is the source of all time and location information. The KStars time depends on the system time for StellarMate, and therefore depends on the RTC. If StellarMate is connected to the internet, the system would also synchronize the time to online time servers and synchronize the RTC clock accordingly. Now both the internet time and RTC clock are again in sync to account for any drifts that might build up in the RTC.</span></p>
 <p class="rvps5"><span class="rvts6"><br/></span></p>
-<p class="rvps5"><span class="rvts6">After connecting the SM App to StellarMate, the KStars’ location is updated to the tablet/mobile GPS location. You can also change the KStars location from Settings → Geographic and then select or add a new location.</span></p>
+<p class="rvps5"><span class="rvts6">After connecting the </span><a class="rvts14" href="StellarMateApp.html">SM App</a><span class="rvts6"> to StellarMate, the KStars’ location is updated to the tablet/mobile GPS location. You can also change the KStars location from Settings → Geographic and then select or add a new location.</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
 <p class="rvps5"><span class="rvts6"><br/></span></p>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <div class="rvps35">
@@ -261,20 +263,30 @@
    <p class="rvps36"><span class="rvts43"><br/></span></p>
   </td>
   <td width="426" style="border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
-   <p class="rvps53"><span class="rvts23">You can use StellarMate App to quickly synchronize StellarMate Plus time and location. The time and location are automatically set whenever the App communicates with StellarMate. Afterwards, you may continue to use the SM App, or use Ekos to setup your astrophotography workflow.</span></p>
+   <p class="rvps53"><span class="rvts23">You can use StellarMate App to quickly synchronize StellarMate time and location. The time and location are automatically set whenever the App communicates with StellarMate. Afterwards, you may continue to use the SM App, or use Ekos to setup your astrophotography workflow.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
 <p class="rvps5"><span class="rvts6"><br/></span></p>
-<p class="rvps5"><span class="rvts6">Therefore, in KStars, the time and location information MASTER source can be selected from the following sources:</span></p>
-<p class="rvps5"><span class="rvts6"><br/></span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li style="margin-left: 0px" class="rvps29"><span class="rvts20">KStars Updates All Devices</span><span class="rvts6">: KStars time and location is the primary source and all connected devices (mounts..etc) are synchronized to KStars time and location. When using SM App, it’s recommended to leave this option as is.</span></li>
- <li style="margin-left: 0px" class="rvps29"><span class="rvts20">Mount Updates KStars</span><span class="rvts6">: The mount time and location are used to update KStars time and location. Some mounts are equipped with internal or external GPS, KStars does NOT connect to these mount-specific GPS dongles. Instead, KStars communicates with the mount via the Handset/WiFi to query time and location information and then uses them as the source.</span></li>
- <li style="margin-left: 0px" class="rvps29"><span class="rvts20">GPS Updates KStars</span><span class="rvts6">: When using a dedicated externa GPS dongle, select this option to ensure the GPS dongle is the master source for both time and location. When Ekos detects a GPS device, it will prompt the user to switch to it as the master time &amp; location source.</span></li>
-</ul>
+<p class="rvps15"><img width="565" height="380" alt="" style="padding : 1px;" src="lib/indi_annotation.jpg"></p>
+<p class="rvps15"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps27"><span class="rvts6">Path to the indiserver binary</span></li>
+ <li class="rvps27"><span class="rvts6">Path to the INDI drivers XML directory</span></li>
+ <li class="rvps27"><span class="rvts6">Path to the INDIHub agent directory</span></li>
+ <li class="rvps27"><span class="rvts6">Path to default FITS directory</span></li>
+ <li class="rvps27"><span class="rvts6">External Sky map</span></li>
+ <li class="rvps27"><span class="rvts6">Display telescope position on the Sky Map</span></li>
+ <li class="rvps27"><span class="rvts6">Display INDI Status messages in the status bar</span></li>
+ <li class="rvps27"><span class="rvts6">Open INDI Window on Ekos startup</span></li>
+ <li class="rvps27"><span class="rvts6">Independent INDI window</span></li>
+ <li class="rvps27"><span class="rvts6">Show messages as desktop notifications</span></li>
+ <li class="rvps27"><span class="rvts20">INDI Server: </span><span class="rvts6">Refers to the size of the buffer used to transfer data between Kstars and the INDI server</span><span class="rvts20">.</span></li>
+ <li class="rvps27"><span class="rvts6">Specify range of ports that INDI Server will bind from when starting new drivers.</span></li>
+ <li class="rvps27"><span class="rvts6">Specify range of ports to that INDI Server will bind to when starting new drivers.</span></li>
+</ol>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 0px; list-style-position: inside;">
  <li style="margin-left: 0px" class="rvps29"><span class="rvts6"><br/></span></li>
 </ul>
