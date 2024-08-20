@@ -195,14 +195,14 @@
 <p class="rvps15"><img width="630" height="443" alt="" style="padding : 1px;" src="lib/mount_settings.jpg"></p>
 <p class="rvps15"><span class="rvts26"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li style="text-indent: 0px" class="rvps51"><span class="rvts26">Manage / Select </span><a class="rvts27" href="OpticalTrains.html">Optical trains</a><span class="rvts26">.</span></li>
- <li style="text-indent: 0px" class="rvps51"><span class="rvts28">Time source</span><span class="rvts26">: Enable time synchronization upon connection between Kstars and INDI</span></li>
- <li style="text-indent: 0px" class="rvps51"><span class="rvts28">Location source: </span><span class="rvts26">Enable geographic synchonization upon connection between Kstars and INDI.</span></li>
- <li style="text-indent: 0px" class="rvps51"><span class="rvts26">Tracking On/Off</span></li>
- <li style="text-indent: 0px" class="rvps51"><span class="rvts78">Mount Park/UnPark</span></li>
+ <li style="text-indent: 0px" class="rvps53"><span class="rvts26">Manage / Select </span><a class="rvts27" href="OpticalTrains.html">Optical trains</a><span class="rvts26">.</span></li>
+ <li style="text-indent: 0px" class="rvps53"><span class="rvts28">Time source</span><span class="rvts26">: Enable time synchronization upon connection between Kstars and INDI</span></li>
+ <li style="text-indent: 0px" class="rvps53"><span class="rvts28">Location source: </span><span class="rvts26">Enable geographic synchonization upon connection between Kstars and INDI.</span></li>
+ <li style="text-indent: 0px" class="rvps53"><span class="rvts26">Tracking On/Off</span></li>
+ <li style="text-indent: 0px" class="rvps53"><span class="rvts78">Mount Park/UnPark</span></li>
 </ol>
-<p class="rvps51"><span class="rvts78"><br/></span></p>
-<p class="rvps56"><img width="594" height="419" alt="" style="padding : 1px;" src="lib/limit_settings1.jpg"></p>
+<p class="rvps53"><span class="rvts78"><br/></span></p>
+<p class="rvps58"><img width="594" height="419" alt="" style="padding : 1px;" src="lib/limit_settings1.jpg"></p>
 <p class="rvps5"><span class="rvts78"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps5"><span class="rvts81">Limit Settings:</span><span class="rvts78">&nbsp;</span></li>
@@ -228,11 +228,11 @@
 <p class="rvps5"><span class="rvts81">Meridian Flip</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-  <li style="margin-left: 0px" class="rvps28"><span class="rvts84">Flip if HA &gt;</span><span class="rvts85">: Request a meridian flip if the hour angle exceeds the specified value. Capture and Guiding will be suspended and resumed after the flip is complete.</span></li>
-  <li style="margin-left: 0px" class="rvps28"><span class="rvts84">Pier</span><span class="rvts85">&nbsp;</span><span class="rvts84">Side:&nbsp;</span><span class="rvts85">Shows the pier side direction.</span></li>
+  <li style="margin-left: 0px" class="rvps30"><span class="rvts84">Flip if HA &gt;</span><span class="rvts85">: Request a meridian flip if the hour angle exceeds the specified value. Capture and Guiding will be suspended and resumed after the flip is complete.</span></li>
+  <li style="margin-left: 0px" class="rvps30"><span class="rvts84">Pier</span><span class="rvts85">&nbsp;</span><span class="rvts84">Side:&nbsp;</span><span class="rvts85">Shows the pier side direction.</span></li>
  </ol>
 </ol>
-<p class="rvps27"><span class="rvts78"><br/></span></p>
+<p class="rvps29"><span class="rvts78"><br/></span></p>
 <p class="rvps5"><span class="rvts85">You can do a Meridian Flip from the Mount Module.</span><br/><span class="rvts85">Equatorial mounts flip after crossing the meridian in order to prevent the imaging equipment train from hitting the tripod. With Ekos, you can set an hour angle limit which if exceeded, the mount will be commended to flip. The mount must begin tracking east of the meridian in order to the meridian flip to be commanded in Ekos.</span><br/><span class="rvts85">When commanding a meridian flip, Ekos will suspend the auto-guiding process and waits until the mount completes the flip. Once the mount begins tracking again post meridian flip, Ekos will plate-solve and make any necessary slew commands to bring the mount to the exact location it was tracking prior to the flip.</span><br/><span class="rvts85">Next, it will automatically capture a frame and select a suitable guide star, performs calibration, and resumes auto-guiding. If In-Sequence focusing is enabled, it will also capture and focus a suitable star. It then resumes the capture process form where it left.</span></p>
 <p class="rvps5"><span class="rvts85"></span><br/><span class="rvts85">All these steps are completely automated and require no user intervention!&nbsp;</span></p>
 <p class="rvps5"><span class="rvts85">So just set when you want the meridian flip to occur at the mount module. Remember that the setting is in&nbsp;</span><span class="rvts84">Hour Angle (HA)</span><span class="rvts85">.&nbsp;1 HA = 15 degrees, therefore 0.1 HA = 1.5 degrees West of the Meridian.&nbsp;</span></p>
