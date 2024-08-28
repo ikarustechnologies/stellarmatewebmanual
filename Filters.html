@@ -177,7 +177,7 @@
                         <li><a href="StellarMateApp.html">StellarMate App</a></li><li><a href="Ekos.html">Ekos</a></li><li><a href="Modules.html">Modules</a></li><li><a href="Capture.html">Capture</a></li><li><a href="Settings3.html">Settings</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Settings3.html" title="Settings" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Files.html" title="Files" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Guide1.html" title="Guide" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Settings3.html" title="Settings" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="AutoCalibration.html" title="Auto Calibration" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Guide1.html" title="Guide" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -192,24 +192,24 @@
 <p class="rvps41"><span class="rvts28"><br/></span></p>
 <p class="rvps5"><span class="rvts26">You can edit filters by tapping on the </span><span class="rvts28">Filter </span><span class="rvts26">button. The filter settings page will open and allow you to edit filter settings for each filter of the filter wheel selected in the drop-down menu.</span></p>
 <p class="rvps2"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts85">Configure settings for each filter individually:</span></p>
+<p class="rvps5"><span class="rvts88">Configure settings for each filter individually:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5 noindent"><span class="rvts84">Name: </span><span class="rvts85">Filter Name</span></li>
- <li class="rvps5 noindent"><span class="rvts84">Exposure:</span><span class="rvts85"> Set exposure time used when performing focus under this filter. By default, it is set to 1 seconds.</span></li>
- <li class="rvps5 noindent"><span class="rvts84">Offset: </span><span class="rvts85">Set relative offsets. Ekos will command a focus offset change if there is a difference between the&nbsp;current&nbsp;and&nbsp;target&nbsp;filter offsets. For example, given the values in the example image to the right, if the current filter is set to&nbsp;</span><span class="rvts88">Red</span><span class="rvts85">&nbsp;and next filter is&nbsp;</span><span class="rvts88">Green</span><span class="rvts85">, then Ekos shall command the focuser to&nbsp;Focus In&nbsp;by +300 ticks. Relative positive focus offsets denote&nbsp;Focus Out&nbsp;while negative values denote&nbsp;Focus In.</span></li>
- <li class="rvps5 noindent"><span class="rvts84">Auto Focus:</span><span class="rvts85"> Check this option to initial AutoFocus process whenever the filter is changed to this filter.</span></li>
- <li class="rvps5 noindent"><span class="rvts84">Lock Filter: </span><span class="rvts85">Set which filter should be set and&nbsp;</span><span class="rvts88">locked</span><span class="rvts85">&nbsp;when performing autofocus for this filter.</span></li>
+ <li class="rvps5 noindent"><span class="rvts87">Name: </span><span class="rvts88">Filter Name</span></li>
+ <li class="rvps5 noindent"><span class="rvts87">Exposure:</span><span class="rvts88"> Set exposure time used when performing focus under this filter. By default, it is set to 1 seconds.</span></li>
+ <li class="rvps5 noindent"><span class="rvts87">Offset: </span><span class="rvts88">Set relative offsets. Ekos will command a focus offset change if there is a difference between the&nbsp;current&nbsp;and&nbsp;target&nbsp;filter offsets. For example, given the values in the example image to the right, if the current filter is set to&nbsp;</span><span class="rvts91">Red</span><span class="rvts88">&nbsp;and next filter is&nbsp;</span><span class="rvts91">Green</span><span class="rvts88">, then Ekos shall command the focuser to&nbsp;Focus In&nbsp;by +300 ticks. Relative positive focus offsets denote&nbsp;Focus Out&nbsp;while negative values denote&nbsp;Focus In.</span></li>
+ <li class="rvps5 noindent"><span class="rvts87">Auto Focus:</span><span class="rvts88"> Check this option to initial AutoFocus process whenever the filter is changed to this filter.</span></li>
+ <li class="rvps5 noindent"><span class="rvts87">Lock Filter: </span><span class="rvts88">Set which filter should be set and&nbsp;</span><span class="rvts91">locked</span><span class="rvts88">&nbsp;when performing autofocus for this filter.</span></li>
 </ul>
-<p class="rvps2"><span class="rvts85"><br/></span></p>
-<p class="rvps2"><span class="rvts85">Let's take an example. Suppose the capture sequence is running and the current filter is&nbsp;</span><span class="rvts88">Green</span><span class="rvts85">, so the relative already offset is set to +300. The next image in the sequence uses Hydrogen Alpha (H_Alpha) so before Ekos captures the next frame, the following actions take place:</span></p>
-<p class="rvps2"><span class="rvts85"><br/></span></p>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
+<p class="rvps2"><span class="rvts88">Let's take an example. Suppose the capture sequence is running and the current filter is&nbsp;</span><span class="rvts91">Green</span><span class="rvts88">, so the relative already offset is set to +300. The next image in the sequence uses Hydrogen Alpha (H_Alpha) so before Ekos captures the next frame, the following actions take place:</span></p>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5 noindent"><span class="rvts85">Since Lumonisity is specified as the locked filter and auto-focus is checked, the filter is changed to Lumonosity</span></li>
- <li class="rvps5 noindent"><span class="rvts85">A focus offset is -300 is applied since the prior filter&nbsp;</span><span class="rvts88">Green</span><span class="rvts85">&nbsp;was moved +300 previously.</span></li>
- <li class="rvps5 noindent"><span class="rvts85">Auto Focus process is initiated.</span></li>
- <li class="rvps5 noindent"><span class="rvts85">Once Auto Focus is complete, the filter is changed to H_Alpha.</span></li>
- <li class="rvps5 noindent"><span class="rvts85">A focus offset of -1200 is applied.</span></li>
- <li class="rvps5 noindent"><span class="rvts85">Capture sequence is resumed.</span></li>
+ <li class="rvps5 noindent"><span class="rvts88">Since Lumonisity is specified as the locked filter and auto-focus is checked, the filter is changed to Lumonosity</span></li>
+ <li class="rvps5 noindent"><span class="rvts88">A focus offset is -300 is applied since the prior filter&nbsp;</span><span class="rvts91">Green</span><span class="rvts88">&nbsp;was moved +300 previously.</span></li>
+ <li class="rvps5 noindent"><span class="rvts88">Auto Focus process is initiated.</span></li>
+ <li class="rvps5 noindent"><span class="rvts88">Once Auto Focus is complete, the filter is changed to H_Alpha.</span></li>
+ <li class="rvps5 noindent"><span class="rvts88">A focus offset of -1200 is applied.</span></li>
+ <li class="rvps5 noindent"><span class="rvts88">Capture sequence is resumed.</span></li>
 </ul>
 <p class="rvps41"><span class="rvts26"><br/></span></p>
 <p class="rvps3"><img alt="" style="padding : 1px;" src="lib/capture_filter_settings2.jpg"></p>

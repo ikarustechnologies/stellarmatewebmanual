@@ -196,57 +196,57 @@
 <p class="rvps5"><span class="rvts6">The Process page has the following options:</span></p>
 <p class="rvps5"><span class="rvts6"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps5 noindent"><span class="rvts72">Detection</span><span class="rvts73">:&nbsp;Select star detection algorithm. Each algorithm have its strengths and weaknesses. It is recommended to keep the default value unless it fails to properly detect stars.</span></li>
+ <li class="rvps5 noindent"><span class="rvts74">Detection</span><span class="rvts75">:&nbsp;Select star detection algorithm. Each algorithm have its strengths and weaknesses. It is recommended to keep the default value unless it fails to properly detect stars.</span></li>
 </ol>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps5 noindent"><span class="rvts72">SEP:</span><span class="rvts73">&nbsp;Source Extractor and Photometry, an efficient source detection method based on Source Extractor (Bertin and Arnouts 1996; Bertin 2016). See&nbsp;</span><a class="rvts75" href="https://joss.theoj.org/papers/10.21105/joss.00058.pdf">SEP: Source Extractor as a library</a><span class="rvts73">&nbsp;in the Journal of Open Source Software.</span></li>
-  <li class="rvps5 noindent"><span class="rvts72">Centroid</span><span class="rvts73">: a source detection based on estimating star mass around signal peaks.</span></li>
-  <li class="rvps5 noindent"><span class="rvts72">Gradient</span><span class="rvts73">: a single source detection based on the Sobel filter. Initial or full-field analysis will use SEP instead of this method.</span></li>
-  <li class="rvps5 noindent"><span class="rvts72">Threshold</span><span class="rvts73">: a single source detection based on pixel values. Initial or full-field analysis will use SEP instead of this method.</span></li>
-  <li class="rvps5 noindent"><span class="rvts72">Bahtinov</span><span class="rvts73">: This is useful for users who do not have a motorized focuser and prefer to focus manually with the aid of a&nbsp;</span><a class="rvts75" href="https://en.wikipedia.org/wiki/Bahtinov_mask">Bahtinov Mask</a><span class="rvts73">. After capturing an image in the focus module with the Bahtinov mask algorithm selected,&nbsp;Ekos would analyze the images and stars within it.&nbsp; If Ekos recognizes the Bahtinov star pattern, it will draw lines over the star pattern in circles on the center and on an offset to indicate the focus.</span></li>
+  <li class="rvps5 noindent"><span class="rvts74">SEP:</span><span class="rvts75">&nbsp;Source Extractor and Photometry, an efficient source detection method based on Source Extractor (Bertin and Arnouts 1996; Bertin 2016). See&nbsp;</span><a class="rvts77" href="https://joss.theoj.org/papers/10.21105/joss.00058.pdf">SEP: Source Extractor as a library</a><span class="rvts75">&nbsp;in the Journal of Open Source Software.</span></li>
+  <li class="rvps5 noindent"><span class="rvts74">Centroid</span><span class="rvts75">: a source detection based on estimating star mass around signal peaks.</span></li>
+  <li class="rvps5 noindent"><span class="rvts74">Gradient</span><span class="rvts75">: a single source detection based on the Sobel filter. Initial or full-field analysis will use SEP instead of this method.</span></li>
+  <li class="rvps5 noindent"><span class="rvts74">Threshold</span><span class="rvts75">: a single source detection based on pixel values. Initial or full-field analysis will use SEP instead of this method.</span></li>
+  <li class="rvps5 noindent"><span class="rvts74">Bahtinov</span><span class="rvts75">: This is useful for users who do not have a motorized focuser and prefer to focus manually with the aid of a&nbsp;</span><a class="rvts77" href="https://en.wikipedia.org/wiki/Bahtinov_mask">Bahtinov Mask</a><span class="rvts75">. After capturing an image in the focus module with the Bahtinov mask algorithm selected,&nbsp;Ekos would analyze the images and stars within it.&nbsp; If Ekos recognizes the Bahtinov star pattern, it will draw lines over the star pattern in circles on the center and on an offset to indicate the focus.</span></li>
  </ul>
 </ul>
-<p class="rvps5"><span class="rvts72">3. Algorithm</span><span class="rvts73">: Select the auto focus process algorithm:</span></p>
+<p class="rvps5"><span class="rvts74">3. Algorithm</span><span class="rvts75">: Select the auto focus process algorithm:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps5 noindent"><span class="rvts72">Iterative</span><span class="rvts73">: Moves focuser by discreet steps initially decided by the step size. Once a curve slope is calculated, further step sizes are calculated to reach optimal solution. The algorithm stops when the measured HFR is within percentage tolerance of the minimum HFR recorded in the procedure.</span></li>
-  <li class="rvps5 noindent"><span class="rvts72">Polynomial</span><span class="rvts73">: Starts with iterative method. Upon crossing to the other side of the V-Curve, polynomial fitting coefficients along with possible minimum solution are calculated. This algorithm can be faster than purely iterative approach given a good data set.</span></li>
-  <li class="rvps5 noindent"><span class="rvts72">Linear</span><span class="rvts73">: Samples focus inward in a regular fashion, using 2 passes. The algorithm can be slow, but it is more resilient to backlash. Start with the focuser positioned near good focus. Set Initial Step Size and Max Travel for the desired sampling interval and range around start focus position. Tolerance should be around 5%.</span></li>
+  <li class="rvps5 noindent"><span class="rvts74">Iterative</span><span class="rvts75">: Moves focuser by discreet steps initially decided by the step size. Once a curve slope is calculated, further step sizes are calculated to reach optimal solution. The algorithm stops when the measured HFR is within percentage tolerance of the minimum HFR recorded in the procedure.</span></li>
+  <li class="rvps5 noindent"><span class="rvts74">Polynomial</span><span class="rvts75">: Starts with iterative method. Upon crossing to the other side of the V-Curve, polynomial fitting coefficients along with possible minimum solution are calculated. This algorithm can be faster than purely iterative approach given a good data set.</span></li>
+  <li class="rvps5 noindent"><span class="rvts74">Linear</span><span class="rvts75">: Samples focus inward in a regular fashion, using 2 passes. The algorithm can be slow, but it is more resilient to backlash. Start with the focuser positioned near good focus. Set Initial Step Size and Max Travel for the desired sampling interval and range around start focus position. Tolerance should be around 5%.</span></li>
  </ul>
 </ul>
-<p class="rvps5"><span class="rvts73">4. </span><span class="rvts72">Curve fit: </span><span class="rvts73">Select the type of curve to fit to the data:</span></p>
+<p class="rvps5"><span class="rvts75">4. </span><span class="rvts74">Curve fit: </span><span class="rvts75">Select the type of curve to fit to the data:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps30 noindent"><span class="rvts72">Quadratic</span><span class="rvts73">: Uses a polynomial fit of degree 2. This is currently the default option and currently the only option for all Algorithms except Linear 1 Pass.</span></li>
-  <li class="rvps30 noindent"><span class="rvts72">Hyperbola</span><span class="rvts73">: Fits a hyperbola to the data points. This is currently only available for the Linear 1 Pass Algorithm.</span></li>
-  <li class="rvps30 noindent"><span class="rvts72">Parabola</span><span class="rvts73">: Fits a parabola to the data points. This is currently only available for the Linear 1 Pass Algorithm.</span></li>
+  <li class="rvps30 noindent"><span class="rvts74">Quadratic</span><span class="rvts75">: Uses a polynomial fit of degree 2. This is currently the default option and currently the only option for all Algorithms except Linear 1 Pass.</span></li>
+  <li class="rvps30 noindent"><span class="rvts74">Hyperbola</span><span class="rvts75">: Fits a hyperbola to the data points. This is currently only available for the Linear 1 Pass Algorithm.</span></li>
+  <li class="rvps30 noindent"><span class="rvts74">Parabola</span><span class="rvts75">: Fits a parabola to the data points. This is currently only available for the Linear 1 Pass Algorithm.</span></li>
  </ul>
 </ul>
-<p class="rvps5"><span class="rvts72">5</span><span class="rvts73">. </span><span class="rvts72">Use weights: </span><span class="rvts73">Check to use the standard deviation of the star HFR or FWHM as a weighting to the curve fitting algorithm. If unchecked, all data points are given equal weighting. Currently only available when using Full Field (multiple stars) and a Curve Fit of Hyperbola or Parabola under the Linear 1 Pass algorithm.</span></p>
-<p class="rvps5"><span class="rvts72">6</span><span class="rvts73">: </span><span class="rvts72">R2 Limit:</span><span class="rvts73"> Set a minimum for the acceptable R2 when performing an Autofocus run. The value is between 0 (no fit) and 1 (perfect fit). 0.8 is a good start. If the minimum is not met, Autofocus will rerun once to try to improve the R2. Currently only available for the Linear 1 Pass algorithm when using a Curve Fit of Hyperbola or Parabola.</span></p>
-<p class="rvps5"><span class="rvts72">7</span><span class="rvts73">. </span><span class="rvts72">Refine Curve Fit: </span><span class="rvts73">Set a minimum for the acceptable R2 when performing an Autofocus run. The value is between 0 (no fit) and 1 (perfect fit). 0.8 is a good start. If the minimum is not met, Autofocus will rerun once to try to improve the R2. Currently only available for the Linear 1 Pass algorithm when using a Curve Fit of Hyperbola or Parabola.</span></p>
-<p class="rvps5"><span class="rvts72">8</span><span class="rvts73">. </span><span class="rvts72">Average over</span><span class="rvts73">: Sets the number of frames to capture in order to average the HFR value at the current focuser position.</span></p>
-<p class="rvps5"><span class="rvts72">9</span><span class="rvts73">. </span><span class="rvts72">Average HFR Check: </span><span class="rvts73">No. of frames to capture when running in-sequence HFR-check. If using linear 1 pass, the point of optimum focus will also capture this number of frames.</span></p>
-<p class="rvps5"><span class="rvts72">10. Time dilation X:</span><span class="rvts73"> The furthest datapoints have their exposure times increased by this factor. The in focus datapoint exposure is not increased. Intermediate points have their exposures scaled appropriately.</span></p>
+<p class="rvps5"><span class="rvts74">5</span><span class="rvts75">. </span><span class="rvts74">Use weights: </span><span class="rvts75">Check to use the standard deviation of the star HFR or FWHM as a weighting to the curve fitting algorithm. If unchecked, all data points are given equal weighting. Currently only available when using Full Field (multiple stars) and a Curve Fit of Hyperbola or Parabola under the Linear 1 Pass algorithm.</span></p>
+<p class="rvps5"><span class="rvts74">6</span><span class="rvts75">: </span><span class="rvts74">R2 Limit:</span><span class="rvts75"> Set a minimum for the acceptable R2 when performing an Autofocus run. The value is between 0 (no fit) and 1 (perfect fit). 0.8 is a good start. If the minimum is not met, Autofocus will rerun once to try to improve the R2. Currently only available for the Linear 1 Pass algorithm when using a Curve Fit of Hyperbola or Parabola.</span></p>
+<p class="rvps5"><span class="rvts74">7</span><span class="rvts75">. </span><span class="rvts74">Refine Curve Fit: </span><span class="rvts75">Set a minimum for the acceptable R2 when performing an Autofocus run. The value is between 0 (no fit) and 1 (perfect fit). 0.8 is a good start. If the minimum is not met, Autofocus will rerun once to try to improve the R2. Currently only available for the Linear 1 Pass algorithm when using a Curve Fit of Hyperbola or Parabola.</span></p>
+<p class="rvps5"><span class="rvts74">8</span><span class="rvts75">. </span><span class="rvts74">Average over</span><span class="rvts75">: Sets the number of frames to capture in order to average the HFR value at the current focuser position.</span></p>
+<p class="rvps5"><span class="rvts74">9</span><span class="rvts75">. </span><span class="rvts74">Average HFR Check: </span><span class="rvts75">No. of frames to capture when running in-sequence HFR-check. If using linear 1 pass, the point of optimum focus will also capture this number of frames.</span></p>
+<p class="rvps5"><span class="rvts74">10. Time dilation X:</span><span class="rvts75"> The furthest datapoints have their exposure times increased by this factor. The in focus datapoint exposure is not increased. Intermediate points have their exposures scaled appropriately.</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps30 noindent"><span class="rvts73">Set to 1 to disable this option.</span></li>
+  <li class="rvps30 noindent"><span class="rvts75">Set to 1 to disable this option.</span></li>
  </ul>
 </ul>
-<p class="rvps5"><span class="rvts72">11. Outlier Rejection: </span><span class="rvts73">Aberration inspector style mask with a 3x3 mosaic formed with tiles from the center, the corners and the edges.</span></p>
-<p class="rvps5"><span class="rvts73"><br/></span></p>
+<p class="rvps5"><span class="rvts74">11. Outlier Rejection: </span><span class="rvts75">Aberration inspector style mask with a 3x3 mosaic formed with tiles from the center, the corners and the edges.</span></p>
+<p class="rvps5"><span class="rvts75"><br/></span></p>
 <p class="rvps15"><img alt="" style="width : 581px; height : 409px; padding : 1px;" src="lib/settings_position.jpg"></p>
-<p class="rvps29"><span class="rvts73"><br/></span></p>
-<p class="rvps29"><span class="rvts72">12. Num datapoints: </span><span class="rvts73">The number of datapoints to be used during the scan for start position</span></p>
-<p class="rvps29"><span class="rvts72">13. Initial Step Size: </span><span class="rvts73">Scan for start position uses a step size = Initial step size multiply by Initial step size x.</span></p>
-<p class="rvps15"><span class="rvts73"><br/></span></p>
+<p class="rvps29"><span class="rvts75"><br/></span></p>
+<p class="rvps29"><span class="rvts74">12. Num datapoints: </span><span class="rvts75">The number of datapoints to be used during the scan for start position</span></p>
+<p class="rvps29"><span class="rvts74">13. Initial Step Size: </span><span class="rvts75">Scan for start position uses a step size = Initial step size multiply by Initial step size x.</span></p>
+<p class="rvps15"><span class="rvts75"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5 noindent"><span class="rvts72">Threshold</span><span class="rvts73">: Threshold percentage value is used for star detection using the&nbsp;</span><span class="rvts74">Threshold&nbsp;detection algorithm. Increase to restrict the centroid to bright cores. Decrease to enclose fuzzy stars.</span></li>
- <li class="rvps5 noindent"><span class="rvts72">Effect</span><span class="rvts73">:&nbsp;Apply filter to image after capture to enhance it for&nbsp;preview purposes.&nbsp;It is highly advisable to turn off any effects during the focusing process as it may interfere with HFR calculations.&nbsp;</span></li>
- <li class="rvps5 noindent"><span class="rvts72">Kernel size</span><span class="rvts73">:&nbsp;This is the gaussian blur kernel size. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
- <li class="rvps5 noindent"><span class="rvts72">Sigma</span><span class="rvts73">:&nbsp;This is the gaussian blur sigma value. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
- <li class="rvps5 noindent"><span class="rvts72">Tolerance</span><span class="rvts73">: The tolerance percentage values decides when the autofocus process stops in the&nbsp;</span><span class="rvts74">Iterative</span><span class="rvts73">&nbsp;algorithm. During the auto focus process, HFR values are recorded, and once the focuser is close to optimal position, it starts measuring HFRs against the minimum recorded HFR in the sessions and stops whenever a measured HFR value is within % difference of the minimum recorded HFR. Decrease value to narrow optimal focus point solution radius. Increase to expand dsolution radius.</span></li>
+ <li class="rvps5 noindent"><span class="rvts74">Threshold</span><span class="rvts75">: Threshold percentage value is used for star detection using the&nbsp;</span><span class="rvts76">Threshold&nbsp;detection algorithm. Increase to restrict the centroid to bright cores. Decrease to enclose fuzzy stars.</span></li>
+ <li class="rvps5 noindent"><span class="rvts74">Effect</span><span class="rvts75">:&nbsp;Apply filter to image after capture to enhance it for&nbsp;preview purposes.&nbsp;It is highly advisable to turn off any effects during the focusing process as it may interfere with HFR calculations.&nbsp;</span></li>
+ <li class="rvps5 noindent"><span class="rvts74">Kernel size</span><span class="rvts75">:&nbsp;This is the gaussian blur kernel size. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
+ <li class="rvps5 noindent"><span class="rvts74">Sigma</span><span class="rvts75">:&nbsp;This is the gaussian blur sigma value. Used for blurring the image before for instance the Bahtinov edge detection.</span></li>
+ <li class="rvps5 noindent"><span class="rvts74">Tolerance</span><span class="rvts75">: The tolerance percentage values decides when the autofocus process stops in the&nbsp;</span><span class="rvts76">Iterative</span><span class="rvts75">&nbsp;algorithm. During the auto focus process, HFR values are recorded, and once the focuser is close to optimal position, it starts measuring HFRs against the minimum recorded HFR in the sessions and stops whenever a measured HFR value is within % difference of the minimum recorded HFR. Decrease value to narrow optimal focus point solution radius. Increase to expand dsolution radius.</span></li>
 </ul>
 <hr style="height : 1px; background-color : #000000; border-style : none;">
 <div class="rvps37">
@@ -256,7 +256,7 @@
    <p class="rvps38"><img alt="" style="width : 16px; height : 14px; padding : 1px;" src="lib/caution-triangle.png"></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none; width: 426px;">
-   <p class="rvps54"><span class="rvts76">Caution</span></p>
+   <p class="rvps54"><span class="rvts78">Caution</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -264,16 +264,16 @@
    <p class="rvps38"><span class="rvts43"><br/></span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none; width: 426px;">
-   <p class="rvps55"><span class="rvts77">Setting the value too low might result in repetitive loop and would most likely result in a failed autofocus process.</span></p>
+   <p class="rvps55"><span class="rvts79">Setting the value too low might result in repetitive loop and would most likely result in a failed autofocus process.</span></p>
   </td>
  </tr>
 </table>
 </div>
 <hr style="height : 1px; background-color : #000000; border-style : none;">
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5 noindent"><span class="rvts72">Num. of rows</span><span class="rvts73">:&nbsp;The number of rows set in this field will be combined in the Bahtinov max average calculation. Changing this value might help to match the Bahtinov lines on the star pattern more accurately.</span></li>
+ <li class="rvps5 noindent"><span class="rvts74">Num. of rows</span><span class="rvts75">:&nbsp;The number of rows set in this field will be combined in the Bahtinov max average calculation. Changing this value might help to match the Bahtinov lines on the star pattern more accurately.</span></li>
 </ul>
-<p class="rvps15"><span class="rvts73"></span><span class="rvts6"></span></p>
+<p class="rvps15"><span class="rvts75"></span><span class="rvts6"></span></p>
 
             </div>
             
