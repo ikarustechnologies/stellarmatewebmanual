@@ -177,7 +177,7 @@
                         <li><a href="StellarMateApp.html">StellarMate App</a></li><li><a href="Ekos.html">Ekos</a></li><li><a href="Modules.html">Modules</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Modules.html" title="Modules" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Calibration.html" title="Calibration" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DarkLibrary.html" title="Dark Library" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Modules.html" title="Modules" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Calibration.html" title="Calibration" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Presets2.html" title="Presets" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -188,125 +188,25 @@
 
             <div class="main-content">
                 
-<p class="rvps5"><span class="rvts25">The Capture module is where you create sequences to capture your targets. In the typical astrophotography workflow, Capture module is used last after you finished Focusing, Aligning, and Guiding your target. Let us first define some common terms:</span></p>
+<p class="rvps5"><span class="rvts26">The Capture module is the primary interface for managing imaging tasks on StellarMate. It allows you to preview images, configure settings, create capture sequences, and configure imaging settings.</span></p>
 <p class="rvps5"><span class="rvts25"><br/></span></p>
-<p class="rvps29"><span class="rvts51">Train</span></p>
-<p class="rvps29"><span class="rvts24">You can Select / Edit the train specifically for Capture module. Each module has it's own train. Visit </span><a class="rvts14" href="OpticalTrains.html">Optical trains</a><span class="rvts24"> topic for more.</span></p>
-<p class="rvps29"><span class="rvts24"><br/></span></p>
-<p class="rvps5"><span class="rvts28">Capture Presets</span><span class="rvts26"> has the following structure:</span></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 565px; height : 361px; padding : 1px;" src="lib/preset4.jpg"></p>
-<p class="rvps15"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><span class="rvts26"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps5 noindent"><span class="rvts28">Preset name: </span><span class="rvts26">Name of the preset.</span></li>
- <li class="rvps5 noindent"><span class="rvts26">Edit auto generate preset name</span></li>
-</ol>
-<p class="rvps15"><span class="rvts26"> &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 543px; height : 346px; padding : 1px;" src="lib/edit-auto-name.jpg"></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li value="3" class="rvps5 noindent"><span class="rvts28">Frame Type:</span><span class="rvts26"> &nbsp;Specify the type of desired camera frame. Options are Light, Dark, Bias, and Flat frames.</span></li>
- <li class="rvps5 noindent"><span class="rvts28">Exposure: </span><span class="rvts26">Specify exposure duration in seconds.&nbsp;</span></li>
- <li class="rvps5 noindent"><span class="rvts28">Binning:&nbsp;</span><span class="rvts26"> Specify horizontal (X) and vertical (Y) binning.</span></li>
- <li class="rvps5 noindent"><span class="rvts28">Format: </span><span class="rvts26">Specify capture save format. For all CCDs, only FITS option is available.</span></li>
- <li class="rvps5 noindent"><span class="rvts28">Encode:&nbsp;</span><span class="rvts26"> For DSLR cameras, you can an additional option to save in Native format (e.g. RAW or JPEG).</span></li>
- <li class="rvps5 noindent"><span class="rvts28">Filter: </span><span class="rvts26">Specify desired filter.</span></li>
- <li class="rvps5 noindent"><span class="rvts28">Temperature:</span><span class="rvts26"> Set the desired temperature, if you camera is equipped with a cooler. Check the option to force temperature setting before any capture. Capture process is only started after measured temperature is within requested temperature tolerance</span></li>
- <li class="rvps5 noindent"><span class="rvts28">Gain:</span><span class="rvts26"> Specify the value of gain. Leaving it to -- would not change the current gain set in the camera</span></li>
- <li class="rvps5 noindent"><span class="rvts28">ISO: </span><span class="rvts26">For DSLR cameras, specify the ISO value.</span></li>
- <li class="rvps5 noindent"><span class="rvts28">Offset:</span><span class="rvts26"> Specify the value added to avoid the reads to clip at value "zero". Leaving it to -- would not change the current offset set in the camera.</span></li>
-</ol>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts28">Duplicate Preset</span></p>
-<p class="rvps5"><span class="rvts26">Now you can duplicate an existing preset with the same information and save it as an new Preset.</span><br/><span class="rvts26">Duplicate preset contains "(1)" after the name.</span></p>
-<p class="rvps15"><img alt="" style="width : 577px; height : 432px; padding : 1px;" src="lib/duplicate_preset.jpg"></p>
-<p class="rvps15"><span class="rvts26"><br/></span></p>
-<p class="rvps29"><span class="rvts26">After saving the preset, it is added as a new preset.</span></p>
-<p class="rvps15"><img alt="" style="width : 572px; height : 428px; padding : 1px;" src="lib/add_duplicate_preset.jpg"></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts28">Count: </span><span class="rvts26">Number of sequences you want to capture.</span><span class="rvts28">&nbsp;</span></p>
-<p class="rvps15"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts26">After creating your presets, you can now tap on the preset dropdown in order to select the preset you want, and then tap on Add to Sequence, so the sequence can be added to the sequence list.</span></p>
-<p class="rvps5"><span class="rvts26">In the below example, you can see that there are 3 different jobs in the sequence list as shown by the filter in the beginning of each one. (red, green, and blue)</span></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5 noindent"><span class="rvts28">Sequence: </span><span class="rvts26">Capture a number of images with the settings specified in a preset.</span></li>
-</ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li class="rvps5 noindent"><span class="rvts26">The count field in capture module specify the number of images to capture using that preset.</span></li>
- <li class="rvps5 noindent"><span class="rvts26">Delay parameters is used to introduce a delay in seconds between each captured image and default to zero.</span></li>
- <li class="rvps5 noindent"><span class="rvts26">A sequence is also referred to as Job</span></li>
-</ol>
-<p class="rvps5"><span class="rvts78"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 593px; height : 369px; padding : 1px;" src="lib/capture_idle.jpg"></p>
-<p class="rvps15"><span class="rvts26"><br/></span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps29 noindent"><span class="rvts28">Creating a sequence</span></li>
-</ul>
-<p class="rvps5"><span class="rvts26">To create a sequence, you should first create a new preset by tapping on the + button next to the preset dropdown box.</span></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 590px; height : 367px; padding : 1px;" src="lib/add-preset2.jpg"></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 593px; height : 369px; padding : 1px;" src="lib/preset3.jpg"></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts26">&nbsp;After filling the preset settings, you need to add a sequence</span></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 602px; height : 374px; padding : 1px;" src="lib/add-sequence2.jpg"></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts26">Once the sequence is added, you have to tap on the Save Icon on the top-right.</span></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 601px; height : 376px; padding : 1px;" src="lib/save-sequence1.jpg"></p>
+<p class="rvps15"><img alt="" style="width : 487px; height : 321px; padding : 1px;" src="lib/capture%201.jpg"></p>
+<p class="rvps5"><span class="rvts25"><br/></span></p>
+<p class="rvps5"><span class="rvts25">All captures are performed using an </span><a class="rvts14" href="OpticalTrains.html">Optical Train</a><span class="rvts35">.</span><span class="rvts25"> An optical train is a collection of devices including camera, telescope, mount, filter wheel, and other devices that work together to capture images.</span></p>
+<p class="rvps5"><span class="rvts25"><br/></span></p>
+<p class="rvps15"><img alt="" style="width : 485px; height : 320px; padding : 1px;" src="lib/train.jpg"></p>
+<p class="rvps5"><span class="rvts25"><br/></span></p>
+<p class="rvps5"><span class="rvts25">The terms Sequence and Job are used interchangeably in this document.</span></p>
+<p class="rvps5"><a class="rvts14" href="Sequences.html">Sequences</a><span class="rvts25"> are a collection of </span><span class="rvts41">capture jobs</span><span class="rvts25">. Each job is defined by a </span><a class="rvts84" href="Presets2.html">preset</a><span class="rvts25"> that specifies the </span><span class="rvts41">imaging parameters</span><span class="rvts25">. These parameters include </span><span class="rvts41">exposure</span><span class="rvts25"> </span><span class="rvts41">time</span><span class="rvts25">, </span><span class="rvts41">binning</span><span class="rvts25">, </span><span class="rvts41">filter</span><span class="rvts25">, and </span><span class="rvts41">other settings</span><span class="rvts25">.</span></p>
+<p class="rvps5"><span class="rvts25"><br/></span></p>
+<p class="rvps5"><span class="rvts25">To create a new sequence, select a </span><a class="rvts14" href="Presets2.html">preset</a><span class="rvts25"> and specify the desired number of images to capture (count). Then, tap "Add to Sequence" to add the job to the Sequence Queue.</span></p>
+<p class="rvps5"><span class="rvts25"><br/></span></p>
+<p class="rvps15"><img alt="" style="width : 461px; height : 304px; padding : 1px;" src="lib/add-sequence%201.jpg"></p>
 <p class="rvps15"><span class="rvts25"><br/></span></p>
-<p class="rvps29"><span class="rvts25">The default directory is under "Pictures". You can go back to previous directories by going back.</span></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 642px; height : 397px; padding : 1px;" src="lib/sequence-file2.jpg"></p>
-<p class="rvps15"><span class="rvts25"><br/></span></p>
-<p class="rvps5"><span class="rvts26">Sequence files are saved in </span><span class="rvts28">"/home/stellarmate/sequences" </span><span class="rvts26">path with respect to camera name.</span></p>
-<p class="rvps15"><img alt="" style="width : 642px; height : 397px; padding : 1px;" src="lib/sequence-file3.jpg"></p>
-<p class="rvps15"><span class="rvts25"><br/></span></p>
-<p class="rvps29"><span class="rvts25">By selecting the sequence file, you will be able to add a sequence in your sequences and can capture your images accordingly.</span></p>
-<p class="rvps29"><span class="rvts25"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 651px; height : 407px; padding : 1px;" src="lib/sequence-complete1.jpeg"></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts26">Sequences have the following structure, displayed through icons for simplicity:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps5 noindent"><span class="rvts28">Top row</span></li>
-</ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-  <li class="rvps31 noindent"><span class="rvts26">Job Number</span></li>
-  <li class="rvps56 noindent"><span class="rvts26">Job Progress Bar</span></li>
-  <li class="rvps56 noindent"><span class="rvts26">Count Progress</span></li>
-  <li class="rvps56 noindent"><span class="rvts26">Delete Job</span></li>
- </ol>
-</ol>
-<p class="rvps56"><span class="rvts26"><br/></span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps31 noindent"><span class="rvts28">Bottom row</span></li>
-</ul>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-  <li class="rvps56 noindent"><span class="rvts26">Filter</span></li>
-  <li class="rvps56 noindent"><span class="rvts26">Frame Type</span></li>
-  <li class="rvps56 noindent"><span class="rvts26">Binning</span></li>
-  <li class="rvps56 noindent"><span class="rvts26">Exposure</span></li>
-  <li class="rvps56 noindent"><span class="rvts26">Gain/ISO</span></li>
-  <li class="rvps56 noindent"><span class="rvts26">Offset</span></li>
- </ol>
-</ol>
-<p class="rvps29"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 673px; height : 384px; padding : 1px;" src="lib/capture_idle.jpeg"></p>
-<p class="rvps15"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts26">After adding the sequences, tap on the </span><span class="rvts28">Play</span><span class="rvts26"> button under the Progress header to start the sequence.</span></p>
-<p class="rvps15"><span class="rvts78"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 631px; height : 397px; padding : 1px;" src="lib/smapp_capture_capturing.jpeg"></p>
-<p class="rvps15"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts26">During the capture, a soft "ding" sound will be played for each capture (you can turn on sounds by switching from Ekos Tab to Settings Tab and then toggling sounds on). After the capture is complete, you will see a notification message that says "CCD capture completed" and a "complete" sound will be played. In the case of the capturing processing aborted for any reason, an "error" sounds will be played, and a notification message will be shown.</span></p>
-<p class="rvps15"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 803px; height : 459px; padding : 1px;" src="lib/capture_complete.jpeg"></p>
-<p class="rvps15"><span class="rvts25"><br/></span></p>
-<p class="rvps15"><span class="rvts25"><br/></span></p>
+<p class="rvps5"><span class="rvts25">This structure allows you to efficiently capture multiple images with consistent settings, making it easier to manage your astro-photography sessions.</span></p>
+<p class="rvps5"><span class="rvts25">The left side of the Capture module is used to configure settings, optical trains, and presets, while the right side displays a list of sequence jobs.</span></p>
+<p class="rvps5"><span class="rvts25"><br/></span></p>
+<p class="rvps15"><img alt="" style="width : 459px; height : 303px; padding : 1px;" src="lib/left-side.jpg"></p>
 <p class="rvps29"><span class="rvts41"></span><span class="rvts6"></span></p>
 
             </div>

@@ -203,7 +203,7 @@
 </ol>
 <p class="rvps59"><span class="rvts51"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
- <li value="4" class="rvps59 noindent"><span class="rvts51">Sequence File</span><span class="rvts24">: </span><span class="rvts20">Sequence</span><span class="rvts6">: A sequence file describes the required settings for each batch of images. Create a sequence file in the </span><a class="rvts14" href="Capture.html">Capture module</a><span class="rvts6"> and save it for later.</span><span class="rvts24"> You can select the file using </span><a class="rvts93" href="DirectoryBrowser.html">Directory browser</a><span class="rvts94">.</span></li>
+ <li value="4" class="rvps59 noindent"><span class="rvts51">Sequence File</span><span class="rvts24">: </span><span class="rvts20">Sequence</span><span class="rvts6">: A sequence file describes the required settings for each batch of images. Create a sequence file in the </span><a class="rvts14" href="Capture.html">Capture module</a><span class="rvts6"> and save it for later.</span><span class="rvts24"> You can select the file using </span><a class="rvts96" href="DirectoryBrowser.html">Directory browser</a><span class="rvts97">.</span></li>
 </ol>
 <p class="rvps59"><span class="rvts24"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
@@ -221,17 +221,17 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li class="rvps67 noindent"><span class="rvts51">Optional FITS file: </span><span class="rvts24">If a FITS file is specified, the astrometry solver shall solve the file and use the central RA/DEC as the target coordinates. You can select the file using </span><a class="rvts95" href="DirectoryBrowser.html">Directory browser</a><span class="rvts24">.</span></li>
+   <li class="rvps67 noindent"><span class="rvts51">Optional FITS file: </span><span class="rvts24">If a FITS file is specified, the astrometry solver shall solve the file and use the central RA/DEC as the target coordinates. You can select the file using </span><a class="rvts98" href="DirectoryBrowser.html">Directory browser</a><span class="rvts24">.</span></li>
    <li class="rvps67 noindent"><span class="rvts24">Removes selected FITS file.</span></li>
    <li class="rvps67 noindent"><span class="rvts51">Profile: </span><span class="rvts24">Select which equipment profile to utilize when starting Ekos. If Ekos &amp; INDI are already started and online, this selection is ignored.</span></li>
    <li class="rvps68 noindent"><span class="rvts20">Steps</span><span class="rvts6">: Each job goes through a sequence of discrete steps. Each step or stage can be toggled on or off as desired:</span></li>
    <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
     <li class="rvps68 noindent"><span class="rvts20">Track</span><span class="rvts6">: Mount is commanded to slew to target.</span></li>
-    <li class="rvps68 noindent"><a class="rvts90" href="Focus.html">Focus</a><span class="rvts6">: Camera auto-focus (if applicable) is started.</span></li>
-    <li class="rvps68 noindent"><a class="rvts90" href="Align.html">Align</a><span class="rvts6">: Plate-solving is performed to ensure the correct location, framing and orientation of the target is met. If a FITS file is specified in General Settings, then this file is first plate-solved and then mount is commanded to to slew to target solution coordinates. This is followed by another plate-solving process to ensure we are within tolerance at the target solution coordinates. If the position angle of the FITS image is different from the current camera orientation, the camera orientation can be automatically adjusted if a mechanized rotator is detected. Otherwise, a manual camera rotation is required until the image position angle is satisfied.</span></li>
-    <li class="rvps56 noindent"><a class="rvts90" href="Guide.html">Guide</a><span class="rvts6">: Using a guide camera, the mount tracking is locked to a guide star to enable long-exposure astrophotography</span><span class="rvts32">&nbsp;</span></li>
+    <li class="rvps68 noindent"><a class="rvts93" href="Focus.html">Focus</a><span class="rvts6">: Camera auto-focus (if applicable) is started.</span></li>
+    <li class="rvps68 noindent"><a class="rvts93" href="Align.html">Align</a><span class="rvts6">: Plate-solving is performed to ensure the correct location, framing and orientation of the target is met. If a FITS file is specified in General Settings, then this file is first plate-solved and then mount is commanded to to slew to target solution coordinates. This is followed by another plate-solving process to ensure we are within tolerance at the target solution coordinates. If the position angle of the FITS image is different from the current camera orientation, the camera orientation can be automatically adjusted if a mechanized rotator is detected. Otherwise, a manual camera rotation is required until the image position angle is satisfied.</span></li>
+    <li class="rvps69 noindent"><a class="rvts93" href="Guide.html">Guide</a><span class="rvts6">: Using a guide camera, the mount tracking is locked to a guide star to enable long-exposure astrophotography</span><span class="rvts32">&nbsp;</span></li>
    </ol>
-   <li class="rvps67 noindent"><span class="rvts20">Position Angle:</span><span class="rvts6"> Select the desired Sky Position Angle in degrees (East of North). Ignore this setting to image using the camera current position angle. Use Target tab </span><a class="rvts90" href="FramingAssistant.html">Framing Assistant</a><span class="rvts6"> tool to visually adjust the field of view until the desired orientation is achieved.</span><span class="rvts51">on angle:</span><span class="rvts24"> You can also specify and position angle.</span></li>
+   <li class="rvps67 noindent"><span class="rvts20">Position Angle:</span><span class="rvts6"> Select the desired Sky Position Angle in degrees (East of North). Ignore this setting to image using the camera current position angle. Use Target tab </span><a class="rvts93" href="FramingAssistant.html">Framing Assistant</a><span class="rvts6"> tool to visually adjust the field of view until the desired orientation is achieved.</span><span class="rvts51">on angle:</span><span class="rvts24"> You can also specify and position angle.</span></li>
   </ol>
  </ol>
 </ol>
@@ -242,36 +242,36 @@
  </ul>
 </ul>
 <p class="rvps65"><span class="rvts51"><br/></span></p>
-<p class="rvps73"><img alt="" style="width : 707px; height : 436px; padding : 1px;" src="lib/scheduler_option_settings_1.jpg"></p>
-<p class="rvps73"><span class="rvts51"><br/></span></p>
-<p class="rvps75"><span class="rvts51"><br/></span></p>
+<p class="rvps74"><img alt="" style="width : 707px; height : 436px; padding : 1px;" src="lib/scheduler_option_settings_1.jpg"></p>
+<p class="rvps74"><span class="rvts51"><br/></span></p>
+<p class="rvps76"><span class="rvts51"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li class="rvps76 noindent"><span class="rvts51">Lead time </span><span class="rvts24">is the minimum time in minutes between jobs. The scheduler starts execution of a job before its scheduled startup time by this lead time. Early execution is useful as focusing, alignment, and guiding procedures may take prolonged periods to time to complete.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">Do not permit </span><span class="rvts24">jobs to be scheduled or executed past this many minutes before dawn.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">In case no </span><span class="rvts24">scheduler job is scheduled for this many hours, perform a complete shutdown procedure and restart observatory operations once the next job is ready.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">Do not permit </span><span class="rvts24">jobs to be scheduled less than this many degrees before the altitude restriction. Actual execution proceeds until the altitude limit.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">Offset astronomical</span><span class="rvts24"> dusk by this many hours. This positive or negative value adjusts the twilight restriction.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">Offset astronomical </span><span class="rvts24">dawn by this many hours. This positive or negative value adjusts the twilight restriction.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">After shutdown</span><span class="rvts24"> procedure is successfully executed, stop INDI and Ekos.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">If the shutdown </span><span class="rvts24">script terminates INDI server, enable this option so that no disconnection errors are generated.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">When processing</span><span class="rvts24"> a scheduled job, resume the sequence starting from the last image present in storage.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">Lead time </span><span class="rvts24">is the minimum time in minutes between jobs. The scheduler starts execution of a job before its scheduled startup time by this lead time. Early execution is useful as focusing, alignment, and guiding procedures may take prolonged periods to time to complete.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">Do not permit </span><span class="rvts24">jobs to be scheduled or executed past this many minutes before dawn.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">In case no </span><span class="rvts24">scheduler job is scheduled for this many hours, perform a complete shutdown procedure and restart observatory operations once the next job is ready.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">Do not permit </span><span class="rvts24">jobs to be scheduled less than this many degrees before the altitude restriction. Actual execution proceeds until the altitude limit.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">Offset astronomical</span><span class="rvts24"> dusk by this many hours. This positive or negative value adjusts the twilight restriction.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">Offset astronomical </span><span class="rvts24">dawn by this many hours. This positive or negative value adjusts the twilight restriction.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">After shutdown</span><span class="rvts24"> procedure is successfully executed, stop INDI and Ekos.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">If the shutdown </span><span class="rvts24">script terminates INDI server, enable this option so that no disconnection errors are generated.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">When processing</span><span class="rvts24"> a scheduled job, resume the sequence starting from the last image present in storage.</span></li>
   </ol>
  </ol>
 </ol>
+<p class="rvps75"><span class="rvts24"><br/></span></p>
+<p class="rvps74"><img alt="" style="width : 704px; height : 434px; padding : 1px;" src="lib/scheduler_option_settings_2.jpg"></p>
 <p class="rvps74"><span class="rvts24"><br/></span></p>
-<p class="rvps73"><img alt="" style="width : 704px; height : 434px; padding : 1px;" src="lib/scheduler_option_settings_2.jpg"></p>
-<p class="rvps73"><span class="rvts24"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li value="10" class="rvps76 noindent"><span class="rvts51">When calculating</span><span class="rvts24"> position after captures, compute it every Nth capture. Set to 0 to disable.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">If captured </span><span class="rvts24">position exceeds target position by more this many arcminutes, abort capture and reschedule the pipeline.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">Reset mount</span><span class="rvts24"> model on alignment failure</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">Reset mount </span><span class="rvts24">model before starting each job</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">If Align is </span><span class="rvts24">enabled, scheduler would initiate a realignment procedure before restarting any jobs even if guiding is active.</span></li>
-   <li class="rvps76 noindent"><span class="rvts51">If guiding calibration </span><span class="rvts24">fails then restart alignment process before proceeding to guiding recalibration process again. This can help recenter the target object in the field of view if the calibration process strayed too far off.</span></li>
+   <li value="10" class="rvps77 noindent"><span class="rvts51">When calculating</span><span class="rvts24"> position after captures, compute it every Nth capture. Set to 0 to disable.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">If captured </span><span class="rvts24">position exceeds target position by more this many arcminutes, abort capture and reschedule the pipeline.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">Reset mount</span><span class="rvts24"> model on alignment failure</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">Reset mount </span><span class="rvts24">model before starting each job</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">If Align is </span><span class="rvts24">enabled, scheduler would initiate a realignment procedure before restarting any jobs even if guiding is active.</span></li>
+   <li class="rvps77 noindent"><span class="rvts51">If guiding calibration </span><span class="rvts24">fails then restart alignment process before proceeding to guiding recalibration process again. This can help recenter the target object in the field of view if the calibration process strayed too far off.</span></li>
   </ol>
  </ol>
 </ol>
@@ -298,8 +298,8 @@
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-    <li class="rvps69 noindent"><span class="rvts51"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts51">Classic: </span><span class="rvts24">Start jobs that meet the constraints by priority and score.</span></li>
-    <li class="rvps70 noindent"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts51">Greedy: </span><span class="rvts24">Always attempt to run a job. It picks the highest priority job that can run according to its constraints. It will interrupt running jobs if a higher priority job can run.</span></li>
+    <li class="rvps70 noindent"><span class="rvts51"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts51">Classic: </span><span class="rvts24">Start jobs that meet the constraints by priority and score.</span></li>
+    <li class="rvps71 noindent"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts51">Greedy: </span><span class="rvts24">Always attempt to run a job. It picks the highest priority job that can run according to its constraints. It will interrupt running jobs if a higher priority job can run.</span></li>
    </ul>
   </ul>
  </ul>
@@ -352,11 +352,11 @@
 </ul>
 <p class="rvps59"><span class="rvts51"><br/></span></p>
 <p class="rvps60"><img alt="" style="width : 804px; height : 567px; padding : 1px;" src="lib/observatory_startup1.jpg"></p>
-<p class="rvps60"><span class="rvts92"><br/></span></p>
+<p class="rvps60"><span class="rvts95"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li class="rvps64 noindent"><span class="rvts92"><br/></span></li>
+   <li class="rvps64 noindent"><span class="rvts95"><br/></span></li>
   </ol>
  </ol>
 </ol>
@@ -364,9 +364,9 @@
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-    <li class="rvps71 noindent"><span class="rvts92">UnPark dome: </span><span class="rvts91">Park dome to home position</span></li>
-    <li class="rvps71 noindent"><span class="rvts92">UnPark Mount: </span><span class="rvts91">Park telescope to home position.</span></li>
-    <li class="rvps71 noindent"><span class="rvts92">Uncap: </span><span class="rvts91">Open dust cover.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">UnPark dome: </span><span class="rvts94">Park dome to home position</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">UnPark Mount: </span><span class="rvts94">Park telescope to home position.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">Uncap: </span><span class="rvts94">Open dust cover.</span></li>
    </ul>
   </ul>
  </ul>
@@ -374,23 +374,23 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li value="2" class="rvps71 noindent"><span class="rvts92">Script: </span><span class="rvts91">One time startup procedure to be executed before starting Ekos. The script is executed before the startup procedures (i.e Unpark scope), if Selected, are executed.</span></li>
+   <li value="2" class="rvps72 noindent"><span class="rvts95">Script: </span><span class="rvts94">One time startup procedure to be executed before starting Ekos. The script is executed before the startup procedures (i.e Unpark scope), if Selected, are executed.</span></li>
   </ol>
  </ol>
 </ol>
-<p class="rvps62"><span class="rvts91"><br/></span></p>
+<p class="rvps62"><span class="rvts94"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps62 noindent"><span class="rvts92">Aborted Job:</span></li>
+  <li class="rvps62 noindent"><span class="rvts95">Aborted Job:</span></li>
  </ul>
 </ul>
-<p class="rvps61"><span class="rvts92"><br/></span></p>
+<p class="rvps61"><span class="rvts95"><br/></span></p>
 <p class="rvps60"><img alt="" style="width : 796px; height : 559px; padding : 1px;" src="lib/aborted_job1.jpg"></p>
-<p class="rvps60"><span class="rvts92"><br/></span></p>
+<p class="rvps60"><span class="rvts95"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li class="rvps64 noindent"><span class="rvts92"><br/></span></li>
+   <li class="rvps64 noindent"><span class="rvts95"><br/></span></li>
   </ol>
  </ol>
 </ol>
@@ -398,9 +398,9 @@
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-    <li class="rvps71 noindent"><span class="rvts92">None: </span><span class="rvts91">Do not reschedule aborted jobs.</span></li>
-    <li class="rvps71 noindent"><span class="rvts92">Queue: </span><span class="rvts91">Reschedule aborted jobs as soon as all executable jobs are either completed or aborted.</span></li>
-    <li class="rvps71 noindent"><span class="rvts92">Immediate: </span><span class="rvts91">Reschedule an aborted job immediately.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">None: </span><span class="rvts94">Do not reschedule aborted jobs.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">Queue: </span><span class="rvts94">Reschedule aborted jobs as soon as all executable jobs are either completed or aborted.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">Immediate: </span><span class="rvts94">Reschedule an aborted job immediately.</span></li>
    </ul>
   </ul>
  </ul>
@@ -408,17 +408,17 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li value="2" class="rvps67 noindent"><span class="rvts92">Reschedule errors: </span><span class="rvts91">Treat errors like aborts. (Delay in seconds).</span></li>
+   <li value="2" class="rvps67 noindent"><span class="rvts95">Reschedule errors: </span><span class="rvts94">Treat errors like aborts. (Delay in seconds).</span></li>
   </ol>
  </ol>
 </ol>
-<p class="rvps61"><span class="rvts91"><br/></span></p>
+<p class="rvps61"><span class="rvts94"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps62 noindent"><span class="rvts92">Observatory shutdown Procedure:</span></li>
+  <li class="rvps62 noindent"><span class="rvts95">Observatory shutdown Procedure:</span></li>
  </ul>
 </ul>
-<p class="rvps62"><span class="rvts92"><br/></span></p>
+<p class="rvps62"><span class="rvts95"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
@@ -426,13 +426,13 @@
   </ul>
  </ul>
 </ul>
-<p class="rvps61"><span class="rvts92"><br/></span></p>
+<p class="rvps61"><span class="rvts95"><br/></span></p>
 <p class="rvps60"><img alt="" style="width : 781px; height : 551px; padding : 1px;" src="lib/shutdown_procedure2.jpg"></p>
-<p class="rvps19"><span class="rvts92"><br/></span></p>
+<p class="rvps19"><span class="rvts95"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li class="rvps67 noindent"><span class="rvts92"><br/></span></li>
+   <li class="rvps67 noindent"><span class="rvts95"><br/></span></li>
   </ol>
  </ol>
 </ol>
@@ -440,10 +440,10 @@
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-    <li class="rvps71 noindent"><span class="rvts92">Warm CC: </span><span class="rvts91">Turn off CCD cooler.</span></li>
-    <li class="rvps71 noindent"><span class="rvts92">Cap: </span><span class="rvts91">Close dust cover.</span></li>
-    <li class="rvps71 noindent"><span class="rvts92">Park Mount: &nbsp;</span><span class="rvts91">Park telescope to home position.</span></li>
-    <li class="rvps71 noindent"><span class="rvts92">Park Dome: </span><span class="rvts91">Park dome to home position.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">Warm CC: </span><span class="rvts94">Turn off CCD cooler.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">Cap: </span><span class="rvts94">Close dust cover.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">Park Mount: &nbsp;</span><span class="rvts94">Park telescope to home position.</span></li>
+    <li class="rvps72 noindent"><span class="rvts95">Park Dome: </span><span class="rvts94">Park dome to home position.</span></li>
    </ul>
   </ul>
  </ul>
@@ -451,19 +451,19 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
   <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
-   <li value="2" class="rvps67 noindent"><span class="rvts92">Script: </span><span class="rvts91">One-time shutdown procedure to be executed after all Scheduler jobs are completed. The script is executed after the shutdown procedure (i.e Parking), If selected, are completed.</span></li>
+   <li value="2" class="rvps67 noindent"><span class="rvts95">Script: </span><span class="rvts94">One-time shutdown procedure to be executed after all Scheduler jobs are completed. The script is executed after the shutdown procedure (i.e Parking), If selected, are completed.</span></li>
   </ol>
  </ol>
 </ol>
-<p class="rvps67"><span class="rvts91"><br/></span></p>
-<p class="rvps67"><span class="rvts91">You can also swap the jobs priority by moving the Jobs to Up/Down</span></p>
-<p class="rvps67"><span class="rvts91"><br/></span></p>
-<p class="rvps72"><img alt="" style="width : 789px; height : 494px; padding : 1px;" src="lib/jobs_move.jpg"></p>
-<p class="rvps60"><span class="rvts91"><br/></span></p>
-<p class="rvps60"><span class="rvts91"><br/></span></p>
-<p class="rvps60"><span class="rvts92">&nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 788px; height : 489px; padding : 1px;" src="lib/job_running1.jpg"></p>
-<p class="rvps60"><span class="rvts92"><br/></span></p>
-<p class="rvps11"><span class="rvts78">You must select the&nbsp;</span><span class="rvts81">Target</span><span class="rvts78">&nbsp;and&nbsp;</span><span class="rvts81">Sequence</span><span class="rvts78">&nbsp;before you can add a job to the Scheduler. When the scheduler starts, it evaluates all jobs in accord to the conditions and constraints specified and attempts to select the best job to execute. Selection of the job depends on a simple heuristic algorithm that scores each job given the conditions and constraints, each of which is weighted accordingly.</span><span class="rvts6"></span></p>
+<p class="rvps67"><span class="rvts94"><br/></span></p>
+<p class="rvps67"><span class="rvts94">You can also swap the jobs priority by moving the Jobs to Up/Down</span></p>
+<p class="rvps67"><span class="rvts94"><br/></span></p>
+<p class="rvps73"><img alt="" style="width : 789px; height : 494px; padding : 1px;" src="lib/jobs_move.jpg"></p>
+<p class="rvps60"><span class="rvts94"><br/></span></p>
+<p class="rvps60"><span class="rvts94"><br/></span></p>
+<p class="rvps60"><span class="rvts95">&nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 788px; height : 489px; padding : 1px;" src="lib/job_running1.jpg"></p>
+<p class="rvps60"><span class="rvts95"><br/></span></p>
+<p class="rvps11"><span class="rvts80">You must select the&nbsp;</span><span class="rvts83">Target</span><span class="rvts80">&nbsp;and&nbsp;</span><span class="rvts83">Sequence</span><span class="rvts80">&nbsp;before you can add a job to the Scheduler. When the scheduler starts, it evaluates all jobs in accord to the conditions and constraints specified and attempts to select the best job to execute. Selection of the job depends on a simple heuristic algorithm that scores each job given the conditions and constraints, each of which is weighted accordingly.</span><span class="rvts6"></span></p>
 
             </div>
             
