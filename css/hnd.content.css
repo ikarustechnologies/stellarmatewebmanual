@@ -1508,38 +1508,44 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps82
 {
- text-indent: 48px;
- line-height: 1.80;
- margin: 0px 0px 0px 48px;
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 2.16;
+ background: #ffffff;
 }
 .rvps83
 {
- text-align: center;
- margin: 7px 0px 7px 0px;
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ white-space: nowrap;
+ margin: 0px 0px 0px 40px;
 }
 .rvps84
 {
  text-align: justify;
+ text-justify: inter-word;
  text-align-last: auto;
- text-indent: 0px;
- padding: 0px 0px 0px 0px;
- margin: 15px 0px 15px 0px;
+ line-height: 2.16;
+ white-space: nowrap;
+ background: #ffffff;
+ margin: 0px 0px 0px 40px;
 }
 .rvps85
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- line-height: 1.80;
- margin: 7px 0px 7px 0px;
+ line-height: 2.16;
+ white-space: nowrap;
+ background: #ffffff;
+ margin: 0px 0px 0px 64px;
 }
 .rvps86
 {
- text-align: justify;
- text-align-last: auto;
- text-indent: 0px;
- padding: 0px 0px 0px 0px;
- margin: 33px 0px 33px 0px;
+ text-align: center;
+ margin: 7px 0px 7px 0px;
 }
 .rvps87
 {
@@ -1547,15 +1553,39 @@ p,ul,ol /* Paragraph Style */
  text-align-last: auto;
  text-indent: 0px;
  padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 0px;
+ margin: 15px 0px 15px 0px;
 }
 .rvps88
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
+ line-height: 1.80;
+ margin: 7px 0px 7px 0px;
 }
 .rvps89
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 33px 0px 33px 0px;
+}
+.rvps90
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps91
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+}
+.rvps92
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1563,24 +1593,24 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.80;
  margin: 0px 0px 13px 0px;
 }
-.rvps90
+.rvps93
 {
  text-align: center;
  background: #000000;
 }
-.rvps91
+.rvps94
 {
  margin: 0px 0px 0px 24px;
 }
-.rvps92
+.rvps95
 {
  text-align: center;
  margin: 0px 0px 0px 24px;
 }
-.rvps93
+.rvps96
 {
 }
-.rvps94
+.rvps97
 {
  text-align: justify;
  text-align-last: auto;
@@ -1589,14 +1619,14 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 15px 0px 15px 0px;
 }
-.rvps95
+.rvps98
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  line-height: 1.80;
 }
-.rvps96
+.rvps99
 {
  text-align: justify;
  text-align-last: auto;
@@ -1605,7 +1635,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 22px 0px 16px 0px;
 }
-.rvps97
+.rvps100
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1620,7 +1650,7 @@ p,ul,ol /* Paragraph Style */
  padding: 5px 0px 5px 0px;
  margin: 0px 0px 0px 3px;
 }
-.rvps98
+.rvps101
 {
  line-height: 1.80;
  border-color: #dddddd;
@@ -1632,7 +1662,7 @@ p,ul,ol /* Paragraph Style */
  padding: 5px 0px 5px 0px;
  margin: 0px 0px 0px 3px;
 }
-.rvps99
+.rvps102
 {
  text-align: left;
  text-indent: 0px;
@@ -1640,51 +1670,23 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 22px 0px 16px 0px;
 }
-.rvps100
-{
- text-align: justify;
- text-align-last: auto;
- text-indent: 0px;
- line-height: 1.80;
- padding: 0px 0px 0px 0px;
- margin: 22px 0px 16px 0px;
-}
-.rvps101
-{
- text-align: justify;
- text-align-last: auto;
- text-indent: 0px;
- background: #ffffff;
- padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 0px;
-}
-.rvps102
-{
- text-align: justify;
- text-align-last: auto;
- text-indent: 0px;
- line-height: 1.80;
- background: #ffffff;
- padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 0px;
-}
 .rvps103
 {
  text-align: justify;
  text-align-last: auto;
  text-indent: 0px;
  line-height: 1.80;
- background: #ffffff;
  padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 24px;
+ margin: 22px 0px 16px 0px;
 }
 .rvps104
 {
  text-align: justify;
  text-align-last: auto;
  text-indent: 0px;
+ background: #ffffff;
  padding: 0px 0px 0px 0px;
- margin: 22px 0px 16px 0px;
+ margin: 0px 0px 0px 0px;
 }
 .rvps105
 {
@@ -1692,6 +1694,7 @@ p,ul,ol /* Paragraph Style */
  text-align-last: auto;
  text-indent: 0px;
  line-height: 1.80;
+ background: #ffffff;
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
@@ -1701,23 +1704,50 @@ p,ul,ol /* Paragraph Style */
  text-align-last: auto;
  text-indent: 0px;
  line-height: 1.80;
+ background: #ffffff;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 24px;
+}
+.rvps107
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 22px 0px 16px 0px;
+}
+.rvps108
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ line-height: 1.80;
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
-.rvps107
+.rvps109
+{
+ text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ line-height: 1.80;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps110
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  text-indent: 48px;
 }
-.rvps108
+.rvps111
 {
  text-align: center;
  line-height: 1.80;
  margin: 7px 0px 7px 0px;
 }
-.rvps109
+.rvps112
 {
  text-align: justify;
  text-justify: inter-word;
