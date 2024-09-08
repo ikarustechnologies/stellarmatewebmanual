@@ -191,7 +191,7 @@
 <p class="rvps5"><span class="rvts26">INDI Dome support includes all observatory enclosures of different designs such as roll-off roofs, regular domes, and clamshell-style domes.</span></p>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
 <p class="rvps5"><span class="rvts26">To implement your own roll-off roof driver, here are the basic requirements:</span></p>
-<h3 class="rvps105"><span class="rvts0"><span class="rvts28">Hardware</span></span></h3>
+<h3 class="rvps108"><span class="rvts0"><span class="rvts28">Hardware</span></span></h3>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 25px; list-style-position: outside;">
  <li class="rvps5 noindent"><span class="rvts28">AC/DC Motor</span><span class="rvts26">: The motor must be electronically controllable either via a relay or a controller board (Arduino..etc). The only controls needed are start/stop and direction control (CW and CCW). In INDI, a fully opened roof is considered Unparked, while a fully closed roof is considered Parked. Anything between these two (partially open) is considered an Unknown state.</span></li>
  <li class="rvps5 noindent"><span class="rvts28">Limit switches</span><span class="rvts26">: Fully closed and fully opened limit switches are required in order to sense when the roof is fully opened and closed. These limit switches serves two purposes:</span></li>
@@ -202,7 +202,7 @@
 </ol>
 <p class="rvps5"><span class="rvts26">Therefore, Motor + 2 limit switches is all you need to have a working roll-off roof hardware system to be used with INDI.</span></p>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
-<h3 class="rvps105"><span class="rvts0"><span class="rvts28">Software</span></span></h3>
+<h3 class="rvps108"><span class="rvts0"><span class="rvts28">Software</span></span></h3>
 <p class="rvps5"><span class="rvts26">The roll-off roof requires an INDI driver so that it can be controlled from any INDI-compatible client. You can either use the Dome Scripting Gateway driver or customize the sample INDI roll-off driver to fit your needs.</span></p>
 <p class="rvps5"><span class="rvts26">The Dome Scripting Gateway driver relies on executing Python scripts to command actions for Open and Close. It is recommended to use this driver if you have limited programming expereince but can manage to write simple Python script to control your motor.</span></p>
 <p class="rvps5"><span class="rvts26">Customizing the&nbsp;</span><a class="rvts143" href="https://github.com/indilib/indi/blob/master/drivers/dome/roll_off.cpp" target="_blank">INDI Roll-off driver</a><span class="rvts26">&nbsp;is optimal if you know some rudementary C++. Here are some real-world examples of roll-off drivers to get you started:</span></p>
@@ -213,7 +213,7 @@
  <li class="rvps5 noindent"><a class="rvts14" href="https://github.com/Trigger-broom-289/odroid-indi-roof" target="_blank">Odroid INDI Roof</a><a class="rvts27" href="https://github.com/Trigger-broom-289/odroid-indi-roof" target="_blank">:</a><span class="rvts26"> This indi driver is used to control an observatory box. It is just a very compact box with an automated lid, opened by two linear actuators, 2 micro-switches act as position sensors (open/close). The all lot is powered by an Odroid-C1 and a standard 8 relays board.</span></li>
 </ul>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
-<h2 class="rvps106"><span class="rvts0"><span class="rvts28">Dome Slaving</span></span></h2>
+<h2 class="rvps109"><span class="rvts0"><span class="rvts28">Dome Slaving</span></span></h2>
 <p class="rvps5"><span class="rvts26">Dome slaving refers to the dome slit synchronization with the telescope position as the mount traverse across the sky. The dome slit follows the telescope whether is is slewing from one object to another, or while tracking. When tracking, the dome would move when the difference between its current and target postion exceeds the Autosync Threshold parameter, which default to 0.5 degree. Therefore, the dome calculates its target position every second, but only commands motion when the difference exceeds the autosync threshold.</span></p>
 <p class="rvps5"><span class="rvts26">You can slave the dome to the mount by setting the required slaving parameters:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 25px; list-style-position: outside;">
@@ -226,11 +226,11 @@
 </ol>
 <p class="rvps5"><span class="rvts26">After settings the parameters above, go to Options tab and click Save in Configurations so that the parameters are used in future sessions. You can also set the Autosync threshold which is the minimum distance autosync will move the dome. Any motion below this threshold will not be triggered. This is to prevent continuous dome moving during telescope tracking.</span></p>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
-<h3 class="rvps105"><span class="rvts0"><span class="rvts28">Dome is not correctly slaving</span></span></h3>
+<h3 class="rvps108"><span class="rvts0"><span class="rvts28">Dome is not correctly slaving</span></span></h3>
 <p class="rvps5"><span class="rvts26">1. Make sure that the dome azimuth movement and position are correct and repeatable. If the azimuth is incorrect or not repeatable you will never get a good sync. Good means to withing a couple of degrees.</span><br/><span class="rvts26">2. Align the mount. For a celestron GEM that's polar aligned a quick align should be good enough but once again you can't get a good sync without a good alignment. Within a degree should do.</span><br/><span class="rvts26">3. Set the dome radius to a sensible value, Do not change it again.</span><br/><span class="rvts26">4. Set the mount to hour angle 6h, declination 90. This is the Align position, looking at the pole with the counterweight shaft down. In this position the OTA offset will have no effect on the dome azimuth, not will the NS position of the mount.</span><br/><span class="rvts26">5. Adjust the mount EW offset until the scope is looking through the centre of the dome slit.</span><br/><span class="rvts26">6. Move the mount so the counterweight shaft is horizontal and the OTA is looking at the Southern horizon. In this position the main things that affect where the dome needs to be are the EW mount offset and the OTA offset.</span></p>
 <p class="rvps5"><span class="rvts26">We have already set the EW offse so set the OTA offset. Try this with the mount on both side of the meridian and iterate as required to get the scope able to see out in both cases.</span><br/><span class="rvts26">set the scope so it is looking at the East or west horizon, this should be with the dec counterweight shaft pointing down. Adjust the Ns offset so the OTA can see out. Do this both looking East and West.</span></p>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
-<h3 class="rvps105"><span class="rvts0"><span class="rvts28">Debugging Calculations</span></span></h3>
+<h3 class="rvps108"><span class="rvts0"><span class="rvts28">Debugging Calculations</span></span></h3>
 <p class="rvps5"><span class="rvts26">Ferran Casarramona, the developer of the Dome Slaving routine, wrote a&nbsp;</span><a class="rvts143" href="https://docs.google.com/spreadsheets/d/1FWN0S7kG-GXSfSMPWPi-0CfIg6iGlPFXpROcL2svHIo/edit?usp=sharing">spreadsheet</a><span class="rvts26">&nbsp;to debug the calculations. You can make a copy and play with it to see how parameters affects the outcome.</span></p>
 <p class="rvps5"><span class="rvts26">You can enter the values in blue cells, and output are in the orange cells. You enter your telescope parameters, and your latitude. Also enter target declination and target hour angle (angular distance to the meridian, in hours).</span></p>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
