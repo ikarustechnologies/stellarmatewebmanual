@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>Connecting your equipment</title>
+  <title>Ethernet</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -22,11 +22,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Connecting your equipment">
+  <meta name="twitter:title" content="Ethernet">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Connecting your equipment" />
+  <meta property="og:title" content="Ethernet" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="The StellarMate Manual" /> 
@@ -167,29 +167,54 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="Connectingyourequipment1"
-		  data-hnd-context="30"
-		  data-hnd-title="Connecting your equipment"
+		  data-hnd-id="Ethernet"
+		  data-hnd-context="28"
+		  data-hnd-title="Ethernet"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="ConnectionMethods.html">Connection Methods</a></li><li><a href="EthernetConnection.html">Ethernet Connection</a></li>
+                        <li><a href="ConnectionMethods.html">Connection Methods</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="EthernetConnection.html" title="Ethernet Connection" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="StellarMateAddress.html" title="StellarMate Address" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DownloadingEkos.html" title="Downloading Ekos" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConnectionMethods.html" title="Connection Methods" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="StellarMateAddress.html" title="StellarMate Address" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DirectEthernet1.html" title="Direct Ethernet" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>Connecting your equipment</h2>
+            <h2>Ethernet</h2>
 
             <div class="main-content">
                 
-<p class="rvps89"><span class="rvts24">StellarMate supports connecting to your equipment via WiFi, Ethernet, Bluetooth, or USB. USB is the primary connection method for most astronomical devices. Make sure all equipment is sufficiently powered and initialized before connecting them to StellarMate. For mounts, most mounts need to be already aligned before you connect them to StellarMate.</span></p>
-<p class="rvps89"><span class="rvts24">To learn more about connecting your equipment to StellarMate, find out more in the detailed&nbsp;</span><a class="rvts14" href="SerialPortAssistant.html">equipment connection guide</a><span class="rvts24">.</span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
+<hr style="height : 1px; background-color : #000000; border-style : none;">
+<div class="rvps33">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none; width: 5px;">
+   <p class="rvps34"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none; width: 426px;">
+   <p class="rvps2"><span class="rvts47">Note</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none; width: 5px;">
+   <p class="rvps34"><span class="rvts43"><br/></span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none; width: 426px;">
+   <p class="rvps40"><span class="rvts23">You must first complete the&nbsp;</span><span class="rvts14">First Time Setup</span><span class="rvts23">&nbsp;guide before proceeding with this tutorial.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<hr style="height : 1px; background-color : #000000; border-style : none;">
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps88"><span class="rvts6">All StellarMate units are shipped with a Gigabit ethernet. Compared with WiFi, wired Ethernet connection offers higher speeds and reliability. It is recommended for fixed observatory setups. By default, StellarMate operates in HotSpot mode. Even if configured for WiFi connection or LAN, StellarMate always switches back to HotSpot mode when the other connection modes become unavailable. This is to enable you to always access the device regardless of network availability.</span></p>
+<p class="rvps88"><span class="rvts6">When plugged to a network, StellarMate should be assigned an IP address from the router. The IP address is not fixed and managed by the router. Advanced users can assign a fixed IP address from the router directly (where supported) by assigning a fixed IP address to StellarMate unit MAC address.</span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             
