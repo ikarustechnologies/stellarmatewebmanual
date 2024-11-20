@@ -188,23 +188,33 @@
 
             <div class="main-content">
                 
-<p class="rvps5"><span class="rvts82">KStars is a desktop planetarium software. KStars include Ekos, a rich astrophotography.</span><br/><span class="rvts82">KStars is free, open source, cross-platform Astronomy Software. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. The display includes up to 100 million stars, 13,000 deep-sky objects,all 8 planets, the Sun and Moon, and thousands of comets, asteroids, supernovae, and satellites.</span></p>
-<p class="rvps5"><span class="rvts82">Find out interesting objects in the "What's up Tonight" tool, plot altitude vs. time graphs for any object, print high-quality sky charts, and gain access to lots of information and resources to help you explore the universe!</span></p>
-<p class="rvps5"><span class="rvts26">KStars is Ekos astrophotography suite, a complete astrophotography solution that can control all INDI devices including numerous telescopes, CCDs, DSLRs, focusers, filters, and a lot more. Ekos supports highly accurate tracking using online and offline astrometry solver, autofocus and autoguiding capabilities, and capture of single or multiple images using the powerful built in sequence manager.</span></p>
+<p class="rvps91"><span class="rvts82">KStars is free, open source, cross-platform Astronomy Software. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. Bundled with KStars is </span><span class="rvts28">Ekos astrophotography suite</span><span class="rvts26">, a complete astrophotography solution that can control and automate all your atronomy equipment.</span></p>
+<p class="rvps92"><span class="rvts6"><br/></span></p>
+<p class="rvps93"><span class="rvts26">The topology of StellarMate App, KStars, Ekos, and INDI can be simplified to the following points:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+ <li class="rvps90 noindent"><span class="rvts26">Astronomy devices are connected to StellarMate via USB or Network (WiFi/Ethernet).</span></li>
+ <li class="rvps90 noindent"><span class="rvts26">Each device is controlled by a corresponding INDI driver. An INDI driver provides an abstraction layer so that clients like Ekos can issue commands regardless of the underlying implementation of each unique device.</span></li>
+ <li class="rvps90 noindent"><span class="rvts26">INDI drivers can be managed directly in KStars by starting and stopping INDI server, or via StellarMate Web Manager that provides an API to remotely start and shutdown INDI server.</span></li>
+ <li class="rvps90 noindent"><span class="rvts26">An INDI server is a hub where all drivers communicate with each other and the clients.</span></li>
+ <li class="rvps90 noindent"><span class="rvts26">When using Ekos inside StellarMate directly (HDMI, VNC, or SM App via EkosLive), Ekos completely manages the INDI server.</span></li>
+ <li class="rvps90 noindent"><span class="rvts26">EkosLive is a middleware that allows external applications to talk with Ekos over websockets.</span></li>
+ <li class="rvps90 noindent"><span class="rvts26">When using Ekos on a remote PC/Mac, it can control the equipment by bypassing KStars completely and launching the INDI server remotely via the StellarMate Web Manager.</span></li>
+ <li class="rvps90 noindent"><span class="rvts26">EkosLive not only provides communication between StellarMate App and Ekos, but it also connects KStars to the online ekoslive.com portal where you can use a web-based interface similar to StellarMate App to control Ekos remotely.</span></li>
+</ol>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
 <p class="rvps15"><img alt="" style="width : 638px; height : 346px; padding : 1px;" src="lib/local-remote.jpeg"></p>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
 <p class="rvps5"><span class="rvts82">KStars can be connected to StellarMate Controller in a number of ways</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
- <li class="rvps90 noindent"><span class="rvts123">Directly in StellarMate OS</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside;">
+ <li class="rvps94 noindent"><span class="rvts124">Directly in StellarMate OS</span></li>
 </ol>
 <p class="rvps5"><span class="rvts82">Use VNC, Rustdesk, or HDMI to directly operate KStars inside StellarMate. Using KStars inside StellarMate gives the fastest results since images are saved immediately on the local storage.</span></p>
-<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
- <li value="2" class="rvps90 noindent"><span class="rvts123">Remote KStars</span></li>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside;">
+ <li value="2" class="rvps94 noindent"><span class="rvts124">Remote KStars</span></li>
 </ol>
-<p class="rvps5"><span class="rvts82">Since KStars communicate with the INDI server using TCP/IP, KStars can be used to run devices on any StellarMate Controller remotely. If connecting over WAN, ports 7624 and 8624 must be opened over the remote router and forwarded to the StellarMate controller running KStars.</span></p>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts126">ADD IMAGE</span></p>
+<p class="rvps5"><span class="rvts82">Since KStars communicate with the INDI server using TCP/IP, KStars can be used to run devices on any StellarMate Controller remotely.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 615px; height : 387px; padding : 1px;" src="lib/connect-pc.png"></p>
 <p class="rvps5"><span class="rvts26"><br/></span></p>
 <p class="rvps5"><span class="rvts82">When configuring KStars for remote connection:</span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
@@ -212,8 +222,7 @@
  <li class="rvps90 noindent"><span class="rvts82">Enter remote StellarMate Controller IP address or host name.</span></li>
  <li class="rvps90 noindent"><span class="rvts82">Enable StellarMate Web Manager</span></li>
 </ol>
-<p class="rvps5"><span class="rvts26"><br/></span></p>
-<p class="rvps5"><span class="rvts82">SM Pro: add to remote drivers @localhost:12624</span></p>
+<p class="rvps5"><span class="rvts124">SM Pro</span><span class="rvts82">: Add to remote drivers @localhost:12624</span></p>
 <p class="rvps5"><span class="rvts26"></span><span class="rvts6"></span></p>
 
             </div>
