@@ -207,13 +207,13 @@ span.rvts32
 span.rvts33
 {
  font-size: 12pt;
- font-family: 'Times New Roman', 'Times', serif;
- color: #000000;
+ font-weight: bold;
+ color: #ffffff;
 }
 span.rvts34
 {
  font-size: 12pt;
- font-family: 'lucida sans';
+ font-family: 'Times New Roman', 'Times', serif;
  color: #000000;
 }
 span.rvts35
@@ -221,37 +221,37 @@ span.rvts35
  font-size: 12pt;
  font-family: 'lucida sans';
  color: #000000;
- text-decoration: underline;
 }
 span.rvts36
+{
+ font-size: 12pt;
+ font-family: 'lucida sans';
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts37
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts37
-{
- font-size: 12pt;
- font-weight: bold;
- color: #ffffff;
-}
 span.rvts38
 {
  font-size: 12pt;
- font-family: 'Inter';
  font-weight: bold;
  color: #ffffff;
 }
 span.rvts39
 {
- font-size: 16pt;
+ font-size: 12pt;
  font-family: 'Inter';
- color: #000000;
+ font-weight: bold;
+ color: #ffffff;
 }
 span.rvts40
 {
- font-size: 11pt;
+ font-size: 16pt;
  font-family: 'Inter';
  color: #000000;
 }
@@ -259,47 +259,46 @@ span.rvts41
 {
  font-size: 11pt;
  font-family: 'Inter';
- font-weight: bold;
  color: #000000;
 }
 span.rvts42
 {
- font-size: 12pt;
+ font-size: 11pt;
+ font-family: 'Inter';
  font-weight: bold;
  color: #000000;
 }
 span.rvts43
 {
  font-size: 12pt;
- font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
  color: #000000;
 }
 span.rvts44
 {
  font-size: 12pt;
- font-family: 'Inter';
+ font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
+ color: #000000;
 }
 span.rvts45
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
- color: #ff0000;
 }
 span.rvts46
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: #ff0000;
 }
 span.rvts47
 {
  font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
- color: #007bbf;
+ color: #ff0000;
 }
 span.rvts48
 {
@@ -312,67 +311,67 @@ span.rvts49
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: #007bbf;
 }
-a.rvts50, span.rvts50
+span.rvts50
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ color: #007bbf;
+}
+a.rvts51, span.rvts51
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-a.rvts50:hover
+a.rvts51:hover
 {
  color: #007bbf;
-}
-span.rvts51
-{
- font-size: 12pt;
- font-family: 'Courier New', 'Courier', monospace;
- color: #000000;
 }
 span.rvts52
 {
  font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
- color: transparent;
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #000000;
 }
 span.rvts53
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
- color: #000000;
+ color: transparent;
 }
 span.rvts54
 {
  font-size: 12pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: #000000;
 }
 span.rvts55
 {
  font-size: 12pt;
+ font-family: 'Inter';
+ color: #000000;
+}
+span.rvts56
+{
+ font-size: 12pt;
  font-weight: bold;
  color: #ff0000;
 }
-span.rvts56
+span.rvts57
 {
  font-size: 13pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #000000;
 }
-span.rvts57
-{
- font-size: 14pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #000000;
-}
 span.rvts58
 {
- font-size: 13pt;
+ font-size: 14pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #000000;
@@ -381,43 +380,50 @@ span.rvts59
 {
  font-size: 13pt;
  font-family: 'Inter';
+ font-weight: bold;
  color: #000000;
 }
-a.rvts60, span.rvts60
+span.rvts60
+{
+ font-size: 13pt;
+ font-family: 'Inter';
+ color: #000000;
+}
+a.rvts61, span.rvts61
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
  text-decoration: underline;
 }
-span.rvts61
+span.rvts62
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
  background-color: #ffffff;
 }
-span.rvts62
+span.rvts63
 {
  font-size: 13pt;
  font-family: 'Inter';
  color: transparent;
 }
-span.rvts63
+span.rvts64
 {
  font-size: 13pt;
  font-family: 'Inter';
  font-weight: bold;
  color: transparent;
 }
-span.rvts64
+span.rvts65
 {
  font-size: 11pt;
  font-family: 'Inter';
  color: #202124;
  background-color: #ffffff;
 }
-span.rvts65
+span.rvts66
 {
  font-size: 14pt;
  font-family: 'Inter';
@@ -425,174 +431,127 @@ span.rvts65
  color: #202124;
  background-color: #ffffff;
 }
-span.rvts66
+span.rvts67
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #333333;
  background-color: #ffffff;
 }
-span.rvts67
+span.rvts68
 {
  font-size: 12pt;
  color: #333333;
  background-color: #ffffff;
 }
-span.rvts68
+span.rvts69
 {
  color: #3f3f3f;
 }
-span.rvts69
+span.rvts70
 {
  font-size: 12pt;
  font-style: italic;
  color: #333333;
  background-color: #ffffff;
 }
-span.rvts70
+span.rvts71
 {
  font-size: 8pt;
  color: #333333;
  background-color: #ffffff;
  vertical-align: sub;
 }
-span.rvts71
+span.rvts72
 {
  font-size: 12pt;
  font-weight: bold;
  color: #333333;
  background-color: #ffffff;
 }
-span.rvts72
+span.rvts73
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #0070c0;
  text-decoration: underline;
 }
-span.rvts73
-{
- font-size: 12pt;
- color: #212529;
-}
 span.rvts74
-{
- font-size: 12pt;
- font-style: italic;
- color: #212529;
-}
-span.rvts75
-{
- font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
-}
-span.rvts76
-{
- font-size: 12pt;
- font-family: 'Inter';
-}
-span.rvts77
-{
- font-size: 12pt;
- font-family: 'Inter';
- font-style: italic;
-}
-a.rvts78, span.rvts78
-{
- font-size: 12pt;
- font-family: 'Inter';
- text-decoration: none;
-}
-span.rvts79
-{
- font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #f0b400;
-}
-span.rvts80
-{
- font-size: 12pt;
- font-family: 'Inter';
- color: #f0b400;
-}
-span.rvts81
 {
  font-size: 12pt;
  color: #000000;
  background-color: #ffffff;
 }
-span.rvts82
+span.rvts75
 {
  font-size: 18pt;
  font-family: 'Inter';
  font-weight: bold;
  color: #000000;
 }
-span.rvts83
+span.rvts76
 {
  font-size: 12pt;
  font-weight: bold;
  color: transparent;
 }
-a.rvts84, span.rvts84
+a.rvts77, span.rvts77
 {
  font-size: 12pt;
  font-weight: bold;
  color: #000000;
  text-decoration: underline;
 }
-span.rvts85
+span.rvts78
 {
  font-size: 12pt;
  color: #000000;
  background-color: #ffff00;
 }
-span.rvts86
+span.rvts79
 {
  font-size: 12pt;
  font-weight: bold;
  color: #000000;
  background-color: #ffff00;
 }
-span.rvts87
+span.rvts80
 {
  font-size: 12pt;
  font-weight: bold;
 }
-span.rvts88
+span.rvts81
 {
  font-size: 12pt;
 }
-span.rvts89
+span.rvts82
 {
  font-size: 14pt;
  font-weight: bold;
 }
-span.rvts90
+span.rvts83
 {
  font-size: 11pt;
  color: #0a3069;
  background-color: #000000;
 }
-span.rvts91
+span.rvts84
 {
  font-size: 12pt;
  font-style: italic;
 }
-span.rvts92
+span.rvts85
 {
  font-size: 12pt;
  color: transparent;
 }
-span.rvts93
+span.rvts86
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: transparent;
 }
-a.rvts94, span.rvts94
+a.rvts87, span.rvts87
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -600,14 +559,14 @@ a.rvts94, span.rvts94
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts95
+span.rvts88
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: transparent;
  background-color: #ffffff;
 }
-span.rvts96
+span.rvts89
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
@@ -615,50 +574,96 @@ span.rvts96
  color: transparent;
  background-color: #ffffff;
 }
-a.rvts97, span.rvts97
+a.rvts90, span.rvts90
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #00a5ff;
  text-decoration: underline;
 }
-span.rvts98
+span.rvts91
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #00a5ff;
 }
-a.rvts99, span.rvts99
+a.rvts92, span.rvts92
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: transparent;
  text-decoration: underline;
 }
-a.rvts100, span.rvts100
+a.rvts93, span.rvts93
 {
  font-size: 12pt;
  color: transparent;
  text-decoration: none;
 }
-span.rvts101
+span.rvts94
 {
  font-size: 12pt;
  font-style: italic;
  color: transparent;
 }
-span.rvts102
+span.rvts95
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-weight: bold;
  color: #000000;
 }
-span.rvts103
+span.rvts96
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: #000000;
+}
+span.rvts97
+{
+ font-size: 11pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ color: #000000;
+}
+span.rvts98
+{
+ font-size: 14pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts99
+{
+ font-size: 12pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts100, span.rvts100
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #00a5ff;
+ text-decoration: underline;
+}
+span.rvts101
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #00a5ff;
+}
+span.rvts102
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: transparent;
+}
+a.rvts103, span.rvts103
+{
+ font-size: 11pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ color: #007bbf;
+ text-decoration: underline;
 }
 span.rvts104
 {
@@ -668,256 +673,237 @@ span.rvts104
 }
 span.rvts105
 {
- font-size: 14pt;
+ font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
- font-weight: bold;
- color: #000000;
+ color: transparent;
 }
 span.rvts106
-{
- font-size: 12pt;
- font-family: 'Tahoma', 'Geneva', sans-serif;
- font-weight: bold;
- color: #000000;
-}
-a.rvts107, span.rvts107
-{
- font-size: 12pt;
- font-family: 'Times New Roman', 'Times', serif;
- color: #00a5ff;
- text-decoration: underline;
-}
-span.rvts108
-{
- font-size: 12pt;
- font-family: 'Times New Roman', 'Times', serif;
- color: #00a5ff;
-}
-span.rvts109
-{
- font-size: 12pt;
- font-family: 'Times New Roman', 'Times', serif;
- color: transparent;
-}
-a.rvts110, span.rvts110
-{
- font-size: 11pt;
- font-family: 'Tahoma', 'Geneva', sans-serif;
- color: #007bbf;
- text-decoration: underline;
-}
-span.rvts111
-{
- font-size: 11pt;
- font-family: 'Tahoma', 'Geneva', sans-serif;
- color: #000000;
-}
-span.rvts112
-{
- font-size: 11pt;
- font-family: 'Tahoma', 'Geneva', sans-serif;
- color: transparent;
-}
-span.rvts113
 {
  font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-style: italic;
  color: #000000;
 }
-span.rvts114
+span.rvts107
 {
  font-size: 11pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-weight: bold;
  color: #000000;
 }
-a.rvts115, span.rvts115
+a.rvts108, span.rvts108
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #1155cc;
  text-decoration: underline;
 }
-a.rvts116, span.rvts116
+a.rvts109, span.rvts109
 {
  font-size: 12pt;
  color: transparent;
  text-decoration: underline;
 }
-span.rvts117
+span.rvts110
 {
  font-size: 13pt;
  color: #000000;
 }
-span.rvts118
+span.rvts111
 {
  font-size: 13pt;
  color: #000000;
+}
+span.rvts112
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ color: #000000;
+}
+span.rvts113
+{
+ font-family: 'Inter';
+ font-weight: bold;
+ color: transparent;
+}
+a.rvts114, span.rvts114
+{
+ font-size: 12pt;
+ color: #1155cc;
+ text-decoration: underline;
+}
+a.rvts115, span.rvts115
+{
+ font-size: 11pt;
+ color: #1155cc;
+ text-decoration: underline;
+}
+span.rvts116
+{
+ font-size: 16pt;
+ color: #000000;
+}
+span.rvts117
+{
+ font-size: 11pt;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts118
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ font-weight: bold;
 }
 span.rvts119
 {
  font-size: 12pt;
  font-family: 'Inter';
- color: #000000;
 }
 span.rvts120
 {
+ font-size: 12pt;
  font-family: 'Inter';
- font-weight: bold;
- color: transparent;
+ font-style: italic;
 }
 a.rvts121, span.rvts121
 {
  font-size: 12pt;
- color: #1155cc;
- text-decoration: underline;
+ font-family: 'Inter';
+ text-decoration: none;
 }
 span.rvts122
 {
  font-size: 12pt;
- font-family: 'Times New Roman', 'Times', serif;
- color: #ffffee;
+ font-family: 'Inter';
+ font-weight: bold;
+ color: #f0b400;
 }
 span.rvts123
 {
  font-size: 12pt;
  font-family: 'Inter';
- color: #1155cc;
+ color: #f0b400;
 }
 span.rvts124
 {
  font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
- color: #000000;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #ffffee;
 }
 span.rvts125
 {
- font-size: 11pt;
- font-weight: bold;
- color: #000000;
-}
-span.rvts126
-{
  font-size: 12pt;
  font-family: 'Inter';
- color: #000000;
- text-decoration: underline;
+ color: #1155cc;
 }
-span.rvts127
+span.rvts126
 {
  font-size: 11pt;
  font-style: italic;
  color: #000000;
 }
-a.rvts128, span.rvts128
+a.rvts127, span.rvts127
 {
  font-size: 11pt;
  color: #007bbf;
  text-decoration: underline;
 }
-a.rvts129, span.rvts129
-{
- font-size: 11pt;
- color: #000000;
- text-decoration: underline;
-}
-a.rvts130, span.rvts130
+a.rvts128, span.rvts128
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #000000;
  text-decoration: none;
 }
-span.rvts131
+span.rvts129
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
  color: transparent;
 }
-span.rvts132
+span.rvts130
 {
  font-weight: bold;
  color: #ffffff;
 }
-span.rvts133
+span.rvts131
 {
  color: #ffffff;
 }
-span.rvts134
+span.rvts132
 {
  color: #000000;
 }
-span.rvts135
+span.rvts133
 {
  color: transparent;
+}
+span.rvts134
+{
+ font-size: 9pt;
+ font-family: 'Inter';
+ font-weight: bold;
+ color: transparent;
+}
+span.rvts135
+{
+ font-size: 9pt;
+ font-family: 'Inter';
+ color: #000000;
 }
 span.rvts136
 {
  font-size: 9pt;
  font-family: 'Inter';
- font-weight: bold;
  color: transparent;
 }
 span.rvts137
 {
- font-size: 9pt;
+ font-size: 7pt;
  font-family: 'Inter';
  color: #000000;
 }
 span.rvts138
 {
- font-size: 9pt;
- font-family: 'Inter';
- color: transparent;
-}
-span.rvts139
-{
- font-size: 7pt;
- font-family: 'Inter';
- color: #000000;
-}
-span.rvts140
-{
  font-size: 7pt;
  font-family: 'Inter';
  color: transparent;
 }
-a.rvts141, span.rvts141
+a.rvts139, span.rvts139
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts142
+span.rvts140
 {
  font-size: 9pt;
  font-family: 'Inter';
  color: #000000;
 }
-span.rvts143
+span.rvts141
 {
  font-size: 12pt;
  font-family: 'Inter';
  color: #ff0000;
 }
-span.rvts144
+span.rvts142
 {
  font-size: 12pt;
  font-family: 'Courier New', 'Courier', monospace;
  color: transparent;
 }
-span.rvts145
+span.rvts143
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-style: italic;
  color: transparent;
 }
-span.rvts146
+span.rvts144
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -925,18 +911,18 @@ span.rvts146
  font-weight: bold;
  color: transparent;
 }
-a.rvts147, span.rvts147
+a.rvts145, span.rvts145
 {
  font-size: 12pt;
  color: #000000;
  text-decoration: underline;
 }
-span.rvts148
+span.rvts146
 {
  font-size: 13pt;
  color: transparent;
 }
-span.rvts149
+span.rvts147
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -944,52 +930,52 @@ span.rvts149
  color: #000000;
  text-decoration: underline;
 }
-span.rvts150
+span.rvts148
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #000000;
 }
-a.rvts151, span.rvts151
+a.rvts149, span.rvts149
 {
  font-size: 12pt;
  color: #000000;
  text-decoration: none;
 }
-span.rvts152
+span.rvts150
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: #000000;
 }
-a.rvts153, span.rvts153
+a.rvts151, span.rvts151
 {
  font-size: 12pt;
  font-family: 'Tahoma', 'Geneva', sans-serif;
  color: #007bbf;
  text-decoration: underline;
+}
+span.rvts152
+{
+ font-size: 12pt;
+ font-family: 'Inter';
+ font-weight: bold;
+ color: transparent;
+}
+span.rvts153
+{
+ font-size: 12pt;
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #007bbf;
 }
 span.rvts154
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
- color: transparent;
-}
-span.rvts155
-{
- font-size: 12pt;
- font-family: 'Courier New', 'Courier', monospace;
- color: #007bbf;
-}
-span.rvts156
-{
- font-size: 12pt;
- font-family: 'Inter';
- font-weight: bold;
  color: #00b050;
 }
-a.rvts157, span.rvts157
+a.rvts155, span.rvts155
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -997,13 +983,13 @@ a.rvts157, span.rvts157
  color: #007bbf;
  text-decoration: underline;
 }
-span.rvts158
+span.rvts156
 {
  font-size: 12pt;
  font-family: 'Inter';
  font-weight: bold;
 }
-span.rvts159
+span.rvts157
 {
  font-size: 12pt;
  font-family: 'Inter';
@@ -1124,14 +1110,23 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps16
 {
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ background: #ffffff;
 }
 .rvps17
+{
+ text-align: center;
+ background: #ffffff;
+}
+.rvps18
 {
  text-align: center;
  line-height: 1.80;
  margin: 19px 0px 0px 0px;
 }
-.rvps18
+.rvps19
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1139,18 +1134,18 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.80;
  margin: 19px 0px 0px 0px;
 }
-.rvps19
+.rvps20
 {
  line-height: 1.80;
  margin: 19px 0px 0px 0px;
 }
-.rvps20
+.rvps21
 {
  text-align: center;
  line-height: 1.80;
  background: #ffffff;
 }
-.rvps21
+.rvps22
 {
  text-align: justify;
  text-align-last: auto;
@@ -1159,7 +1154,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 51px 0px 8px 0px;
 }
-.rvps22
+.rvps23
 {
  line-height: 1.80;
  border-color: #ff0000;
@@ -1170,7 +1165,7 @@ p,ul,ol /* Paragraph Style */
  border-bottom: none;
  padding: 5px 5px 5px 5px;
 }
-.rvps23
+.rvps24
 {
  line-height: 1.80;
  border-color: #ff0000;
@@ -1182,7 +1177,7 @@ p,ul,ol /* Paragraph Style */
  background: #ff0000;
  padding: 10px 10px 10px 10px;
 }
-.rvps24
+.rvps25
 {
  text-align: justify;
  text-align-last: auto;
@@ -1190,13 +1185,13 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 19px 0px 8px 0px;
 }
-.rvps25
+.rvps26
 {
  text-align: center;
  line-height: 1.80;
  margin: 0px 0px 0px 48px;
 }
-.rvps26
+.rvps27
 {
  text-align: justify;
  text-align-last: auto;
@@ -1205,7 +1200,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 19px 0px 5px 0px;
 }
-.rvps27
+.rvps28
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1213,7 +1208,7 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.80;
  margin: 20px 0px 20px 0px;
 }
-.rvps28
+.rvps29
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1221,7 +1216,7 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.80;
  margin: 20px 0px 0px 0px;
 }
-.rvps29
+.rvps30
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1229,17 +1224,9 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.80;
  margin: 0px 0px 20px 0px;
 }
-.rvps30
-{
- line-height: 1.80;
-}
 .rvps31
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
  line-height: 1.80;
- margin: 0px 0px 0px 24px;
 }
 .rvps32
 {
@@ -1247,9 +1234,17 @@ p,ul,ol /* Paragraph Style */
  text-justify: inter-word;
  text-align-last: auto;
  line-height: 1.80;
- margin: 0px 0px 0px 48px;
+ margin: 0px 0px 0px 24px;
 }
 .rvps33
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.80;
+ margin: 0px 0px 0px 48px;
+}
+.rvps34
 {
  text-align: center;
  text-indent: 0px;
@@ -1257,42 +1252,35 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 24px 0px 8px 0px;
 }
-.rvps34
+.rvps35
 {
  margin: 0px 12px 0px 12px;
 }
-.rvps35
-{
- text-align: center;
-}
 .rvps36
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
+ text-align: center;
 }
 .rvps37
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 7px 0px 7px 0px;
 }
 .rvps38
-{
- line-height: 1.80;
- margin: 0px 12px 0px 12px;
-}
-.rvps39
-{
- text-align: center;
- line-height: 1.80;
-}
-.rvps40
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
+ margin: 7px 0px 7px 0px;
+}
+.rvps39
+{
+ line-height: 1.80;
+ margin: 0px 12px 0px 12px;
+}
+.rvps40
+{
+ text-align: center;
  line-height: 1.80;
 }
 .rvps41
@@ -1300,74 +1288,71 @@ p,ul,ol /* Paragraph Style */
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 7px 4px 7px 4px;
+ line-height: 1.80;
 }
 .rvps42
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- margin: 0px 0px 0px 24px;
+ margin: 7px 4px 7px 4px;
 }
 .rvps43
+{
+}
+.rvps44
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 24px;
+}
+.rvps45
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  margin: 0px 0px 0px 48px;
 }
-.rvps44
-{
- margin: 0px 0px 0px 48px;
-}
-.rvps45
-{
- line-height: 1.80;
- margin: 0px 0px 0px 48px;
-}
 .rvps46
 {
- line-height: 1.80;
- margin: 0px 0px 0px 96px;
+ margin: 0px 0px 0px 48px;
 }
 .rvps47
 {
  line-height: 1.80;
- margin: 0px 0px 0px 24px;
+ margin: 0px 0px 0px 48px;
 }
 .rvps48
 {
- margin: 16px 0px 4px 0px;
+ line-height: 1.80;
+ margin: 0px 0px 0px 96px;
 }
 .rvps49
+{
+ line-height: 1.80;
+ margin: 0px 0px 0px 24px;
+}
+.rvps50
+{
+ margin: 16px 0px 4px 0px;
+}
+.rvps51
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  margin: 0px 0px 0px 72px;
 }
-.rvps50
+.rvps52
 {
  line-height: 1.80;
  background: #ffffff;
-}
-.rvps51
-{
- text-align: right;
- line-height: 1.80;
-}
-.rvps52
-{
- text-indent: 48px;
 }
 .rvps53
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
+ text-align: right;
  line-height: 1.80;
- background: #ffffff;
- margin: 7px 0px 7px 0px;
 }
 .rvps54
 {
@@ -1376,39 +1361,32 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps55
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
+ text-align: center;
  line-height: 1.80;
- margin: 1px 1px 1px 1px;
+ margin: 0px 0px 0px 24px;
 }
 .rvps56
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
+ text-indent: 48px;
  line-height: 1.80;
- margin: 7px 4px 7px 4px;
 }
 .rvps57
 {
  text-align: center;
+ text-indent: 48px;
  line-height: 1.80;
- margin: 0px 0px 0px 24px;
 }
 .rvps58
 {
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
- text-indent: 48px;
- line-height: 1.80;
+ background: #ffffff;
 }
 .rvps59
 {
- text-align: center;
- text-indent: 48px;
- line-height: 1.80;
+ background: #ffffff;
+ margin: 0px 0px 0px 24px;
 }
 .rvps60
 {
@@ -1416,31 +1394,41 @@ p,ul,ol /* Paragraph Style */
  text-justify: inter-word;
  text-align-last: auto;
  background: #ffffff;
+ margin: 0px 0px 0px 48px;
 }
 .rvps61
 {
- text-align: center;
  background: #ffffff;
+ margin: 0px 0px 0px 48px;
 }
 .rvps62
-{
- background: #ffffff;
-}
-.rvps63
-{
- background: #ffffff;
- margin: 0px 0px 0px 24px;
-}
-.rvps64
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  background: #ffffff;
+ margin: 0px 0px 0px 120px;
+}
+.rvps63
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ background: #ffffff;
+ margin: 0px 0px 0px 24px;
+}
+.rvps64
+{
+ line-height: 1.80;
+ background: #ffffff;
  margin: 0px 0px 0px 48px;
 }
 .rvps65
 {
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.80;
  background: #ffffff;
  margin: 0px 0px 0px 48px;
 }
@@ -1449,81 +1437,50 @@ p,ul,ol /* Paragraph Style */
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- background: #ffffff;
- margin: 0px 0px 0px 120px;
-}
-.rvps67
-{
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
- background: #ffffff;
- margin: 0px 0px 0px 24px;
-}
-.rvps68
-{
- line-height: 1.80;
- background: #ffffff;
- margin: 0px 0px 0px 48px;
-}
-.rvps69
-{
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
- line-height: 1.80;
- background: #ffffff;
- margin: 0px 0px 0px 48px;
-}
-.rvps70
-{
- text-align: justify;
- text-justify: inter-word;
- text-align-last: auto;
  line-height: 1.80;
  margin: 0px 0px 0px 72px;
 }
-.rvps71
+.rvps67
 {
  line-height: 1.80;
  background: #ffffff;
  margin: 0px 0px 0px 144px;
 }
-.rvps72
+.rvps68
 {
  line-height: 1.80;
  background: #ffffff;
  margin: 0px 0px 0px 96px;
 }
-.rvps73
+.rvps69
 {
  line-height: 1.80;
  background: #ffffff;
  margin: 0px 0px 0px 72px;
 }
-.rvps74
+.rvps70
 {
  text-align: center;
  background: #ffffff;
  margin: 0px 0px 0px 120px;
 }
-.rvps75
+.rvps71
 {
  background: #ffffff;
  margin: 0px 0px 0px 176px;
 }
-.rvps76
+.rvps72
 {
  background: #ffffff;
  margin: 0px 0px 0px 152px;
 }
-.rvps77
+.rvps73
 {
  line-height: 1.80;
  background: #ffffff;
  margin: 0px 0px 0px 176px;
 }
-.rvps78
+.rvps74
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1532,7 +1489,7 @@ p,ul,ol /* Paragraph Style */
  background: #ffffff;
  margin: 0px 0px 0px 24px;
 }
-.rvps79
+.rvps75
 {
  text-align: justify;
  text-align-last: auto;
@@ -1540,7 +1497,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 21px 0px 5px 0px;
 }
-.rvps80
+.rvps76
 {
  text-align: justify;
  text-align-last: auto;
@@ -1548,20 +1505,20 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 19px 0px 5px 0px;
 }
-.rvps81
+.rvps77
 {
  text-align: center;
  text-indent: 48px;
  line-height: 1.80;
  margin: 0px 0px 0px 24px;
 }
-.rvps82
+.rvps78
 {
  text-indent: 48px;
  line-height: 1.80;
  margin: 0px 0px 0px 24px;
 }
-.rvps83
+.rvps79
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1569,7 +1526,7 @@ p,ul,ol /* Paragraph Style */
  line-height: 2.16;
  background: #ffffff;
 }
-.rvps84
+.rvps80
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1577,7 +1534,7 @@ p,ul,ol /* Paragraph Style */
  white-space: nowrap;
  margin: 0px 0px 0px 40px;
 }
-.rvps85
+.rvps81
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1587,7 +1544,7 @@ p,ul,ol /* Paragraph Style */
  background: #ffffff;
  margin: 0px 0px 0px 40px;
 }
-.rvps86
+.rvps82
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1597,26 +1554,26 @@ p,ul,ol /* Paragraph Style */
  background: #ffffff;
  margin: 0px 0px 0px 64px;
 }
-.rvps87
+.rvps83
 {
- text-align: center;
- margin: 7px 0px 7px 0px;
+ text-indent: 48px;
 }
-.rvps88
+.rvps84
 {
  text-align: justify;
- text-justify: inter-word;
  text-align-last: auto;
- line-height: 1.80;
- margin: 7px 0px 7px 0px;
+ text-indent: 0px;
+ line-height: 1.38;
+ break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 24px 0px 8px 0px;
 }
-.rvps89
+.rvps85
 {
  text-align: center;
- line-height: 1.80;
- margin: 7px 0px 7px 0px;
+ text-indent: 48px;
 }
-.rvps90
+.rvps86
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1625,7 +1582,42 @@ p,ul,ol /* Paragraph Style */
  white-space: nowrap;
  margin: 0px 0px 0px 40px;
 }
+.rvps87
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.80;
+ margin: 1px 1px 1px 1px;
+}
+.rvps88
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.80;
+ margin: 7px 4px 7px 4px;
+}
+.rvps89
+{
+ text-align: center;
+ margin: 7px 0px 7px 0px;
+}
+.rvps90
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.80;
+ margin: 7px 0px 7px 0px;
+}
 .rvps91
+{
+ text-align: center;
+ line-height: 1.80;
+ margin: 7px 0px 7px 0px;
+}
+.rvps92
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1635,7 +1627,7 @@ p,ul,ol /* Paragraph Style */
  padding: 1px 1px 10px 1px;
  margin: 10px 0px 0px 0px;
 }
-.rvps92
+.rvps93
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1644,7 +1636,7 @@ p,ul,ol /* Paragraph Style */
  background: #ffffff;
  padding: 0px 1px 10px 1px;
 }
-.rvps93
+.rvps94
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1654,7 +1646,7 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 1px 1px 1px;
  margin: 0px 0px 10px 0px;
 }
-.rvps94
+.rvps95
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1663,7 +1655,7 @@ p,ul,ol /* Paragraph Style */
  white-space: nowrap;
  margin: 0px 0px 0px 32px;
 }
-.rvps95
+.rvps96
 {
  text-align: justify;
  text-align-last: auto;
@@ -1671,13 +1663,13 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
 }
-.rvps96
+.rvps97
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
 }
-.rvps97
+.rvps98
 {
  text-align: justify;
  text-justify: inter-word;
@@ -1685,24 +1677,24 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.80;
  margin: 0px 0px 13px 0px;
 }
-.rvps98
+.rvps99
 {
  text-align: center;
  background: #000000;
 }
-.rvps99
-{
- margin: 0px 0px 0px 24px;
-}
 .rvps100
 {
- text-align: center;
  margin: 0px 0px 0px 24px;
 }
 .rvps101
 {
+ text-align: center;
+ margin: 0px 0px 0px 24px;
 }
 .rvps102
+{
+}
+.rvps103
 {
  text-align: justify;
  text-align-last: auto;
@@ -1711,14 +1703,14 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 15px 0px 15px 0px;
 }
-.rvps103
+.rvps104
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  line-height: 1.80;
 }
-.rvps104
+.rvps105
 {
  text-align: justify;
  text-align-last: auto;
@@ -1727,23 +1719,11 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 22px 0px 16px 0px;
 }
-.rvps105
+.rvps106
 {
  text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
- line-height: 1.80;
- border-color: #dddddd;
- border-style: solid;
- border-width: 1px;
- border-top: none;
- border-right: none;
- border-left: none;
- padding: 5px 0px 5px 0px;
- margin: 0px 0px 0px 3px;
-}
-.rvps106
-{
  line-height: 1.80;
  border-color: #dddddd;
  border-style: solid;
@@ -1756,16 +1736,19 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps107
 {
- text-align: left;
- text-indent: 0px;
  line-height: 1.80;
- padding: 0px 0px 0px 0px;
- margin: 22px 0px 16px 0px;
+ border-color: #dddddd;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 5px 0px 5px 0px;
+ margin: 0px 0px 0px 3px;
 }
 .rvps108
 {
- text-align: justify;
- text-align-last: auto;
+ text-align: left;
  text-indent: 0px;
  line-height: 1.80;
  padding: 0px 0px 0px 0px;
@@ -1776,16 +1759,15 @@ p,ul,ol /* Paragraph Style */
  text-align: justify;
  text-align-last: auto;
  text-indent: 0px;
- background: #ffffff;
+ line-height: 1.80;
  padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 0px;
+ margin: 22px 0px 16px 0px;
 }
 .rvps110
 {
  text-align: justify;
  text-align-last: auto;
  text-indent: 0px;
- line-height: 1.80;
  background: #ffffff;
  padding: 0px 0px 0px 0px;
  margin: 0px 0px 0px 0px;
@@ -1798,24 +1780,25 @@ p,ul,ol /* Paragraph Style */
  line-height: 1.80;
  background: #ffffff;
  padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 24px;
+ margin: 0px 0px 0px 0px;
 }
 .rvps112
 {
  text-align: justify;
  text-align-last: auto;
  text-indent: 0px;
+ line-height: 1.80;
+ background: #ffffff;
  padding: 0px 0px 0px 0px;
- margin: 22px 0px 16px 0px;
+ margin: 0px 0px 0px 24px;
 }
 .rvps113
 {
  text-align: justify;
  text-align-last: auto;
  text-indent: 0px;
- line-height: 1.80;
  padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 0px;
+ margin: 22px 0px 16px 0px;
 }
 .rvps114
 {
@@ -1829,11 +1812,20 @@ p,ul,ol /* Paragraph Style */
 .rvps115
 {
  text-align: justify;
+ text-align-last: auto;
+ text-indent: 0px;
+ line-height: 1.80;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps116
+{
+ text-align: justify;
  text-justify: inter-word;
  text-align-last: auto;
  text-indent: 48px;
 }
-.rvps116
+.rvps117
 {
  text-align: justify;
  text-justify: inter-word;

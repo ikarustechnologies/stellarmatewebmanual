@@ -174,10 +174,10 @@
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="StellarMateApp.html">StellarMate App</a></li><li><a href="Ekos.html">Ekos</a></li><li><a href="Modules.html">Modules</a></li><li><a href="Focus.html">Focus</a></li>
+                        <li><a href="StellarMateApp.html">StellarMate App</a></li><li><a href="Focus.html">Focus</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Focus.html" title="Focus" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Mechanics.html" title="Mechanics" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Align.html" title="Align" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Focus.html" title="Focus" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Algorithms.html" title="Algorithms" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="UpdateParameters.html" title="Update Parameters" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -188,34 +188,14 @@
 
             <div class="main-content">
                 
-<p class="rvps15"><img alt="" style="width : 517px; height : 364px; padding : 1px;" src="lib/advisor1.jpg"></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps30"><span class="rvts26">The purpose of Focus Advisor is to help people struggling to use the Focus module within Ekos. The Focus module is functionally rich and contains a lot of parameters that need to be set self-consistently to achieve good results. Focus Advisor is designed to help with basic parameter setup that should achieve focus. It is not designed to achieve the best possible focus for your equipment; you will have to experiment with your setup to achieve that. But Focus Advisor provides a place to start that experimentation.</span></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 523px; height : 367px; padding : 1px;" src="lib/update_parameters.jpg"></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps30"><span class="rvts26">So Focus Advisor is aimed towards the less experienced users.</span></p>
-<p class="rvps30"><span class="rvts26">If Focus Advisor does not appear to give good results on your setup why not start a discussion on the forum so it can be enhanced to give better results in the future. This way it will build over time to be more useful</span></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps30"><span class="rvts26">1. </span><span class="rvts28">Update parameters</span><span class="rvts26">: Optimize the Focus parameters depending on your current camera and telescope.</span></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps30"><span class="rvts26">2.</span><span class="rvts28"> Find Stars</span><span class="rvts26">:&nbsp;</span></p>
-<p class="rvps30"><span class="rvts26">This function is designed to search the range of motion of the focuser to locate stars. If stars are already visible in subframes then there is no need to run this function. The algorithm will start at the current focuser position and search an area outward then inward of the starting position looking for stars. If no stars are found it will continue expending the search area whilst staying within the allowed range of motion of the focuser.</span></p>
-<p class="rvps30"><span class="rvts26">Eventually either stars will be located or the whole range of motion of the focuser will have been searched without locating any stars. In this latter case, the step size will be halved and the search restarted from the beginning</span></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 543px; height : 381px; padding : 1px;" src="lib/find_stars.jpg"></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps30"><span class="rvts26">3. </span><span class="rvts28">Coarse adjustment</span><span class="rvts26">:&nbsp;</span></p>
-<p class="rvps30"><span class="rvts26">This function is designed to provide coarse adjustment to the start position, Step Size and AF Overscan (or backlash) fields. The purpose is to provide "good enough" values for these parameters in order for the next stage, Fine Adjustment to work. An iterative process is used to home in on acceptable values.</span></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 541px; height : 380px; padding : 1px;" src="lib/coarse_adjustment.jpg"></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps30"><span class="rvts26">4. </span><span class="rvts28">Fine adjustment</span><span class="rvts26">:&nbsp;</span></p>
-<p class="rvps30"><span class="rvts26">This function is designed to provide fine adjustment to the start position, Step Size and AF Overscan (or backlash) fields. Fine Adjustment runs Autofocus including curve fitting and analyses the result to determine whether or not it can be improved. If so, it adjusts parameters and re-runs. An iterative process is used to home in on parameter values.</span></p>
-<p class="rvps30"><span class="rvts26"><br/></span></p>
-<p class="rvps15"><img alt="" style="width : 545px; height : 383px; padding : 1px;" src="lib/fine_adjustment.jpg"></p>
-<p class="rvps30"><span class="rvts26"></span><span class="rvts6"></span></p>
+<p class="rvps31"><span class="rvts32">The Focus Advisor dialog is a feature to assist with setting up of focus parameters. To use, select the required options and press Run. The purpose of Focus Advisor is to help people to use the Focus module within Ekos. The Focus module is functionally rich and contains a lot of parameters that need to be set self-consistently to achieve good results. Focus Advisor is designed to help with basic parameter setup that should achieve focus. It is not designed to achieve the best possible focus for your equipment; you will have to experiment with your setup to achieve that. But Focus Advisor provides a place to start that experimentation. Focus Advisor is aimed towards the less experienced users. If Focus Advisor does not appear to give good results on your setup why not start a discussion on the forum so it can be enhanced to give better results in the future. This way it will build over time to be more useful. When you click on Focus Advisor it works out a series of parameter recommendations based on the Optical Train you are using in Focus. There are 4 checkboxes on display that by default are all checked. Some can be toggled off if required. For example, Update Parameters will reset most parameters to standard settings. Once run, it is not necessary to repeatedly run this option so the associated checkbox can be toggled off for subsequent runs.</span></p>
+<p class="rvps31"><span class="rvts26"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps31 noindent"><span class="rvts117">Run</span><span class="rvts32">: Press this button to run Focus Advisor for the checked options. The V-Curve will be dynamically updated with progress, as will the Focus Advisor dialog.</span></li>
+ <li class="rvps31 noindent"><span class="rvts117">Stop</span><span class="rvts32">: Press this button to stop Focus Advisor. Note that the Stop button on the main Focus panel does the same thing.&nbsp;</span></li>
+ <li class="rvps31 noindent"><span class="rvts117">Close</span><span class="rvts32">: Press this button to close the Focus Advisor dialog. The following checkbox options are available:</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             
