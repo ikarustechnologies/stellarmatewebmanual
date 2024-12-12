@@ -174,7 +174,7 @@
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="StellarMateApp.html">StellarMate App</a></li><li><a href="Focus.html">Focus</a></li>
+                        <li><a href="StellarMateApp.html">StellarMate App</a></li><li><a href="Ekos.html">Ekos</a></li><li><a href="Modules.html">Modules</a></li><li><a href="Focus.html">Focus</a></li>
                     </ol>
                     <div class="nav-arrows">
                         <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Focus.html" title="Focus" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Theory.html" title="Theory" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Advisor.html" title="Advisor" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
@@ -189,7 +189,7 @@
             <div class="main-content">
                 
 <p class="rvps5"><span class="rvts32">Ekos supports 4 different focus algorithms: Linear 1 Pass, Linear, Iterative, Polynomial. Linear 1 Pass is the recommended algorithm.</span></p>
-<h2 class="rvps84"><span class="rvts0"><span class="rvts116">Linear 1 Pass</span></span></h2>
+<h2 class="rvps58"><span class="rvts0"><span class="rvts86">Linear 1 Pass</span></span></h2>
 <p class="rvps5"><span class="rvts32">In the Linear 1 Pass algorithm, Ekos establishes a V-Curve and fits a curve to the data to find the focus solution. It then moves to the calculated minimum. Key features include:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps5 noindent"><span class="rvts32">The algorithm compensates for focuser backlash.&nbsp;</span></li>
@@ -198,16 +198,16 @@
  <li class="rvps5 noindent"><span class="rvts32">The algorithm is highly configurable with user control over many parameters like step size, number of steps and how to deal with outliers in the datapoints.</span></li>
 </ul>
 <p class="rvps5"><span class="rvts32">Providing the focuser behaves in a repeatable way, i.e. when commanded to go to position X, it always goes to the same position, then this algorithm will be the best to use.</span></p>
-<h2 class="rvps84"><span class="rvts0"><span class="rvts116">Linear</span></span></h2>
+<h2 class="rvps58"><span class="rvts0"><span class="rvts86">Linear</span></span></h2>
 <p class="rvps5"><span class="rvts32">In the Linear algorithm, Ekos steps outward from its starting point then moves inward taking regular datapoints through the point of optimum focus and then further inward, to draw a V-Curve. It then fits a quadratic curve to the datapoints and calculates the point of optimum focus. It then moves out again past the point of optimum focus, halves the stepsize and moves in again for a second pass. It looks to follow the curve from the first pass and find the minimum HFR. Due to randomness in the HFR measurements it uses the % tolerance to help decide when it has found a solution. Key features include: – The algorithm compensates for focuser backlash. – The algorithm is slow, taking 2 passes to identify optimum focus. – The algorithm uses curve fitting to pinpoint the optimum focus position in pass 1, but then uses % Tolerance to try to stop as close as possible to this HFR on pass 2. – The algorithm is highly configurable with user control over many parameters like step size and number of steps. If the focuser behaves in an inconsistent way, i.e. when commanded to go to position X, there is variability in the position it goes to, then this algorithm will be the best to use as it has some built in tolerance for this variability</span></p>
-<h2 class="rvps84"><span class="rvts0"><span class="rvts116">Iterative</span></span></h2>
+<h2 class="rvps58"><span class="rvts0"><span class="rvts86">Iterative</span></span></h2>
 <p class="rvps5"><span class="rvts32">In the Iterative algorithm, Ekos operates iteratively by moving in discrete steps, decided initially by the user configurable step size and later by the slope of the V-Curve, to get closer to the optimal focus position where it then changes gears and performs smaller, finer moves to reach the optimal focus. The focus process stops when the measured HFR is within the configurable tolerance of the minimum recorded HFR in the process. In other words, whenever the process starts searching for a solution within a narrowly limited range, it checks if the current HFR is within % difference compared to the minimum HFR recorded, and if this condition is met then the Autofocus process is considered successful. The default value is set to 1% and is sufficient for most situations. The Step options specify the number of initial ticks the focuser has to move. If the image is severely out of focus, we set the step size high (i.e. greater than 250). On the other hand, if the focus is close to optimal focus, we set the step size to a more reasonable range (less than 50). It takes trial and error to find the best starting tick, but Ekos only uses that for the first focus motion, as all subsequent motions depend on the V-Curve slope calculations. Key features include:&nbsp;</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps5 noindent"><span class="rvts32">The algorithm relies on the focuser having well controlled backlash.&nbsp;</span></li>
  <li class="rvps5 noindent"><span class="rvts32">The algorithm can be fast using a minimum number of steps.&nbsp;</span></li>
  <li class="rvps5 noindent"><span class="rvts32">The algorithm works on a "good enough" paradigm whereby it stops when the HFR is within % Tolerance of the perceived minimum.</span></li>
 </ul>
-<h2 class="rvps84"><span class="rvts0"><span class="rvts116">Polynomial</span></span></h2>
+<h2 class="rvps58"><span class="rvts0"><span class="rvts86">Polynomial</span></span></h2>
 <p class="rvps5"><span class="rvts32">In the Polynomial algorithm, the process starts off in Iterative mode, but once we cross to the other side of the V-Curve (once HFR values start increasing again after decreasing for a while), then Ekos performs quadratic curve fitting to find a solution that predicts the minimum possible HFR position. Key features include:&nbsp;</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps5 noindent"><span class="rvts32">The algorithm relies on the focuser having well controlled backlash.&nbsp;</span></li>
