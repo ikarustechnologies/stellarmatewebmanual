@@ -1,6 +1,0 @@
-.. section:: Getting Started
-    
-After you subscribe to EkosLive (Basic or Pro plans), you will be redirected to the EkosLive URL at https://live.stellarmate.com. Bookmark this URL for easy access in the future.
-
-.. include:: getting-started/connecting-to-cloud.rst
-.. include:: getting-started/ekoslive-web-application.rst
