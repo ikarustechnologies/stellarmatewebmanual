@@ -25,8 +25,8 @@
 
 .. raw:: latex
 
-   {\large\centering Version 2.6\par}
-   {\large\centering Released 2025.01.30\par}
+   {\large\centering Version 3.4\par}
+   {\large\centering Released 2025.03.05\par}
 
 |vspace2|
 
@@ -126,7 +126,6 @@ This manual covers everything from basic setup to advanced imaging techniques, h
    manual/serial-port-assistant/index
    manual/stellarmate-control-panel/index
    manual/stellarmate-tools/index
-   manual/ekoslive/index
    manual/using-gps/index
    manual/support
 

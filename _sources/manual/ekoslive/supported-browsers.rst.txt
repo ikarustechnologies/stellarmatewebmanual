@@ -1,6 +1,0 @@
-.. section:: Supported Browsers
-    
-EkosLive is compatible with many modern browsers on desktop & mobile. However, we highly recommend using Google Chrome on all platforms to get the best experience.
-
-Firefox is unfortunately not supported at the moment since it does not support dual websocket technology that is employed in EkosLive.
-

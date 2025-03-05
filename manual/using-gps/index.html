@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>22. Using GPS &mdash; StellarMate Manual 3.4 documentation</title>
+  <title>21. Using GPS &mdash; StellarMate Manual 3.4 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=b17bc765" />
@@ -21,13 +21,14 @@
       <script src="../../_static/doctools.js?v=888ff710"></script>
       <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../../_static/modal.js?v=cf2335c0"></script>
+      <script src="../../_static/setLightMode.js?v=aad5bc58"></script>
       <script src="../../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
       <script src="../../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="23. Support" href="../support.html" />
-    <link rel="prev" title="21. EkosLive" href="../ekoslive/index.html" /> 
+    <link rel="next" title="22. Support" href="../support.html" />
+    <link rel="prev" title="20. StellarMate Tools" href="../stellarmate-tools/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -381,23 +382,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../stellarmate-tools/index.html#updating-stellarmate">20.1. Updating StellarMate</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ekoslive/index.html">21. EkosLive</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ekoslive/index.html#how-does-it-work">21.1. How does it work?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ekoslive/index.html#supported-browsers">21.2. Supported Browsers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ekoslive/index.html#getting-started">21.3. Getting Started</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../ekoslive/index.html#connecting-ekos-to-the-cloud">21.3.1. Connecting Ekos to the Cloud</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ekoslive/index.html#using-ekoslive-web-application">21.3.2. Using EkosLive Web Application</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">21. Using GPS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#selecting-a-gps-dongle">21.1. Selecting a GPS Dongle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-gps-in-stellarmate">21.2. Configuring GPS in StellarMate</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../ekoslive/index.html#ekoslive-faq">21.4. EkosLive FAQ</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">22. Using GPS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#selecting-a-gps-dongle">22.1. Selecting a GPS Dongle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuring-gps-in-stellarmate">22.2. Configuring GPS in StellarMate</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">23. Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">22. Support</a></li>
 </ul>
 
         </div>
@@ -414,7 +404,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><span class="section-number">22. </span>Using GPS</li>
+      <li class="breadcrumb-item active"><span class="section-number">21. </span>Using GPS</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/manual/using-gps/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -425,11 +415,11 @@
            <div itemprop="articleBody">
              
   <section id="using-gps">
-<h1><span class="section-number">22. </span>Using GPS<a class="headerlink" href="#using-gps" title="Link to this heading"></a></h1>
+<h1><span class="section-number">21. </span>Using GPS<a class="headerlink" href="#using-gps" title="Link to this heading"></a></h1>
 <p>Time and Location settings are critical to the proper operation of StellarMate. This is even more apparent if you’re on the go with a mobile setup. For a fixed-observatory, the only factor you have to worry about synchronizing is time. On the other hand, a mobile setup requires both location and time settings to be accurate.</p>
 <p>The time &amp; location settings are not only used for KStars, but also to synchronize the mount and any other devices with time &amp; location dependencies. For example, some weather drivers depend on location to query and retrieve information about the current weather.</p>
 <section id="selecting-a-gps-dongle">
-<h2><span class="section-number">22.1. </span>Selecting a GPS Dongle<a class="headerlink" href="#selecting-a-gps-dongle" title="Link to this heading"></a></h2>
+<h2><span class="section-number">21.1. </span>Selecting a GPS Dongle<a class="headerlink" href="#selecting-a-gps-dongle" title="Link to this heading"></a></h2>
 <p>Any U-Blox based GPS USB dongle would work with StellarMate. Here are a few from Amazon:</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -441,7 +431,7 @@
 <p>Most of these dongles need to be outdoors to receive any satellite signals. They can be connected to any USB slot in StellarMate.</p>
 </section>
 <section id="configuring-gps-in-stellarmate">
-<h2><span class="section-number">22.2. </span>Configuring GPS in StellarMate<a class="headerlink" href="#configuring-gps-in-stellarmate" title="Link to this heading"></a></h2>
+<h2><span class="section-number">21.2. </span>Configuring GPS in StellarMate<a class="headerlink" href="#configuring-gps-in-stellarmate" title="Link to this heading"></a></h2>
 <p>After plugging the USB dongle for the first time, you need to do the following:</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -458,8 +448,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../ekoslive/index.html" class="btn btn-neutral float-left" title="21. EkosLive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../support.html" class="btn btn-neutral float-right" title="23. Support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../stellarmate-tools/index.html" class="btn btn-neutral float-left" title="20. StellarMate Tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../support.html" class="btn btn-neutral float-right" title="22. Support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
