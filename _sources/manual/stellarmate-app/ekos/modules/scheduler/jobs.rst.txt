@@ -1,0 +1,44 @@
+
+.. subsection::Jobs :level:2
+
+You must select the **Target** and **Sequence** before you can add a job to the Scheduler. When the scheduler starts, it evaluates all jobs in accord to the conditions and constraints specified and attempts to select the best job to execute. Selection of the job depends on a simple heuristic algorithm that scores each job given the conditions and constraints, each of which is weighted accordingly.
+
+.. image:: /_static/images/ekos/modules/scheduler/jobs/add-job.jpeg
+    :align: center
+    :width: 400px
+
+You can press on the Add button to Add a Scheduler Job. Jobs are on the right side of the screen.
+
+.. image:: /_static/images/ekos/modules/scheduler/jobs/details.jpg
+    :align: center
+    :width: 400px
+
+Above, you can see the details of the Job. Its specifies the following:
+    * Name of the Target object
+    * Current Status of the Job
+    * Altitude in degrees
+    * Starting time of the Job
+    * Completion time of the Job
+
+.. image:: /_static/images/ekos/modules/scheduler/jobs/edit.jpg
+    :align: center
+    :width: 400px
+
+Edit a Job when it is not running.
+
+.. image:: /_static/images/ekos/modules/scheduler/jobs/edit-mode.jpg
+    :align: center
+    :width: 400px
+
+Target, Sequence and all other settings can be updated.
+
+.. image:: /_static/images/ekos/modules/scheduler/jobs/complete.jpg
+    :align: center
+    :width: 400px
+
+Once the Job is completed, the linear progress is turned to green and JOb status is also updated when it is completed.
+
+
+.. image:: /_static/images/ekos/modules/scheduler/scheduler.jpg
+    :align: center
+    :width: 400px

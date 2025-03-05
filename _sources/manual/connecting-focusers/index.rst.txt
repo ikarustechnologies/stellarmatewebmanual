@@ -1,0 +1,10 @@
+.. chapter:: Connecting Focusers
+
+StellarMate supports a broad range of focusers from professional focusers to DYI types. Most focusers fall in the following two categories:
+    **Absolute/Relative Focusers:** Absolute focusers are usually stepper motors that can go to a specific step that is remembered across power cycles. This is the recommened type to use since Auto Focus operations are reliable with this type of focuser.
+    **DC Focusers:** DC Focusers are open loop simple motors in which the program can control the speed and direction of the focuser, but not its exact position. These exist in cheap focusers and DSLR cameras. It is generally recommended to avoid such focusers.
+
+To check if your focuser is supported, please visit the INDI Focuser Portal. Check the documentation for your focuser before you operate it for the first time.
+
+.. include:: ./serial-usb.rst
+.. include:: ./focusers.rst

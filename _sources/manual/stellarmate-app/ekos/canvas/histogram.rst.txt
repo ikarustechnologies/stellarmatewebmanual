@@ -1,0 +1,18 @@
+.. subsection:: Histogram :level:1
+
+**Histogram**
+When available, clicking the histogram button in the main image view toggles the non-linear histogram. The histogram is generated for both mono and rgb images.
+
+.. image:: /_static/images/ekos/modules/canvas/histogram-normal.jpg
+   :width: 400px
+   :align: center
+
+The sliders in the middle control the shadow, midtone and clipping parameters.
+You can move them, left or right, and as you move them, a real-time (but low resolution, for compute reasons) preview of the stretch is shown.
+When you let go of the slider, the setting is kept, but the button returns to the middle of its range so that you can make further adjustments--there is very little screen space.
+You can tell the setting is kept as the number shown should not change after you release the button. Think of these as "relative" sliders.
+Also, when you let go of the slider, you also get the full-resolution image, instead of the real-time approximation.
+
+.. image:: /_static/images/ekos/modules/canvas/histogram-after.jpg
+   :width: 400px
+   :align: center

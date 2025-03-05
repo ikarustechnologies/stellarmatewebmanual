@@ -1,0 +1,8 @@
+.. subsection:: StellarMate Address
+Whether you are accessing StellarMate from PC, Mac, or Mobile, you can always reach it by the address **stellarmate.local** This is the address that should be used in Ekos if you are using Ekos on a PC/Mac to connect remotely to Ekos. To access StellarMate Web Manager, type in **stellarmate.local:8624**
+
+**Note**
+
+
+
+When accessing StellarMate directly via Hotspot (Access Point), the unit IP address is always 10.250.250.1. Therefore, if you are having an issue accessing the unit via its hostname, you can simply use the IP address in your browser to access StellarMate Web Manager (http://10.250.250.1:8624).

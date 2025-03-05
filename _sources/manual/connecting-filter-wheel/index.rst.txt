@@ -1,0 +1,11 @@
+.. chapter:: Connecting Filter Wheels
+
+StellarMate supports a broad range of filter wheels. Most filter wheels fall in the following two categories:
+
+    **Standalone:** The filter wheel operates independently from any other device and has its own USB connection to StellarMate/PC. The filter wheel is operated from a dedicated INDI driver.
+    **Internal:** Several camera models ship with an internal Color Filter Wheel (CFW) and therefore operating the filter wheel happens in the INDI camera driver. The INDI control panel would include an additional Filter tab whereas the filter slots and corresponding designations can be updated.
+To check if your filter wheel is supported, please visit the INDI Filter Wheel Portal. Check the documentation for your filter wheel before you operate it for the first time.
+
+.. include:: ./usb-serial.rst
+.. include:: ./operating-fw.rst
+.. include:: ./filter-wheel.rst

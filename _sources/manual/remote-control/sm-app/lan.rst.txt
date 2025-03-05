@@ -1,0 +1,3 @@
+.. subsection:: LAN
+StellarMate can be connected to your local network (LAN) either wirelessly or via wired Ethernet connection. This is done either via configuring StellarMate Controller to run in Station Mode (i.e. Home WiFi) or via connecting an Ethernet cable to the local network. Wired connections are highly recommended as they offer the best reliability and speed over wireless connections.
+Once connected to the local network, use StellarMate App to RESCAN for StellarMate devices on the network. Always make sure that your Phone/Tablet is connected to the same network where StellarMate resides.

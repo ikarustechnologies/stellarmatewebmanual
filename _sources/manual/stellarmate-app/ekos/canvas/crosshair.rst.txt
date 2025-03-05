@@ -1,0 +1,7 @@
+.. subsection:: Crosshair :level: 1
+**Crosshair**
+Use crosshair on captured image, which is appeared on the center of captured image. Once it is toggled, you can see the crosshair on the image.
+
+.. image:: /_static/images/ekos/crosshair.jpeg
+   :width: 400px
+   :align: center

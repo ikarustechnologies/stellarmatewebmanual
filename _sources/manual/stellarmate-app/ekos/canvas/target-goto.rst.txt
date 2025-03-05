@@ -1,0 +1,19 @@
+.. subsection::Target GoTo :level: 1
+**Canvas on Main Image**
+You can center the mount to a specific target in the main image if plate-solving was successful. From Ekos Align module, Capture and Solve an image. If successful, an orange align icon is displayed in the Main Image View indicating that solving is successful. For any subsequent images captured and displayed in the Main Image View, you may now select the target by tapping on it. A red bullseye animation designates the target.
+
+.. image:: /_static/images/ekos/modules/align/align_capture.jpg
+   :width: 400px
+   :align: center
+Tap and hold the target for approximately one second to command the mount to slew. If successful, the indicator icon changes to yellow and once motion is complete, it switches to green. Capture a preview to verify the mount indeed centered the target as desired. Repeat if necessary. Hold on your desired target, mount will star moving to that specifc target. Yellow animation will be appeared while it in in process. Can also be seen in the below images.
+
+.. image:: /_static/images/ekos/modules/canvas/target-goto/goto.jpg
+   :width: 400px
+   :align: center
+
+On success, the animation will turn to green.
+On capture new image, the target lock animation will be reset to default.
+
+.. image:: /_static/images/ekos/modules/canvas/target-goto/done.jpg
+   :width: 400px
+   :align: center

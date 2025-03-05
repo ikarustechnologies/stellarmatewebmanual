@@ -1,0 +1,10 @@
+.. subsection::Camera:level:1
+Camera quick controls allows you to control your camera quickly and easily.
+You can quickly change **Settings** and capture a **Preview** image, or start a continuous loop **Framing** until explicitly stopped. 
+Stream and **Record** videos if supported by your camera.
+Get amazing pictures with **Livestacking**
+
+.. include:: ekos/quickcontrols/camera/previewframing.rst
+.. include:: ekos/quickcontrols/camera/videorecording/index.rst 
+.. include:: ekos/quickcontrols/camera/livestacking.rst
+.. include:: ekos/quickcontrols/camera/setting.rst 

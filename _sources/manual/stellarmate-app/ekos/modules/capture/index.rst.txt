@@ -1,0 +1,37 @@
+.. subsection::Capture:level: 1
+
+The Capture module is the primary interface for managing imaging tasks on StellarMate. It allows you to preview images, configure settings, create capture sequences, and configure imaging settings.
+
+.. image:: /_static/images/ekos/modules/capture/capture.jpg
+    :align: center
+    :width: 400px
+
+All captures are performed using an Optical Train. An optical train is a collection of devices including camera, telescope, mount, filter wheel, and other devices that work together to capture images.
+
+.. image:: /_static/images/ekos/modules/capture/train.jpg
+    :align: center
+    :width: 400px
+
+The terms Sequence and Job are used interchangeably in this document.
+
+**Sequences** are a collection of **capture jobs**. Each job is defined by a **preset** that specifies the imaging **parameters**. These parameters include **exposure time, binning, filter,** and **other settings**.
+
+To create a new sequence, select a **preset** and specify the desired number of images to capture (count). Then, tap "Add to Sequence" to add the job to the Sequence Queue.
+
+.. image:: /_static/images/ekos/modules/capture/add-sequence.jpg
+    :align: center
+    :width: 400px
+
+This structure allows you to efficiently capture multiple images with consistent settings, making it easier to manage your astro-photography sessions.
+The left side of the Capture module is used to configure settings, optical trains, and presets, while the right side displays a list of sequence jobs.
+
+.. image:: /_static/images/ekos/modules/capture/left-side.jpg
+    :align: center
+    :width: 400px
+
+.. include:: ekos/modules/capture/preset.rst
+.. include:: ekos/modules/capture/sequence.rst
+.. include:: ekos/modules/capture/darklibrary.rst
+.. include:: ekos/modules/capture/rotatorcontrol.rst
+.. include:: ekos/modules/capture/files.rst
+.. include:: ekos/modules/capture/settings/index.rst

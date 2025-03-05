@@ -1,0 +1,24 @@
+.. chapter:: Devices
+    * Telescope
+    * Cameras
+    * Focusers
+    * Filter wheels
+    * Auxiliary
+    * Adaptive optics
+    * Weather stations
+    * Covers & light sources
+    * Domes
+    * Controllers
+    * Spectrographs
+
+.. include:: ./mounts/index.rst
+.. include:: ./cameras.rst
+.. include:: ./focusers.rst
+.. include:: ./filter-wheels.rst
+.. include:: ./auxiliary.rst
+.. include:: ./adaptive-optics.rst
+.. include:: ./weather-station.rst
+.. include:: ./cover-light-sources.rst
+.. include:: ./domes.rst
+.. include:: ./controllers.rst
+.. include:: ./spectrographs.rst

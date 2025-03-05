@@ -1,0 +1,10 @@
+.. subsection:: Omegon
+
+Omegon mounts are a collection of Alt-Az and Equatorial mounts for visual observation and astrophotography.
+
+
++---------+-----------------------------------------------+---------+----------+
+| Mount   | Driver                                        | Devices | Comments |
++=========+===============================================+=========+==========+
+| EQ500X  | indi_eq500x_telescope                         |         |          |
++---------+-----------------------------------------------+---------+----------+

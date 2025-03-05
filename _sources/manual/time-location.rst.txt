@@ -1,0 +1,39 @@
+.. chapter:: Time & Location
+
+In order to ensure smooth and accurate operation of the astrophotography workflow, both time and location information must be precise across all devices in the system. Therefore, the time and location on StellarMate must be in sync with the time and location on all connected devices, especially mounts.
+
+.. note::
+
+   For users who installed StellarMate OS on their own Raspberry Pi 4 SBCs, it’s recommended to invest in installing a DS3231 RTC module or use a GPS dongle.
+
+StellarMate Pro is equipped with a GPS receiver and can provide accurate time and location data. For fixed observatory controllers not equipped with a GPS receiver, an RTC (Real Time Clock) is sufficient to keep track of the time when the unit is switched off. Furthermore, if StellarMate is always connected to the internet, then it is always in sync with online NTP servers without any further configuration.
+
+For GPS-based solutions, there are several options available:
+
+**Tablet/Mobile GPS:** The StellarMate App relays the tablet/mobile time and location information to StellarMate. Every time the SM App is connected to SM Plus, it automatically synchronizes both time and location information accordingly.
+
+.. image:: /_static/images/time_location_tablet.jpg
+  :width: 400px
+  :align: center
+
+**External GPS Dongle**: StellarMate Controllers supports a number of dedicated external GPS dongles connected via USB. Once connected, select the GPSD driver in your equipment profile in order to utilize the GPS.
+
+.. image:: /_static/images/time_location_gps.jpg
+  :width: 400px
+  :align: center
+
+**Mount with GPS**: Some mounts have internal or external GPS adapters. These adapters cannot be connected directly to StellarMate; they are used to update the time and location on the mount handset. You can select Mount as the source of data if desired.
+
+.. image:: /_static/images/time_location_mount.jpg
+  :width: 400px
+  :align: center
+
+Every time the StellarMate Mobile App is connected to StellarMate, it syncs both time and location information from the tablet/phone GPS. If the SM App is not used (for example, when using Ekos on a PC/Mac), then StellarMate relies primarily on RTC as the time source.
+
+In KStars, it is possible to specify the Location & Time Sources. To set the sources, go to Ekos → Mount module.
+
+.. image:: /_static/images/Kstars/mount.jpg
+  :width: 400px
+  :align: center
+
+**Tip:** You can use the StellarMate App to quickly synchronize StellarMate Plus time and location. The time and location are automatically set whenever the App communicates with StellarMate. Afterwards, you may continue to use the SM App, or use Ekos to set up your astrophotography workflow.

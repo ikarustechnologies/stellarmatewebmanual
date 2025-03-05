@@ -1,0 +1,61 @@
+.. subsection::Serial Port Assistant Bluetooth Wizard
+StellarMate allows connecting bluetooth mounts easily through StellarMate Web Manager, all you have to do is follow these steps:
+**Connecting to a Bluetooth Device**
+1. Open StellarMate Web Manager
+2. Click on **Serial Port Assistant**
+
+.. image:: /_static/images/sm_pa_click.JPG
+  :width: 400px
+  :align: center
+
+3. Click on  **Next**.
+
+.. image:: /_static/images/sm_pa_next.JPG
+  :width: 400px
+  :align: center
+
+4. Check the  **Bluetooth device** checkbox, and then click  **Next**.
+
+.. image:: /_static/images/sm_pa_bluetooth_check.JPG
+  :width: 400px
+  :align: center
+
+5. If you have **already paired** your device to StellarMate before, you can set it to **Auto-bind** on startup by clicking on the **Bind**  button next to the device's details. You will be met with a dialog that confirms that your device has been **binded** to StellarMate.
+
+.. image:: /_static/images/sm_pa_bind_paired.JPG
+  :width: 400px
+  :align: center
+
+6. If you have not paired your device and would like to **add a new device**, click on the  Add New Device button.
+
+.. image:: /_static/images/sm_pa_add_new_device.JPG
+  :width: 400px
+  :align: center
+
+7. The Bluetooth Wizard will now scan for available bluetooth devices.
+
+.. image:: /_static/images/sm_pa_scanning.JPG
+  :width: 400px
+  :align: center
+
+8. If the scanner does not find any devices, click on  **RESCAN**.
+
+.. image:: /_static/images/sm_pa_empty.JPG
+  :width: 400px
+  :align: center
+
+9. If you find your device, **enter the pin code** and then click on the **Connect**  button. (eg. Shoestring Astronomy HC-06's pin code is 1234, you can find the pin code number by finding the bluetooth device's documentation made by the manufacturer) 
+
+.. image:: /_static/images/sm_pa_connect.JPG
+  :width: 400px
+  :align: center
+
+10. Wait a few seconds until a pop-up dialog shows up to confirm if the pairing and binding process was successful or not.
+**Unbinding a Bluetooth Device**
+To stop a device from being auto-binded on startup, go to the Bluetooth Wizard by following steps 1-4 and then click on  **Unbind Previous Device**.
+
+.. image:: /_static/images/sm_pa_unbind.JPG
+  :width: 400px
+  :align: center
+
+A confirmation dialog will be shown to you.

@@ -1,0 +1,28 @@
+.. subsection::Advanced:level:3
+
+.. image:: /_static/images/ekos/modules/focus/advanced_settings.jpg
+    :align: center
+    :width: 400px
+
+The Settings page has the following options:
+
+1. **Auto Select Star:** Automatically detect and select best star for guiding in the image.
+2. **Dark Frame:** Check this option to capture a dark frame if necessary and perform dark-frame subtraction. This option can be useful in noisy images.
+3. **Subframe:** Subframe around the focus star during the autofocus procedure. Enabling subframing can significantly speed up the focus process.
+4. **Box:** Sets the box size used to enclose the focus star. Increase if you have very large stars.
+5. **Full field:** Measure average HFR from all stars combined in a full frame. This method defaults to the Centroid detection, but can use SEP detection too. Its performance decreases as the number of stars increases.
+6. **Suspend Guiding:** Suspend Guiding while autofocus in progress. If the focus process can disrupt the guide star (e.g. when using Integrated Guide Port IGP whereas the guider is physically attached to the primary CCD), then it is recommended to enable this option. When using Off-Axis guider, then this option is not necessary.
+7. **Settle:** Sets the amount of seconds to wait before resuming guiding.
+8. All stars are used for focusing.
+9. During Full Field focusing, this controls the size of an Annulus centred at the middle of the sensor to include for processing. Set inner % to zero to include the centre of the sensor and set outer % to 100 to include the outer edges of the sensor.
+10. Aberration inspector style mask with a 3x3 mosaic formed with tiles from the center, the corners and the edges.
+11. Enable Adaptive Focus between subframes.This is an experimental feature.
+    1.Min move: The minimum size of an adaptive focus change that will be sent to the focuser.
+
+.. image:: /_static/images/ekos/modules/focus/advanced-remaining.jpg
+    :align: center
+    :width: 400px
+
+12. Adapt the Autofocus start position based on filter and the Adaptive Focus settings. This is an experimental feature.
+    1. The maximum total Adaptive focuser movement between Autofocus runs. If this value is hit, adaptive focusing is suspended. The purpose of this control is to handle runaway adaptive focusing.
+

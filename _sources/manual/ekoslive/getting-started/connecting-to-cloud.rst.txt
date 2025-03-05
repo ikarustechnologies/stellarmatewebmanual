@@ -1,0 +1,11 @@
+.. subsection:: Connecting Ekos to the Cloud
+
+    Before you can use EkosLive Web Application, Ekos must be connected to the cloud.
+    Ekos offers connecting to Cloud and Offline at the same time.
+    If Online is checked that means you are connected to the Cloud 
+
+.. image:: /_static/images/Kstars/ekos-connection.jpg
+  :width: 400px
+  :align: center
+
+After successful authentication, the EkosLive cloud icon be Checked and Green. Now you are ready to use EkosLive Web Application.

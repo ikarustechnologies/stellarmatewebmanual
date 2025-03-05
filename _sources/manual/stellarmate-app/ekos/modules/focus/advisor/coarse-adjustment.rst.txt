@@ -1,0 +1,10 @@
+.. subsection::Coarse Adjustment (Without Autofocus):level:3
+
+.. image:: /_static/images/ekos/modules/focus/advisor/coarse.jpg
+    :align: center
+    :width: 400px
+
+This function is designed to provide coarse adjustment to the start position, Step Size and AF Overscan (or backlash) fields. The purpose is to provide "good enough" values for these parameters in order for the next stage, Fine Adjustment to work. An iterative process is used to home in on acceptable values. Here is an example to describe how it works:
+
+Coarse Adjustment was run from a starting position of 37,500 with a Step Size of 250 and AF Overscan of 0. This is recorded in Run 1 in the results table in the Focus Advisor dialog. The comment column says that the Max/Min Ratio = 0.9 which means that the "Max HFR" / "Min HFR" of the datapoints is 0.9 which is too low. So Focus Advisor starts Run 2 from position 38,875 with an increased Step Size of 803 and Overscan of 250. Run 2 again had a Max/Min ratio too low, so Run 3 was started. Run 3 (which is shown in the V-Curve) started from 35548 with Step Size of 2544 and Overscan of 7477. This resulted in a Max/Min of 2.0 which is good enough at this stage. The datapoints form a V-Curve with no obvious uncorrected backlash (this would show as a flat spot on the right hand side of the curve if there was any). So the Coarse Adjustment completes after Run 3. 
+

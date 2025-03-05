@@ -1,0 +1,36 @@
+
+.. section:: Power Connections
+
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+ 
+|     | Paramter                                    | unit           | min             | max                | Norminal     |                    
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 1   | Voltage Input DC                            | v              | 10              | 16                 | 12           |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 2   | 12V DC Output (1 - 4) Load                  | A              | _               | 16                 |  _           |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 3   | 12V PWM Output (1 - 2) Load                 | A              | _               | 16                 |  _           |
++-----+----------------------+----------------------+----------------+-----------------+--------------------+--------------+
+| 4   | Variable Output Voltage                     | V              | 3               | 16                 | _            |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 5   | Variable Output Load                        | A              | _               | 16                 | _            |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 6   | USB2 Current Capability                     | A              | _               | 16                 | _            |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 7   | USB3 Current Capability                     | A              | _               | 16                 | _            |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 8   | Total Output Load  (12V DC + PWM Outputs)   | A              | _               | 16                 | _            |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 9   | Total Output Load (USB2)                    | A              | _               | 16                 | _            |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+| 10  | Total Output Load (USB3)                    | A              | _               | 16                 | _            |
++-----+---------------------------------------------+----------------+-----------------+--------------------+--------------+
+
+
+
+The output voltage of the 12V DC Outputs (DC output and dew heater output) are depending on the input voltage. The outputs are not regulated, meaning the voltage on the output will be the same as the input voltage.
+
+That is why the recommended input voltage is 12V, so you can connect 12V devices on the DC outputs and PWM outputs. The DC and PWM outputs are short-circuit protected.
+
+**If the input voltage is different than 12V you may risk damaging the connected devices on the DC outputs.**
+
+**The SM PRO is protected against over voltage, so it will not get damaged, but over voltage on the input may damage the connected devices on the DC output ports.**

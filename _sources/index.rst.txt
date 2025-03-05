@@ -1,0 +1,132 @@
+.. chapter:: StellarMate Manual
+
+.. raw:: latex
+
+   \pagestyle{empty}
+   \pagenumbering{roman}
+
+.. image:: /_static/images/logo_black.png
+   :width: 200px
+
+
+
+.. image:: /_static/images/stellarmate-os-icon.png
+   :width: 400px
+   :align: center
+
+.. image:: /_static/images/sm-device/sm-os.png
+   :width: 300px
+   :align: center
+
+
+.. raw:: latex
+
+   {\LARGE\bfseries\centering User Manual\par}
+
+.. raw:: latex
+
+   {\large\centering Version 2.6\par}
+   {\large\centering Released 2025.01.30\par}
+
+|vspace2|
+
+.. image:: /_static/images/sm-device/sm-x-logo.png
+   :width: 300px
+   :align: center
+
+|vspace2|
+
+.. image:: /_static/images/sm-device/sm-pro.png
+   :width: 300px
+   :align: center
+
+|vspace2|
+
+.. raw:: latex
+
+   {\centering Copyright © 2018-2025 by Ikarus Technologies. All Rights Reserved.\par}
+
+.. |vspace1| raw:: latex
+
+   \vspace{0.5em}
+
+.. |vspace2| raw:: latex
+
+   \vspace{1em}
+
+.. |br| raw:: latex
+
+   \vspace{0.5em}
+
+.. raw:: latex
+
+   \clearpage
+   \pagestyle{plain}
+
+.. raw:: latex
+
+   {\LARGE\bfseries Introduction\par}
+   \vspace{1em}
+
+Welcome to StellarMate! Thank you for choosing our revolutionary astrophotography platform that combines powerful open-source technology with user-friendly operation. Whether you're capturing your first lunar image or setting up a remote observatory, this manual will guide you through your astronomical imaging journey.
+
+.. raw:: latex
+
+   {\Large\bfseries Core Features\par}
+   \vspace{0.5em}
+
+StellarMate integrates industry-leading open-source software to provide a comprehensive astrophotography solution:
+
+* **Complete Equipment Control** : Direct operation of telescopes, cameras, filter wheels, and focusers
+* **Advanced Imaging** : Automated plate solving, focusing, guiding, and image sequencing
+* **Cross-Platform Support** : Available on iOS, Android, Windows, MacOS, and Linux
+* **Remote Operation** : Built-in WiFi hotspot and wired connectivity options
+
+.. raw:: latex
+
+   {\Large\bfseries Key Components\par}
+   \vspace{0.5em}
+
+The StellarMate ecosystem consists of three main elements:
+
+* **Hardware** : A compact, powerful control unit for your astronomical equipment
+* **Mobile App** : Intuitive control via iOS and Android devices
+* **Desktop Software** : Full-featured control through KStars/EKOS
+
+This manual covers everything from basic setup to advanced imaging techniques, helping you make the most of your StellarMate device. Each section provides clear, step-by-step instructions and helpful tips for successful astrophotography.
+
+.. raw:: latex
+
+   \clearpage
+   \tableofcontents
+   \clearpage
+   \pagenumbering{arabic}
+
+.. toctree::
+   :maxdepth: 7
+   :numbered:
+
+   manual/stellarmate-x/index
+   manual/stellarmate-pro/index
+   manual/passwords
+   manual/learning-stellarmate
+   manual/stellarmate-app/index
+   manual/connection-methods/index
+   manual/remote-control/index
+   manual/ports
+   manual/connecting-bluetooth/index
+   manual/connecting-ccds
+   manual/connectingdslr/index
+   manual/connecting-mounts/index
+   manual/connecting-focusers/index
+   manual/connecting-filter-wheel/index
+   manual/devices/index
+   manual/time-location
+   manual/web-manager/index
+   manual/serial-port-assistant/index
+   manual/stellarmate-control-panel/index
+   manual/stellarmate-tools/index
+   manual/ekoslive/index
+   manual/using-gps/index
+   manual/support
+

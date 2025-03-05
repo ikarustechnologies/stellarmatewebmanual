@@ -1,0 +1,4 @@
+.. chapter:: Support
+    
+We are proud to offer top-notch support to our customers. Please make sure to check out first the Frequently Asked Questions. To report any issues with StellarMate or Ekos, please submit a ticket and our support team should get back to you as soon as possible. Please make sure to submit the relevant logs to aid in diagnosing and resolving the issue efficiently.
+

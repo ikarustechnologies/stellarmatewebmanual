@@ -1,0 +1,8 @@
+.. section::Connecting Equipment Via Bluetooth
+
+There are two ways to connect your bluetooth device:
+    1. Bluetooth Wizard provided in Serial Port Assistant
+    2. Manually pair your bluetooth device
+
+.. include:: ./serial-port.rst
+.. include:: ./manual-pairing.rst

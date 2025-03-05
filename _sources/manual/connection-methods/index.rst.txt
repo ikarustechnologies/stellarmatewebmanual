@@ -1,0 +1,20 @@
+.. chapter:: Connection Methods
+
+Depending on how you want to connect to StellarMate, click on any of the following options
+
+
+.. image:: /_static/images/hdmi_mode.jpg
+  :width: 400px
+  :align: center
+
+.. image:: /_static/images/ethernet_mode.jpg
+  :width: 400px
+  :align: center
+
+.. image:: /_static/images/hotspot_only_mode.jpg
+  :width: 400px
+  :align: center
+
+.. include:: ./hdmi.rst
+.. include:: ./wifi/index.rst
+.. include:: ./ethernet/index.rst

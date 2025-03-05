@@ -1,0 +1,10 @@
+.. subsection::Rotator control :level:3
+
+.. image:: /_static/images/ekos/modules/align/rotator-control.jpg
+    :align: center
+    :width: 400px
+
+**Rotator control**
+
+    1. **Rotator Control:**  Use automatic or manual rotation control when using Load & Slew. For automatic control, the mechanized rotator is commanded to rotate to match the desired position angle. For manual control, the user is asked to manually rotate the camera until the desired position angle is reached.
+    2. **Threshold:** Rotator threshold in arc-minutes when using Load & Slew. If the difference between measured position angle and FITS position angle is below this value, the load & slew operation is considered successful.

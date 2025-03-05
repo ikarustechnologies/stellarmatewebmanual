@@ -1,0 +1,34 @@
+.. subsection:: Station Mode
+
+.. warning:: Station mode is where StellarMate joins an existing WiFi network. You must first complete the First Time Setup guide before proceeding with this tutorial.
+
+.. image:: /_static/images/ekos/connection/station-mode.jpeg
+  :width: 400px
+  :align: center
+
+**Connecting to WiFi Network** Use the StellarMate App to connect to your WiFi network. From your mobile OS, connect first to the StellarMate HotSpot, then launch the StellarMate App and tap RESCAN to connect to the unit. Advanced networking configuration is located in the StellarMate App Device tab.
+
+The Hotspot IP address is always 10.250.250.1 and the hostname is stellarmate.local. The IP address and stellarmate can be used to connect to the unit remotely from KStars or a web browser. To access StellarMate Web Dashboard, visit http://stellarmate.local or http://10.250.250.1
+
+Similarly, when setting an equipment profile on a PC/Mac connected to the same hotspot, use the IP address 10.250.250.1 to connect to the unit.
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-network/toggle-wifi.jpg
+  :width: 400px
+  :align: center
+
+To join an existing WiFi networking, tap on the Manage WiFi button (orange cogwheel next to green WiFi icon). The App should display a list of detected WiFi networks in the vicinity.
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-network/select_wifi.jpg
+  :width: 400px
+  :align: center
+
+Select the desired WiFi network from the list and press Connect. Enter and double check the WiFi password. A final confirmation warning popup about switching to WiFi station mode is displayed, press Yes to continue.
+
+The App will command StellarMate to join the WiFi network and then begins to scan for StellarMate in the local network. This assumes your phone/tablet will automatically switch to your home WiFi network since it will be disconnected from the hotspot and in most cases this causes Android/iOS to fall back to the next available network. If this does not happen, then go to Network Settings in your mobile OS and connect to the same WiFi network selected above.
+
+.. image:: /_static/images/sm-device-wifi-warning.jpg
+  :width: 400px
+  :align: center
+
+This process can take up to 2 minutes. If successful, the device IP address is going to change to the new WiFi IP address. Go back to the setup page to make sure the device is connected. If not, tap RESCAN to scan the new network for attached StellarMate units. Once detected, tap the detected device to ensure it is connected properly.
+Once StellarMate is joined to a WiFi network, it will always try to connect to this network unless it is out of range. In this case, it will default back to the HotSpot.

@@ -1,0 +1,7 @@
+.. subsection::Update Parameters:level:3
+
+This sets the parameters in Focus Settings to standard values that should enable Autofocus to successfully complete. Note that parameters are stored per Optical Train so it is a good idea to set this option when starting. Note that some parameters, e.g. step size are better defaulted from a trial and error approach by running Autofocus. So these parameters can be better set by some other options below. Note that when a new Optical Train is created, Focus Advisor will setup default parameters when the Optical Train is used for the first time in Focus. Also note that subsequent Focus Advisor functions depend on certain parameters being selected, for example the Linear 1 Pass focus algorithm, so it is recommended to run Update Parameters at the start of using Focus Advisor.
+
+.. image:: /_static/images/ekos/modules/focus/train.jpg
+    :align: center
+    :width: 400px

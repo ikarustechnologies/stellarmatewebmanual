@@ -1,0 +1,9 @@
+.. section:: Spectrographs 
+
+Spectrographs, radio and optical
+
++-----------------+-----------------+---------+----------+
+| Spectrograph    | Driver          | Devices | Comments |
++=================+=================+=========+==========+
+| RTL-SDR         | indi_rtlsdr     |         |          |
++-----------------+-----------------+---------+----------+

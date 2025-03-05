@@ -1,0 +1,18 @@
+.. chapter:: Serial Port Assistant
+
+StellarMate supports a broad range of astronomical equipment including Mounts, DSLRs, CCDs, Focusers, Filter Wheels, Domes, Weather Stations, and other Auxiliary devices. For a complete list, please check **INDI Devices** Page.
+
+**StellarMate Equipment video**
+All equipment must be powered before you connect them to StellarMate. Most astronomical devices can be connected to StellarMate via the following methods:
+
+    * USB: This includes Serial-To-USB devices.
+    * Bluetooth
+    * Network: Wired or Wireless
+
+.. image:: /_static/images/stellarmate_block_diagram.jpg
+  :width: 400px
+  :align: center
+
+.. include:: ./usb.rst
+.. include:: ./network.rst
+.. include:: ./serial-assistant.rst

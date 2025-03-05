@@ -1,0 +1,20 @@
+.. subsection::Data acquisition :level:2
+
+The overall procedure typically utilized in an observatory can be summarized in three primary stages:
+
+1. Startup
+2. Data Acquisition (including pre-processing and storage)
+3. Shutdown
+
+Ekos Scheduler only initiates the startup procedure once the startup time for the first observation job is close (default lead time is 5 minutes before startup time). Once the startup procedure is completed successfully, the scheduler picks the observation job target and starts the sequence process. If a startup script is specified, it shall be executed first.
+
+**Data acquisition**
+
+Depending the on the user selection, the typical workflow proceeds as following:
+
+* Slew mount to target. If a FITS file was specified, it first solves the files and slew to the file coordinates.
+* Auto-focus target. The auto-focus process automatically selects the best star in the frame and runs the auto-focus algorithm against it.
+* Perform plate solving, sync mount, and slew to target coordinates.
+* Perform post-alignment focusing since the frame might have moved during the plate solving process.
+* Perform calibration and start auto-guiding: The calibration process automatically selects the best guide star, performs calibration, and starts the auto-guide process.
+* Load the sequence file in the Capture module and start the imaging process.

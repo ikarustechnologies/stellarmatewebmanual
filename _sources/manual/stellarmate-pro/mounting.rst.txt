@@ -1,0 +1,12 @@
+.. section:: Mounting
+StellarMate Pro is quiet with no moving parts. The sturdy anodized CNC-machined case can be secured to dovetails, rings, or standard tripod head. Ikarus Universal Losmandy/Vixen Clamp (Sold Separately) can be used to couple the unit to the mount’s dovetail.
+
+.. image:: /_static/images/sm-device/smx-pro/mounting.JPG
+   :width: 400px
+   :align: center
+
+The case can be mounted onto a standard tripod head via the central ¼”-20 UNC thread. All the other threads are standard M6x1.0. The M6 screws length should not exceed 10mm.
+
+.. image:: /_static/images/sm-device/smx-pro/mount_case.JPG
+   :width: 400px
+   :align: center

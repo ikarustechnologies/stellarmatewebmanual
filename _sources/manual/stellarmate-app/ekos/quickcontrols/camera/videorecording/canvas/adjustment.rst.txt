@@ -1,0 +1,7 @@
+.. subsection::Adjustments:level:3
+
+.. image:: /_static/images/ekos/modules/QuickCameraControls/streaming/canvas/adjustments.jpg
+    :align: center
+    :width: 400px
+
+Adjust Camera controls with the live histogram view when the Live Streaming is in progress

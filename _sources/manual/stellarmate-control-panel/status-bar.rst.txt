@@ -1,0 +1,32 @@
+.. section:: Status Bar
+
+The Status Bar is available on every page on the top-right corner as it is informative to the user and has some shortcuts.
+
+.. image:: /_static/images/sm_dash_status.jpg
+  :width: 400px
+  :align: center
+
+The Status Bar has the following features:
+    * Shows the connection status
+    * Shortcut to update StellarMate OS build
+    * Shows the type of connection to StellarMate (Hotspot, WIFi or ethernet)
+    * Shows the Date and Time
+    * Allows shutting down or restarting StellarMate
+
+If the connection is spotty and keeps getting disconnected, the status bar will inform you by showing a yellow exclamation icon.
+
+.. image:: /_static/images/sm_dash_status_fail.jpg
+  :width: 400px
+  :align: center
+
+To update using the status bar, click on the update icon and a dialog will pop-up, allowing you to check for an update and install it.
+
+.. image:: /_static/images/sm_dash_status_update_click.jpg
+  :width: 400px
+  :align: center
+
+.. image:: /_static/images/sm_dash_diag_update_dialog.jpg
+  :width: 400px
+  :align: center
+
+

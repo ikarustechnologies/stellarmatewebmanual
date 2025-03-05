@@ -1,0 +1,25 @@
+.. subsection::Auto Calibration :level: 3
+
+.. image:: /_static/images/ekos/modules/capture/calibration-settings.jpg
+    :align: center
+    :width: 400px
+    
+Note: You can only edit calibration settings for capture jobs that have the frame type as Bias (B), Dark (D), or Flat (F).
+
+
+For Flat Field frames, you can set calibration options in order to automate the process. The calibration options are designed to facilitate automatic unattended flat field frame capture. It can also be used for dark and bias frames if desired. If your camera is equipped with a mechanical shutter, then it is not necessary to set calibration settings unless you want to close the dust cover to ensure no light at all passes through the optical tube. For flat fields, you must specify the flat field light source, and then specify the duration of the flat field frame. The duration can be either manual, or based on ADU calculations.
+
+* **Wall**: Slew mount to the specified Azimuth/Altitude coordinates before taking flat field images
+* **Park mount**:  Select which actions to perform before a Bias/Dark/Flat frame is captured.
+* **Park dome**: Select which actions to perform before a Bias/Dark/Flat frame is captured
+* **AZ**: Slew mount to the specified Azimuth/Altitude coordinates before taking flat field images
+* **ALT**: Select which actions to perform before a Bias/Dark/Flat frame is captured
+* **Flat Field Duration**::
+* **Manual**:  Use the frame exposure value
+* **ADU**:  Calculate optimal exposure time given the required ADU. If a controllable device is selected, calculate optimal brightness.
+* **Tolerance**: Accept ADU values that fall within this range around the desired ADU C target. For example, if the ADU value was set to 10000 and the tolerance was set to 100, then frames with ADU values f 9900 and 10100 shall be accepted.
+* **Sky flats**: When shooting flats on sky that can change intensity. Will use simpler exposure calculation.
+
+Before the calibration capture process is started, you can request Ekos to park the mount and/or dome. Depending on your flat source selection above, Ekos will use the appropriate flat light source before starting flat frames capture. If ADU is specified, Ekos begins by capturing a couple of preview images to establish the curve required to achieve the desired ADU count. Once an appropriate value is calculated, another capture is taken and ADU is recounted until a satisfactory value is achieved.
+
+

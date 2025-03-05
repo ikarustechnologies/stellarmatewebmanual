@@ -1,0 +1,17 @@
+.. subsection:: Canvas :level: 3
+
+.. image:: /_static/images/ekos/modules/QuickCameraControls/streaming/canvas/canvas.jpg
+    :align: center
+    :width: 400px
+
+On the left side, you can see Video adjustment controls:
+
+1) Exposure/Gain controls
+2) ROI Frames
+3) Camera adjustments
+4) File saving
+
+.. include:: ekos/quickcontrols/camera/videorecording/canvas/exposuregain.rst
+.. include:: ekos/quickcontrols/camera/videorecording/canvas/roiframes.rst
+.. include:: ekos/quickcontrols/camera/videorecording/canvas/adjustment.rst
+.. include:: ekos/quickcontrols/camera/videorecording/canvas/filesave.rst

@@ -1,0 +1,48 @@
+.. subsection::Directory Browser
+**Directory browser**
+
+.. image:: /_static/images/ekos/directory-browser.JPG
+       :align: center
+       :width: 400px
+
+You can now choose files i.e Script file, Sequence file, fits file etc.
+Directory browser will extract the path from Stellarmate dolphin and set it according to the requirement input.
+We are using Directory browser on different places.
+
+1. **Scheduler:**
+
+.. image:: /_static/images/ekos/select_file.JPG
+       :align: center
+       :width: 400px
+
+
+While selecting the sequence file or .fits file for Scheduler, we use Directory browser.
+
+Directory browser is also used in Scheduler Settings in order to add script files.
+
+.. image:: /_static/images/ekos/modules/scheduler/observatory_startup.JPG
+       :align: center
+       :width: 400px
+
+.. image:: /_static/images/ekos/modules/scheduler/shutdown_procedure.JPG
+       :align: center
+       :width: 400px
+
+2. **Path:**
+
+It is also used to set path for images in File Settings & recording settings using Directory browser.
+
+.. image:: /_static/images/ekos/directoryBrowser_fileSettings.JPG
+       :align: center
+       :width: 400px
+
+.. image:: /_static/images/ekos/directoryBrowser_recordSettings.JPG
+       :align: center
+       :width: 400px
+
+
+You can also create directories via Directory browser.
+
+.. image:: /_static/images/ekos/directoryBrowser_newDir.JPG
+       :align: center
+       :width: 400px

@@ -1,0 +1,23 @@
+.. subsection::Bottom:level:1
+
+4 - More Mount information:
+
+Correct AZ, AL, HA values
+Pier Side
+
+5 - More Camera Information
+
+Resolution:
+
+* Tap the cog icon to open the Resolution Updater dialog.
+* Select the desired resolution from the available list.
+
+.. image:: /_static/images/ekos/statusbar/resolution-list.jpg
+    :align: center
+    :width: 400px
+
+
+* Binning
+* Gain
+* Offset
+* Save main image

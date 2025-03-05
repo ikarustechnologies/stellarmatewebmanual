@@ -1,0 +1,16 @@
+.. subsection::Push notifications
+
+.. image:: /_static/images/ekos/tabs/Settings/push-notifications/notifications.jpg
+    :align: center
+    :width: 400px
+
+Push Notifications (required EkosLive Pro Subscription) keeps you informed about important updates or activity with StellarMate. For example, if a capture sequence is aborted, then this will fire a Push Notification alerting you to this event.
+
+Notification Verbosity can be controlled depending on the level of information you want to receive. The App provides highly customizable notifications settings:
+
+**Category:** Toggle which categories may send notifications (e.g. Mount, Scheduler, Capture..etc).
+**Severity:** Toggle which severity level can trigger notifications.
+
+.. image:: /_static/images/ekos/tabs/Settings/push-notifications/subscription.JPG
+    :align: center
+    :width: 400px

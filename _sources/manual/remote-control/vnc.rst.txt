@@ -1,0 +1,6 @@
+.. section:: VNC
+
+StellarMate is shipped with a VNC Server. This enables access to the whole StellarMate desktop remotely. To connect to VNC, you can either use a Desktop/Mobile VNC Client, or simply via any browser.
+The web VNC address is: http://stellarmate.local:6080
+If StellarMate is inaccessible via its host name, you can replace stellarmate.local with the IP address (e.g. 192.168.1.2). You can find StellarMate IP and hostname in the StellarMate App.
+Any VNC client (e.g. RealVNC) can be used to access StellarMate over the local network. Once you access StellarMate, you can use it like any full-fledged computer. The default username is **stellarmate** and default password is **smate**.

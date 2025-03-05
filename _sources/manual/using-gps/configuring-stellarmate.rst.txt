@@ -1,0 +1,9 @@
+.. section:: Configuring GPS in StellarMate
+
+After plugging the USB dongle for the first time, you need to do the following:
+
+    1. Use StellarMate Serial Port Assistant tool to assign a permanent designation to the USB dongle.
+    2. Configure KStars to mark GPS as the primary source for Location & Time updates.
+    3. Create an Equipment profile with the GPSD driver selected in one of the Aux. dropdowns.
+
+This `video tutorial <https://www.youtube.com/watch?v=TXE5NFC6Vs8>`_\ covers all the steps above.

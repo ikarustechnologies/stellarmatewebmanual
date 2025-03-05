@@ -1,0 +1,35 @@
+.. subsection:: INDI Control Panel :level: 1
+
+INDI Control Panel provides an interface to interact with the drivers of the devices connected to Stellarmate. It is a front-end for the INDI controls available on KStars.
+
+.. image:: /_static/images/ekos/modules/indi/ICP_intro.jpg
+    :align: center
+    :width: 400px
+
+The connected devices are show at the top :
+    * 1. Selecting one will show it's control groups 
+    * 2. Selecting one of the control groups displays it's properties in 
+
+
+.. image:: /_static/images/ekos/modules/indi/ICP_properties.jpg
+    :align: center
+    :width: 400px
+
+Each property : 
+    *  1. can have multiple sub-properties
+    *  2. The current value for the sub-property is shown at 
+    *  3. The status of the property (1) would change from gray (idle) to green (successful), red (failed) or yellow (in-progress) when any changes have been set.  
+
+Some properties allow values to be adjusted. They can be changed using text field (and sometimes a slider for some number properties), and once you are done changing a property, you press Set (5) to send the new property settings to the corresponding device, to change the value.
+
+.. image:: /_static/images/ekos/modules/indi/ICP_RO.jpg
+    :align: center
+    :width: 400px
+
+Some properties are read only and cannot be changed.
+
+Some buttons show the active button (1), and a different button can be set active simply by pressing it. Other buttons (2) only send the action once pressed and we can tell if it was successful from the property status (3).
+
+.. image:: /_static/images/ekos/modules/indi/ICP_switches.jpg
+    :align: center
+    :width: 400px

@@ -1,0 +1,23 @@
+.. chapter:: Web Manager
+
+StellarMate Web Manager is a simple Web Application to manage INDI server and control StellarMate. It is accessible as long as there is a network connection (WiFi/Ethernet/Hotspot) between you and StellarMate. For example, if you are in inside the house with a PC/Mac/Tablet, you could use your browser to remotely manage StellarMate drivers.
+It supports multiple driver profiles along with optional custom remote drivers. It can be used to start INDI server locally, and also to connect or chain to remote INDI servers. You can use it to Restart or Shutdown the unit, and to connect to VNC frontend from the web. Furthermore, the Web Manager provides a RESTful API where you can issue simple calls to start and stop INDI services over the network.
+With the Web Manager, you can access StellarMate Serial Port Assistant and VNC. Furthermore, you can also restart and shutdown INDI from the interface.
+
+.. image:: /_static/images/stellarmate_web_manager.jpg
+  :width: 400px
+  :align: center
+
+By default, StellarMate is shipped with the Simulator profile. It is composed of the following drivers:
+    * Telescope Simulator
+    * CCD Simulator
+    * Focuser Simulator
+
+You can run the Simulator profile to test the simulators and connect to them from any client.
+
+.. include:: ./web-manager-url.rst
+.. include:: ./device-information.rst
+.. include:: ./adding-new-profile.rst
+.. include:: ./removing-profile/index.rst
+.. include:: ./auto-connect.rst
+.. include:: ./starting-server.rst

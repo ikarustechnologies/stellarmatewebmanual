@@ -1,0 +1,18 @@
+.. subsection::Summary View :level:1
+
+.. image:: /_static/images/ekos/modules/canvas/summary.jpg
+   :width: 400px
+   :align: center
+
+The summary view includes the gist of your astrophotography workflow so you can always take a quick look at the most important parameters without navigating to other screens. Depending on which Ekos modules are active, the information may include the following:
+
+1) **Alignment**
+  a) Total deviation error in arcsecs. The deviation is updated when you perform a capture and solve operation.
+  b) Position Angle (PA) in degrees East of North.
+  c) Field of View (FOV) in arcminutes.
+2) **Guide:** Total RMS error in addition to the guide deviation chart.
+3) **Capture:** Current sequence settings and a progress indicator. Two timers are displayed to the right of the progress indicator when a sequence is running:
+  a) **Top timer:** Sequence job timer countdown. This is the countdown until the current active sequence is complete.
+  b) **Bottom timer:** Overall timer countdown. If you have multiple sequences, the timer indicates the estimated time until all sequences are complete.
+4) **Focus:** Half-flux-radius (HFR) measurement.
+5) **Mount:** Current meridian flip status.

@@ -1,0 +1,15 @@
+.. chapter:: Remote Control
+
+Different Ways to access StellarMate:
+
+    1. VNC
+    2. Rustdesk
+    3. SM App
+    4. KStars
+
+.. include:: ./vnc.rst
+.. include:: ./rustdesk.rst
+.. include:: ./sm-app/index.rst
+.. include:: ./kstar/index.rst
+.. include:: ./ekoslive.rst
+.. include:: ./connecting-ekos.rst

@@ -1,0 +1,42 @@
+.. subsection:: WiFi Network :level: 1
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-network/toggle-wifi.jpg
+    :align: center
+    :width: 400px
+
+Toggle WiFi network by pressing on the button as shown in the image above.
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-network/reset-forget.jpg
+    :align: center
+    :width: 400px
+
+1. **Reset Network:** Network configuration gets reset. Make sure to reboot after resetting.
+2. **Forget WiFi:** WiFi network information is removed and StellarMate reverts to HotSpot mode (IP Address 10.250.250.10). If the Unit is connected to your LAN via Ethernet, you can still access it via its LAN IP address like before.
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-network/select_wifi.jpg
+    :align: center
+    :width: 400px
+
+**Connect to Home WiFi:** Select a WiFi network as detected by StellarMate and then supply the password if it is protected. Press connect, After a successful connection, please wait up to 2 minutes before using any of the unit functions again.
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-info.jpg
+    :align: center
+    :width: 400px
+
+**Network Info:** Press on the tooltip to see the status of connected WiFi.
+The following information is shown:
+
+* **Frequency:** Refers to the range of electromagnetic waves used for transmitting data wirelessly, commonly in the 2.4 GHz and 5 GHz bands.
+* **Signal:** The strength and quality of the wireless connection between devices, influenced by factors like distance and interference.
+* **RX (M/PS):** Short for "Receive," indicating the process of a device receiving data over a wireless connection.
+* **TX (M/PS):** Short for "Transmit," indicating the process of a device sending data over a wireless connection.
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-network/wifi-country.jpg
+    :align: center
+    :width: 400px
+
+You can set your current WiFi country. It modifies your WPA network file. It is essential for compliance with local regulations regarding wireless communication frequencies, power levels and other parameters.
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-network/country-list.jpg
+    :align: center
+    :width: 400px

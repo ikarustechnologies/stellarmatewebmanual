@@ -1,0 +1,11 @@
+.. subsection::Advisor:level:2
+The Focus Advisor dialog is a feature to assist with setting up of focus parameters. To use, select the required options and press Run. The purpose of Focus Advisor is to help people to use the Focus module within Ekos. The Focus module is functionally rich and contains a lot of parameters that need to be set self-consistently to achieve good results. Focus Advisor is designed to help with basic parameter setup that should achieve focus. It is not designed to achieve the best possible focus for your equipment; you will have to experiment with your setup to achieve that. But Focus Advisor provides a place to start that experimentation. Focus Advisor is aimed towards the less experienced users. If Focus Advisor does not appear to give good results on your setup why not start a discussion on the forum so it can be enhanced to give better results in the future. This way it will build over time to be more useful. When you click on Focus Advisor it works out a series of parameter recommendations based on the Optical Train you are using in Focus. There are 4 checkboxes on display that by default are all checked. Some can be toggled off if required. For example, Update Parameters will reset most parameters to standard settings. Once run, it is not necessary to repeatedly run this option so the associated checkbox can be toggled off for subsequent runs.
+
+   *  * **Run:** Press this button to run Focus Advisor for the checked options. The V-Curve will be dynamically updated with progress, as will the Focus Advisor dialog.
+   *  * **Stop:**  Press this button to stop Focus Advisor. Note that the Stop button on the main Focus panel does the same thing. 
+   *  * **Close:**  Press this button to close the Focus Advisor dialog. The following checkbox options are available:
+  
+.. include:: ekos/modules/focus/advisor/update-parameters.rst
+.. include:: ekos/modules/focus/advisor/find-stars.rst
+.. include:: ekos/modules/focus/advisor/coarse-adjustment.rst
+.. include:: ekos/modules/focus/advisor/fine-adjustment.rst

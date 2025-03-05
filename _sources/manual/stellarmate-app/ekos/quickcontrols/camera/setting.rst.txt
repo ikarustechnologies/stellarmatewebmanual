@@ -1,0 +1,17 @@
+.. subsection::Settings :level:2
+
+You can quickly take custom preview captures or loop frames by tweaking the settings in the **quick settings** bar by tapping on the **Quick Settings** button. The quick settings bar can be expanded by tapping on the up expand arrow on the left side of the bar. 
+Different settings can be changed for a specific camera i.e Frame type, Binning, Exposure, Temperature, Gain & Offset.
+
+
+**Note:** Choosing a temperature will set the temperature immediately.
+
+.. image:: /_static/images/ekos/modules/QuickCameraControls/settings.jpg
+    :align: center
+    :width: 400px
+
+You can also toggle Optical trains from the Quick Camera Settings
+
+.. image:: /_static/images/ekos/modules/QuickCameraControls/toggle-trains.jpg
+    :align: center
+    :width: 400px

@@ -1,0 +1,25 @@
+.. subsection::USB devices
+
+Now you are able to view the connected devices and it's details from StellarMate App.
+
+.. image:: /_static/images/Setup/usb-devices/usb.jpg
+    :width: 400px
+    :align: center
+
+.. image:: /_static/images/Setup/usb-devices/usb-list.jpg
+    :width: 400px
+    :align: center
+
+Pressing on each Device list, you will be able to the it's information.
+
+.. image:: /_static/images/Setup/usb-devices/usb-info.jpg
+    :width: 400px
+    :align: center
+
+
+You can also reset a device connected via USB by pressing on the "Force USB Reset" button.
+
+.. image:: /_static/images/Setup/usb-devices/reset.jpg
+    :width: 400px
+    :align: center
+

@@ -1,0 +1,12 @@
+.. subsection::Donut buster:level:3
+
+.. image:: /_static/images/ekos/modules/focus/donut-buster.jpg
+    :align: center
+    :width: 400px
+
+* **1. Time dilation X** : The furthest datapoints have their exposure times increased by this factor. The in focus datapoint exposure is not increased. Intermediate points have their exposures scaled appropriately.
+     * Set to 1 to disable this option.
+* **2. Outlier Rejection:** Aberration inspector style mask with a 3x3 mosaic formed with tiles from the center, the corners and the edges.
+* **3. Num datapoints:** The number of datapoints to be used during the scan for start position
+* **4. Initial Step Size:** Scan for start position uses a step size = Initial step size multiply by Initial step size x.
+* **5. Always On:** Click to always run Scan for start Position, uncheck to run after a failed Autofocus.

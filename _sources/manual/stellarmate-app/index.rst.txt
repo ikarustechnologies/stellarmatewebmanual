@@ -1,0 +1,35 @@
+.. chapter:: StellarMate App
+
+1) StellarMate Mobile App for Tablets.
+2) PC/Mac using KStars.
+3) Any Web browser or VNC client.
+
+StellarMate App is the Official App for StellarMate gadget. It is available for both Android and iOS smartphones and tablets. It is primary designed for tablets in portrait mode. While it can be used for phones, for the best experience, use it with a tablet/iPad. `Download <https://www.stellarmate.com/component/jdownloads/category/3-stellarmate-app.html?Itemid=507>`_ and install the App on your device before you continue.
+
+.. list-table::
+   :widths: 50 50
+   :align: center
+   :header-rows: 0
+
+   * - .. image:: ../../_static/images/google_play_logo.jpg
+         :width: 300px
+         :target: https://play.google.com/store/apps/details?id=com.ikarustech.stellarmate
+
+     - .. image:: ../../_static/images/apple_logo.jpg
+         :width: 300px
+         :target: https://apps.apple.com/us/app/stellarmate/id1252626058?ls=1
+
+
+.. warning:: The App is required to connect to the unit and configure it for first-time use, so do this step now and do not skip ahead!
+
+
+.. include:: ./registration/index.rst
+.. include:: ./setup/index.rst
+.. include:: ./ekos/index.rst
+.. include:: ./skymap.rst
+.. include:: ./targets/index.rst
+.. include:: ./stella.rst
+.. include:: ./device/index.rst
+.. include:: ./power.rst
+.. include:: ./view/index.rst
+.. include:: ./settings/index.rst

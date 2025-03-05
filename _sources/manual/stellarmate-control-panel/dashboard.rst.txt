@@ -1,0 +1,31 @@
+.. section:: Dashboard
+    
+.. image:: /_static/images/stellarmate_dashboard.jpg
+  :width: 400px
+  :align: center
+
+The home page of the StellarMate Control Panel is the Dashboard, which shows the following information:
+
+    1. RAM Usage
+    2. Storage Usage
+    3. CPU Usage
+    4. Device Temperature
+    5. Network Graph
+    6. Weather and Location Information
+    7. Screen Resolution
+
+
+**Weather Units**
+
+Weather units can be toggled from Metric to Imperial and vice-versa.
+
+.. image:: /_static/images/sm_dash_temp_C.jpg
+  :width: 400px
+  :align: center
+
+.. image:: /_static/images/sm_dash_temp_F.jpg
+  :width: 400px
+  :align: center
+
+
+                

@@ -1,0 +1,6 @@
+.. subsection::Settings :level: 2
+
+Following settings are from Align module:
+
+.. include:: ekos/modules/align/settings/preset.rst
+.. include:: ekos/modules/align/settings/rotatorcontrol.rst

@@ -1,0 +1,18 @@
+.. subsection::Connecting your devices
+
+Most astronomical equipment such as telescopes, cameras, filter wheels, and focusers connect via a USB cable. To add your devices, you need to create a new Equipment Profile. Tap on the Add (+) icon next to the profiles to start the equipment profile wizard.
+
+.. image:: /_static/images/Setup/logged_in.jpg
+    :width: 400px
+    :align: center
+
+When creating a new equipment profile, you can now adjust advanced settings including remote drivers and guider settings. Furthermore, advanced users can even start the profile in remote mode using StellarMate Web Manager.
+
+.. image:: /_static/images/Setup/toggle-settings.jpg
+    :width: 400px
+    :align: center
+
+
+.. image:: /_static/images/Setup/profile-settings.jpg
+    :width: 400px
+    :align: center

@@ -1,0 +1,11 @@
+.. chapter::Connecting Mounts
+StellarMate supports a broad range of mounts. For a mount to be connected it must satisfy the minimum requirements
+
+    It must be a **GOTO** mount.
+    It must have a **serial, USB, Bluetooth, Wired, or Wireless interface** to an extermal device or computer.
+The documentation for each mount, including supported connection methods, are included in the mount-specific documentation on the INDI devices portal.
+
+.. include:: ./mount-connection-guide.rst
+.. include:: ./serial-to-usb.rst
+.. include:: ./wired-network.rst
+.. include:: ./wireless-connection.rst

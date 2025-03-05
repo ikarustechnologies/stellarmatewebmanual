@@ -1,0 +1,9 @@
+.. section:: Selecting a GPS Dongle
+
+Any U-Blox based GPS USB dongle would work with StellarMate. Here are a few from Amazon:
+
+    1. Diymall Vk-172
+    2. Stratux Vk-162
+    3. USB GPS Receiver
+
+Most of these dongles need to be outdoors to receive any satellite signals. They can be connected to any USB slot in StellarMate.

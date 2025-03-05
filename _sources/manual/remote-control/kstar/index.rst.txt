@@ -1,0 +1,37 @@
+.. section:: KStars
+KStars is free, open source, cross-platform Astronomy Software. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. Bundled with KStars is **Ekos astrophotography suite**, a complete astrophotography solution that can control and automate all your atronomy equipment.
+The topology of StellarMate App, KStars, Ekos, and INDI can be simplified to the following points:
+
+    1. Astronomy devices are connected to StellarMate via USB or Network (WiFi/Ethernet).
+    2. Each device is controlled by a corresponding INDI driver. An INDI driver provides an abstraction layer so that clients like Ekos can issue commands regardless of the underlying implementation of each unique device.
+    3. INDI drivers can be managed directly in KStars by starting and stopping INDI server, or via StellarMate Web Manager that provides an API to remotely start and shutdown INDI server.
+    4. An INDI server is a hub where all drivers communicate with each other and the clients.
+    5. When using Ekos inside StellarMate directly (HDMI, VNC, or SM App via EkosLive), Ekos completely manages the INDI server.
+    6. EkosLive is a middleware that allows external applications to talk with Ekos over websockets.
+    7. When using Ekos on a remote PC/Mac, it can control the equipment by bypassing KStars completely and launching the INDI server remotely via the StellarMate Web Manager.
+    8. EkosLive not only provides communication between StellarMate App and Ekos, but it also connects KStars to the online ekoslive.com portal where you can use a web-based interface similar to StellarMate App to control Ekos remotely.
+
+.. image:: /_static/images/ekos/connection/local-remote.jpeg
+  :width: 400px
+  :align: center
+
+KStars can be connected to StellarMate Controller in a number of ways
+
+    1. **Directly in StellarMate OS**
+    Use VNC, Rustdesk, or HDMI to directly operate KStars inside StellarMate. Using KStars inside StellarMate gives the fastest results since images are saved immediately on the local storage.
+
+    2. **Remote KStars**
+    Since KStars communicate with the INDI server using TCP/IP, KStars can be used to run devices on any StellarMate Controller remotely.
+
+.. image:: /_static/images/sm-device/smx-pro/connect-pc.png
+  :width: 400px
+  :align: center
+
+When configuring KStars for remote connection:
+    1. Change mode to Remote
+    2. Enter remote StellarMate Controller IP address or host name.
+    3. Enable StellarMate Web Manager
+**SM Pro:** Add to remote drivers @localhost:12624
+
+.. include:: kstar/lan.rst
+.. include:: kstar/wan.rst

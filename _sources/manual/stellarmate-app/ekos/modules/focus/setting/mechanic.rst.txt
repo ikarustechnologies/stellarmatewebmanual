@@ -1,0 +1,19 @@
+.. subsection::Mechanics:level:3
+
+.. image:: /_static/images/ekos/modules/focus/mechanics.jpg
+    :align: center
+    :width: 400px
+
+The Mechanics page has the following options:
+
+* **1. Walk:** Select the type for the focuser to take when using Linear 1 Pass. For Linear only Classic is available.
+* **2. Settle:** Settle time (in seconds) after moving the focuser before capturing the next image during Auto Focus and after an Adaptive focus movement.
+* **3. Number steps:** This number is multiplied by initial-step-size is number of outward steps the Linear Focus algorithm moves away from the initial position at the start of focusing.
+* **4. Max Travel:** Maximum travel in ticks before the auto-focus process aborts.
+* **5. Max Step size:** The maximum single step size the algorithm is allowed to command as it searches for the critical focus zone. The calculated step size would be limited to this maximum value.
+* **6. Backlash:** Number of average frames to capture. During each capture, an HFR is recorded. If the instantaneous HFR value is unreliable, you can average a number of frames to increase the signal to noise ratio.
+* **7. AF Overscan:** Provides backlash overscan in ticks for outward focuser movements during an Autofocus run. This is in addition to any Driver Backlash provided by the device driver and set in the Driver Backlash field. Set to 0 to disable. If set, AF Overscan is applied to all focuser movements initiated by the Focus module. Typically either Focuser Backlash or AF Overscan is set.
+* **8. AF Overscan:** Provides backlash overscan in ticks for outward focuser movements during an Autofocus run. This is in addition to any Driver Backlash provided by the device driver and set in the Driver Backlash field. Set to 0 to disable. If set, AF Overscan is applied to all focuser movements initiated by the Focus module. Typically either Focuser Backlash or AF Overscan is set.
+* **9. Capture timeout:** Maximum time in seconds to wait for a captured image to be received before declaring a timeout.
+* **10. Overscan Delay:** Delay between completing the outward motion of an Overscan and starting the inward motion. For most focusers 0s is fine.
+* **11. Motion timeout:** Maximum time in seconds to wait for the focuser to move to the desired position before declaring a timeout.

@@ -1,0 +1,42 @@
+.. section::Setup
+
+Go to your mobile OS WiFi settings and connect to the StellarMate hotspot.
+- Hotspot: stellarmate
+- Password: stellar@mate
+
+.. note:: Before using the StellarMate App to configure your unit for the first time, please use the networking settings in your iOS/Android phone/tablet to connect to the HotSpot first. Once connected, proceed to run the StellarMate App.
+
+.. image:: /_static/images/stellarmate_wifi_connection.JPG
+    :width: 400px
+    :align: center
+
+
+After connecting to StellarMate, go back to the App:
+
+- Tap on RESCAN to start the scanning process. Discovered devices would be listed on the left side pane.
+
+.. image:: /_static/images/Setup/registration/rescan.jpg
+    :width: 400px
+    :align: center
+
+.. image:: /_static/images/Setup/registration/welcome.jpg
+    :width: 400px
+    :align: center
+
+
+- After StellarMate is detected, tap on it to establish connection. Wait for a few seconds and the LED would turn green indicating a stable successful connection.
+
+.. image:: /_static/images/Setup/page-connnecting.jpg
+    :width: 400px
+    :align: center
+
+
+The right side pane should now display the Equipment Profile page. Now you are ready to connect to your astronomical equipment.
+
+.. include:: setup/connecting.rst
+.. include:: setup/port-selector.rst
+.. include:: setup/optical-trains.rst
+.. include:: setup/weather-information.rst
+.. include:: setup/tour-guide.rst
+.. include:: setup/dslr-setup.rst
+.. include:: setup/usb-devices.rst

@@ -1,0 +1,9 @@
+.. subsection:: Exposure/Gain :level: 3
+
+.. image:: /_static/images/ekos/modules/QuickCameraControls/streaming/canvas/exposure.jpg
+    :align: center
+    :width: 400px
+
+Adjust Exposure, Once it is changed Streaming will automatically restart.
+Adjust Gain value.
+Select format of the Stream

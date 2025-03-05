@@ -1,0 +1,29 @@
+.. subsection:: System
+
+System shows the Utilization of SM device. It includes: 
+    * CPU
+    * RAM
+    * Storage
+    * Temperature
+
+It also has main controls i.e
+
+    * Power Off the SM unit
+    * Restart SM, you may also see the change of LED light in RPI 5 and SM X
+    * Access Web Manager. It can also be accessed from the browser i.e http://localhost:8624
+  
+.. image:: /_static/images/ekos/tabs/Device/system/web-manager.jpg
+    :align: center
+    :width: 400px
+
+* Access of VNC. Can be accessed from the browser i.e http://localhost:6080
+
+.. image:: /_static/images/ekos/tabs/Device/system/vnc.jpeg
+    :align: center
+    :width: 400px
+
+You can also update your VNC password by pressinng on the top right **"Update VNC Password"**
+
+.. image:: /_static/images/ekos/tabs/Device/system/vnc-password.jpeg
+    :align: center
+    :width: 400px

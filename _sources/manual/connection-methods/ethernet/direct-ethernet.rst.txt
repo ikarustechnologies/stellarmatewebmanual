@@ -1,0 +1,4 @@
+.. subsection:: Direct Ethernet
+StellarMate includes a Gigabit (1000Mb/s) Ethernet port. You can connect StellarMate to your home router. Alternatively, you can also directly connect StellarMate to your PC/Mac.
+This can be done using a regular Ethernet cable, at home or in the field. Wired connections are very fast and highly reliable.
+For users who prefer the wired solution, you can follow the video guide to connect your StellarMate to PC/Mac.

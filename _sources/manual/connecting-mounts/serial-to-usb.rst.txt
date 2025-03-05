@@ -1,0 +1,8 @@
+.. section::Serial to USB
+**IMPORTANT**
+
+In order to connect your mount via Serial to USB, you need to get a mount-specific Serial to USB cable, which can be bought from Ikarus Technologies.
+Most mounts provide an RS232 port (usually located in the handset). An RS232 to USB cable is required in order connect the mount to StellarMate. StellarMate is equipped with 4 USB ports. However, it is highly recommended to use an external powered USB Hub as it can reliably support power to your equipment.
+**WARNING**
+**Most** problems in operating your equipment with StellarMate are related first and foremost to power problems. Therefore, please invest in reliable power supply for all your equipment!
+

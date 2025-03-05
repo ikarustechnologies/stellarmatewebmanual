@@ -1,0 +1,17 @@
+.. subsection::Transfer Images
+
+.. image:: /_static/images/ekos/tabs/View/transfer/toggle-transfer.jpg
+    :align: center
+    :width: 400px
+
+Synchronizing your images to an external USB thumb drive is now very easy! From the View tab, select the desired external USB drive and transfer all your images.
+
+.. image:: /_static/images/ekos/tabs/View/transfer/storage.jpg
+    :align: center
+    :width: 400px
+
+For subsequent transfers, the system only transfers the new images since your last sync.
+
+.. image:: /_static/images/ekos/tabs/View/transfer/transfer-images.jpeg
+    :align: center
+    :width: 400px

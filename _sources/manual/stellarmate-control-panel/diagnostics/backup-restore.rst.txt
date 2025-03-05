@@ -1,0 +1,58 @@
+.. subsection:: Backup and Restore Process
+
+This is an instructional guide for the Backup and Restore process.
+It will be explained step by step in this section of the manual.
+
+**Backing up StellarMate configuration**
+In order to backup your StellarMate configuration, please follow these steps:
+
+1. Click on the **Backup** button.
+
+.. image:: /_static/images/sm_dashboard_logs.jpeg
+  :width: 400px
+  :align: center
+
+
+2. Wait for the Backup process to generate a backup file, this might take long if you have lots of images.
+
+.. image:: /_static/images/sm_dashboard_ekos_logs.jpeg
+  :width: 400px
+  :align: center
+
+
+3. Click on the **Download** button (cloud icon) and select the backup file that has been generated.
+
+.. image:: /_static/images/sm_dash_diag_backup_dl_dl.jpg
+  :width: 400px
+  :align: center
+
+4. You should get a Backup Successful message. You should You now have a backup file on your computer that you can use later to restore your StellarMate configuration.
+
+.. image:: /_static/images/sm_dash_diag_backup_success.jpg
+  :width: 400px
+  :align: center
+
+
+**Restoring StellarMate configuration**
+In order to restore your StellarMate configuration, please follow these steps:
+
+1. Click on the **Restore** button.
+
+.. image:: /_static/images/sm_dashboard_nm_logs.jpeg
+  :width: 400px
+  :align: center
+
+2. Select your backup file and click on **Open**.
+
+.. image:: /_static/images/sm_dash_diag_restore_dialoglick.jpg
+  :width: 400px
+  :align: center
+
+3. Wait for the upload process to complete.
+
+4. You should get a Upload Successful message, which means that the restore was successful.
+
+.. image:: /_static/images/sm_dashboard_boot_logs.jpeg
+  :width: 400px
+  :align: center
+

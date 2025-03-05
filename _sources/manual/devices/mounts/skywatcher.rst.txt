@@ -1,0 +1,139 @@
+.. subsection:: SkyWatcher
+All SkyWatcher & Orion Mounts, including EQMod driver. 
+
+Before connecting to your mount
+Ensure the mount firmware is the latest as provided by your manufacturer.
+Ensure mount has proper and suffcient power to operate. This is often a primary source of issues connecting to mounts.
+Read the mount manual and learn about the mount startup or Home Position. This is the mechanical position the mount must be in before you turn on the power to the mount. This basically falls under two categories:
+Equatorial Mount: Telescope should be looking at the Celestial Pole (Polaris for the Northern Hemisphere) with counter-weights down.
+Alt-Az Mount: Telescope should parallel to the ground looking exactly North (for Northern Hemisphere) or South (for Southern hemisphere).
+Decide on how you will connect to the mount. Is it using a cable to the handset? or cable directly to the mount? WiFi? Bluetooth?
+If connecting over WiFi, then ensure the device where you are running the INDI driver (e.g. Raspberry PI4) is on the same network as your mount so they can communicate with each other. Such mounts can be configured to run in two modes:
+Mount Wireless Hotspot Mode: The mount hotspot acts as the router and you can connect your devices to the mount's own network (e.g. your Raspberry PI and iPad). 
+Mount Wireless Station Mode: The mount joins an existing WiFi network (e.g. your home WiFi network or StellarMate hotspot). The IP address assigned to the mount is determined by your router. It is best to know the IP address assigned to the mount so that you can enter it in the IP address field in the driver Connection tab. However, this is not strictly necessary since the driver can automatically scan the local network for mounts, albeit this operation may take a few minutes to complete whereas if the IP address is known beforehand then the connection is immediate.
+Selecting the correct driver
+Selecting the appropiate driver for your mount usually depends on two factors:
+
+Mount model.
+Connection method (Cable, WiFI, Bluetooth..etc).
+
+
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| Mount                             | Driver                      | Connection Method   | Comments                                                           |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| HEQ5                              | EQMod Mount                 | EQDirect Cable      | This cable is a DIRECT cable from mount to your device.            |
+|                                   |                             |                     | No handset is connected nor required in this setup.                |
+|                                   |                             |                     | Astroshop.eu EQDirect Cables. OPT Corp EQDirect Cables.            |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ6                               | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ6R Pro                          | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-EQ5                            | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-EQ6 Pro                        | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ8                               | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ8 Pro                           | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ3 Pro                           | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQM-35 Pro                        | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| Orion Sirrius                     | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| Orion Atlas                       | EQMod Mount                 | EQDirect Cable      | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| HEQ5                              | EQMod Mount                 | Bluetooth           | Use a Bluetooth adapter from Mount to your device. You must        |
+|                                   |                             |                     | pair and trust the Bluetooth dongle first from your PC/Device.     |
+|                                   |                             |                     | The dongle should create a serial port (e.g. /dev/rfcomm0)         |
+|                                   |                             |                     | that you need to select when connecting to the mount.              |
+|                                   |                             |                     |                                                                    |
+|                                   |                             |                     | Quite a few EQMod Bluetooth dongles have been obsoleted.           |
+|                                   |                             |                     | Therefore, it is generally NOT recommended to connect to           |
+|                                   |                             |                     | your Mount using bluetooth.                                        |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ6                               | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ6R Pro                          | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-EQ5                            | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-EQ6 Pro                        | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ8                               | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ8 Pro                           | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ3 Pro                           | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQM-35 Pro                        | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| Orion Sirrius                     | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| Orion Atlas                       | EQMod Mount                 | Bluetooth           | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| HEQ5                              | EQMod Mount                 | Synscan Wifi Adapter| Select Network in EQMod Connection tab. Ensure IP address is       |
+|                                   |                             |                     | correct before establishing connection to the mount.               |
+|                                   |                             |                     |                                                                    |
+|                                   |                             |                     | Do not use EQMod Mount driver to connect to any Alt-Az mount       |
+|                                   |                             |                     | via the dongle, EQMod Mount driver can only operate                |
+|                                   |                             |                     | Equatorial Mounts.                                                 |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ6                               | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ6R Pro                          | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-EQ5                            | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-EQ6 Pro                        | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ8                               | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ8 Pro                           | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQ3 Pro                           | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| EQM-35 Pro                        | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| Orion Sirrius                     | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| Orion Atlas                       | EQMod Mount                 | Synscan Wifi Adapter| Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-GTi WiFi (With Equatorial      | AZ-GTi Equatorial WiFi      | WiFi                | AZ-GTi mount must be running firmware v3.37+                       |
+| Wedge)                            |                             |                     | (Right ARM, AZ/EQ Dual Mode).                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-GTi                            | AZ-GTi Wired                | WiFi                | WIRED cable from AZ-GTi RJ12 port to USB. For Equatorial mode,     |
+|                                   |                             |                     | AZ-GTi mount must be running firmware v3.37+                       |
+|                                   |                             |                     | (Right ARM, AZ/EQ Dual Mode).                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| AZ-GTi (Alt-Az)                   | SkyWatcher Alt-Az WiFi      | WiFi (Native)       | WiFi Native is the WiFi that comes with the mount built-in         |
+|                                   |                             |                     | without any external adapters.                                     |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| All SkyWatcher Dobsonian GOTOs    | SkyWatcher Alt-Az WiFi      | WiFi (Native)       | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| All Orion Dobsonian GOTOs         | SkyWatcher Alt-Az WiFi      | WiFi (Native)       | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| Any SkyWatcher/Orion with Synscan | Synscan                     | Serial-to-USB       | Older Synscan HCs come with RJ11 plug. You need Serial-to-USB      |
+| Handset (HC)                      |                             |                     | adapter cable from HC to PC/Device. Modern Synscan HCs come with   |
+|                                   |                             |                     | USB Type-B port that you can connect directly via a USB cable to   |
+|                                   |                             |                     | your device (no serial to USB adapter is required).                |
+|                                   |                             |                     |                                                                    |
+|                                   |                             |                     | Synscan driver offers a limited subset of features compared to     |
+|                                   |                             |                     | other drivers. If possible connect using EQDirect cable or WiFi.   |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| SkyWatcher Virtuoso               | SkyWatcher Virtuoso         | WiFi                |                                                                    |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| SkyWatcher Star Adventurer 2i Pro | SkyWatcher Star Adventurer  | WiFi                |                                                                    |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| SkyWatcher Star Adventurer 2i WiFi| SkyWatcher Star Adventurer  | WiFi                | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| SkyWatcher Star Adventurer 2i Pro | SkyWatcher Star Adventurer  | USB                 | Direct USB cable from Mount to PC/Device.                          |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| SkyWatcher Star Adventurer 2i WiFi| SkyWatcher Star Adventurer  | USB                 | Same as above                                                      |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+
+| SkyWatcher Star Adventurer        | SkyWatcher Star Adventurer  | NA                  | This driver is the INDI Telescope Simulator. It can be used        |
+|                                   |                             |                     | just as a placeholder if you have the older non-GOTO               |
+|                                   |                             |                     | Star Adventurer mount.                                             |
++-----------------------------------+-----------------------------+---------------------+--------------------------------------------------------------------+

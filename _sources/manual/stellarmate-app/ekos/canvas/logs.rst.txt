@@ -1,0 +1,10 @@
+.. subsection::Logs :level:1
+You can view Logs of modules which includes Focus, Align, Guide, Capture and Scheduler.
+
+.. image:: /_static/images/ekos/modules/canvas/logs/modules.jpg
+   :width: 400px
+   :align: center
+
+.. image:: /_static/images/ekos/modules/canvas/logs/controls.jpg
+   :width: 400px
+   :align: center

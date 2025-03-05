@@ -1,0 +1,15 @@
+.. section:: Package Contents
+
+.. image:: /_static/images/sm-device/smx-pro/package_contents.JPG
+   :width: 400px
+   :align: center
+
+The following items are included in the StellarMate Pro box:
+
+1. StellarMate Pro Unit.
+2. Quick Start Guide and EkosLive Pro offer.
+3. GPS Antenna.
+4. WiFi Antenna.
+5. 100cm 5.5x2.1mm DC Male to Male Cable.
+6. 50cm 5.5x2.1mm DC Male to Male Cable.
+7. XT-60 to DC Female Power Adapter Cable.

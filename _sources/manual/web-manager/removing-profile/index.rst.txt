@@ -1,0 +1,5 @@
+.. section:: Removing Profile
+    
+To remove an equipment profile, press the Minus sign next to it. Please note this operation is permanent.
+
+.. include:: removing-profile/auto-correct.rst

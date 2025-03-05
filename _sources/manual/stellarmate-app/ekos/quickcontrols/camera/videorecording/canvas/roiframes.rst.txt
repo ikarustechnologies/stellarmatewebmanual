@@ -1,0 +1,13 @@
+.. subsection:: ROI Frames :level:3
+
+.. image:: /_static/images/ekos/modules/QuickCameraControls/streaming/canvas/roi.jpg
+    :align: center
+    :width: 400px
+
+Region of Interest: Specify the video frame. By default, a full frame is captured. All units in pixels
+
+    * **Left:** Left offset
+    * **Top:** Top offset
+    * **Width:** Width (unbinned)
+    * **Height:** Height (unbinned)
+Left+Width should not exceed the maximum width of the camera. The same rule applies to Top+Height.

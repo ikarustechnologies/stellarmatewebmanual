@@ -1,0 +1,3 @@
+.. subsection:: Auto Start
+    
+If you want to automatically start a particular equipment profile whenever StellarMate is powered on, check the AutoStart checkbox.

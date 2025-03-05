@@ -1,0 +1,10 @@
+.. subsection::Preset :level: 3
+
+.. image:: /_static/images/ekos/modules/guide/guide_presets.jpg
+    :align: center
+    :width: 400px
+
+* **Subframe:** ubframe the image around the guide star. Or for PHD2, receive the Guide Star Image instead of the full image frame. For the Internal Guider, before checking this option, you must first capture an image and select a guide star. Uncheck it to take a full frame again.
+* **Box:** Guide star tracking box size. Box size must be set in accordance to the selected star size.
+* **Dark:** Subtract dark frame. If no dark frame is available, a new dark frame shall be captured and saved for future use.
+* **Auto star:** Automatic control

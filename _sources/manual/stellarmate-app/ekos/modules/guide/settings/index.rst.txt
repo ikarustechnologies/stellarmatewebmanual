@@ -1,0 +1,12 @@
+.. subsection::Settings :level: 2
+
+Following are the settings from Guide module:
+
+
+Preset settings
+Advanced settings
+Calibration settings
+
+.. include:: ekos/modules/guide/settings/preset.rst
+.. include:: ekos/modules/guide/settings/advanced.rst
+.. include:: ekos/modules/guide/settings/calibration.rst
