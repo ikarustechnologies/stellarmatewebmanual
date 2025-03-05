@@ -1,0 +1,55 @@
+.. subsection:: Logs
+
+.. image:: /_static/images/sm_dashboard_logs.jpeg
+  :width: 400px
+  :align: center
+
+EkosLive logs should be sent to the Stellar Mate support when there are issues about EkosLive being down or for issues with Live Stacking.
+This is an instructional guide for how to View or Extract Logs.
+It will be explained step by step in this section of the manual.
+
+Logs can be viewed and also download from the Icon on top-right side.
+
+1. **EkosLive**  
+
+.. image:: /_static/images/sm_dashboard_ekos_logs.jpeg
+  :width: 400px
+  :align: center
+
+2. **KStars & INDI**
+
+You can view the logs for kstars and INDI as well. On the left side, you can see different files for each day
+
+Note: You can also watch the Video on how to enable logging in Kstars from the link given below:
+
+https://www.indilib.org/individuals/logs-howto.html 
+
+
+
+4. **Web Manager**
+
+.. image:: /_static/images/sm_dashboard_wm_logs.jpeg
+  :width: 400px
+  :align: center
+
+5. **Network Manager**
+
+.. image:: /_static/images/sm_dashboard_nm_logs.jpeg
+  :width: 400px
+  :align: center
+
+6. **Device Manager**
+
+.. image:: /_static/images/sm_dash_diag_restore_dialoglick.jpg
+  :width: 400px
+  :align: center
+
+7. **Boot**
+
+.. image:: /_static/images/sm_dashboard_boot_logs.jpeg
+  :width: 400px
+  :align: center
+
+
+
+

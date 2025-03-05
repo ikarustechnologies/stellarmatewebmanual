@@ -1,0 +1,10 @@
+.. subsection::Manual Pairing
+
+Bluetooth dongles are supported. Before you can start communicating with your device from StellarMate, you need to pair it. In order to pair the device, please log in to StellarMate OS either via Direct HDMI connection or via VNC Viewer in the StellarMate App.
+
+.. image:: /_static/images/stellarmate_bt.jpg
+  :width: 400px
+  :align: center
+
+After you pair your device, you should have a bluetooth ported assigned to it (e.g. /dev/rfcomm0). This is the port you should use in INDI when communicating with your device.
+

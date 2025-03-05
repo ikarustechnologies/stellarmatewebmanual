@@ -1,0 +1,27 @@
+.. subsection:: Changing Hotspot WiFi Band:level: 1
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-band/band.jpg
+    :align: center
+    :width: 400px
+
+**Changing Hotspot WiFi Band**
+You can change the Hotspot WiFi band by clicking on the settings button next to the WiFi Band label.
+
+.. image:: /_static/images/ekos/tabs/Device/wifi-band/modal.jpg
+    :align: center
+    :width: 400px
+
+You can now choose the **Band** you want to switch to, as well as the channel. We recommend using **default** if you are not sure which Channel to choose. After choosing the band you want to switch to, tap on connect to start the switching process.
+
+An alert will pop-up informing you about what might happen if you proceed with this operation. Tap on **YES** to continue with this operation. 
+
+.. warning:: StellarMate App could be disconnected and channel switching might fail due to variety of reasons in which case the hotspot will be restored to default settings.
+
+.. image:: /_static/images/smapp_22101_band_alert.jpg
+    :align: center
+    :width: 400px
+
+
+You might have to wait until the hotspot starts broadcasting a Wi-Fi signal again, if it's successful, you will be able to connect back to StellarMate and find that it shows the band you switched to, in the Device tab.
+If not, StellarMate will go back to the Automatic band.
+

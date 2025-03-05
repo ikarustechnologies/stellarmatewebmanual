@@ -1,0 +1,14 @@
+.. subsection:: Preview Framing :level:2
+
+.. warning:: Preview images are not saved in Internal Storage
+
+.. image:: /_static/images/ekos/modules/QuickCameraControls/controls.jpg
+     :align: center
+     :width: 400px
+
+1) You can capture a preview image by tapping on the Camera button. 
+     An animated circular progress icon will show the progress of the current capture and will show you when the image is being downloaded to the app by showing a green cloud download icon.
+2) Looping can be done as well by tapping on the Loop button (repeat icon). 
+
+
+3) You can stop the capturing process by tapping on the Stop button anytime while it's capturing.

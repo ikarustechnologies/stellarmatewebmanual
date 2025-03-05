@@ -1,0 +1,15 @@
+.. subsection:: Ethernet IP :level: 1
+
+There are two methods for Ethernet connections:
+
+**- Direct Ethernet** Connection Between StellarMate and your PC/Laptop: This can be useful in the field if you want a fast response time, at the expense of more cables. Ethernet is always faster and more reliable than WiFi connections (at the moment at least). When using Direct Connection, the HotSpot is activated
+
+.. image:: /_static/images/ekos/tabs/Device/toggle-hostname.jpg
+    :align: center
+    :width: 400px
+
+**- LAN Ethernet Connection:** Connect Ethernet to Router/Switch. Your router shall assign an IP address for StellarMate automatically, or you can configure the router to assign StellarMate a permenant IP address.
+
+.. image:: /_static/images/ekos/tabs/Device/change-hostname.jpg
+    :align: center
+    :width: 400px

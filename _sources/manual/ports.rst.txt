@@ -1,0 +1,26 @@
+.. chapter:: Ports
+    
+StellarMate runs few back-end services that use the following ports.
+
+
++-----------------------------+----------------+------------------------+
+| Service                     | Port           | WAN/Internet Control   |
++-----------------------------+----------------+------------------------+
+| SSH                         | 562            | Not required           |
++-----------------------------+----------------+------------------------+
+| INDI Web Manager            | 8624           | Required               |
++-----------------------------+----------------+------------------------+
+| INDI Web Server             | 7624           | Required               |
++-----------------------------+----------------+------------------------+
+| EkosLive Server             | 3000           | Required               |
++-----------------------------+----------------+------------------------+
+| Web VNC                     | 6080           | Not required           |
++-----------------------------+----------------+------------------------+
+| VNC                         | 5900           | Not required           |
++-----------------------------+----------------+------------------------+
+| NetBIOS                     | 139            | Not required           |
++-----------------------------+----------------+------------------------+
+| Samba                       | 445            | Not required           |
++-----------------------------+----------------+------------------------+
+
+To make StellarMate accessible from internet, the ports designated as **Required** above need to be opened in the router's firewall settings.This is only required if you need to access StellarMate remotely over the internet or Wide Area Network (WAN). For local Hotspot and Home WiFi Connections, no need to open any ports. Beware that there is is no authentication/authorization portal provided by StellarMate, so only open portals at your own risk or by providing an additional layer of secur

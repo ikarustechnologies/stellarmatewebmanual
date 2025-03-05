@@ -1,0 +1,11 @@
+.. section:: Ethernet
+
+**Note**
+
+You must first complete the First Time Setup guide before proceeding with this tutorial.
+
+All StellarMate units are shipped with a Gigabit ethernet. Compared with WiFi, wired Ethernet connection offers higher speeds and reliability. It is recommended for fixed observatory setups. By default, StellarMate operates in HotSpot mode. Even if configured for WiFi connection or LAN, StellarMate always switches back to HotSpot mode when the other connection modes become unavailable. This is to enable you to always access the device regardless of network availability.
+
+When plugged to a network, StellarMate should be assigned an IP address from the router. The IP address is not fixed and managed by the router. Advanced users can assign a fixed IP address from the router directly (where supported) by assigning a fixed IP address to StellarMate unit MAC address.
+
+.. include:: ethernet/direct-ethernet.rst

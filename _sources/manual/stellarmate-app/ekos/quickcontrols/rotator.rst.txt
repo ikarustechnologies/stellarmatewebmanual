@@ -1,0 +1,27 @@
+.. subsection:: Rotator :level:1
+
+Rotator quick controls allows you to control your rotator quickly and easily, it has the following features:
+
+Display Current Angle (please note all angles are in degrees)
+    Goto absolute angle
+    10-step Counter-Clock-Wise Movement
+    10-step Clock-Wise Movement
+    Abort Motion
+
+
+**Going to absolute angle**
+
+
+You can go to an absolute angle by tapping on the textbox and typing it the angle you want to go to, then tap on the Goto button next to the text-box on the right. You will be able to see the angle display view changing along the way to its final angle.
+
+.. image:: /_static/images/ekos/modules/QuickRotatorControls/rotator.jpg
+    :align: center
+    :width: 400px
+
+**Going to an angle position by steps**
+
+You can rotate the rotator to a different angle using the **CW** and **CCW** rotation buttons, which will change the rotation by 10 steps depending on the direction chosen.
+
+.. image:: /_static/images/ekos/modules/QuickRotatorControls/set-value.jpg
+    :align: center
+    :width: 400px

@@ -1,0 +1,19 @@
+.. subsection:: Fuses
+
+StellarMate Pro is equipped with with two fuses to protect circuit against over-current:
+
+**Top Fuse**: If the top cover is removed this fuse can be easily accessed. The fuse type is a 10A (red) mini blade fuse.
+
+.. image:: /_static/images/sm-device/smx-pro/fuse.JPG
+   :width: 300px
+   :align: center
+
+This fuse is protecting the power outputs.
+
+**Bottom Fuse**: If the top cover and the PCB is removed this fuse can be accessed. The fuse is an 8A very fast acting type e.g. a “NANO2” type from Littelfuse (0453008.MR), but fuses from other manufacturer are also compatible which has the following outer diameter.
+
+.. image:: /_static/images/sm-device/smx-pro/bottom-fuse.JPG
+   :width: 300px
+   :align: center
+
+This fuse is protecting the internal circuits and USB connector, if the fuse is burned please contact us before replacing.

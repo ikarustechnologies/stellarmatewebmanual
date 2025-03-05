@@ -1,0 +1,55 @@
+.. subsection::Presets:level: 2
+
+A preset is a collection of settings for a single capture job. These settings are applied to each capture job, while the capture settings are applied globally to all jobs.
+
+When creating a new preset, the preset label is automatically generated based on the selected settings (e.g., exposure time, binning, filter). This helps you easily identify presets in the future.
+
+To add a new Capture Preset, tap the + icon.
+
+.. image:: /_static/images/ekos/modules/capture/preset/add-preset.jpg
+    :align: center
+    :width: 400px
+
+All settings marked with “--” mean leave as-is. For example, if the current gain is 100, and the job is executed, the gain would be left as-is.
+
+.. image:: /_static/images/ekos/modules/capture/preset/duplicate-preset.jpg
+    :align: center
+    :width: 400px
+
+Once you press the Saved button (on the right side) Preset will get saved.
+
+To customize the preset label generation, tap the "Edit" icon next to the preset name. You can modify the label format to suit your preferences
+
+.. image:: /_static/images/ekos/modules/capture/preset/edit-preset-name.jpg
+    :align: center
+    :width: 400px
+
+.. image:: /_static/images/ekos/modules/capture/edit-auto-name.jpg
+    :align: center
+    :width: 400px
+
+When you edit a preset, you can also duplicate the Preset. Duplicating a preset can be handy when you need to only alter one or two fields while keeping the rest the same. To duplicate a preset, tap on the duplication icon.
+
+.. image:: /_static/images/ekos/modules/capture/duplicate-preset.jpg
+    :align: center
+    :width: 400px
+
+You can also create the same preset with the multiple filter names. Hence with multiple filter names you can have presets as shown in the screenshot below:
+
+.. image:: /_static/images/ekos/modules/capture/preset/presets.jpg
+    :align: center
+    :width: 400px
+
+* **Preset Editor** contains the following fields:
+* **Preset name:** Name of the preset.
+* **Frame Type:** Specify the type of desired camera frame. Options are Light, Dark, Bias, and Flat frames.
+* **Exposure:** Specify exposure duration in seconds. 
+* **Binning:** Specify horizontal (X) and vertical (Y) binning.
+* **Format:** Specify capture save format (FITS, XISF, or Native when available)
+* **Encoding:** For DSLR cameras, you can an additional option to save in Native format (e.g. RAW or JPEG).
+* **Filter:** Specify desired filter.
+* **Temperature:** Set the desired temperature, if your camera is equipped with a cooler. Check the option to force temperature setting before any capture. Capture process is only started after measured temperature is within requested temperature tolerance
+* **Gain:** Specify the value of gain. Leaving it to -- would not change the current gain set in the camera
+* **ISO:** For DSLR cameras, specify the ISO value.
+* **Offset:**  Specify the value added to avoid the reads to clip at value "zero". Leaving it to -- would not change the current offset set in the camera.
+* **Dither frequency:**

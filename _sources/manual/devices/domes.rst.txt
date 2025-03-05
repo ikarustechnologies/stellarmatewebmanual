@@ -1,0 +1,73 @@
+.. section:: Domes
+
+INDI Dome support includes all observatory enclosures of different designs such as roll-off roofs, regular domes, and clamshell-style domes.
+
+To implement your own roll-off roof driver, here are the basic requirements:
+**Hardware**
+1. **AC/DC Motor:** The motor must be electronically controllable either via a relay or a controller board (Arduino..etc). The only controls needed are start/stop and direction control (CW and CCW). In INDI, a fully opened roof is considered Unparked, while a fully closed roof is considered Parked. Anything between these two (partially open) is considered an Unknown state.
+2. **Limit switches:** Fully closed and fully opened limit switches are required in order to sense when the roof is fully opened and closed. These limit switches serves two purposes:
+    1. Cut off power to motor once limit is reached.
+    2. Sense when roof is parked or unparked.
+Therefore, Motor + 2 limit switches is all you need to have a working roll-off roof hardware system to be used with INDI.
+
+**Software**
+The roll-off roof requires an INDI driver so that it can be controlled from any INDI-compatible client. You can either use the Dome Scripting Gateway driver or customize the sample INDI roll-off driver to fit your needs.
+The Dome Scripting Gateway driver relies on executing Python scripts to command actions for Open and Close. It is recommended to use this driver if you have limited programming expereince but can manage to write simple Python script to control your motor.
+
+Customizing the INDI Roll-off driver is optimal if you know some rudementary C++. Here are some real-world examples of roll-off drivers to get you started:
+
+    **Aldi Roof Driver:** The roof is powered by a 550W electric hoist purchased from Aldi. The arduino controls 4 relays connected to the hoist's hand controller which override the manual switch. The indi driver comminicates with the arduino using the frimata protocol.
+    **Ikarus Observatory Driver:** Using Digital Loggers Din Relay, Limit switches, Raspberry PI
+    **Arduino Roll Off Driver:** It is a INDI rolloff roof driver and includes two examples of Arduino programs communicating over USB. The driver is packaged as a third party driver but haa not been included with the standard distribution. The Arduino code needs to be modified to match the motor control selected, the INDI driver should work once installed.
+    **Odroid INDI Roof:** This indi driver is used to control an observatory box. It is just a very compact box with an automated lid, opened by two linear actuators, 2 micro-switches act as position sensors (open/close). The all lot is powered by an Odroid-C1 and a standard 8 relays board.
+
+**Dome** Slaving**
+Dome slaving refers to the dome slit synchronization with the telescope position as the mount traverse across the sky. The dome slit follows the telescope whether is is slewing from one object to another, or while tracking. When tracking, the dome would move when the difference between its current and target postion exceeds the Autosync Threshold parameter, which default to 0.5 degree. Therefore, the dome calculates its target position every second, but only commands motion when the difference exceeds the autosync threshold.
+
+You can slave the dome to the mount by setting the required slaving parameters:
+
+    1. Radius is for the radius of the dome in meters.
+    2. Shutter width is the clearance of the shutter of the dome in meters
+    3. N displacement is for North displacement. If telescope is not in its ideal central position this parameter allows to configure how much it is displaced from the center. Displacement to north are positive, and to south are negative.
+    4. E displacement is for East displacement. Similar as the above, displacement to east are positive, and to west are negative.
+    5. Up displacement is for displacement in the vertical axis. Up is positive, down is negative.
+    6. OTA offset is for the distance of the optical axis to the crossing point of RA and DEC. In fork mount this is generally 0, but for German like mounts is the distance from mount axis cross to the center line of the telescope. West is positive, east is negative.
+After settings the parameters above, go to Options tab and click Save in Configurations so that the parameters are used in future sessions. You can also set the Autosync threshold which is the minimum distance autosync will move the dome. Any motion below this threshold will not be triggered. This is to prevent continuous dome moving during telescope tracking.
+
+**Dome is not correctly slaving**
+1. Make sure that the dome azimuth movement and position are correct and repeatable. If the azimuth is incorrect or not repeatable you will never get a good sync. Good means to withing a couple of degrees.
+2. Align the mount. For a celestron GEM that's polar aligned a quick align should be good enough but once again you can't get a good sync without a good alignment. Within a degree should do.
+3. Set the dome radius to a sensible value, Do not change it again.
+4. Set the mount to hour angle 6h, declination 90. This is the Align position, looking at the pole with the counterweight shaft down. In this position the OTA offset will have no effect on the dome azimuth, not will the NS position of the mount.
+5. Adjust the mount EW offset until the scope is looking through the centre of the dome slit.
+6. Move the mount so the counterweight shaft is horizontal and the OTA is looking at the Southern horizon. In this position the main things that affect where the dome needs to be are the EW mount offset and the OTA offset.
+
+We have already set the EW offse so set the OTA offset. Try this with the mount on both side of the meridian and iterate as required to get the scope able to see out in both cases.
+set the scope so it is looking at the East or west horizon, this should be with the dec counterweight shaft pointing down. Adjust the Ns offset so the OTA can see out. Do this both looking East and West.
+
+**Debugging Calculations**
+Ferran Casarramona, the developer of the Dome Slaving routine, wrote a spreadsheet to debug the calculations. You can make a copy and play with it to see how parameters affects the outcome.
+
+You can enter the values in blue cells, and output are in the orange cells. You enter your telescope parameters, and your latitude. Also enter target declination and target hour angle (angular distance to the meridian, in hours).
+
++-----------------+---------------------+---------+----------+
+| Domes           | Driver              | Devices | Comments |
++=================+=====================+=========+==========+
+| DDW Dome        | indi_ddw_dome       |         |          |
++-----------------+---------------------+---------+----------+
+| Baader Dome     | indi_baader_dome    |         |          |
++-----------------+---------------------+---------+----------+
+| DragonFly Dome  | indi_dragonfly_dome |         |          |
++-----------------+---------------------+---------+----------+
+| NexDome Beaver  | indi_nexdome_beaver |         |          |
++-----------------+---------------------+---------+----------+
+| MaxDomeII       | indi_maxdomeii      |         |          |
++-----------------+---------------------+---------+----------+
+| NexDome         | indi_nexdome        |         |          |
++-----------------+---------------------+---------+----------+
+| Rigel Dome      | indi_rigel_dome     |         |          |
++-----------------+---------------------+---------+----------+
+| ScopeDome       | indi_scopedome_dome |         |          |
++-----------------+---------------------+---------+----------+
+| Talon6          | indi_talon6         |         |          |
++-----------------+---------------------+---------+----------+

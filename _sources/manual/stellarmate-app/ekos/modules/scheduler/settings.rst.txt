@@ -1,0 +1,143 @@
+.. subsection::Settings :level:2
+
+.. image:: /_static/images/ekos/modules/scheduler/scheduler_settings.jpg
+    :align: center
+    :width: 400px
+
+
+1. **Target name:** Target designation is automatically filled. It can be adjusted manually..
+2. **Target Selector:** Search for targets by category and name. Targets can be also selected from the Targets tab when Ekos is offline.
+
+.. image:: /_static/images/ekos/modules/scheduler/GOTO.JPG
+    :align: center
+    :width: 400px
+
+
+3. **Toggle Scheduler Settings**
+4. **J2000:** RA and DEC are displayed of a specific target.
+    Toggle Mosiac Planner
+5. **Sequence File:** Sequence: A sequence file describes the required settings for each batch of images. Create a sequence file in the Capture module and save it for later. 
+6. You can select the file using Directory browser.
+7. **Settings:** Contains all of the settings of Scheduler module.
+        **General Settings:**
+
+.. image:: /_static/images/ekos/modules/scheduler/advanced_settings.jpg
+    :align: center
+    :width: 400px
+
+
+1. **Optional FITS file:** If a FITS file is specified, the astrometry solver shall solve the file and use the central RA/DEC as the target coordinates. You can select the file using Directory browser.
+2. **Removes selected FITS file.**
+3. **Profile:** Select which equipment profile to utilize when starting Ekos. If Ekos & INDI are already started and online, this selection is ignored.
+4. **Steps:** Each job goes through a sequence of discrete steps. Each step or stage can be toggled on or off as desired:
+
+    1. **Track:** Mount is commanded to slew to target.
+    2. **Focus:** Camera auto-focus (if applicable) is started.
+    3. **Align:** Plate-solving is performed to ensure the correct location, framing and orientation of the target is met. If a FITS file is specified in General Settings, then this file is first plate-solved and then mount is commanded to to slew to target solution coordinates. This is followed by another plate-solving process to ensure we are within tolerance at the target solution coordinates. If the position angle of the FITS image is different from the current camera orientation, the camera orientation can be automatically adjusted if a mechanized rotator is detected. Otherwise, a manual camera rotation is required until the image position angle is satisfied.
+    4. **Guide:** Using a guide camera, the mount tracking is locked to a guide star to enable long-exposure astrophotography 
+    5. **Position Angle:** Select the desired Sky Position Angle in degrees (East of North). Ignore this setting to image using the camera current position angle. Use Target tab Framing Assistant tool to visually adjust the field of view until the desired orientation is achieved.on angle: You can also specify and position angle.
+
+**Scheduler**
+
+.. image:: /_static/images/ekos/modules/scheduler/scheduler_option_settings_1.jpg
+    :align: center
+    :width: 400px
+
+
+1. **Lead time** is the minimum time in minutes between jobs. The scheduler starts execution of a job before its scheduled startup time by this lead time. Early execution is useful as focusing, alignment, and guiding procedures may take prolonged periods to time to complete.
+2. **Do not permit** jobs to be scheduled or executed past this many minutes before dawn.
+3. **In case no** scheduler job is scheduled for this many hours, perform a complete shutdown procedure and restart observatory operations once the next job is ready.
+4. **Do not permit** jobs to be scheduled less than this many degrees before the altitude restriction. Actual execution proceeds until the altitude limit.
+5. **Offset astronomical dusk** by this many hours. This positive or negative value adjusts the twilight restriction.
+6. **Offset astronomical dawn** by this many hours. This positive or negative value adjusts the twilight restriction.
+7. **After shutdown** procedure is successfully executed, stop INDI and Ekos.
+8. **If the shutdown** script terminates INDI server, enable this option so that no disconnection errors are generated.
+9. **When processing** a scheduled job, resume the sequence starting from the last image present in storage.
+
+.. image:: /_static/images/ekos/modules/scheduler/scheduler_option_settings_2.jpg
+    :align: center
+    :width: 400px
+
+
+10. **When calculating** position after captures, compute it every Nth capture. Set to 0 to disable.
+11. **If captured** position exceeds target position by more this many arcminutes, abort capture and reschedule the pipeline.
+12. **Reset mount** model on alignment failure
+13. **Reset mount** model before starting each job
+14. **If Align** is enabled, scheduler would initiate a realignment procedure before restarting any jobs even if guiding is active.
+15. **If guiding calibration** fails then restart alignment process before proceeding to guiding recalibration process again. This can help recenter the target object in the field of view if the calibration process strayed too far off.
+
+**Job Startup**
+
+.. image:: /_static/images/ekos/modules/scheduler/job_startup.JPG
+    :align: center
+    :width: 400px
+
+
+1. **Culmination Offset:** Start the observation job when the object reaches culmination adjusted for the offset value in minutes. By default, the observation job runs 60 minutes prior to culmination. 
+2. **ON:** Start the job on the specified date and time.
+3. **ASAP:** Start the observation job as soon as all the constraints, if any, are met. The best candidate target shall be imaged first.
+4. **Algorithm:** 
+       * **Classic:** Start jobs that meet the constraints by priority and score.
+       * **Greedy:** Always attempt to run a job. It picks the highest priority job that can run according to its constraints. It will interrupt running jobs if a higher priority job can run.
+
+**Job Constraints:**
+
+.. image:: /_static/images/ekos/modules/scheduler/job_contraints.JPG
+    :align: center
+    :width: 400px
+
+
+1. **Alt:** The object's altitude must remain equal or higher than the given value.
+2. **Moon:** The moon separation must remain equal to or higher than the given value.
+3. **Weather:** Weather conditions must remain safe. When weather conditions become dangerous, shutdown procedure is initiated.
+4. **Twilight:** The twilight restriction constraints jobs to execute in astronomical darkness. Use the dusk and dawn offsets in the Ekos Scheduler options to adjust the interval.
+5. **Artificial Horizon:** The A.H restriction constrains the attitude of the target to be above the artificial horizon. If any are defined and enabled. See the artificial horizon item in the KStars Settings menu.
+
+**Job Completion:**
+
+.. image:: /_static/images/ekos/modules/scheduler/job_completion.JPG
+    :align: center
+    :width: 400px
+
+1. **Sequence Completion:** The observation job is completed when the sequence is complete.
+2. **Repeat for:** No. of times sequence will repeat.
+3. **Repeat until terminated:** Restart the sequence job indefinitely.
+4. **Repeat until:** Terminate the job on given date and time.
+
+**Observatory Startup:**
+
+.. image:: /_static/images/ekos/modules/scheduler/observatory_startup.JPG
+    :align: center
+    :width: 400px
+
+
+1. 
+    * **UnPark dome:** Park dome to home position
+    * **UnPark Mount:** Park telescope to home position.
+    * **Uncap:** Open dust cover.
+    * **Script:** One time startup procedure to be executed before starting Ekos. The script is executed before the startup procedures (i.e Unpark scope), if Selected, are executed.
+
+**Aborted Job:**
+
+.. image:: /_static/images/ekos/modules/scheduler/aborted_job.JPG
+    :align: center
+    :width: 400px
+
+**None:** Do not reschedule aborted jobs.
+**Queue:** Reschedule aborted jobs as soon as all executable jobs are either completed or aborted.
+**Immediate:** Reschedule an aborted job immediately.
+**Reschedule errors:** Treat errors like aborts. (Delay in seconds).
+
+**Observatory shutdown Procedure:**
+* For more complex observatory environments, there are usually predefined custom procedures to be executed to prepare the observatory for imaging, and another set of procedures on shutdown. The user may plan to image one or more targets during the night, and expects data to be ready by morning.
+
+.. image:: /_static/images/ekos/modules/scheduler/shutdown_procedure.JPG
+    :align: center
+    :width: 400px
+
+* **Warm CC:** Turn off CCD cooler.
+* **Cap:** Close dust cover.
+* **Park Mount:**  Park telescope to home position.
+* **Park Dome:** Park dome to home position.
+* **Script:** One-time shutdown procedure to be executed after all Scheduler jobs are completed. The script is executed after the shutdown procedure (i.e Parking), If selected, are completed.
+

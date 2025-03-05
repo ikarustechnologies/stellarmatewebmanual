@@ -1,0 +1,7 @@
+.. section:: Starting & Stopping Server
+
+Click Start to establish the INDI server. The list of active drivers running should be displayed in the info box. Once the server is established, you can connect to StellarMate from any INDI client.
+
+**Note**
+
+If you are using Ekos, you do not need to manually start/stop drivers in the web manager. Simple check INDI Web Manager checkbox in Ekos Profile Editor, and Ekos manages starting/stopping INDI drivers transparently.

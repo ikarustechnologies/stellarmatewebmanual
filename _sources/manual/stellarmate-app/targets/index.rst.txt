@@ -1,0 +1,143 @@
+.. section:: Targets
+
+StellarMate Targets is the StellarMate Planning tool to streamline your observation session. Search from thousands of objects and filter them according to criteria important to every astrophotographer.
+Objects are sorted by brightest object first (if their magnitude is known). The number of objects listed is limited to the brightest 100 objects that satisfy the conditions set in the Filters section. To search for any arbitrary object, enter its name in the search bar and tap the Find icon. If the object is found, it should be added to the My Searches list.
+Add objects of interest to a quickly accessible Favorites list, or create and manage lists for your seasonal targets. Use the almanac info box to find Lunar, Solar, and Twilight times.
+
+.. image:: /_static/images/ekos/tabs/Targets/targets-stella.jpg
+       :align: center
+       :width: 400px
+
+**Stella Assistant:**  
+
+You can use Stella in Targets.
+
+.. image:: /_static/images/ekos/tabs/SkyMap/mount-controller.jpg
+       :align: center
+       :width: 400px
+
+Once it is toggled, you can filter the targets.
+
+.. image:: /_static/images/ekos/tabs/Targets/targets-stella1.jpg
+       :align: center
+       :width: 400px
+
+.. image:: /_static/images/ekos/tabs/View/stella-tooltip.jpeg
+       :align: center
+       :width: 400px
+
+**Date & Time:**
+
+.. image:: /_static/images/ekos/modules/targets/time.jpeg
+       :align: center
+       :width: 400px
+
+You can preview the targets available at a different date or time by changing the settings (This option is disabled if Ekos is running)
+
+**Sun/Moon Visibility**
+
+.. image:: /_static/images/ekos/modules/targets/visibilities.jpg
+       :align: center
+       :width: 400px
+
+1. Moon rise/set times
+2. Illumination percentage and lunar phase name
+3. Sunset/Sunrise
+4. Astronomical Twilight Dusk/Dawn
+
+**Filters**
+
+.. image:: /_static/images/ekos/modules/targets/moon-filters.png
+       :align: center
+       :width: 400px
+
+1. Minimum object alititude in degrees.
+2. Minimum duration in hours where the object must meet the altitude condition above. For example, if altitude is 20 degrees, and duration is two hours, then only objects that remain above 20 degrees for at least two hours are going to be included in the search results.
+3. Minimum Field of View (FOV) in arcminutes. This is only applicable to extended objects like nebulae and galaxies and not to point sources like stars.
+4. Maximum Magnitude. Lower it to limit it to more bright objects.
+5. Filter the objects by type.
+6. Reset all filters to default value.
+7. Filter the objects by their horizontal direction.
+
+.. image:: /_static/images/ekos/modules/targets/objects.jpeg
+       :align: center
+       :width: 400px
+
+
+**Search Results**
+
+.. image:: /_static/images/ekos/modules/targets/results.jpeg
+       :align: center
+       :width: 400px
+
+1. Number of results
+2. Filter by object name (only filters currently displayed results)
+3. **Extended Search:** You can search for an object by name only without adjusting any filters. This would search for ALL objects of all types regardless of filters. If the object is found, it is then added to the **My Searches** list.
+
+**FOV Profile**
+
+.. image:: /_static/images/ekos/modules/targets/Fov-targets.jpg
+       :align: center
+       :width: 400px
+
+You can overlay a Field-of-View (FOV) indicator on the top of the displayed image. This aids in target framing. By default, the FOV rectangle color is green with the top marked in orange. The top coincides with your camera/frame top. Using the overlay helps to determine exactly how l the target appears in a captured image.
+All units are in arcminutes. 1 arcminute is 1/60 of a degree. For reference, the Moon is 30 arcminutes or half a degree across the sky.
+When the equipment profile is running, the FOV for each connected camera is automatically generated. You can simply select it from the dropdown menu to activate it. Furthermore, you can add your own FOV indicators manually as illustrated below.
+In order to use the Framing Assistant, it is necessary to select an FOV profile first.
+
+1. FOV profile dropdown
+2. Add | Edit | Delete (FOV profile)
+3. Exit list (returns to normal targets browsing)
+
+Adding an FOV profile in opens up the following panel:
+
+.. image:: /_static/images/ekos/modules/targets/fovProfile.jpg
+    :align: center
+    :width: 400px
+
+After setting the Focal Length, Camera width & height and pixel width & height, the FOV can be calculated by pressing the Calculate FOV button.
+
+**Lists**
+
+.. image:: /_static/images/ekos/modules/targets/list-targets.jpg
+    :align: center
+    :width: 400px
+
+It contains Lists dropdown. Add, Edit the list name or Delete the selected list.
+
+.. image:: /_static/images/ekos/tabs/Targets/target_info.jpg
+    :align: center
+    :width: 400px
+
+**Target Info**
+
+1. Object designations.
+2. Object name.
+3. Object Phase:
+    * Green: Object is rising
+    * Yellow: Object is transiting the meridian
+    * Red: Object is sitting
+4. Magnitude
+5. Object Image and FOV Overlay.
+6. Altitude vs. Time Plot. The X-Axis designates time starting from 12 PM to 12 AM, with local Midnight (00:00) at the center of the image. The yellow vertical line indicates the current time. Next to the current time line are the object’s current Azimuth and Altitude values in degrees.
+7. Add to Favorites.
+8. Add to custom list.
+9. Remove from current list.
+10. **Go & Solve:** Go to object and plate solve (required to use Framing Assistant).
+
+When Ekos is offline, Targets will be used to schedule the coordinates information to Scheduler.
+
+.. image:: /_static/images/ekos/tabs/Targets/targets_offline.JPG
+    :align: center
+    :width: 400px
+
+When Ekos is offline, you can also use framing assistant to Schedule the coordinates to Scheduler.
+The border of each target displays it's status:
+
+* Idle: Grey
+* Plate-Solving: Yellow
+* Skewing to target: Purple
+* Plate-solving successful and target is centered: Green
+* Plate-solving unsuccessful or beyond acceptable accuracy threshold: Red
+
+.. include:: targets/framing.rst

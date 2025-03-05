@@ -1,0 +1,6 @@
+.. subsection::Hostname:level: 1
+
+**Change Name** : You can change device name (and its hostname) to another name without any spaces. For example, if you rename it to myobservatory, the host name shall be changed to http://myobservatory.local.
+
+
+Apply entering desired hostname, press "Apply" and reboot your SM unit to get settings applied all over.

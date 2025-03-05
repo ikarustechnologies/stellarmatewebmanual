@@ -1,0 +1,40 @@
+.. subsection::Guide :level: 1
+
+The Guide module manages guiding the mount to ensure targets are locked at the center during imaging. A dedicated guide camera is required in the secondary optical train. It has the following features:
+
+* Manage / Select Optical trains.
+* Start guiding
+* Preview
+* Advanced Settings
+* Image viewer
+* Guide Plot
+
+.. image:: /_static/images/ekos/modules/guide/guide-idle.jpg
+    :align: center
+    :width: 400px
+
+**Guide Quick Settings**
+
+.. image:: /_static/images/ekos/modules/guide/quick-settings.jpg
+    :align: center
+    :width: 400px
+
+1) **Train:** You can Select / Edit a train specifically for Align module. Each module has it's own train. Visit Optical trains topic for more.
+2) **Exposure:** Exposure time in seconds
+3) **Delay:** Delay in seconds between image captures.
+4) **Binning:** Guide camera binning. It is recommended to set to 2x2 or higher.
+
+
+**Guiding**
+
+You can start guiding by tapping on the Start button. The guide module will start by calibrating, and then will start the guiding process. When guiding is in progress, you will be able to see the Guide plot being populated with lines for the RA drift, DE drift and the Total RMS. You can also check the values for RA RMS, DE RMS and Total RMS under the plot.
+
+.. image:: /_static/images/ekos/modules/guide/fits.jpg
+    :align: center
+    :width: 400px
+
+.. image:: /_static/images/ekos/modules/guide/graph.jpg
+    :align: center
+    :width: 400px
+
+.. include:: ekos/modules/guide/settings/index.rst

@@ -1,0 +1,38 @@
+.. subsection::Files:level: 2
+
+.. image:: /_static/images/ekos/modules/capture/file-settings.jpg
+    :align: center
+    :width: 400px
+
+Settings for specifying where captured images are saved to, and how to generate unique file names.
+    **Directory:** Local directory to save the sequence images to.
+    **Format:** Format is used to define the image file names by the use of placeholder tags.
+
+.. image:: /_static/images/ekos/modules/capture/file-settings/placeholder.jpg
+    :align: center
+    :width: 400px
+
+**Suffix:**  Number of digits used to append the sequence number to the filename
+
+.. image:: /_static/images/ekos/modules/capture/file-settings/suffix.jpg
+    :align: center
+    :width: 400px
+
+**Preview:** Path of your filename
+
+You can now also unmount your USB device by pressing "Unmount" button next to your external storage device.
+
+.. image:: /_static/images/ekos/modules/capture/file-settings/unmount.jpg
+    :align: center
+    :width: 400px
+
+You can also set the directory path of your USB device (if attached). If USB device is connected, then External Storage devices are visible.
+By selecting on of them, will set the Directory path of it.
+
+.. image:: /_static/images/ekos/modules/capture/file-settings/usb.jpg
+    :align: center
+    :width: 400px
+
+.. image:: /_static/images/ekos/modules/capture/file-settings/directory.jpg
+    :align: center
+    :width: 400px

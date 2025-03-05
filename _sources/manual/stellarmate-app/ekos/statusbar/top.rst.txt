@@ -1,0 +1,51 @@
+.. subsection::Top:level:1
+
+**Mount Status**
+
+Shows the status of the mount if it is parking/unparking, slewing, tracking.
+Displays the current target object name
+Right Ascension,
+Declination
+**Camera Status**
+
+Shows the current status of the camera: 
+   **Capturing:** When the camera is busy capturing images.
+   **Complete:** Sequence or Image is captured successfully.
+   **Idle:** Not capturing any images.
+Displays the name of the camera.
+Active filter name.
+
+.. image:: /_static/images/ekos/statusbar/top/camera-name.jpg
+   :align: center
+   :width: 400px
+
+Once you press on the filter name, you will be able to edit Filter names.
+
+.. image:: /_static/images/ekos/statusbar/top/filter-name.jpg
+   :align: center
+   :width: 400px
+
+You can also access Capture settings by pressing the Cog wheel button on the top right.
+
+.. image:: /_static/images/ekos/statusbar/top/filters.jpg
+   :align: center
+   :width: 400px
+
+Current temperature of the camera
+
+Overall Status: An active operation in all modules except Mount since mount has its own status badge.
+Tap the status badge to open Notifications History which is a chronological list of the most recent notifications.
+
+.. image:: /_static/images/ekos/statusbar/top/overall-status.jpg
+   :align: center
+   :width: 400px
+
+Clear all notifications
+
+.. image:: /_static/images/ekos/statusbar/top/notifcation-list.jpg
+   :align: center
+   :width: 400px
+
+Battery level and connection
+If the WiFi, Ethernet is connected it is shown in the status bar correctly
+Displays the current battery level of mobile/tablet.

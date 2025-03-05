@@ -1,0 +1,20 @@
+.. section:: Web Manager URL 
+
+You can access the Web Manager from any browser at this url:
+
+http://stellarmate.local:8624
+
+**Note**
+
+When accessing StellarMate directly via Hotspot (Access Point), the unit IP address is always 10.250.250.1. Therefore, if you are having an issue accessing the unit via its hostname, you can simply use the IP address in your browser to access StellarMate Web Manager (http://10.250.250.1:8624).
+
+Furthermore, it can be access in the StellarMate App by going to the device tab and click on Web Manager button.
+
+.. image:: /_static/images/web-manager-mobile.jpg
+  :width: 400px
+  :align: center
+
+**Note**
+
+Interacting with the StellarMate Web Manager is usually not necessary since both Ekos and the StellarMate App can operate the equipment profiles directly. The Web Manager is useful when you are not using the StellarMate App and need to remotely manager the drivers directly.
+

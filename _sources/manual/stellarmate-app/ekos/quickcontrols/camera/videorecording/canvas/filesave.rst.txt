@@ -1,0 +1,13 @@
+.. subsection:: File save :level:3
+
+.. image:: /_static/images/ekos/modules/QuickCameraControls/streaming/canvas/file-save.jpg
+    :align: center
+    :width: 400px
+
+1) **Directory:** Path of videos is set using Directory browser.
+2) **File Name** : Set SER video file name. Record files may contain some patterns to make them dynamic.
+    *  _D_: For the date in YYYY-MM-DD
+    *  _H_: For time in HH:MM:SS.
+    *  _T_: For ISO8601 time stamp.
+    *  _F_: For filter name, if any.
+

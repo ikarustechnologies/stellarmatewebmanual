@@ -1,0 +1,203 @@
+.. chapter:: StellarMate Pro
+
+.. warning::
+   NEVER LOOK AT THE SUN WITH YOUR TELESCOPE OR CAMERA WITHOUT APPROPRIATE FILTERS IN PLACE. PERMANENT AND IRREVERSIBLE DAMAGE TO YOUR EYES AND YOUR EQUIPMENT WILL OCCUR.
+
+.. warning::
+   NEVER EXCEED 16V DC INPUT VOLTAGE AS IT MIGHT CAUSE IRREVERSIBLE DAMAGE TO THE CONTROLLER AND ANY EQUIPMENT CONNECTED TO IT.
+
+.. warning::
+   OUTPUT VOLTAGE FOLLOWS INPUT VOLTAGE. IF OUTPUT VOLTAGE EXCEEDS THE CONNECTED EQUIPMENT VOLTAGE LIMITS, IT MAY CAUSE PERMANENT DAMAGE TO THE CONNECTED EQUIPMENT.
+
+.. warning::
+   DO NOT DISASSEMBLE THE UNIT OR ATTEMPT REPAIRS. DO NOT SUBJECT THE UNIT TO WET ENVIRONMENTS. IRREVERSIBLE DAMAGE TO THE CONTROLLER AND ANY EQUIPMENT CONNECTED TO IT.
+
+.. include:: ./introduction.rst
+.. include:: ./specifications.rst
+.. include:: ./package-contents.rst
+.. include:: ./assembling-unit.rst
+.. include:: ./mounting.rst
+.. include:: ./power-section.rst
+
+.. section:: Connecting from PC
+
+StellarMate Pro operates on its own dedicated port 12624. If you use StellarMate App to create equipment profiles, then the driver is automatically appended to your equipment profile. Similary, if you try to start an equpiment profile remotely from a PC/Mac, then the Web Manager automatically adds the SM Pro driver to your equipment profile. However, if you create an equipment profile directly in StellarMate Pro (for example, via VNC), then you need to explicitly add the driver in the Remote Driver section:
+
+@localhost:12624
+
+.. image:: /_static/images/sm-device/smx-pro/connect-pc.png
+    :width: 400px
+    :align: center
+
+.. section:: Startup
+StellarMate Pro takes 30-60 seconds to fully startup from a cold start. If the buzzer is enabled (default), then a double-beep indicates the unit is ready for sure.
+
+Once the unit is ready, all previous configuration is loaded and applied including the power status of all outputs. Please note that on a soft-restart (i.e. restarting the unit from the Device tab in the StellarMate App), then all output ports shall retain their power settings throughout the soft restart process.
+
+
+.. image:: /_static/images/sm-device/smx-pro/restart.jpg
+   :width: 400px
+   :align: center
+
+After the unit is started, use the StellarMate App to connect to the unit and operate it. Start your equipment profile or schedule a session with the scheduler.
+
+.. section:: Shutdown
+It is generally safe to cut the power to the unit on shutdown. However, it is recommended to commence shutdown from the StellarMate App Device tab. This is a safer approach that ensures all settings are saved and all write operations are completed before shutting down.
+
+.. image:: /_static/images/sm-device/smx-pro/shutdown.jpg
+   :width: 400px
+   :align: center
+
+If the buzzer is enabled, a single beep indicates that the shutdown is complete.
+
+By default, power is not cut off from any attached devices on shutdown as long as the 12V input power is active. To change this behavior, enable the Power Off option in the Power tab. If enabled, then disconnecting the Equipment Profile will cut off power to all attached devices as well.
+
+Generally, it is recommended to follow these steps to conclude your sessions:
+1. Park Mount & Dome.
+2. Disconnect Equipment Profile in Setup tab.
+3. Execute shutdown from Device tab.
+For permanent observatories, SM Pro can be powered for extended periods of time given that it is kept in a cool dry environment.
+
+.. section:: GPS
+GPS
+StellarMate Pro comes equipped with an integrated GPS/GLONASS receiver paired with an external passive antenna. It is specifically engineered for outdoor applications and may not function optimally without an unobstructed view of the sky. This receiver offers concurrent reception capability for GPS, GLONASS, Galileo, BDS, and QZSS open service L1 signals. With an impressive tally of 33 tracking channels, 99 acquisition channels, and 210 PRN channels, the SM Pro is adept at acquiring and monitoring various combinations of satellite signals.
+
+Beyond its location services, the GPS functionality supplies highly precise timing information, which plays a pivotal role in numerous astronomical calculations executed within the device. Precise time synchronization is achieved by utilizing the GPS Pulse-Per-Second signal (PPS). The GPS PPS signal offers an extremely accurate and stable time reference.
+
+.. WARNING:: Any connected USB 3.0 device may interfere with the GPS signal leading to a failure to obtain 3D lock. Interference can be mitigated by using double-shielded USB 3 cables or by disconnecting any USB 3.0 devices during power up to allow StellarMate Pro to obtain a lock first. With StellarMate Pro Board v1.3 or later, external Active GPS antennas are supported.
+
+
+
+**Passive and Active GPS Antenna**
+
+By default, SM Pro is shipped with a passive GPS antenna. Due to interference issues from USB 3.0 devices and other sources, the satellite signal may not be sufficient to obtain a GPS lock. An active antenna can be used to overcome this limitation. The Ikarus Technologies Active GPS Antenna (IKA-860) is recommended. Place the antenna at least 50 cm away from SM Pro. In StellarMate App, tap the GPS status indicator to toggle between the Passive & GPS antennas.
+
+GPS status is displayed in the StellarMate Pro App Power tab.
+
+.. image:: /_static/images/sm-device/smx-pro/gps.jpg
+   :width: 400px
+   :align: center
+
+
+The USR LED is used to designate the GPS lock status:
+
+**Flashing**: Satellite acquisition is in progress.
+
+**Solid**: A 3D GPS lock is obtained.
+
+
+.. section:: Auxiliary Ports
+StellarMate Pro offers a highly adaptable and future-ready I2C/1-Wire Auxiliary port, designed to accommodate inputs from environmental sensors, relay controls, DSLR camera snap controllers, and various third-party accessories, provided they are supported by the applicable software. External auxiliary devices can be seamlessly connected to this port using a standard 4-pole TRRS connector. Furthermore, the system allows for multiple I2C connectors to be daisy-chained on the same bus, enabling access to multiple external peripherals.
+
+1-Wire is supported by the hardware, but software support is due pending a future firmware update.
+
+For the acquisition of temperature and humidity data, it is recommended to employ the certified Ikarus Technologies Temperature Sensor (IKA-855). This sensor plays a critical role in specific operations, including automatic dew control.
+
+.. section:: Stepper Control
+StellarMate Pro is equipped with a TMC2209 stepper controller that is certified to operate Two-Phase Bipolar Stepper Motors up to 2.8A Peak. The INDI SM Pro driver includes focuser support that can directly drive the motor and support relative positioning, backlash compensation, and homing.
+
+Currently, there are no ready-assembled cables to connect a focuser stepper motor directly to StellarMate Pro, so you need to make your own cable using the wiring diagram below:
+
+.. image:: /_static/images/sm-device/smx-pro/stepper.JPG
+   :width: 400px
+   :align: center
+
+An male RJ12 6P4C (or 6P6C) plug needs to be wired to the motor as illustrated above.
+
+.. section:: Compatible Motors
+Compatible motors
+  NEMA-17
+
+
+.. include:: ./maintainence/index.rst
+
+**Procedure**
+
+1) **Power Off**: Ensure the StellarMate Pro is completely powered off and disconnected from any power source.
+
+.. image:: /_static/images/sm-device/smx-pro/power_off.jpg
+   :width: 300px
+   :align: center
+
+
+2) **Remove Antennas**: Carefully detach the WiFi and GPS antennas from the device.
+
+3) **Open the Case**: Unscrew the four M3 screws at the back of the StellarMate Pro case. Gently lift the lid, taking care not to damage the internal antenna cables. 
+
+.. image:: /_static/images/sm-device/smx-pro/case_open.jpg
+   :width: 300px
+   :align: center
+
+   
+**Disconnect CM4**  
+   * Disconnect the pigtail cable from the CM4.
+   * Unscrew the four M2.5 screws securing the CM4.
+   * Carefully lift the CM4 from the onboard sockets.
+
+**Install New CM4**
+   * Align the new CM4 with the sockets.
+   * Gently press the left side of the CM4 into place until you hear a distinct clicking noise.
+   * Then, gently press the right side of the CM4 into place until you hear a second clicking noise. Ensure the CM4 is fully seated.
+ 
+**Reconnect Pigtail Cable**
+   * Connect the pigtail cable to the CM4. Ensure a secure connection.
+   * Secure the pigtail cable to the metal cable clip using the provided fastener.
+   
+**Close the Case**
+   * Lower the lid and secure it with the four M3 screws.
+   * Reattach the WiFi and GPS antennas.
+
+**Important notes**
+   * Handle the CM4 and other components with care to avoid damage.
+   * Use the provided screws and avoid over tightening them.
+   * If you encounter difficulties, consult the StellarMate Pro support resources or seek professional assistance.
+
+
+.. section:: Troubleshooting
+
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+ 
+| #       | Issue                                              | Possible Causes                                                                               |          
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| 1       |Unit does not power up                              | 1) Bad Power Supply                                                                           | 
+|         |                                                    | 2) Bad Power Adapter Cable                                                                    |
+|         |                                                    | 3) Bottom fuse burned                                                                         |
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| 2       | Unit does not boot up:                             |                                                                                               |
+|         |                                                    |                                                                                               |
+|         | 1) HDD + ACT LEDs not blinking or dark             | 1) Make sure no cable is connected to the SM Pro USB-C Port.                                  |
+|         | 2) No Beep                                         | 2) SSD storage damaged or corrupted.                                                          |
+|         | 3) No Wireless access via Hotspot or Station mode. | 3) Board damaged.                                                                             |
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| 3       | Output DC port not supplying power                 | 1) Check if the port is toggled in the SM App. Check for any messages about burned fuse.      |
+|         |                                                    | 2) Check cable is fully plugged in.                                                           |
+|         |                                                    | 3) Check cable is not damaged.                                                                |
+|         |                                                    | 4) Check the peripheral device is not damaged.                                                |  
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| 4       | Output PWM port not supplying power                | 1) Check if the port is toggled in the SM App. Check for any messages about burned fuse.      |
+|         |                                                    | 2) Check duty cycle is properly set in the SM App.                                            |
+|         |                                                    | 3) Check cable is fully plugged in.                                                           |
+|         |                                                    | 4) Check cable is not damaged.                                                                |
+|         |                                                    | 5) Check the heating element is not damaged.                                                  |
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| 5       | Variable voltage not supplying power               | 1) Check if the port is toggled in the SM App. Check for any messages about burned fuse.      |
+|         |                                                    | 2) Check output voltage is properly set in the SM App.                                        |
+|         |                                                    | 3) Check cable is fully plugged in.                                                           |
+|         |                                                    | 4) Check cable is not damaged.                                                                |
+|         |                                                    | 5) Check the heating element is not damaged.                                                  |
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+
+|6        | No GPS Lock                                        | 1) Make sure you have an unobstructed view of the sky.                                        | 
+|         |                                                    | 2) Check if the Antenna connected to GPS SMA is marked as GPS.                                |
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| 7       | Weak or no WiFi signal.                            | 1) Check if the antenna connected to WiFi SMA is marked as WiFi.                              | 
+|         |                                                    | 2) Congestion: if there are many WiFi Networks in the area surrounding StellarMate,           |
+|         |                                                    |    the WiFi Hotspot might be slow due to signal and channel congestion. A possible solution   |
+|         |                                                    |    in case of severe interference is to toggle WiFi frequency (2.4Ghz/5Ghz) in                |
+|         |                                                    |    StellarMate OS and try to locate a channel that is relatively free of congestion.          |
+|         |                                                    | 3) HDMI Resolution: If you connect StellarMate to an external display using an                |
+|         |                                                    |    HDMI cable, then high resolution is known to cause interference with WiFi.                 |
+|         |                                                    |    Try to lower the HDMI resolution to improve the situation.                                 |
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| 8       |  No Sensor data                                    | 1) Check if the supported sensor is used.                                                     | 
+|         |                                                    | 2) Check cable is fully plugged to the AUX port.                                              |
+|         |                                                    | 3)  Faulty sensor.                                                                            |
++---------+----------------------------------------------------+-----------------------------------------------------------------------------------------------+

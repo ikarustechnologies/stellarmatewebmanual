@@ -1,0 +1,12 @@
+.. subsection:: Replace Computing module
+   
+This guide outlines the steps to replace a faulty Raspberry Pi CM4 on your StellarMate Pro. It is crucial to handle electronic components with care to prevent damage. Always wear an anti-static wrist strap to protect sensitive components from electrostatic discharge (ESD).
+
+   **Required Tools**
+
+   * Phillips head screwdriver (M2.5 and M3 sizes)
+   * Anti-static ESD wrist strap
+
+.. image:: /_static/images/sm-device/smx-pro/tools.jpg
+   :width: 200px
+   :align: center

@@ -1,0 +1,42 @@
+.. subsection::Process :level:3
+
+.. image:: /_static/images/ekos/modules/focus/process_settings.jpg
+    :align: center
+    :width: 400px
+
+
+The Process page has the following options:
+
+ **1. Detection**: Select star detection algorithm. Each algorithm have its strengths and weaknesses. It is recommended to keep the default value unless it fails to properly detect stars.
+    * **SEP:** Source Extractor and Photometry, an efficient source detection method based on Source Extractor (Bertin and Arnouts 1996; Bertin 2016). See SEP: Source Extractor as a library in the Journal of Open Source Software.
+    * **Centroid:** a source detection based on estimating star mass around signal peaks.
+    * **Gradient:** a single source detection based on the Sobel filter. Initial or full-field analysis will use SEP instead of this method.
+    * **Threshold:** a single source detection based on pixel values. Initial or full-field analysis will use SEP instead of this method.
+    * **Bahtinov:**  This is useful for users who do not have a motorized focuser and prefer to focus manually with the aid of a Bahtinov Mask. After capturing an image in the focus module with the Bahtinov mask algorithm selected, Ekos would analyze the images and stars within it.  If Ekos recognizes the Bahtinov star pattern, it will draw lines over the star pattern in circles on the center and on an offset to indicate the focus.
+
+
+**3. Algorithm** : Select the auto focus process algorithm :
+    * **Iterative:** Moves focuser by discreet steps initially decided by the step size. Once a curve slope is calculated, further step sizes are calculated to reach optimal solution. The algorithm stops when the measured HFR is within percentage tolerance of the minimum HFR recorded in the procedure.
+    * **Polynomial:** Starts with iterative method. Upon crossing to the other side of the V-Curve, polynomial fitting coefficients along with possible minimum solution are calculated. This algorithm can be faster than purely iterative approach given a good data set.
+    * **Linear:** Samples focus inward in a regular fashion, using 2 passes. The algorithm can be slow, but it is more resilient to backlash. Start with the focuser positioned near good focus. Set Initial Step Size and Max Travel for the desired sampling interval and range around start focus position. Tolerance should be around 5%.   
+
+**4. Curve fit**: Select the type of curve to fit to the data :
+    * **Quadratic:** Uses a polynomial fit of degree 2. This is currently the default option and currently the only option for all Algorithms except Linear 1 Pass.
+    * **Hyperbola:** Fits a hyperbola to the data points. This is currently only available for the Linear 1 Pass Algorithm.
+    * **Parabola:** Fits a parabola to the data points. This is currently only available for the Linear 1 Pass Algorithm.
+* **5. Use weights:** Check to use the standard deviation of the star HFR or FWHM as a weighting to the curve fitting algorithm. If unchecked, all data points are given equal weighting. Currently only available when using Full Field (multiple stars) and a Curve Fit of Hyperbola or Parabola under the Linear 1 Pass algorithm.
+* **6: R2 Limit:** Set a minimum for the acceptable R2 when performing an Autofocus run. The value is between 0 (no fit) and 1 (perfect fit). 0.8 is a good start. If the minimum is not met, Autofocus will rerun once to try to improve the R2. Currently only available for the Linear 1 Pass algorithm when using a Curve Fit of Hyperbola or Parabola.
+* **7. Refine Curve Fit:** Set a minimum for the acceptable R2 when performing an Autofocus run. The value is between 0 (no fit) and 1 (perfect fit). 0.8 is a good start. If the minimum is not met, Autofocus will rerun once to try to improve the R2. Currently only available for the Linear 1 Pass algorithm when using a Curve Fit of Hyperbola or Parabola.
+* **8. Average over:** Sets the number of frames to capture in order to average the HFR value at the current focuser position.
+* **9. Average HFR Check:** No. of frames to capture when running in-sequence HFR-check. If using linear 1 pass, the point of optimum focus will also capture this number of frames.
+
+    * **Threshold:** Threshold percentage value is used for star detection using the Threshold detection algorithm. Increase to restrict the centroid to bright cores. Decrease to enclose fuzzy stars.
+    * **Effect:** Apply filter to image after capture to enhance it for preview purposes. It is highly advisable to turn off any effects during the focusing process as it may interfere with HFR calculations. 
+    * **Kernel size:** This is the gaussian blur kernel size. Used for blurring the image before for instance the Bahtinov edge detection.
+    * **Sigma:** This is the gaussian blur sigma value. Used for blurring the image before for instance the Bahtinov edge detection.
+    * **Tolerance:** The tolerance percentage values decides when the autofocus process stops in the Iterative algorithm. During the auto focus process, HFR values are recorded, and once the focuser is close to optimal position, it starts measuring HFRs against the minimum recorded HFR in the sessions and stops whenever a measured HFR value is within % difference of the minimum recorded HFR. Decrease value to narrow optimal focus point solution radius. Increase to expand dsolution radius.
+
+.. warning:: Setting the value too low might result in repetitive loop and would most likely result in a failed autofocus process.
+
+**Num. of rows:** The number of rows set in this field will be combined in the Bahtinov max average calculation. Changing this value might help to match the Bahtinov lines on the star pattern more accurately.
+

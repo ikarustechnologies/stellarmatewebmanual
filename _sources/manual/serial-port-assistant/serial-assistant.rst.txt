@@ -1,0 +1,17 @@
+.. section:: StellarMate Serial Assistant
+
+.. image:: /_static/images/stellarmate_web_manager.jpg
+  :width: 400px
+  :align: center
+
+Serial Port Assistant ensures that your serial device designations are saved permanently. When you plug your mount, it is assigned a random port (e.g. COM2 or /dev/ttyUSB1). This port is required in order for INDI to communicate with your mount. Using the assistant, you can assign a permanent ID to your device (e.g. /dev/mount). Therefore, every time you plug in your device, it is always assigned a designated port that INDI uses to communicate with the device.
+
+To use the Serial Port Assistant, go to StellarMate Web Manager either from StellarMate App or from any browser and click on the Serial Port Assistant Icon at the bottom right. Simply follow the instructions in the step-by-step guided wizard to assign permanent designations to your Serial-To-USB devices.
+
+
+
+Video Tutorial: https://www.youtube.com/watch?v=VQHUaO5Hmi0
+
+Note
+
+StellarMate Serial Assistant is only applicable to Serial-To-USB devices, for regular USB devices, do not use it.

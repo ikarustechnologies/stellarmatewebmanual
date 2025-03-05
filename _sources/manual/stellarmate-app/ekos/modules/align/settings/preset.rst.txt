@@ -1,0 +1,18 @@
+.. subsection::Presets :level: 3
+
+Preset Settings
+
+.. image:: /_static/images/ekos/modules/align/presets.jpg
+    :align: center
+    :width: 400px
+
+Preset settings has the following structure:
+    1. Exposure
+    2. Binning
+    3. Filter
+    4. Gain/ISO
+    5. **Accuracy:** Acceptable difference between reported telescope coordinate and actual solved coordinates
+    6. **Settle:** amount of time to allow mount to settle (in milliseconds)
+    7. Dark Frame
+    8. **Use Scale:** Use image scale to speed up astrometry solver. This speeds up the solver greatly as it limits the number of images scales it needs to sift through.
+    9. **Use Position:** Limit the astrometry solver to only search for solutions near the mount coordinates. This can significantly speed up the solving process.

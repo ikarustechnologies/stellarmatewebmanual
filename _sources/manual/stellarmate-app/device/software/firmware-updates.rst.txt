@@ -1,0 +1,19 @@
+.. subsection:: Firmware Updates:level: 1
+
+When there is an update available for StellarMate, an icon will show up on Device tab.
+
+.. image:: /_static/images/ekos/tabs/Device/device-update.jpeg
+    :align: center
+    :width: 400px
+
+To update StellarMate, simply click the download button and wait for the the process to complete.
+
+.. image:: /_static/images/sm-device/sm-tools/device.jpg
+    :align: center
+    :width: 400px
+
+.. image:: /_static/images/ekos/tabs/Device/update.jpeg
+    :align: center
+    :width: 400px
+
+Once the update is complete, you will be prompted to restart Stellarmate for the updates to take effect.

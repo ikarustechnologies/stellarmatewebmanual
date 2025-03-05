@@ -1,0 +1,98 @@
+.. subsection::Align :level: 1
+
+.. image:: /_static/images/ekos/modules/align/align_main.jpg
+    :align: center
+    :width: 400px
+
+The Align module enables highly accurate GOTOs and dead-center target images by utilizing plate-solving. The process starts with capturing an image and plate-solving it to get the exact sky coordinates. Once the coordinates are obtained, the mount is synchronized and then commanded to slew to the correct target position. This cycle repeats until the mount is within a few arcsecs from the target.
+
+.. image:: /_static/images/ekos/modules/align/quick-settings.jpg
+    :align: center
+    :width: 400px
+
+It has the following features:
+
+1) Manage / Select Optical trains. 
+2) Filter
+3) Exposure
+4) Gain
+5) **Action:** Sync, Slew to target or do nothing.
+6) Binning    
+
+.. image:: /_static/images/ekos/modules/align/align-drag.jpg
+    :align: center
+    :width: 400px
+
+
+**Graph Plot:** Displays the alignment graph when the image has been plate-solved.
+
+.. image:: /_static/images/ekos/modules/align/align-graph.jpg
+    :align: center
+    :width: 400px
+
+
+**FiTs Image:** Displays the most recent aligned image.
+
+.. image:: /_static/images/ekos/modules/align/align-image.jpg
+    :align: center
+    :width: 400px
+
+
+**Settings:** Opens the alignment settings menu.
+**Quick Settings:** Provides a quick method to modify the settings.
+
+.. image:: /_static/images/ekos/modules/align/quick-settings.jpg
+    :align: center
+    :width: 400px
+
+
+**Solution Bar:** Displays information such as field of view (FOV), position angle, error, and other details when the image has been plate-solved.
+
+.. image:: /_static/images/ekos/modules/align/solution-bar.jpg
+    :align: center
+    :width: 400px
+
+
+**FOV:** Effective field of view in arc-minutes.
+* **Position Angle:**  Image Rotator angle, East of north.
+* **Accuracy:** Difference between target and solution coordinates in arcsecs.
+* **Pixel Scale:** Image pixel scale in arcsecs/pixel
+
+
+**Capture & Solve**
+
+To start capturing and solving, just tap on the Capture & Solve button and the StellarMate will take care of the rest. When it's done, you will be able to see the current Alignment capture preview, alignment info on the solution bar on the bottom, and the points on the Alignment plot.
+
+.. image:: /_static/images/ekos/modules/align/align-graph.jpg
+    :align: center
+    :width: 400px
+
+
+**Load and Slew**
+
+It is used to command the mount to the center of the uploaded image. First, the provided image is plate-solved and then the mount is commanded to slew to the target. Afterwards, a second plate-solve with the camera takes place to ensure the mount is in the correct spot.
+
+.. image:: /_static/images/ekos/modules/align/load_slew.jpg
+    :align: center
+    :width: 400px
+
+You can load Fits file from the tablet or using Directory browser to access SM device files.
+To start a load and slew action by tapping "Phone/Tablet Gallery" and selecting an image to slew to. Stellar-solver is very accurate at this and will be able to slew to object in the image.
+
+**Astronomy Index Files:**
+
+If index files are missing, a pop-up notification will prompt the user to decide whether to download the required files. 
+
+.. image:: /_static/images/ekos/modules/align/index-prompt.jpg
+    :align: center
+    :width: 400px
+
+
+Below, the interface displays the status of the download progress to keep the user informed.
+
+.. image:: /_static/images/ekos/modules/align/index-files.jpg
+    :align: center
+    :width: 400px
+
+.. include:: ekos/modules/align/paa.rst
+.. include:: ekos/modules/align/settings/index.rst

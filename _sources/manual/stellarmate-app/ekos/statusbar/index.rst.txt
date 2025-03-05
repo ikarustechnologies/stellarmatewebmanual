@@ -1,0 +1,13 @@
+.. subsection:: Status bar
+
+.. image:: /_static/images/ekos/statusbar/status-bar.jpg 
+    :align: center
+    :width: 400px
+
+The important information of Mount and Camera is shown at the top and at the bottom:
+
+* Top
+* Bottom
+
+.. include:: ekos/statusbar/top.rst
+.. include:: ekos/statusbar/bottom.rst

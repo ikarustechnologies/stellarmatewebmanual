@@ -1,0 +1,7 @@
+.. section::SM App
+StellarMate App communicates with StellarMate controllers over WiFi. By default, StellarMate Controller creates its own Access Point (Hotspot) that you can connect to by joining your Phone/Tablet to the StellarMate hotspot and then scanning for StellarMate devices on the network.
+
+To configure StellarMate network settings, use StellarMate App Device tab to configure WiFi, Frequency, Channel, and Direct Ethernet.
+
+.. include:: sm-app/lan.rst
+.. include:: sm-app/wan.rst

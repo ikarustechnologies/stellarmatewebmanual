@@ -1,0 +1,8 @@
+.. section:: Maintenance
+
+Following main sections for maintaining SM Pro:
+
+.. include:: maintainence/care-instructions.rst
+.. include:: maintainence/factory-reset.rst
+.. include:: maintainence/fuses.rst
+.. include:: maintainence/replace-modules.rst

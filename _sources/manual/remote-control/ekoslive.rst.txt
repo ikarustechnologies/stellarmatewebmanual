@@ -1,0 +1,28 @@
+.. section::Ekoslive
+
+EkosLive is an online platform to access your StellarMate remotely. It offers simplified web-based controls for Ekos along with advanced features such as Stella AI, Cloud Storage, and Observatory Management. EkosLive Basic subscription is completely free for all StellarMate users.
+
+Once StellarMate is configured via StellarMate App, connect StellarMate to the unit and head over to EkosLive to access it remotely.
+You can check To monitor whether **EkosLive** is successfully connected, look for the connection status icons. These icons are represented by **cross icons** that indicate whether the connection is established or not. Ekoslive is connected successfully.
+
+.. image:: /_static/images/ekos/connection/ekos-profile.jpg
+  :width: 400px
+  :align: center
+
+To manage the connection settings, click on the **configuration icon**. This icon allows you to toggle between different connection options and configure your settings as necessary.
+
+.. image:: /_static/images/ekos/connection/toggle.jpg
+  :width: 400px
+  :align: center
+
+Within the configuration settings, you will find a field where you can insert the **URL for EkosLive Online**. Make sure to provide the correct URL that points to your EkosLive instance.
+
+.. image:: /_static/images/ekos/connection/show.jpg
+  :width: 400px
+  :align: center
+
+Once the URL has been entered, press the **Connect** button. Upon successful connection, both **EkosLive Online** and **EkosLive Offline** will establish a connection with **KStars**. This will enable the synchronization between the two platforms.
+
+.. image:: /_static/images/ekos/connection/connected.jpg
+  :width: 400px
+  :align: center

@@ -1,0 +1,25 @@
+.. subsection:: Videos
+
+In videos section, you can view folders and files under "/Videos" directory. Directory name and it's is displayed under the folder/file.
+
+.. image:: /_static/images/ekos/tabs/View/videos/video.jpg
+    :align: center
+    :width: 400px
+
+You can press on the select button, once selected press on the files you would like to delete.
+
+.. image:: /_static/images/ekos/tabs/View/videos/select.jpg
+    :align: center
+    :width: 400px
+
+Once the files are selected, you can see the checkmarks on the top of it.
+
+.. image:: /_static/images/ekos/tabs/View/videos/selected.jpg
+    :align: center
+    :width: 400px
+
+Once you confirm deleting the files, selected files are deleted from the filesystem.
+
+.. image:: /_static/images/ekos/tabs/View/videos/deleted.jpeg
+    :align: center
+    :width: 400px

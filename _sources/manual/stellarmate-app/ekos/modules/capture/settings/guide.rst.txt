@@ -1,0 +1,14 @@
+.. subsection::Guide :level: 3
+
+.. image:: /_static/images/ekos/modules/capture/capture_filter_settings_edited.jpg
+    :align: center
+    :width: 400px
+
+Guide limit settings are applicable to all the images in the sequence queue. When a limit is exceeded, Ekos shall command the appropriate action to remedy the situation as explained below.
+
+* **Only start Guiding Deviation**: Start capturing only if guide deviation is below the given threshold (ignored for previews)
+* **Only start Guiding** Deviation Value
+* **Guide Deviation**: Abort sequence if guiding deviation exceed this value N consecutive times
+* **Guide Deviation Value**
+* **Consecutive times**: Abort sequence if guiding deviation exceed this value N consecutive times
+* **Dither per Job**: If global dither is enabled, then dither every N number of frames for this job, Set to 0 to use global dither frequency.

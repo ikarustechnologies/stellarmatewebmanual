@@ -1,0 +1,15 @@
+.. subsection:: Modules
+
+Advanced controls for Focusing, Guiding, Alignment, Capture, Mount, Observatory, Scheduler, and INDI Control Panel.
+
+
+StellarMate App has a total of six Ekos Modules which are used to control various astronomical instruments such as: CCD cameras, DSLR cameras, mounts/telescopes, dustcaps, domes, roll-off shutters, filter wheels, rotators, focusers, and more.
+
+.. include:: ekos/modules/align/index.rst
+.. include:: ekos/modules/guide/index.rst
+.. include:: ekos/modules/capture/index.rst
+.. include:: ekos/modules/focus/index.rst
+.. include:: ekos/modules/mount.rst
+.. include:: ekos/modules/observatory.rst
+.. include:: ekos/modules/indipanel.rst
+.. include:: ekos/modules/scheduler/index.rst

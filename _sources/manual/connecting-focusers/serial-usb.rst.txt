@@ -1,0 +1,7 @@
+.. section:: Serial to USB
+
+Most equipment is connected via USB. StellarMate is equipment with 4 USB ports. However, it is highly recommended to use an external powered USB Hub as it can reliably support power to your equipment.
+**WARNING**
+Most problems in operating your equipment with StellarMate are related first and foremost to power problems. Therefore, please invest in reliable power supply for all your equipment!
+
+For many Focusers that use RS232 connectors, you need to purchase a Serial-To-USB adapter suitable for your Focuser model from the manufacturer. When you plug in your Serial-To-USB devices, they are assigned a specific port under StellarMate (e.g. /dev/ttyUSB0). However, this port is not static. That is, next time you plug in the same device on another session, it might get assigned another port (e.g. /dev/ttyUSB1). Since INDI drivers require the port name to communicate with the device, this could lead to communication issues. With the help of StellarMate Serial Port Assistant, you can assign permanent designations for your devices so that they always get the same port whenever they are connected.

@@ -1,0 +1,11 @@
+.. subsection::Remote Support:level: 1
+
+.. image:: /_static/images/ekos/tabs/Device/remote-support/toggle-support.jpg
+    :align: center
+    :width: 400px
+
+You can toggle Remote support if SM support asks for its access to investigate the issues you face. Once you toggle it ON, You wil see an ID.
+
+.. image:: /_static/images/ekos/tabs/Device/remote-support/remote-id.jpg
+    :align: center
+    :width: 400px

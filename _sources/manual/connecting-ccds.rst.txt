@@ -1,0 +1,17 @@
+.. chapter::Connecting CCDs
+StellarMate X supports a broad range of camers (CCD/CMOS). Find out if your camera is supported in the INDI Camera Portal.
+
+StellarMate X includes 4 USB 3.0 ports, it natively supports USB 3.0 cameras using full bandwidth.
+
+Cameras' power can be either external (AC) or internal (battery) or supplied by the USB bus connection. They can be either connected directly to StellarMate or to to an external USB hub.
+
+**IMPORTANT**
+
+Unreliable & Unstable **Power** is the primary cause for majority of camera issues. Ensure the camera is properly powered to avoid instabilities. StellarMate controller ships with a 3A 5v power adapter. StellarMate OS users should invest in a similar adapter.
+
+The classes of cameras supported by StellarMate:
+    CCD Cameras.
+    CMOS Cameras.
+    Web Cameras.
+    DSLRs
+StellarMate supports cameras with built-in Filter Wheels and ST4 port for pulse-guiding.

@@ -1,0 +1,75 @@
+.. subsection::Sequences:level: 2
+
+.. image:: /_static/images/ekos/modules/capture/sequence/sequence.jpg
+    :align: center
+    :width: 400px
+    
+Manage, save, and load sequences in the sequence queue. 
+
+.. image:: /_static/images/ekos/modules/capture/sequence/controls.jpg
+    :align: center
+    :width: 400px
+
+The queue displays a list of sequences where each sequence status, count, and preset is displayed using icons for common settings such as Filter, Gain, ISO, and Offset.
+
+Once a sequence is added, you can save the sequence list by tapping on the Save Icon on the top-right. Tap the trash icon to clear all jobs.
+
+.. image:: /_static/images/ekos/modules/capture/sequence/save.jpg
+    :align: center
+    :width: 400px
+
+.. image:: /_static/images/ekos/modules/capture/sequence/on-save.jpg
+    :align: center
+    :width: 400px
+
+Sequences are stored under the Documents folder followed by your camera name. The sequence file can be re-used in future sessions when desired, especially when using the scheduler.
+
+.. image:: /_static/images/ekos/modules/capture/sequence/load.jpg
+    :align: center
+    :width: 400px
+
+.. image:: /_static/images/ekos/modules/capture/sequence/load-sequence.jpg
+    :align: center
+    :width: 400px
+
+Sequences have the following structure, displayed through icons for simplicity:
+
+**Top row**
+
+.. image:: /_static/images/ekos/modules/capture/sequence/load-sequence.jpg
+    :align: center
+    :width: 400px
+
+* Job Number
+* Job Progress Bar
+* Count Progress
+* Delete Job
+
+**Bottom row**
+
+.. image:: /_static/images/ekos/modules/capture/sequence/bottom-row.jpg
+    :align: center
+    :width: 400px
+
+* Filter
+* Frame Type
+* Binning
+* Exposure
+* Gain/ISO
+* Offset
+* Edit Sequence
+
+.. image:: /_static/images/ekos/modules/capture/sequence/edit.jpg
+    :align: center
+    :width: 400px
+
+.. image:: /_static/images/ekos/modules/capture/sequence/edit-sequence.jpg
+    :align: center
+    :width: 400px
+
+After adding the sequences, tap on the Play button under the Progress header to start the capture process.
+A soft ding sound is played for each captured image (if enabled in settings).
+
+.. image:: /_static/images/ekos/modules/capture/sequence/progress.jpg
+    :align: center
+    :width: 400px

@@ -1,0 +1,13 @@
+.. subsection:: Quick controls
+
+StellarMate App has a total of three Quick Controls Modules which are used to control three astronomical instruments as suggested by their names: mounts/telescopes, cameras, and rotators.
+
+
+
+* Mount Quick Controls
+* Camera Quick Controls
+* Rotator Quick Controls
+
+.. include:: ekos/quickcontrols/mount/index.rst
+.. include:: ekos/quickcontrols/camera/index.rst
+.. include:: ekos/quickcontrols/rotator.rst

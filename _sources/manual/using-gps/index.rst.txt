@@ -1,0 +1,8 @@
+.. chapter:: Using GPS
+    
+Time and Location settings are critical to the proper operation of StellarMate. This is even more apparent if you're on the go with a mobile setup. For a fixed-observatory, the only factor you have to worry about synchronizing is time. On the other hand, a mobile setup requires both location and time settings to be accurate.
+
+The time & location settings are not only used for KStars, but also to synchronize the mount and any other devices with time & location dependencies. For example, some weather drivers depend on location to query and retrieve information about the current weather.
+
+.. include:: selecting-dongle.rst
+.. include:: configuring-stellarmate.rst

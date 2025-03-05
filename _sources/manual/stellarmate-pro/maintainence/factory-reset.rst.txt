@@ -1,0 +1,20 @@
+.. subsection:: Factory reset
+
+A partial or full factory reset can be performed. To perform a complete factory reset, use a thin pin (Not Included) to toggle the reset button located at StellarMate Pro communication side
+
+.. image:: /_static/images/sm-device/smx-pro/unit.JPG
+   :width: 300px
+   :align: center
+
+The following are the steps required to perform a factory reset:
+   * Use a pin to press the reset button while the unit is off.
+   * Power on the unit.
+   * Wait until you start hearing a repeating slow beep.
+   * Release the pin
+   * Select the Factory Reset mode:
+
+   **Partial Recovery**: Restore operating system, but keep settings and photos. Use the pin to toggle the reset button momentarily.
+   
+   **Full Recovery**: Restore operating system and settings. All settings and captured photos are reset to default. Use the pin to press and hold for at least 3 seconds then release.
+
+   * A fast beep indicates restoration is in progress. Wait until the recovery process is complete. It can take anywhere from 3 to 5 minutes to complete. Afterwards, the unit will automatically reboot.

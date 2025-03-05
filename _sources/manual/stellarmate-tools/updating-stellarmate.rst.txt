@@ -1,0 +1,19 @@
+.. section:: Updating StellarMate
+
+Ikarus Technologies releases a new StellarMate update every 2 months. Hot fixes are pushed on demand. To update your unit, the controller must be connected to the internet either via WiFi or Ethernet.
+
+There are two methods to update StellarMate OS:
+1. **Via VNC**
+Run StellarMate Tools from the desktop. Click Software Updater to begin the update process. It might take a few minutes to complete. Do not restart the unit until the process is complete.
+
+.. image:: /_static/images/sm-device/sm-tools/tools.jpg
+  :width: 400px
+  :align: center
+
+2. **Via StellarMate App**
+
+Navigate to the Device Tab and then tap Software Update. After the update is complete, please restart the unit
+
+.. image:: /_static/images/sm-device/sm-tools/device.jpg
+  :width: 400px
+  :align: center

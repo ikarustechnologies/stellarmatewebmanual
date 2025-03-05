@@ -1,0 +1,9 @@
+.. subsection:: Care Instructions
+
+* Use voltage-regulated power supply with a surge protector.
+* Keep StellarMate Pro's firmware updated for optimal performance and compatibility.
+* Store in a cool, dry place away from direct sunlight or extreme temperatures.
+* Avoid exposing StellarMate Pro to moisture or liquids to prevent damage.
+* Handle the device with care to prevent physical damage or impact.
+* Backup your data and configurations regularly to prevent data loss.
+* Do not operate a unit below zero Degrees Celsius or higher than 35 degrees Celsius  ambient temperature.

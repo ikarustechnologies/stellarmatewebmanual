@@ -1,0 +1,41 @@
+.. subsection:: Canvas
+
+Canvas is the primary imaging display area where images, video, and live stacking takes place. The canvas operations are divided into upper and lower canvas controls. The upper controls include dragabble widgets for Focus, Align, and Guide modules along with Summary and Log views.  Lower canvas controls are used to toggle overlays, command GOTOs by tapping and holding anywhere on the image, and to display the histogram and HiPS overlays for the image.
+
+.. image:: /_static/images/ekos/modules/canvas/canvas.jpg
+    :width: 400px
+    :align: center
+
+**Upper Canvas**
+
+* Focus
+* Align
+* Guide
+* Summary View
+* Logs
+
+**Lower Canvas**
+
+* Histogram
+* HiPs Overlay
+* Crosshair
+* Target GOTO
+* Hide/Unhide the Lower Canvas
+
+.. image:: /_static/images/ekos/modules/canvas/hide-canvas.jpg
+    :width: 400px
+    :align: center
+
+You can center the mount to a specific target in the main image if plate-solving was successful. From Ekos Align module, Capture and Solve an image. If successful, an orange align icon is displayed in the Main Image View indicating that solving is successful. For any subsequent images captured and displayed in the Main Image View, you may now select the target by tapping on it. A red bullseye animation designates the target.
+Control image histogram, toggle Overlay or display the summary view.
+
+.. include:: ekos/canvas/summary.rst
+.. include:: ekos/canvas/logs.rst
+.. include:: ekos/canvas/hips-overlays.rst
+.. include:: ekos/canvas/histogram.rst
+.. include:: ekos/canvas/target-goto.rst
+.. include:: ekos/canvas/crosshair.rst
+
+
+
+

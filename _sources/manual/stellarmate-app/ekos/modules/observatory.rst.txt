@@ -1,0 +1,28 @@
+.. subsection::Observatory :level:1
+
+The Observatory module allows you to control your Dust Cap and Dome/Roll-off roof, it has the following features:
+
+* Dust Cap Park/UnPark
+* Dome Park/UnPark
+* Roll-off roof Park/UnPark
+* Abort Dome Motion
+* Goto Absolute Dome Angle
+
+.. image:: /_static/images/ekos/modules/observatory/observatory.jpeg
+    :align: center
+    :width: 400px
+
+
+**Changing Dome settings**
+To change the settings, click on Parameters:
+
+.. image:: /_static/images/ekos/modules/observatory/observatory.jpeg
+    :align: center
+    :width: 400px
+
+**Going to an absolute angle position**
+You can go to an absolute angle position on your dome by tapping on the text-box next to the Azimuth label and setting the angle value to go to. Now tap on the GO button to go to that angle position. The dome will now try going to that position, the dome status badge will show what type of rotation the dome is doing, and a compass preview will show a representation of the dome angle. After the movement is complete, you will be able to see the status badge change to "Tracking".
+
+.. image:: /_static/images/ekos/modules/observatory/observatory_goto_complete.jpeg
+    :align: center
+    :width: 400px

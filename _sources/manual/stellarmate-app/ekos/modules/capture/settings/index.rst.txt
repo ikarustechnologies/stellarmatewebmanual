@@ -1,0 +1,15 @@
+.. subsection::Settings :level: 2
+
+Following are the settings from Capture module:
+
+* General Settings
+* Auto Calibration
+* Filter Settings
+* Guide Limits
+* Focus Limits
+
+.. include:: ekos/modules/capture/settings/general.rst
+.. include:: ekos/modules/capture/settings/autocalibration.rst
+.. include:: ekos/modules/capture/settings/filters.rst
+.. include:: ekos/modules/capture/settings/focus.rst
+.. include:: ekos/modules/capture/settings/guide.rst

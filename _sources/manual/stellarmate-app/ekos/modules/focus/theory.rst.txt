@@ -1,0 +1,8 @@
+.. subsection::Theory:level: 2
+
+In order to focus an image, StellarMate needs to establish a numerical method for gauging how good your focus is. It’s easy when you look at an image and can see it as unfocused, as the human eye is very good at detecting that, but how can StellarMate possibly know that? 
+
+The most tried and tested method is Half-Flux-Radius (HFR), which is a measure of the width in pixels counting from the center of the star until the accumulated intensity is half of the total flux of the star. As you move closer to the point of optimum focus, the HFR gets smaller, reaching a minimum at the point of focus before increasing as you start to move away from focus. HFR has been used on lots of different types of equipment and has proved to be stable in a wide range of circumstances. In addition to HFR, Ekos supports other focus measures, including an adjusted HFR measure, FWHM, Number of Stars and Fourier Power.
+
+It is recommended to start with HFR and when the user has become proficient in focusing their equipment, to try the other measures. After Ekos processes an image, it selects either a single star and starts measuring its HFR, or it selects a set of stars matching the criteria that have been set and calculates an average HFR. It can automatically select stars, or you can select a single star manually. It is recommended to allow Ekos to select a set of stars.
+

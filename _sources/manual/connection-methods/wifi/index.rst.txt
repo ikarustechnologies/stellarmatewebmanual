@@ -1,0 +1,25 @@
+.. section:: WiFi
+
+**Note**
+You must first complete the First Time Setup guide before proceeding with this tutorial.
+
+
+
+You can connect to StellarMate **wirelessly** either via:
+
+    * Direct Connection to the StellarMate **HotSpot** or
+    * Joining StellarMate to your **Home WiFi**.
+
+.. image:: /_static/images/hotspot_wifi_mode.jpg
+  :width: 400px
+  :align: center
+
+.. image:: /_static/images/hotspot_wifi_mode.jpg
+  :width: 400px
+  :align: center
+
+By default, StellarMate runs in HotSpot Mode. Click on the desired mode of connect to learn more about connecting StellarMate.
+
+.. include:: wifi/access-point.rst
+.. include:: wifi/station-mode.rst
+.. include:: wifi/stellarmate-address.rst

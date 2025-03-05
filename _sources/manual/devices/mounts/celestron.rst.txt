@@ -1,0 +1,82 @@
+.. subsection:: Celestron
+
+Before connecting to your mount
+1. Ensure the mount firmware is the latest as provided by your manufacturer.
+2. Ensure mount has proper and suffcient power to operate. This is often a primary source of issues connecting to mounts.
+3. Read the mount manual and learn about the mount startup or Home Position. This is the mechanical position the mount must be in before you turn on the power to the mount. This basically falls under three categories:
+    **Equatorial Mount:** Telescope should be looking at the Celestial Pole (Polaris for the Northern Hemisphere) with counter-weights down.
+    **Alt-Az Mount:** Telescope should parallel to the ground looking exactly North (for Northern Hemisphere) or South (for Southern hemisphere).
+    **Alt-Az Mount on Wedge:** Telescope should be looking at Celestial Equator due South (for Northern Hemisphere) or Celestial Equator Due North (for Southern hemisphere).
+4. Decide on how you will connect to the mount. Is it using a cable to the handset? or cable directly to the mount? WiFi? Bluetooth?
+5. If connecting over WiFi, then ensure the device where you are running the INDI driver (e.g. Raspberry PI4) is on the same network as your mount so they can communicate with each other. Such mounts can be configured to run in two modes:
+    **Mount Wireless Hotspot Mode:** The mount hotspot acts as the router and you can connect your devices to the mount's own network (e.g. your Raspberry PI and iPad). 
+    **Mount Wireless Station Mode:** The mount joins an existing WiFi network (e.g. your home WiFi network or StellarMate hotspot). The IP address assigned to the mount is determined by your router. It is best to know the IP address assigned to the mount so that you can enter it in the IP address field in the driver Connection tab. However, this is not strictly necessary since the driver can automatically scan the local network for mounts, albeit this operation may take a few minutes to complete whereas if the IP address is known beforehand then the connection is immediate.
+
+**Selecting the correct driver**
+Selecting the appropiate driver for your mount usually depends on two factors:
+1. Mount model.
+2. Naming Convention: Driver labels can indicate which communication method they use
+    **HC:** Hand Controller or Hand Set (e.g. Celestron Advanced VX HC)
+    **Wired:** AUX/PC Port (e.g. Celestron Advanced VX Wired)
+    **WiFi:** WiFi connection (e.g. Celestron Advanced VX WiFi)
+3. Connection method (AUX Port, PC Port, Handset, WiFI, ..etc).
+
+
+
+
+
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| Mount                      | Driver                  | Connection Method      | Comments                                                  |
++============================+=========================+========================+===========================================================+
+| Advanced AVX               | Celestron GPS           | Serial-to-USB          | Older Nexstar HCs come with RJ9 plug. You need            |
+|                            |                         |                        | Serial-to-USB adapter cable from HC to PC/Device.         |
+|                            |                         |                        | Modern Nexstar HCs come with USB Type-B port that you     |
+|                            |                         |                        | can connect directly via a USB cable to your device       |
+|                            |                         |                        | (no serial to USB adapter is required).                   |
+|                            |                         |                        |                                                           |
+|                            |                         |                        | When connecting via Nexstar Handset (HC), there is a      |
+|                            |                         |                        | single driver (Celestron GPS). The rest of the drivers    |
+|                            |                         |                        | (e.g. Celestron CPC..etc) are aliases to the base         |
+|                            |                         |                        | Celestron GPS driver.                                     |
+|                            |                         |                        |                                                           |
+|                            |                         |                        | You must power and align your mount using the handset     |
+|                            |                         |                        | using any supported alignment method (e.g. SkyAlign).     |
+|                            |                         |                        | Without aligning your mount first, the driver will not    |
+|                            |                         |                        | connect to the handset.                                   |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| Advanced AVX WiFi          | Celestron WiFi          | WiFi                   | WiFi drivers automatically try to connect to the mount    |
+|                            |                         |                        | over WiFi (Default IP address 1.2.3.4 using TCP port      |
+|                            |                         |                        | 2000). If your mount is using a different IP address,     |
+|                            |                         |                        | set it in the Connection tab of the INDI driver.          |
+|                            |                         |                        |                                                           |
+|                            |                         |                        | Handset is not required and no alignment is necessary     |
+|                            |                         |                        | before establishing connection to the mount.              |
+|                            |                         |                        |                                                           |
+|                            |                         |                        | If using a Wedge, make sure to only select "Evolution     |
+|                            |                         |                        | WiFi Wedge" driver.                                       |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| CGEM / CGEM II WiFi        | Celestron WiFi          | WiFi                   | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| CGX / CGX-L WiFi           | Celestron WiFi          | WiFi                   | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| Evolution WiFi             | Celestron WiFi          | WiFi                   | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| Advanced AVX               | Celestron AUX           | Wired                  | Wired AUX or PC Port (located on top of the base of the   |
+|                            |                         |                        | scope). Under driver Connection tab: Set Connection Mode  |
+|                            |                         |                        | to Serial. Set Port Type to AUX/PC.                       |
+|                            |                         |                        |                                                           |
+|                            |                         |                        | Handset is not required and no alignment is necessary     |
+|                            |                         |                        | before establishing connection to the mount.              |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| CGEM / CGEM II             | Celestron AUX           | Wired                  | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| CGX / CGX-L                | Celestron AUX           | Wired                  | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| CPC                        | Celestron AUX           | Wired                  | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| Advanced VX                | Celestron AUX           | Wired                  | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| CGEM II Wired              | Celestron AUX           | Wired                  | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+
+| CGX Wired                  | Celestron AUX           | Wired                  | Same as above                                             |
++----------------------------+-------------------------+------------------------+-----------------------------------------------------------+

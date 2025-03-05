@@ -1,0 +1,3 @@
+.. subsection::Videos:level: 2
+
+John Evans is the architect of many of the focusing algorithms used in Ekos. To learn more about the advanced features of Ekos Focus module, check out `John Evans Youtube channel <https://www.youtube.com/@johneevans1>\.`

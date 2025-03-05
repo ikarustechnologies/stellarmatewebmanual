@@ -1,0 +1,16 @@
+.. subsection::Settings:level:2
+You will be able to see the Settings by pressing the Icon
+
+.. image:: /_static/images/ekos/modules/focus/settings.jpg
+    :align: center
+    :width: 400px
+
+Following are the settings from Focus module:
+* Advanced settings
+* Process settings
+* Mechanics settings
+
+.. include:: ekos/modules/focus/setting/advanced.rst
+.. include:: ekos/modules/focus/setting/process.rst
+.. include:: ekos/modules/focus/setting/mechanic.rst
+.. include:: ekos/modules/focus/setting/donut-buster.rst

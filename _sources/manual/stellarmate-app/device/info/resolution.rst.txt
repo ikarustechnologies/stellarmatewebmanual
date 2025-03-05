@@ -1,0 +1,13 @@
+.. subsection::Resolution:level: 1
+
+**Change Resolution:** Select available monitor display and change its resolution. 
+
+.. image:: /_static/images/ekos/tabs/Device/change-resolution.jpeg
+    :align: center
+    :width: 400px
+
+**Change external monitor:** If you are using model SMA-120 and it's connected with an external monitor. You can select that one.
+
+.. image:: /_static/images/ekos/tabs/Device/external-monitor.jpeg
+    :align: center
+    :width: 400px

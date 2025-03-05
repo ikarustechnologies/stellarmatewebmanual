@@ -1,0 +1,30 @@
+.. subsection:: Achievements
+
+.. image:: /_static/images/Settings/achievements/achievements.jpg
+    :align: center
+    :width: 400px
+ 
+You can now completed the tasks and earn points just. Achievements's Dashboard can be found in the settings.
+
+Once you complete the Achievement, Achievement earned pop up is displayed. Which includes the title of the Achievements and it's points. Few of the common achievements are:
+
+1. **Capture a preview:**
+
+.. image:: /_static/images/Settings/achievements/capture_preview.jpg
+    :align: center
+    :width: 400px
+
+
+2. **Capture ten sequences:**
+
+.. image:: /_static/images/Settings/achievements/capture_sequences.jpg
+    :align: center
+    :width: 400px
+
+
+Once the Achievement is earned, it is marked as done in the Dashboard. And the points are added to your total score as shown on the top left.
+
+.. image:: /_static/images/Settings/achievements/Dashboard_1.jpg
+    :align: center
+    :width: 400px
+

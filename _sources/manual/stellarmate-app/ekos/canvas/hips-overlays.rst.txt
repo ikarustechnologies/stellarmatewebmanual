@@ -1,0 +1,14 @@
+.. subsection:: hiPs Overlay :level: 1
+Toggle Overlay to increase the Hips opacity.
+image
+It is only available when WCS is enabled, image is plate-solved and once your Camera FOV is 60 arcminutes or more.
+
+.. image:: /_static/images/ekos/overlay/overlay.jpg
+   :width: 400px
+   :align: center
+
+Once preview is captured, you can toggle it and increase/decrease the HiPs opacity.
+
+.. image:: /_static/images/ekos/overlay/increase_hips_opacity.JPG
+   :width: 400px
+   :align: center

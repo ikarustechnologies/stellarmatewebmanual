@@ -1,0 +1,18 @@
+.. subsection:: Meade
+
+INDI supports all Meade mounts via a number of drivers tailored to each model family (Classic, GPS..etc). The only mount that is NOT support is Meade LS since it uses a serial chip that fails to work with Linux & MacOS. There is no support from Meade on Meade LS.
+
++-----------------+-------------------+---------+----------+
+| Mount           | Driver            | Devices | Comments |
++=================+===================+=========+==========+
+| LX200 Autostar  | indi_lx200gps     | ETX     |          |
+|                 |                   | LX50    |          |
+|                 |                   | LX90    |          |
+|                 |                   | LX200   |          |
++-----------------+-------------------+---------+----------+
+| LX200 16        | indi_lx200_16     |         |          |
++-----------------+-------------------+---------+----------+
+| LX200 Classic   | indi_lx200classic |         |          |
++-----------------+-------------------+---------+----------+
+| LX200 GPS       | indi_lx200gps     |         |          |
++-----------------+-------------------+---------+----------+

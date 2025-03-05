@@ -1,0 +1,8 @@
+.. subsection:: Software
+
+**Software** : You can handle the SM OS updates and to give access to SM support using remote support ID.
+    * Firmware Updates
+    * Remote Support
+
+.. include:: device/software/firmware-updates.rst
+.. include:: device/software/remote-support.rst

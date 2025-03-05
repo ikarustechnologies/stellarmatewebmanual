@@ -1,0 +1,99 @@
+.. subsection::Optical Trains
+
+.. image:: /_static/images/Setup/optical-trains/trains.jpeg
+    :width: 400px
+    :align: center
+
+Optical Trains organize your equipment into separate unique optical paths. Each camera must have its own optical train. The following elements are specified in each train:
+
+1) **Mount**: Select which mount to use. Typically, all optical trains in the same profile use the same mount.
+2) **Dust Cap**: Select a mechanized dust cap if any (e.g. FlipFlat).
+3) **LightBox**: Select a flat field lightbox if any (e.g. FlipFlat).
+4) **Scope or DSLR Lens**: Select the scope or lens used in the optical path. To add, edit, or delete optical elements, tap the Telescope & Lens button.
+5) **Reducer / Barlow**: Select if any reducer or barlow is used in the train.
+    - **Reducer**: By default it is specified at 1.0 which means that has no effect. Range is 0.1x to 0.9x.
+    - **Barlow**: If the value specified is over 1.0x, then it is considered a barlow element (focal length is increased by this factor).
+6) **Rotator**: Select a mechanized rotator if any.
+7) **Focuser**: Select a mechanized focuser if any.
+8) **Filter Wheel**: Select a filter wheel. This must be a standalone filter wheel connected to Stellarmate via USB. If you have a filter wheel that is embedded in a camera, leave this field mandatory.
+9) **Camera**: Select imaging camera for this train. Each camera must have its own train.
+10) **Guider**: Select the device that receives the guiding correction pulses. This can be one of the following devices:
+    - **Mount**: If the Mount can receive guiding correction pulses, then it is best to select it so that the pulses are directly sent to the mount. This is the recommended option.
+    - **ST4**: If using an ST4 cable between the guide camera and mount, then you should select the Guide Camera as the Guider.
+    - **Dedicated Guider**: If using a dedicated guider interface device (like Shoestring GPUSB) then select it as the Guider.
+
+If a device provides more than one functionality, then it should be specified in all relative fields. For example, MoonLite Nightcrawler is a Rotator and Focuser at the same time, so we select NightCrawler under both Rotator and Focuser fields.
+
+Once the optical trains are configured, specify which trains to use in each Ekos module. Typically, the Primary optical train is used in Capture, Focus, and Align modules while the Secondary train is used in Guide.
+Tap the help Button to view an `external video tutorial <https://www.youtube.com/watch?v=ltOFxH_fKnQ&feature=youtu.be>`_ on Optical Train.
+
+
+.. image:: /_static/images/Setup/optical-trains/open-link.jpg
+    :width: 400px
+    :align: center
+
+Tap the edit button and it will open the Optical train modal with the specific settings of a train.
+
+.. image:: /_static/images/Setup/optical-trains/edit-train.jpg
+    :width: 400px
+    :align: center
+
+You can also reset the train configuration by pressing Red "Delete Icon" beside the name
+
+.. image:: /_static/images/Setup/optical-trains/train-modal.jpg
+    :width: 400px
+    :align: center
+
+
+You can now view tool-tip for the description of some devices as shown in the images below:
+
+.. image:: /_static/images/Setup/optical-trains/train-modal-tooltip.jpg
+    :width: 400px
+    :align: center
+
+.. image:: /_static/images/Setup/optical-trains/train-modal-tooltip.jpg
+    :width: 400px
+    :align: center
+
+.. image:: /_static/images/Setup/optical-trains/tooltip-guider.jpg
+    :width: 400px
+    :align: center
+
+Tapping on Create new to creates a new train with a "New Train" name of previous / default settings.
+
+
+.. image:: /_static/images/Setup/optical-trains/create-new.jpg
+    :width: 400px
+    :align: center
+
+.. image:: /_static/images/Setup/optical-trains/new-train.jpeg
+    :width: 400px
+    :align: center
+
+**Telescope & Lens:**
+
+
+.. image:: /_static/images/Setup/optical-trains/telescope-lens.jpg
+    :width: 400px
+    :align: center
+
+
+Displays Telescope / Lens View. So, you can Add / Update telescope and lens and then use those in different trains. 
+
+.. image:: /_static/images/Setup/optical-trains/telescopes.jpg
+    :width: 400px
+    :align: center
+
+Tap on the Add/Edit button next to the  telescope to edit  the details of the telescope. All units are in millimeters.You can specify a Telescope and DSLR lens for your trains.
+
+.. image:: /_static/images/Setup/optical-trains/telescope-editor.jpeg
+    :width: 400px
+    :align: center
+
+Similarly, you can add/edit DSLR lens and then use Scope/Lens in different Optical trains.
+
+.. image:: /_static/images/Setup/optical-trains/dslr-editor.jpeg
+    :width: 400px
+    :align: center
+
+You can also access Optical train from the Setup Tab and Camera quick controls.

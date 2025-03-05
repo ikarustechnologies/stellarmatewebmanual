@@ -1,0 +1,7 @@
+.. subsection::WAN
+
+If connecting over WAN, ports 7624 and 8624 must be opened over the remote router and forwarded to the StellarMate controller running KStars.
+
+.. image:: /_static/images/ekos/connection/wan.jpeg
+  :width: 400px
+  :align: center

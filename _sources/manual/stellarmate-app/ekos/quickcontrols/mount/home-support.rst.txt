@@ -1,0 +1,25 @@
+.. subsection:: Home support :level:2
+
+.. image:: /_static/images/ekos/modules/QuickMountcontrols/home-support/home-support.jpg
+    :align: center
+    :width: 400px
+    
+Some mounts offer support to slew to a predefined or custom Home position. It is important to clarify the differences between the mount’s Park and Home positions:
+
+**Park:** Park position is the position the mount should start at when powered on, or stop at before being powered off. A parking position can be fixed by the mount’s firmware or customizable by the user. Usually after a mount is parked, it is expected to be powered off next. Some mounts do not respond to any command when parked.
+
+**Home:** A home position is the mount’s startup or zero position. For many mounts with relative encoders, the home and park positions are the same. Depending on the mount’s type, the home positions can be different:
+
+**Equatorial Mount:** Telescope looking at celestial pole with counter weights down.
+
+**Alt-Az Mount:** Telescope is level with ground looking due North in the Northern hemisphere and South in the Southern hemisphere.
+
+
+
+For mounts that support homing, there are usually three operations available in the Mount’s Quick Control bar. Please note that not all mounts support the three operations, some only support a limited subset of these operations:
+
+**Find:** Search for mount’s home index positions.
+
+**Set as current:** Save current position as the mount zero position.
+
+**Go:** Go to mount predefined home position.

@@ -1,0 +1,15 @@
+.. subsection::DSLR Setup
+StellarMate supports many DSLR cameras from various manufacturers. When a DSLR is detected, StellarMate attempts to identify it and then fill in the necessary metadata required to run the camera. These include width and height in pixels, and the pixel (pitch) size in microns. If StellarMate is unable to find this information, a DSLR Setup button is displayed in the Equipment Profile page. Tap it to enter the information manually.
+
+Once your DSLR is connected, it will ask you to setup it.
+
+
+.. image:: /_static/images/Setup/dslr.jpeg
+    :width: 400px
+    :align: center
+
+After configuring it, you can tap the save button.
+
+.. image:: /_static/images/Setup/dslr_setup.jpeg
+    :width: 400px
+    :align: center

@@ -1,0 +1,20 @@
+.. subsection::Rotator Control:level: 2
+
+Rotator control settings are available if Rotator is selected in the active train.
+
+.. image:: /_static/images/ekos/modules/capture/rotator-control/toggle_rotator_control.jpg
+    :align: center
+    :width: 400px
+
+.. image:: /_static/images/ekos/modules/capture/rotator-control/rotatorcontrol.jpg
+    :align: center
+    :width: 400px
+
+1. The raw rotator full circle angle of the rotator device, which is calculated as the difference of the rotator origin (zero angle) respective to North on pierside WEST or respective to South on pierside EAST.
+2. The angle of the camera upright direction (see FOV) respective to the rotator origin direction. The camera offset is determined automatically by a Capture & Solve or a Load & Slew in the Align module. The camera offset is measured in position angle scope (-179.99° to 180.00°).
+3. The current pierside of the mount. A red frame indicates an unknown pierside. This is normal if the mount is parked.
+4. Flip Policy determines how the rotator reacts after a flip or if the result of a solved reference image reports a different pierside respective to the actual mount pierside.
+5. Setting the camera position angle shall move the rotator. The gauge reflects the state of the rotator. Depending on the accuracy of the rotator there can be some deviation in the ending position angle. If Save Camera Position Angle to Sequence Job is toggled, any subsequent jobs added to the sequence queue would always rotate to this position angle before capture begins. The position angle is measured East of North in degrees.
+6. Change Camera position angle.
+7. Reverse the direction of rotator.
+8. Abort Rotator movement.

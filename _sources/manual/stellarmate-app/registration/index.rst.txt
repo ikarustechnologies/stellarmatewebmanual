@@ -1,0 +1,73 @@
+.. section:: Registeration
+
+When using StellarMate App for the first time, you need to register your device, or sign in using your existing stellarmate.com credentials:
+
+1) **StellarMate X:** If you purchased an SM X or SM Pro device, you need to register the device first before proceeding. Click on the Register button and then follow the on screen guide.
+2) **StellarMate OS:** If you purchased StellarMate OS, or already have registered the device before, you can simply sign in using your stellarmate.com username and password. Beware that you must be connected to the internet for the initial sign in to proceed. After sign in is successful, no internet connection is required and you can switch network to StellarMate hotspot if desired.
+
+.. image:: /_static/images/Setup/sm-registeration.jpg
+    :width: 400px
+    :align: center
+
+
+.. raw:: html
+
+   <br>
+
+.. image:: /_static/images/Setup/registration-fields.jpg
+    :width: 400px
+    :align: center
+
+.. raw:: html
+
+   <br>
+
+Once required fields are verified, the buttons will get enabled
+
+.. image:: /_static/images/Setup/registration-types.jpg
+    :width: 400px
+    :align: center
+
+
+**Register via:**
+
+1) Scan QR code
+2) Enter Manually
+
+.. subsection:: QR Code
+
+If you received the StellarMate Controller, you will find the Device QR Code on the back of the unit.
+
+.. image:: /_static/images/sm-device/stellarmatex_qr_code.jpeg
+    :width: 400px
+    :align: center
+
+
+.. raw:: html
+
+   <br>
+
+If you purchased StellarMate OS, the Device Serial Number is automatically generated for you.
+
+.. subsection:: Manually
+
+.. image:: /_static/images/Setup/registration-manaually.jpg
+    :width: 400px
+    :align: center
+
+.. raw:: html
+
+   <br>
+
+Enter serial written behind StellarMate device. Once you enter the correct Serial #, Buttons are enabled and You will be automatically logged in to SM App. Make sure you are connected to the Internet.
+
+.. subsection:: Steps
+
+Register your controller after downloading the SM App. Make sure your tablet is connected to the internet.
+
+1) Launch StellarMate App on iOS or Android.
+2) Tap on the Register button.
+3) Enter registration information to sign up in StellarMate website and then click Next.
+4) Scan the QR Code found at the back of the unit.
+
+After registration is successful, you will be logged in automatically. Check your email for your license and login information.

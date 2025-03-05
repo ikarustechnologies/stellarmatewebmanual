@@ -1,0 +1,12 @@
+.. section:: Adding New Profile
+
+Before you add a new profile, you need to identify which drivers you need for your equipment. You can browse all available devices in the INDI Devices page, or you can simply scroll through the list of available drivers in the Driver selection dropdown. To add a new profile:
+
+1. Enter the device name
+2. Click the Plus button
+3. Once the new device is added, select the appropriate drivers from the list. Please note that you may need to run some drivers from the Auxiliary class in the following situations:
+    **Joystick:** If you plan to use a joystick with your mount, select the Joystick driver from the auxiliary list.
+    **SkySafari:** To monitor and control your mount from SkySafari, select the SkySafari driver from the auxiliary list.
+    **WatchDog:** This driver is required for secure remote operation of observations. In the case of communication loss, you can configure the driver to perform a safe shutdown of your observatory.
+4. Click the Save button to save your profile.
+5. Click Start to start INDI server. If all goes OK, you should see a message in the notification area.

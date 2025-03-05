@@ -1,0 +1,31 @@
+.. section:: Connecting from Ekos via Ethernet/WiFi
+When you use Ekos on your PC/Mac, set the profile to Remote and set the Address to **stellarmate.local**.
+
+Make sure INDI Web Manager checkbox is checked.
+
+.. image:: /_static/images/stellarmate_profile.jpg
+  :width: 400px
+  :align: center
+
+It is recommended to use the Ekos Profile Wizard to set up your first profile. The wizard automatically starts up the first time you fire Ekos in KStars. To start it again, please click on the wizard icon in Ekos summary screen.
+
+.. image:: /_static/images/profile_wizard_welcome.JPG
+  :width: 400px
+  :align: center
+
+Click Next to proceed to the next screen.
+
+.. image:: /_static/images/profile_wizard_select.JPG
+  :width: 400px
+  :align: center
+
+In here you need to select if your equipment is attached to StellarMate or elsewhere:
+    1. If you are running Ekos **within** StellarMate OS, then select Equipment is attached to this device.
+    2. If you are running Ekos on a PC/Mac, then select Equipment is attached to a remote device.
+Next, select your equipment profile name and any additional services you want to run then proceed to create the profile.
+
+.. image:: /_static/images/ekos_start.jpg
+  :width: 400px
+  :align: center
+  
+To connect to your equipment and start using Ekos, simply click the Start button as illustrated above.

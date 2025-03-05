@@ -1,0 +1,26 @@
+.. section:: Device
+
+.. image:: /_static/images/ekos/tabs/Device/device.jpg
+    :align: center
+    :width: 400px
+
+The Device page manages the health, settings, and updates for your StellarMate. It is divided into the following sections:
+
+**System**
+
+**Info**
+    * WiFi Network
+    * Ethernet
+    * Resolution
+    * Hostname
+**Software**
+    * Firmware Updates
+    * Remote Support
+**Logs**
+
+* Sharing logs
+
+.. include:: device/system.rst
+.. include:: device/info/index.rst
+.. include:: device/software/index.rst
+.. include:: device/logs.rst

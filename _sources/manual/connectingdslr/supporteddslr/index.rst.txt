@@ -1,0 +1,9 @@
+.. section:: Supported DSLRs
+
+StellarMate supports a wide selection of DSLR cameras manufactured by popular brands like Canon, Nikon and several others. The following is a list of the most popular supported cameras.
+
+.. include:: supporteddslr/canon.rst
+.. include:: supporteddslr/nikon.rst
+.. include:: supporteddslr/sony.rst
+.. include:: supporteddslr/pentax.rst
+.. include:: supporteddslr/fuji.rst

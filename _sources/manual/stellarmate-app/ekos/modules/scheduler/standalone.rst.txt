@@ -1,0 +1,17 @@
+.. subsection::Standalone Sequences :level:2
+
+.. image:: /_static/images/ekos/modules/scheduler/standalone-seq/toggle.jpg
+    :align: center
+    :width: 400px
+
+At minimum, a scheduler job requires a target and a sequence file. The sequence files contain the sequence jobs that need to be carried out in the capture module (e.g. capture 60x15 LRGB images). You can create and save sequence files in the capture module. They are saved to Documents/sequence folder so they can be reused in the future.
+
+.. image:: /_static/images/ekos/modules/scheduler/standalone-seq/add-sequences.jpg
+    :align: center
+    :width: 400px
+
+Alternatively, you can generate sequences on the spot with the Standalone Sequence editor. If Ekos is online, the editor will be based on the values of your current setup (e.g. filter list). On the other hand, if Ekos is not started yet, it will rely on settings from your previous session. You can add as many jobs as desired. When done, a sequence file is generated and automatically saved to the sequences folder.
+
+.. image:: /_static/images/ekos/modules/scheduler/standalone-seq/added-sequence.jpg
+    :align: center
+    :width: 400px

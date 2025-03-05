@@ -1,0 +1,24 @@
+.. subsection::Mosaic Planner :level:2
+
+.. image:: /_static/images/ekos/modules/scheduler/mosaic/toggle.jpg
+    :align: center
+    :width: 400px
+
+Mosaics can be imported from Telescopius online tool. 
+
+.. image:: /_static/images/ekos/modules/scheduler/mosaic_planner.png
+    :align: center
+    :width: 400px
+
+1. **Target:** Name of the target.
+2. **CSV:** You can copy coordinates from https://telescopius.com/  and paste it here. Makue sure you include  center coordinates and then copy csv. 
+3. **Sequence:** Include sequence from the directory browser.
+4. **Steps:** Enable steps to perform.
+5. **Import Mosaic:** Imports mosaic sequences.
+
+.. image:: /_static/images/ekos/modules/scheduler/mosaic/sequences.jpg
+    :align: center
+    :width: 400px
+
+Mosaic planner sequences are added here, After importing mosaic.
+

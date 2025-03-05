@@ -1,0 +1,21 @@
+.. subsection::Focus :level: 3
+
+.. image:: /_static/images/ekos/modules/capture/focus_limits.jpg
+    :align: center
+    :width: 400px
+
+Focus limits settings are applicable to all the images in the sequence queue. When a limit is exceeded, Ekos shall command the appropriate action to remedy the situation as explained below:
+
+1) **Refocus every**: Check to force an Autofocus every N minutes. Timer is reset at each Autofocus.
+2) **Refocus** value in minutes
+3) **Autofocus**: Check to force an Autofocus when the change in temperature since last focus exceeded this value. Reference temperature is reset at each Autofocus.
+4) **Autofocus** value in Celsius
+5) **Refocus on HFR**: Check to perform an HFR Check between Subframes. The Check may result in an Autofocus.
+6) **Algorithm**: The HFR Check algorithm:
+    1. **Last Autofocus**: This is the default algorithm and uses the HFR value from the most recent Autofocus run as the reference for the check.
+    2. **Fixed**: This algorithm lets the user specify a fixed HFR to use in the check.
+    3. **Relative Measure**: This algorithm collects datapoints from Autofocus and HFR Checks, maintains the data in a sequenced list and uses the median value as the reference for the next HFR Check.
+7) **Refocus meridian flip**: Check to force an Autofocus after a Meridian Flip.
+8) **Check every frames**: Run HFR check after this many sub-frames.
+9) **Threshold**: Specify the % to apply to the HFR Check value appropriate to the selected algorithm, to use as the threshold to perform the HFR Check.
+10) **HFR**: The HFR Check value in pixels. This is an output field when Last Autofocus or Relative Measure is selected, and an input field for Fixed. In all cases, the user can override the system generated value.

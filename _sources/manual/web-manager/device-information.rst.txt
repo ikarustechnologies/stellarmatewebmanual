@@ -1,0 +1,8 @@
+.. section:: Device Information
+
+The device information button brings up an information popup to show the following information:
+
+    StellarMate Unit name.
+    StellarMate Unit model.
+    StellarMate OS Version.
+    List of IP addresses: Connection to StellarMate is usually done via its hostname, however, you can connect directly via IP address.
